@@ -15,6 +15,7 @@ import streamlit as st
 
 from config import MARKETS
 from engine import build_snapshot
+from release_calendar import build_calendar
 
 DATA_DIR = Path(__file__).parent / "data"
 FETCH_LOG = DATA_DIR / "fetch_log.json"
@@ -111,6 +112,52 @@ else:
         "reasons": "; ".join(f["reasons"]),
     } for f in flags])
     st.dataframe(fdf, hide_index=True, use_container_width=True)
+
+# ── release calendar ───────────────────────────────────────────────────
+st.subheader("Release calendar")
+cal = build_calendar()
+
+recent = cal["recent"]
+if recent:
+    st.markdown("**Released in last 24h** — read the number in manually:")
+    for r in recent:
+        st.markdown(
+            f"- **{r['name']}** ({r['market']}, {r['released_date']}) — "
+            f"[open source]({r['url']}) · _{r['threshold']}_"
+        )
+
+upcoming = cal["upcoming"]
+if not upcoming:
+    st.info("No upcoming releases computed.")
+else:
+    cal_df = pd.DataFrame([{
+        "days": r["days_until"],
+        "date": r["next_date"],
+        "release": r["name"],
+        "market": r["market"],
+        "threshold": r["threshold"],
+        "link": r["url"],
+        "_soon": r["soon"],
+    } for r in upcoming])
+
+    def _cal_style(row: pd.Series):
+        if row["_soon"]:
+            return ["background-color:rgba(214,137,16,0.15);color:#d68910"] * len(row)
+        return [""] * len(row)
+
+    styled = cal_df.style.apply(_cal_style, axis=1)
+    st.dataframe(
+        styled,
+        hide_index=True,
+        use_container_width=True,
+        column_config={
+            "days": st.column_config.NumberColumn("days", format="%dd"),
+            "link": st.column_config.LinkColumn("link", display_text="open"),
+            "_soon": None,  # hidden helper column
+        },
+    )
+    st.caption("Amber row = due within 3 days. Dates for FOMC / RBI-MPC / "
+               "US CPI·PPI·PCE / OPEC are hardcoded 2026 estimates — see V2_BUILD_NOTES.md.")
 
 # ── four-market grid ───────────────────────────────────────────────────
 st.subheader("Four-market metric grid")
