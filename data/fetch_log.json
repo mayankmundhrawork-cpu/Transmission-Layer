@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-03T21:48:58.125901Z",
+  "fetched_at": "2026-07-03T22:21:01.868529Z",
   "series": {
     "nifty_50": {
       "status": "OK",
@@ -72,39 +72,29 @@
       "corrections": []
     },
     "goi_10y": {
-      "status": "OK",
-      "rows": 23,
-      "last_date": "2026-05-01",
-      "last_value": 7.02,
-      "corrections": []
+      "status": "ERROR",
+      "error": "400 Client Error: Bad Request for url: https://api.stlouisfed.org/fred/series/observations?series_id=INDIRLTLT01STM&api_key=0e42d73664ed20421382be89d87aeadb+&file_type=json&observation_start=2024-07-0",
+      "rows": 0
     },
     "ust_2y": {
-      "status": "OK",
-      "rows": 497,
-      "last_date": "2026-07-01",
-      "last_value": 4.17,
-      "corrections": []
+      "status": "ERROR",
+      "error": "400 Client Error: Bad Request for url: https://api.stlouisfed.org/fred/series/observations?series_id=DGS2&api_key=0e42d73664ed20421382be89d87aeadb+&file_type=json&observation_start=2024-07-03&observat",
+      "rows": 0
     },
     "ust_10y": {
-      "status": "OK",
-      "rows": 497,
-      "last_date": "2026-07-01",
-      "last_value": 4.48,
-      "corrections": []
+      "status": "ERROR",
+      "error": "400 Client Error: Bad Request for url: https://api.stlouisfed.org/fred/series/observations?series_id=DGS10&api_key=0e42d73664ed20421382be89d87aeadb+&file_type=json&observation_start=2024-07-03&observa",
+      "rows": 0
     },
     "tips_10y_real": {
-      "status": "OK",
-      "rows": 497,
-      "last_date": "2026-07-01",
-      "last_value": 2.25,
-      "corrections": []
+      "status": "ERROR",
+      "error": "400 Client Error: Bad Request for url: https://api.stlouisfed.org/fred/series/observations?series_id=DFII10&api_key=0e42d73664ed20421382be89d87aeadb+&file_type=json&observation_start=2024-07-03&observ",
+      "rows": 0
     },
     "sofr": {
-      "status": "OK",
-      "rows": 496,
-      "last_date": "2026-07-01",
-      "last_value": 3.66,
-      "corrections": []
+      "status": "ERROR",
+      "error": "400 Client Error: Bad Request for url: https://api.stlouisfed.org/fred/series/observations?series_id=SOFR&api_key=0e42d73664ed20421382be89d87aeadb+&file_type=json&observation_start=2024-07-03&observat",
+      "rows": 0
     },
     "dxy": {
       "status": "OK",
@@ -156,11 +146,9 @@
       "corrections": []
     },
     "bund_10y": {
-      "status": "OK",
-      "rows": 23,
-      "last_date": "2026-05-01",
-      "last_value": 3.0465,
-      "corrections": []
+      "status": "ERROR",
+      "error": "400 Client Error: Bad Request for url: https://api.stlouisfed.org/fred/series/observations?series_id=IRLTLT01DEM156N&api_key=0e42d73664ed20421382be89d87aeadb+&file_type=json&observation_start=2024-07-",
+      "rows": 0
     },
     "midcap_largecap_ratio": {
       "status": "OK",
@@ -181,10 +169,8 @@
       "last_value": 67.81821627822612
     },
     "goi_ust_spread": {
-      "status": "OK",
-      "rows": 11,
-      "last_date": "2026-05-01",
-      "last_value": 2.63
+      "status": "EMPTY",
+      "rows": 0
     }
   }
 }
