@@ -6,10 +6,33 @@
 
 ---
 
-## ⭐ MORNING SUMMARY (updated at end of run — see bottom for final status)
+## ⭐ MORNING SUMMARY
 
-_This section is finalised in the FINAL step. If the run was interrupted before
-then, scan the "Stage status" and "Needs your attention" sections below._
+**All three functional stages completed and verified. Nothing is broken; the
+proven data layer (fetch.py despike, engine.py Step 5 math) was not touched.**
+
+- **Stage 1 — Release calendar: ✅ done & verified.** 16 releases compute correct
+  next-dates with weekend-rolling; app shows a sorted countdown with clickable
+  links, ≤3-day highlight, and a "released last 24h" block.
+- **Stage 2 — News digest: ✅ done & verified.** `digest.py` produced a 7.2k-char
+  digest in exact Step 6 format with real headlines in **5/5** market groups
+  (11 feeds OK, 0 crashes). App shows it with a copy button + the chat prompt.
+- **Stage 3 — Workflow wiring: ✅ done & verified.** The scheduled workflow now
+  regenerates the digest after the price fetch and commits `digest_latest.txt`
+  alongside the price data. YAML valid, all safeguards preserved.
+- **Stage 4 — Visual pass: not in scope** for this run (dropped from the final
+  goal). Untouched.
+
+**Your 3 next actions when you wake** (details in the numbered section at the
+bottom):
+1. **Push these commits** — I committed locally but did not push. Run
+   `git push` (fast-forward, no conflicts expected). Streamlit Cloud auto-redeploys.
+2. **Manually trigger the workflow once** to confirm the digest step works in CI:
+   Actions tab → "Scheduled data fetch" → Run workflow. Watch the new
+   "Regenerate digest" step; confirm the commit message now reads
+   `data: scheduled fetch + digest …`.
+3. **Verify the hardcoded 2026 fixed dates** (RBI-MPC, US CPI/PPI/PCE, OPEC) against
+   official calendars — links in "Needs your attention".
 
 ---
 
@@ -19,7 +42,7 @@ then, scan the "Stage status" and "Needs your attention" sections below._
 |---|---|---|
 | 1 | Release calendar (calendar_config.py, release_calendar.py, app panel) | ✅ built & verified |
 | 2 | News digest (rss_sources.py, digest.py, app panel) | ✅ built & verified |
-| 3 | Wire digest into GitHub Actions workflow | ⏳ pending |
+| 3 | Wire digest into GitHub Actions workflow | ✅ built & verified |
 
 ---
 
@@ -128,6 +151,59 @@ Markets, Mint Markets, BusinessLine Markets (India); ECB press (EU); SCMP Econom
 
 **Manual bookmarks (no reliable RSS, surfaced as click-throughs in the digest):**
 China → NBS, PBoC, Caixin Global. India → RBI press.
+
+---
+
+## Stage 3 — Workflow wiring ✅
+
+**File:** `.github/workflows/fetch.yml`.
+
+Added a **"Regenerate digest"** step that runs `python digest.py` after
+**"Run fetch"** and before the commit step, with `FRED_API_KEY` in its env
+(digest.py imports the engine → config, which requires the key). The commit step
+now stages `data/digest_latest.txt` alongside `data/prices.csv` and
+`data/fetch_log.json`, and the message reads `data: scheduled fetch + digest …`.
+
+**Preserved safeguards (verified by YAML parse):**
+- Triggers remain `schedule` + `workflow_dispatch` only → **no self-loop** (a
+  push cannot trigger it).
+- `[skip ci]` still in the commit message.
+- No-empty-commit guard (`git diff --cached --quiet`) unchanged.
+- `permissions: contents: write` and `concurrency: fetch-data` unchanged.
+
+**Calendar needs no fetch** — it computes live from rules at app-open, so only the
+digest was added to the scheduled job, exactly as specified.
+
+**I did NOT trigger the workflow** (per instruction). See next actions.
+
+---
+
+## Next actions for you (precise, in order)
+
+1. **Push the local commits.** I committed each stage but did not push. From
+   `C:\Users\MAYANK\OneDrive\Desktop\Substack`:
+   ```
+   git push
+   ```
+   This fast-forwards origin/main (I first pulled the 2 bot commits that had
+   landed, so no divergence). Streamlit Cloud auto-redeploys within ~30s and will
+   show the new calendar + digest panels. New commits to push: Stage 1
+   (`43ca83c`), Stage 2 (`94caf60`), Stage 3 (this one).
+
+2. **Manually trigger the workflow once** to confirm the digest works in CI:
+   GitHub → **Actions** → **Scheduled data fetch** → **Run workflow** → main.
+   In the run, expand **Regenerate digest** — it should print
+   `market groups with headlines: N/5` and write the file. Then check the
+   **Commit and push** step made a commit reading `data: scheduled fetch + digest …`.
+   (If it says "No data changes — skipping commit", the CSV+digest were identical
+   to what's already committed — re-run after the next market close.)
+
+3. **Verify the 2026 fixed dates** below and refresh each January.
+
+4. **Set FRED_API_KEY locally** if you want to run `python digest.py` or the app
+   yourself (same key handling as v1):
+   `powershell:  $env:FRED_API_KEY = "<key>"` — the digest imports the engine,
+   which requires it even though the digest itself only reads the CSV + RSS.
 
 ---
 

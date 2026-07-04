@@ -45,13 +45,22 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python fetch.py
 
+      - name: Regenerate digest
+        # digest.py imports the engine (→ config), which needs the FRED key even
+        # though the digest itself pulls RSS + reads the freshly-fetched CSV.
+        # RSS failures are handled inside digest.py, so this step won't crash the
+        # run on a dead feed.
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: python digest.py
+
       - name: Commit and push updated data
         run: |
           set -e
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/prices.csv data/fetch_log.json
+          git add data/prices.csv data/fetch_log.json data/digest_latest.txt
 
           # Nothing staged → no commit, no push, clean exit.
           if git diff --cached --quiet; then
@@ -64,5 +73,5 @@ jobs:
           # push anyway, but the marker protects any future push-triggered
           # workflow from being re-fired by our own bot commit.
           TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-          git commit -m "data: scheduled fetch ${TS} [skip ci]"
+          git commit -m "data: scheduled fetch + digest ${TS} [skip ci]"
           git push
