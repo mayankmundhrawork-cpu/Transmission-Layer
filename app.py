@@ -14,11 +14,13 @@ import pandas as pd
 import streamlit as st
 
 from config import MARKETS
+from digest import CHAT_PROMPT
 from engine import build_snapshot
 from release_calendar import build_calendar
 
 DATA_DIR = Path(__file__).parent / "data"
 FETCH_LOG = DATA_DIR / "fetch_log.json"
+DIGEST_TXT = DATA_DIR / "digest_latest.txt"
 
 st.set_page_config(page_title="Transmission Layer", layout="wide")
 
@@ -158,6 +160,21 @@ else:
     )
     st.caption("Amber row = due within 3 days. Dates for FOMC / RBI-MPC / "
                "US CPI·PPI·PCE / OPEC are hardcoded 2026 estimates — see V2_BUILD_NOTES.md.")
+
+# ── morning digest ─────────────────────────────────────────────────────
+st.subheader("Morning digest")
+if not DIGEST_TXT.exists():
+    st.info("No digest yet — run `python digest.py` (or the scheduled workflow "
+            "regenerates it). The app only reads the assembled file.")
+else:
+    digest_text = DIGEST_TXT.read_text(encoding="utf-8")
+    header = digest_text.splitlines()[0] if digest_text else ""
+    st.caption(f"Latest: {header.strip('= ')}")
+    st.markdown("**Digest** — hover the block and click the copy icon (top-right):")
+    # st.code gives a one-click copy button in the top-right corner.
+    st.code(digest_text, language="text")
+    with st.expander("Chat prompt to paste with the digest"):
+        st.code(CHAT_PROMPT, language="text")
 
 # ── four-market grid ───────────────────────────────────────────────────
 st.subheader("Four-market metric grid")

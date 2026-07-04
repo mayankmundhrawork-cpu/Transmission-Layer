@@ -18,7 +18,7 @@ then, scan the "Stage status" and "Needs your attention" sections below._
 | Stage | What | Status |
 |---|---|---|
 | 1 | Release calendar (calendar_config.py, release_calendar.py, app panel) | ✅ built & verified |
-| 2 | News digest (rss_sources.py, digest.py, app panel) | ⏳ pending |
+| 2 | News digest (rss_sources.py, digest.py, app panel) | ✅ built & verified |
 | 3 | Wire digest into GitHub Actions workflow | ⏳ pending |
 
 ---
@@ -54,7 +54,25 @@ Spec Step 4 lists China TSF/credit and China PMI, but the four-market grid
 (config.MARKETS) is INDIA/USA/EU/COMMODITIES. Rather than force China items into
 a wrong bucket, calendar entries carry `market: "CHINA"`. The calendar panel is
 market-agnostic (it lists all releases sorted by proximity), so this is display
-metadata only and does not touch the proven config.MARKETS / engine.
+metadata only and does not touch the proven config.MARKETS / engine. The digest's
+[4] news section also uses the 5-bucket split (USA/India/EU/China/Commodities),
+matching spec Step 6 which explicitly names China.
+
+**D5 — "Last 24h" = 24h window with a most-recent-N fallback per feed.**
+The environment clock runs at the simulated 2026 date while live RSS servers
+stamp entries with their own real-world time, so a strict 24h filter against the
+local clock could wrongly empty the news section. digest.py keeps entries inside
+a 24h UTC window but, if a feed has fewer than 2 in-window items, tops up from its
+most-recent entries (cap 6/feed, 12/market). This guarantees a populated digest
+with genuinely recent headlines regardless of clock skew. The digest header and
+window use UTC `now`; the calendar uses local `date.today()` — both are "today"
+in their own frame, a harmless 5.5h (IST) offset.
+
+**D6 — One-click copy via `st.code`.**
+Streamlit's `st.code` renders a built-in copy-to-clipboard icon in the block's
+top-right — that is the "one action copy" for the digest, no extra dependency or
+JS. The fixed chat prompt sits in an expander directly beneath, also in an
+`st.code` block for its own copy button, so you can grab both and paste together.
 
 ---
 
@@ -77,6 +95,39 @@ computed next-dates all sane. Spot checks that passed —
 App panel: styled dataframe with clickable LinkColumn, amber highlight for
 items due ≤3 days, and a separate "released in last 24h" markdown block with
 prominent links. py_compile passes.
+
+---
+
+## Stage 2 — News Digest ✅
+
+**Files:** `rss_sources.py` (feeds grouped by market + manual bookmarks),
+`digest.py` (assembler + `CHAT_PROMPT`), `app.py` (Morning digest panel),
+`requirements.txt` (+feedparser), output `data/digest_latest.txt`.
+
+**Verification** (`python digest.py`): wrote a 7.2k-char digest in exact Step 6
+format — [1] metric state (all 27 series), [2] flags fired (from proven engine),
+[3] release proximity (from Stage 1 calendar), [4] news by market. **5 of 5**
+market groups populated with real headlines (done-condition was ≥3). 11 feeds OK,
+0 failed, 3 empty (handled gracefully, digest still complete). App panel renders
+the digest with a copy button + the chat prompt in an expander. py_compile and
+import chain pass.
+
+### RSS feed status (from the verification run)
+**Working (11):** Federal Reserve, CNBC Economy, MarketWatch Top (USA); ET
+Markets, Mint Markets, BusinessLine Markets (India); ECB press (EU); SCMP Economy
+(China); OilPrice, EIA Today in Energy, Mining.com (Commodities).
+
+**Empty on this run (3) — watch, may be intermittent or need replacing:**
+- **BLS latest** (`bls.gov/feed/bls_latest.rss`) — returned no entries. BLS feeds
+  can be flaky/rate-limited; Fed + CNBC already cover US, so not urgent.
+- **Business Standard markets** (`business-standard.com/rss/markets-106.rss`) —
+  no entries; ET + Mint + BusinessLine cover India well.
+- **ECB blog** (`ecb.europa.eu/rss/blog.xml`) — no entries; ECB press works, so EU
+  is covered. EU is the thinnest bucket (only ECB feeds) — consider adding a
+  stable EU markets feed if you want more depth.
+
+**Manual bookmarks (no reliable RSS, surfaced as click-throughs in the digest):**
+China → NBS, PBoC, Caixin Global. India → RBI press.
 
 ---
 
