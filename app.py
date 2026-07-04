@@ -20,11 +20,15 @@ import math
 from pathlib import Path
 
 import pandas as pd
+import plotly.graph_objects as go
 import streamlit as st
 
-from config import MARKETS
+from config import LINKED_GROUPS, MARKETS
 from digest import CHAT_PROMPT
-from engine import build_snapshot
+# Threshold/window constants imported (read-only) so the chart's z-band and
+# historical flag markers stay consistent with the engine. Engine logic itself
+# is not touched.
+from engine import AMBER_Z, RED_Z, Z_WIN_SHORT, build_snapshot
 from release_calendar import build_calendar
 
 DATA_DIR = Path(__file__).parent / "data"
@@ -103,6 +107,28 @@ st.markdown(f"""
   .recent a {{ color: {ACCENT}; text-decoration: none; }}
   .metastrip {{ color: {MUT}; font-size: 11px; margin: 2px 0 4px; font-family: {MONO}; }}
   .metastrip b {{ color: {TEXT}; }}
+
+  /* anomaly panel — centrepiece cards */
+  .anom {{ display: flex; align-items: center; gap: 14px; background: {PANEL};
+           border: 1px solid {GRIDLN}; border-left: 3px solid {HEADLN};
+           padding: 9px 15px; margin-bottom: 5px; }}
+  .anom.red   {{ border-left-color: {RED};   background: rgba(229,72,77,0.07); }}
+  .anom.amber {{ border-left-color: {AMBER}; background: rgba(224,168,59,0.06); }}
+  .anom .score {{ font-family: {MONO}; font-variant-numeric: tabular-nums;
+                  font-size: 21px; color: {TEXT}; min-width: 54px; text-align: right; }}
+  .anom .body {{ flex: 1; min-width: 0; }}
+  .anom .aid {{ font-size: 14px; color: {TEXT}; }}
+  .anom .aid .mk {{ color: {MUT}; font-size: 11px; margin-left: 7px;
+                    text-transform: uppercase; letter-spacing: .4px; }}
+  .anom .reason {{ color: {MUT}; font-size: 11.5px; margin-top: 2px; }}
+  .anom .metrics {{ font-family: {MONO}; font-variant-numeric: tabular-nums;
+                    font-size: 11px; color: {MUT}; white-space: nowrap; text-align: right; }}
+  .cooc-members {{ display: flex; gap: 22px; margin-top: 7px; flex-wrap: wrap; }}
+  .member .mid {{ font-size: 11px; color: {TEXT}; }}
+  .member .mz {{ font-family: {MONO}; font-variant-numeric: tabular-nums;
+                 font-size: 10px; color: {MUT}; }}
+  .calm-sub {{ font-size: 11px; color: {DIM}; margin-top: 7px; letter-spacing: .2px; }}
+  .drill-cap {{ color: {MUT}; font-size: 11px; margin: 2px 0 6px; }}
 </style>
 """, unsafe_allow_html=True)
 
@@ -175,6 +201,101 @@ def _trend(prices: pd.DataFrame, sid: str) -> list[float]:
     return prices[sid].dropna().tail(SPARK_WINDOW).tolist()
 
 
+# ── drill-down chart (Plotly) ──────────────────────────────────────────
+CHART_WINDOW = 252   # sessions shown (zoomable); rolling stats warm up on full history
+PLOT_FONT = "Consolas, Menlo, monospace"
+
+
+def _z_series(s: pd.Series):
+    """Rolling z-score matching engine semantics: today vs the PRIOR 20d window."""
+    m = s.shift(1).rolling(Z_WIN_SHORT).mean()
+    sd = s.shift(1).rolling(Z_WIN_SHORT).std(ddof=0)
+    z = (s - m) / sd
+    return z, m, sd
+
+
+def _drilldown_fig(sid: str, cur_flag: str) -> go.Figure:
+    s_full = prices[sid].dropna()
+    z_full, mean_full, sd_full = _z_series(s_full)
+
+    disp = s_full.tail(CHART_WINDOW)
+    idx = disp.index
+    price = disp
+    mean = mean_full.reindex(idx)
+    sd = sd_full.reindex(idx)
+    z = z_full.reindex(idx)
+    ma20 = s_full.rolling(Z_WIN_SHORT).mean().reindex(idx)
+    ma50 = s_full.rolling(50).mean().reindex(idx)
+    rng_hi = s_full.rolling(Z_WIN_SHORT).max().reindex(idx)
+    rng_lo = s_full.rolling(Z_WIN_SHORT).min().reindex(idx)
+
+    fig = go.Figure()
+
+    # z-bands (amber = ±1.5σ, red = ±2.5σ) — amber/red only, they ARE the flag levels
+    fig.add_trace(go.Scatter(x=idx, y=mean + RED_Z * sd, line=dict(width=0),
+                             showlegend=False, hoverinfo="skip"))
+    fig.add_trace(go.Scatter(x=idx, y=mean - RED_Z * sd, fill="tonexty",
+                             fillcolor="rgba(229,72,77,0.05)", line=dict(width=0),
+                             name="±2.5σ (red)", hoverinfo="skip"))
+    fig.add_trace(go.Scatter(x=idx, y=mean + AMBER_Z * sd, line=dict(width=0),
+                             showlegend=False, hoverinfo="skip"))
+    fig.add_trace(go.Scatter(x=idx, y=mean - AMBER_Z * sd, fill="tonexty",
+                             fillcolor="rgba(224,168,59,0.07)", line=dict(width=0),
+                             name="±1.5σ (amber)", hoverinfo="skip"))
+
+    # 20d range envelope + mean
+    fig.add_trace(go.Scatter(x=idx, y=rng_hi, line=dict(color=ACCENT, width=0.7, dash="dot"),
+                             name="20d high/low", hoverinfo="skip"))
+    fig.add_trace(go.Scatter(x=idx, y=rng_lo, line=dict(color=ACCENT, width=0.7, dash="dot"),
+                             showlegend=False, hoverinfo="skip"))
+    fig.add_trace(go.Scatter(x=idx, y=mean, line=dict(color=MUT, width=1, dash="dash"),
+                             name="20d mean", hoverinfo="skip"))
+
+    # moving averages
+    fig.add_trace(go.Scatter(x=idx, y=ma20, line=dict(color="#6aa0c8", width=1), name="MA20"))
+    fig.add_trace(go.Scatter(x=idx, y=ma50, line=dict(color="#7d8590", width=1), name="MA50"))
+
+    # price
+    fig.add_trace(go.Scatter(
+        x=idx, y=price, line=dict(color=TEXT, width=1.6), name=sid, customdata=z,
+        hovertemplate="%{x|%Y-%m-%d}<br>" + sid + " %{y:.2f}<br>z=%{customdata:.2f}<extra></extra>",
+    ))
+
+    # historical flag markers (recomputed in presentation layer, engine thresholds)
+    za = z.abs()
+    amber_mask = (za >= AMBER_Z) & (za < RED_Z)
+    red_mask = za >= RED_Z
+    if amber_mask.any():
+        fig.add_trace(go.Scatter(x=idx[amber_mask], y=price[amber_mask], mode="markers",
+                                 marker=dict(color=AMBER, size=5), name="amber flag",
+                                 hovertemplate="%{x|%Y-%m-%d} amber<extra></extra>"))
+    if red_mask.any():
+        fig.add_trace(go.Scatter(x=idx[red_mask], y=price[red_mask], mode="markers",
+                                 marker=dict(color=RED, size=6), name="red flag",
+                                 hovertemplate="%{x|%Y-%m-%d} red<extra></extra>"))
+
+    # current break (latest point), ringed in the current flag colour
+    last_color = {"red": RED, "amber": AMBER}.get(cur_flag, ACCENT)
+    fig.add_trace(go.Scatter(
+        x=[idx[-1]], y=[price.iloc[-1]], mode="markers",
+        marker=dict(color="rgba(0,0,0,0)", size=13, symbol="circle",
+                    line=dict(width=2, color=last_color)),
+        name="latest", hovertemplate="latest %{y:.2f}<extra></extra>",
+    ))
+
+    fig.update_layout(
+        template="plotly_dark", height=400,
+        paper_bgcolor=BG, plot_bgcolor=BG,
+        font=dict(family=PLOT_FONT, color=TEXT, size=11),
+        margin=dict(l=44, r=12, t=28, b=28), hovermode="x unified",
+        legend=dict(orientation="h", yanchor="bottom", y=1.0, x=0,
+                    font=dict(size=9), bgcolor="rgba(0,0,0,0)"),
+        xaxis=dict(gridcolor=GRIDLN, zeroline=False),
+        yaxis=dict(gridcolor=GRIDLN, zeroline=False),
+    )
+    return fig
+
+
 # ── load data ──────────────────────────────────────────────────────────
 snap = build_snapshot()
 prices = _load_prices()
@@ -228,30 +349,74 @@ for sid in HEADLINE_IDS:
 st.markdown(f'<div class="strip">{"".join(cells)}</div>', unsafe_allow_html=True)
 
 
-# ── 2) anomaly panel (prominent, high) ─────────────────────────────────
-st.markdown('<div class="sec">Anomaly panel</div>', unsafe_allow_html=True)
+# ── 2) anomaly panel — the centrepiece ─────────────────────────────────
+st.markdown('<div class="sec">◈ Anomaly panel</div>', unsafe_allow_html=True)
 flags = snap["flags"]
-if not flags:
-    st.markdown('<div class="calm">◦ No flags — calm session.</div>', unsafe_allow_html=True)
-else:
-    head = ('<tr><th>score</th><th>lvl</th><th class="l">type</th><th class="l">market</th>'
-            '<th class="l">id</th><th>z20</th><th>last</th><th class="l">reason</th></tr>')
-    body = []
-    for f in flags:
-        flag = f["flag"]
-        body.append(
-            f'<tr style="{_row_bg(flag)}">'
-            f'<td class="num">{f["score"]:.2f}</td>'
-            f'<td class="c">{_flag_dot(flag)}</td>'
-            f'<td class="l">{f["type"]}</td>'
-            f'<td class="l">{f["market"]}</td>'
-            f'<td class="id">{f["id"]}</td>'
-            f'<td class="num">{_fmt(f.get("z20"), 2)}</td>'
-            f'<td class="num">{_fmt(f.get("last"), 2)}</td>'
-            f'<td class="note">{"; ".join(f.get("reasons", []))}</td>'
-            f'</tr>'
+
+
+def _anom_card(f: dict) -> str:
+    flag = f["flag"]
+    dot = _flag_dot(flag)
+    reasons = "; ".join(f.get("reasons", []))
+    if f["type"] == "co-occurrence":
+        members = []
+        for mid in LINKED_GROUPS.get(f["id"], []):
+            r = by_id.get(mid)
+            if not r:
+                continue
+            sp = _spark(_trend(prices, mid), r["flag"], w=118, h=26)
+            members.append(
+                f'<div class="member"><div class="mid">{_flag_dot(r["flag"])} {mid}</div>'
+                f'{sp}<div class="mz">z {_fmt(r["z20"], 2)} · {_fmt(r["last"], 2)}</div></div>'
+            )
+        return (
+            f'<div class="anom {flag}"><div class="score">{f["score"]:.2f}</div>'
+            f'<div class="body"><div class="aid">{dot} {f["id"]}'
+            f'<span class="mk">cross · co-occurrence</span></div>'
+            f'<div class="reason">{reasons}</div>'
+            f'<div class="cooc-members">{"".join(members)}</div></div></div>'
         )
-    st.markdown(f'<table class="tl">{head}{"".join(body)}</table>', unsafe_allow_html=True)
+    sp = _spark(_trend(prices, f["id"]), flag, w=150, h=28)
+    return (
+        f'<div class="anom {flag}"><div class="score">{f["score"]:.2f}</div>'
+        f'<div class="body"><div class="aid">{dot} {f["id"]}'
+        f'<span class="mk">{f["market"]} · {f["type"]}</span></div>'
+        f'<div class="reason">{reasons}</div></div>'
+        f'<div>{sp}</div>'
+        f'<div class="metrics">z {_fmt(f.get("z20"), 2)}<br>{_fmt(f.get("last"), 2)}</div></div>'
+    )
+
+
+if not flags:
+    st.markdown(
+        f'<div class="calm">◦ No flags — calm session.'
+        f'<div class="calm-sub">{len(snap["series"])} series tracked · all within normal range · '
+        f'an empty panel is the correct resting state</div></div>',
+        unsafe_allow_html=True,
+    )
+else:
+    st.markdown("".join(_anom_card(f) for f in flags), unsafe_allow_html=True)
+
+
+# ── 2b) drill-down chart ───────────────────────────────────────────────
+st.markdown('<div class="sec">Drill-down</div>', unsafe_allow_html=True)
+chartable = [r["id"] for r in snap["series"] if r["id"] in prices.columns]
+if not chartable:
+    st.markdown('<div class="calm">No price history available to chart.</div>',
+                unsafe_allow_html=True)
+else:
+    # default to the top-ranked flagged series that is chartable
+    default_id = next((f["id"] for f in flags if f["id"] in chartable), chartable[0])
+    sel = st.selectbox("series", chartable,
+                       index=chartable.index(default_id),
+                       label_visibility="collapsed")
+    st.markdown('<div class="drill-cap">price · MA20/50 · 20d mean &amp; range · '
+                'amber ±1.5σ / red ±2.5σ z-bands · markers where flags fired · '
+                'ringed latest point. Zoom + hover enabled.</div>',
+                unsafe_allow_html=True)
+    st.plotly_chart(_drilldown_fig(sel, by_id[sel]["flag"]),
+                    use_container_width=True,
+                    config={"displayModeBar": True, "scrollZoom": True})
 
 
 # ── 3) release calendar ────────────────────────────────────────────────
