@@ -40,18 +40,24 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
+      - name: Update universe from news
+        # headlines pull + entity extraction + symbol resolution + universe
+        # state update. ANTHROPIC_API_KEY is OPTIONAL — when the secret is
+        # absent/empty the LLM extraction tier is skipped and the heuristic
+        # tier carries the run. Feed/lookup failures are absorbed internally.
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python update_universe.py
+
       - name: Run fetch
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python fetch.py
 
       - name: Regenerate digest
-        # digest.py imports the engine (→ config), which needs the FRED key even
-        # though the digest itself pulls RSS + reads the freshly-fetched CSV.
-        # RSS failures are handled inside digest.py, so this step won't crash the
-        # run on a dead feed.
-        env:
-          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        # digest reads the freshly-fetched CSV + RSS; the FRED key is no longer
+        # needed here (settings.get_fred_key is lazy and only fetch calls it).
+        # RSS failures are handled inside digest.py.
         run: python digest.py
 
       - name: Commit and push updated data
@@ -60,7 +66,8 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/prices.csv data/fetch_log.json data/digest_latest.txt
+          git add data/prices.csv data/fetch_log.json data/digest_latest.txt \
+                  data/universe.json data/headlines.json data/resolution_cache.json
 
           # Nothing staged → no commit, no push, clean exit.
           if git diff --cached --quiet; then
