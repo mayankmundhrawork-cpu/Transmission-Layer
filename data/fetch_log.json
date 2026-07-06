@@ -1,81 +1,342 @@
 {
-  "fetched_at": "2026-07-06T18:34:21.168995Z",
+  "fetched_at": "2026-07-06T17:39:49.776822Z",
+  "registry_series": 61,
+  "tails": 46,
+  "backfills": 1,
+  "deferred_backfills": [],
+  "legacy_columns": [
+    "dabur",
+    "britannia",
+    "bpcl"
+  ],
   "series": {
+    "sp500": {
+      "status": "OK",
+      "rows": 500,
+      "last_date": "2026-07-06",
+      "last_value": 7530.8798828125,
+      "corrections": []
+    },
+    "nasdaq_100": {
+      "status": "OK",
+      "rows": 500,
+      "last_date": "2026-07-06",
+      "last_value": 29682.65234375,
+      "corrections": []
+    },
+    "dow_jones": {
+      "status": "OK",
+      "rows": 500,
+      "last_date": "2026-07-06",
+      "last_value": 52922.5703125,
+      "corrections": []
+    },
+    "russell_2000": {
+      "status": "OK",
+      "rows": 500,
+      "last_date": "2026-07-06",
+      "last_value": 3020.28662109375,
+      "corrections": []
+    },
+    "vix": {
+      "status": "OK",
+      "rows": 501,
+      "last_date": "2026-07-06",
+      "last_value": 15.869999885559082,
+      "corrections": []
+    },
+    "ftse_100": {
+      "status": "OK",
+      "rows": 505,
+      "last_date": "2026-07-06",
+      "last_value": 10651.76953125,
+      "corrections": []
+    },
+    "dax": {
+      "status": "OK",
+      "rows": 505,
+      "last_date": "2026-07-06",
+      "last_value": 25817.890625,
+      "corrections": []
+    },
+    "cac_40": {
+      "status": "OK",
+      "rows": 509,
+      "last_date": "2026-07-06",
+      "last_value": 8479.8701171875,
+      "corrections": []
+    },
+    "stoxx_50": {
+      "status": "OK",
+      "rows": 497,
+      "last_date": "2026-07-06",
+      "last_value": 6398.009765625,
+      "corrections": []
+    },
+    "nikkei_225": {
+      "status": "OK",
+      "rows": 483,
+      "last_date": "2026-07-03",
+      "last_value": 69744.0703125,
+      "corrections": []
+    },
+    "hang_seng": {
+      "status": "OK",
+      "rows": 488,
+      "last_date": "2026-07-03",
+      "last_value": 23350.029296875,
+      "corrections": []
+    },
+    "shanghai_comp": {
+      "status": "OK",
+      "rows": 480,
+      "last_date": "2026-07-03",
+      "last_value": 4043.64306640625,
+      "corrections": []
+    },
+    "kospi": {
+      "status": "OK",
+      "rows": 482,
+      "last_date": "2026-07-03",
+      "last_value": 8088.33984375,
+      "corrections": []
+    },
+    "taiwan_weighted": {
+      "status": "OK",
+      "rows": 481,
+      "last_date": "2026-07-03",
+      "last_value": 46780.62109375,
+      "corrections": []
+    },
+    "asx_200": {
+      "status": "OK",
+      "rows": 505,
+      "last_date": "2026-07-03",
+      "last_value": 8844.400390625,
+      "corrections": []
+    },
+    "bovespa": {
+      "status": "OK",
+      "rows": 498,
+      "last_date": "2026-07-06",
+      "last_value": 172341.015625,
+      "corrections": []
+    },
     "nifty_50": {
       "status": "OK",
-      "rows": 492,
-      "last_date": "2026-07-03",
-      "last_value": 24270.849609375,
+      "rows": 493,
+      "last_date": "2026-07-06",
+      "last_value": 24430.349609375,
       "corrections": []
     },
     "nifty_midcap_100": {
       "status": "OK",
-      "rows": 489,
-      "last_date": "2026-07-03",
-      "last_value": 62190.30078125,
+      "rows": 490,
+      "last_date": "2026-07-06",
+      "last_value": 62471.5,
       "corrections": []
     },
     "nifty_fmcg": {
       "status": "OK",
-      "rows": 489,
-      "last_date": "2026-07-03",
-      "last_value": 50096.3984375,
+      "rows": 490,
+      "last_date": "2026-07-06",
+      "last_value": 50196.3515625,
       "corrections": []
     },
     "nifty_metal": {
       "status": "OK",
-      "rows": 489,
-      "last_date": "2026-07-03",
-      "last_value": 12598.4501953125,
+      "rows": 490,
+      "last_date": "2026-07-06",
+      "last_value": 12722.4501953125,
       "corrections": []
     },
     "nifty_it": {
       "status": "OK",
-      "rows": 491,
-      "last_date": "2026-07-03",
-      "last_value": 27439.400390625,
+      "rows": 492,
+      "last_date": "2026-07-06",
+      "last_value": 27276.44921875,
       "corrections": []
     },
-    "dabur": {
+    "dxy": {
       "status": "OK",
-      "rows": 496,
-      "last_date": "2026-07-03",
-      "last_value": 444.3500061035156,
+      "rows": 503,
+      "last_date": "2026-07-06",
+      "last_value": 100.91999816894531,
       "corrections": []
     },
-    "britannia": {
+    "eur_usd": {
       "status": "OK",
-      "rows": 496,
-      "last_date": "2026-07-03",
-      "last_value": 5379.0,
+      "rows": 516,
+      "last_date": "2026-07-06",
+      "last_value": 1.1440337896347046,
       "corrections": []
     },
-    "bpcl": {
+    "usd_jpy": {
       "status": "OK",
-      "rows": 496,
-      "last_date": "2026-07-03",
-      "last_value": 308.1499938964844,
+      "rows": 516,
+      "last_date": "2026-07-06",
+      "last_value": 162.1739959716797,
+      "corrections": []
+    },
+    "gbp_usd": {
+      "status": "OK",
+      "rows": 516,
+      "last_date": "2026-07-06",
+      "last_value": 1.338186502456665,
+      "corrections": []
+    },
+    "aud_usd": {
+      "status": "OK",
+      "rows": 516,
+      "last_date": "2026-07-06",
+      "last_value": 0.6955069899559021,
       "corrections": []
     },
     "usd_inr": {
       "status": "OK",
-      "rows": 515,
-      "last_date": "2026-07-03",
-      "last_value": 95.527099609375,
+      "rows": 516,
+      "last_date": "2026-07-06",
+      "last_value": 95.38500213623047,
       "corrections": []
     },
     "eur_inr": {
       "status": "OK",
-      "rows": 515,
-      "last_date": "2026-07-03",
-      "last_value": 108.91400146484375,
+      "rows": 516,
+      "last_date": "2026-07-06",
+      "last_value": 109.11579895019531,
       "corrections": []
     },
-    "goi_10y": {
+    "usd_mxn": {
       "status": "OK",
-      "rows": 23,
-      "last_date": "2026-05-01",
-      "last_value": 7.02,
+      "rows": 516,
+      "last_date": "2026-07-06",
+      "last_value": 17.398820877075195,
+      "corrections": []
+    },
+    "usd_brl": {
+      "status": "OK",
+      "rows": 516,
+      "last_date": "2026-07-06",
+      "last_value": 5.134900093078613,
+      "corrections": []
+    },
+    "wti": {
+      "status": "OK",
+      "rows": 503,
+      "last_date": "2026-07-06",
+      "last_value": 68.44999694824219,
+      "corrections": []
+    },
+    "brent": {
+      "status": "OK",
+      "rows": 503,
+      "last_date": "2026-07-06",
+      "last_value": 71.88999938964844,
+      "corrections": []
+    },
+    "natgas": {
+      "status": "OK",
+      "rows": 502,
+      "last_date": "2026-07-06",
+      "last_value": 3.2209999561309814,
+      "corrections": []
+    },
+    "comex_gold": {
+      "status": "OK",
+      "rows": 503,
+      "last_date": "2026-07-06",
+      "last_value": 4167.10009765625,
+      "corrections": []
+    },
+    "comex_silver": {
+      "status": "OK",
+      "rows": 503,
+      "last_date": "2026-07-06",
+      "last_value": 62.32500076293945,
+      "corrections": []
+    },
+    "comex_copper": {
+      "status": "OK",
+      "rows": 503,
+      "last_date": "2026-07-06",
+      "last_value": 6.244500160217285,
+      "corrections": []
+    },
+    "wheat": {
+      "status": "OK",
+      "rows": 501,
+      "last_date": "2026-07-06",
+      "last_value": 615.0,
+      "corrections": []
+    },
+    "corn": {
+      "status": "OK",
+      "rows": 501,
+      "last_date": "2026-07-06",
+      "last_value": 457.75,
+      "corrections": []
+    },
+    "soybeans": {
+      "status": "OK",
+      "rows": 501,
+      "last_date": "2026-07-06",
+      "last_value": 1193.75,
+      "corrections": []
+    },
+    "btc_usd": {
+      "status": "OK",
+      "rows": 531,
+      "last_date": "2026-07-06",
+      "last_value": 63686.51171875,
+      "corrections": []
+    },
+    "eth_usd": {
+      "status": "OK",
+      "rows": 531,
+      "last_date": "2026-07-06",
+      "last_value": 1789.06005859375,
+      "corrections": []
+    },
+    "dyn_atherenerg_ns": {
+      "status": "OK",
+      "rows": 293,
+      "last_date": "2026-07-06",
+      "last_value": 1125.4000244140625,
+      "corrections": []
+    },
+    "dyn_hdb": {
+      "status": "OK",
+      "rows": 500,
+      "last_date": "2026-07-06",
+      "last_value": 27.325000762939453,
+      "corrections": []
+    },
+    "dyn_indusindbk_bo": {
+      "status": "OK",
+      "rows": 494,
+      "last_date": "2026-07-06",
+      "last_value": 1009.9000244140625,
+      "corrections": []
+    },
+    "dyn_mu": {
+      "status": "OK",
+      "rows": 500,
+      "last_date": "2026-07-06",
+      "last_value": 985.9000244140625,
+      "corrections": []
+    },
+    "dyn_wulf": {
+      "status": "OK",
+      "rows": 500,
+      "last_date": "2026-07-06",
+      "last_value": 22.7450008392334,
+      "corrections": []
+    },
+    "usd_cny": {
+      "status": "OK",
+      "rows": 515,
+      "last_date": "2026-07-03",
+      "last_value": 6.788599967956543,
       "corrections": []
     },
     "ust_2y": {
@@ -92,6 +353,13 @@
       "last_value": 4.48,
       "corrections": []
     },
+    "ust_30y": {
+      "status": "OK",
+      "rows": 496,
+      "last_date": "2026-07-01",
+      "last_value": 4.97,
+      "corrections": []
+    },
     "tips_10y_real": {
       "status": "OK",
       "rows": 496,
@@ -106,53 +374,25 @@
       "last_value": 3.64,
       "corrections": []
     },
-    "dxy": {
+    "hy_oas": {
       "status": "OK",
-      "rows": 501,
+      "rows": 522,
       "last_date": "2026-07-02",
-      "last_value": 100.86000061035156,
+      "last_value": 2.75,
       "corrections": []
     },
-    "wti": {
+    "ig_oas": {
       "status": "OK",
-      "rows": 501,
+      "rows": 521,
       "last_date": "2026-07-02",
-      "last_value": 68.69000244140625,
+      "last_value": 0.75,
       "corrections": []
     },
-    "brent": {
+    "goi_10y": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-07-02",
-      "last_value": 71.80000305175781,
-      "corrections": []
-    },
-    "comex_copper": {
-      "status": "OK",
-      "rows": 501,
-      "last_date": "2026-07-02",
-      "last_value": 6.114500045776367,
-      "corrections": []
-    },
-    "comex_gold": {
-      "status": "OK",
-      "rows": 501,
-      "last_date": "2026-07-02",
-      "last_value": 4112.7001953125,
-      "corrections": []
-    },
-    "comex_silver": {
-      "status": "OK",
-      "rows": 501,
-      "last_date": "2026-07-02",
-      "last_value": 60.643001556396484,
-      "corrections": []
-    },
-    "eur_usd": {
-      "status": "OK",
-      "rows": 515,
-      "last_date": "2026-07-03",
-      "last_value": 1.1422696113586426,
+      "rows": 23,
+      "last_date": "2026-05-01",
+      "last_value": 7.02,
       "corrections": []
     },
     "bund_10y": {
@@ -166,25 +406,36 @@
       "status": "OK",
       "rows": 489,
       "last_date": "2026-07-03",
-      "last_value": 2.56234543834131
+      "last_value": 2.56234543834131,
+      "corrections": []
     },
     "brent_wti_spread": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-07-02",
-      "last_value": 3.1100006103515625
+      "rows": 502,
+      "last_date": "2026-07-03",
+      "last_value": 3.3499984741210938,
+      "corrections": []
     },
     "gold_silver_ratio": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-07-02",
-      "last_value": 67.81821627822612
+      "rows": 502,
+      "last_date": "2026-07-03",
+      "last_value": 66.66082776776592,
+      "corrections": []
     },
     "goi_ust_spread": {
       "status": "OK",
       "rows": 11,
       "last_date": "2026-05-01",
-      "last_value": 2.63
+      "last_value": 2.63,
+      "corrections": []
+    },
+    "ust_2s10s": {
+      "status": "OK",
+      "rows": 496,
+      "last_date": "2026-07-01",
+      "last_value": 0.3100000000000005,
+      "corrections": []
     }
   }
 }

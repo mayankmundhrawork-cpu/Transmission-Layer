@@ -19,7 +19,9 @@ BACKBONE = [
     {"id": "nasdaq_100",    "market": "INDICES", "source": "yfinance", "symbol": "^NDX",      "freq": "eod", "framework": {}},
     {"id": "dow_jones",     "market": "INDICES", "source": "yfinance", "symbol": "^DJI",      "freq": "eod", "framework": {}},
     {"id": "russell_2000",  "market": "INDICES", "source": "yfinance", "symbol": "^RUT",      "freq": "eod", "framework": {}},
-    {"id": "vix",           "market": "INDICES", "source": "yfinance", "symbol": "^VIX",      "freq": "eod", "framework": {"single_session_pct": 15.0}},
+    # no_despike: VIX legitimately spikes-and-reverts — the despike filter's
+    # bad-tick signature IS this series' signal, so it is exempted.
+    {"id": "vix",           "market": "INDICES", "source": "yfinance", "symbol": "^VIX",      "freq": "eod", "framework": {"single_session_pct": 15.0}, "no_despike": True},
     # ── Equity indices · Europe ────────────────────────────────────────
     {"id": "ftse_100",      "market": "INDICES", "source": "yfinance", "symbol": "^FTSE",     "freq": "eod", "framework": {}},
     {"id": "dax",           "market": "INDICES", "source": "yfinance", "symbol": "^GDAXI",    "freq": "eod", "framework": {}},
@@ -46,7 +48,8 @@ BACKBONE = [
     {"id": "usd_jpy", "market": "FX", "source": "yfinance", "symbol": "JPY=X",    "freq": "eod", "framework": {}},
     {"id": "gbp_usd", "market": "FX", "source": "yfinance", "symbol": "GBPUSD=X", "freq": "eod", "framework": {}},
     {"id": "aud_usd", "market": "FX", "source": "yfinance", "symbol": "AUDUSD=X", "freq": "eod", "framework": {}},
-    {"id": "usd_cnh", "market": "FX", "source": "yfinance", "symbol": "CNH=X",    "freq": "eod", "framework": {}},
+    # CNH=X returns no data on Yahoo — using onshore CNY=X instead [VERIFY]
+    {"id": "usd_cny", "market": "FX", "source": "yfinance", "symbol": "CNY=X",    "freq": "eod", "framework": {}},
     {"id": "usd_inr", "market": "FX", "source": "yfinance", "symbol": "INR=X",    "freq": "eod", "framework": {"range_extreme_days": 20}},
     {"id": "eur_inr", "market": "FX", "source": "yfinance", "symbol": "EURINR=X", "freq": "eod", "framework": {}},
     {"id": "usd_mxn", "market": "FX", "source": "yfinance", "symbol": "MXN=X",    "freq": "eod", "framework": {}},
