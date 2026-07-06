@@ -63,7 +63,8 @@ def pull_and_update() -> dict:
 
     now = datetime.now(timezone.utc)
     store = load_store()
-    known = {it["id"] for it in store["items"]}
+    by_id = {it["id"]: it for it in store["items"]}
+    known = set(by_id)
     report = {"ok": [], "failed": [], "empty": [], "new_items": 0}
 
     for market, feeds in RSS_FEEDS.items():
@@ -85,7 +86,11 @@ def pull_and_update() -> dict:
                 if not title:
                     continue
                 hid = _hid(title)
+                link = (getattr(e, "link", None) or "").strip()
                 if hid in known:
+                    # backfill links onto items stored before the link field
+                    if link and not by_id[hid].get("link"):
+                        by_id[hid]["link"] = link
                     continue
                 dt = _entry_dt(e) or now
                 # clamp future-stamped items to now
@@ -97,6 +102,7 @@ def pull_and_update() -> dict:
                     "market": market,
                     "feed": name,
                     "title": title,
+                    "link": link,
                 })
                 known.add(hid)
                 added += 1
