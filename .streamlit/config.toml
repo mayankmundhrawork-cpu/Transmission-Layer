@@ -1,14 +1,14 @@
-# Transmission Layer — terminal theme.
-# Near-black background, off-white text, one restrained structural accent
-# (steel blue). Red/amber are NOT set here — they are reserved exclusively for
-# flag rendering in app.py, so a flag is always the loudest thing on screen.
+# Transmission Layer — terminal theme tokens (mirrors app.py TOKENS).
+# Near-true-black, mono everywhere, one steel accent. Red/amber are NOT set
+# here — reserved exclusively for flag rendering in app.py.
 
 [theme]
 base = "dark"
-backgroundColor = "#0b0d10"          # near-black canvas
-secondaryBackgroundColor = "#14171c" # panels / cards
-textColor = "#d8dde3"                # off-white primary text
-primaryColor = "#5a7ea6"             # structural accent (links, focus) — muted steel
+backgroundColor = "#060708"          # bg0 — page
+secondaryBackgroundColor = "#0d0f11" # bg1 — inputs / code blocks
+textColor = "#f2f4f6"                # g1 — primary text
+primaryColor = "#7d9cba"             # accent — structural only
+font = "monospace"
 
 [client]
 toolbarMode = "minimal"

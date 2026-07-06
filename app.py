@@ -34,11 +34,17 @@ FETCH_LOG = DATA_DIR / "fetch_log.json"
 DIGEST_TXT = DATA_DIR / "digest_latest.txt"
 PRICES_CSV = DATA_DIR / "prices.csv"
 
-# ── palette (red/amber are FLAGS ONLY — nothing decorative) ────────────
-BG, PANEL, TEXT = "#0b0d10", "#14171c", "#d8dde3"
-MUT, DIM, ACCENT = "#8b949e", "#5c636d", "#5a7ea6"
-GRIDLN, HEADLN = "#1b1f26", "#2a2f37"
-RED, AMBER = "#e5484d", "#e0a83b"
+# ── design tokens (see UI_NOTES.md; red/amber are FLAGS ONLY) ──────────
+BG = "#060708"       # bg0 — page, near-true-black neutral
+PANEL = "#0d0f11"    # bg1 — input fields / code blocks only
+TEXT = "#f2f4f6"     # g1 — primary text, price lines
+G2 = "#b8bfc7"       # g2 — secondary data
+MUT = "#7d8590"      # g3 — labels, metadata, axis text
+DIM = "#4e555e"      # g4 — calm sparklines, watchlist, empty states
+HEADLN = "#23272d"   # r1 — primary rules
+GRIDLN = "#141619"   # r2 — faint rules, chart grid
+ACCENT = "#7d9cba"   # desaturated steel — structural/nav only
+RED, AMBER = "#e5484d", "#e0a83b"   # flags only, nothing else
 MONO = "'JetBrains Mono','SF Mono','Menlo','Consolas',ui-monospace,monospace"
 
 HEADLINE_IDS = ["sp500", "vix", "ust_10y", "hy_oas", "dxy", "brent",
@@ -49,64 +55,132 @@ st.set_page_config(page_title="Transmission Layer", layout="wide")
 
 st.markdown(f"""
 <style>
-  .block-container {{ padding-top: 1.2rem; padding-bottom: 2rem; max-width: 100%; }}
-  [data-testid="stVerticalBlock"] {{ gap: 0.45rem; }}
-  .tl-title {{ font-size: 20px; font-weight: 700; color: {TEXT};
+  /* ── chrome kill: no Streamlit header, toolbar, footer, badges ─────── */
+  #MainMenu, footer, header[data-testid="stHeader"], [data-testid="stToolbar"],
+  [data-testid="stDecoration"], [data-testid="stStatusWidget"],
+  .viewerBadge_container__r5tak {{ display: none !important; }}
+
+  /* ── terminal base: one mono family everywhere, no rounding, no motion */
+  html, body, .stApp, [data-testid="stAppViewContainer"] *,
+  input, textarea, button, select {{
+    font-family: {MONO} !important;
+    font-variant-numeric: tabular-nums;
+  }}
+  * {{ border-radius: 0 !important; transition: color .08s, background .08s,
+       border-color .08s !important; animation: none !important; }}
+  .stApp {{ background: {BG}; }}
+  .block-container {{ padding-top: 0.7rem; padding-bottom: 2rem; max-width: 100%; }}
+  [data-testid="stVerticalBlock"] {{ gap: 0.4rem; }}
+  a {{ color: {ACCENT}; text-decoration: none; }}
+  a:hover {{ text-decoration: underline; }}
+
+  /* inputs / selects: flat, bg1, thin r1 border */
+  [data-testid="stTextInput"] input, [data-baseweb="select"] > div {{
+    background: {PANEL} !important; border: 1px solid {HEADLN} !important;
+    color: {TEXT} !important; font-size: 12.5px !important; min-height: 30px;
+  }}
+  [data-baseweb="select"] svg {{ fill: {MUT}; }}
+  [data-baseweb="popover"], [data-baseweb="menu"], [data-baseweb="menu"] ul {{
+    background: {PANEL} !important; border: 1px solid {HEADLN} !important;
+  }}
+  [data-baseweb="menu"] li {{ background: {PANEL} !important; color: {G2} !important;
+    font-size: 12.5px !important; }}
+  [data-baseweb="menu"] li:hover, [data-baseweb="menu"] [aria-selected="true"] {{
+    background: {HEADLN} !important; color: {TEXT} !important; }}
+
+  /* tabs: underline nav, microcaps */
+  button[data-baseweb="tab"] {{ background: transparent !important; color: {MUT} !important;
+    font-size: 10px !important; text-transform: uppercase; letter-spacing: 1.2px;
+    padding: 4px 12px !important; }}
+  button[data-baseweb="tab"][aria-selected="true"] {{ color: {ACCENT} !important; }}
+  [data-baseweb="tab-highlight"] {{ background: {ACCENT} !important; height: 2px; }}
+  [data-baseweb="tab-border"] {{ background: {HEADLN} !important; }}
+
+  /* expander + code: flat, thin borders */
+  [data-testid="stExpander"] {{ border: 1px solid {HEADLN} !important;
+    background: transparent !important; }}
+  [data-testid="stExpander"] summary {{ color: {MUT}; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 1px; }}
+  [data-testid="stCode"] pre, pre {{ background: {PANEL} !important;
+    border: 1px solid {HEADLN} !important; font-size: 11.5px !important; }}
+
+  /* ── status bar ────────────────────────────────────────────────────── */
+  .statusbar {{ display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 14px;
+    font-size: 11px; color: {MUT}; border-bottom: 1px solid {HEADLN};
+    padding-bottom: 6px; letter-spacing: .3px; }}
+  .statusbar .brand {{ color: {TEXT}; font-weight: 600; font-size: 12px;
+    letter-spacing: 1.5px; }}
+  .statusbar .sep {{ color: {HEADLN}; }}
+  .statusbar b {{ color: {TEXT}; font-weight: 600; }}
+  .statusbar .on {{ color: {TEXT}; }}
+  .statusbar .off {{ color: {DIM}; }}
+
+  /* temp compat (replaced by .statusbar in stage 2) */
+  .tl-title {{ font-size: 12px; font-weight: 600; letter-spacing: 1.5px; color: {TEXT};
                border-bottom: 1px solid {HEADLN}; padding-bottom: 4px; }}
-  .sec {{ color: {ACCENT}; font-size: 11px; font-weight: 700; text-transform: uppercase;
-          letter-spacing: 1px; margin: 14px 0 4px; border-bottom: 1px solid {GRIDLN};
-          padding-bottom: 3px; }}
-  .mono {{ font-family: {MONO}; font-variant-numeric: tabular-nums; }}
-  .metastrip {{ color: {MUT}; font-size: 11px; margin: 4px 0 6px; font-family: {MONO}; }}
+  .metastrip {{ color: {MUT}; font-size: 11px; margin: 4px 0 6px; }}
   .metastrip b {{ color: {TEXT}; }}
 
-  .strip {{ display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 6px; }}
-  .cell {{ background: {PANEL}; border: 1px solid {GRIDLN}; border-left: 2px solid {HEADLN};
-           padding: 5px 11px; min-width: 100px; }}
-  .cell .lbl {{ color: {MUT}; font-size: 10px; text-transform: uppercase; letter-spacing: .5px; }}
-  .cell .val {{ font-family: {MONO}; font-variant-numeric: tabular-nums; font-size: 15px; color: {TEXT}; }}
-  .cell .chg {{ font-family: {MONO}; font-variant-numeric: tabular-nums; font-size: 11px; color: {MUT}; }}
-  .cell.red {{ border-left-color: {RED}; }} .cell.amber {{ border-left-color: {AMBER}; }}
+  /* ── zone labels ───────────────────────────────────────────────────── */
+  .sec {{ color: {ACCENT}; font-size: 10px; font-weight: 600; text-transform: uppercase;
+          letter-spacing: 1.4px; margin: 16px 0 4px; border-bottom: 1px solid {HEADLN};
+          padding-bottom: 3px; }}
+  .mono {{ font-family: {MONO}; font-variant-numeric: tabular-nums; }}
 
+  /* ── headline strip: rules not boxes ───────────────────────────────── */
+  .strip {{ display: flex; flex-wrap: wrap; gap: 0; margin: 2px 0 4px; }}
+  .cell {{ border-left: 1px solid {HEADLN}; padding: 3px 14px 4px 10px; min-width: 96px; }}
+  .cell:first-child {{ border-left: none; padding-left: 0; }}
+  .cell .lbl {{ color: {MUT}; font-size: 10px; text-transform: uppercase;
+    letter-spacing: .8px; }}
+  .cell .val {{ font-size: 15px; color: {TEXT}; }}
+  .cell .chg {{ font-size: 10.5px; color: {MUT}; }}
+  .cell.red .lbl, .cell.red .val {{ color: {RED}; }}
+  .cell.amber .lbl, .cell.amber .val {{ color: {AMBER}; }}
+
+  /* ── tables ────────────────────────────────────────────────────────── */
   table.tl {{ border-collapse: collapse; width: 100%; }}
   table.tl th {{ color: {MUT}; font-size: 10px; font-weight: 600; text-transform: uppercase;
-                 letter-spacing: .5px; text-align: right; padding: 3px 9px;
+                 letter-spacing: 1px; text-align: right; padding: 3px 10px;
                  border-bottom: 1px solid {HEADLN}; white-space: nowrap; }}
-  table.tl td {{ font-size: 12.5px; padding: 2px 9px; border-bottom: 1px solid {GRIDLN};
-                 text-align: right; white-space: nowrap; color: {TEXT}; }}
+  table.tl td {{ font-size: 12.5px; line-height: 1.5; padding: 2px 10px;
+                 border-bottom: 1px solid {GRIDLN}; text-align: right;
+                 white-space: nowrap; color: {G2}; }}
   table.tl td.l, table.tl th.l {{ text-align: left; }}
   table.tl td.c {{ text-align: center; padding: 0 6px; }}
-  table.tl td.num {{ font-family: {MONO}; font-variant-numeric: tabular-nums; }}
+  table.tl td.num {{ font-variant-numeric: tabular-nums; }}
   table.tl td.note {{ text-align: left; color: {MUT}; font-size: 11px;
-                      white-space: normal; max-width: 420px; }}
+                      white-space: normal; max-width: 440px; }}
   table.tl td.id {{ text-align: left; color: {TEXT}; }}
-  table.tl a {{ color: {ACCENT}; text-decoration: none; }}
-  table.tl a:hover {{ text-decoration: underline; }}
   .spark {{ display: block; }}
 
-  .evt {{ background: {PANEL}; border: 1px solid {GRIDLN}; border-left: 3px solid {HEADLN};
-          padding: 10px 16px; margin-bottom: 7px; }}
-  .evt.red {{ border-left-color: {RED}; background: rgba(229,72,77,0.06); }}
-  .evt.amber {{ border-left-color: {AMBER}; background: rgba(224,168,59,0.05); }}
+  /* ── event blocks: left bar + thin rules, no boxes ─────────────────── */
+  .evt {{ border-top: 1px solid {HEADLN}; border-bottom: 1px solid {HEADLN};
+          border-left: 2px solid {HEADLN}; padding: 8px 16px; margin-bottom: 6px; }}
+  .evt.red {{ border-left-color: {RED}; background: rgba(229,72,77,0.055); }}
+  .evt.amber {{ border-left-color: {AMBER}; background: rgba(224,168,59,0.045); }}
   .evt .top {{ display: flex; align-items: baseline; gap: 14px; }}
-  .evt .score {{ font-family: {MONO}; font-size: 22px; color: {TEXT}; min-width: 56px; }}
-  .evt .lbl {{ font-size: 14px; color: {TEXT}; letter-spacing: .3px; }}
-  .evt .sub {{ color: {MUT}; font-size: 11px; margin-left: auto; font-family: {MONO}; }}
-  .evt .members {{ display: flex; gap: 20px; flex-wrap: wrap; margin-top: 8px; }}
-  .evt .mem {{ min-width: 150px; }}
-  .evt .mem .mid {{ font-size: 11.5px; color: {TEXT}; }}
-  .evt .mem .mz {{ font-family: {MONO}; font-size: 10px; color: {MUT}; }}
-  .evt .news {{ margin-top: 8px; border-top: 1px dashed {GRIDLN}; padding-top: 6px; }}
-  .evt .news .n {{ color: {MUT}; font-size: 11.5px; margin: 2px 0; }}
-  .evt .news .n b {{ color: {ACCENT}; font-weight: 600; }}
-  .watch {{ color: {DIM}; font-size: 11.5px; font-family: {MONO}; margin-top: 2px; }}
+  .evt .score {{ font-size: 20px; color: {TEXT}; min-width: 58px; }}
+  .evt .lbl {{ font-size: 12.5px; color: {TEXT}; letter-spacing: .4px;
+    text-transform: uppercase; }}
+  .evt .sub {{ color: {MUT}; font-size: 10.5px; margin-left: auto; text-align: right;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 42%; }}
+  .evt .members {{ display: flex; gap: 22px; flex-wrap: wrap; margin-top: 7px; }}
+  .evt .mem {{ min-width: 148px; }}
+  .evt .mem .mid {{ font-size: 11.5px; color: {G2}; }}
+  .evt .mem .mz {{ font-size: 10px; color: {MUT}; }}
+  .evt .news {{ margin-top: 7px; border-top: 1px solid {GRIDLN}; padding-top: 5px; }}
+  .evt .news .n {{ color: {MUT}; font-size: 12.5px; margin: 2px 0; }}
+  .evt .news .n b {{ color: {ACCENT}; font-weight: 600; font-size: 10.5px;
+    text-transform: uppercase; letter-spacing: .5px; }}
+  .watch {{ color: {DIM}; font-size: 11px; margin-top: 2px; }}
 
-  .calm {{ color: {DIM}; border: 1px dashed {GRIDLN}; padding: 14px; text-align: center;
-           font-size: 13px; letter-spacing: .3px; }}
-  .calm-sub {{ font-size: 11px; color: {DIM}; margin-top: 7px; }}
-  .recent {{ border-left: 2px solid {ACCENT}; background: {PANEL}; padding: 6px 12px;
-             margin-bottom: 8px; font-size: 12px; }}
-  .recent a {{ color: {ACCENT}; text-decoration: none; }}
+  /* ── calm / empty states: one muted line, same frame ───────────────── */
+  .calm {{ color: {DIM}; padding: 10px 0 12px; font-size: 12.5px;
+           border-bottom: 1px solid {GRIDLN}; }}
+  .calm-sub {{ font-size: 11px; color: {DIM}; margin-top: 5px; }}
+  .recent {{ border-left: 2px solid {ACCENT}; padding: 4px 12px;
+             margin-bottom: 8px; font-size: 12px; color: {G2}; }}
   .drill-cap {{ color: {MUT}; font-size: 11px; margin: 2px 0 6px; }}
   .uni-note {{ color: {MUT}; font-size: 11px; margin: 4px 0; }}
 </style>
@@ -316,7 +390,7 @@ st.markdown(f'<div class="strip">{"".join(cells)}</div>', unsafe_allow_html=True
 
 
 # ── 2) events — the board's loud layer ─────────────────────────────────
-st.markdown('<div class="sec">◈ Events</div>', unsafe_allow_html=True)
+st.markdown('<div class="sec">Events</div>', unsafe_allow_html=True)
 if not ev["events"]:
     st.markdown(
         f'<div class="calm">◦ No events — calm session.'
