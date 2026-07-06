@@ -267,7 +267,12 @@ def _age(ts_iso: str) -> str:
 
 
 @st.cache_data(show_spinner=False)
-def _load_prices() -> pd.DataFrame:
+def _load_prices(mtime: float) -> pd.DataFrame:
+    # mtime is the cache key: when the scheduled workflow lands a new
+    # prices.csv, the changed timestamp invalidates the cached frame. Without
+    # it a long-lived container can serve stale (or schema-old) history —
+    # numbers would update (engine reads the file directly) while sparklines
+    # silently wouldn't.
     if not PRICES_CSV.exists():
         return pd.DataFrame()
     return pd.read_csv(PRICES_CSV, index_col=0, parse_dates=True).sort_index()
@@ -357,7 +362,7 @@ def _drilldown_fig(sid: str, cur_flag: str) -> go.Figure:
 
 # ── load everything (read-only) ────────────────────────────────────────
 snap = build_snapshot()
-prices = _load_prices()
+prices = _load_prices(PRICES_CSV.stat().st_mtime if PRICES_CSV.exists() else 0.0)
 universe = load_universe()
 headlines = recent_items()
 
