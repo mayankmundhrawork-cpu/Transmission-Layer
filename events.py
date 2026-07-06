@@ -20,6 +20,7 @@ produces zero events — by design.
 from __future__ import annotations
 
 import math
+import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -81,6 +82,14 @@ def _aliases_for(sid: str, spec: dict | None, universe: dict) -> list[str]:
     return out
 
 
+def _term_matches(term: str, title_lower: str) -> bool:
+    """Multi-word terms match as substrings; single tokens require word
+    boundaries ('ather' must not match inside 'father' or 'weathers')."""
+    if " " in term or term.startswith("$"):
+        return term in title_lower
+    return re.search(rf"\b{re.escape(term)}\b", title_lower) is not None
+
+
 def _attach_news(member_ids: list[str], idx: dict, universe: dict,
                  headlines: list[dict]) -> list[dict]:
     now = datetime.now(timezone.utc)
@@ -95,7 +104,7 @@ def _attach_news(member_ids: list[str], idx: dict, universe: dict,
             tl = h["title"].lower()
             if h["id"] in seen:
                 continue
-            if any(t in tl for t in terms):
+            if any(_term_matches(t, tl) for t in terms):
                 seen.add(h["id"])
                 hits.append({"ts": h["ts"], "feed": h["feed"],
                              "title": h["title"], "series": sid})
