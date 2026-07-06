@@ -115,12 +115,6 @@ st.markdown(f"""
   .statusbar .on {{ color: {TEXT}; }}
   .statusbar .off {{ color: {DIM}; }}
 
-  /* temp compat (replaced by .statusbar in stage 2) */
-  .tl-title {{ font-size: 12px; font-weight: 600; letter-spacing: 1.5px; color: {TEXT};
-               border-bottom: 1px solid {HEADLN}; padding-bottom: 4px; }}
-  .metastrip {{ color: {MUT}; font-size: 11px; margin: 4px 0 6px; }}
-  .metastrip b {{ color: {TEXT}; }}
-
   /* ── zone labels ───────────────────────────────────────────────────── */
   .sec {{ color: {ACCENT}; font-size: 10px; font-weight: 600; text-transform: uppercase;
           letter-spacing: 1.4px; margin: 16px 0 4px; border-bottom: 1px solid {HEADLN};
@@ -234,6 +228,23 @@ def _spark(vals: list[float], flag: str, w: int = 96, h: int = 20) -> str:
             f'<circle cx="{lx}" cy="{ly}" r="1.6" fill="{color}"/></svg>')
 
 
+def _sessions() -> str:
+    """Market-session cluster for the status bar. Display-only UTC clock math
+    (approx cash-session hours, no holiday calendar). Open desk = bright."""
+    now = datetime.now(timezone.utc)
+    mins = now.hour * 60 + now.minute
+    weekday = now.weekday() < 5
+    desks = [("IST", 3 * 60 + 45, 10 * 60),      # NSE  03:45–10:00 UTC
+             ("LDN", 8 * 60, 16 * 60 + 30),      # LSE  08:00–16:30 UTC
+             ("NY",  14 * 60 + 30, 21 * 60)]     # NYSE 14:30–21:00 UTC
+    parts = []
+    for name, o, c in desks:
+        live = weekday and o <= mins < c
+        cls = "on" if live else "off"
+        parts.append(f'<span class="{cls}">{name} {"OPEN" if live else "CLSD"}</span>')
+    return " · ".join(parts)
+
+
 def _age(ts_iso: str) -> str:
     try:
         dt = datetime.fromisoformat(ts_iso)
@@ -338,10 +349,8 @@ prices = _load_prices()
 universe = load_universe()
 headlines = recent_items()
 
-st.markdown('<div class="tl-title">THE TRANSMISSION LAYER</div>', unsafe_allow_html=True)
-
 if "error" in snap:
-    st.error(snap["error"])
+    st.markdown(f'<div class="calm">{snap["error"]}</div>', unsafe_allow_html=True)
     st.stop()
 
 by_id = {r["id"]: r for r in snap["series"]}
@@ -362,14 +371,18 @@ if FETCH_LOG.exists():
 ev = build_events(snap, prices, headlines)
 counts = ev["counts"]
 
+sep = '<span class="sep">│</span>'
 st.markdown(
-    f'<div class="metastrip">as of <b>{snap.get("last_data_date") or "·"}</b> · '
-    f'universe <b>{len(snap["series"])}</b> '
-    f'(backbone {n_backbone} + news-tracked <b>{n_dyn}</b>/{UNIVERSE_CAP}) · '
-    f'<span style="color:{RED}">red {red_n}</span> · '
-    f'<span style="color:{AMBER}">amber {amber_n}</span> · '
-    f'events <b>{len(ev["events"])}</b> (suppressed {counts.get("suppressed", 0)}) · '
-    f'headlines {len(headlines)} · fetch {fetched_at or "·"}</div>',
+    f'<div class="statusbar">'
+    f'<span class="brand">TRANSMISSION LAYER</span>{sep}'
+    f'AS OF <b>{snap.get("last_data_date") or "·"}</b>{sep}'
+    f'<b>{len(snap["series"])}</b> SERIES ({n_backbone}+{n_dyn}/{UNIVERSE_CAP}){sep}'
+    f'<span style="color:{RED}">●</span> {red_n} RED&ensp;'
+    f'<span style="color:{AMBER}">●</span> {amber_n} AMBER{sep}'
+    f'<b>{len(ev["events"])}</b> EVENTS ({counts.get("suppressed", 0)} SUPPR){sep}'
+    f'FETCH {fetched_at or "·"}Z{sep}'
+    f'{_sessions()}'
+    f'</div>',
     unsafe_allow_html=True)
 
 
