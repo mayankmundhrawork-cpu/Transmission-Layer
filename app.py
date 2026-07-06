@@ -101,8 +101,16 @@ st.markdown(f"""
     background: transparent !important; }}
   [data-testid="stExpander"] summary {{ color: {MUT}; font-size: 11px;
     text-transform: uppercase; letter-spacing: 1px; }}
+  /* the global mono override turns icon-font ligatures into literal text
+     ("arrow_right") — terminals don't need chevrons, so hide icon glyphs */
+  [data-testid="stIconMaterial"], .material-symbols-rounded {{ display: none !important; }}
   [data-testid="stCode"] pre, pre {{ background: {PANEL} !important;
     border: 1px solid {HEADLN} !important; font-size: 11.5px !important; }}
+
+  /* plotly modebar: mute the icons, kill the plate */
+  .modebar {{ background: transparent !important; }}
+  .modebar-btn path {{ fill: {MUT} !important; }}
+  .modebar-btn:hover path {{ fill: {TEXT} !important; }}
 
   /* ── status bar ────────────────────────────────────────────────────── */
   .statusbar {{ display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 14px;
@@ -309,10 +317,10 @@ def _drilldown_fig(sid: str, cur_flag: str) -> go.Figure:
                              name="20d hi/lo", hoverinfo="skip"))
     fig.add_trace(go.Scatter(x=idx, y=rng_lo, line=dict(color=ACCENT, width=0.7, dash="dot"),
                              showlegend=False, hoverinfo="skip"))
-    fig.add_trace(go.Scatter(x=idx, y=mean, line=dict(color=MUT, width=1, dash="dash"),
+    fig.add_trace(go.Scatter(x=idx, y=mean, line=dict(color=DIM, width=1, dash="dash"),
                              name="20d mean", hoverinfo="skip"))
-    fig.add_trace(go.Scatter(x=idx, y=ma20, line=dict(color="#6aa0c8", width=1), name="MA20"))
-    fig.add_trace(go.Scatter(x=idx, y=ma50, line=dict(color="#7d8590", width=1), name="MA50"))
+    fig.add_trace(go.Scatter(x=idx, y=ma20, line=dict(color=MUT, width=1), name="MA20"))
+    fig.add_trace(go.Scatter(x=idx, y=ma50, line=dict(color=DIM, width=1), name="MA50"))
     fig.add_trace(go.Scatter(x=idx, y=price, line=dict(color=TEXT, width=1.6),
                              name=sid, customdata=z,
                              hovertemplate="%{x|%Y-%m-%d}<br>" + sid +
@@ -334,12 +342,16 @@ def _drilldown_fig(sid: str, cur_flag: str) -> go.Figure:
                                          line=dict(width=2, color=last_color)),
                              name="latest", hovertemplate="latest %{y:.2f}<extra></extra>"))
     fig.update_layout(template="plotly_dark", height=400, paper_bgcolor=BG,
-                      plot_bgcolor=BG, font=dict(family=PLOT_FONT, color=TEXT, size=11),
-                      margin=dict(l=44, r=12, t=28, b=28), hovermode="x unified",
+                      plot_bgcolor=BG, font=dict(family=PLOT_FONT, color=MUT, size=10),
+                      margin=dict(l=44, r=12, t=26, b=26), hovermode="x unified",
+                      hoverlabel=dict(bgcolor=PANEL, bordercolor=HEADLN,
+                                      font=dict(family=PLOT_FONT, size=10, color=TEXT)),
                       legend=dict(orientation="h", yanchor="bottom", y=1.0, x=0,
-                                  font=dict(size=9), bgcolor="rgba(0,0,0,0)"),
-                      xaxis=dict(gridcolor=GRIDLN, zeroline=False),
-                      yaxis=dict(gridcolor=GRIDLN, zeroline=False))
+                                  font=dict(size=9, color=MUT), bgcolor="rgba(0,0,0,0)"),
+                      xaxis=dict(gridcolor=GRIDLN, zeroline=False, linecolor=HEADLN,
+                                 tickfont=dict(size=10)),
+                      yaxis=dict(gridcolor=GRIDLN, zeroline=False, linecolor=HEADLN,
+                                 tickfont=dict(size=10)))
     return fig
 
 
@@ -462,7 +474,8 @@ if chartable:
                 unsafe_allow_html=True)
     st.plotly_chart(_drilldown_fig(sel, by_id[sel]["flag"]),
                     use_container_width=True,
-                    config={"displayModeBar": True, "scrollZoom": True})
+                    config={"displayModeBar": "hover", "scrollZoom": True,
+                            "displaylogo": False})
 
 
 # ── 4) universe — what's tracked and why ───────────────────────────────
