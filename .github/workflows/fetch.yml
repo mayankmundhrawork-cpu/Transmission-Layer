@@ -2,9 +2,12 @@ name: Scheduled data fetch
 
 on:
   schedule:
-    # Weekdays only. Cron runs in UTC.
-    - cron: "0 12 * * 1-5"    # ~post India market close
-    - cron: "30 21 * * 1-5"   # ~post US market close
+    # Weekdays only. Cron runs in UTC. Every 2h across the global trading day
+    # keeps the board near-live (fetch upserts provisional intraday prices);
+    # the 21:30 anchor lands the official US closes.
+    # Budget: ~10 runs/day x ~3 min x 22 days ~= 660 Actions-minutes/month.
+    - cron: "15 4,6,8,10,12,14,16,18,20 * * 1-5"
+    - cron: "30 21 * * 1-5"   # post-US-close anchor
   workflow_dispatch: {}
 
 # Least-privilege: only this job needs write to push data back.

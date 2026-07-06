@@ -237,17 +237,19 @@ def _spark(vals: list[float], flag: str, w: int = 96, h: int = 20) -> str:
 
 
 def _sessions() -> str:
-    """Market-session cluster for the status bar. Display-only UTC clock math
-    (approx cash-session hours, no holiday calendar). Open desk = bright."""
+    """Market-session cluster for the status bar. Display-only clock math in
+    each exchange's local timezone (DST-correct via zoneinfo; no holiday
+    calendar). Open desk = bright."""
+    from zoneinfo import ZoneInfo
     now = datetime.now(timezone.utc)
-    mins = now.hour * 60 + now.minute
-    weekday = now.weekday() < 5
-    desks = [("IST", 3 * 60 + 45, 10 * 60),      # NSE  03:45–10:00 UTC
-             ("LDN", 8 * 60, 16 * 60 + 30),      # LSE  08:00–16:30 UTC
-             ("NY",  14 * 60 + 30, 21 * 60)]     # NYSE 14:30–21:00 UTC
+    desks = [("IST", "Asia/Kolkata",    (9, 15),  (15, 30)),   # NSE
+             ("LDN", "Europe/London",   (8, 0),   (16, 30)),   # LSE
+             ("NY",  "America/New_York", (9, 30), (16, 0))]    # NYSE
     parts = []
-    for name, o, c in desks:
-        live = weekday and o <= mins < c
+    for name, tz, (oh, om), (ch, cm) in desks:
+        loc = now.astimezone(ZoneInfo(tz))
+        mins = loc.hour * 60 + loc.minute
+        live = loc.weekday() < 5 and (oh * 60 + om) <= mins < (ch * 60 + cm)
         cls = "on" if live else "off"
         parts.append(f'<span class="{cls}">{name} {"OPEN" if live else "CLSD"}</span>')
     return " · ".join(parts)

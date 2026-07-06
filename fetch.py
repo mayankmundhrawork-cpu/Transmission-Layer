@@ -151,6 +151,47 @@ def fetch_yf_batch_tails(symbols: list[str]) -> dict[str, pd.Series]:
     return out
 
 
+def fetch_yf_batch_live(symbols: list[str]) -> dict[str, tuple[pd.Timestamp, float]]:
+    """Near-realtime last prices via today's 15-minute bars, one batched call.
+
+    Returns {symbol: (bar_date, last_price)}. Used to upsert a PROVISIONAL
+    row for the in-progress session; the official daily close overwrites it
+    on the next run (fresh-wins merge). Failures return {} — the board then
+    simply shows the last completed close, never crashes.
+    """
+    import yfinance as yf
+    out: dict[str, tuple[pd.Timestamp, float]] = {}
+    if not symbols:
+        return out
+    try:
+        df = yf.download(symbols, period="1d", interval="15m", progress=False,
+                         auto_adjust=False, threads=False, group_by="column")
+    except Exception as e:
+        print(f"  WARN live batch failed ({symbols[0]}..): {str(e)[:100]}",
+              file=sys.stderr)
+        return out
+    if df is None or df.empty:
+        return out
+    try:
+        close = df["Close"] if isinstance(df.columns, pd.MultiIndex) else df[["Close"]]
+    except Exception:
+        return out
+    for sym in symbols:
+        try:
+            s = close[sym].dropna() if isinstance(close, pd.DataFrame) and \
+                sym in close.columns else (close.squeeze().dropna()
+                                           if len(symbols) == 1 else None)
+            if s is None or s.empty:
+                continue
+            ts = s.index[-1]
+            if getattr(ts, "tzinfo", None) is not None:
+                ts = ts.tz_convert("UTC").tz_localize(None)
+            out[sym] = (pd.Timestamp(ts).normalize(), float(s.iloc[-1]))
+        except Exception:
+            continue
+    return out
+
+
 # ── FRED ───────────────────────────────────────────────────────────────
 def fetch_fred(series_id: str) -> pd.Series:
     end = date.today()
@@ -297,6 +338,28 @@ def main() -> int:
         print("no data at all — aborting without writing", file=sys.stderr)
         return 1
 
+    # 4b · near-realtime upsert: today's provisional row from 15m bars.
+    # Only moves a series FORWARD (bar date >= its last daily row); the
+    # official close overwrites the provisional value on the next run.
+    live_syms = [s["symbol"] for s in yf_specs if s["id"] in wide.columns]
+    live_updates = 0
+    for i in range(0, len(live_syms), BATCH_SIZE):
+        chunk = live_syms[i:i + BATCH_SIZE]
+        for sym, (bar_date, px) in fetch_yf_batch_live(chunk).items():
+            sid = sym_to_id[sym]
+            base = wide[sid].dropna()
+            if not base.empty and bar_date < base.index.max():
+                continue  # never rewrite history with an intraday print
+            wide.loc[bar_date, sid] = px
+            if sid in log and log[sid].get("status") == "OK":
+                log[sid]["last_date"] = bar_date.strftime("%Y-%m-%d")
+                log[sid]["last_value"] = px
+                log[sid]["live"] = True
+            live_updates += 1
+        time.sleep(BATCH_SLEEP)
+    wide = wide.sort_index()
+    print(f"live upsert: {live_updates} provisional last-prices applied")
+
     # 5 · derived series over the merged frame
     for spec in derived_specs:
         sid = spec["id"]
@@ -327,6 +390,7 @@ def main() -> int:
         "fetched_at": datetime.utcnow().isoformat() + "Z",
         "registry_series": len(registry),
         "tails": len(tails), "backfills": len(backfills),
+        "live_updates": live_updates,
         "deferred_backfills": [s["id"] for s in deferred_backfills],
         "legacy_columns": legacy,
         "series": log,
