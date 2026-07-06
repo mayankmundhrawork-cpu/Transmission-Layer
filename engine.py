@@ -18,7 +18,7 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
-from config import LINKED_GROUPS, SERIES
+from registry import LINKED_GROUPS, load_registry
 
 DATA_DIR = Path(__file__).parent / "data"
 PRICES_CSV = DATA_DIR / "prices.csv"
@@ -59,7 +59,10 @@ def _pct_change(series: pd.Series, n: int) -> float:
     s = series.dropna()
     if len(s) < n + 1:
         return float("nan")
-    return float((s.iloc[-1] / s.iloc[-1 - n] - 1) * 100.0)
+    prev = s.iloc[-1 - n]
+    if abs(prev) < 1e-9:  # zero-crossing spreads: % change is meaningless
+        return float("nan")
+    return float((s.iloc[-1] / prev - 1) * 100.0)
 
 
 def _framework_reasons(spec: dict, series: pd.Series, snap: dict[str, float]) -> list[str]:
@@ -117,12 +120,15 @@ def _framework_reasons(spec: dict, series: pd.Series, snap: dict[str, float]) ->
     return reasons
 
 
-def _flag_level(z: float, pct: float, framework_hit: bool) -> str:
+def _flag_level(z: float, pct: float, framework_hit: bool,
+                amber_z: float = AMBER_Z) -> str:
+    """Unchanged v1 semantics; `amber_z` allows a stricter per-series amber bar
+    (news-admitted names use settings.DYNAMIC_AMBER_Z via their spec)."""
     z_abs = abs(z) if not np.isnan(z) else 0.0
     pct_ext = (not np.isnan(pct)) and (pct <= 5 or pct >= 95)
-    if z_abs >= RED_Z or (framework_hit and z_abs >= AMBER_Z):
+    if z_abs >= RED_Z or (framework_hit and z_abs >= amber_z):
         return "red"
-    if z_abs >= AMBER_Z or pct_ext or framework_hit:
+    if z_abs >= amber_z or pct_ext or framework_hit:
         return "amber"
     return "none"
 
@@ -135,8 +141,9 @@ def build_snapshot() -> dict[str, Any]:
 
     rows: list[dict[str, Any]] = []
     by_id: dict[str, dict[str, Any]] = {}
+    series_specs = load_registry()
 
-    for spec in SERIES:
+    for spec in series_specs:
         sid = spec["id"]
         if sid not in df.columns:
             row = {
@@ -166,6 +173,7 @@ def build_snapshot() -> dict[str, Any]:
         pct1y = _percentile(s, PCT_WIN)
 
         sparse = len(s) < MIN_OBS_FOR_FLAGS
+        amber_bar = spec.get("amber_z") or AMBER_Z
         if sparse:
             level = "none"
             all_reasons = [f"sparse ({len(s)} obs < {MIN_OBS_FOR_FLAGS}) — flagging suppressed"]
@@ -175,18 +183,22 @@ def build_snapshot() -> dict[str, Any]:
             reasons = _framework_reasons(spec, s, snap)
 
             z_reasons: list[str] = []
-            if not np.isnan(z20) and abs(z20) >= AMBER_Z:
+            if not np.isnan(z20) and abs(z20) >= amber_bar:
                 z_reasons.append(f"|z20|={abs(z20):.2f}")
             if not np.isnan(pct1y) and (pct1y <= 5 or pct1y >= 95):
                 z_reasons.append(f"1y-pct={pct1y:.0f}")
 
-            level = _flag_level(z20, pct1y, framework_hit=bool(reasons))
+            level = _flag_level(z20, pct1y, framework_hit=bool(reasons),
+                                amber_z=amber_bar)
             all_reasons = reasons + z_reasons
             framework_hit = bool(reasons)
 
         row = {
             "id": sid,
             "market": spec["market"],
+            "name": spec.get("name") or sid,
+            "symbol": spec.get("symbol"),
+            "dynamic": bool(spec.get("dynamic")),
             "last": float(s.iloc[-1]),
             "d1_pct": None if np.isnan(d1) else d1,
             "d5_pct": None if np.isnan(d5) else d5,
