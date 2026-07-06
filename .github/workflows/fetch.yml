@@ -63,6 +63,17 @@ jobs:
         # RSS failures are handled inside digest.py.
         run: python digest.py
 
+      - name: Overnight research pass
+        # relations + analogues + research bundles + theses, all precomputed
+        # so the board is zero-work at open. FREE LLM endpoints only: set
+        # GROQ_API_KEY (free tier) or OPENROUTER_API_KEY (:free models) to
+        # enable prose theses; with neither, the rule-based skeleton renders.
+        # Fail-soft: any stage failing still lets the run commit the rest.
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python overnight.py
+
       - name: Commit and push updated data
         run: |
           set -e
@@ -70,7 +81,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add data/prices.csv data/fetch_log.json data/digest_latest.txt \
-                  data/universe.json data/headlines.json data/resolution_cache.json
+                  data/universe.json data/headlines.json data/resolution_cache.json \
+                  data/relations.json data/research_bundles.json data/theses.json \
+                  data/pattern_cache.json data/articles
 
           # Nothing staged → no commit, no push, clean exit.
           if git diff --cached --quiet; then

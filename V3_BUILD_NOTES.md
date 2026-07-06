@@ -1,9 +1,79 @@
-# V3 Build Notes — The Self-Assembling Universe (v4 codebase)
+# Build Notes
 
-> **READ THIS FIRST.** The board no longer has a hardcoded universe. It now
+---
+
+# V5 — Research Accelerator (newest section)
+
+> Five capabilities that compress the gap between "opening the board" and
+> "writing the first paragraph": per-event theses, deep-link research bundles,
+> correlation/lead-lag substrate, evidence-pinning scratchpad, historical
+> pattern replay. **Zero-budget constraint honoured throughout: no paid LLM
+> integration exists anywhere in this codebase.**
+
+## What was built (all verified live)
+
+| Feature | Module | State file | Verified |
+|---|---|---|---|
+| 3 · correlations + lead-lag | `relations.py` | `data/relations.json` | 462 pairs/61 series; sp500↔vix −0.79, brent↔wti 0.955; laggards for the indices event = gold/USTs/HY-OAS |
+| 5 · pattern search + replay | `patterns.py` | `data/pattern_cache.json` | "ust_10y 1d≥2%" → 14 episodes, gold +2.41% median +20d (0.77 hit); analogues per event |
+| 2 · research bundles | `research.py` (+`headlines.py` link field) | `data/research_bundles.json`, `data/articles/` | 13 articles fetched w/ clean excerpts; FRED/Yahoo/CFTC primary links; zero refetches on second run |
+| 1 · theses | `thesis.py` | `data/theses.json` | 8 skeleton theses keyless; free-endpoint routing in place |
+| 4 · scratchpad | `scratchpad.py` | `data/scratchpad.json` | pin→note→export loop; citations + ?-notes → open questions |
+| orchestrator | `overnight.py` | — | full pass end-to-end at $0.00 |
+
+## LLM posture (the zero-budget design)
+
+- `settings.get_llm_backend()` routes to **free endpoints only**: Groq free
+  tier (`llama-3.3-70b-versatile`) first, then OpenRouter `:free` models.
+  Plain `requests`, OpenAI-compatible; no SDK, no paid path, `cost_usd` is
+  0.0 by construction and logged per run in `data/theses.json → ledger`.
+- **No key → skeleton theses**: laggards ("watch next") and nearest
+  analogues render from pure math; mechanism/gap say "unassessed (LLM off)"
+  honestly. The board is fully functional keyless.
+- **To turn prose theses on for free**: create a free Groq account, add
+  `GROQ_API_KEY` as a repo secret. Caps: 8 theses/run, 900 tokens each,
+  cache-keyed so unchanged events never re-call.
+
+## Decisions & compromises
+
+- **Correlation windows**: 60d primary (matches the events layer) + 252d
+  context; lead-lag searched at 1–5 sessions over the 252d window. NaN→0
+  standardisation slightly shrinks ragged-column correlations (accepted,
+  documented in `relations.py`).
+- **Analogue similarity** uses each member's *last valid* z (holiday gaps:
+  CBOT closed while NY trades) — ≤2-session skew accepted.
+- **Article extraction** is stdlib-only (`html.parser`, ¶-density ≥40 chars).
+  Paywalls: pre-wall text is kept (`status=partial`) per your instruction;
+  hard walls (401/402/403) are negative-cached as `skipped`. No external
+  reader services, no new dependencies.
+- **Scratchpad persistence**: disk state, perfect locally; on Streamlit
+  Cloud the FS is ephemeral across redeploys — **the exported brief is the
+  durable artifact; export before you close.** "clear pad" is two-step and
+  auto-snapshots to `data/scratchpad_backup.json`. True cloud persistence
+  via GitHub-API commits (needs a PAT secret) is a documented later toggle.
+- **Streamlit DOM automation is jittery** (a parallel session fired a stray
+  pin during testing) — the pad logic itself verified clean programmatically.
+
+## Costs per run
+
+$0.00. Article fetches ≤20/run (13 on first live run, 0 after cache).
+Free-LLM calls ≤8/run when a key exists; Groq free tier is rate-limited but
+comfortably covers 8 calls × ~11 runs/day.
+
+## Tune after a week
+
+- `LAGGARD_MIN_CORR` (0.50) / `LAGGARD_MAX_Z` (1.0) — laggard list too
+  long/short.
+- `ANALOGUE_TOP` (5) and `PATTERN_MIN_GAP` (5 sessions).
+- Whether skeleton theses are enough, or the free Groq key earns its place.
+- `ARTICLE_FETCH_MAX_PER_RUN` if bundles feel thin on multi-headline days.
+
+---
+
+# V3/V4 — The Self-Assembling Universe
+
+> **The board no longer has a hardcoded universe.** It
 > assembles what it tracks from the news, on top of a 56-series macro backbone.
-> Everything below is committed locally and **NOT pushed** — your path to push,
-> verify and curate is at the bottom.
 
 ---
 
