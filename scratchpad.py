@@ -68,6 +68,11 @@ def remove_pin(pin_id: str) -> None:
 
 
 def clear_pad() -> None:
+    # safety: snapshot before wiping, so an accidental clear is recoverable
+    pad = load_pad()
+    if pad.get("pins"):
+        (DATA_DIR / "scratchpad_backup.json").write_text(
+            json.dumps(pad, indent=1), encoding="utf-8")
     save_pad({"pins": []})
 
 

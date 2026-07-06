@@ -25,9 +25,15 @@ from digest import CHAT_PROMPT
 from engine import AMBER_Z, RED_Z, Z_WIN_SHORT, build_snapshot
 from events import build_events
 from headlines import recent_items
+from patterns import run_query
 from registry import CLASSES, load_universe
+from relations import load_relations, neighbours
 from release_calendar import build_calendar
+from research import event_key, load_bundles
+from scratchpad import (add_pin, clear_pad, export_markdown, load_pad,
+                        remove_pin, set_note)
 from settings import UNIVERSE_CAP
+from thesis import load_theses
 
 DATA_DIR = Path(__file__).parent / "data"
 FETCH_LOG = DATA_DIR / "fetch_log.json"
@@ -176,6 +182,33 @@ st.markdown(f"""
   .evt .news .n b {{ color: {ACCENT}; font-weight: 600; font-size: 10.5px;
     text-transform: uppercase; letter-spacing: .5px; }}
   .watch {{ color: {DIM}; font-size: 11px; margin-top: 2px; }}
+
+  /* ── research accelerator surfaces ─────────────────────────────────── */
+  .thesis {{ border-left: 2px solid {HEADLN}; margin: -3px 0 10px 0;
+             padding: 6px 16px 8px; }}
+  .thesis .mech {{ color: {G2}; font-size: 12.5px; }}
+  .thesis .gap {{ color: {TEXT}; font-size: 12.5px; margin-top: 4px; }}
+  .thesis .gap b {{ color: {ACCENT}; font-size: 10px; text-transform: uppercase;
+                    letter-spacing: 1px; }}
+  .thesis .watch {{ color: {MUT}; font-size: 11.5px; margin-top: 4px; }}
+  .thesis .watch .wid {{ color: {G2}; }}
+  .thesis .tag {{ color: {DIM}; font-size: 10px; text-transform: uppercase;
+                  letter-spacing: .8px; margin-top: 5px; }}
+  .bundle-row {{ font-size: 12px; color: {G2}; margin: 3px 0; }}
+  .bundle-row .st {{ color: {DIM}; font-size: 10px; text-transform: uppercase; }}
+  .bundle-ex {{ color: {MUT}; font-size: 11.5px; margin: 2px 0 6px 14px;
+                border-left: 1px solid {GRIDLN}; padding-left: 10px;
+                white-space: normal; }}
+  .pinrow {{ margin: 2px 0 10px; }}
+
+  /* streamlit buttons: flat terminal */
+  .stButton button, .stDownloadButton button {{
+    background: {PANEL} !important; color: {MUT} !important;
+    border: 1px solid {HEADLN} !important; font-size: 10px !important;
+    text-transform: uppercase; letter-spacing: 1px; padding: 2px 12px !important;
+    min-height: 26px !important; }}
+  .stButton button:hover, .stDownloadButton button:hover {{
+    color: {TEXT} !important; border-color: {MUT} !important; }}
 
   /* ── calm / empty states: one muted line, same frame ───────────────── */
   .calm {{ color: {DIM}; padding: 10px 0 12px; font-size: 12.5px;
@@ -367,6 +400,9 @@ snap = build_snapshot()
 prices = _load_prices(PRICES_CSV.stat().st_mtime if PRICES_CSV.exists() else 0.0)
 universe = load_universe()
 headlines = recent_items()
+theses_state = load_theses()
+bundles_state = load_bundles()
+relations = load_relations()
 
 if "error" in snap:
     st.markdown(f'<div class="calm">{snap["error"]}</div>', unsafe_allow_html=True)
@@ -431,8 +467,7 @@ if not ev["events"]:
         f'an empty board is the correct resting state</div></div>',
         unsafe_allow_html=True)
 else:
-    html = []
-    for e in ev["events"]:
+    for ei, e in enumerate(ev["events"]):
         mems = []
         for m in e["members"][:8]:
             sp = _spark(_trend(prices, m["id"]), m["flag"], w=130, h=24)
@@ -447,13 +482,76 @@ else:
         news_block = f'<div class="news">{news}</div>' if news else ""
         reasons = "; ".join(dict.fromkeys(
             r for m in e["members"] for r in m["reasons"][:2]))[:180]
-        html.append(
+        st.markdown(
             f'<div class="evt {e["level"]}"><div class="top">'
             f'<span class="score">{e["score"]:.2f}</span>'
             f'<span class="lbl">{_flag_dot(e["level"])} {e["label"]}</span>'
             f'<span class="sub">{reasons}</span></div>'
-            f'<div class="members">{"".join(mems)}</div>{news_block}</div>')
-    st.markdown("".join(html), unsafe_allow_html=True)
+            f'<div class="members">{"".join(mems)}</div>{news_block}</div>',
+            unsafe_allow_html=True)
+
+        # thesis block (overnight-computed; skeleton when no free-LLM key)
+        ekey = event_key([m["id"] for m in e["members"]])
+        trec = theses_state.get("theses", {}).get(ekey)
+        brec = bundles_state.get("bundles", {}).get(ekey, {})
+        if trec:
+            th = trec["thesis"]
+            watch = ""
+            if th.get("responders"):
+                items = " · ".join(
+                    f'<span class="wid">{r["id"]}</span> {r.get("expect","")}'
+                    f' ({r.get("status","")})' for r in th["responders"][:5])
+                watch = f'<div class="watch">watch next: {items}</div>'
+            one = f'<div class="gap">“{th["one_liner"]}”</div>' if th.get("one_liner") else ""
+            st.markdown(
+                f'<div class="thesis"><div class="mech">{th.get("mechanism","")}</div>'
+                f'<div class="gap"><b>gap</b> {th.get("gap","")}</div>{one}{watch}'
+                f'<div class="tag">thesis · {trec.get("model","skeleton")} · '
+                f'{(trec.get("generated_at") or "")[:16]}Z · confidence '
+                f'{th.get("confidence","·")}</div></div>',
+                unsafe_allow_html=True)
+
+        # research bundle
+        if brec:
+            with st.expander(f"research bundle · {e['label']}"):
+                for a in brec.get("articles", []):
+                    link = f' · <a href="{a["url"]}" target="_blank">open</a>' if a.get("url") else ""
+                    st.markdown(
+                        f'<div class="bundle-row"><span class="st">[{a.get("status","")}]'
+                        f'</span> {a["title"]} <span class="st">{a["feed"]} · '
+                        f'{_age(a.get("ts",""))}</span>{link}</div>',
+                        unsafe_allow_html=True)
+                    if a.get("excerpt"):
+                        st.markdown(f'<div class="bundle-ex">{a["excerpt"][:500]}</div>',
+                                    unsafe_allow_html=True)
+                srcs = " · ".join(
+                    f'<a href="{p["url"]}" target="_blank">{p["name"]}</a>'
+                    for p in brec.get("primary_sources", []))
+                if srcs:
+                    st.markdown(f'<div class="bundle-row"><span class="st">primary</span> '
+                                f'{srcs}</div>', unsafe_allow_html=True)
+                ana = brec.get("analogues", {})
+                if ana.get("analogues"):
+                    line = " · ".join(f'{a["date"]} (d {a["distance"]})'
+                                      for a in ana["analogues"][:5])
+                    st.markdown(f'<div class="bundle-row"><span class="st">analogues'
+                                f'</span> {line}</div>', unsafe_allow_html=True)
+                cits = [a["citation"] for a in brec.get("articles", []) if a.get("citation")]
+                if cits:
+                    st.code("\n".join(cits), language="text")
+
+        # pin (evidence travels with the pin)
+        if st.button(f"pin · {e['label'][:32]}", key=f"pin_evt_{ei}"):
+            add_pin("event", e["label"], {
+                "id": ekey, "label": e["label"], "score": e["score"],
+                "level": e["level"], "as_of": snap.get("last_data_date"),
+                "members": [{k: m.get(k) for k in
+                             ("id", "last", "z20", "d1_pct")} for m in e["members"]],
+                "thesis": (trec or {}).get("thesis", {}),
+                "citations": [a["citation"] for a in (brec.get("articles") or [])
+                              if a.get("citation")],
+            })
+            st.rerun()
 
 if ev["watchlist"]:
     wl = " · ".join(f'{w["label"]} {w["score"]:.1f}' for w in ev["watchlist"][:12])
@@ -483,6 +581,176 @@ if chartable:
                     use_container_width=True,
                     config={"displayModeBar": "hover", "scrollZoom": True,
                             "displaylogo": False})
+
+
+# ── 3b) relations — correlation neighbours & lead-lag ─────────────────
+st.markdown('<div class="sec">Relations · correlation &amp; lead-lag</div>',
+            unsafe_allow_html=True)
+rel_series = relations.get("series", [])
+if not rel_series:
+    st.markdown('<div class="calm">No relations state — run overnight.py.</div>',
+                unsafe_allow_html=True)
+else:
+    rc1, rc2 = st.columns([1, 3])
+    with rc1:
+        rsel = st.selectbox("series", rel_series,
+                            index=rel_series.index("sp500") if "sp500" in rel_series else 0,
+                            label_visibility="collapsed", key="rel_sel")
+    nbs = neighbours(rsel, relations)
+    if not nbs:
+        st.markdown('<div class="calm">No neighbours above the correlation floor.</div>',
+                    unsafe_allow_html=True)
+    else:
+        head = ('<tr><th class="l">neighbour</th><th>rho60</th><th>rho252</th>'
+                '<th class="l">lead-lag</th><th>own z20</th></tr>')
+        rows = []
+        for nb in nbs:
+            r = by_id.get(nb["id"], {})
+            ll = "·"
+            if nb.get("lead_rho") and abs(nb["lead_rho"]) >= 0.35:
+                who = nb["leader"] if nb.get("leader") in (rsel, nb["id"]) else None
+                if who:
+                    ll = (f'{"this leads" if who == rsel else "leads this"} '
+                          f'+{nb["lead_lag"]}d (rho {nb["lead_rho"]})')
+            rows.append(
+                f'<tr><td class="id">{nb["id"]}</td>'
+                f'<td class="num">{_fmt(nb["rho60"], 2)}</td>'
+                f'<td class="num">{_fmt(nb["rho252"], 2)}</td>'
+                f'<td class="l note">{ll}</td>'
+                f'<td class="num">{_fmt(r.get("z20"), 2)}</td></tr>')
+        st.markdown(f'<table class="tl">{head}{"".join(rows)}</table>',
+                    unsafe_allow_html=True)
+        # lag-shifted overlay for the top neighbour
+        top_nb = nbs[0]
+        if rsel in prices.columns and top_nb["id"] in prices.columns:
+            a = prices[rsel].dropna().tail(252)
+            b = prices[top_nb["id"]].dropna().tail(252)
+            lagk = top_nb.get("lead_lag") or 0
+            if top_nb.get("leader") == rsel and lagk:
+                b = b.shift(-lagk)
+            fig = go.Figure()
+            fig.add_trace(go.Scatter(x=a.index, y=a / a.iloc[0] * 100,
+                                     line=dict(color=TEXT, width=1.4), name=rsel))
+            fig.add_trace(go.Scatter(x=b.index, y=b / b.dropna().iloc[0] * 100,
+                                     line=dict(color=MUT, width=1.1),
+                                     name=f'{top_nb["id"]}'
+                                          + (f' (shift {lagk}d)' if lagk else "")))
+            fig.update_layout(template="plotly_dark", height=230, paper_bgcolor=BG,
+                              plot_bgcolor=BG,
+                              font=dict(family=PLOT_FONT, color=MUT, size=10),
+                              margin=dict(l=40, r=10, t=8, b=22), showlegend=True,
+                              legend=dict(orientation="h", font=dict(size=9),
+                                          bgcolor="rgba(0,0,0,0)"),
+                              xaxis=dict(gridcolor=GRIDLN, zeroline=False),
+                              yaxis=dict(gridcolor=GRIDLN, zeroline=False))
+            st.plotly_chart(fig, use_container_width=True,
+                            config={"displayModeBar": False})
+            st.markdown(f'<div class="drill-cap">rebased=100 · strongest neighbour '
+                        f'overlay · rho60 {top_nb["rho60"]}</div>', unsafe_allow_html=True)
+
+# ── 3c) patterns — historical query & precedent ────────────────────────
+st.markdown('<div class="sec">Patterns · historical replay</div>', unsafe_allow_html=True)
+all_ids = [r["id"] for r in snap["series"] if r["id"] in prices.columns]
+qc = st.columns([2, 1.2, 0.7, 1, 2.2, 0.8])
+with qc[0]:
+    q_series = st.selectbox("series", all_ids, key="pat_series",
+                            label_visibility="collapsed")
+with qc[1]:
+    q_metric = st.selectbox("metric", ["z20", "d1pct", "level", "pctile"],
+                            key="pat_metric", label_visibility="collapsed")
+with qc[2]:
+    q_op = st.selectbox("op", [">=", "<="], key="pat_op",
+                        label_visibility="collapsed")
+with qc[3]:
+    q_val = st.number_input("value", value=2.0, step=0.5, key="pat_val",
+                            label_visibility="collapsed")
+with qc[4]:
+    q_resp = st.multiselect("responses", all_ids,
+                            default=[x for x in ("sp500", "dxy", "comex_gold", "hy_oas")
+                                     if x in all_ids],
+                            key="pat_resp", label_visibility="collapsed")
+with qc[5]:
+    q_go = st.button("run", key="pat_go")
+
+if q_go and q_resp:
+    q = run_query([{"series": q_series, "metric": q_metric,
+                    "op": q_op, "value": float(q_val)}], q_resp, prices)
+    st.session_state["pat_last"] = q
+q = st.session_state.get("pat_last")
+if q:
+    cond = q["conditions"][0]
+    qdesc = f'{cond["series"]} {cond["metric"]} {cond["op"]} {cond["value"]}'
+    st.markdown(f'<div class="drill-cap">{qdesc} → <b>{q["n_matches"]}</b> episodes '
+                f'({", ".join(q["match_dates"][-6:])}{" …" if q["n_matches"] > 6 else ""})'
+                f'</div>', unsafe_allow_html=True)
+    if q["n_matches"] == 0:
+        st.markdown('<div class="calm">No historical episodes match.</div>',
+                    unsafe_allow_html=True)
+    else:
+        head = ('<tr><th class="l">response</th><th class="l">aftermath path (+20d)</th>'
+                '<th>+5d med</th><th>+20d med</th><th>hit↑</th><th>range +20d</th></tr>')
+        rows = []
+        for rid, r in q["aftermath"].items():
+            s5 = r["stats"].get("+5d", {})
+            s20 = r["stats"].get("+20d", {})
+            sp = _spark(r.get("median_path", []), "none", w=150, h=22)
+            rows.append(
+                f'<tr><td class="id">{rid}</td><td class="l">{sp}</td>'
+                f'<td class="num">{_fmt(s5.get("median_pct"), 2, "%")}</td>'
+                f'<td class="num">{_fmt(s20.get("median_pct"), 2, "%")}</td>'
+                f'<td class="num">{_fmt(s20.get("hit_rate_up"), 2)}</td>'
+                f'<td class="num">{_fmt(s20.get("min_pct"), 1)} / '
+                f'{_fmt(s20.get("max_pct"), 1)}</td></tr>')
+        st.markdown(f'<table class="tl">{head}{"".join(rows)}</table>',
+                    unsafe_allow_html=True)
+        if st.button("pin precedent", key="pat_pin"):
+            add_pin("precedent", qdesc, {
+                "date": f'{q["n_matches"]} episodes to {q["data_date"]}',
+                "distance": "query", "query": qdesc,
+                "aftermath": {rid: r["stats"].get("+20d", {})
+                              for rid, r in q["aftermath"].items()},
+            })
+            st.rerun()
+
+# ── 3d) scratchpad ─────────────────────────────────────────────────────
+st.markdown('<div class="sec">Scratchpad</div>', unsafe_allow_html=True)
+pad = load_pad()
+if not pad["pins"]:
+    st.markdown('<div class="calm">No pins. Pin events, precedents or series '
+                'anywhere on the board; evidence travels with the pin.</div>',
+                unsafe_allow_html=True)
+else:
+    for p in pad["pins"]:
+        pl = p["payload"]
+        title = {"event": pl.get("label"), "precedent": pl.get("query") or pl.get("date"),
+                 "series": pl.get("id"), "headline": pl.get("title"),
+                 "source": pl.get("name")}.get(p["kind"], p["kind"])
+        c1, c2, c3 = st.columns([2.4, 3, 0.6])
+        with c1:
+            st.markdown(f'<div class="bundle-row"><span class="st">[{p["kind"]}]</span> '
+                        f'{str(title)[:60]}</div>', unsafe_allow_html=True)
+        with c2:
+            note = st.text_input("note", value=p.get("note", ""),
+                                 key=f'note_{p["pin_id"]}',
+                                 label_visibility="collapsed",
+                                 placeholder="note / open question …")
+            if note != p.get("note", ""):
+                set_note(p["pin_id"], note)
+        with c3:
+            if st.button("✕", key=f'rm_{p["pin_id"]}'):
+                remove_pin(p["pin_id"])
+                st.rerun()
+    e1, e2, e3 = st.columns([1.2, 1.6, 3.5])
+    with e1:
+        st.download_button("export brief", export_markdown(),
+                           file_name=f"brief_{datetime.now(timezone.utc):%Y%m%d}.md",
+                           mime="text/markdown", key="pad_export")
+    with e2:
+        # two-step clear: an accidental click must not wipe a morning's pins
+        confirm = st.checkbox("confirm clear", key="pad_clear_confirm")
+        if st.button("clear pad", key="pad_clear", disabled=not confirm):
+            clear_pad()
+            st.rerun()
 
 
 # ── 4) universe — what's tracked and why ───────────────────────────────
