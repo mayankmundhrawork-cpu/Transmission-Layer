@@ -14,6 +14,36 @@
   "symbol": "ATHERENERG.NS",
   "via": "search"
  },
+ "blackrock": {
+  "cls": "equity",
+  "exchange": "NYQ",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-07T19:12:38.637008+00:00",
+  "shortname": "BlackRock, Inc.",
+  "symbol": "BLK",
+  "via": "search"
+ },
+ "defence": {
+  "cls": "equity",
+  "exchange": "OQB",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-07T19:12:38.940283+00:00",
+  "shortname": "AEGIS CRITICAL ENERGY DEFENCE C",
+  "symbol": "QESSF",
+  "via": "search"
+ },
+ "global": {
+  "cls": "equity",
+  "exchange": "NMS",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-07T19:12:38.789025+00:00",
+  "shortname": "Coinbase Global, Inc.",
+  "symbol": "COIN",
+  "via": "search"
+ },
  "hdfc bank": {
   "cls": "equity",
   "exchange": "NYQ",
@@ -24,6 +54,11 @@
   "symbol": "HDB",
   "via": "search"
  },
+ "india s": {
+  "ok": false,
+  "resolved_at": "2026-07-07T19:12:37.706645+00:00",
+  "via": "no-acceptable-match"
+ },
  "indusind bank": {
   "cls": "equity",
   "exchange": "BSE",
@@ -32,6 +67,26 @@
   "resolved_at": "2026-07-06T17:30:37.725121+00:00",
   "shortname": "INDUSIND BANK LTD.",
   "symbol": "INDUSINDBK.BO",
+  "via": "search"
+ },
+ "jefferies": {
+  "cls": "equity",
+  "exchange": "NYQ",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-07T19:12:37.566618+00:00",
+  "shortname": "Jefferies Financial Group Inc.",
+  "symbol": "JEF",
+  "via": "search"
+ },
+ "kalyan jewellers": {
+  "cls": "equity",
+  "exchange": "NSI",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-07T19:12:38.259527+00:00",
+  "shortname": "KALYAN JEWELLERS IND LTD",
+  "symbol": "KALYANKJIL.NS",
   "via": "search"
  },
  "laser power infra": {
@@ -49,10 +104,55 @@
   "symbol": "MU",
   "via": "search"
  },
+ "morgan stanley": {
+  "cls": "equity",
+  "exchange": "NYQ",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-07T19:12:37.866030+00:00",
+  "shortname": "Morgan Stanley",
+  "symbol": "MS",
+  "via": "search"
+ },
+ "ncdex": {
+  "ok": false,
+  "resolved_at": "2026-07-07T19:12:38.379303+00:00",
+  "via": "no-acceptable-match"
+ },
+ "ola electric": {
+  "cls": "equity",
+  "exchange": "NSI",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-07T19:12:39.071675+00:00",
+  "shortname": "OLA ELECTRIC MOBILITY LTD",
+  "symbol": "OLAELEC.NS",
+  "via": "search"
+ },
  "rentomojo": {
   "ok": false,
   "resolved_at": "2026-07-06T17:30:37.446743+00:00",
   "via": "no-acceptable-match"
+ },
+ "rivian": {
+  "cls": "equity",
+  "exchange": "NMS",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-07T19:12:38.126319+00:00",
+  "shortname": "Rivian Automotive, Inc.",
+  "symbol": "RIVN",
+  "via": "search"
+ },
+ "swiggy": {
+  "cls": "equity",
+  "exchange": "NSI",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-07T19:12:37.419469+00:00",
+  "shortname": "SWIGGY LIMITED",
+  "symbol": "SWIGGY.NS",
+  "via": "search"
  },
  "terawulf": {
   "cls": "equity",
@@ -63,6 +163,11 @@
   "shortname": "TeraWulf Inc.",
   "symbol": "WULF",
   "via": "search"
+ },
+ "titan": {
+  "ok": false,
+  "resolved_at": "2026-07-07T19:12:37.991792+00:00",
+  "via": "no-acceptable-match"
  },
  "trent": {
   "ok": false,

@@ -88,22 +88,27 @@ def pull_and_update() -> dict:
                 hid = _hid(title)
                 link = (getattr(e, "link", None) or "").strip()
                 if hid in known:
-                    # backfill links onto items stored before the link field
-                    if link and not by_id[hid].get("link"):
-                        by_id[hid]["link"] = link
+                    # backfill links onto items stored before the link field.
+                    # (hid can be in `known` but not `by_id` when the same
+                    # title arrives from two feeds in ONE run — guard it.)
+                    rec = by_id.get(hid)
+                    if rec is not None and link and not rec.get("link"):
+                        rec["link"] = link
                     continue
                 dt = _entry_dt(e) or now
                 # clamp future-stamped items to now
                 if dt > now:
                     dt = now
-                store["items"].append({
+                item = {
                     "id": hid,
                     "ts": dt.isoformat(),
                     "market": market,
                     "feed": name,
                     "title": title,
                     "link": link,
-                })
+                }
+                store["items"].append(item)
+                by_id[hid] = item  # keep the lookup consistent within a run
                 known.add(hid)
                 added += 1
             report["ok"].append({"feed": name, "new": added})

@@ -168,8 +168,8 @@ def update_universe() -> dict:
         res = resolve(norm, c["display"], ticker_hint=c.get("ticker_hint"),
                       cls_hint=c.get("cls_hint"), cache=cache,
                       allow_network=budget > 0)
-        if not res.get("cached"):
-            budget -= 1
+        if not res.get("cached") and not res.get("deferred"):
+            budget -= 1  # only a real network attempt spends budget
         if res.get("deferred"):
             deferred.append(c["display"])
             continue
