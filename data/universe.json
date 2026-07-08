@@ -1,24 +1,13 @@
 {
  "candidates": {
-  "abu dhabi": {
-   "display": "Abu Dhabi",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Why Abu Dhabi Is Building the World's First Integrated Energy-AI Economy",
-     "ts": "2026-07-06T23:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
-  },
   "adani": {
    "display": "Adani Enterprises",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Adani Enterprises shares trade flat after closure of  \u20b91500 crore QIP. Do you own?",
+     "ts": "2026-07-08T05:14:22+00:00"
+    },
     {
      "feed": "BusinessLine Mkts",
      "title": "Adani Enterprises raises \u20b915,000 cr as QIP draws 3.8x subscription",
@@ -26,11 +15,60 @@
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "BusinessLine Mkts",
+    "Mint Markets"
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.6993
+  },
+  "adani ent share price": {
+   "display": "Adani Ent Share Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Adani Ent Share Price Live Updates: Adani Enterprises Shows Minor Price Movement",
+     "ts": "2026-07-08T02:35:41+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "adani ports sez price": {
+   "display": "Adani Ports SEZ Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Adani Ports SEZ Share Price Live Updates: Adani Ports SEZ Price Movement",
+     "ts": "2026-07-08T02:34:52+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "adani ports sez share": {
+   "display": "Adani Ports SEZ Share",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Adani Ports SEZ Share Price Live Updates: Adani Ports SEZ Price Movement",
+     "ts": "2026-07-08T02:34:52+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "adani power": {
    "display": "Adani Power",
@@ -52,7 +90,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.9745
+   "score": 1.7912
+  },
+  "adani shows minor": {
+   "display": "Adani Enterprises Shows Minor",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Adani Ent Share Price Live Updates: Adani Enterprises Shows Minor Price Movement",
+     "ts": "2026-07-08T02:35:41+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "adnoc signs": {
    "display": "ADNOC Signs",
@@ -68,7 +122,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "adobe": {
    "display": "Adobe",
@@ -84,71 +138,7 @@
    ],
    "first_seen": "2026-07-07T20:32:40.135854+00:00",
    "last_seen": "2026-07-07T20:32:40.135854+00:00",
-   "score": 1.0
-  },
-  "adon agro commodities": {
-   "display": "Adon Agro Commodities",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Adon Agro Commodities share price hits upper circuit after listing at a 12% premium; details here",
-     "ts": "2026-07-06T00:20:15+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "advent convention and hotels": {
-   "display": "Advent Convention and Hotels",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Prestige Estates buys 50% stake in Advent Convention and Hotels International for Rs 504 crore",
-     "ts": "2026-07-06T06:46:50+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "advisers": {
-   "display": "Advisers",
-   "evidence": [
-    {
-     "feed": "MarketWatch Top",
-     "title": "\u2018I\u2019ve plenty of time on my hands\u2019: Advisers bombard me with offers of free steak dinners. Is it wrong to go for the food?",
-     "ts": "2026-07-06T10:45:00+00:00"
-    }
-   ],
-   "feeds": [
-    "MarketWatch Top"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "agencies": {
-   "display": "Agencies",
-   "evidence": [
-    {
-     "feed": "Federal Reserve",
-     "title": "Agencies release list of distressed or underserved nonmetropolitan middle-income geographies",
-     "ts": "2026-06-30T08:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "Federal Reserve"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.9072
   },
   "ahead of market": {
    "display": "Ahead of Market",
@@ -169,23 +159,55 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.7581
+   "score": 1.5949
   },
-  "airtel bajaj fin": {
-   "display": "Airtel Bajaj Fin",
+  "ai boom": {
+   "display": "AI Boom",
    "evidence": [
     {
-     "feed": "BusinessLine Mkts",
-     "title": "Mcap of 6 of top-10 most valued firms surges \u20b91 lakh cr; Airtel, Bajaj Fin top winners",
-     "ts": "2026-07-05T01:43:31+00:00"
+     "feed": "OilPrice",
+     "title": "Why the AI Boom Is About to Break the U.S. Power Grid",
+     "ts": "2026-07-08T00:00:00+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "OilPrice"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "ai related": {
+   "display": "AI-related",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "AI-related debt sells off sharply as Amazon looks to borrow another $25 billion",
+     "ts": "2026-07-07T22:35:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "airtel": {
+   "display": "Airtel",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Airtel to Trent: 44 cos likely to report double-digit profit slump in Q1. Are your stocks on the list?",
+     "ts": "2026-07-08T04:33:56+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "alcoa": {
    "display": "Alcoa",
@@ -201,27 +223,16 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T19:15:24.550163+00:00",
-   "score": 1.7585
-  },
-  "almonty": {
-   "display": "Almonty",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "Almonty kicks off processing at Sangdong tungsten mine",
-     "ts": "2026-07-02T10:29:40+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 1.5953
   },
   "amazon": {
    "display": "Amazon",
    "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "AI-related debt sells off sharply as Amazon looks to borrow another $25 billion",
+     "ts": "2026-07-07T22:35:00+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Amazon aims to raise $25 billion from bond sale, Bloomberg News reports",
@@ -229,59 +240,12 @@
     }
    ],
    "feeds": [
-    "ET Markets"
+    "ET Markets",
+    "MarketWatch Top"
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "analyst": {
-   "display": "Analyst",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "OPEC+ to prioritise oil supply over price floor until Hormuz normalises; Brent likely to stay below $85: Analyst",
-     "ts": "2026-07-06T08:57:08+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "analysts": {
-   "display": "Analysts",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Stock markets to track crude oil prices, global trends, TCS earnings this week: Analysts",
-     "ts": "2026-07-05T02:44:20+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "anand rathi s jigar patel": {
-   "display": "Anand Rathi's Jigar Patel",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Stocks to buy for short term: Maruti, Tata Steel among 3 shares Anand Rathi's Jigar Patel recommends for next 1-2 weeks",
-     "ts": "2026-07-05T21:44:12+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.8955
   },
   "andy burnham": {
    "display": "Andy Burnham",
@@ -297,7 +261,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "ankara summit": {
    "display": "Ankara Summit",
@@ -313,39 +277,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "anthropic": {
-   "display": "Anthropic",
-   "evidence": [
-    {
-     "feed": "MarketWatch Top",
-     "title": "TeraWulf\u2019s stock gains after a $19 billion deal with Anthropic",
-     "ts": "2026-07-06T20:25:00+00:00"
-    }
-   ],
-   "feeds": [
-    "MarketWatch Top"
-   ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
-  },
-  "arctic oil drilling": {
-   "display": "Arctic Oil Drilling",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "More European Investors Oppose Norway\u2019s Push for Arctic Oil Drilling",
-     "ts": "2026-07-06T03:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "ascent fund iii": {
    "display": "Ascent Fund III",
@@ -361,7 +293,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "ashish kacholia backed": {
    "display": "Ashish Kacholia-backed",
@@ -377,23 +309,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "ashish kacholia madhusudan kela": {
-   "display": "Ashish Kacholia Madhusudan Kela",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Ashish Kacholia, Madhusudan Kela lead ace investors\u2019 comeback after March rout",
-     "ts": "2026-07-06T04:26:22+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "ashneer grover": {
    "display": "Ashneer Grover",
@@ -409,39 +325,39 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "asia pacific focused": {
-   "display": "Asia Pacific-focused",
+  "asian paints daily price": {
+   "display": "Asian Paints Daily Price",
    "evidence": [
     {
-     "feed": "BusinessLine Mkts",
-     "title": "Standard Chartered, BlackRock launch Asia Pacific-focused multi-asset fund",
-     "ts": "2026-07-05T23:05:39+00:00"
+     "feed": "ET Markets",
+     "title": "Asian Paints Share Price Live Updates: Asian Paints Daily Price Update",
+     "ts": "2026-07-08T02:33:31+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "ET Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
-  "asian paints": {
-   "display": "Asian Paints",
+  "asian paints share price": {
+   "display": "Asian Paints Share Price",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Asian Paints declares board meeting date to announce Q1 results 2026",
-     "ts": "2026-07-06T04:04:08+00:00"
+     "feed": "ET Markets",
+     "title": "Asian Paints Share Price Live Updates: Asian Paints Daily Price Update",
+     "ts": "2026-07-08T02:33:31+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "ET Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "assays": {
    "display": "Assays",
@@ -457,23 +373,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "atlantic strategic": {
-   "display": "Atlantic Strategic",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "Atlantic Strategic confirms viability, 12-month pathway for monazite processing plant",
-     "ts": "2026-06-30T10:07:04+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "aye finance aum": {
    "display": "Aye Finance AUM",
@@ -489,7 +389,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "b arizona": {
    "display": "B Arizona",
@@ -505,7 +405,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "b capital": {
    "display": "B Capital",
@@ -521,39 +421,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "b gold": {
-   "display": "B Gold",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "B2Gold\u2019s new CEO gets his Goose test",
-     "ts": "2026-07-06T08:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "b senegal": {
-   "display": "B Senegal",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "Fortuna lifts West Africa growth with $1B Senegal gold project",
-     "ts": "2026-06-30T09:27:33+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "bajaj auto": {
    "display": "Bajaj Auto",
@@ -569,55 +437,39 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "barrel": {
-   "display": "Barrel",
+  "bajaj finserv s current trading": {
+   "display": "Bajaj Finserv's Current Trading",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "Russia\u2019s Oil Windfall Vanishes as Urals Crashes to $42 a Barrel",
-     "ts": "2026-07-06T12:00:00+00:00"
+     "feed": "ET Markets",
+     "title": "Bajaj Finserv Share Price Live Updates: Bajaj Finserv's Current Trading Status",
+     "ts": "2026-07-08T02:33:00+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "ET Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
-  "be overblown top consultancy": {
-   "display": "Be Overblown Top Consultancy",
+  "bajaj finserv share price": {
+   "display": "Bajaj Finserv Share Price",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "Fear of an Oil Glut May Be Overblown, Top Consultancy Says",
-     "ts": "2026-07-06T09:00:00+00:00"
+     "feed": "ET Markets",
+     "title": "Bajaj Finserv Share Price Live Updates: Bajaj Finserv's Current Trading Status",
+     "ts": "2026-07-08T02:33:00+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "ET Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "betting billions": {
-   "display": "Betting Billions",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Shell And ExxonMobil Are Betting Billions On Nigeria's Deepwater Comeback",
-     "ts": "2026-07-06T21:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "bheek": {
    "display": "Bheek",
@@ -633,39 +485,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "bhp invent mit": {
-   "display": "BHP Invent MIT",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "BHP Invent, MIT spinout trial copper and gold recovery technology from waste streams",
-     "ts": "2026-06-30T07:25:41+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "binance": {
-   "display": "Binance",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "How SpaceX investors minted money before and after historic $75 billion IPO on Binance",
-     "ts": "2026-07-06T05:41:25+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "binance research": {
    "display": "Binance Research",
@@ -681,23 +501,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "black giant": {
-   "display": "Black Giant",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "EnergyX\u00a0secures $225M investment to advance Black Giant lithium project in Chile",
-     "ts": "2026-07-06T07:54:00+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "block billion east africa": {
    "display": "Block Billion East Africa",
@@ -713,7 +517,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "bloomberg news": {
    "display": "Bloomberg News",
@@ -729,7 +533,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "blue jet healthcare": {
    "display": "Blue Jet Healthcare",
@@ -745,39 +549,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "bnp paribas s a bnp": {
-   "display": "BNP Paribas S.A. BNP",
-   "evidence": [
-    {
-     "feed": "Federal Reserve",
-     "title": "Federal Reserve Board issues enforcement action with Small Business Bank and announces termination enforcement actions with BNP Paribas S.A., BNP Paribas USA, Inc., BNP Paribas Securities Corp., and Community Bankshares, Inc.",
-     "ts": "2026-07-02T09:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "Federal Reserve"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "boliden": {
-   "display": "Boliden",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "Boliden in talks to buy Votorantim\u2019s controlling stake in Nexa",
-     "ts": "2026-07-02T16:20:15+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "bond": {
    "display": "Bond",
@@ -799,135 +571,103 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.7581
+   "score": 1.5949
   },
-  "britain s ftse": {
-   "display": "Britain's FTSE",
+  "bpcl s stock recommendation": {
+   "display": "BPCL's Stock Recommendation",
    "evidence": [
     {
      "feed": "ET Markets",
-     "title": "Britain's FTSE indexes slip as miners offset financial gains",
-     "ts": "2026-07-06T06:07:02+00:00"
+     "title": "BPCL Share Price Live Updates: BPCL's Stock Recommendation from Elara Capital",
+     "ts": "2026-07-08T02:32:38+00:00"
     }
    ],
    "feeds": [
     "ET Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
-  "broadcom": {
-   "display": "Broadcom",
+  "bpcl share price": {
+   "display": "BPCL Share Price",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Wall Street: S&amp;P 500, Nasdaq surge as chip stocks rebound, Broadcom jumps 5.7%, Micron adds 2.8%",
-     "ts": "2026-07-06T08:32:22+00:00"
+     "feed": "ET Markets",
+     "title": "BPCL Share Price Live Updates: BPCL's Stock Recommendation from Elara Capital",
+     "ts": "2026-07-08T02:32:38+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "ET Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
-  "brokerages": {
-   "display": "Brokerages",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Q1FY27 IT earnings preview: Brokerages see mixed quarter as AI, macro headwinds weigh on growth",
-     "ts": "2026-07-06T08:57:40+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "bse nse and mufg": {
-   "display": "BSE NSE and MUFG",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Knack Packaging IPO allotment date today. GMP, steps to check share allotment status online on BSE, NSE and MUFG Intime",
-     "ts": "2026-07-06T02:19:52+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "building": {
-   "display": "Building",
+  "break": {
+   "display": "Break",
    "evidence": [
     {
      "feed": "OilPrice",
-     "title": "Why Abu Dhabi Is Building the World's First Integrated Energy-AI Economy",
-     "ts": "2026-07-06T23:00:00+00:00"
+     "title": "Why the AI Boom Is About to Break the U.S. Power Grid",
+     "ts": "2026-07-08T00:00:00+00:00"
     }
    ],
    "feeds": [
     "OilPrice"
    ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
-  "bullion cues barriers": {
-   "display": "Bullion Cues Barriers",
+  "breakout": {
+   "display": "Breakout",
    "evidence": [
     {
-     "feed": "BusinessLine Mkts",
-     "title": "Bullion Cues: Barriers ahead",
-     "ts": "2026-07-04T10:43:22+00:00"
+     "feed": "Mint Markets",
+     "title": "Breakout stocks to buy or sell: Sumeet Bagadia recommends five shares to buy today - 8 July 2026",
+     "ts": "2026-07-08T01:06:35+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "Mint Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
-  "business": {
-   "display": "Business",
+  "britannia s price and volatility": {
+   "display": "Britannia's Price and Volatility",
    "evidence": [
     {
      "feed": "ET Markets",
-     "title": "Titan Q1 update: Business grows 41% as jewellery, watches sales gain pace",
-     "ts": "2026-07-06T09:30:10+00:00"
+     "title": "Britannia Share Price Live Updates: Britannia's Price and Volatility Overview",
+     "ts": "2026-07-08T02:36:00+00:00"
     }
    ],
    "feeds": [
     "ET Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
-  "business bank": {
-   "display": "Business Bank",
+  "britannia share price": {
+   "display": "Britannia Share Price",
    "evidence": [
     {
-     "feed": "Federal Reserve",
-     "title": "Federal Reserve Board issues enforcement action with Small Business Bank and announces termination enforcement actions with BNP Paribas S.A., BNP Paribas USA, Inc., BNP Paribas Securities Corp., and Community Bankshares, Inc.",
-     "ts": "2026-07-02T09:30:00+00:00"
+     "feed": "ET Markets",
+     "title": "Britannia Share Price Live Updates: Britannia's Price and Volatility Overview",
+     "ts": "2026-07-08T02:36:00+00:00"
     }
    ],
    "feeds": [
-    "Federal Reserve"
+    "ET Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "bust": {
    "display": "Bust",
@@ -943,7 +683,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "bypass hormuz": {
    "display": "Bypass Hormuz",
@@ -959,23 +699,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "c m red chris": {
-   "display": "C M Red Chris",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "Ottawa\u2019s C$500M Red Chris bet tests British Columbia grid",
-     "ts": "2026-07-03T11:42:21+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "call adani power buy": {
    "display": "Call Adani Power Buy",
@@ -991,7 +715,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "call mankind pharma add": {
    "display": "Call Mankind Pharma Add",
@@ -1007,103 +731,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "call sobha buy": {
-   "display": "Call Sobha Buy",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Broker\u2019s Call: Sobha (Buy)",
-     "ts": "2026-07-06T05:33:19+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "call vinati organics accumulate": {
-   "display": "Call Vinati Organics Accumulate",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Broker\u2019s Call: Vinati Organics (Accumulate)",
-     "ts": "2026-07-06T08:54:28+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "cameco": {
-   "display": "Cameco",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "Cameco shuts Cigar Lake mine on Orano mill disruption",
-     "ts": "2026-07-01T10:16:43+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "carbon markets just had": {
-   "display": "Carbon Markets Just Had",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Carbon Markets Just Had Their Most Important Moment in Years",
-     "ts": "2026-07-06T11:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "case": {
-   "display": "Case",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Iran War Strengthens the Case for Renewables and Storage",
-     "ts": "2026-07-06T13:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
-  },
-  "castlelake": {
-   "display": "Castlelake",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "EasyJet shares rally 10% on potential $7.3 billion acquisition by Castlelake",
-     "ts": "2026-07-06T05:26:29+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "caterpillar": {
    "display": "Caterpillar",
@@ -1119,7 +747,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "cemindia projects": {
    "display": "Cemindia Projects",
@@ -1135,59 +763,16 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "central": {
-   "display": "Central",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Central banks bought 41 tonne of gold in May, says WGC",
-     "ts": "2026-07-03T10:08:52+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "cerro colorado": {
-   "display": "Cerro Colorado",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "BHP seeks to restart Cerro Colorado mine with $1.5B investment",
-     "ts": "2026-07-02T12:13:35+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "cg power ntpc green": {
-   "display": "CG Power NTPC Green",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "15 stocks to Watch July 6: CG Power , NTPC Green, Oswal Pumps, Jyoti, NBCC, Prestige Estates, Stanley Lifestyle",
-     "ts": "2026-07-06T02:07:23+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "check": {
    "display": "Check",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 8 July",
+     "ts": "2026-07-08T01:59:03+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Wipro to declare Q1FY27 results, interim dividend on this date. Check details",
@@ -1204,40 +789,8 @@
     "Mint Markets"
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.7581
-  },
-  "chile": {
-   "display": "Chile",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "EnergyX\u00a0secures $225M investment to advance Black Giant lithium project in Chile",
-     "ts": "2026-07-06T07:54:00+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "china citic tower": {
-   "display": "China Citic Tower",
-   "evidence": [
-    {
-     "feed": "SCMP Economy",
-     "title": "China Citic Tower plane crash pilot \u2018suffered from anxiety\u2019",
-     "ts": "2026-07-02T02:55:54+00:00"
-    }
-   ],
-   "feeds": [
-    "SCMP Economy"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 2.5949
   },
   "choice": {
    "display": "Choice",
@@ -1253,39 +806,39 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "christine lagarde interview": {
-   "display": "Christine Lagarde Interview",
+  "cipla s price movement": {
+   "display": "Cipla's Price Movement",
    "evidence": [
     {
-     "feed": "ECB press",
-     "title": "Christine Lagarde: Interview with Les \u00c9chos",
-     "ts": "2026-07-02T15:30:00+00:00"
+     "feed": "ET Markets",
+     "title": "Cipla Share Price Live Updates: Cipla's Price Movement Today",
+     "ts": "2026-07-08T02:33:35+00:00"
     }
    ],
    "feeds": [
-    "ECB press"
+    "ET Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
-  "cigar lake": {
-   "display": "Cigar Lake",
+  "cipla share price": {
+   "display": "Cipla Share Price",
    "evidence": [
     {
-     "feed": "Mining.com",
-     "title": "Cameco shuts Cigar Lake mine on Orano mill disruption",
-     "ts": "2026-07-01T10:16:43+00:00"
+     "feed": "ET Markets",
+     "title": "Cipla Share Price Live Updates: Cipla's Price Movement Today",
+     "ts": "2026-07-08T02:33:35+00:00"
     }
    ],
    "feeds": [
-    "Mining.com"
+    "ET Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "closing": {
    "display": "Closing",
@@ -1301,11 +854,48 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T19:15:24.550163+00:00",
-   "score": 1.7585
+   "score": 1.5953
+  },
+  "coal india price and": {
+   "display": "Coal India Price and",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Coal India Share Price Live Updates: Coal India  Price and Volatility Overview",
+     "ts": "2026-07-08T02:33:00+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "coal india share price": {
+   "display": "Coal India Share Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Coal India Share Price Live Updates: Coal India  Price and Volatility Overview",
+     "ts": "2026-07-08T02:33:00+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "cochin shipyard": {
    "display": "Cochin Shipyard",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Cochin Shipyard shares dip 2% as govt\u2019s OFS opens for retail investors today",
+     "ts": "2026-07-08T03:41:04+00:00"
+    },
     {
      "feed": "BusinessLine Mkts",
      "title": "Cochin Shipyard shares drop 4% as Government OFS opens at floor price of \u20b91,400",
@@ -1322,12 +912,17 @@
     "ET Markets"
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.7581
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 2.5949
   },
   "cochin shipyard ofs": {
    "display": "Cochin Shipyard OFS",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Cochin Shipyard OFS opens today for retail investors. Should you participate in this defence stock offer?",
+     "ts": "2026-07-08T03:50:43+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Cochin Shipyard OFS subscribed 3.52 times on Day 1; retail investors get to bid tomorrow",
@@ -1335,11 +930,12 @@
     }
    ],
    "feeds": [
-    "ET Markets"
+    "ET Markets",
+    "Mint Markets"
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.8955
   },
   "cochin shipyard ofs govt": {
    "display": "Cochin Shipyard OFS Govt",
@@ -1355,7 +951,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "cochin shipyard premier energies": {
+   "display": "Cochin Shipyard Premier Energies",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Stocks to watch: Cochin Shipyard, Premier Energies, ideaForge Tech among shares in focus today; check list here",
+     "ts": "2026-07-08T02:13:42+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "cochin shipyard tanfac central": {
    "display": "Cochin Shipyard Tanfac Central",
@@ -1371,87 +983,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "colorado river crisis": {
-   "display": "Colorado River Crisis",
+  "come sooner than traders": {
+   "display": "Come Sooner Than Traders",
    "evidence": [
     {
      "feed": "OilPrice",
-     "title": "The Colorado River Crisis Is Reaching a Breaking Point",
-     "ts": "2026-07-06T12:30:00+00:00"
+     "title": "The Next Oil Price Spike Could Come Sooner Than Traders Think",
+     "ts": "2026-07-07T23:00:00+00:00"
     }
    ],
    "feeds": [
     "OilPrice"
    ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
-  },
-  "community bankshares": {
-   "display": "Community Bankshares Inc.",
-   "evidence": [
-    {
-     "feed": "Federal Reserve",
-     "title": "Federal Reserve Board issues enforcement action with Small Business Bank and announces termination enforcement actions with BNP Paribas S.A., BNP Paribas USA, Inc., BNP Paribas Securities Corp., and Community Bankshares, Inc.",
-     "ts": "2026-07-02T09:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "Federal Reserve"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "constancia": {
-   "display": "Constancia",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "Hudbay gains Peru approval to further increase Constancia mill throughput",
-     "ts": "2026-07-02T09:46:38+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "corporate paper": {
-   "display": "Corporate Paper",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Corporate Paper issuances touch 5-yr high at Rs 2.53 lakh crore in June",
-     "ts": "2026-07-06T07:36:57+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "corridors through iran and": {
-   "display": "Corridors Through Iran and",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Pakistan Bypasses Afghanistan With New Corridors Through Iran and China",
-     "ts": "2026-07-06T10:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "creating": {
    "display": "Creating",
@@ -1467,55 +1015,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "crude check forms": {
-   "display": "Crude Check Forms",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Crude Check: Forms a base",
-     "ts": "2026-07-04T10:44:06+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "csquare": {
-   "display": "Csquare",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Data center provider Csquare targets up to $4.18 billion valuation in US IPO",
-     "ts": "2026-07-06T07:11:33+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "cube highways trust": {
-   "display": "Cube Highways Trust",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Cube Highways Trust plans \u20b95,000-cr IPO this month; eyes broader investor base",
-     "ts": "2026-07-05T01:07:12+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "cult fit": {
    "display": "Cult.fit",
@@ -1531,7 +1031,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "cult fit ipo fitness": {
    "display": "Cult.fit IPO Fitness",
@@ -1547,7 +1047,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "d street": {
    "display": "D-Street",
@@ -1563,39 +1063,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "dakota gold": {
-   "display": "Dakota Gold",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "Dakota Gold books high-grade assays at Richmond Hill",
-     "ts": "2026-07-06T09:43:23+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
-  },
-  "data": {
-   "display": "Data",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Data center provider Csquare targets up to $4.18 billion valuation in US IPO",
-     "ts": "2026-07-06T07:11:33+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "de beers": {
    "display": "De Beers",
@@ -1611,7 +1079,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "deepseek s ai": {
    "display": "DeepSeek's AI",
@@ -1627,7 +1095,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "delhi mumbai kolkata bengaluru": {
    "display": "Delhi Mumbai Kolkata Bengaluru",
@@ -1643,43 +1111,16 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "dell": {
-   "display": "Dell",
-   "evidence": [
-    {
-     "feed": "MarketWatch Top",
-     "title": "Dell\u2019s stock gets another Trump bump \u2014\u00a0but this time it\u2019s fading",
-     "ts": "2026-07-06T14:04:00+00:00"
-    }
-   ],
-   "feeds": [
-    "MarketWatch Top"
-   ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
-  },
-  "demand": {
-   "display": "Demand",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Demand rising, India needs 500,000 tonnes refined copper capacity addition every 5 years: ICA",
-     "ts": "2026-07-05T01:48:08+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "details": {
    "display": "Details",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "RCF FPO: PSU stock Rashtriya Chemicals and Fertilizers declares  \u20b91500 crore fundraise. Details here",
+     "ts": "2026-07-08T04:15:53+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Rentomojo gets SEBI nod for raising funds through IPO launch. Details here",
@@ -1690,24 +1131,40 @@
     "Mint Markets"
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.6993
   },
-  "dharmesh shah of icici": {
-   "display": "Dharmesh Shah of ICICI",
+  "divis": {
+   "display": "Divis Labs",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Stocks to buy or sell: Dharmesh Shah of ICICI Sec suggests buying Shriram Finance, Piramal Pharma shares on 6 July",
-     "ts": "2026-07-05T22:48:21+00:00"
+     "feed": "ET Markets",
+     "title": "Divis Labs Share Price Live Updates: Divis Labs stock shows resilience in today's market",
+     "ts": "2026-07-08T02:33:17+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "ET Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "divis share price": {
+   "display": "Divis Labs Share Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Divis Labs Share Price Live Updates: Divis Labs stock shows resilience in today's market",
+     "ts": "2026-07-08T02:33:17+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "dominant": {
    "display": "Dominant",
@@ -1723,7 +1180,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "double dealings": {
+   "display": "Double-Dealings",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Has Iraq Finally Run Out of Road in Its Double-Dealings with the West?",
+     "ts": "2026-07-07T22:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "dow jones nasdaq us": {
    "display": "Dow Jones Nasdaq US",
@@ -1754,23 +1227,55 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T20:32:40.135854+00:00",
-   "score": 3.5521
+   "score": 3.2224
   },
-  "dripa": {
-   "display": "DRIPA",
+  "dr reddys": {
+   "display": "Dr. Reddys",
    "evidence": [
     {
-     "feed": "Mining.com",
-     "title": "British Columbia mining hampered by DRIPA \u2018confusion\u2019",
-     "ts": "2026-07-02T06:50:25+00:00"
+     "feed": "ET Markets",
+     "title": "Dr Reddys Share Price Live Updates: Dr. Reddys stock price rises slightly today",
+     "ts": "2026-07-08T02:33:29+00:00"
     }
    ],
    "feeds": [
-    "Mining.com"
+    "ET Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "dr reddys share price": {
+   "display": "Dr Reddys Share Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Dr Reddys Share Price Live Updates: Dr. Reddys stock price rises slightly today",
+     "ts": "2026-07-08T02:33:29+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "drone": {
+   "display": "Drone",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Drone stock IdeaForge Technology share price jumps over 4% after launch of  \u20b9500-crore QIP",
+     "ts": "2026-07-08T05:37:02+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "drone strike shuts russia s": {
    "display": "Drone Strike Shuts Russia's",
@@ -1786,7 +1291,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "drone strikes hit hormuz": {
    "display": "Drone Strikes Hit Hormuz",
@@ -1802,7 +1307,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "easyjet": {
    "display": "EasyJet",
@@ -1823,7 +1328,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-06T17:57:17.228235+00:00",
-   "score": 1.545
+   "score": 1.4016
   },
   "ebitda": {
    "display": "EBITDA",
@@ -1839,7 +1344,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "ecb s schnabel": {
    "display": "ECB's Schnabel",
@@ -1855,7 +1360,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "econovus packaging": {
    "display": "Econovus Packaging",
@@ -1871,39 +1376,39 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "eight": {
-   "display": "Eight",
+  "elara capital": {
+   "display": "Elara Capital",
    "evidence": [
     {
-     "feed": "MarketWatch Top",
-     "title": "Eight microcap stocks of companies expected to grow sales by triple digits through 2028",
-     "ts": "2026-07-06T12:19:00+00:00"
+     "feed": "ET Markets",
+     "title": "BPCL Share Price Live Updates: BPCL's Stock Recommendation from Elara Capital",
+     "ts": "2026-07-08T02:32:38+00:00"
     }
    ],
    "feeds": [
-    "MarketWatch Top"
+    "ET Markets"
    ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
-  "el nino": {
-   "display": "El Nino",
+  "enemy": {
+   "display": "Enemy",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "El Nino remains an important variable to watch; earnings recovery likely in H2FY27: Dharmesh Kakkad of ICICI Pru AMC",
-     "ts": "2026-07-06T03:13:04+00:00"
+     "feed": "SCMP Economy",
+     "title": "Enemy within? The dispute endangering Taiwan\u2019s \u2018T-Dome\u2019 air defence plan",
+     "ts": "2026-07-08T04:00:07+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "SCMP Economy"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "energy crisis": {
    "display": "Energy Crisis",
@@ -1919,71 +1424,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "energy transition minerals": {
-   "display": "Energy Transition Minerals",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "Energy Transition Minerals receives regional approvals for\u00a0Penouta\u00a0mine restart in Spain",
-     "ts": "2026-07-01T07:21:45+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "energyx": {
-   "display": "EnergyX",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "EnergyX\u00a0secures $225M investment to advance Black Giant lithium project in Chile",
-     "ts": "2026-07-06T07:54:00+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "ennore lng": {
-   "display": "Ennore LNG",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "IndianOil LNG gets green nod for \u20b93,400-crore Ennore LNG terminal expansion",
-     "ts": "2026-07-06T08:43:28+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "esop": {
-   "display": "ESOP",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Flipkart launches second ESOP liquidity event, lets employees encash up to 5% of vested stock",
-     "ts": "2026-07-06T10:19:34+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "essar energy transition": {
    "display": "Essar Energy Transition",
@@ -1999,39 +1440,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "european investors oppose norway": {
-   "display": "European Investors Oppose Norway",
+  "eternal icici bank": {
+   "display": "Eternal ICICI Bank",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "More European Investors Oppose Norway\u2019s Push for Arctic Oil Drilling",
-     "ts": "2026-07-06T03:00:00+00:00"
+     "feed": "ET Markets",
+     "title": "Eternal, ICICI Bank &amp; 8 stocks with up to 27% upside. Do you own them?",
+     "ts": "2026-07-08T04:21:21+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "ET Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "fear": {
-   "display": "Fear",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Fear of an Oil Glut May Be Overblown, Top Consultancy Says",
-     "ts": "2026-07-06T09:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "federal reserve board": {
    "display": "Federal Reserve Board",
@@ -2052,7 +1477,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.7581
+   "score": 1.5949
   },
   "fifa world cup": {
    "display": "FIFA World Cup",
@@ -2068,7 +1493,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "fiis": {
    "display": "FIIs",
@@ -2090,55 +1515,23 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.7581
+   "score": 1.5949
   },
-  "finance bank s": {
-   "display": "Finance Bank's",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "AU Small Finance Bank's growth engine is intact, but questions remain",
-     "ts": "2026-07-06T02:02:20+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "five energy stocks riding": {
-   "display": "Five Energy Stocks Riding",
+  "flow": {
+   "display": "Flow",
    "evidence": [
     {
      "feed": "OilPrice",
-     "title": "Five Energy Stocks Riding Texas's Data Center Power Boom",
-     "ts": "2026-07-05T15:30:00+00:00"
+     "title": "US Crude Oil, Product Inventories Fall Even As Hormuz Traffic Begins to Flow",
+     "ts": "2026-07-07T20:48:00+00:00"
     }
    ],
    "feeds": [
     "OilPrice"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "flipkart": {
-   "display": "Flipkart",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Flipkart launches second ESOP liquidity event, lets employees encash up to 5% of vested stock",
-     "ts": "2026-07-06T10:19:34+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "fmcg": {
    "display": "FMCG",
@@ -2154,7 +1547,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "forget": {
    "display": "Forget",
@@ -2170,103 +1563,29 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "former chinese": {
-   "display": "Former Chinese",
-   "evidence": [
-    {
-     "feed": "SCMP Economy",
-     "title": "Former Chinese official sentenced to death in US$323 million bribery case",
-     "ts": "2026-07-06T06:50:52+00:00"
-    }
-   ],
-   "feeds": [
-    "SCMP Economy"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "fortuna": {
-   "display": "Fortuna",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "Fortuna lifts West Africa growth with $1B Senegal gold project",
-     "ts": "2026-06-30T09:27:33+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "fpi trends financials": {
-   "display": "FPI Trends Financials",
+  "four": {
+   "display": "Four",
    "evidence": [
     {
      "feed": "Mint Markets",
-     "title": "FPI Trends: Financials, construction lead inflows in second half of June; Metals, power see highest outflows",
-     "ts": "2026-07-06T01:44:46+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "fpis": {
-   "display": "FPIs",
-   "evidence": [
+     "title": "Four critical mineral stocks with strong growth plans",
+     "ts": "2026-07-08T03:31:06+00:00"
+    },
     {
      "feed": "BusinessLine Mkts",
-     "title": "FPIs turn net buyers, clock \u20b916,461 crore in this week",
-     "ts": "2026-07-04T05:57:43+00:00"
+     "title": "Four oil and gas tankers turn back from Hormuz strait after vessel attacks",
+     "ts": "2026-07-08T05:28:41+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "BusinessLine Mkts",
+    "Mint Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "frank elderson": {
-   "display": "Frank Elderson",
-   "evidence": [
-    {
-     "feed": "ECB press",
-     "title": "Frank Elderson: The green transition \u2013 benefits and barriers",
-     "ts": "2026-07-02T04:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "ECB press"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "fred schwed jr": {
-   "display": "Fred Schwed Jr",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Quote of the day by Fred Schwed Jr: \"Most financial principles and theories have a degree of good sense to them. It may be a large degree, but it never comes close to being absolute.\"",
-     "ts": "2026-07-06T07:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 2.0
   },
   "fuel shortages worsen": {
    "display": "Fuel Shortages Worsen",
@@ -2282,43 +1601,32 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "gas price gouging": {
-   "display": "Gas Price Gouging",
+  "gamestop": {
+   "display": "GameStop",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "South Korea Charges Refiners With Gas Price Gouging",
-     "ts": "2026-07-06T00:03:50+00:00"
+     "feed": "MarketWatch Top",
+     "title": "GameStop investors clear the way for a fresh attempt at buying eBay",
+     "ts": "2026-07-07T21:37:00+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "MarketWatch Top"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
-  },
-  "gas prices": {
-   "display": "Gas Prices",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Big Oil Heads for Record Profits as Trump Turns Up the Heat on Gas Prices",
-     "ts": "2026-07-06T22:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "gen z": {
    "display": "Gen Z",
    "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Plot twist: Gen Z is buying houses after all. Here\u2019s how they\u2019re doing it.",
+     "ts": "2026-07-08T01:06:00+00:00"
+    },
     {
      "feed": "MarketWatch Top",
      "title": "Plot twist: Gen Z is buying houses after all",
@@ -2329,24 +1637,8 @@
     "MarketWatch Top"
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "genesis": {
-   "display": "Genesis",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "Genesis trumps Regis with $3.9B takeover bid for Vault",
-     "ts": "2026-07-06T06:19:00+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.8955
   },
   "geopolitical risk returns": {
    "display": "Geopolitical Risk Returns",
@@ -2362,7 +1654,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "george soros": {
    "display": "George Soros",
@@ -2378,7 +1670,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "germany plans billion strategic": {
    "display": "Germany Plans Billion Strategic",
@@ -2394,23 +1686,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "germany weathers energy crisis": {
-   "display": "Germany Weathers Energy Crisis",
+  "gift nifty us iran": {
+   "display": "Gift Nifty US-Iran",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "Germany Weathers Energy Crisis With Growing Dependence on American LNG",
-     "ts": "2026-07-06T05:30:00+00:00"
+     "feed": "Mint Markets",
+     "title": "From Gift Nifty, US-Iran war to crude oil prices: 7 key things that changed for Indian stock market overnight",
+     "ts": "2026-07-08T01:35:14+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "Mint Markets"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "gl hakko": {
    "display": "GL Hakko",
@@ -2426,23 +1718,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "global emissions growth": {
-   "display": "Global Emissions Growth",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "North America Drove Nearly Half Of Global Emissions Growth In 2025",
-     "ts": "2026-07-06T14:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
+   "score": 0.8955
   },
   "global lng": {
    "display": "Global LNG",
@@ -2458,7 +1734,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "global market asian": {
    "display": "Global Market Asian",
@@ -2474,23 +1750,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "global market bank of": {
-   "display": "Global Market Bank of",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Global Market: Bank of England weighs leverage rule changes to boost gilt demand",
-     "ts": "2026-07-06T01:47:37+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "global market beijing hong": {
    "display": "Global Market Beijing Hong",
@@ -2506,7 +1766,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "global market britain s": {
    "display": "Global Market Britain's",
@@ -2522,23 +1782,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "global market citi": {
-   "display": "Global Market Citi",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Global Market: Citi joins London's bullion clearing network in major precious metals expansion",
-     "ts": "2026-07-06T04:41:26+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 0.7708
+   "score": 0.8955
   },
   "global market euro": {
    "display": "Global Market Euro",
@@ -2554,11 +1798,16 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "global market japan": {
    "display": "Global Market Japan",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Global Market: Japan weighs revised monetary policy language in economic blueprint to reinforce BOJ independence",
+     "ts": "2026-07-08T04:58:23+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Global Market: Japan reassures markets over BOJ independence, fiscal reforms",
@@ -2569,8 +1818,8 @@
     "ET Markets"
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.8955
   },
   "global market japan s nikkei": {
    "display": "Global Market Japan's Nikkei",
@@ -2586,7 +1835,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "global market japanese": {
    "display": "Global Market Japanese",
@@ -2602,7 +1851,39 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "global market samsung sk": {
+   "display": "Global Market Samsung SK",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Global Market: Samsung, SK Hynix rebound as bargain buying offsets AI chip selloff fears",
+     "ts": "2026-07-08T04:43:43+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "global market south korea": {
+   "display": "Global Market South Korea",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Global Market: South Korea steps up market monitoring as chip-driven volatility rattles stocks",
+     "ts": "2026-07-08T05:08:43+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "global market uk": {
    "display": "Global Market UK",
@@ -2618,7 +1899,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "global trade hits": {
    "display": "Global Trade Hits",
@@ -2634,7 +1915,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "glp": {
    "display": "GLP-",
@@ -2650,7 +1931,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "glut fears": {
    "display": "Glut Fears",
@@ -2666,7 +1947,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "gold rate": {
    "display": "Gold Rate",
@@ -2682,7 +1963,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "gold silver rate": {
+   "display": "Gold Silver Rate",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Gold, Silver Rate Today: MCX gold price falls near  \u20b91.45 lakh per 10 grams, silver eases amid escalating US-Iran war",
+     "ts": "2026-07-08T03:41:09+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "governance": {
    "display": "Governance",
@@ -2698,7 +1995,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "government ofs": {
    "display": "Government OFS",
@@ -2714,7 +2011,39 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "grasim": {
+   "display": "Grasim Industries",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Grasim Inds Share Price Live Updates: Grasim Industries experiences slight decline",
+     "ts": "2026-07-08T02:32:37+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "grasim inds share price": {
+   "display": "Grasim Inds Share Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Grasim Inds Share Price Live Updates: Grasim Industries experiences slight decline",
+     "ts": "2026-07-08T02:32:37+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "guardian": {
    "display": "Guardian",
@@ -2730,7 +2059,87 @@
    ],
    "first_seen": "2026-07-07T19:15:24.550163+00:00",
    "last_seen": "2026-07-07T19:15:24.550163+00:00",
-   "score": 0.9876
+   "score": 0.8959
+  },
+  "has iraq finally run": {
+   "display": "Has Iraq Finally Run",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Has Iraq Finally Run Out of Road in Its Double-Dealings with the West?",
+     "ts": "2026-07-07T22:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "hcl tech s market": {
+   "display": "HCL Tech's Market",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "HCL Tech Share Price Live Updates: HCL Tech's Market Update",
+     "ts": "2026-07-08T02:34:44+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "hcl tech share price": {
+   "display": "HCL Tech Share Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "HCL Tech Share Price Live Updates: HCL Tech's Market Update",
+     "ts": "2026-07-08T02:34:44+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "hdfc bank s trading insights": {
+   "display": "HDFC Bank's Trading Insights",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "HDFC Bank Share Price Live Updates: HDFC Bank's Trading Insights",
+     "ts": "2026-07-08T02:35:06+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "hdfc bank share price": {
+   "display": "HDFC Bank Share Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "HDFC Bank Share Price Live Updates: HDFC Bank's Trading Insights",
+     "ts": "2026-07-08T02:35:06+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "healthy": {
    "display": "Healthy",
@@ -2746,39 +2155,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "heat": {
-   "display": "Heat",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Big Oil Heads for Record Profits as Trump Turns Up the Heat on Gas Prices",
-     "ts": "2026-07-06T22:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
-  },
-  "highlights nasdaq": {
-   "display": "Highlights Nasdaq",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Dow Jones| Nasdaq | US Stock Market Today | Highlights: Nasdaq jumps over 1% as chip stocks rally, investors eye AI earnings",
-     "ts": "2026-07-06T12:13:17+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
+   "score": 0.8955
   },
   "highlights s&p nasdaq": {
    "display": "Highlights S&P Nasdaq",
@@ -2794,6 +2171,22 @@
    ],
    "first_seen": "2026-07-07T20:32:40.135854+00:00",
    "last_seen": "2026-07-07T20:32:40.135854+00:00",
+   "score": 0.9072
+  },
+  "himadri speciality": {
+   "display": "Himadri Speciality",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Himadri Speciality among 4 stocks that closed below VWAP",
+     "ts": "2026-07-08T03:52:00+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
    "score": 1.0
   },
   "hnis": {
@@ -2810,7 +2203,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "hormuz shipping risks": {
    "display": "Hormuz Shipping Risks",
@@ -2826,7 +2219,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "hormuz toll concerns": {
    "display": "Hormuz Toll Concerns",
@@ -2842,7 +2235,119 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "hormuz traffic begins": {
+   "display": "Hormuz Traffic Begins",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "US Crude Oil, Product Inventories Fall Even As Hormuz Traffic Begins to Flow",
+     "ts": "2026-07-07T20:48:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "hul s current market price": {
+   "display": "HUL's Current Market Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "HUL Share Price Live Updates: HUL's Current Market Price",
+     "ts": "2026-07-08T02:33:59+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "hul share price": {
+   "display": "HUL Share Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "HUL Share Price Live Updates: HUL's Current Market Price",
+     "ts": "2026-07-08T02:33:59+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "ic electricals ipo": {
+   "display": "IC Electricals IPO",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "IC Electricals IPO allotment today: SME IPO subscribed 420x, GMP rises. Here's how to check status online",
+     "ts": "2026-07-08T03:18:39+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "ideaforge": {
+   "display": "IdeaForge Technology",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Drone stock IdeaForge Technology share price jumps over 4% after launch of  \u20b9500-crore QIP",
+     "ts": "2026-07-08T05:37:02+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "ifb agro hcl tech": {
+   "display": "IFB Agro HCL Tech",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Stocks to Watch, July 8: RCF, ideaForge, IFB Agro, HCL Tech, RRP Defense, BHEL, Refex Ind",
+     "ts": "2026-07-08T04:32:41+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "ihcl": {
+   "display": "IHCL",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "IHCL signs 20 hotels in Q1, shares in focus",
+     "ts": "2026-07-08T05:23:43+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "iifl": {
    "display": "IIFL",
@@ -2864,7 +2369,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.9745
+   "score": 1.7912
   },
   "india resumes iraqi oil": {
    "display": "India Resumes Iraqi Oil",
@@ -2880,7 +2385,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "indian it": {
    "display": "Indian IT",
@@ -2902,7 +2407,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.7581
+   "score": 1.5949
   },
   "indian owned": {
    "display": "Indian-owned",
@@ -2918,11 +2423,53 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "indigo hpcl": {
+   "display": "IndiGo HPCL",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "IndiGo, HPCL, other oil sensitive stocks plunge up to 5% as US strikes on Iran lift crude prices",
+     "ts": "2026-07-08T04:17:51+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "indigo itc": {
+   "display": "IndiGo ITC",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Sensex today | Stock Market Live: Sensex down 375 pts, trades at 77,805.19; Nifty slips 115 pts; IndiGo, ITC top losers",
+     "ts": "2026-07-08T05:31:05+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "info edge": {
    "display": "Info Edge",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Info Edge among 3 stocks flashing bullish signals, hinting at a possible uptrend",
+     "ts": "2026-07-08T03:11:31+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "Info Edge shares rally 19% in 2 days after Q1 update. Here\u2019s what Nomura, Goldman Sachs, other brokerages say",
+     "ts": "2026-07-08T04:52:08+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Info Edge shares surge 11% after Q1FY27 billings rise 14% YoY",
@@ -2933,8 +2480,8 @@
     "ET Markets"
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 2.8955
   },
   "info edge india": {
    "display": "Info Edge India",
@@ -2950,7 +2497,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "infosys": {
+   "display": "Infosys",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Infosys to PFC - Jay Thakkar suggests 3 stocks to buy or sell for short-term in F&amp;O segment",
+     "ts": "2026-07-08T04:22:56+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "inpex": {
    "display": "Inpex",
@@ -2966,7 +2529,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "inside gift city": {
    "display": "Inside GIFT City",
@@ -2982,7 +2545,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "intel": {
    "display": "Intel",
@@ -2998,7 +2561,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "invesco s": {
    "display": "Invesco's",
@@ -3014,7 +2577,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "iran attacks commercial vessels": {
+   "display": "Iran Attacks Commercial Vessels",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Oil Prices Jump After Iran Attacks Commercial Vessels",
+     "ts": "2026-07-08T05:58:56+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "iran port": {
    "display": "Iran Port",
@@ -3030,7 +2609,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "iran war": {
    "display": "Iran War",
@@ -3046,23 +2625,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "iran war strengthens": {
-   "display": "Iran War Strengthens",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Iran War Strengthens the Case for Renewables and Storage",
-     "ts": "2026-07-06T13:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
+   "score": 0.8955
   },
   "iranian crude if u s": {
    "display": "Iranian Crude If U.S.",
@@ -3078,7 +2641,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "iraqi": {
    "display": "Iraqi",
@@ -3094,7 +2657,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "issues": {
    "display": "Issues",
@@ -3110,11 +2673,16 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "japan s nikkei": {
    "display": "Japan's Nikkei",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Japan's Nikkei falls in volatile trade as tech tracks Nasdaq selloff",
+     "ts": "2026-07-08T03:54:19+00:00"
+    },
     {
      "feed": "BusinessLine Mkts",
      "title": "Japan's Nikkei falls as Samsung-led chip sell-off weighs on regional tech stocks",
@@ -3122,11 +2690,12 @@
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "BusinessLine Mkts",
+    "ET Markets"
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.8955
   },
   "jim cramer": {
    "display": "Jim Cramer",
@@ -3142,7 +2711,55 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "jsw steel experiences slight": {
+   "display": "JSW Steel Experiences Slight",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "JSW Steel Share Price Live Updates: JSW Steel  Experiences Slight Price Drop",
+     "ts": "2026-07-08T02:32:41+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "jsw steel share price": {
+   "display": "JSW Steel Share Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "JSW Steel Share Price Live Updates: JSW Steel  Experiences Slight Price Drop",
+     "ts": "2026-07-08T02:32:41+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "jubilant foodworks": {
+   "display": "Jubilant FoodWorks",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Jubilant FoodWorks among 4 stocks closed above VWAP, signalling bullish shift",
+     "ts": "2026-07-08T03:15:57+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "jupiter international": {
    "display": "Jupiter International",
@@ -3158,7 +2775,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "just": {
    "display": "Just",
@@ -3174,7 +2791,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 1.5901
+   "score": 1.4425
   },
   "kazakhstan": {
    "display": "Kazakhstan",
@@ -3190,7 +2807,7 @@
    ],
    "first_seen": "2026-07-07T19:15:24.550163+00:00",
    "last_seen": "2026-07-07T19:15:24.550163+00:00",
-   "score": 0.9876
+   "score": 0.8959
   },
   "kazakhstan bets": {
    "display": "Kazakhstan Bets",
@@ -3206,7 +2823,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "kharif": {
    "display": "Kharif",
@@ -3222,11 +2839,38 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "knack packaging": {
+   "display": "Knack Packaging",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Knack Packaging share price makes strong debut, lists with over 10% premium at  \u20b9188 on NSE",
+     "ts": "2026-07-08T04:26:46+00:00"
+    },
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Knack Packaging share price list at 10.5% premium on NSE debut",
+     "ts": "2026-07-08T05:18:45+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts",
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 2.0
   },
   "knack packaging ipo": {
    "display": "Knack Packaging IPO",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Knack Packaging IPO listing date today. GMP, experts signal share debut at a decent premium in Indian stock market",
+     "ts": "2026-07-08T00:44:59+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Knack Packaging IPO listing in focus. Here's what GMP signals ahead of debut",
@@ -3242,8 +2886,8 @@
     "Mint Markets"
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.7581
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 2.5949
   },
   "kusumgar": {
    "display": "Kusumgar",
@@ -3259,7 +2903,39 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "kusumgar ipo day issue": {
+   "display": "Kusumgar IPO Day Issue",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Kusumgar IPO Day 1: Issue opens today. GMP hints 40% listing pop. Should you apply or not?",
+     "ts": "2026-07-08T03:05:34+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "kusumgar ipo day opens": {
+   "display": "Kusumgar IPO Day Opens",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Kusumgar IPO Day 1: Opens today at \u20b9398-419 price band",
+     "ts": "2026-07-08T04:31:49+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "kusumgar ipo gmp": {
    "display": "Kusumgar IPO GMP",
@@ -3280,7 +2956,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.7581
+   "score": 1.5949
   },
   "laser power infra": {
    "display": "Laser Power Infra",
@@ -3296,11 +2972,16 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "laser power infra ipo": {
    "display": "Laser Power Infra IPO",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Laser Power &amp; Infra IPO: GMP, price band to financials\u201410 things investors should know before subscribing",
+     "ts": "2026-07-08T06:20:59+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Laser Power &amp; Infra IPO: From issue price to OFS details - 10 key things investors should know from the RHP",
@@ -3316,8 +2997,8 @@
     "Mint Markets"
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.7581
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 2.5949
   },
   "last": {
    "display": "Last",
@@ -3333,7 +3014,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "leaving opec": {
    "display": "Leaving OPEC",
@@ -3349,7 +3030,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "lng supply deal": {
    "display": "LNG Supply Deal",
@@ -3365,7 +3046,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "m nevada": {
    "display": "M Nevada",
@@ -3381,7 +3062,7 @@
    ],
    "first_seen": "2026-07-07T19:15:24.550163+00:00",
    "last_seen": "2026-07-07T19:15:24.550163+00:00",
-   "score": 0.9876
+   "score": 0.8959
   },
   "madsen": {
    "display": "Madsen",
@@ -3397,7 +3078,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "mahesh pai": {
+   "display": "Mahesh Pai",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "South Indian Bank shares tumble 9% after four-day rise; RBI clears Mahesh Pai as MD &amp; CEO",
+     "ts": "2026-07-08T05:34:05+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "market trading guide one": {
    "display": "Market Trading Guide One",
@@ -3413,7 +3110,87 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "marketsmith india": {
+   "display": "MarketSmith India",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Stock recommendations for 8 July from MarketSmith India",
+     "ts": "2026-07-08T00:30:43+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "maruti suzuki": {
+   "display": "Maruti Suzuki",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Maruti Suzuki faces \u20b99.5-crore customs duty demand; stock slides 1.65%",
+     "ts": "2026-07-08T05:15:00+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "maruti suzuki s current price": {
+   "display": "Maruti Suzuki's Current Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Maruti Suzuki Share Price Live Updates: Maruti Suzuki's Current Price Analysis",
+     "ts": "2026-07-08T02:34:47+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "maruti suzuki share price": {
+   "display": "Maruti Suzuki Share Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Maruti Suzuki Share Price Live Updates: Maruti Suzuki's Current Price Analysis",
+     "ts": "2026-07-08T02:34:47+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "md ceo": {
+   "display": "MD CEO",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "South Indian Bank shares tumble 9% after four-day rise; RBI clears Mahesh Pai as MD &amp; CEO",
+     "ts": "2026-07-08T05:34:05+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "mf picks": {
    "display": "MF Picks",
@@ -3429,7 +3206,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "micron intel": {
    "display": "Micron Intel",
@@ -3445,7 +3222,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "microsoft": {
    "display": "Microsoft",
@@ -3466,7 +3243,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.7581
+   "score": 1.5949
   },
   "middle east conflict clouds": {
    "display": "Middle East Conflict Clouds",
@@ -3482,7 +3259,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "mild": {
    "display": "Mild",
@@ -3498,23 +3275,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "mine": {
-   "display": "Mine",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "Mine operators face worsening wildfire\u00a0seasons",
-     "ts": "2026-07-06T12:45:00+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
+   "score": 0.8955
   },
   "motilal oswal": {
    "display": "Motilal Oswal",
@@ -3535,7 +3296,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-06T17:30:32.387167+00:00",
-   "score": 1.5417
+   "score": 1.3986
   },
   "mrpl": {
    "display": "MRPL",
@@ -3551,7 +3312,39 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "multibagger": {
+   "display": "Multibagger",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Multibagger stock jumps over 4% after order win from RITES. Do you own?",
+     "ts": "2026-07-08T04:37:06+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "multibagger cupid": {
+   "display": "Multibagger Cupid",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Multibagger Cupid shares rally 19% in 6 days after Q1 update, skyrocket 940% in one year. What lies ahead?",
+     "ts": "2026-07-08T05:38:13+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "multibagger tarc": {
    "display": "Multibagger TARC",
@@ -3567,7 +3360,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "nclt": {
    "display": "NCLT",
@@ -3583,7 +3376,55 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "nestle india current price": {
+   "display": "Nestle India Current Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Nestle India Share Price Live Updates: Nestle India Current Price Update",
+     "ts": "2026-07-08T02:33:51+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "nestle india share price": {
+   "display": "Nestle India Share Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Nestle India Share Price Live Updates: Nestle India Current Price Update",
+     "ts": "2026-07-08T02:33:51+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "next oil price spike": {
+   "display": "Next Oil Price Spike",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "The Next Oil Price Spike Could Come Sooner Than Traders Think",
+     "ts": "2026-07-07T23:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "nfra": {
    "display": "NFRA",
@@ -3599,7 +3440,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "nifty trent": {
    "display": "Nifty Trent",
@@ -3615,55 +3456,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "nigeria s deepwater comeback": {
-   "display": "Nigeria's Deepwater Comeback",
+  "nomura goldman sachs": {
+   "display": "Nomura Goldman Sachs",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "Shell And ExxonMobil Are Betting Billions On Nigeria's Deepwater Comeback",
-     "ts": "2026-07-06T21:00:00+00:00"
+     "feed": "ET Markets",
+     "title": "Info Edge shares rally 19% in 2 days after Q1 update. Here\u2019s what Nomura, Goldman Sachs, other brokerages say",
+     "ts": "2026-07-08T04:52:08+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "ET Markets"
    ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
-  },
-  "nine": {
-   "display": "Nine",
-   "evidence": [
-    {
-     "feed": "MarketWatch Top",
-     "title": "Nine microcap stocks of companies expected to grow sales by triple digits through 2028",
-     "ts": "2026-07-06T12:19:00+00:00"
-    }
-   ],
-   "feeds": [
-    "MarketWatch Top"
-   ],
-   "first_seen": "2026-07-06T17:57:17.228235+00:00",
-   "last_seen": "2026-07-06T17:57:17.228235+00:00",
-   "score": 0.7741
-  },
-  "north america drove nearly": {
-   "display": "North America Drove Nearly",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "North America Drove Nearly Half Of Global Emissions Growth In 2025",
-     "ts": "2026-07-06T14:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "nuvama": {
    "display": "Nuvama",
@@ -3679,7 +3488,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "nvidia": {
    "display": "Nvidia",
@@ -3695,23 +3504,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "ny fed": {
-   "display": "NY Fed",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "NY Fed says supply chain pressures eased in June",
-     "ts": "2026-07-06T12:33:58+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
+   "score": 0.8955
   },
   "nykaa s": {
    "display": "Nykaa's Q",
@@ -3727,23 +3520,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "oil heads": {
-   "display": "Oil Heads",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Big Oil Heads for Record Profits as Trump Turns Up the Heat on Gas Prices",
-     "ts": "2026-07-06T22:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
+   "score": 0.8955
   },
   "oil market swings": {
    "display": "Oil Market Swings",
@@ -3759,7 +3536,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "oil prices jump": {
+   "display": "Oil Prices Jump",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Oil Prices Jump After Iran Attacks Commercial Vessels",
+     "ts": "2026-07-08T05:58:56+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "oil s windfall earnings threaten": {
    "display": "Oil's Windfall Earnings Threaten",
@@ -3775,23 +3568,7 @@
    ],
    "first_seen": "2026-07-07T20:32:40.135854+00:00",
    "last_seen": "2026-07-07T20:32:40.135854+00:00",
-   "score": 1.0
-  },
-  "opec exit": {
-   "display": "OPEC Exit",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "UAE Oil Production Nears Record High After OPEC Exit",
-     "ts": "2026-07-06T13:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
+   "score": 0.9072
   },
   "paras defence": {
    "display": "Paras Defence",
@@ -3807,11 +3584,38 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "pc jeweller": {
+   "display": "PC Jeweller",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Penny stock under  \u20b910 PC Jeweller jumps 5% despite stock market sell-off",
+     "ts": "2026-07-08T04:30:33+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "PC Jeweller jumps 6% after repaying 2 consortium banks; eyes debt-free status by Q2 FY27",
+     "ts": "2026-07-08T04:54:42+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets",
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 2.0
   },
   "penny": {
    "display": "Penny",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Penny stock under  \u20b910 PC Jeweller jumps 5% despite stock market sell-off",
+     "ts": "2026-07-08T04:30:33+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Penny stock under  \u20b910 rallies for second straight session, jumps another 8%; here's why",
@@ -3822,8 +3626,8 @@
     "Mint Markets"
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.8955
   },
   "pepsico": {
    "display": "PepsiCo",
@@ -3839,7 +3643,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "petraco": {
    "display": "Petraco",
@@ -3855,27 +3659,32 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "philip r lane ai": {
-   "display": "Philip R. Lane AI",
+  "pfc jay thakkar": {
+   "display": "PFC Jay Thakkar",
    "evidence": [
     {
-     "feed": "ECB press",
-     "title": "Philip R. Lane: AI and monetary policy",
-     "ts": "2026-07-06T13:00:00+00:00"
+     "feed": "Mint Markets",
+     "title": "Infosys to PFC - Jay Thakkar suggests 3 stocks to buy or sell for short-term in F&amp;O segment",
+     "ts": "2026-07-08T04:22:56+00:00"
     }
    ],
    "feeds": [
-    "ECB press"
+    "Mint Markets"
    ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "plot": {
    "display": "Plot",
    "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Plot twist: Gen Z is buying houses after all. Here\u2019s how they\u2019re doing it.",
+     "ts": "2026-07-08T01:06:00+00:00"
+    },
     {
      "feed": "MarketWatch Top",
      "title": "Plot twist: Gen Z is buying houses after all",
@@ -3886,24 +3695,8 @@
     "MarketWatch Top"
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "point": {
-   "display": "Point",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "The Colorado River Crisis Is Reaching a Breaking Point",
-     "ts": "2026-07-06T12:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.8955
   },
   "pre series": {
    "display": "Pre-Series",
@@ -3919,23 +3712,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "profits": {
-   "display": "Profits",
+  "promoter": {
+   "display": "Promoter",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "Big Oil Heads for Record Profits as Trump Turns Up the Heat on Gas Prices",
-     "ts": "2026-07-06T22:00:00+00:00"
+     "feed": "Mint Markets",
+     "title": "Promoter caution makes investment banks work longer and harder for IPO wins",
+     "ts": "2026-07-08T00:20:43+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "Mint Markets"
    ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "push colombia": {
    "display": "Push Colombia",
@@ -3951,7 +3744,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "qip do": {
+   "display": "QIP. Do",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Adani Enterprises shares trade flat after closure of  \u20b91500 crore QIP. Do you own?",
+     "ts": "2026-07-08T05:14:22+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "quote": {
    "display": "Quote",
@@ -3972,7 +3781,23 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.7581
+   "score": 1.5949
+  },
+  "radhika gupta": {
+   "display": "Radhika Gupta",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Are bluechip stocks cheap and safe to invest in now? Radhika Gupta explains why the answer isn't so simple",
+     "ts": "2026-07-08T04:09:13+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "rainmatter": {
    "display": "Rainmatter",
@@ -3988,7 +3813,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "raja venkatraman": {
+   "display": "Raja Venkatraman",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Raja Venkatraman recommends three stocks for 8 July",
+     "ts": "2026-07-08T00:30:43+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "rajesh exports": {
    "display": "Rajesh Exports",
@@ -4004,23 +3845,39 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "reaching": {
-   "display": "Reaching",
+  "rashtriya chemicals and fertilizers": {
+   "display": "Rashtriya Chemicals and Fertilizers",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "The Colorado River Crisis Is Reaching a Breaking Point",
-     "ts": "2026-07-06T12:30:00+00:00"
+     "feed": "Mint Markets",
+     "title": "RCF FPO: PSU stock Rashtriya Chemicals and Fertilizers declares  \u20b91500 crore fundraise. Details here",
+     "ts": "2026-07-08T04:15:53+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "Mint Markets"
    ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "rcf fpo psu": {
+   "display": "RCF FPO PSU",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "RCF FPO: PSU stock Rashtriya Chemicals and Fertilizers declares  \u20b91500 crore fundraise. Details here",
+     "ts": "2026-07-08T04:15:53+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "regional tensions": {
    "display": "Regional Tensions",
@@ -4036,7 +3893,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "reignite trump s price gouging push": {
    "display": "Reignite Trump's Price-Gouging Push",
@@ -4052,23 +3909,7 @@
    ],
    "first_seen": "2026-07-07T20:32:40.135854+00:00",
    "last_seen": "2026-07-07T20:32:40.135854+00:00",
-   "score": 1.0
-  },
-  "renewables and storage": {
-   "display": "Renewables and Storage",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Iran War Strengthens the Case for Renewables and Storage",
-     "ts": "2026-07-06T13:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
+   "score": 0.9072
   },
   "return": {
    "display": "Return",
@@ -4084,23 +3925,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "richmond hill": {
-   "display": "Richmond Hill",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "Dakota Gold books high-grade assays at Richmond Hill",
-     "ts": "2026-07-06T09:43:23+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
+   "score": 0.8955
   },
   "rites": {
    "display": "RITES",
@@ -4116,39 +3941,39 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "rosh pinah": {
-   "display": "Rosh Pinah",
+  "rites do": {
+   "display": "RITES. Do",
    "evidence": [
     {
-     "feed": "Mining.com",
-     "title": "Rosh Pinah commissions new SAG mill as mine expansion nears completion",
-     "ts": "2026-06-29T22:41:47+00:00"
+     "feed": "Mint Markets",
+     "title": "Multibagger stock jumps over 4% after order win from RITES. Do you own?",
+     "ts": "2026-07-08T04:37:06+00:00"
     }
    ],
    "feeds": [
-    "Mining.com"
+    "Mint Markets"
    ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
-  "s&p now": {
-   "display": "S&P Now",
+  "road": {
+   "display": "Road",
    "evidence": [
     {
-     "feed": "MarketWatch Top",
-     "title": "The Nasdaq-100 has been far more volatile than the S&P 500. Now add SpaceX to the mix.",
-     "ts": "2026-07-06T22:39:00+00:00"
+     "feed": "OilPrice",
+     "title": "Has Iraq Finally Run Out of Road in Its Double-Dealings with the West?",
+     "ts": "2026-07-07T22:00:00+00:00"
     }
    ],
    "feeds": [
-    "MarketWatch Top"
+    "OilPrice"
    ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "samsung": {
    "display": "Samsung",
@@ -4174,7 +3999,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 2.9616
+   "score": 2.6867
   },
   "samsung led": {
    "display": "Samsung-led",
@@ -4190,7 +4015,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "samsung s": {
    "display": "Samsung's",
@@ -4206,7 +4031,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "sandisk": {
    "display": "SanDisk",
@@ -4222,7 +4047,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "sandisk s": {
+   "display": "SanDisk's",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "SanDisk's stunning rally hits a speed bump: What triggered the sharp selloff?",
+     "ts": "2026-07-08T05:55:14+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "saudi arabia eyes major": {
    "display": "Saudi Arabia Eyes Major",
@@ -4238,23 +4079,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "saudi arabia ships million": {
-   "display": "Saudi Arabia Ships Million",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Saudi Arabia Ships 34 Million Barrels Through Hormuz Despite Thin Tanker Traffic",
-     "ts": "2026-07-06T20:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
+   "score": 0.8955
   },
   "sbi funds management": {
    "display": "SBI Funds Management",
@@ -4270,7 +4095,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "seeing": {
    "display": "Seeing",
@@ -4286,7 +4111,7 @@
    ],
    "first_seen": "2026-07-07T19:15:24.550163+00:00",
    "last_seen": "2026-07-07T19:15:24.550163+00:00",
-   "score": 0.9876
+   "score": 0.8959
   },
   "setl": {
    "display": "SETL",
@@ -4302,23 +4127,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "shell and exxonmobil": {
-   "display": "Shell And ExxonMobil",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Shell And ExxonMobil Are Betting Billions On Nigeria's Deepwater Comeback",
-     "ts": "2026-07-06T21:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
+   "score": 0.8955
   },
   "shell signals oil and": {
    "display": "Shell Signals Oil and",
@@ -4334,7 +4143,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "skycatch": {
    "display": "Skycatch",
@@ -4350,7 +4159,39 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "small cap ai": {
+   "display": "Small-cap AI",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Small-cap AI stock trades green despite weak trends on Dalal Street",
+     "ts": "2026-07-08T06:20:55+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "smallcap": {
+   "display": "Smallcap",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Smallcap aerospace stock jumps 17% in two days after earning bullish brokerage calls",
+     "ts": "2026-07-08T05:21:49+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "smartworks": {
    "display": "Smartworks",
@@ -4366,7 +4207,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "sme ipo": {
+   "display": "SME IPO",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "IC Electricals IPO allotment today: SME IPO subscribed 420x, GMP rises. Here's how to check status online",
+     "ts": "2026-07-08T03:18:39+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "social security": {
    "display": "Social Security",
@@ -4387,7 +4244,23 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.7581
+   "score": 1.5949
+  },
+  "sometimes": {
+   "display": "Sometimes",
+   "evidence": [
+    {
+     "feed": "SCMP Economy",
+     "title": "Sometimes, it pays to be a backward country",
+     "ts": "2026-07-08T01:30:07+00:00"
+    }
+   ],
+   "feeds": [
+    "SCMP Economy"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "south": {
    "display": "South",
@@ -4408,7 +4281,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T19:15:24.550163+00:00",
-   "score": 2.7458
+   "score": 2.4909
   },
   "south africa": {
    "display": "South Africa",
@@ -4424,7 +4297,55 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "south indian bank": {
+   "display": "South Indian Bank",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "South Indian Bank shares tumble 9% after four-day rise; RBI clears Mahesh Pai as MD &amp; CEO",
+     "ts": "2026-07-08T05:34:05+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "south korea s kospi": {
+   "display": "South Korea's Kospi",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "South Korea's Kospi enters bear market, plunges 20% from peak. What's spooking investors?",
+     "ts": "2026-07-08T03:48:45+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "spacex": {
+   "display": "SpaceX",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "US Stock Market: Starship, AI ambitions fuel bullish Wall Street outlook on newly listed SpaceX",
+     "ts": "2026-07-08T03:58:46+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "stock markets highlights sensex": {
    "display": "Stock Markets Highlights Sensex",
@@ -4440,23 +4361,55 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "strategy": {
-   "display": "Strategy",
+  "sumeet bagadia": {
+   "display": "Sumeet Bagadia",
    "evidence": [
     {
-     "feed": "MarketWatch Top",
-     "title": "Strategy is losing a lot of money on bitcoin. Here\u2019s why it\u2019s selling anyway.",
-     "ts": "2026-07-06T12:13:00+00:00"
+     "feed": "Mint Markets",
+     "title": "Breakout stocks to buy or sell: Sumeet Bagadia recommends five shares to buy today - 8 July 2026",
+     "ts": "2026-07-08T01:06:35+00:00"
     }
    ],
    "feeds": [
-    "MarketWatch Top"
+    "Mint Markets"
    ],
-   "first_seen": "2026-07-06T17:57:17.228235+00:00",
-   "last_seen": "2026-07-06T17:57:17.228235+00:00",
-   "score": 0.7741
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "sun pharma s market performance": {
+   "display": "Sun Pharma's Market Performance",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Sun Pharma Share Price Live Updates: Sun Pharma's Market Performance Today",
+     "ts": "2026-07-08T02:34:26+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "sun pharma share price": {
+   "display": "Sun Pharma Share Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Sun Pharma Share Price Live Updates: Sun Pharma's Market Performance Today",
+     "ts": "2026-07-08T02:34:26+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "super el ni": {
    "display": "Super El Ni",
@@ -4477,7 +4430,119 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.7581
+   "score": 1.5949
+  },
+  "super typhoon bavi": {
+   "display": "Super Typhoon Bavi",
+   "evidence": [
+    {
+     "feed": "SCMP Economy",
+     "title": "China on \u2018high alert\u2019 and bracing for the worst as Super Typhoon Bavi approaches",
+     "ts": "2026-07-08T01:43:18+00:00"
+    }
+   ],
+   "feeds": [
+    "SCMP Economy"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "swiggy s": {
+   "display": "Swiggy's",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Swiggy's foreign shareholding falls below 50%: What it means for investors",
+     "ts": "2026-07-08T05:25:36+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "t dome": {
+   "display": "T-Dome",
+   "evidence": [
+    {
+     "feed": "SCMP Economy",
+     "title": "Enemy within? The dispute endangering Taiwan\u2019s \u2018T-Dome\u2019 air defence plan",
+     "ts": "2026-07-08T04:00:07+00:00"
+    }
+   ],
+   "feeds": [
+    "SCMP Economy"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "tata consumer s price movement": {
+   "display": "Tata Consumer's Price Movement",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Tata Consumer Share Price Live Updates: Tata Consumer's Price Movement Today",
+     "ts": "2026-07-08T02:35:01+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "tata consumer share price": {
+   "display": "Tata Consumer Share Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Tata Consumer Share Price Live Updates: Tata Consumer's Price Movement Today",
+     "ts": "2026-07-08T02:35:01+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "tata steel s market performance": {
+   "display": "Tata Steel's Market Performance",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Tata Steel Share Price Live Updates: Tata Steel's Market Performance",
+     "ts": "2026-07-08T02:34:33+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "tata steel share price": {
+   "display": "Tata Steel Share Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Tata Steel Share Price Live Updates: Tata Steel's Market Performance",
+     "ts": "2026-07-08T02:34:33+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "tcs infosys": {
    "display": "TCS Infosys",
@@ -4493,11 +4558,16 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "tech": {
    "display": "Tech",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Stocks to watch: Cochin Shipyard, Premier Energies, ideaForge Tech among shares in focus today; check list here",
+     "ts": "2026-07-08T02:13:42+00:00"
+    },
     {
      "feed": "MarketWatch Top",
      "title": "Your data built the AI boom \u2014 but Big Tech is pocketing 100% of the equity",
@@ -4505,11 +4575,12 @@
     }
    ],
    "feeds": [
-    "MarketWatch Top"
+    "MarketWatch Top",
+    "Mint Markets"
    ],
    "first_seen": "2026-07-06T17:57:17.228235+00:00",
-   "last_seen": "2026-07-06T17:57:17.228235+00:00",
-   "score": 0.7741
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.7022
   },
   "teck": {
    "display": "Teck",
@@ -4525,7 +4596,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "terafab": {
    "display": "Terafab",
@@ -4541,7 +4612,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "tesla": {
    "display": "Tesla",
@@ -4557,23 +4628,55 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "thin tanker traffic": {
-   "display": "Thin Tanker Traffic",
+  "think": {
+   "display": "Think",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "Saudi Arabia Ships 34 Million Barrels Through Hormuz Despite Thin Tanker Traffic",
-     "ts": "2026-07-06T20:30:00+00:00"
+     "feed": "MarketWatch Top",
+     "title": "Think the U.S. stock market is too heavily exposed to AI? It\u2019s even worse abroad.",
+     "ts": "2026-07-07T21:59:00+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "MarketWatch Top"
    ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "titan price movement": {
+   "display": "Titan Company Price Movement",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Titan Company Share Price Live Updates: Titan Company Price Movement Analysis",
+     "ts": "2026-07-08T02:34:18+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "titan share price": {
+   "display": "Titan Company Share Price",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Titan Company Share Price Live Updates: Titan Company Price Movement Analysis",
+     "ts": "2026-07-08T02:34:18+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "top gainers losers": {
    "display": "Top Gainers Losers",
@@ -4594,7 +4697,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 1.7581
+   "score": 1.5949
   },
   "torrent pharma jb chemicals": {
    "display": "Torrent Pharma JB Chemicals",
@@ -4610,7 +4713,28 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "trent": {
+   "display": "Trent",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Trent among 5 F&amp;O stocks with a sharp rise in futures open interest",
+     "ts": "2026-07-08T04:01:13+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "Airtel to Trent: 44 cos likely to report double-digit profit slump in Q1. Are your stocks on the list?",
+     "ts": "2026-07-08T04:33:56+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 2.0
   },
   "trent kalyan jewellers cochin": {
    "display": "Trent Kalyan Jewellers Cochin",
@@ -4626,39 +4750,39 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "trump turns up": {
-   "display": "Trump Turns Up",
+  "trump accounts": {
+   "display": "Trump Accounts'",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "How the recently launched 'Trump Accounts' follow Warren Buffett's popular stock market advice",
+     "ts": "2026-07-08T03:45:44+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "trump s nuclear loan program": {
+   "display": "Trump's Nuclear Loan Program",
    "evidence": [
     {
      "feed": "OilPrice",
-     "title": "Big Oil Heads for Record Profits as Trump Turns Up the Heat on Gas Prices",
-     "ts": "2026-07-06T22:00:00+00:00"
+     "title": "Trump's Nuclear Loan Program Won't Fix What's Really Broken",
+     "ts": "2026-07-07T21:00:00+00:00"
     }
    ],
    "feeds": [
     "OilPrice"
    ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
-  },
-  "trump world cup": {
-   "display": "Trump World Cup",
-   "evidence": [
-    {
-     "feed": "MarketWatch Top",
-     "title": "U.S.-Belgium match could draw record TV audience amid the Trump World Cup controversy",
-     "ts": "2026-07-06T22:17:00+00:00"
-    }
-   ],
-   "feeds": [
-    "MarketWatch Top"
-   ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "tungsten": {
    "display": "Tungsten",
@@ -4674,23 +4798,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "u s belgium": {
-   "display": "U.S.-Belgium",
+  "u s power grid": {
+   "display": "U.S. Power Grid",
    "evidence": [
     {
-     "feed": "MarketWatch Top",
-     "title": "U.S.-Belgium match could draw record TV audience amid the Trump World Cup controversy",
-     "ts": "2026-07-06T22:17:00+00:00"
+     "feed": "OilPrice",
+     "title": "Why the AI Boom Is About to Break the U.S. Power Grid",
+     "ts": "2026-07-08T00:00:00+00:00"
     }
    ],
    "feeds": [
-    "MarketWatch Top"
+    "OilPrice"
    ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "uae oil output climbs": {
    "display": "UAE Oil Output Climbs",
@@ -4706,23 +4830,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "uae oil production nears": {
-   "display": "UAE Oil Production Nears",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "UAE Oil Production Nears Record High After OPEC Exit",
-     "ts": "2026-07-06T13:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-06T20:35:24.304177+00:00",
-   "last_seen": "2026-07-06T20:35:24.304177+00:00",
-   "score": 0.794
+   "score": 0.8955
   },
   "ugandan farmers sue": {
    "display": "Ugandan Farmers Sue",
@@ -4738,7 +4846,71 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "uno minda": {
+   "display": "Uno Minda",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Uno Minda shares in focus as firm enters 4-wheeler seating systems segment with Rs 320-crore capex",
+     "ts": "2026-07-08T03:21:49+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "us crude oil product": {
+   "display": "US Crude Oil Product",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "US Crude Oil, Product Inventories Fall Even As Hormuz Traffic Begins to Flow",
+     "ts": "2026-07-07T20:48:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "us stock market starship": {
+   "display": "US Stock Market Starship",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "US Stock Market: Starship, AI ambitions fuel bullish Wall Street outlook on newly listed SpaceX",
+     "ts": "2026-07-08T03:58:46+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
+  },
+  "vaishali parekh": {
+   "display": "Vaishali Parekh",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Vaishali Parekh recommends three intraday stocks to buy or sell on Wednesday \u2014 8 July 2026",
+     "ts": "2026-07-08T02:39:33+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   },
   "vector technics": {
    "display": "Vector Technics",
@@ -4754,7 +4926,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "vinit mobile": {
    "display": "Vinit Mobile",
@@ -4770,7 +4942,28 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
+  },
+  "vwap": {
+   "display": "VWAP",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Jubilant FoodWorks among 4 stocks closed above VWAP, signalling bullish shift",
+     "ts": "2026-07-08T03:15:57+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "Himadri Speciality among 4 stocks that closed below VWAP",
+     "ts": "2026-07-08T03:52:00+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 2.0
   },
   "wall street nasdaq s&p": {
    "display": "Wall Street Nasdaq S&P",
@@ -4786,7 +4979,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
   "walmart": {
    "display": "Walmart.",
@@ -4807,11 +5000,16 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 1.5901
+   "score": 1.4425
   },
   "warren buffett s": {
    "display": "Warren Buffett's",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "How the recently launched 'Trump Accounts' follow Warren Buffett's popular stock market advice",
+     "ts": "2026-07-08T03:45:44+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Warren Buffett's successor puts record $400 billion cash pile to work. What's he buying?",
@@ -4822,8 +5020,8 @@
     "ET Markets"
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.8955
   },
   "weekly": {
    "display": "Weekly",
@@ -4839,103 +5037,23 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "score": 0.8955
   },
-  "west red lake": {
-   "display": "West Red Lake",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "Assays hint at future mineable gold at West Red Lake\u2019s Madsen site",
-     "ts": "2026-07-07T09:06:40+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-07T19:12:33.086553+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "wipro": {
-   "display": "Wipro",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Wipro to declare Q1FY27 results, interim dividend on this date. Check details",
-     "ts": "2026-07-07T08:18:28+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-07T19:12:33.086553+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "workstudio spaces": {
-   "display": "Workstudio Spaces",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Smartworks acquires Singapore\u2019s Workstudio Spaces for SGD 2.47 million",
-     "ts": "2026-07-07T02:27:36+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-07T19:12:33.086553+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "world s first integrated energy ai": {
-   "display": "World's First Integrated Energy-AI",
+  "west": {
+   "display": "West",
    "evidence": [
     {
      "feed": "OilPrice",
-     "title": "Why Abu Dhabi Is Building the World's First Integrated Energy-AI Economy",
-     "ts": "2026-07-06T23:00:00+00:00"
+     "title": "Has Iraq Finally Run Out of Road in Its Double-Dealings with the West?",
+     "ts": "2026-07-07T22:00:00+00:00"
     }
    ],
    "feeds": [
     "OilPrice"
    ],
-   "first_seen": "2026-07-06T23:49:46.805780+00:00",
-   "last_seen": "2026-07-06T23:49:46.805780+00:00",
-   "score": 0.8192
-  },
-  "zen": {
-   "display": "Zen Technologies",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Defence stock Zen Technologies jumps as subsidiary Vector Technics becomes India's largest drone propulsion manufacturer",
-     "ts": "2026-07-07T01:09:01+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-07T19:12:33.086553+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
-  },
-  "zerodha": {
-   "display": "Zerodha",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Zerodha\u2019s Rainmatter leads Econovus Packaging \u20b940 crore Pre-Series A",
-     "ts": "2026-07-07T10:03:05+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-07T19:12:33.086553+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.9871
+   "first_seen": "2026-07-08T06:39:49.312907+00:00",
+   "last_seen": "2026-07-08T06:39:49.312907+00:00",
+   "score": 1.0
   }
  },
  "members": {
@@ -4973,7 +5091,7 @@
    "last_mention": "2026-07-06T10:56:38+00:00",
    "name": "ATHER ENERGY LIMITED",
    "norm": "ather energy",
-   "score": 5.3225,
+   "score": 4.8284,
    "status": "active",
    "via": "search"
   },
@@ -4996,7 +5114,7 @@
    "last_mention": "2026-07-07T06:27:42+00:00",
    "name": "BlackRock, Inc.",
    "norm": "blackrock",
-   "score": 1.9745,
+   "score": 1.7912,
    "status": "active",
    "via": "search"
   },
@@ -5006,20 +5124,35 @@
    "cls": "EQUITIES",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Global oil market weathers Iran war shock, but reserve depletion raises future price risks",
-     "ts": "2026-07-07T02:12:05+00:00"
+     "feed": "BusinessLine Mkts",
+     "title": "Nifty may lose 200 points at open, as global markets come under pressure",
+     "ts": "2026-07-08T02:18:47+00:00"
     },
     {
      "feed": "BusinessLine Mkts",
-     "title": "Global natural gas demand to decline 0.5% in 2026 amid higher prices: IEA",
-     "ts": "2026-07-07T05:52:51+00:00"
+     "title": "Global oil output to return to pre-Iran war level by year's end, US EIA says",
+     "ts": "2026-07-08T03:24:05+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "Global Market: Samsung, SK Hynix rebound as bargain buying offsets AI chip selloff fears",
+     "ts": "2026-07-08T04:43:43+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "Global Market: Japan weighs revised monetary policy language in economic blueprint to reinforce BOJ independence",
+     "ts": "2026-07-08T04:58:23+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "Global Market: South Korea steps up market monitoring as chip-driven volatility rattles stocks",
+     "ts": "2026-07-08T05:08:43+00:00"
     }
    ],
-   "last_mention": "2026-07-07T02:12:05+00:00",
+   "last_mention": "2026-07-08T02:18:47+00:00",
    "name": "Coinbase Global, Inc.",
    "norm": "global",
-   "score": 1.9745,
+   "score": 6.7912,
    "status": "active",
    "via": "search"
   },
@@ -5029,30 +5162,35 @@
    "cls": "EQUITIES",
    "evidence": [
     {
-     "feed": "Federal Reserve",
-     "title": "Federal Reserve Board requests comment on a proposal to amend its requirements for banks to maintain anti-money laundering programs",
-     "ts": "2026-07-07T13:30:00+00:00"
-    },
-    {
      "feed": "Mint Markets",
-     "title": "HDFC Bank share price rises over 3.5% on strong Q1 business update. Do you own?",
-     "ts": "2026-07-05T22:29:00+00:00"
+     "title": "Promoter caution makes investment banks work longer and harder for IPO wins",
+     "ts": "2026-07-08T00:20:43+00:00"
     },
     {
-     "feed": "Mint Markets",
-     "title": "HDFC Bank vs Yes Bank vs Kotak Bank vs IndusInd Bank - Which banking stock to buy after Q1 business update?",
-     "ts": "2026-07-06T01:51:40+00:00"
+     "feed": "ET Markets",
+     "title": "HDFC Bank Share Price Live Updates: HDFC Bank's Trading Insights",
+     "ts": "2026-07-08T02:35:06+00:00"
     },
     {
-     "feed": "BusinessLine Mkts",
-     "title": "HDFC Bank shares jump 3.6% on strong Q1FY27 business update",
-     "ts": "2026-07-06T05:29:17+00:00"
+     "feed": "ET Markets",
+     "title": "Eternal, ICICI Bank &amp; 8 stocks with up to 27% upside. Do you own them?",
+     "ts": "2026-07-08T04:21:21+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "PC Jeweller jumps 6% after repaying 2 consortium banks; eyes debt-free status by Q2 FY27",
+     "ts": "2026-07-08T04:54:42+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "South Indian Bank shares tumble 9% after four-day rise; RBI clears Mahesh Pai as MD &amp; CEO",
+     "ts": "2026-07-08T05:34:05+00:00"
     }
    ],
-   "last_mention": "2026-07-07T13:30:00+00:00",
+   "last_mention": "2026-07-08T00:20:43+00:00",
    "name": "HDFC Bank Limited",
    "norm": "hdfc bank",
-   "score": 3.2999,
+   "score": 7.9936,
    "status": "active",
    "via": "search"
   },
@@ -5062,25 +5200,35 @@
    "cls": "EQUITIES",
    "evidence": [
     {
-     "feed": "Federal Reserve",
-     "title": "Federal Reserve Board requests comment on a proposal to amend its requirements for banks to maintain anti-money laundering programs",
-     "ts": "2026-07-07T13:30:00+00:00"
-    },
-    {
      "feed": "Mint Markets",
-     "title": "HDFC Bank vs Yes Bank vs Kotak Bank vs IndusInd Bank - Which banking stock to buy after Q1 business update?",
-     "ts": "2026-07-06T01:51:40+00:00"
+     "title": "Promoter caution makes investment banks work longer and harder for IPO wins",
+     "ts": "2026-07-08T00:20:43+00:00"
     },
     {
      "feed": "ET Markets",
-     "title": "IndusInd Bank among 6 stocks to hit 52-week highs &amp; rally up to 25% in a month",
-     "ts": "2026-07-06T05:51:51+00:00"
+     "title": "HDFC Bank Share Price Live Updates: HDFC Bank's Trading Insights",
+     "ts": "2026-07-08T02:35:06+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "Eternal, ICICI Bank &amp; 8 stocks with up to 27% upside. Do you own them?",
+     "ts": "2026-07-08T04:21:21+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "PC Jeweller jumps 6% after repaying 2 consortium banks; eyes debt-free status by Q2 FY27",
+     "ts": "2026-07-08T04:54:42+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "South Indian Bank shares tumble 9% after four-day rise; RBI clears Mahesh Pai as MD &amp; CEO",
+     "ts": "2026-07-08T05:34:05+00:00"
     }
    ],
-   "last_mention": "2026-07-07T13:30:00+00:00",
+   "last_mention": "2026-07-08T00:20:43+00:00",
    "name": "INDUSIND BANK LTD.",
    "norm": "indusind bank",
-   "score": 2.5289,
+   "score": 7.2942,
    "status": "active",
    "via": "search"
   },
@@ -5108,7 +5256,7 @@
    "last_mention": "2026-07-07T01:42:22+00:00",
    "name": "Jefferies Financial Group Inc.",
    "norm": "jefferies",
-   "score": 2.9616,
+   "score": 2.6867,
    "status": "active",
    "via": "search"
   },
@@ -5131,7 +5279,7 @@
    "last_mention": "2026-07-06T23:16:41+00:00",
    "name": "KALYAN JEWELLERS IND LTD",
    "norm": "kalyan jewellers",
-   "score": 1.9745,
+   "score": 1.7912,
    "status": "active",
    "via": "search"
   },
@@ -5159,7 +5307,7 @@
    "last_mention": "2026-07-07T00:12:51+00:00",
    "name": "Morgan Stanley",
    "norm": "morgan stanley",
-   "score": 2.7453,
+   "score": 2.4905,
    "status": "active",
    "via": "search"
   },
@@ -5168,6 +5316,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Micron\u2019s stock falls as investors wonder if the memory market is near the top",
+     "ts": "2026-07-07T22:43:00+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Wall Street: Nasdaq, S&amp;P 500 slip as chip stocks decline, Intel sinks 8.2%, Micron sheds 7.3%",
@@ -5189,10 +5342,10 @@
      "ts": "2026-07-06T09:41:00+00:00"
     }
    ],
-   "last_mention": "2026-07-07T08:26:31+00:00",
+   "last_mention": "2026-07-07T22:43:00+00:00",
    "name": "Micron Technology, Inc.",
    "norm": "micron",
-   "score": 3.5161,
+   "score": 4.1897,
    "status": "active",
    "via": "search"
   },
@@ -5201,6 +5354,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "IC Electricals IPO allotment today: SME IPO subscribed 420x, GMP rises. Here's how to check status online",
+     "ts": "2026-07-08T03:18:39+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Ola Electric share price dips amid fresh insolvency row. Do you own?",
@@ -5212,10 +5370,10 @@
      "ts": "2026-07-07T02:08:38+00:00"
     }
    ],
-   "last_mention": "2026-07-07T01:08:24+00:00",
+   "last_mention": "2026-07-08T03:18:39+00:00",
    "name": "OLA ELECTRIC MOBILITY LTD",
    "norm": "ola electric",
-   "score": 1.9745,
+   "score": 2.7912,
    "status": "active",
    "via": "search"
   },
@@ -5224,6 +5382,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Cochin Shipyard OFS opens today for retail investors. Should you participate in this defence stock offer?",
+     "ts": "2026-07-08T03:50:43+00:00"
+    },
+    {
+     "feed": "SCMP Economy",
+     "title": "Enemy within? The dispute endangering Taiwan\u2019s \u2018T-Dome\u2019 air defence plan",
+     "ts": "2026-07-08T04:00:07+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Defence stock Zen Technologies jumps as subsidiary Vector Technics becomes India's largest drone propulsion manufacturer",
@@ -5235,10 +5403,10 @@
      "ts": "2026-07-07T04:23:21+00:00"
     }
    ],
-   "last_mention": "2026-07-07T01:09:01+00:00",
+   "last_mention": "2026-07-08T03:50:43+00:00",
    "name": "AEGIS CRITICAL ENERGY DEFENCE C",
    "norm": "defence",
-   "score": 1.9745,
+   "score": 3.7912,
    "status": "active",
    "via": "search"
   },
@@ -5261,7 +5429,7 @@
    "last_mention": "2026-07-07T09:39:03+00:00",
    "name": "Rivian Automotive, Inc.",
    "norm": "rivian",
-   "score": 1.9745,
+   "score": 1.7912,
    "status": "active",
    "via": "search"
   },
@@ -5270,6 +5438,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Swiggy among 5 stocks showing bullish RSI upswing",
+     "ts": "2026-07-08T03:07:41+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "Swiggy's foreign shareholding falls below 50%: What it means for investors",
+     "ts": "2026-07-08T05:25:36+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Swiggy share price jumps 6% after this foreign investment update. Do you own?",
@@ -5286,10 +5464,10 @@
      "ts": "2026-07-07T09:44:45+00:00"
     }
    ],
-   "last_mention": "2026-07-07T03:17:00+00:00",
+   "last_mention": "2026-07-08T03:07:41+00:00",
    "name": "SWIGGY LIMITED",
    "norm": "swiggy",
-   "score": 2.9616,
+   "score": 4.6867,
    "status": "active",
    "via": "search"
   },
@@ -5317,31 +5495,39 @@
    "last_mention": "2026-07-06T20:25:00+00:00",
    "name": "TeraWulf Inc.",
    "norm": "terawulf",
-   "score": 2.3357,
+   "score": 2.1189,
    "status": "active",
    "via": "search"
   }
  },
  "processed_ids": [
+  "006735211906",
   "007b77cd020d",
   "00da3852e678",
   "00f346529058",
+  "0107c89787f9",
   "013cb1ecbea4",
+  "01ebf4b60b21",
   "01fc774ae9ec",
+  "025b6cb69439",
   "0279fd5f1e47",
+  "051ebf1d6c79",
   "052108444a1d",
   "0561b957fdaf",
   "0579925d1cc0",
   "05b3b4e2ad19",
   "05faba51c808",
+  "070943f93bf0",
   "0768a20da1f2",
   "0779e3b49e91",
+  "07fafe66fa51",
   "082920898114",
   "08970c50db2c",
   "095da66a240c",
   "09b21208a0c2",
   "0b19ea8b2122",
   "0b1c30383076",
+  "0b534f9e0ba3",
   "0c7f4706bbe8",
   "0d291968a739",
   "0dd372dccf88",
@@ -5349,6 +5535,7 @@
   "0e33e6bbd67b",
   "0ea9d284a24f",
   "0f0e8ebf0419",
+  "0f21aefec53b",
   "0f83f900294e",
   "0f8f0841320d",
   "1165e2576f23",
@@ -5356,6 +5543,7 @@
   "12f2db3171ee",
   "135ac3123c7e",
   "13bfb7c38b0b",
+  "13ec990a5746",
   "14249704945c",
   "168627c4441b",
   "171df7a4e540",
@@ -5364,13 +5552,15 @@
   "18969463fafd",
   "18b6ed13a4fb",
   "18d72e6c1503",
+  "1910d01e59d6",
   "1bc117aadb76",
+  "1bf705ef4e92",
   "1c7eeb8e0a9b",
   "1ce94878b3e9",
   "1db0691ee2f9",
   "1e80377ccae8",
   "1ed89f04c489",
-  "1f96d19b6ec1",
+  "1f4aac99b8fa",
   "2090daa84175",
   "2123013b79eb",
   "213fcaf17e91",
@@ -5379,11 +5569,14 @@
   "235408ac3ac7",
   "235626977549",
   "2378f3590dbf",
+  "23e9d9630efd",
   "23ea84907b4f",
+  "2415798e68a2",
   "2420800668b2",
   "242cb0b25926",
   "24e29de07c7d",
   "2520f12d81f0",
+  "2543cbbbcc77",
   "2595d5c9bd2e",
   "26312cd2aeca",
   "2638efa48f40",
@@ -5401,20 +5594,26 @@
   "2bbfed0b8c90",
   "2beac8d810d4",
   "2c636b0d9390",
+  "2c7d721d0d6a",
   "2cb08f163677",
   "2de8eb433914",
+  "2df4c0f0d471",
+  "2e158d42a53b",
   "2e888530a819",
   "2f1d4df5f7ba",
   "2f573cd2548a",
   "2f76f4da0721",
+  "2fa88670ac90",
   "301fa8956c30",
   "30bb47cccd06",
   "3243f9d33ddc",
   "329a1f3b516b",
+  "329d797ca5d4",
   "3323ab18b9c9",
   "335cb3c3f708",
   "338363098e30",
   "33d220e21a4e",
+  "33df56363b4a",
   "35166aada432",
   "35ca497b84ae",
   "36739e00a2bb",
@@ -5422,7 +5621,9 @@
   "36cd378b9c75",
   "37caaf38cea0",
   "37cefe33c228",
+  "37f28a917e4f",
   "386a701e74e4",
+  "386c23d9c9af",
   "386d014baa5d",
   "39f527fecbe8",
   "3a9c01ffda6c",
@@ -5435,13 +5636,17 @@
   "3d3fb72bb0b8",
   "3d541103bfa2",
   "3ebb0406f267",
+  "3ee4fe257c50",
   "3f106aea96d9",
   "3fed65aaf366",
   "3ff2a66d82d7",
+  "404c9aa34ea1",
   "40aea4ac9260",
+  "40dac110023d",
   "416b73700a6a",
   "4193d525c65d",
   "4385ef86376d",
+  "443002729649",
   "44e2ee180707",
   "4512da1352ce",
   "45847066ba6c",
@@ -5450,38 +5655,51 @@
   "464f581f01d4",
   "47086fd4a156",
   "485f316c7f7d",
+  "489289d1d1b0",
+  "4892a0c5e624",
   "4a59578fd933",
+  "4a69905a27f1",
   "4a7961484631",
+  "4a81b2486e92",
   "4b25de043fc8",
   "4be01e981c38",
   "4be5f240ac89",
   "4da35d3f09c3",
   "4db6f61d7d93",
   "4e3b831153f0",
+  "4e61000618bb",
+  "4ebfb412fd75",
+  "4ecac999082c",
+  "4f20c279add6",
+  "4fb75b9d47b9",
   "5002d56eb0cb",
   "50466616f013",
   "504fdcab7e5c",
   "5057acdb3581",
   "50ab9da62c20",
+  "511d0fee0805",
   "51405795da13",
   "5231245f513e",
   "54e2f6309dfa",
-  "5571ad52f763",
   "55bd8c6df561",
   "5696ef8297d5",
   "56dcf6b94d70",
   "57469cb32538",
   "57c7b387a5ba",
+  "5823453be110",
   "5851e3ef423f",
   "58e989bfe93a",
   "594e690e6bf3",
+  "5a5ea29b3724",
   "5aa93f8a62a3",
   "5aad6d002898",
   "5ac82333bb92",
   "5bb2909cb13e",
+  "5c03497606ac",
   "5c23ac001b27",
   "5c5997f75eab",
   "5cadf5eb36df",
+  "5d06d62a523c",
   "5d83be6fbdbf",
   "5dc6dcab0254",
   "605b06ca3a59",
@@ -5492,12 +5710,15 @@
   "639787b240c8",
   "63c309f1b4d9",
   "640006035236",
+  "6453ce801548",
   "65968e34d94e",
+  "65b8a6f5df92",
   "6608b2171a0f",
   "661c3363aacd",
   "6643abc9523e",
   "666180a71119",
   "674364a52593",
+  "67be0513dab5",
   "67f7db4805e0",
   "680714a1df8c",
   "6992bce1016f",
@@ -5516,12 +5737,17 @@
   "720057dd6c09",
   "72d2c55e30c2",
   "7329347a6068",
+  "75412dcc5396",
+  "75d29072cc88",
   "75f36aa5c146",
   "762ae419db5a",
+  "7663cbcc18f2",
   "769be0079fef",
   "774596e27225",
   "7869bf56b505",
   "7ac4c5cef292",
+  "7c18444a396b",
+  "7c5e88762f05",
   "7d35c89bac2e",
   "7e555de512f0",
   "7eeb03f1a7cb",
@@ -5532,27 +5758,35 @@
   "8105ef2830d5",
   "8109c6096b32",
   "8288c07f7c60",
+  "8289e3f782d6",
   "82a20551895f",
+  "830a02b881cf",
   "836a38d49322",
+  "8380be67a06c",
   "8419ceb72463",
   "84a63092d894",
   "8593933b249b",
+  "85f2629f364f",
   "871ed2fa312f",
   "88e645fe2e83",
   "88fd73507243",
   "89288708530e",
   "89a24a3be120",
+  "8ae472812236",
   "8af298ce25bf",
   "8c687f38ebdd",
+  "8ebbe0addec7",
   "8ebc02fd6f00",
   "8ee4327893e7",
   "8f208ea5c25a",
+  "8f42e72d5f0a",
   "9008ec825e75",
   "9073064ca478",
   "914cd7515150",
   "91d6ebcdcb69",
   "926dd03576f0",
   "92c0e6c0309e",
+  "92d4ee4bab32",
   "92f2e77e3ead",
   "933df4b6b1da",
   "93b3c1dea7cf",
@@ -5561,18 +5795,26 @@
   "93ee78c642d6",
   "9427bea404c2",
   "94293c87eb33",
+  "943954614824",
+  "94fa2f333b93",
   "95ab9983c436",
+  "97507212bcee",
   "97e73ee9ba1b",
   "97f250722145",
   "985ff8fb0a5e",
   "98ac691acfc2",
+  "98f300d24707",
+  "98f746828c9c",
+  "998306b022f5",
   "9aca5854585d",
+  "9ae4c919981b",
   "9b21a76fc75c",
   "9b75da0bbc76",
   "9c4da3401e0a",
   "9c5dcae649cf",
   "9ce6c5b35013",
   "9daa4f6b25e2",
+  "9e02cae2d302",
   "9e8222144479",
   "9e92a7a9be6f",
   "9e985c1fe97c",
@@ -5580,10 +5822,12 @@
   "9fc615def7cf",
   "9fd05844c672",
   "a09764a6221c",
+  "a0fd2f83beec",
   "a10c99731982",
   "a1a4d995bdfe",
   "a1f37bb15afd",
   "a1f8cc84a968",
+  "a22130fb9d2b",
   "a41a14ad87c7",
   "a43013d9037d",
   "a4c3f37e6032",
@@ -5597,9 +5841,12 @@
   "a87d9aba9c24",
   "a91db4a75cc2",
   "a9970c30e068",
+  "aa52d241125b",
   "aacef57c243d",
+  "ab7d2650cba8",
   "abf2f43b5207",
   "ac0db06528dd",
+  "ac1be8523980",
   "ad703c6139aa",
   "ad88fa243181",
   "adb4c8b7e75e",
@@ -5611,7 +5858,10 @@
   "aed006f92b65",
   "aedd9c44bc68",
   "af3d0cd03758",
+  "aff5c556d17b",
   "b04fa6da528a",
+  "b07622d073a7",
+  "b07fe7afed1a",
   "b09be23a88d4",
   "b0fc3afb4938",
   "b122acd554b0",
@@ -5621,21 +5871,28 @@
   "b338aafdc65d",
   "b3b39c9a12a7",
   "b3cab6ef6acb",
+  "b3ee5f42b77e",
   "b4a2c9c8e1a0",
+  "b4f01c438279",
+  "b4feed4a827f",
   "b5a4e74b4eff",
   "b72ee32642a1",
+  "b7443fd70505",
   "b7aa8169c0ef",
   "b93f47efc4b2",
   "b95122a4ec32",
   "b970cbac3159",
   "baf8f51b2ac9",
+  "bbff935cda39",
   "bc320eb3e8c9",
   "bc6f01b6992e",
+  "bc8925409803",
   "bc9c6697c2cb",
   "bd0fec6dfc0a",
   "bd36a9578168",
   "bee8f9d8415c",
   "bef315b3dee3",
+  "bf043758ddfa",
   "bf1c5f50b0e3",
   "bf2455e8ccae",
   "bf94b6f039df",
@@ -5643,15 +5900,18 @@
   "bfe9e265ca24",
   "c0d957f0ef24",
   "c1390b2ff627",
+  "c18c5f130188",
   "c2060051c74b",
   "c320b7e86746",
   "c32e15650b22",
   "c339a76e1cb9",
   "c4945aed2961",
+  "c4e14ceeb737",
   "c5145f2eb166",
   "c5158ea56507",
   "c56bb7e19161",
   "c68bb7ca7f22",
+  "c69cdb450a02",
   "c6ca60e0d1ad",
   "c6cf1b647f86",
   "c6e5208d5cdc",
@@ -5668,20 +5928,31 @@
   "cd42936bbfcd",
   "cdfbe4b6c65b",
   "cf40f2ecab14",
+  "d035bdab27e1",
+  "d056baa4ecbb",
   "d0c6f1d0778a",
+  "d0ce8f0e7103",
   "d125cab551f2",
   "d15f2e1a5e19",
   "d2482e2de0d0",
   "d274f21d2166",
   "d2af8ec9a990",
   "d2f27454b503",
+  "d32877652ecd",
   "d350b355e385",
   "d37bb3583c68",
   "d4460374d69e",
   "d476a10bc3ea",
+  "d4cf66cd7f1b",
+  "d546183e8ea7",
+  "d56bc88e9dfb",
   "d795fe871f5a",
   "d79e65447200",
   "d7ce59e93bad",
+  "d8d4f130a961",
+  "d8eb6837c117",
+  "d95b910ba588",
+  "d97485f38be4",
   "d98a6522ac92",
   "d98ef36afcbf",
   "da42d63c13ca",
@@ -5689,15 +5960,20 @@
   "db892aa15674",
   "dbb2f4e1e7e0",
   "dc817e0ae5cc",
+  "dd33a69bc030",
   "ddd21430ae4d",
   "df0f8fc8edef",
   "df2d76cc6aeb",
   "df8beceb3ff4",
   "e073fa13a301",
+  "e0a7a62320c1",
+  "e0f0b51546a8",
+  "e151a741f95d",
   "e1d9e695b886",
   "e3bec2eb43bd",
   "e41fd204d78d",
   "e4474f93eddb",
+  "e55e03e8e262",
   "e5b54a1d1c56",
   "e6f733a28a5e",
   "e79645e1f6e5",
@@ -5705,17 +5981,19 @@
   "e7df822d4c71",
   "e89c268bccae",
   "e92bea748306",
+  "e95be449d7d1",
   "e991d8f83dc1",
   "ea04a48f6118",
   "eaa5408448d8",
-  "eaf949ddee87",
   "eb1678869f8e",
   "ec6d3f495655",
   "ec6f338ef051",
   "ecf5104b0346",
   "eda279befa60",
+  "edd3d9513fe5",
   "ee26d7d09a4a",
   "ee58b70369f1",
+  "eeabf8e93f6b",
   "eeb3b9e54c4e",
   "eecdb58a927e",
   "ef22b71825f5",
@@ -5731,12 +6009,15 @@
   "f3ecec6777d5",
   "f4cabaedfdc7",
   "f5f20663b834",
-  "f6c0993063bd",
+  "f68b27bbf5c1",
   "f70c0e3042e8",
+  "f797c3b94c47",
   "f7b04b806fe4",
   "f7fcf7b370e2",
   "f98148a481ba",
   "fa557ccbb273",
+  "fa5f141c8588",
+  "fb3c86bc172f",
   "fbb2facba881",
   "fc040596e378",
   "fd6d07669a71",
@@ -5744,8 +6025,9 @@
   "fe42edcd2903",
   "fe5cb110ce95",
   "fee3286a1339",
+  "feed7d7acf72",
   "ff552a971703",
   "ff9933e061c2"
  ],
- "updated": "2026-07-07T20:32:40.135854+00:00"
+ "updated": "2026-07-08T06:39:49.312907+00:00"
 }
