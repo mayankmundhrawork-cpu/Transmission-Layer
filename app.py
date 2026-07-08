@@ -77,8 +77,10 @@ st.markdown(f"""
     font-family: {MONO} !important;
     font-variant-numeric: tabular-nums;
   }}
-  * {{ border-radius: 0 !important; transition: color .08s, background .08s,
+  * {{ transition: color .08s, background .08s,
        border-color .08s !important; animation: none !important; }}
+  input, button, [data-baseweb="select"] > div, pre,
+  [data-testid="stExpander"] {{ border-radius: 6px !important; }}
   .stApp {{ background: {BG}; }}
   .block-container {{ padding-top: 0.7rem; padding-bottom: 2rem; max-width: 100%; }}
   [data-testid="stVerticalBlock"] {{ gap: 0.4rem; }}
@@ -134,11 +136,26 @@ st.markdown(f"""
   .statusbar .on {{ color: {TEXT}; }}
   .statusbar .off {{ color: {DIM}; }}
 
-  /* ── zone labels ───────────────────────────────────────────────────── */
-  .sec {{ color: {ACCENT}; font-size: 10px; font-weight: 600; text-transform: uppercase;
-          letter-spacing: 1.4px; margin: 16px 0 4px; border-bottom: 1px solid {HEADLN};
-          padding-bottom: 3px; }}
+  /* ── zone labels: distinct header bands ────────────────────────────── */
+  .sec {{ color: {ACCENT}; font-size: 10px; font-weight: 700; text-transform: uppercase;
+          letter-spacing: 1.6px; margin: 20px 0 8px; padding: 6px 14px;
+          background: #10141a; border: 1px solid {HEADLN}; border-radius: 7px; }}
   .mono {{ font-family: {MONO}; font-variant-numeric: tabular-nums; }}
+
+  /* ── zone panels: demarcated containers for content blocks ─────────── */
+  .panel {{ background: #0a0d11; border: 1px solid {HEADLN}; border-radius: 10px;
+            padding: 12px 14px; margin: 2px 0 6px; }}
+  .panel table.tl {{ margin: 0; }}
+
+  /* squawk: its own boxed live feed */
+  .sqbox {{ background: #0c1017; border: 1px solid #313c4a; border-radius: 10px;
+            padding: 10px 16px 8px; margin: 2px 0 6px; max-height: 235px;
+            overflow-y: auto; }}
+  .sqbox::-webkit-scrollbar {{ width: 8px; }}
+  .sqbox::-webkit-scrollbar-thumb {{ background: {HEADLN}; border-radius: 4px; }}
+  .sq-cap {{ color: {DIM}; font-size: 10px; text-transform: uppercase;
+             letter-spacing: 1px; border-top: 1px solid {GRIDLN};
+             margin-top: 8px; padding-top: 6px; }}
 
   /* ── headline strip: rules not boxes ───────────────────────────────── */
   .strip {{ display: flex; flex-wrap: wrap; gap: 0; margin: 2px 0 4px; }}
@@ -167,9 +184,10 @@ st.markdown(f"""
   table.tl td.id {{ text-align: left; color: {TEXT}; }}
   .spark {{ display: block; }}
 
-  /* ── event blocks: left bar + thin rules, no boxes ─────────────────── */
-  .evt {{ border-top: 1px solid {HEADLN}; border-bottom: 1px solid {HEADLN};
-          border-left: 2px solid {HEADLN}; padding: 8px 16px; margin-bottom: 6px; }}
+  /* ── event blocks: rounded cards, flag-coloured left bar ───────────── */
+  .evt {{ border: 1px solid {HEADLN}; border-left: 3px solid {HEADLN};
+          border-radius: 10px; background: #0a0d11;
+          padding: 10px 18px; margin-bottom: 4px; }}
   .evt.red {{ border-left-color: {RED}; background: rgba(229,72,77,0.055); }}
   .evt.amber {{ border-left-color: {AMBER}; background: rgba(224,168,59,0.045); }}
   .evt .top {{ display: flex; align-items: baseline; gap: 14px; }}
@@ -189,18 +207,22 @@ st.markdown(f"""
   .watch {{ color: {DIM}; font-size: 11px; margin-top: 2px; }}
 
   /* ── squawk + india ─────────────────────────────────────────────────── */
-  .sq {{ font-size: 12.5px; color: {G2}; padding: 1px 0; white-space: normal; }}
-  .sq .t {{ font-family: {MONO}; color: {DIM}; font-size: 10.5px; padding-right: 8px; }}
+  .sq {{ font-size: 12.5px; color: {G2}; padding: 2px 0; white-space: normal;
+         border-bottom: 1px solid {GRIDLN}; }}
+  .sq:last-of-type {{ border-bottom: none; }}
+  .sq .t {{ font-family: {MONO}; color: {DIM}; font-size: 10.5px; padding-right: 10px; }}
   .sq.fresh {{ color: {TEXT}; }}
-  .india-line {{ color: {MUT}; font-size: 11.5px; margin: -2px 0 8px;
-                 padding: 0 16px 6px; border-left: 2px solid {HEADLN}; }}
+  .india-line {{ color: {MUT}; font-size: 11.5px; margin: -1px 0 10px;
+                 padding: 6px 16px; background: #090c10;
+                 border: 1px solid {GRIDLN}; border-radius: 8px; }}
   .india-line b {{ color: {ACCENT}; font-size: 10px; text-transform: uppercase;
                    letter-spacing: 1px; font-weight: 600; }}
   .india-line .rid {{ color: {G2}; }}
 
   /* ── research accelerator surfaces ─────────────────────────────────── */
-  .thesis {{ border-left: 2px solid {HEADLN}; margin: -3px 0 10px 0;
-             padding: 6px 16px 8px; }}
+  .thesis {{ border: 1px solid {GRIDLN}; border-left: 2px solid {HEADLN};
+             border-radius: 8px; background: #090c10;
+             margin: -1px 0 4px; padding: 8px 16px 9px; }}
   .thesis .mech {{ color: {G2}; font-size: 12.5px; }}
   .thesis .gap {{ color: {TEXT}; font-size: 12.5px; margin-top: 4px; }}
   .thesis .gap b {{ color: {ACCENT}; font-size: 10px; text-transform: uppercase;
@@ -483,7 +505,10 @@ else:
         age_s = f"{int(age_m)}m" if age_m < 120 else f"{int(age_m//60)}h"
         rows.append(f'<div class="{cls}"><span class="t">{age_s:>4}</span>'
                     f'{it["text"][:220]}</div>')
-    st.markdown("".join(rows), unsafe_allow_html=True)
+    st.markdown(
+        f'<div class="sqbox">{"".join(rows)}'
+        f'<div class="sq-cap">live · 120s cache (~2-min lag) · '
+        f'@DeItaone via t.me mirror</div></div>', unsafe_allow_html=True)
 
 # ── 1) headline strip ──────────────────────────────────────────────────
 cells = []
@@ -498,7 +523,8 @@ for sid in HEADLINE_IDS:
         f'<div class="{cls.strip()}"><div class="lbl">{sid}{dot}</div>'
         f'<div class="val">{_fmt(r["last"], 2)}</div>'
         f'<div class="chg">{_fmt(r["d1_pct"], 2, "%")} · 5d {_fmt(r["d5_pct"], 2, "%")}</div></div>')
-st.markdown(f'<div class="strip">{"".join(cells)}</div>', unsafe_allow_html=True)
+st.markdown(f'<div class="panel"><div class="strip">{"".join(cells)}</div></div>',
+            unsafe_allow_html=True)
 
 # ── 1b) India strip: the audience's home market at a glance ────────────
 india_cells = []
@@ -515,10 +541,10 @@ for sid in ("nifty_50", "nifty_midcap_100", "usd_inr", "goi_10y", "india_cpi_yoy
 cal_early = build_calendar()
 next_in = [r for r in cal_early["upcoming"] if r["market"] == "INDIA"][:3]
 rel_line = " · ".join(f'{r["name"]} T-{r["days_until"]}d' for r in next_in)
-st.markdown(f'<div class="strip">{"".join(india_cells)}'
+st.markdown(f'<div class="panel"><div class="strip">{"".join(india_cells)}'
             f'<div class="cell"><div class="lbl">next india prints</div>'
             f'<div class="chg" style="max-width:280px;white-space:normal">'
-            f'{rel_line}</div></div></div>', unsafe_allow_html=True)
+            f'{rel_line}</div></div></div></div>', unsafe_allow_html=True)
 
 
 # ── 2) events — the board's loud layer ─────────────────────────────────
@@ -693,7 +719,7 @@ else:
                 f'<td class="num">{_fmt(nb["rho252"], 2)}</td>'
                 f'<td class="l note">{ll}</td>'
                 f'<td class="num">{_fmt(r.get("z20"), 2)}</td></tr>')
-        st.markdown(f'<table class="tl">{head}{"".join(rows)}</table>',
+        st.markdown(f'<div class="panel"><table class="tl">{head}{"".join(rows)}</table></div>',
                     unsafe_allow_html=True)
         # lag-shifted overlay for the top neighbour
         top_nb = nbs[0]
@@ -776,7 +802,7 @@ if q:
                 f'<td class="num">{_fmt(s20.get("hit_rate_up"), 2)}</td>'
                 f'<td class="num">{_fmt(s20.get("min_pct"), 1)} / '
                 f'{_fmt(s20.get("max_pct"), 1)}</td></tr>')
-        st.markdown(f'<table class="tl">{head}{"".join(rows)}</table>',
+        st.markdown(f'<div class="panel"><table class="tl">{head}{"".join(rows)}</table></div>',
                     unsafe_allow_html=True)
         if st.button("pin precedent", key="pat_pin"):
             add_pin("precedent", qdesc, {
@@ -935,7 +961,7 @@ else:
             f'<td class="num">{age_d}</td><td class="num">{quiet}</td>'
             f'<td class="note">{ev0.get("title","")[:110]}'
             f'<span style="color:{DIM}"> — {ev0.get("feed","")}</span></td></tr>')
-    st.markdown(f'<table class="tl">{head}{"".join(rows_html)}</table>',
+    st.markdown(f'<div class="panel"><table class="tl">{head}{"".join(rows_html)}</table></div>',
                 unsafe_allow_html=True)
 
 cands = universe.get("candidates", {})
@@ -982,7 +1008,7 @@ def _metric_table(rows: list[dict]) -> str:
             f'<td class="num">{_fmt(r["z60"], 2)}</td>'
             f'<td class="num">{_fmt(r["pct_1y"], 0)}</td>'
             f'<td class="note">{"; ".join(r["reasons"]) if r["reasons"] else ""}</td></tr>')
-    return f'<table class="tl">{head}{"".join(out)}</table>'
+    return f'<div class="panel"><table class="tl">{head}{"".join(out)}</table></div>'
 
 
 nonempty = [c for c in CLASSES if by_class.get(c)]
@@ -1018,7 +1044,7 @@ if cal["upcoming"]:
             f'<td class="l" style="color:{MUT}">{r["market"]}</td>'
             f'<td class="note">{r["threshold"]}</td>'
             f'<td class="l"><a href="{r["url"]}" target="_blank">open</a></td></tr>')
-    st.markdown(f'<table class="tl">{head}{"".join(body)}</table>', unsafe_allow_html=True)
+    st.markdown(f'<div class="panel"><table class="tl">{head}{"".join(body)}</table></div>', unsafe_allow_html=True)
 
 
 # ── 7) morning digest ──────────────────────────────────────────────────
