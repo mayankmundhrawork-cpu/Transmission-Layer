@@ -2,6 +2,50 @@
 
 ---
 
+# V6 — Squawk, India lens, hypotheses & journal (newest)
+
+## Built (all live-verified)
+
+- **Squawk (`squawk.py`)**: DeItaone via its public Telegram mirror
+  `t.me/s/walter_bloomberg` (X has no free lane; the mirror needs no auth).
+  App panel pulls live with a **120s cache** (your accepted ~2-min lag),
+  falling back to the persisted store when the mirror is down; the scheduled
+  job persists 48h history to `data/squawk.json` and injects items into the
+  headline store (feed `DeItaone`) so extraction/universe/event-matching see
+  them. Suffix noise + emoji stripped at ingest. **[VERIFY]** occasionally
+  that the mirror stays alive; alternates can be added to
+  `squawk.CHANNEL_URLS`.
+- **India transmission lens (`india.py`)**: for every event, ranked Indian
+  receivers (correlation/lead vs event members + reacted/quiet state) —
+  pure math over relations. Rendered as a "→ india" line under every event
+  card, fed to theses as INDIA TRANSMISSION CANDIDATES, and the thesis JSON
+  gained a mandatory **india_take** field (thesis cache key salted v2 to
+  force one-time regeneration). New India strip under the headline strip:
+  nifty/inr/GoI/CPI prints + next India releases countdown. Backbone gained
+  `india_cpi_yoy` (FRED `CPALTT01INM659N` **[VERIFY]** first CI fetch).
+- **Hypotheses & journal (`journal.py`)**: jot hypotheses on the board;
+  optional free-LLM evaluation (verdict / mechanism check / what confirms /
+  what refutes / expressing instruments / sharpened restatement) —
+  one user-clicked call each, EVAL_PROMPT system voice. Trade-intent journal
+  (instrument/side/level/rationale, linked to the motivating event) with
+  open/close lifecycle and markdown export. **No broker/demat API by
+  design** — the schema records intent now so fills can attach later.
+- **Bug pass**: HTML entities unescaped at headline/digest ingest (kills the
+  `S&amp;P` artifacts everywhere downstream); squawk text cleaned of channel
+  suffixes; calendar computed once per render.
+
+## Cloud caveat (same as scratchpad)
+Journal/hypotheses state lives in `data/journal.json` — durable locally,
+ephemeral across Streamlit Cloud redeploys. **Export before closing** on
+cloud. (The workflow does not commit journal/scratchpad — they're personal
+working state, not pipeline data.)
+
+## Costs
+Unchanged: $0.00/run. Squawk = one HTML GET per 2 min while the app is open.
+Hypothesis evaluations are user-clicked free-LLM calls.
+
+---
+
 # V5 — Research Accelerator (newest section)
 
 > Five capabilities that compress the gap between "opening the board" and

@@ -59,9 +59,10 @@ def _pull_feed(url: str) -> list[dict]:
     parsed = feedparser.parse(url)
     # feedparser sets .bozo on malformed feeds but often still yields entries;
     # only treat as failure when there are genuinely no entries.
+    import html as _h
     items = []
     for e in parsed.entries:
-        title = (getattr(e, "title", None) or "").strip()
+        title = _h.unescape((getattr(e, "title", None) or "")).strip()
         if not title:
             continue
         items.append({"title": title, "dt": _entry_dt(e)})

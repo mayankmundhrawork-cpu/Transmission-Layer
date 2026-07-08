@@ -1,5 +1,5 @@
 # Any change to this file forces a full Streamlit Cloud container rebuild
-# (soft source-syncs can leave stale modules in the running process).
+# (soft source-syncs can leave stale modules in the running process). rev: v6
 yfinance>=0.2.40
 pandas>=2.2.0
 numpy>=1.26.0

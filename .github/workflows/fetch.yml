@@ -83,7 +83,7 @@ jobs:
           git add data/prices.csv data/fetch_log.json data/digest_latest.txt \
                   data/universe.json data/headlines.json data/resolution_cache.json \
                   data/relations.json data/research_bundles.json data/theses.json \
-                  data/pattern_cache.json data/articles
+                  data/pattern_cache.json data/articles data/squawk.json
 
           # Nothing staged → no commit, no push, clean exit.
           if git diff --cached --quiet; then

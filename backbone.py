@@ -65,6 +65,8 @@ BACKBONE = [
     {"id": "ig_oas",        "market": "RATES", "source": "fred", "symbol": "BAMLC0A0CM",      "freq": "daily",   "framework": {}},
     {"id": "goi_10y",       "market": "RATES", "source": "fred", "symbol": "INDIRLTLT01STM",  "freq": "monthly", "framework": {}},
     {"id": "bund_10y",      "market": "RATES", "source": "fred", "symbol": "IRLTLT01DEM156N", "freq": "monthly", "framework": {}},
+    # India macro print (monthly, lagged — sparse guard suppresses flags) [VERIFY]
+    {"id": "india_cpi_yoy", "market": "RATES", "source": "fred", "symbol": "CPALTT01INM659N", "freq": "monthly", "framework": {}},
 
     # ── Commodities ────────────────────────────────────────────────────
     {"id": "wti",          "market": "COMMODITIES", "source": "yfinance", "symbol": "CL=F", "freq": "eod", "framework": {"single_session_pct": 1.5}},

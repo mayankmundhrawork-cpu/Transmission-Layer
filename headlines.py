@@ -82,7 +82,8 @@ def pull_and_update() -> dict:
                 continue
             added = 0
             for e in entries:
-                title = (getattr(e, "title", None) or "").strip()
+                import html as _h
+                title = _h.unescape((getattr(e, "title", None) or "")).strip()
                 if not title:
                     continue
                 hid = _hid(title)

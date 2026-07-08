@@ -39,11 +39,17 @@ mechanism-first, specific, numerate, no hedging boilerplate, no
 is fine. If the evidence does not support a gap, say "No gap: ..." plainly —
 a quiet conclusion is a valid output. Never invent numbers not given to you.
 
+The owner writes for INDIAN market practitioners: always close the loop to
+the Indian expression of the move, using the INDIA TRANSMISSION CANDIDATES
+supplied (never invent Indian instruments not listed).
+
 Return STRICT JSON only:
 {"mechanism": "<2-4 sentences: why this move propagates, through what channel>",
  "responders": [{"id": "<series id>", "expect": "<up|down>",
                  "status": "<already moved|not yet - watch>", "why": "<1 line>"}],
  "gap": "<the specific event-to-price gap, or 'No gap: <reason>'>",
+ "india_take": "<1-2 sentences: the Indian instrument(s) that express this,
+                and whether they have reacted yet>",
  "confidence": "<low|medium|high>",
  "one_liner": "<a single quotable sentence for the article>"}"""
 
@@ -52,13 +58,18 @@ def _quantize(z) -> str:
     return "na" if z is None else f"{round(z * 2) / 2:+.1f}"
 
 
+THESIS_SCHEMA_V = "v2"  # bump to invalidate cached theses on schema change
+
+
 def thesis_key(event: dict) -> str:
-    parts = [m["id"] + _quantize(m.get("z20")) for m in event["members"]]
+    parts = [THESIS_SCHEMA_V]
+    parts += [m["id"] + _quantize(m.get("z20")) for m in event["members"]]
     parts += sorted(n["title"][:40] for n in event.get("news", []))
     return hashlib.sha1("|".join(sorted(parts)).encode()).hexdigest()[:12]
 
 
-def _skeleton(event: dict, laggards: list[dict], analogues: dict) -> dict:
+def _skeleton(event: dict, laggards: list[dict], analogues: dict,
+              india: list[dict] | None = None) -> dict:
     """Rule-based thesis when no LLM key is configured — pure math, honest."""
     responders = [{
         "id": l["id"],
@@ -72,17 +83,24 @@ def _skeleton(event: dict, laggards: list[dict], analogues: dict) -> dict:
         best = analogues["analogues"][0]
         ana_line = (f"Nearest historical analogue: {best['date']} "
                     f"(z-distance {best['distance']}).")
+    try:
+        from india import format_receivers
+        india_take = format_receivers(india or []) or "No exposed Indian receivers above the correlation floor."
+    except Exception:
+        india_take = ""
     return {
         "mechanism": f"{event['label']}: correlated cluster flagged by the "
                      f"engine. Mechanism narrative unassessed (LLM off). {ana_line}",
         "responders": responders,
         "gap": "Unassessed (LLM off) — laggard list above is the live math.",
+        "india_take": india_take,
         "confidence": "low",
         "one_liner": "",
     }
 
 
-def _llm_call(backend: dict, user_prompt: str) -> dict | None:
+def _llm_call(backend: dict, user_prompt: str,
+              system: str | None = None) -> dict | None:
     try:
         r = requests.post(backend["url"], timeout=45, headers={
             "Authorization": f"Bearer {backend['key']}",
@@ -91,7 +109,7 @@ def _llm_call(backend: dict, user_prompt: str) -> dict | None:
             "model": backend["model"],
             "max_tokens": THESIS_MAX_TOKENS,
             "temperature": 0.4,
-            "messages": [{"role": "system", "content": SYSTEM_PROMPT},
+            "messages": [{"role": "system", "content": system or SYSTEM_PROMPT},
                          {"role": "user", "content": user_prompt}],
         })
         r.raise_for_status()
@@ -105,7 +123,7 @@ def _llm_call(backend: dict, user_prompt: str) -> dict | None:
 
 
 def _compose_prompt(event: dict, laggards: list[dict], analogues: dict,
-                    bundle: dict) -> str:
+                    bundle: dict, india: list[dict] | None = None) -> str:
     L = [f"EVENT: {event['label']} (level {event['level']}, score {event['score']})"]
     L.append("MEMBERS (z20 = 20-day z-score, d1 = 1-day %):")
     for m in event["members"]:
@@ -126,6 +144,12 @@ def _compose_prompt(event: dict, laggards: list[dict], analogues: dict,
             if s:
                 L.append(f"  aftermath {rid}: +20d median {s['median_pct']}% "
                          f"(n={s['n']}, hit-rate-up {s['hit_rate_up']})")
+    if india:
+        L.append("INDIA TRANSMISSION CANDIDATES (live math — use these for india_take):")
+        for r in india:
+            L.append(f"  {r['id']}: rho={r['rho']} via {r['via']}"
+                     + (f", leads {r['lead_lag']}d" if r.get("leads") else "")
+                     + f", z20={r['z20']} ({'reacted' if r['reacted'] else 'quiet'})")
     arts = [a for a in bundle.get("articles", []) if a.get("excerpt")]
     if arts:
         L.append("MOTIVATING NEWS (excerpts):")
@@ -151,7 +175,9 @@ def load_theses() -> dict:
 
 
 def build_theses(events: list[dict], laggards_by_key: dict,
-                 analogues_by_key: dict, bundles: dict) -> dict:
+                 analogues_by_key: dict, bundles: dict,
+                 india_by_key: dict | None = None) -> dict:
+    india_by_key = india_by_key or {}
     state = load_theses()
     backend = get_llm_backend()
     calls = 0
@@ -169,16 +195,18 @@ def build_theses(events: list[dict], laggards_by_key: dict,
         laggards = laggards_by_key.get(ekey, [])
         analogues = analogues_by_key.get(ekey, {})
         bundle = bundles.get("bundles", {}).get(ekey, {})
+        india = india_by_key.get(ekey, [])
         thesis, model = None, "skeleton"
         if backend and calls < THESIS_MAX_PER_RUN:
             # (a cached skeleton also lands here when a key appears — upgrade)
             calls += 1
-            thesis = _llm_call(backend, _compose_prompt(e, laggards, analogues, bundle))
+            thesis = _llm_call(backend, _compose_prompt(e, laggards, analogues,
+                                                        bundle, india))
             if thesis:
                 model = backend["model"]
                 generated += 1
         if thesis is None:
-            thesis = _skeleton(e, laggards, analogues)
+            thesis = _skeleton(e, laggards, analogues, india)
             skeletons += 1
         state["theses"][ekey] = {
             "tkey": tkey, "label": e["label"], "level": e["level"],

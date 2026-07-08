@@ -25,6 +25,10 @@ from digest import CHAT_PROMPT
 from engine import AMBER_Z, RED_Z, Z_WIN_SHORT, build_snapshot
 from events import build_events
 from headlines import recent_items
+from india import format_receivers, india_receivers
+from journal import (add_hypothesis, add_trade, close_trade,
+                     evaluate_hypothesis, load_journal)
+from journal import export_markdown as journal_export
 from patterns import run_query
 from registry import CLASSES, load_universe
 from relations import load_relations, neighbours
@@ -33,6 +37,7 @@ from research import event_key, load_bundles
 from scratchpad import (add_pin, clear_pad, export_markdown, load_pad,
                         remove_pin, set_note)
 from settings import UNIVERSE_CAP
+from squawk import fetch_live, load_squawk
 from thesis import load_theses
 
 DATA_DIR = Path(__file__).parent / "data"
@@ -182,6 +187,16 @@ st.markdown(f"""
   .evt .news .n b {{ color: {ACCENT}; font-weight: 600; font-size: 10.5px;
     text-transform: uppercase; letter-spacing: .5px; }}
   .watch {{ color: {DIM}; font-size: 11px; margin-top: 2px; }}
+
+  /* ── squawk + india ─────────────────────────────────────────────────── */
+  .sq {{ font-size: 12.5px; color: {G2}; padding: 1px 0; white-space: normal; }}
+  .sq .t {{ font-family: {MONO}; color: {DIM}; font-size: 10.5px; padding-right: 8px; }}
+  .sq.fresh {{ color: {TEXT}; }}
+  .india-line {{ color: {MUT}; font-size: 11.5px; margin: -2px 0 8px;
+                 padding: 0 16px 6px; border-left: 2px solid {HEADLN}; }}
+  .india-line b {{ color: {ACCENT}; font-size: 10px; text-transform: uppercase;
+                   letter-spacing: 1px; font-weight: 600; }}
+  .india-line .rid {{ color: {G2}; }}
 
   /* ── research accelerator surfaces ─────────────────────────────────── */
   .thesis {{ border-left: 2px solid {HEADLN}; margin: -3px 0 10px 0;
@@ -441,6 +456,35 @@ st.markdown(
     unsafe_allow_html=True)
 
 
+# ── 0) squawk — DeItaone via public mirror, ~2min lag ──────────────────
+@st.cache_data(ttl=120, show_spinner=False)
+def _live_squawk() -> list[dict]:
+    live = fetch_live(timeout=8)
+    if live:
+        return live
+    return load_squawk()[-20:]  # mirror down → fall back to persisted store
+
+
+st.markdown('<div class="sec">Squawk · DeItaone</div>', unsafe_allow_html=True)
+sq = _live_squawk()
+if not sq:
+    st.markdown('<div class="calm">Squawk mirror unreachable — persisted '
+                'history empty.</div>', unsafe_allow_html=True)
+else:
+    now_utc = datetime.now(timezone.utc)
+    rows = []
+    for it in sorted(sq, key=lambda x: x["ts"], reverse=True)[:10]:
+        try:
+            age_m = (now_utc - datetime.fromisoformat(it["ts"])
+                     .astimezone(timezone.utc)).total_seconds() / 60
+        except Exception:
+            age_m = 999
+        cls = "sq fresh" if age_m <= 30 else "sq"
+        age_s = f"{int(age_m)}m" if age_m < 120 else f"{int(age_m//60)}h"
+        rows.append(f'<div class="{cls}"><span class="t">{age_s:>4}</span>'
+                    f'{it["text"][:220]}</div>')
+    st.markdown("".join(rows), unsafe_allow_html=True)
+
 # ── 1) headline strip ──────────────────────────────────────────────────
 cells = []
 for sid in HEADLINE_IDS:
@@ -455,6 +499,26 @@ for sid in HEADLINE_IDS:
         f'<div class="val">{_fmt(r["last"], 2)}</div>'
         f'<div class="chg">{_fmt(r["d1_pct"], 2, "%")} · 5d {_fmt(r["d5_pct"], 2, "%")}</div></div>')
 st.markdown(f'<div class="strip">{"".join(cells)}</div>', unsafe_allow_html=True)
+
+# ── 1b) India strip: the audience's home market at a glance ────────────
+india_cells = []
+for sid in ("nifty_50", "nifty_midcap_100", "usd_inr", "goi_10y", "india_cpi_yoy"):
+    r = by_id.get(sid)
+    if not r or r.get("last") is None:
+        continue
+    flag = r["flag"]
+    cls = "cell " + (flag if flag in ("red", "amber") else "")
+    india_cells.append(
+        f'<div class="{cls.strip()}"><div class="lbl">{sid}</div>'
+        f'<div class="val">{_fmt(r["last"], 2)}</div>'
+        f'<div class="chg">{_fmt(r["d1_pct"], 2, "%")} · z {_fmt(r["z20"], 1)}</div></div>')
+cal_early = build_calendar()
+next_in = [r for r in cal_early["upcoming"] if r["market"] == "INDIA"][:3]
+rel_line = " · ".join(f'{r["name"]} T-{r["days_until"]}d' for r in next_in)
+st.markdown(f'<div class="strip">{"".join(india_cells)}'
+            f'<div class="cell"><div class="lbl">next india prints</div>'
+            f'<div class="chg" style="max-width:280px;white-space:normal">'
+            f'{rel_line}</div></div></div>', unsafe_allow_html=True)
 
 
 # ── 2) events — the board's loud layer ─────────────────────────────────
@@ -503,13 +567,24 @@ else:
                     f' ({r.get("status","")})' for r in th["responders"][:5])
                 watch = f'<div class="watch">watch next: {items}</div>'
             one = f'<div class="gap">“{th["one_liner"]}”</div>' if th.get("one_liner") else ""
+            itake = f'<div class="watch"><span class="wid">india:</span> ' \
+                    f'{th["india_take"]}</div>' if th.get("india_take") else ""
             st.markdown(
                 f'<div class="thesis"><div class="mech">{th.get("mechanism","")}</div>'
-                f'<div class="gap"><b>gap</b> {th.get("gap","")}</div>{one}{watch}'
+                f'<div class="gap"><b>gap</b> {th.get("gap","")}</div>{one}{itake}{watch}'
                 f'<div class="tag">thesis · {trec.get("model","skeleton")} · '
                 f'{(trec.get("generated_at") or "")[:16]}Z · confidence '
                 f'{th.get("confidence","·")}</div></div>',
                 unsafe_allow_html=True)
+
+        # live India-receiver line (pure math, always shown)
+        recv = india_receivers([m["id"] for m in e["members"]], by_id, relations)
+        if recv:
+            items = " · ".join(
+                f'<span class="rid">{r["id"]}</span> ρ{_fmt(r["rho"], 2)} '
+                f'{"✓reacted" if r["reacted"] else "quiet"}' for r in recv)
+            st.markdown(f'<div class="india-line"><b>→ india</b> {items}</div>',
+                        unsafe_allow_html=True)
 
         # research bundle
         if brec:
@@ -753,6 +828,90 @@ else:
             st.rerun()
 
 
+# ── 3e) hypotheses & trading journal ───────────────────────────────────
+st.markdown('<div class="sec">Hypotheses &amp; journal</div>', unsafe_allow_html=True)
+jn = load_journal()
+
+hc1, hc2 = st.columns([4, 1])
+with hc1:
+    hyp_text = st.text_input("hypothesis", key="hyp_new",
+                             label_visibility="collapsed",
+                             placeholder="jot a hypothesis … e.g. 'if brent holds 72, "
+                                         "OMCs underperform nifty within 5 sessions'")
+with hc2:
+    if st.button("save hypothesis", key="hyp_save") and hyp_text.strip():
+        top_ev = ev["events"][0]["label"] if ev["events"] else ""
+        add_hypothesis(hyp_text, context=top_ev)
+        st.rerun()
+
+tracked = [r["id"] for r in snap["series"]]
+for h in jn["hypotheses"][:6]:
+    j1, j2 = st.columns([5, 1])
+    with j1:
+        st.markdown(f'<div class="bundle-row"><span class="st">[{h["ts"][:10]}]</span> '
+                    f'{h["text"][:140]}</div>', unsafe_allow_html=True)
+        evh = h.get("evaluation")
+        if evh:
+            st.markdown(
+                f'<div class="bundle-ex">verdict <b>{evh.get("verdict","")}</b> — '
+                f'{evh.get("mechanism_check","")}<br>'
+                f'confirms: {evh.get("confirming","·")} · refutes: {evh.get("refuting","·")}'
+                + (f'<br>via: {", ".join(evh.get("instruments", []))}'
+                   if evh.get("instruments") else "")
+                + (f'<br>sharpened: <i>{evh["sharpened"]}</i>'
+                   if evh.get("sharpened") else ""),
+                unsafe_allow_html=True)
+    with j2:
+        if not h.get("evaluation"):
+            if st.button("evaluate", key=f'hyp_eval_{h["id"]}'):
+                ctx = "; ".join(e["label"] for e in ev["events"][:4])
+                evaluate_hypothesis(h["id"], tracked, board_context=ctx)
+                st.rerun()
+
+st.markdown('<div class="uni-note">journal a trade intent (no broker link — '
+            'rationale now, fills later):</div>', unsafe_allow_html=True)
+t1, t2, t3, t4, t5 = st.columns([1.6, 0.9, 0.9, 3, 0.9])
+with t1:
+    tr_inst = st.selectbox("instrument", tracked, key="tr_inst",
+                           label_visibility="collapsed")
+with t2:
+    tr_side = st.selectbox("side", ["long", "short", "watch"], key="tr_side",
+                           label_visibility="collapsed")
+with t3:
+    tr_level = st.text_input("level", key="tr_level", placeholder="level",
+                             label_visibility="collapsed")
+with t4:
+    tr_note = st.text_input("rationale", key="tr_note", placeholder="rationale …",
+                            label_visibility="collapsed")
+with t5:
+    if st.button("log", key="tr_log") and tr_note.strip():
+        top_ev = ev["events"][0]["label"] if ev["events"] else ""
+        add_trade(tr_inst, tr_side, tr_level, tr_note, link=top_ev)
+        st.rerun()
+
+open_trades = [t for t in jn["trades"] if t["status"] == "open"]
+closed_n = len(jn["trades"]) - len(open_trades)
+for t in open_trades[:8]:
+    x1, x2 = st.columns([5, 1])
+    with x1:
+        st.markdown(f'<div class="bundle-row"><span class="st">[{t["side"]}]</span> '
+                    f'<span class="mono">{t["instrument"]}</span> @ '
+                    f'{t["level"] or "mkt"} · {t["rationale"][:100]} '
+                    f'<span class="st">{_age(t["ts"])}</span></div>',
+                    unsafe_allow_html=True)
+    with x2:
+        if st.button("close", key=f'tr_close_{t["id"]}'):
+            close_trade(t["id"])
+            st.rerun()
+if jn["hypotheses"] or jn["trades"]:
+    st.download_button("export journal", journal_export(),
+                       file_name=f"journal_{datetime.now(timezone.utc):%Y%m%d}.md",
+                       mime="text/markdown", key="jn_export")
+    if closed_n:
+        st.markdown(f'<div class="uni-note">{closed_n} closed entries in the '
+                    f'export</div>', unsafe_allow_html=True)
+
+
 # ── 4) universe — what's tracked and why ───────────────────────────────
 st.markdown('<div class="sec">Universe · news-tracked layer</div>', unsafe_allow_html=True)
 if not members:
@@ -838,7 +997,7 @@ else:
 
 # ── 6) release calendar ────────────────────────────────────────────────
 st.markdown('<div class="sec">Release calendar</div>', unsafe_allow_html=True)
-cal = build_calendar()
+cal = cal_early  # computed once for the India strip; pure date math
 if cal["recent"]:
     links = " · ".join(
         f'<a href="{r["url"]}" target="_blank">{r["name"]}</a> ({r["released_date"]})'

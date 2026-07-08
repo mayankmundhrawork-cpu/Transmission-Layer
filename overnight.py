@@ -49,9 +49,19 @@ def main() -> int:
               file=sys.stderr)
         return 1
 
-    # 2 · laggards + analogues per event
-    lag_by, ana_by = {}, {}
+    # 1b · squawk persist + inject (DeItaone mirror)
     try:
+        from squawk import pull_and_store
+        srep = pull_and_store()
+        print(f"squawk: live={srep['live']} new={srep['new']} "
+              f"injected={srep['injected']}")
+    except Exception:
+        print("WARN squawk failed:\n" + traceback.format_exc()[-400:], file=sys.stderr)
+
+    # 2 · laggards + analogues + India receivers per event
+    lag_by, ana_by, ind_by = {}, {}, {}
+    try:
+        from india import india_receivers
         from patterns import analogues_for_event
         from relations import laggards_for, load_relations
         from research import event_key
@@ -62,10 +72,12 @@ def main() -> int:
             try:
                 lag_by[k] = laggards_for(mids, by_id, relx)
                 ana_by[k] = analogues_for_event(mids, prices)
+                ind_by[k] = india_receivers(mids, by_id, relx)
             except Exception:
                 lag_by.setdefault(k, [])
                 ana_by.setdefault(k, {})
-        print(f"analogues+laggards: {len(ana_by)} events prepared")
+                ind_by.setdefault(k, [])
+        print(f"analogues+laggards+india: {len(ana_by)} events prepared")
     except Exception:
         print("WARN analogue stage failed:\n" + traceback.format_exc()[-500:],
               file=sys.stderr)
@@ -84,7 +96,7 @@ def main() -> int:
     # 4 · theses
     try:
         from thesis import build_theses
-        state = build_theses(ev["events"], lag_by, ana_by, bundles)
+        state = build_theses(ev["events"], lag_by, ana_by, bundles, ind_by)
         lr = state["ledger"]["last_run"]
         print(f"theses: backend={lr['backend']} llm_calls={lr['llm_calls']} "
               f"generated={lr['generated']} skeletons={lr['skeletons']} "
