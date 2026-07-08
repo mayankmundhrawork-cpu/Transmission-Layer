@@ -83,7 +83,7 @@ st.markdown(f"""
   [data-testid="stExpander"] {{ border-radius: 6px !important; }}
   .stApp {{ background: {BG}; }}
   .block-container {{ padding-top: 0.7rem; padding-bottom: 2rem; max-width: 100%; }}
-  [data-testid="stVerticalBlock"] {{ gap: 0.4rem; }}
+  [data-testid="stVerticalBlock"] {{ gap: 0.5rem; }}
   a {{ color: {ACCENT}; text-decoration: none; }}
   a:hover {{ text-decoration: underline; }}
 
@@ -138,13 +138,13 @@ st.markdown(f"""
 
   /* ── zone labels: distinct header bands ────────────────────────────── */
   .sec {{ color: {ACCENT}; font-size: 10px; font-weight: 700; text-transform: uppercase;
-          letter-spacing: 1.6px; margin: 20px 0 8px; padding: 6px 14px;
+          letter-spacing: 1.6px; margin: 42px 0 10px; padding: 6px 14px;
           background: #10141a; border: 1px solid {HEADLN}; border-radius: 7px; }}
   .mono {{ font-family: {MONO}; font-variant-numeric: tabular-nums; }}
 
   /* ── zone panels: demarcated containers for content blocks ─────────── */
   .panel {{ background: #0a0d11; border: 1px solid {HEADLN}; border-radius: 10px;
-            padding: 12px 14px; margin: 2px 0 6px; }}
+            padding: 12px 14px; margin: 2px 0 12px; }}
   .panel table.tl {{ margin: 0; }}
 
   /* squawk: its own boxed live feed */
