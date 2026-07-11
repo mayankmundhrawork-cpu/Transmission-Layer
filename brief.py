@@ -25,6 +25,64 @@ import pandas as pd
 DATA_DIR = Path(__file__).parent / "data"
 BRIEF_MD = DATA_DIR / "board_brief.md"
 
+METHODOLOGY = """---
+## Appendix — how every statistic in this brief is computed
+
+**z20 (primary z-score).** For a series with daily observations x:
+`z20 = (x_today − mean(x_prev20)) / std(x_prev20)`
+where `x_prev20` is the 20 most recent observations STRICTLY BEFORE today
+(the window excludes today, so today's move is measured against yesterday's
+baseline) and std is the population standard deviation (ddof=0). Computed on
+LEVELS, not returns. `z60` is identical with a 60-observation window.
+A series needs the full prior window; otherwise z is n/a.
+
+**1-year percentile (pct_1y).** Over the trailing window of up to 252
+observations INCLUDING today (n = actual observations available, min 20):
+`pct_1y = 100 × (count of window values strictly below today) / n`.
+0 = lowest of the year, 100 = highest. (The Patterns query engine uses a
+rank-based variant that treats ties by average rank — equivalent in
+practice.)
+
+**1d% / 5d%.** Simple percent change vs the observation 1 (resp. 5) trading
+observations ago: `100 × (x_today/x_prev − 1)`. Reported as n/a when the
+prior value is ~0 (zero-crossing spreads like 2s10s).
+
+**Flag thresholds.**
+- amber: |z20| ≥ 1.5 (backbone) or ≥ 2.0 (news-admitted names), OR pct_1y ≤5
+  or ≥95, OR a named framework trigger (e.g. WTI/Brent 1-session ≥1.5%,
+  TIPS 1-day ≥5bp, VIX 1-session ≥15%, gold/silver ratio >85 or <75).
+- red: |z20| ≥ 2.5, OR framework trigger with |z20| above the amber bar.
+- Series with <30 observations never flag (sparse guard).
+- Data hygiene: an isolated print deviating >15% from BOTH neighbours in the
+  same direction (spike-and-revert) is replaced by the neighbour mean before
+  any statistic is computed (VIX exempt — that pattern is its signal).
+
+**Events.** Flagged series are clustered when their 60-day daily-return
+correlation satisfies |ρ| ≥ 0.65 AND today's moves are consistent with ρ's
+sign. Event score = (strongest member's engine score, i.e. |z20| + 3 if a
+framework trigger fired) + 1.2·ln(n_members) + 2 if corroborating news is
+attached. Events surface only above a floor of 3.2, max 8 cards; the rest
+are suppressed to the watchlist.
+
+**Correlations / lead-lag (rho in "India receivers" and "watch next").**
+Pearson correlation of daily percent-change returns over trailing 60d
+(rho60) and 252d (rho252) windows; pairs kept at |ρ| ≥ 0.35. "Leads by k
+days" means corr(return_A at t−k, return_B at t) over the 252d window is
+the strongest lagged relationship, k ∈ 1..5. A "receiver/laggard" is a
+correlated instrument whose own |z20| < 1.0 (it has not yet moved).
+
+**Historical analogues.** Nearest past dates by Euclidean distance between
+today's member z20 vector and every historical date's vector (last 10
+sessions excluded, episodes ≥5 sessions apart). Aftermath stats are the
+median/hit-rate of forward percent changes +5 and +20 observations after
+each analogue date.
+
+**Data.** Daily closes: yfinance (indices/FX/commodities/equities/crypto)
+and FRED (rates/credit/India macro), ~2 years of history, refreshed every
+2h on weekdays with an intraday provisional last price that the official
+close later overwrites. All statistics use this daily series — intraday
+prints enter as today's provisional observation."""
+
 WRITING_PROMPT = """---
 ## How to use this brief (instruction to the assistant)
 You are helping draft a macro article for an audience of Indian market
@@ -176,6 +234,7 @@ def build_brief() -> str:
     except Exception:
         pass
 
+    L.append("\n" + METHODOLOGY)
     L.append("\n" + WRITING_PROMPT)
     return "\n".join(L)
 
