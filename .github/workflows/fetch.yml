@@ -74,6 +74,15 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: python overnight.py
 
+      - name: Board brief (LLM-ready state file, optional gist mirror)
+        # one markdown file with the whole board state, for feeding Claude
+        # conversations. GIST_TOKEN/GIST_ID optional: mirrors the brief to a
+        # stable gist raw URL so external chats can auto-fetch the live board.
+        env:
+          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+        run: python brief.py
+
       - name: Commit and push updated data
         run: |
           set -e
@@ -83,7 +92,8 @@ jobs:
           git add data/prices.csv data/fetch_log.json data/digest_latest.txt \
                   data/universe.json data/headlines.json data/resolution_cache.json \
                   data/relations.json data/research_bundles.json data/theses.json \
-                  data/pattern_cache.json data/articles data/squawk.json
+                  data/pattern_cache.json data/articles data/board_brief.md \
+                  data/squawk.json data/squawk.json
 
           # Nothing staged → no commit, no push, clean exit.
           if git diff --cached --quiet; then
