@@ -1,4 +1,4 @@
-=== TRANSMISSION LAYER MORNING DIGEST — 2026-07-10 ===
+=== TRANSMISSION LAYER MORNING DIGEST — 2026-07-11 ===
 
 [1] METRIC STATE (as of last close)
   ID | last | 1d% | 5d% | 20d-z | 1yr-percentile | flag
@@ -52,8 +52,8 @@
   wheat | 639.2500 | 4.58% | 8.26% | 4.08 | 96 | red
   corn | 460.2500 | 7.60% | 8.29% | 3.97 | 91 | red
   soybeans | 1189.5000 | 0.83% | 5.10% | 1.97 | 93 | amber
-  btc_usd | 64164.7812 | 1.54% | 2.59% | 0.85 | 10 | none
-  eth_usd | 1795.3400 | 2.92% | 2.21% | 1.34 | 10 | none
+  btc_usd | 64102.0508 | -0.10% | 0.17% | 0.80 | 10 | none
+  eth_usd | 1796.4200 | 0.06% | -0.06% | 1.22 | 10 | none
   midcap_largecap_ratio | 2.6035 | 0.25% | 1.60% | 1.64 | 97 | red
   brent_wti_spread | 4.4900 | 6.40% | 34.03% | 2.30 | 68 | amber
   gold_silver_ratio | 68.4726 | 0.09% | 2.72% | 0.81 | 54 | amber
@@ -85,7 +85,7 @@
   dyn_pcjeweller_ns | 10.0000 | 1.73% | -2.91% | 1.89 | 42 | none
   dyn_qessf | 0.2495 | -6.45% | -5.02% | -2.09 | 56 | amber
   dyn_rivn | 17.4800 | -3.53% | -6.17% | 0.75 | 85 | none
-  dyn_skhyv | n/a | n/a | n/a | n/a | n/a | missing
+  dyn_skhyv | 168.3200 | n/a | n/a | n/a | n/a | none
   dyn_swiggy_ns | 272.9900 | -2.83% | 9.96% | 2.06 | 21 | amber
   dyn_wulf | 21.9550 | -5.37% | 3.66% | -1.33 | 83 | none
 
@@ -123,13 +123,16 @@
   [AMBER] usd_jpy (series, FX) score=0.24 — 1y-pct=96
 
 [3] RELEASE PROXIMITY
-  T-0d  NSDL FPI flows — 5-session outflow >$500M sustained
-  T-0d  RBI Weekly Statistical Supplement — forex reserves change; liquidity posture
-  T-0d  Kharif sowing data — area vs year-ago >5% (in season, Jun–Sep)
-  T-0d  CFTC Commitments of Traders — Producer/Merchant vs Money Mgr divergence
-  T-3d  India CPI — surprise >0.2% vs consensus
+  T-2d  India CPI — surprise >0.2% vs consensus
+  T-2d  NSDL FPI flows — 5-session outflow >$500M sustained
+  T-2d  IMD weekly rainfall — cumulative deficit direction; >10% deviation (monsoon season)
+  T-3d  India WPI — any; WPI leads MCX; watch fuel & mfg sub-indices
+  T-3d  US CPI — surprise >0.2% vs consensus
   Released in last 24h:
-    NSDL FPI flows (2026-07-09) — https://www.fpi.nsdl.co.in/web/Reports/Latest.aspx
+    NSDL FPI flows (2026-07-10) — https://www.fpi.nsdl.co.in/web/Reports/Latest.aspx
+    RBI Weekly Statistical Supplement (2026-07-10) — https://www.rbi.org.in/Scripts/WSSView.aspx
+    Kharif sowing data (2026-07-10) — https://agriwelfare.gov.in/
+    CFTC Commitments of Traders (2026-07-10) — https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm
 
 [4] NEWS — headlines by market (from RSS, last 24h)
   USA:
@@ -144,26 +147,25 @@
     - ‘I get $1,460 in Social Security’: My millionaire ex-husband, 74, refuses to pay alimony. What can I do?  — MarketWatch Top
     - My insurance company said my roof lost a few tiles. Loss adjusters found $10,000 in storm damage. How could this happen?  — MarketWatch Top
   India:
-    - US stocks today: US stocks end higher as investors turn to earnings season  — ET Markets
-    - Indian Bank drops capital raising plan on lower ECL hit  — ET Markets
-    - SK Hynix shares jump 14% in debut on US stock market riding on AI wave  — ET Markets
-    - Morgan Stanley warns AI chip rally may be running out of steam  — ET Markets
-    - Circle shares surge 13% on getting regulatory approval to set up US trust bank  — ET Markets
-    - Global Markets: Chinese fast fashion retailer Shein finally wins approval for Hong Kong IPO  — ET Markets
+    - Midcap bets! InCred picks 6 stocks with up to 54% upside potential. See full list  — ET Markets
+    - Concurrent Gainers: 10 stocks that gained for 5 days in a row  — ET Markets
+    - Korea’s SK Hynix shares make stellar US market debut, rocket 13% on continued AI optimism  — ET Markets
+    - SBI MF IPO vs ICICI AMC: Which is the better bet for investors ahead of Rs 11,600 crore issue?  — ET Markets
+    - IPO Calendar next week: SBI MF among 3 new issues to raise Rs 11,980 cr  — ET Markets
+    - Will Google be Berkshire CEO Greg Abel's best stock pick after predecessor Warren Buffett's Apple bet?  — ET Markets
+    - Greed and Fear report: Christopher Wood sees 'AI fatigue' setting in. Why Jefferies is turning bullish on India  — Mint Markets
+    - Buy or sell: Sumeet Bagadia recommends three stocks to buy on Monday - 13 July 2026  — Mint Markets
+    - Three PSU stocks with strong expansion plans  — Mint Markets
     - Fino Payments Bank June update: Deposits rise 11%, loan referrals surge 3.5x  — Mint Markets
     - Gold, silver prices today: Comex extends weekly losses amid renewed Middle East tensions  — Mint Markets
     - SK Hynix's shares surge 14% in blockbuster US market debut amid AI frenzy  — Mint Markets
-    - SBI Funds raises  ₹1,655 crore in pre-IPO share sale  — Mint Markets
-    - Recently listed Waterways Leisure Tourism approves 1:10 stock split  — Mint Markets
-    - Pulse of the Street: Sensex, Nifty rally on TCS earnings after midweek rout  — Mint Markets
     [manual] RBI press: https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx
   EU:
     - Meeting of 10-11 June 2026  — ECB press
     - Philip R. Lane: AI and monetary policy  — ECB press
   China:
+    - Typhoon Bavi: flights and trains cancelled as China steps up emergency preparations  — SCMP Economy
     - The loudest voices in US-China trade talks? Christmas tree growers  — SCMP Economy
-    - AI, science and the risks in China’s reliance on imported precision equipment  — SCMP Economy
-    - Typhoon Bavi loses eye but system expands to 1,263 times the size of Hong Kong  — SCMP Economy
     [manual] NBS China: https://www.stats.gov.cn/english/
     [manual] PBoC: http://www.pbc.gov.cn/en/3688006/index.html
     [manual] Caixin Global: https://www.caixinglobal.com/
@@ -176,9 +178,5 @@
     - Oil’s Calm Is Over as Middle East Risks Return  — OilPrice
     - The United States produced more crude oil than any other country in 2025  — EIA Today in Energy
     - U.S. exports of crude oil and petroleum products reached record in April  — EIA Today in Energy
-    - CATL takes 20% stake in graphite materials developer CarbonScape  — Mining.com
-    - Ex-US Navy commander quits NovaRed copper firm over Noem hire  — Mining.com
-    - Giustra: Copper market needs six new mines a year to 2050  — Mining.com
-    - IDEX finds tungsten in Idaho copper drilling  — Mining.com
 
 === END DIGEST ===

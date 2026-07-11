@@ -1,9 +1,9 @@
 {
-  "fetched_at": "2026-07-10T23:36:21.868653Z",
+  "fetched_at": "2026-07-11T06:03:31.543392Z",
   "registry_series": 86,
   "tails": 69,
   "backfills": 2,
-  "live_updates": 69,
+  "live_updates": 70,
   "deferred_backfills": [],
   "legacy_columns": [
     "dabur",
@@ -212,7 +212,7 @@
     },
     "aud_usd": {
       "status": "OK",
-      "rows": 518,
+      "rows": 519,
       "last_date": "2026-07-10",
       "last_value": 0.6955069899559021,
       "corrections": [],
@@ -220,7 +220,7 @@
     },
     "usd_cny": {
       "status": "OK",
-      "rows": 518,
+      "rows": 519,
       "last_date": "2026-07-10",
       "last_value": 6.76669979095459,
       "corrections": [],
@@ -332,17 +332,17 @@
     },
     "btc_usd": {
       "status": "OK",
-      "rows": 533,
-      "last_date": "2026-07-10",
-      "last_value": 64164.78125,
+      "rows": 534,
+      "last_date": "2026-07-11",
+      "last_value": 64102.05078125,
       "corrections": [],
       "live": true
     },
     "eth_usd": {
       "status": "OK",
-      "rows": 533,
-      "last_date": "2026-07-10",
-      "last_value": 1795.3399658203125,
+      "rows": 534,
+      "last_date": "2026-07-11",
+      "last_value": 1796.4200439453125,
       "corrections": [],
       "live": true
     },
@@ -532,7 +532,7 @@
     },
     "dyn_qessf": {
       "status": "OK",
-      "rows": 501,
+      "rows": 502,
       "last_date": "2026-07-10",
       "last_value": 0.24950000643730164,
       "corrections": [],
@@ -571,8 +571,12 @@
       "live": true
     },
     "dyn_skhyv": {
-      "status": "EMPTY",
-      "rows": 0
+      "status": "OK",
+      "rows": 1,
+      "last_date": "2026-07-10",
+      "last_value": 168.32000732421875,
+      "corrections": [],
+      "live": true
     },
     "ust_2y": {
       "status": "OK",
