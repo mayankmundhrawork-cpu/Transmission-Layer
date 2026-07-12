@@ -1,0 +1,84 @@
+# P4 — the assumption ledger. Every standing economic prior the board ships,
+# encoded as a HYPOTHESIS to be scored against live data at generation time,
+# never as a constant. Statuses: VALID / WEAK / INVERTED / INSUFFICIENT_DATA.
+#
+# Fields:
+#   driver / target   series ids (daily returns are correlated)
+#   expected_sign     +1 or -1 — the sign the prior predicts for corr(driver, target)
+#   contra            optional second check: {series, bad_sign} — if
+#                     corr(target, series) is CLEARLY bad_sign, the assumption
+#                     is INVERTED regardless of the primary check
+#                     (e.g. gold trading WITH equities breaks safe-haven even
+#                     if gold-VIX corr is muddy)
+#   channel           the narrative this prior licenses (only quotable when
+#                     status is VALID)
+#   linked_group      engine co-occurrence group this prior gates (optional)
+#
+# Thresholds (assumptions.py): |corr| >= 0.25 counts as "clear" on both the
+# 20d and 60d windows; clear-wrong-sign on the 20d window => INVERTED;
+# neither clear => WEAK; < 40 paired obs => INSUFFICIENT_DATA.
+
+assumptions:
+  - name: safe_haven_gold
+    driver: vix
+    target: comex_gold
+    expected_sign: +1
+    contra: {series: nifty_50, bad_sign: +1}
+    channel: "risk-off safe-haven bid: vol up -> gold bid"
+    linked_group: null
+
+  - name: gold_silver_comove
+    driver: comex_gold
+    target: comex_silver
+    expected_sign: +1
+    channel: "monetary metals co-move; ratio extremes are rotations"
+    linked_group: gold_silver
+
+  - name: metal_copper_channel
+    driver: comex_copper
+    target: nifty_metal
+    expected_sign: +1
+    channel: "global copper leads Indian metal equities"
+    linked_group: metal_copper
+
+  - name: inr_oil_channel
+    driver: brent
+    target: usd_inr
+    expected_sign: +1
+    channel: "oil up -> import bill -> INR weakens (usd_inr up)"
+    linked_group: inr_oil
+
+  - name: goi_ust_comove
+    driver: ust_10y
+    target: goi_10y
+    expected_sign: +1
+    channel: "global duration transmits to GoI yields"
+    linked_group: goi_ust
+
+  - name: vix_equity_inverse
+    driver: vix
+    target: sp500
+    expected_sign: -1
+    channel: "vol spike -> equity drawdown"
+    linked_group: null
+
+  - name: dxy_inr_channel
+    driver: dxy
+    target: usd_inr
+    expected_sign: +1
+    channel: "broad dollar strength -> EM FX weakness incl INR"
+    linked_group: null
+
+  - name: real_rates_gold_inverse
+    driver: tips_10y_real
+    target: comex_gold
+    expected_sign: -1
+    channel: "real yields up -> non-yielding gold down"
+    linked_group: null
+
+  - name: gsr_stress_gauge
+    driver: vix
+    target: gold_silver_ratio
+    expected_sign: +1
+    channel: "gold/silver ratio rises under monetary stress"
+    linked_group: null
