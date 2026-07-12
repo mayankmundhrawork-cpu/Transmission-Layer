@@ -325,6 +325,20 @@ def _sessions() -> str:
     return " · ".join(parts)
 
 
+def _regime_chip() -> str:
+    """Measured regime for the status bar (rules-based label + Markov prob)."""
+    try:
+        from regime import load_regime
+        reg = load_regime()
+        lbl = reg.get("label", "UNKNOWN")
+        p = (reg.get("markov") or {}).get("p_highvol")
+        cls = "on" if lbl == "RISK_OFF" else "off" if lbl == "RISK_ON" else ""
+        ptxt = f" · P(hv) {p}" if p is not None else ""
+        return f'REGIME <span class="{cls}"><b>{lbl}</b></span>{ptxt}'
+    except Exception:
+        return "REGIME ·"
+
+
 def _age(ts_iso: str) -> str:
     try:
         dt = datetime.fromisoformat(ts_iso)
@@ -473,7 +487,8 @@ st.markdown(
     f'<span style="color:{AMBER}">●</span> {amber_n} AMBER{sep}'
     f'<b>{len(ev["events"])}</b> EVENTS ({counts.get("suppressed", 0)} SUPPR){sep}'
     f'FETCH {fetched_at or "·"}Z{sep}'
-    f'{_sessions()}'
+    f'{_sessions()}{sep}'
+    f'{_regime_chip()}'
     f'</div>',
     unsafe_allow_html=True)
 
@@ -546,6 +561,39 @@ st.markdown(f'<div class="panel"><div class="strip">{"".join(india_cells)}'
             f'<div class="chg" style="max-width:280px;white-space:normal">'
             f'{rel_line}</div></div></div></div>', unsafe_allow_html=True)
 
+
+# ── 1c) assumption ledger — measured channel health ────────────────────
+st.markdown('<div class="sec">Assumptions · measured channel health</div>',
+            unsafe_allow_html=True)
+try:
+    from assumptions import load_assumptions_state
+    _led = load_assumptions_state().get("assumptions", {})
+except Exception:
+    _led = {}
+if _led:
+    head = ('<tr><th class="l">status</th><th class="l">assumption</th>'
+            '<th>corr20</th><th>corr60</th><th class="l">contra</th>'
+            '<th class="l">last shift</th><th class="l">channel (quotable only when VALID)</th></tr>')
+    body = []
+    for name, a in _led.items():
+        stat = a["status"]
+        # INVERTED is a warning state — amber is meaning-carrying here
+        col = AMBER if stat == "INVERTED" else (TEXT if stat == "VALID" else MUT)
+        contra = (f'{a["contra_series"]} {a["contra_corr20"]:+.2f}'
+                  if a.get("contra_corr20") is not None else "·")
+        body.append(
+            f'<tr><td class="l" style="color:{col};font-weight:600">{stat}</td>'
+            f'<td class="l id">{name}</td>'
+            f'<td class="num">{_fmt(a.get("corr20"), 2)}</td>'
+            f'<td class="num">{_fmt(a.get("corr60"), 2)}</td>'
+            f'<td class="l num">{contra}</td>'
+            f'<td class="l num">{a.get("last_changepoint") or "·"}</td>'
+            f'<td class="note">{a.get("channel", "")}</td></tr>')
+    st.markdown(f'<div class="panel"><table class="tl">{head}{"".join(body)}'
+                f'</table></div>', unsafe_allow_html=True)
+else:
+    st.markdown('<div class="calm">No ledger state — run analytics.py.</div>',
+                unsafe_allow_html=True)
 
 # ── 2) events — the board's loud layer ─────────────────────────────────
 st.markdown('<div class="sec">Events</div>', unsafe_allow_html=True)

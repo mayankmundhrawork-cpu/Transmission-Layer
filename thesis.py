@@ -39,6 +39,11 @@ mechanism-first, specific, numerate, no hedging boilerplate, no
 is fine. If the evidence does not support a gap, say "No gap: ..." plainly —
 a quiet conclusion is a valid output. Never invent numbers not given to you.
 
+Discipline: resid_z is the unexplained component after factor exposures — a
+big raw move with small resid_z is PRICED, not an anomaly; say so. A channel
+marked WEAK/INVERTED in the measured status block is NOT available as a
+mechanism — if your story needed it, report the broken channel instead.
+
 The owner writes for INDIAN market practitioners: always close the loop to
 the Indian expression of the move, using the INDIA TRANSMISSION CANDIDATES
 supplied (never invent Indian instruments not listed).
@@ -125,9 +130,12 @@ def _llm_call(backend: dict, user_prompt: str,
 def _compose_prompt(event: dict, laggards: list[dict], analogues: dict,
                     bundle: dict, india: list[dict] | None = None) -> str:
     L = [f"EVENT: {event['label']} (level {event['level']}, score {event['score']})"]
-    L.append("MEMBERS (z20 = 20-day z-score, d1 = 1-day %):")
+    L.append("MEMBERS (z20 levels-z; zc vol-conditional return z; resid_z = "
+             "unexplained-by-factors z; move labels: priced/unexplained/moved/quiet):")
     for m in event["members"]:
         L.append(f"  {m['id']} [{m['market']}] z20={m.get('z20')} "
+                 f"zc={m.get('zc')} resid_z={m.get('resid_z')} "
+                 f"r2={m.get('r2_60d')} move={m.get('move_label')} "
                  f"d1={m.get('d1_pct')} last={m.get('last')} "
                  f"reasons={'; '.join(m.get('reasons', []))}")
     if laggards:
@@ -150,6 +158,25 @@ def _compose_prompt(event: dict, laggards: list[dict], analogues: dict,
             L.append(f"  {r['id']}: rho={r['rho']} via {r['via']}"
                      + (f", leads {r['lead_lag']}d" if r.get("leads") else "")
                      + f", z20={r['z20']} ({'reacted' if r['reacted'] else 'quiet'})")
+    # measured channel/assumption health — the model must respect these
+    try:
+        from assumptions import load_assumptions_state
+        from regime import load_regime
+        reg = load_regime()
+        L.append(f"REGIME (measured): {reg.get('label')} "
+                 f"(P(high-vol)={reg.get('markov', {}).get('p_highvol')})")
+        led = load_assumptions_state().get("assumptions", {})
+        if led:
+            L.append("CHANNEL STATUS (measured live — DO NOT assert channels "
+                     "that are WEAK/INVERTED as active; cite the status):")
+            for name, a in led.items():
+                extra = (f", contra {a['contra_series']}={a['contra_corr20']}"
+                         if a.get("contra_corr20") is not None else "")
+                L.append(f"  [{a['status']}] {name}: corr20={a['corr20']}, "
+                         f"corr60={a['corr60']}{extra} — {a['channel']}")
+    except Exception:
+        pass
+
     arts = [a for a in bundle.get("articles", []) if a.get("excerpt")]
     if arts:
         L.append("MOTIVATING NEWS (excerpts):")

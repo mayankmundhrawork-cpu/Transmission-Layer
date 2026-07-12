@@ -77,6 +77,32 @@ sessions excluded, episodes ≥5 sessions apart). Aftermath stats are the
 median/hit-rate of forward percent changes +5 and +20 observations after
 each analogue date.
 
+**zc (vol-conditional return z).** `zc = r_today / sigma_EWMA(t|t-1)` where
+sigma is the RiskMetrics EWMA (lambda 0.94) of squared returns strictly
+before today; GARCH(1,1) refines the latest sigma when the fit converges.
+This is the "unusual" gate: it sees a 2-sigma move in a quiet regime that
+the 20-day levels-z drowns. Daily series only.
+
+**resid_z (unexplained z).** Rolling 60d OLS of the instrument's returns on
+its configured factor block (betas from the window ending t-1 applied to
+today's factor returns). `resid = actual − predicted`; resid_z = resid vs
+the std of the prior 60 residuals. Large raw move + small resid_z = PRICED
+(factors explain it); large resid_z = genuinely unexplained. Move labels:
+priced / unexplained / moved / quiet per these thresholds (1.5/1.0, r2>=.25).
+
+**Assumption statuses.** Each standing prior (safe-haven gold, oil->INR,
+etc.) is scored live: VALID = 20d AND 60d return corr clear (|corr|>=0.25)
+in the expected sign; INVERTED = clearly wrong sign on 20d or the contra
+check fires (e.g. gold trading WITH nifty); WEAK = neither clear;
+INSUFFICIENT_DATA = too few paired observations. Change-point dates mark
+the last shift of the 60d rolling correlation (PELT/rbf). Co-occurrence
+escalation and thesis mechanisms are gated on these statuses.
+
+**Regime.** Rules-based risk-on/off score = mean(vol 1y-percentile,
+share of equity indices below 50DMA, sign-scaled 20d equity-rates corr);
+RISK_OFF >= 0.6, RISK_ON <= 0.35. Markov 2-state switching-variance
+P(high-vol) reported as corroborating evidence, never as a gate.
+
 **Data.** Daily closes: yfinance (indices/FX/commodities/equities/crypto)
 and FRED (rates/credit/India macro), ~2 years of history, refreshed every
 2h on weekdays with an intraday provisional last price that the official
@@ -133,6 +159,27 @@ def build_brief() -> str:
              f"{len(ev['events'])} events surfaced "
              f"({ev['counts'].get('suppressed', 0)} suppressed)")
 
+    # ── regime & assumption health (measured, gates everything below) ───
+    try:
+        from assumptions import load_assumptions_state
+        from regime import load_regime
+        reg = load_regime()
+        comp = reg.get("components", {})
+        L.append("\n## Regime & assumption health (measured at generation)")
+        L.append(f"- **Regime: {reg.get('label')}** (score {reg.get('score')}, "
+                 f"{reg.get('days_in_regime')}d in regime; vol-pct "
+                 f"{comp.get('vol_pct')}, breadth-off {comp.get('breadth_off')}, "
+                 f"Markov P(high-vol) {reg.get('markov', {}).get('p_highvol')})")
+        for name, a in load_assumptions_state().get("assumptions", {}).items():
+            extra = (f", contra {a['contra_series']} corr20={a['contra_corr20']}"
+                     if a.get("contra_corr20") is not None else "")
+            cp = (f", last shift {a['last_changepoint']}"
+                  if a.get("last_changepoint") else "")
+            L.append(f"- [{a['status']}] **{name}** — corr20 {a['corr20']}, "
+                     f"corr60 {a['corr60']}{extra}{cp}. Channel: {a['channel']}")
+    except Exception:
+        pass
+
     # ── events ──────────────────────────────────────────────────────────
     L.append("\n## Events (ranked)")
     if not ev["events"]:
@@ -142,7 +189,9 @@ def build_brief() -> str:
         L.append(f"\n### [{e['level'].upper()} {e['score']}] {e['label']}")
         for m in e["members"]:
             L.append(f"- {m['id']} [{m['market']}]: last {_fmt(m.get('last'))}, "
-                     f"z20 {_fmt(m.get('z20'))}, 1d {_fmt(m.get('d1_pct'))}%, "
+                     f"z20 {_fmt(m.get('z20'))}, zc {_fmt(m.get('zc'))}, "
+                     f"resid-z {_fmt(m.get('resid_z'))} "
+                     f"[{m.get('move_label', 'n/a')}], 1d {_fmt(m.get('d1_pct'))}%, "
                      f"{'; '.join(m.get('reasons', []))}")
         t = theses.get(k, {}).get("thesis", {})
         if t.get("mechanism"):

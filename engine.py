@@ -104,11 +104,14 @@ def _framework_reasons(spec: dict, series: pd.Series, snap: dict[str, float]) ->
                 reasons.append("break below 100-DMA")
 
     if fw.get("gsr_bands"):
+        # band levels are the framework rule; the NARRATIVE (monetary stress
+        # vs industrial rotation) now lives in the assumption ledger and is
+        # only quotable when measured VALID (see assumptions.yaml:gsr_stress_gauge)
         last = s.iloc[-1]
         if last > 85:
-            reasons.append(f"GSR>{85} (monetary stress)")
+            reasons.append(f"GSR>{85} (extreme high)")
         elif last < 75:
-            reasons.append(f"GSR<{75} (industrial)")
+            reasons.append(f"GSR<{75} (extreme low)")
 
     if "monthly_bps_move" in fw:
         thr = fw["monthly_bps_move"]
@@ -215,7 +218,42 @@ def build_snapshot() -> dict[str, Any]:
         rows.append(row)
         by_id[sid] = row
 
-    # Co-occurrence: two+ in a linked group flagged same direction → composite red.
+    # Conditional/residual annotation (P2/P3 state, computed by the CI
+    # analytics pass; display + gating metadata, flag levels unchanged here).
+    try:
+        from conditional import load_conditional
+        from factors import load_factor_state
+        _cond = load_conditional().get("series", {})
+        _fact = load_factor_state().get("series", {})
+        for r in rows:
+            c = _cond.get(r["id"]) or {}
+            f = _fact.get(r["id"]) or {}
+            r["zc"] = c.get("zc")
+            r["resid_z"] = f.get("resid_z")
+            r["r2_60d"] = f.get("r2_60d")
+            r["top_factors"] = f.get("top_contributors")
+            zc, rz = c.get("zc"), f.get("resid_z")
+            if rz is not None and abs(rz) >= 1.5:
+                r["move_label"] = "unexplained"
+            elif zc is not None and abs(zc) >= 1.5 and (f.get("r2_60d") or 0) >= 0.25 \
+                    and rz is not None and abs(rz) < 1.0:
+                r["move_label"] = "priced"
+            elif zc is not None and abs(zc) >= 1.5:
+                r["move_label"] = "moved"
+            else:
+                r["move_label"] = "quiet"
+    except Exception:
+        pass
+
+    # Co-occurrence: two+ in a linked group flagged same direction → composite
+    # red — GATED on the assumption ledger: a group whose measured channel is
+    # WEAK/INVERTED must not escalate (the "gold safe-haven" class of bug).
+    try:
+        from assumptions import group_status, load_assumptions_state
+        _ledger = load_assumptions_state()
+    except Exception:
+        _ledger, group_status = {}, None
+
     composites: list[dict[str, Any]] = []
     for group_name, members in LINKED_GROUPS.items():
         flagged = [by_id[m] for m in members
@@ -225,9 +263,16 @@ def build_snapshot() -> dict[str, Any]:
             signs = {np.sign(r["z20"]) for r in flagged}
             same_dir = len(signs) == 1
             if same_dir:
+                status = group_status(group_name, _ledger) if group_status else None
+                if status in ("WEAK", "INVERTED", "INSUFFICIENT_DATA"):
+                    for r in flagged:
+                        r["reasons"].append(
+                            f"co-occur[{group_name}] suppressed: channel {status}")
+                    continue  # measured channel not live — no escalation
                 for r in flagged:
                     r["flag"] = "red"
-                    r["reasons"].append(f"co-occur[{group_name}] same-direction")
+                    r["reasons"].append(f"co-occur[{group_name}] same-direction"
+                                        + (" (channel VALID)" if status else ""))
                 composites.append({
                     "group": group_name, "kind": "same-direction",
                     "members": [r["id"] for r in flagged],

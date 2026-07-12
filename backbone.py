@@ -22,6 +22,7 @@ BACKBONE = [
     # no_despike: VIX legitimately spikes-and-reverts — the despike filter's
     # bad-tick signature IS this series' signal, so it is exempted.
     {"id": "vix",           "market": "INDICES", "source": "yfinance", "symbol": "^VIX",      "freq": "eod", "framework": {"single_session_pct": 15.0}, "no_despike": True},
+    {"id": "india_vix",     "market": "INDICES", "source": "yfinance", "symbol": "^INDIAVIX", "freq": "eod", "framework": {"single_session_pct": 15.0}, "no_despike": True},
     # ── Equity indices · Europe ────────────────────────────────────────
     {"id": "ftse_100",      "market": "INDICES", "source": "yfinance", "symbol": "^FTSE",     "freq": "eod", "framework": {}},
     {"id": "dax",           "market": "INDICES", "source": "yfinance", "symbol": "^GDAXI",    "freq": "eod", "framework": {}},

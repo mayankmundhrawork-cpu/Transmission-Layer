@@ -43,6 +43,12 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
+      - name: Run tests
+        # known-answer fixtures for the analytics math (conditional z,
+        # residuals, assumption scorer, OU half-life, BH-FDR). A red suite
+        # stops the run before any state is written.
+        run: python -m pytest -q tests/
+
       - name: Update universe from news
         # headlines pull + entity extraction + symbol resolution + universe
         # state update. ANTHROPIC_API_KEY is OPTIONAL — when the secret is
@@ -56,6 +62,12 @@ jobs:
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python fetch.py
+
+      - name: Analytics pass (conditional z, residuals, assumptions, regime)
+        # P2-P4/P6/P8 state: vol-conditional z, factor residuals, assumption
+        # ledger scoring + change-points, regime label, spread half-lives,
+        # anomalies.json. Fail-soft per stage; consumers degrade gracefully.
+        run: python analytics.py
 
       - name: Regenerate digest
         # digest reads the freshly-fetched CSV + RSS; the FRED key is no longer
@@ -93,7 +105,9 @@ jobs:
                   data/universe.json data/headlines.json data/resolution_cache.json \
                   data/relations.json data/research_bundles.json data/theses.json \
                   data/pattern_cache.json data/articles data/board_brief.md \
-                  data/squawk.json data/squawk.json
+                  data/squawk.json data/conditional.json data/factor_state.json \
+                  data/assumptions_state.json data/regime_state.json \
+                  data/spreads_state.json data/anomalies.json data/squawk.json
 
           # Nothing staged → no commit, no push, clean exit.
           if git diff --cached --quiet; then

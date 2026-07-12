@@ -93,6 +93,17 @@ def _clean_close(obj) -> pd.Series:
     return s.astype("float64")
 
 
+def _with_retry(fn, *args, attempts: int = 3, base_sleep: float = 4.0, **kw):
+    """Retry/backoff for flaky endpoints (P1). Last error re-raised."""
+    for i in range(attempts):
+        try:
+            return fn(*args, **kw)
+        except Exception:
+            if i == attempts - 1:
+                raise
+            time.sleep(base_sleep * (2 ** i))
+
+
 def fetch_yf_single(symbol: str, *, full: bool) -> pd.Series:
     import yfinance as yf
     kwargs = dict(progress=False, auto_adjust=False, threads=False)
@@ -204,7 +215,7 @@ def fetch_fred(series_id: str) -> pd.Series:
         "observation_start": start.isoformat(),
         "observation_end": end.isoformat(),
     }
-    r = requests.get(url, params=params, timeout=30)
+    r = _with_retry(requests.get, url, params=params, timeout=30)
     r.raise_for_status()
     obs = r.json().get("observations", [])
     if not obs:
@@ -386,6 +397,12 @@ def main() -> int:
     wide = wide[wide.index >= cutoff]
 
     wide.to_csv(PRICES_CSV)
+    # P1: parquet mirror — faster typed reads for the analytics layer; the
+    # CSV stays the committed source of truth
+    try:
+        wide.to_parquet(DATA_DIR / "prices.parquet")
+    except Exception as e:
+        print(f"  WARN parquet mirror failed: {str(e)[:80]}", file=sys.stderr)
     meta = {
         "fetched_at": datetime.utcnow().isoformat() + "Z",
         "registry_series": len(registry),

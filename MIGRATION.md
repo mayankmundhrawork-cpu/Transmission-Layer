@@ -1,5 +1,19 @@
 # MIGRATION — from asserted transmission to measured transmission
 
+> **STATUS (end of first run):** Phases 1–4 implemented, tested and wired;
+> 5–9 stubbed with contracts. 8/8 known-answer tests green.
+> **Acceptance case live on real data**: digest [0] now opens with
+> `[INVERTED] safe_haven_gold: corr20=-0.28, contra nifty_50 corr20=+0.43,
+> shifted 2025-07-14` — and the inr_oil linked group (measured corr ≈ 0) no
+> longer escalates. New per-run state: conditional.json, factor_state.json,
+> assumptions_state.json, regime_state.json, spreads_state.json,
+> anomalies.json. CI: pytest gate + analytics step. Deferred honestly:
+> NSE FII/DII/delivery% (CI IP-block reality — enrichment lane, P5-era);
+> ruptures has no local py3.14 wheel (CI py3.12 fine; rolling-jump fallback
+> in place). Remaining: P5 lead-lag emit gate, P6 pairs/Hurst, P7 FDR wiring
+> (BH implemented+tested), P9 hit-rate ledger — contracts in
+> leadlag.py / spreads.py / fdr.py / scorecard.py.
+
 Phase 0 audit of the Transmission Layer (rev v6.2, 2026-07-12) and the
 implementation plan for the empirically-grounded anomaly engine.
 

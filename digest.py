@@ -135,14 +135,39 @@ def assemble() -> tuple[str, dict]:
     L.append(f"=== TRANSMISSION LAYER MORNING DIGEST — {today} ===")
     L.append("")
 
+    # [0] REGIME & ASSUMPTION HEALTH — measured at generation time; every
+    # transmission claim below is conditional on this block.
+    try:
+        from assumptions import load_assumptions_state
+        from regime import load_regime
+        reg = load_regime()
+        L.append("[0] REGIME & ASSUMPTIONS (measured now, not assumed)")
+        comp = reg.get("components", {})
+        L.append(f"  Regime: {reg.get('label')} (score {reg.get('score')}, "
+                 f"{reg.get('days_in_regime')}d) — vol-pct {comp.get('vol_pct')}, "
+                 f"breadth-off {comp.get('breadth_off')}, "
+                 f"P(high-vol) {reg.get('markov', {}).get('p_highvol')}")
+        for name, a in load_assumptions_state().get("assumptions", {}).items():
+            extra = ""
+            if a.get("contra_corr20") is not None:
+                extra = f", contra {a['contra_series']} corr20={a['contra_corr20']}"
+            cp = f", shifted {a['last_changepoint']}" if a.get("last_changepoint") else ""
+            L.append(f"  [{a['status']}] {name}: corr20={a['corr20']} "
+                     f"corr60={a['corr60']}{extra}{cp}")
+        L.append("")
+    except Exception:
+        pass
+
     # [1] METRIC STATE
     L.append("[1] METRIC STATE (as of last close)")
-    L.append("  ID | last | 1d% | 5d% | 20d-z | 1yr-percentile | flag")
+    L.append("  ID | last | 1d% | 5d% | 20d-z | zc | resid-z | 1yr-pct | flag | move")
     for r in snap.get("series", []):
         L.append(
             f"  {r['id']} | {_fmt_num(r['last'], 4)} | "
             f"{_fmt_num(r['d1_pct'], 2, '%')} | {_fmt_num(r['d5_pct'], 2, '%')} | "
-            f"{_fmt_num(r['z20'], 2)} | {_fmt_num(r['pct_1y'], 0)} | {r['flag']}"
+            f"{_fmt_num(r['z20'], 2)} | {_fmt_num(r.get('zc'), 2)} | "
+            f"{_fmt_num(r.get('resid_z'), 2)} | {_fmt_num(r['pct_1y'], 0)} | "
+            f"{r['flag']} | {r.get('move_label', 'n/a')}"
         )
     L.append("")
 
