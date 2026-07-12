@@ -124,6 +124,11 @@
   "resolved_at": "2026-07-08T11:23:07.211639+00:00",
   "via": "no-acceptable-match"
  },
+ "fpis": {
+  "ok": false,
+  "resolved_at": "2026-07-12T19:00:15.315999+00:00",
+  "via": "no-acceptable-match"
+ },
  "global": {
   "cls": "equity",
   "exchange": "NMS",
@@ -148,6 +153,11 @@
   "shortname": "HDFC Bank Limited",
   "symbol": "HDB",
   "via": "search"
+ },
+ "hdfc bank airtel": {
+  "ok": false,
+  "resolved_at": "2026-07-12T19:00:15.074235+00:00",
+  "via": "no-acceptable-match"
  },
  "helios": {
   "cls": "equity",
@@ -234,6 +244,16 @@
   "resolved_at": "2026-07-10T10:29:05.523578+00:00",
   "via": "no-acceptable-match"
  },
+ "mcap": {
+  "cls": "equity",
+  "exchange": "OID",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-12T19:00:14.959160+00:00",
+  "shortname": "MCAP Inc.",
+  "symbol": "MCAP",
+  "via": "search"
+ },
  "md ceo": {
   "ok": false,
   "resolved_at": "2026-07-10T19:10:21.081428+00:00",
@@ -319,6 +339,16 @@
   "resolved_at": "2026-07-09T14:08:10.172135+00:00",
   "via": "no-acceptable-match"
  },
+ "sbi mf ipo": {
+  "ok": false,
+  "resolved_at": "2026-07-12T19:00:15.431104+00:00",
+  "via": "no-acceptable-match"
+ },
+ "sif aum": {
+  "ok": false,
+  "resolved_at": "2026-07-12T19:00:15.549296+00:00",
+  "via": "no-acceptable-match"
+ },
  "sk hynix": {
   "cls": "equity",
   "exchange": "NGM",
@@ -373,5 +403,15 @@
   "ok": false,
   "resolved_at": "2026-07-09T19:15:28.491891+00:00",
   "via": "no-acceptable-match"
+ },
+ "world": {
+  "cls": "etf",
+  "exchange": "PCX",
+  "ok": true,
+  "quoteType": "ETF",
+  "resolved_at": "2026-07-12T19:00:15.201570+00:00",
+  "shortname": "Vanguard Total World Stock Inde",
+  "symbol": "VT",
+  "via": "search"
  }
 }
