@@ -1,0 +1,40 @@
+# P3 — factor sets per instrument class (series ids from the registry).
+# The residual engine regresses each instrument's daily returns on its
+# factor block (rolling 60d OLS, robust SEs); the RESIDUAL is the anomaly
+# candidate. No economics in Python: change exposures here.
+#
+# Rules applied by factors.py:
+#   - an instrument never uses itself as a factor
+#   - factors missing from the price frame are dropped for that instrument
+#   - `overrides` beats `class_defaults`; `exclude` skips an instrument
+
+window: 60          # rolling regression window (trading days)
+min_obs: 45         # observations required inside the window
+
+class_defaults:
+  # Indian single names / ETFs admitted from news (.NS/.BO)
+  EQUITIES_IN:  [nifty_50, usd_inr, brent, vix]
+  # non-Indian single names / ETFs
+  EQUITIES_GLB: [sp500, dxy, ust_10y, vix]
+  # Indian sector indices
+  INDICES_IN:   [nifty_50, usd_inr, vix]
+  # global equity indices
+  INDICES_GLB:  [sp500, dxy, brent, vix]
+  FX:           [dxy, vix, brent]
+  COMMODITIES:  [dxy, vix, sp500]
+  CRYPTO:       [nasdaq_100, dxy, vix]
+  RATES:        [vix, dxy, sp500]
+
+overrides:
+  nifty_50:      [sp500, usd_inr, brent, vix]     # broad index: global block
+  sp500:         [dxy, ust_10y, vix]
+  nasdaq_100:    [sp500, ust_10y, vix]
+  vix:           exclude                          # vol index IS a factor
+  india_vix:     exclude
+  dxy:           [ust_10y, vix, sp500]
+  usd_inr:       [dxy, brent, vix]
+  comex_gold:    [dxy, tips_10y_real, vix]
+  comex_silver:  [comex_gold, dxy, vix]
+
+# derived spreads/ratios are handled by the spreads module, not regression
+exclude_classes: [DERIVED]
