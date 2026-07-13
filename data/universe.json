@@ -1,5 +1,39 @@
 {
  "candidates": {
+  "$SKHX": {
+   "display": "SKHX",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SK HYNIX VOLATILITY GOES BOTH WAYS SK Hynix plunged a record 15%, dragging the Kospi down 9% and triggering a market-wide trading halt as concerns grew that South Korea\u2019s AI rally had become overstretched. Position for either direction: $SKHX \u2014 2x Long SK Hynix $SKHZ \u2014 1x",
+     "ts": "2026-07-13T10:18:49+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0,
+   "ticker_hint": "SKHX"
+  },
+  "$SKHZ": {
+   "display": "SKHZ",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SK HYNIX VOLATILITY GOES BOTH WAYS SK Hynix plunged a record 15%, dragging the Kospi down 9% and triggering a market-wide trading halt as concerns grew that South Korea\u2019s AI rally had become overstretched. Position for either direction: $SKHX \u2014 2x Long SK Hynix $SKHZ \u2014 1x",
+     "ts": "2026-07-13T10:18:49+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0,
+   "ticker_hint": "SKHZ"
+  },
   "aastha spintex": {
    "display": "Aastha Spintex",
    "evidence": [
@@ -14,7 +48,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "abakkus": {
    "display": "Abakkus",
@@ -30,7 +64,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "abb ai": {
    "display": "ABB AI",
@@ -46,6 +80,22 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "addition": {
+   "display": "ADDITION",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "OVER THE LAST 24 HOURS AROUND 20 COMMERCIAL VESSELS HAVE TRANSITED THROUGH THE STRAIT OF HORMUZ IN COORDINATION WITH THE U.S. MILITARY, IN ADDITION TO SEVERAL VESSELS WITHOUT U.S. COORDINATION- REPORT CITING U.S. OFFICIAL",
+     "ts": "2026-07-12T23:08:30+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
   },
   "advised": {
@@ -62,28 +112,39 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
-  "aegis logistics hpcl bank": {
-   "display": "Aegis Logistics HPCL Bank",
+  "ahead of ban": {
+   "display": "Ahead of Ban",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Top Gainers & Losers on 8 July: Aegis Logistics, HPCL, Bank of India, IndiGo, Coforge, MRF among top losers",
-     "ts": "2026-07-08T10:58:34+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Top Gainers &amp; Losers on 8 July: Aegis Logistics, HPCL, Bank of India, IndiGo, Coforge, MRF among top losers",
-     "ts": "2026-07-08T10:58:34+00:00"
+     "feed": "OilPrice",
+     "title": "EU's Russian LNG Imports Hit Record High Ahead of 2027 Ban",
+     "ts": "2026-07-13T14:30:00+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "OilPrice"
    ],
-   "first_seen": "2026-07-08T11:23:05.666954+00:00",
-   "last_seen": "2026-07-08T19:25:55.709259+00:00",
-   "score": 0.6444
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "ahead of ipo millworks": {
+   "display": "Ahead of IPO Millworks",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Ahead of IPO, Millworks Tech raises nearly Rs 44 cr from anchor investors",
+     "ts": "2026-07-13T14:46:49+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "ahead of market": {
    "display": "Ahead of Market",
@@ -118,8 +179,8 @@
     "ET Markets"
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 2.0605
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 2.9455999999999998
   },
   "ahead wall street": {
    "display": "Ahead Wall Street",
@@ -135,7 +196,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "ai bubble": {
    "display": "AI Bubble",
@@ -151,7 +212,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "air conditioners": {
    "display": "Air Conditioners",
@@ -167,7 +228,23 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
+  },
+  "air defences intercepted and": {
+   "display": "AIR DEFENCES INTERCEPTED AND",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "BAHRAIN SAYS ITS AIR DEFENCES INTERCEPTED AND DESTROYED SEVERAL IRANIAN AERIAL ATTACKS ON MONDAY MORNING - STATEMENT",
+     "ts": "2026-07-13T10:13:32+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "all vessels seeking": {
    "display": "ALL VESSELS SEEKING",
@@ -183,7 +260,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "all vessels seeking safe": {
    "display": "ALL VESSELS SEEKING SAFE",
@@ -199,7 +276,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "alpine texworld": {
    "display": "Alpine Texworld",
@@ -215,7 +292,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "alpine texworld ipo": {
    "display": "Alpine Texworld IPO",
@@ -231,7 +308,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "alpine texworld ipo gmp": {
    "display": "Alpine Texworld IPO GMP",
@@ -247,6 +324,38 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "already planning": {
+   "display": "Already Planning",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Dubai Is Already Planning for the Next Strait of Hormuz Crisis",
+     "ts": "2026-07-13T17:30:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "america s biggest utility sees": {
+   "display": "America's Biggest Utility Sees",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "America's Biggest Utility Sees Blackouts Ahead",
+     "ts": "2026-07-13T19:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
   },
   "analysts": {
@@ -268,7 +377,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 1.6797
+   "score": 1.586
   },
   "anarock": {
    "display": "ANAROCK",
@@ -284,7 +393,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "apollo": {
    "display": "Apollo",
@@ -305,29 +414,7 @@
    ],
    "first_seen": "2026-07-09T23:55:37.717533+00:00",
    "last_seen": "2026-07-10T10:29:04.391230+00:00",
-   "score": 0.9277
-  },
-  "apollo micro systems": {
-   "display": "Apollo Micro Systems",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Multibagger defence stock Apollo Micro Systems to be in focus on Friday; here's why",
-     "ts": "2026-07-09T16:28:11+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Premier Explosives rises 4% on Apollo Micro Systems deal buzz",
-     "ts": "2026-07-09T07:23:41+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets",
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-09T14:08:08.755019+00:00",
-   "last_seen": "2026-07-09T19:15:27.106311+00:00",
-   "score": 0.8217
+   "score": 0.876
   },
   "asml": {
    "display": "ASML",
@@ -343,7 +430,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "ather energy here s": {
    "display": "Ather Energy. Here's",
@@ -359,7 +446,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "attack resulting": {
    "display": "ATTACK RESULTING",
@@ -375,7 +462,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "attacks": {
    "display": "ATTACKS",
@@ -391,7 +478,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "avantel": {
    "display": "Avantel",
@@ -407,7 +494,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "avenue supermarts": {
    "display": "Avenue Supermarts",
@@ -423,6 +510,38 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "bad of people": {
+   "display": "BAD GROUP OF PEOPLE",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "TRUMP ON IRAN: THEY'RE A BAD GROUP OF PEOPLE - INTERVIEW",
+     "ts": "2026-07-13T12:23:07+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "bahrain says": {
+   "display": "BAHRAIN SAYS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "BAHRAIN SAYS ITS AIR DEFENCES INTERCEPTED AND DESTROYED SEVERAL IRANIAN AERIAL ATTACKS ON MONDAY MORNING - STATEMENT",
+     "ts": "2026-07-13T10:13:32+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
   },
   "be bigger than vaca": {
@@ -439,7 +558,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "be built": {
    "display": "Be Built",
@@ -455,7 +574,23 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
+  },
+  "be guardian of strait": {
+   "display": "BE GUARDIAN OF STRAIT",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "TRUMP ON IRAN: WILL BE GUARDIAN OF STRAIT",
+     "ts": "2026-07-13T12:23:10+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "because": {
    "display": "Because",
@@ -471,7 +606,71 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
+  },
+  "being reached": {
+   "display": "BEING REACHED",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "IRAN'S FOREIGN MINISTRY SAYS MUSCAT TALKS ON SATURDAY WAS FOCUSED ON MANAGING STRAIT OF HORMUZ, BUT U.S. THROUGH PRESSURING OMAN PREVENTED RESULT FROM BEING REACHED ON THAT MATTER",
+     "ts": "2026-07-12T21:38:40+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "billionaires": {
+   "display": "Billionaires",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Billionaires are loading up on these superior stocks. Why it pays to follow their money.",
+     "ts": "2026-07-13T16:40:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "biocon": {
+   "display": "Biocon",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Biocon to see block deals, as Viatris plans to exit",
+     "ts": "2026-07-13T15:03:17+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "bloomberg news": {
+   "display": "Bloomberg News",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Global Markets: Shein eyes up to $3 billion Hong Kong IPO as soon as August, Bloomberg News reports",
+     "ts": "2026-07-13T14:08:30+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "boats": {
    "display": "BOATS",
@@ -487,29 +686,23 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
-  "bofa": {
-   "display": "BofA",
+  "bombay dyeing wadias": {
+   "display": "Bombay Dyeing Wadias",
    "evidence": [
     {
-     "feed": "MarketWatch Top",
-     "title": "Nvidia\u2019s stock trades at a juicy discount, according to BofA",
-     "ts": "2026-07-08T19:36:00+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "BofA cuts 2026 average gold forecast, sees long-term upside",
-     "ts": "2026-07-08T15:41:51+00:00"
+     "feed": "BusinessLine Mkts",
+     "title": "Supreme Court refuses to stay SAT relief for Bombay Dyeing, Wadias",
+     "ts": "2026-07-13T14:16:58+00:00"
     }
    ],
    "feeds": [
-    "ET Markets",
-    "MarketWatch Top"
+    "BusinessLine Mkts"
    ],
-   "first_seen": "2026-07-08T17:14:16.367541+00:00",
-   "last_seen": "2026-07-08T21:54:39.241005+00:00",
-   "score": 0.6705
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "boost energy security": {
    "display": "Boost Energy Security",
@@ -525,7 +718,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "britain bets": {
    "display": "Britain Bets",
@@ -541,7 +734,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "burst": {
    "display": "Burst",
@@ -557,7 +750,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "capital blackrock goldman": {
    "display": "Capital Group BlackRock Goldman",
@@ -573,7 +766,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "cctv": {
    "display": "CCTV",
@@ -589,7 +782,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "cdsl": {
    "display": "CDSL",
@@ -605,7 +798,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "ceo cfo": {
    "display": "CEO CFO",
@@ -621,7 +814,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "christopher wood": {
    "display": "Christopher Wood",
@@ -643,7 +836,7 @@
    ],
    "first_seen": "2026-07-10T10:29:04.391230+00:00",
    "last_seen": "2026-07-11T06:02:51.803687+00:00",
-   "score": 1.0758
+   "score": 1.0158
   },
   "citigroup": {
    "display": "Citigroup",
@@ -664,7 +857,23 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.8397999999999999
+   "score": 1.7372
+  },
+  "clean energy boom": {
+   "display": "Clean Energy Boom",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Global Emissions Hit Another Record High Despite Clean Energy Boom",
+     "ts": "2026-07-13T14:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "coastal area of qeshm": {
    "display": "COASTAL AREA OF QESHM",
@@ -680,7 +889,23 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
+  },
+  "commercial shipping transiting": {
+   "display": "COMMERCIAL SHIPPING TRANSITING",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WITHIN THE PAST HOUR, IRGC FORCES FIRED AT COMMERCIAL SHIPPING TRANSITING THE STRAIT OF HORMUZ. U.S. AIRCRAFT HAVE SUCCESSFULLY SHOT DOWN AN IRANIAN CRUISE MISSILE AND ONE-WAY ATTACK DRONE- CNN, CITING U.S. MILITARY",
+     "ts": "2026-07-12T22:08:12+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "commercial shipping u s president": {
    "display": "COMMERCIAL SHIPPING U.S. President",
@@ -696,7 +921,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "complicates efforts": {
    "display": "COMPLICATES EFFORTS",
@@ -712,7 +937,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "cons pat": {
    "display": "Cons PAT",
@@ -728,7 +953,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "contain tensions": {
    "display": "CONTAIN TENSIONS",
@@ -744,7 +969,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "continuation": {
    "display": "CONTINUATION",
@@ -760,7 +985,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "contrarian": {
    "display": "Contrarian",
@@ -776,7 +1001,23 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
+  },
+  "coordination": {
+   "display": "COORDINATION",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "OVER THE LAST 24 HOURS AROUND 20 COMMERCIAL VESSELS HAVE TRANSITED THROUGH THE STRAIT OF HORMUZ IN COORDINATION WITH THE U.S. MILITARY, IN ADDITION TO SEVERAL VESSELS WITHOUT U.S. COORDINATION- REPORT CITING U.S. OFFICIAL",
+     "ts": "2026-07-12T23:08:30+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "costco": {
    "display": "Costco",
@@ -797,7 +1038,7 @@
    ],
    "first_seen": "2026-07-09T19:15:27.106311+00:00",
    "last_seen": "2026-07-10T10:29:04.391230+00:00",
-   "score": 0.9084
+   "score": 0.8577
   },
   "country": {
    "display": "Country",
@@ -813,7 +1054,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "couple of locations around": {
    "display": "COUPLE OF LOCATIONS AROUND",
@@ -829,7 +1070,23 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
+  },
+  "crisis phase": {
+   "display": "CRISIS PHASE'",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "IRAN SAYS US-IRAN MEMORANDUM OF UNDERSTANDING IN 'CRISIS PHASE'",
+     "ts": "2026-07-13T07:48:43+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "cyprus flagged": {
    "display": "Cyprus-flagged",
@@ -845,29 +1102,55 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
-  "delhi hc": {
-   "display": "Delhi HC",
+  "day nii qib": {
+   "display": "Day NII QIB",
    "evidence": [
     {
-     "feed": "BusinessLine Mkts",
-     "title": "Delhi HC rejects former NSE chief Chitra Ramkrishna\u2019s plea against PC Act provisions",
-     "ts": "2026-07-09T06:19:06+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Delhi HC dismisses Chitra Ramkrishna's plea, says NSE performs public duty",
-     "ts": "2026-07-09T05:46:31+00:00"
+     "feed": "Mint Markets",
+     "title": "Laser Power & Infra IPO: Issue booked 41 times on Day 03; NII, QIB portions see strong demand",
+     "ts": "2026-07-13T14:11:55+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts",
-    "ET Markets"
+    "Mint Markets"
    ],
-   "first_seen": "2026-07-09T14:08:08.755019+00:00",
-   "last_seen": "2026-07-09T19:15:27.106311+00:00",
-   "score": 0.8217
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "deal and they broke": {
+   "display": "DEAL AND THEY BROKE",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "TRUMP ON IRAN: WE HAD A DEAL AND THEY BROKE IT",
+     "ts": "2026-07-13T12:23:11+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "defend strait expects payment": {
+   "display": "DEFEND STRAIT EXPECTS PAYMENT",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "TRUMP SAYS U.S. WILL DEFEND STRAIT, EXPECTS PAYMENT IN RETURN",
+     "ts": "2026-07-13T12:23:12+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "delta": {
    "display": "Delta",
@@ -888,7 +1171,7 @@
    ],
    "first_seen": "2026-07-10T12:40:14.184302+00:00",
    "last_seen": "2026-07-10T19:10:18.989658+00:00",
-   "score": 1.0277
+   "score": 0.9704
   },
   "details": {
    "display": "Details",
@@ -924,7 +1207,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 2.3911
+   "score": 2.2578
   },
   "dharmesh kakkad": {
    "display": "Dharmesh Kakkad",
@@ -940,7 +1223,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "dharmesh shah of icici": {
    "display": "Dharmesh Shah of ICICI",
@@ -956,7 +1239,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "dividends": {
    "display": "Dividends",
@@ -972,7 +1255,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "dmart board": {
    "display": "DMart Board",
@@ -988,7 +1271,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "dmart q speedbump": {
    "display": "DMart Q Speedbump",
@@ -1004,29 +1287,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
-  },
-  "does": {
-   "display": "Does",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "$130 Billion in AI Data Centers were Just Blocked. Where Does the AI Boom Go Now",
-     "ts": "2026-07-09T00:00:00+00:00"
-    },
-    {
-     "feed": "MarketWatch Top",
-     "title": "\u2018I\u2019ll happily wait\u2019: Does delaying Social Security make sense for high earners like me?",
-     "ts": "2026-07-08T14:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "MarketWatch Top",
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-08T17:14:16.367541+00:00",
-   "last_seen": "2026-07-09T14:08:08.755019+00:00",
-   "score": 0.7283
+   "score": 0.9442
   },
   "dovetail": {
    "display": "Dovetail",
@@ -1042,11 +1303,16 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "dow jones nasdaq s&p": {
    "display": "Dow Jones Nasdaq S&P",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today | Live: US stocks slip as Iran tensions hit sentiment; chipmakers drop",
+     "ts": "2026-07-13T12:14:45+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today | Live: US stock futures decline as US-Iran escalation rattles sentiment",
@@ -1066,19 +1332,14 @@
      "feed": "ET Markets",
      "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today | Highlights: Nasdaq rallies to sharply higher close; chip surge offsets Iran worries",
      "ts": "2026-07-09T12:15:42+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today | Live: S&P 500, Nasdaq trade higher as chip stocks gain; US-Iran tensions in focus",
-     "ts": "2026-07-09T12:15:42+00:00"
     }
    ],
    "feeds": [
     "ET Markets"
    ],
    "first_seen": "2026-07-08T17:14:16.367541+00:00",
-   "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 4.3499
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 5.1073
   },
   "dow jones nasdaq us": {
    "display": "Dow Jones Nasdaq US",
@@ -1109,7 +1370,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-07T20:32:40.135854+00:00",
-   "score": 0.9537
+   "score": 0.9005
   },
   "drone attack targets iranian": {
    "display": "DRONE ATTACK TARGETS IRANIAN",
@@ -1125,7 +1386,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "drone operation": {
    "display": "DRONE OPERATION",
@@ -1141,11 +1402,16 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "dubai": {
    "display": "Dubai",
    "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Dubai Is Already Planning for the Next Strait of Hormuz Crisis",
+     "ts": "2026-07-13T17:30:00+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Dubai housing market stays resilient amid Middle East tensions; H1 residential deals touch AED 226 billion: ANAROCK",
@@ -1153,11 +1419,12 @@
     }
    ],
    "feeds": [
-    "ET Markets"
+    "ET Markets",
+    "OilPrice"
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
-   "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.9442
   },
   "edelweiss cio trideep bhattacharya": {
    "display": "Edelweiss CIO Trideep Bhattacharya",
@@ -1173,7 +1440,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "enemy towards iran s qeshm": {
    "display": "ENEMY' TOWARDS IRAN'S QESHM",
@@ -1189,7 +1456,23 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
+  },
+  "energy crisis deepens": {
+   "display": "Energy Crisis Deepens",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "IEA Chief Slams Europe\u2019s Slow Electrification as Energy Crisis Deepens",
+     "ts": "2026-07-13T16:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "ensure": {
    "display": "ENSURE",
@@ -1205,7 +1488,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "escalating energy war between": {
    "display": "Escalating Energy War Between",
@@ -1221,7 +1504,55 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
+  },
+  "essel": {
+   "display": "Essel",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Supreme Court upholds SEBI action against Kotak AMC in Essel case",
+     "ts": "2026-07-13T13:47:44+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "eu drops sanctions": {
+   "display": "EU Drops Sanctions",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "EU Drops Sanctions on Lukoil Founder and Russian Patriarch",
+     "ts": "2026-07-13T18:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "eu s russian lng imports": {
+   "display": "EU's Russian LNG Imports",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "EU's Russian LNG Imports Hit Record High Ahead of 2027 Ban",
+     "ts": "2026-07-13T14:30:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "europe beat": {
    "display": "Europe Beat",
@@ -1237,7 +1568,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "european natural gas prices": {
    "display": "European Natural Gas Prices",
@@ -1253,7 +1584,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "expert": {
    "display": "Expert",
@@ -1279,7 +1610,7 @@
    ],
    "first_seen": "2026-07-10T12:40:14.184302+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 1.8355
+   "score": 1.7332
   },
   "f&o talk mid": {
    "display": "F&O Talk Mid",
@@ -1295,7 +1626,23 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
+  },
+  "fed s waller": {
+   "display": "Fed's Waller",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Fed's Waller says higher rates possibly needed in 'near term'",
+     "ts": "2026-07-13T16:57:41+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "federal reserve board": {
    "display": "Federal Reserve Board",
@@ -1321,7 +1668,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-09T19:15:27.106311+00:00",
-   "score": 0.8929
+   "score": 0.8431
   },
   "few strikes": {
    "display": "FEW STRIKES",
@@ -1337,7 +1684,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "fiis": {
    "display": "FIIs",
@@ -1358,7 +1705,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 2.0
+   "score": 1.8885
   },
   "fino payments bank": {
    "display": "Fino Payments Bank",
@@ -1379,7 +1726,7 @@
    ],
    "first_seen": "2026-07-10T19:10:18.989658+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.5299
+   "score": 1.4446
   },
   "five week": {
    "display": "Five-Week",
@@ -1395,7 +1742,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "flights": {
    "display": "Flights",
@@ -1411,29 +1758,39 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
-  "four": {
-   "display": "Four",
+  "focused": {
+   "display": "FOCUSED",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Four critical mineral stocks with strong growth plans",
-     "ts": "2026-07-08T03:31:06+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Four oil and gas tankers turn back from Hormuz strait after vessel attacks",
-     "ts": "2026-07-08T05:28:41+00:00"
+     "feed": "DeItaone",
+     "title": "IRAN'S FOREIGN MINISTRY SAYS MUSCAT TALKS ON SATURDAY WAS FOCUSED ON MANAGING STRAIT OF HORMUZ, BUT U.S. THROUGH PRESSURING OMAN PREVENTED RESULT FROM BEING REACHED ON THAT MATTER",
+     "ts": "2026-07-12T21:38:40+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts",
-    "Mint Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-08T06:39:49.312907+00:00",
-   "last_seen": "2026-07-08T06:39:49.312907+00:00",
-   "score": 0.5919
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "ford fiesta": {
+   "display": "Ford Fiesta",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "My wife\u2019s 2011 Ford Fiesta was totaled. Should we accept a $2,000 insurance settlement or give up the car for $2,700?",
+     "ts": "2026-07-13T18:30:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "france cuts gw of": {
    "display": "France Cuts GW of",
@@ -1449,7 +1806,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "fred kelly s": {
    "display": "Fred Kelly's",
@@ -1465,7 +1822,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "freedom of navigation remains": {
    "display": "FREEDOM OF NAVIGATION REMAINS",
@@ -1481,7 +1838,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "fssai": {
    "display": "FSSAI",
@@ -1497,7 +1854,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "funflation": {
    "display": "Funflation'",
@@ -1513,7 +1870,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "ganesh dongre of anand": {
    "display": "Ganesh Dongre of Anand",
@@ -1529,7 +1886,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "ge vernova atlanta electricals": {
    "display": "GE Vernova Atlanta Electricals",
@@ -1545,7 +1902,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "gema": {
    "display": "GEMA",
@@ -1561,7 +1918,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "geopolitical": {
    "display": "Geopolitical",
@@ -1587,7 +1944,7 @@
    ],
    "first_seen": "2026-07-08T11:23:05.666954+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 1.4773
+   "score": 1.3949
   },
   "george goodman": {
    "display": "George Goodman",
@@ -1603,7 +1960,23 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
+  },
+  "global emissions hit another": {
+   "display": "Global Emissions Hit Another",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Global Emissions Hit Another Record High Despite Clean Energy Boom",
+     "ts": "2026-07-13T14:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "global market ai": {
    "display": "Global Market AI",
@@ -1619,7 +1992,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "global market european": {
    "display": "Global Market European",
@@ -1650,7 +2023,7 @@
    ],
    "first_seen": "2026-07-08T11:23:05.666954+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 2.1978
+   "score": 2.0752
   },
   "global market eurozone": {
    "display": "Global Market Eurozone",
@@ -1666,7 +2039,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "global market japan": {
    "display": "Global Market Japan",
@@ -1697,7 +2070,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 2.0484
+   "score": 1.9342
   },
   "global market japan s nikkei": {
    "display": "Global Market Japan's Nikkei",
@@ -1713,7 +2086,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "global market japanese": {
    "display": "Global Market Japanese",
@@ -1744,7 +2117,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-09T14:08:08.755019+00:00",
-   "score": 1.2851
+   "score": 1.2134
   },
   "global market sk hynix": {
    "display": "Global Market SK Hynix",
@@ -1760,6 +2133,22 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "global markets shein": {
+   "display": "Global Markets Shein",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Global Markets: Shein eyes up to $3 billion Hong Kong IPO as soon as August, Bloomberg News reports",
+     "ts": "2026-07-13T14:08:30+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
   },
   "gmp ipo": {
@@ -1776,7 +2165,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "gmp sbi funds": {
    "display": "GMP SBI Funds",
@@ -1792,7 +2181,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "gmps": {
    "display": "GMPs",
@@ -1808,7 +2197,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
   "goodluck india": {
    "display": "Goodluck India",
@@ -1824,7 +2213,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "government reverse": {
    "display": "Government Reverse",
@@ -1840,7 +2229,23 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
+  },
+  "government shutdown unless senate": {
+   "display": "GOVERNMENT SHUTDOWN UNLESS SENATE",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "TRUMP WARNS OF SEPTEMBER GOVERNMENT SHUTDOWN UNLESS SENATE ENDS FILIBUSTER",
+     "ts": "2026-07-13T12:13:08+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "govt": {
    "display": "Govt",
@@ -1861,28 +2266,7 @@
    ],
    "first_seen": "2026-07-09T14:08:08.755019+00:00",
    "last_seen": "2026-07-10T10:29:04.391230+00:00",
-   "score": 0.8881
-  },
-  "greenland": {
-   "display": "Greenland",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "Trump puts Greenland\u2019s rare earths back on the table for NATO",
-     "ts": "2026-07-08T10:48:00+00:00"
-    },
-    {
-     "feed": "Mining.com",
-     "title": "Critical Metals weighs asset sales to speed up Greenland project",
-     "ts": "2026-07-08T13:43:00+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-08T19:25:55.709259+00:00",
-   "last_seen": "2026-07-08T19:25:55.709259+00:00",
-   "score": 0.6694
+   "score": 0.8386
   },
   "grip": {
    "display": "Grip",
@@ -1903,7 +2287,7 @@
    ],
    "first_seen": "2026-07-10T12:40:14.184302+00:00",
    "last_seen": "2026-07-10T19:10:18.989658+00:00",
-   "score": 1.0277
+   "score": 0.9704
   },
   "guardian metal montana mining": {
    "display": "Guardian Metal Montana Mining",
@@ -1919,39 +2303,39 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.793
   },
-  "hcl tech wipro": {
-   "display": "HCL Tech Wipro",
+  "hcl tech": {
+   "display": "HCL Tech",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Q1 Results Today Highlights: Bajaj Consumer Care Q1 profit rises, HCL Tech profit up 20%, ICICI Prudential AMC, Nuvoco Vistas Corporation, Khaitan Chemicals announce Q1 results",
+     "ts": "2026-07-13T16:16:23+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "hcl tech q results": {
+   "display": "HCL Tech Q Results",
    "evidence": [
     {
      "feed": "Mint Markets",
-     "title": "Q1 results 2026: HCL Tech, Wipro to Jio Financial among companies to declare Q1 results next week; check full list here",
-     "ts": "2026-07-12T06:10:12+00:00"
+     "title": "HCL Tech Q1 Results 2026: PAT jumps 20%, revenue rises 14%; board declares  \u20b912 interim dividend",
+     "ts": "2026-07-13T05:43:15+00:00"
     }
    ],
    "feeds": [
     "Mint Markets"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "hdfc bank hcl tech": {
-   "display": "HDFC Bank HCL Tech",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "HDFC Bank, HCL Tech among 143 companies to announce earnings this week",
-     "ts": "2026-07-12T04:19:30+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "heat": {
    "display": "Heat",
@@ -1972,7 +2356,7 @@
    ],
    "first_seen": "2026-07-10T23:35:39.962248+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 1.3929
+   "score": 1.3152
   },
   "heatwave grips": {
    "display": "Heatwave Grips",
@@ -1988,7 +2372,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "here s gmp": {
    "display": "Here's GMP",
@@ -2004,39 +2388,39 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "highlights bajaj consumer care": {
+   "display": "Highlights Bajaj Consumer Care",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Q1 Results Today Highlights: Bajaj Consumer Care Q1 profit rises, HCL Tech profit up 20%, ICICI Prudential AMC, Nuvoco Vistas Corporation, Khaitan Chemicals announce Q1 results",
+     "ts": "2026-07-13T16:16:23+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
   },
-  "hormuz axios": {
-   "display": "HORMUZ AXIOS",
+  "hong kong ipo": {
+   "display": "Hong Kong IPO",
    "evidence": [
     {
-     "feed": "DeItaone",
-     "title": "U.S. MILITARY CONDUCTED AN HOUR AGO A FEW STRIKES ON MISSILE AND AIR DEFENSE SYSTEMS -AXIOS U.S. ALSO TARGETED IRGC SMALL BOATS AT A COUPLE OF LOCATIONS AROUND STRAIT OF HORMUZ -AXIOS",
-     "ts": "2026-07-12T16:43:15+00:00"
+     "feed": "ET Markets",
+     "title": "Global Markets: Shein eyes up to $3 billion Hong Kong IPO as soon as August, Bloomberg News reports",
+     "ts": "2026-07-13T14:08:30+00:00"
     }
    ],
    "feeds": [
-    "DeItaone"
+    "ET Markets"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "hormuz closes us": {
-   "display": "HORMUZ CLOSES US",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "US-IRAN CONFLICT ESCALATES AS HORMUZ CLOSES US forces struck Iran for the third time in a week after Tehran attacked a Cyprus-flagged container ship. Iran retaliated with missile and drone attacks targeting US-linked sites across the Middle East. Minor damage and several",
-     "ts": "2026-07-12T09:08:38+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "hormuz crisis deepens": {
    "display": "Hormuz Crisis Deepens",
@@ -2052,7 +2436,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "hormuz escalation": {
    "display": "Hormuz Escalation",
@@ -2068,55 +2452,39 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "hour meeting": {
+   "display": "HOUR MEETING",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "TRUMP: WE HELD AN 11-HOUR MEETING YESTERDAY WITH THE IRANIANS",
+     "ts": "2026-07-13T12:33:33+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
   },
-  "hour ago": {
-   "display": "HOUR AGO",
+  "house nrcc chairman closed": {
+   "display": "House NRCC Chairman Closed",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "U.S. MILITARY CONDUCTED AN HOUR AGO A FEW STRIKES ON MISSILE AND AIR DEFENSE SYSTEMS -AXIOS U.S. ALSO TARGETED IRGC SMALL BOATS AT A COUPLE OF LOCATIONS AROUND STRAIT OF HORMUZ -AXIOS",
-     "ts": "2026-07-12T16:43:15+00:00"
+     "title": "TRUMP\u2019S SCHEDULE TODAY \u2013 MONDAY, JULY 13, 2026 \ud83d\udccd THE WHITE HOUSE \u20228:00 AM EDT \u2014 Executive Time (Closed Press) \u20221:30 PM EDT \u2014 Freedom 250 Grand Prix Showcase (Press Pool) \u2190 PUBLIC APPEARANCE \u20223:00 PM EDT \u2014 Meeting with Speaker of the House & NRCC Chairman (Closed) \u20224:00 PM",
+     "ts": "2026-07-13T10:53:36+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "however": {
-   "display": "However",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "TRUMP: STRAIT OF HORMUZ OPEN TO COMMERCIAL SHIPPING U.S. President Donald Trump said the Strait of Hormuz remains open to commercial traffic. However, continued U.S.\u2013Iran attacks are raising safety concerns along one of the world\u2019s most critical oil shipping routes. Trump made",
-     "ts": "2026-07-12T15:38:25+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "hydropower": {
-   "display": "Hydropower",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Britain Bets on Hydropower to Boost Energy Security",
-     "ts": "2026-07-12T15:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "icici pru": {
    "display": "ICICI Pru",
@@ -2132,7 +2500,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "icici pru amc": {
    "display": "ICICI Pru AMC Q",
@@ -2148,11 +2516,16 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "icici prudential amc nuvoco": {
    "display": "ICICI Prudential AMC Nuvoco",
    "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Q1 Results Today Highlights: Bajaj Consumer Care Q1 profit rises, HCL Tech profit up 20%, ICICI Prudential AMC, Nuvoco Vistas Corporation, Khaitan Chemicals announce Q1 results",
+     "ts": "2026-07-13T16:16:23+00:00"
+    },
     {
      "feed": "BusinessLine Mkts",
      "title": "Q1 Results Today Live: Bajaj Consumer Care Q1 profit rises, HCL Tech shares jump ahead of results, ICICI Prudential AMC, Nuvoco Vistas Corporation, Khaitan Chemicals to announce Q1 results",
@@ -2163,66 +2536,72 @@
     "BusinessLine Mkts"
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
-   "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.9442
   },
-  "icici securities": {
-   "display": "ICICI Securities",
+  "iea chief slams europe": {
+   "display": "IEA Chief Slams Europe",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Godrej Consumer shares climb 2% as ICICI Securities upgrades the stock to a buy, raises target price",
-     "ts": "2026-07-09T06:26:55+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "ITC Hotels to Apollo Tyres, Astral: 10 mid- and small-cap stock picks by ICICI Securities for up to 41% upside potential",
-     "ts": "2026-07-09T09:05:56+00:00"
+     "feed": "OilPrice",
+     "title": "IEA Chief Slams Europe\u2019s Slow Electrification as Energy Crisis Deepens",
+     "ts": "2026-07-13T16:00:00+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "OilPrice"
    ],
-   "first_seen": "2026-07-09T14:08:08.755019+00:00",
-   "last_seen": "2026-07-09T14:08:08.755019+00:00",
-   "score": 0.8015
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
-  "india focused": {
-   "display": "India-focused",
+  "india nippon elec buy": {
+   "display": "India Nippon Elec Buy",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Broker\u2019s call: India Nippon Elec (Buy)",
+     "ts": "2026-07-13T13:35:56+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "india s biocon": {
+   "display": "India's Biocon",
    "evidence": [
     {
      "feed": "ET Markets",
-     "title": "Nearly 60% of foreign inflows into India-focused funds withdrawn since 2024 peak: Report",
-     "ts": "2026-07-11T10:29:22+00:00"
+     "title": "Mylan to sell up to $363 million stake in India's Biocon, term sheet shows",
+     "ts": "2026-07-13T13:32:25+00:00"
     }
    ],
    "feeds": [
     "ET Markets"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
-  "india indigo coforge mrf": {
-   "display": "India IndiGo Coforge MRF",
+  "indian bank buy": {
+   "display": "Indian Bank Buy",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Top Gainers & Losers on 8 July: Aegis Logistics, HPCL, Bank of India, IndiGo, Coforge, MRF among top losers",
-     "ts": "2026-07-08T10:58:34+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Top Gainers &amp; Losers on 8 July: Aegis Logistics, HPCL, Bank of India, IndiGo, Coforge, MRF among top losers",
-     "ts": "2026-07-08T10:58:34+00:00"
+     "feed": "BusinessLine Mkts",
+     "title": "Broker\u2019s call: Indian Bank (Buy)",
+     "ts": "2026-07-13T13:09:23+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "BusinessLine Mkts"
    ],
-   "first_seen": "2026-07-08T11:23:05.666954+00:00",
-   "last_seen": "2026-07-08T19:25:55.709259+00:00",
-   "score": 0.6444
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "indian it": {
    "display": "Indian IT",
@@ -2249,23 +2628,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-10T10:29:04.391230+00:00",
-   "score": 0.9594
-  },
-  "inflows": {
-   "display": "Inflows",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Inflows to multi-asset allocation funds jumps 22% MoM amid increased stock market volatility",
-     "ts": "2026-07-12T09:22:36+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.9059
   },
   "info edge": {
    "display": "Info Edge",
@@ -2291,60 +2654,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-08T06:39:49.312907+00:00",
-   "score": 0.857
-  },
-  "infosys": {
-   "display": "Infosys",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Infosys to PFC - Jay Thakkar suggests 3 stocks to buy or sell for short-term in F&O segment",
-     "ts": "2026-07-08T04:22:56+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Infosys to PFC - Jay Thakkar suggests 3 stocks to buy or sell for short-term in F&amp;O segment",
-     "ts": "2026-07-08T04:22:56+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-08T06:39:49.312907+00:00",
-   "last_seen": "2026-07-08T19:25:55.709259+00:00",
-   "score": 0.6306
-  },
-  "inside": {
-   "display": "Inside",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Could oil prices spike further? Inside the fragile US-Iran stance in the Gulf",
-     "ts": "2026-07-11T06:15:01+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "inventory replenishment": {
-   "display": "Inventory Replenishment",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "The Next Bull Market Could Be Built on Inventory Replenishment",
-     "ts": "2026-07-11T23:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.8092
   },
   "invest now stocks gold": {
    "display": "Invest Now Stocks Gold",
@@ -2360,7 +2670,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "ipo gmp buzz millworks": {
    "display": "IPO GMP Buzz Millworks",
@@ -2376,7 +2686,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "ipo gmps kusumgar ipo": {
    "display": "IPO GMPs Kusumgar IPO",
@@ -2392,87 +2702,71 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "iran leader s adviser": {
+   "display": "IRAN LEADER S ADVISER",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "IRAN LEADER\u2019S ADVISER RULES OUT RETREAT FROM STRAIT OF HORMUZ",
+     "ts": "2026-07-13T12:28:38+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
   },
-  "iran reports drone strike": {
-   "display": "IRAN REPORTS DRONE STRIKE",
+  "iran oil we re taking": {
+   "display": "IRAN OIL WE'RE TAKING",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "IRAN REPORTS DRONE STRIKE ON U.S. HIMARS IN KUWAIT Iranian reports claim the IRGC destroyed U.S. HIMARS launchers and missile pods in Kuwait in a precision drone strike. Unofficial sources allege three U.S. officers were killed and several injured. Military analysts claim the",
-     "ts": "2026-07-12T17:33:39+00:00"
+     "title": "TRUMP ON IRAN, OIL: WE'RE TAKING OVER THE STRAIT",
+     "ts": "2026-07-13T12:18:30+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
-  "iran s bandar abbas": {
-   "display": "IRAN'S BANDAR ABBAS",
+  "iran reports says explosions": {
+   "display": "IRAN REPORTS SAYS EXPLOSIONS",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "SEVERAL EXPLOSIONS HEARD EAST OF IRAN'S BANDAR ABBAS AND IN COASTAL AREA OF QESHM; REASONS UNKNOWN - IRANIAN MEDIA",
-     "ts": "2026-07-12T16:03:33+00:00"
+     "title": "IRAN REPORTS SAYS EXPLOSIONS HEARD AROUND IRAN'S BANDAR ABBAS AND QESHM ISLAND",
+     "ts": "2026-07-13T09:43:12+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
-  "iran s irna says missiles": {
-   "display": "IRAN'S IRNA SAYS MISSILES",
+  "iran s foreign ministry says": {
+   "display": "IRAN'S FOREIGN MINISTRY SAYS",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "IRAN'S IRNA SAYS MISSILES LAUNCHED BY THE 'ENEMY' TOWARDS IRAN'S QESHM ISLAND ON SUNDAY",
-     "ts": "2026-07-12T16:28:19+00:00"
+     "title": "IRAN'S FOREIGN MINISTRY SAYS MUSCAT TALKS ON SATURDAY WAS FOCUSED ON MANAGING STRAIT OF HORMUZ, BUT U.S. THROUGH PRESSURING OMAN PREVENTED RESULT FROM BEING REACHED ON THAT MATTER",
+     "ts": "2026-07-12T21:38:40+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "iran s kerman hit by": {
-   "display": "IRAN'S KERMAN HIT BY",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "IRAN'S MEHR NEWS AGENCY SAYS COMMUNICATION INFRASTRUCTURE IN IRAN'S KERMAN HIT BY U.S. ATTACK",
-     "ts": "2026-07-12T08:58:41+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "iran s mehr news agency": {
-   "display": "IRAN'S MEHR NEWS AGENCY",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "IRAN'S MEHR NEWS AGENCY SAYS COMMUNICATION INFRASTRUCTURE IN IRAN'S KERMAN HIT BY U.S. ATTACK",
-     "ts": "2026-07-12T08:58:41+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "iran s revolutionary guards navy": {
    "display": "IRAN'S REVOLUTIONARY GUARDS NAVY",
@@ -2498,7 +2792,23 @@
    ],
    "first_seen": "2026-07-09T19:15:27.106311+00:00",
    "last_seen": "2026-07-09T19:15:27.106311+00:00",
-   "score": 1.2628
+   "score": 1.1924
+  },
+  "iran says us iran memorandum": {
+   "display": "IRAN SAYS US-IRAN MEMORANDUM",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "IRAN SAYS US-IRAN MEMORANDUM OF UNDERSTANDING IN 'CRISIS PHASE'",
+     "ts": "2026-07-13T07:48:43+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "iran strikes gulf countries": {
    "display": "Iran Strikes Gulf Countries",
@@ -2514,28 +2824,23 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
-  "iran war": {
-   "display": "Iran War",
+  "iran they re": {
+   "display": "IRAN THEY'RE",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "Iran War May Ignite Middle East Market Share Race, But Not Yet",
-     "ts": "2026-07-09T17:00:00+00:00"
-    },
-    {
-     "feed": "OilPrice",
-     "title": "IMF Downgrades Global Economic Growth Forecast To 3% Amid Iran War",
-     "ts": "2026-07-08T19:00:00+00:00"
+     "feed": "DeItaone",
+     "title": "TRUMP ON IRAN: THEY'RE A BAD GROUP OF PEOPLE - INTERVIEW",
+     "ts": "2026-07-13T12:23:07+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-08T19:25:55.709259+00:00",
-   "last_seen": "2026-07-09T19:15:27.106311+00:00",
-   "score": 0.7556
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "iran warns u s interference": {
    "display": "Iran Warns U.S. Interference",
@@ -2551,55 +2856,55 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "iran we had": {
+   "display": "IRAN WE HAD",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "TRUMP ON IRAN: WE HAD A DEAL AND THEY BROKE IT",
+     "ts": "2026-07-13T12:23:11+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
   },
-  "iranian media says revolutionary": {
-   "display": "IRANIAN MEDIA SAYS REVOLUTIONARY",
+  "iranian cruise missile and": {
+   "display": "IRANIAN CRUISE MISSILE AND",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "IRANIAN MEDIA SAYS REVOLUTIONARY GUARDS TARGETED U.S. ROCKET LAUNCHER SYSTEMS IN KUWAIT IN A DRONE OPERATION",
-     "ts": "2026-07-12T17:33:38+00:00"
+     "title": "WITHIN THE PAST HOUR, IRGC FORCES FIRED AT COMMERCIAL SHIPPING TRANSITING THE STRAIT OF HORMUZ. U.S. AIRCRAFT HAVE SUCCESSFULLY SHOT DOWN AN IRANIAN CRUISE MISSILE AND ONE-WAY ATTACK DRONE- CNN, CITING U.S. MILITARY",
+     "ts": "2026-07-12T22:08:12+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
-  "iraq s eastern sulaymaniyah": {
-   "display": "IRAQ S EASTERN SULAYMANIYAH",
+  "iranians": {
+   "display": "IRANIANS",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "DRONE ATTACK TARGETS IRANIAN KURDISH OPPOSITION CAMP IN IRAQ\u2019S EASTERN SULAYMANIYAH - SECURITY SOURCES",
-     "ts": "2026-07-12T18:08:19+00:00"
+     "title": "TRUMP: WE HELD AN 11-HOUR MEETING YESTERDAY WITH THE IRANIANS",
+     "ts": "2026-07-13T12:33:33+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "irgc": {
-   "display": "IRGC",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "IRAN REPORTS DRONE STRIKE ON U.S. HIMARS IN KUWAIT Iranian reports claim the IRGC destroyed U.S. HIMARS launchers and missile pods in Kuwait in a precision drone strike. Unofficial sources allege three U.S. officers were killed and several injured. Military analysts claim the",
-     "ts": "2026-07-12T17:33:39+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "irving fisher": {
    "display": "Irving Fisher",
@@ -2615,23 +2920,55 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
-  "jio financial": {
-   "display": "Jio Financial",
+  "isabel schnabel": {
+   "display": "Isabel Schnabel",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Q1 results 2026: HCL Tech, Wipro to Jio Financial among companies to declare Q1 results next week; check full list here",
-     "ts": "2026-07-12T06:10:12+00:00"
+     "feed": "ECB press",
+     "title": "Isabel Schnabel: How to foster growth and resilience in Europe",
+     "ts": "2026-07-13T16:45:00+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "ECB press"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "jornal de negocios": {
+   "display": "Jornal de Negocios",
+   "evidence": [
+    {
+     "feed": "ECB press",
+     "title": "Piero Cipollone: Interview with Jornal de Negocios",
+     "ts": "2026-07-13T17:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "ECB press"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "jpmorgan": {
+   "display": "JPMorgan",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Can big banks\u2019 \u2018cheap\u2019 stocks keep rising? We\u2019ll find out when JPMorgan and an unusual number of others report earnings Tuesday.",
+     "ts": "2026-07-13T15:25:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "jsw infrastructure": {
    "display": "JSW Infrastructure",
@@ -2647,23 +2984,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
-  },
-  "juhi bhatnagar s": {
-   "display": "Juhi Bhatnagar's",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Mind Over Money | How Pilates reshaped Juhi Bhatnagar's approach to leadership, investing and motherhood",
-     "ts": "2026-07-12T03:59:42+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.9442
   },
   "kalpataru": {
    "display": "Kalpataru",
@@ -2679,81 +3000,39 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
-  "kalshi world cup bets": {
-   "display": "KALSHI WORLD CUP BETS",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "KALSHI WORLD CUP BETS COULD GET A TAX BREAK Americans betting on the World Cup through prediction markets could face lower taxes than sportsbook users. Because event contracts are structured as investments, traders may claim broader loss deductions\u2014and potentially lower tax",
-     "ts": "2026-07-12T12:53:16+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "kalyan jewellers tcs": {
-   "display": "Kalyan Jewellers TCS",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "F&O Talk: Mid, smallcaps to continue outperformance as Q1 begins, says Sudeep Shah; outlines Kalyan Jewellers, TCS strategy",
-     "ts": "2026-07-11T06:46:22+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "kansas becomes testing ground": {
-   "display": "Kansas Becomes Testing Ground",
+  "keep fuel prices elevated": {
+   "display": "Keep Fuel Prices Elevated",
    "evidence": [
     {
      "feed": "OilPrice",
-     "title": "Kansas Becomes Testing Ground for a Radical Nuclear Reactor Design",
-     "ts": "2026-07-11T21:00:00+00:00"
+     "title": "Why Renewed Iran Tensions Could Keep Fuel Prices Elevated",
+     "ts": "2026-07-13T14:17:48+00:00"
     }
    ],
    "feeds": [
     "OilPrice"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
-  "knack packaging ipo": {
-   "display": "Knack Packaging IPO",
+  "kotak amc": {
+   "display": "Kotak AMC",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Knack Packaging IPO listing date today. GMP, experts signal share debut at a decent premium in Indian stock market",
-     "ts": "2026-07-08T00:44:59+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Knack Packaging IPO listing in focus. Here's what GMP signals ahead of debut",
-     "ts": "2026-07-07T03:23:45+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Knack Packaging IPO allotment date today. GMP, steps to check share allotment status online on BSE, NSE and MUFG Intime",
-     "ts": "2026-07-06T02:19:52+00:00"
+     "feed": "BusinessLine Mkts",
+     "title": "Supreme Court upholds SEBI action against Kotak AMC in Essel case",
+     "ts": "2026-07-13T13:47:44+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "BusinessLine Mkts"
    ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-08T06:39:49.312907+00:00",
-   "score": 0.768
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "kremlin say": {
    "display": "KREMLIN SAY",
@@ -2774,7 +3053,7 @@
    ],
    "first_seen": "2026-07-09T19:15:27.106311+00:00",
    "last_seen": "2026-07-09T19:15:27.106311+00:00",
-   "score": 0.8419
+   "score": 0.795
   },
   "kusumgar ipo": {
    "display": "Kusumgar IPO",
@@ -2790,7 +3069,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "kusumgar ipo day issue": {
    "display": "Kusumgar IPO Day Issue",
@@ -2816,7 +3095,7 @@
    ],
    "first_seen": "2026-07-08T06:39:49.312907+00:00",
    "last_seen": "2026-07-10T10:29:04.391230+00:00",
-   "score": 1.0931
+   "score": 1.0321
   },
   "kuwait": {
    "display": "Kuwait",
@@ -2837,39 +3116,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 1.6797
-  },
-  "kuwait iranian": {
-   "display": "KUWAIT Iranian",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "IRAN REPORTS DRONE STRIKE ON U.S. HIMARS IN KUWAIT Iranian reports claim the IRGC destroyed U.S. HIMARS launchers and missile pods in Kuwait in a precision drone strike. Unofficial sources allege three U.S. officers were killed and several injured. Military analysts claim the",
-     "ts": "2026-07-12T17:33:39+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "kuwait s army says three": {
-   "display": "KUWAIT'S ARMY SAYS THREE",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "KUWAIT'S ARMY SAYS THREE BORDER CENTERS WERE SUBJECTED TO AN ATTACK, RESULTING IN MATERIAL DAMAGE",
-     "ts": "2026-07-12T16:43:16+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 1.586
   },
   "l&t finance": {
    "display": "L&T Finance",
@@ -2885,27 +3132,32 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
-  "largecap": {
-   "display": "Largecap",
+  "largest solar and battery project": {
+   "display": "Largest Solar-and-Battery Project",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Largecap funds no longer the best bet? Edelweiss CIO Trideep Bhattacharya explains why flexicaps may win now",
-     "ts": "2026-07-12T07:21:28+00:00"
+     "feed": "OilPrice",
+     "title": "Masdar Secures $5.1 Billion for World\u2019s Largest Solar-and-Battery Project",
+     "ts": "2026-07-13T13:30:00+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "OilPrice"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "laser power and infra": {
    "display": "Laser Power and Infra",
    "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Laser Power and Infra IPO fetches 38.94 times subscription on final day",
+     "ts": "2026-07-13T12:09:05+00:00"
+    },
     {
      "feed": "BusinessLine Mkts",
      "title": "Laser Power and Infra IPO fetches 38.49 times subscription so far on final day",
@@ -2916,7 +3168,23 @@
     "BusinessLine Mkts"
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
-   "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.9442
+  },
+  "laser power infra ipo": {
+   "display": "Laser Power Infra IPO",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Laser Power & Infra IPO: Issue booked 41 times on Day 03; NII, QIB portions see strong demand",
+     "ts": "2026-07-13T14:11:55+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
   },
   "laser power ipo": {
@@ -2933,7 +3201,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "laser power ipo day": {
    "display": "Laser Power IPO Day",
@@ -2949,55 +3217,71 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
-  "late stage": {
-   "display": "Late-stage",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Late-stage cheques go big at $86 million average this year",
-     "ts": "2026-07-12T03:54:34+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "lawfully transit international waterway": {
-   "display": "LAWFULLY TRANSIT INTERNATIONAL WATERWAY",
+  "last hours around commercial": {
+   "display": "LAST HOURS AROUND COMMERCIAL",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "U.S. MILITARY: STRAIT OF HORMUZ IS OPEN TO ALL VESSELS SEEKING TO LAWFULLY TRANSIT INTERNATIONAL WATERWAY",
-     "ts": "2026-07-12T12:28:15+00:00"
+     "title": "OVER THE LAST 24 HOURS AROUND 20 COMMERCIAL VESSELS HAVE TRANSITED THROUGH THE STRAIT OF HORMUZ IN COORDINATION WITH THE U.S. MILITARY, IN ADDITION TO SEVERAL VESSELS WITHOUT U.S. COORDINATION- REPORT CITING U.S. OFFICIAL",
+     "ts": "2026-07-12T23:08:30+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
-  "lkp securities": {
-   "display": "LKP Securities'",
+  "long": {
+   "display": "Long",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "From Kalyan Jewellers' 52-week high to Trent's reality check: LKP Securities' top trading ideas",
-     "ts": "2026-07-12T05:35:56+00:00"
+     "feed": "OilPrice",
+     "title": "Iraq\u2019s Oil Lifeline Has Been Saved, But For How Long?",
+     "ts": "2026-07-13T17:00:00+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "OilPrice"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "long sk hynix skhz": {
+   "display": "Long SK Hynix SKHZ",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SK HYNIX VOLATILITY GOES BOTH WAYS SK Hynix plunged a record 15%, dragging the Kospi down 9% and triggering a market-wide trading halt as concerns grew that South Korea\u2019s AI rally had become overstretched. Position for either direction: $SKHX \u2014 2x Long SK Hynix $SKHZ \u2014 1x",
+     "ts": "2026-07-13T10:18:49+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "lukoil founder and russian": {
+   "display": "Lukoil Founder and Russian",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "EU Drops Sanctions on Lukoil Founder and Russian Patriarch",
+     "ts": "2026-07-13T18:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "magellanic cloud": {
    "display": "Magellanic Cloud",
@@ -3013,44 +3297,71 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
-  "mahesh pai": {
-   "display": "Mahesh Pai",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "South Indian Bank shares tumble 9% after four-day rise; RBI clears Mahesh Pai as MD & CEO",
-     "ts": "2026-07-08T05:34:05+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "South Indian Bank shares tumble 9% after four-day rise; RBI clears Mahesh Pai as MD &amp; CEO",
-     "ts": "2026-07-08T05:34:05+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-08T06:39:49.312907+00:00",
-   "last_seen": "2026-07-08T19:25:55.709259+00:00",
-   "score": 0.6306
-  },
-  "material damage": {
-   "display": "MATERIAL DAMAGE",
+  "managing strait of hormuz": {
+   "display": "MANAGING STRAIT OF HORMUZ",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "KUWAIT'S ARMY SAYS THREE BORDER CENTERS WERE SUBJECTED TO AN ATTACK, RESULTING IN MATERIAL DAMAGE",
-     "ts": "2026-07-12T16:43:16+00:00"
+     "title": "IRAN'S FOREIGN MINISTRY SAYS MUSCAT TALKS ON SATURDAY WAS FOCUSED ON MANAGING STRAIT OF HORMUZ, BUT U.S. THROUGH PRESSURING OMAN PREVENTED RESULT FROM BEING REACHED ON THAT MATTER",
+     "ts": "2026-07-12T21:38:40+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "masdar secures billion": {
+   "display": "Masdar Secures Billion",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Masdar Secures $5.1 Billion for World\u2019s Largest Solar-and-Battery Project",
+     "ts": "2026-07-13T13:30:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "matter": {
+   "display": "MATTER",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "IRAN'S FOREIGN MINISTRY SAYS MUSCAT TALKS ON SATURDAY WAS FOCUSED ON MANAGING STRAIT OF HORMUZ, BUT U.S. THROUGH PRESSURING OMAN PREVENTED RESULT FROM BEING REACHED ON THAT MATTER",
+     "ts": "2026-07-12T21:38:40+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "meta and amazon": {
+   "display": "Meta and Amazon",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Meta and Amazon are leading a trillion-dollar Big Tech spending spree",
+     "ts": "2026-07-13T18:36:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "midcap": {
    "display": "Midcap",
@@ -3072,23 +3383,7 @@
    ],
    "first_seen": "2026-07-10T12:40:14.184302+00:00",
    "last_seen": "2026-07-11T06:02:51.803687+00:00",
-   "score": 1.0862
-  },
-  "middle east minor": {
-   "display": "Middle East. Minor",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "US-IRAN CONFLICT ESCALATES AS HORMUZ CLOSES US forces struck Iran for the third time in a week after Tehran attacked a Cyprus-flagged container ship. Iran retaliated with missile and drone attacks targeting US-linked sites across the Middle East. Minor damage and several",
-     "ts": "2026-07-12T09:08:38+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 1.0256
   },
   "middle east risks return": {
    "display": "Middle East Risks Return",
@@ -3109,7 +3404,7 @@
    ],
    "first_seen": "2026-07-10T19:10:18.989658+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.5299
+   "score": 1.4446
   },
   "mideast": {
    "display": "Mideast",
@@ -3125,23 +3420,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
-  },
-  "military": {
-   "display": "Military",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "IRAN REPORTS DRONE STRIKE ON U.S. HIMARS IN KUWAIT Iranian reports claim the IRGC destroyed U.S. HIMARS launchers and missile pods in Kuwait in a precision drone strike. Unofficial sources allege three U.S. officers were killed and several injured. Military analysts claim the",
-     "ts": "2026-07-12T17:33:39+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.9442
   },
   "millworks ipo gmp": {
    "display": "Millworks Technologies IPO GMP",
@@ -3157,55 +3436,55 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
-  "mind": {
-   "display": "Mind",
+  "mixed": {
+   "display": "Mixed",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Mind Over Money | How Pilates reshaped Juhi Bhatnagar's approach to leadership, investing and motherhood",
-     "ts": "2026-07-12T03:59:42+00:00"
+     "feed": "BusinessLine Mkts",
+     "title": "Mixed trend in gold ETFs over past 2 weeks, as investors keep a low profile",
+     "ts": "2026-07-13T16:32:54+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "BusinessLine Mkts"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
-  "missile and air defense": {
-   "display": "MISSILE AND AIR DEFENSE",
+  "morgan stanley expects us": {
+   "display": "MORGAN STANLEY EXPECTS US",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "U.S. MILITARY CONDUCTED AN HOUR AGO A FEW STRIKES ON MISSILE AND AIR DEFENSE SYSTEMS -AXIOS U.S. ALSO TARGETED IRGC SMALL BOATS AT A COUPLE OF LOCATIONS AROUND STRAIT OF HORMUZ -AXIOS",
-     "ts": "2026-07-12T16:43:15+00:00"
+     "title": "MORGAN STANLEY EXPECTS US HYPERSCALER CAPEX TO REACH $1.2 TRLN BY 2027 MORGAN STANLEY EXPECTS US HYPERSCALER CAPEX TO REACH $1.4 TRLN BY 2028",
+     "ts": "2026-07-13T12:23:09+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
-  "money": {
-   "display": "Money",
+  "morning statement": {
+   "display": "MORNING STATEMENT",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Mind Over Money | How Pilates reshaped Juhi Bhatnagar's approach to leadership, investing and motherhood",
-     "ts": "2026-07-12T03:59:42+00:00"
+     "feed": "DeItaone",
+     "title": "BAHRAIN SAYS ITS AIR DEFENCES INTERCEPTED AND DESTROYED SEVERAL IRANIAN AERIAL ATTACKS ON MONDAY MORNING - STATEMENT",
+     "ts": "2026-07-13T10:13:32+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "motilal oswal": {
    "display": "Motilal Oswal",
@@ -3236,7 +3515,23 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-10T10:29:04.391230+00:00",
-   "score": 1.3021
+   "score": 1.2295
+  },
+  "multi year highs natural": {
+   "display": "MULTI-YEAR HIGHS Natural",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "U.S. POWER COSTS SURGE TO MULTI-YEAR HIGHS Natural gas power costs hit $90 per megawatt-hour in 2026\u2014the highest level in at least 17 years\u2014as data-center demand accelerates. Solar and onshore wind costs also jumped more than 10%, reaching their highest levels since at least",
+     "ts": "2026-07-13T11:38:09+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "multibagger": {
    "display": "Multibagger",
@@ -3272,7 +3567,23 @@
    ],
    "first_seen": "2026-07-08T06:39:49.312907+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 3.8354
+   "score": 3.6215
+  },
+  "mylan": {
+   "display": "Mylan",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Mylan to sell up to $363 million stake in India's Biocon, term sheet shows",
+     "ts": "2026-07-13T13:32:25+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "naprosyn es": {
    "display": "Naprosyn ES",
@@ -3288,7 +3599,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "naproxen esomeprazole": {
    "display": "Naproxen-Esomeprazole",
@@ -3304,55 +3615,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
-  },
-  "nation": {
-   "display": "Nation",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Can Colombia\u2019s New Government Reverse the Nation\u2019s Oil and Gas Decline?",
-     "ts": "2026-07-11T17:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "ncd issue": {
-   "display": "NCD Issue",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "DMart Board approves \u20b91,000 crore NCD Issue as Q1 profit rises 12.8%",
-     "ts": "2026-07-11T15:05:17+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "nearly": {
-   "display": "Nearly",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Nearly 60% of foreign inflows into India-focused funds withdrawn since 2024 peak: Report",
-     "ts": "2026-07-11T10:29:22+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.9442
   },
   "newgen software kalyan jewellers": {
    "display": "Newgen Software Kalyan Jewellers",
@@ -3368,23 +3631,23 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
-  "next bull market": {
-   "display": "Next Bull Market",
+  "next strait of hormuz": {
+   "display": "Next Strait of Hormuz",
    "evidence": [
     {
      "feed": "OilPrice",
-     "title": "The Next Bull Market Could Be Built on Inventory Replenishment",
-     "ts": "2026-07-11T23:00:00+00:00"
+     "title": "Dubai Is Already Planning for the Next Strait of Hormuz Crisis",
+     "ts": "2026-07-13T17:30:00+00:00"
     }
    ],
    "feeds": [
     "OilPrice"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "nifty ahimsa index": {
    "display": "Nifty Ahimsa Index",
@@ -3406,7 +3669,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.8397999999999999
+   "score": 1.7372
   },
   "nifty it": {
    "display": "Nifty IT",
@@ -3422,7 +3685,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "nigeria": {
    "display": "Nigeria",
@@ -3438,45 +3701,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
-  },
-  "nomura": {
-   "display": "Nomura",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Nomura sees 22% upside in Ather Energy. Here's why it's the brokerage's top EV pick",
-     "ts": "2026-07-11T10:16:21+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "nvidia": {
-   "display": "Nvidia",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "After a $1 trillion wipeout, is Nvidia ready for a comeback?",
-     "ts": "2026-07-09T07:40:18+00:00"
-    },
-    {
-     "feed": "MarketWatch Top",
-     "title": "Nvidia\u2019s stock trades at a juicy discount, according to BofA",
-     "ts": "2026-07-08T19:36:00+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets",
-    "MarketWatch Top"
-   ],
-   "first_seen": "2026-07-08T21:54:39.241005+00:00",
-   "last_seen": "2026-07-09T14:08:08.755019+00:00",
-   "score": 0.7434
+   "score": 0.9442
   },
   "offshore oil province": {
    "display": "Offshore Oil Province",
@@ -3492,23 +3717,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
-  },
-  "oil and gas decline": {
-   "display": "Oil and Gas Decline",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Can Colombia\u2019s New Government Reverse the Nation\u2019s Oil and Gas Decline?",
-     "ts": "2026-07-11T17:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.9442
   },
   "oil and lng tankers": {
    "display": "Oil and LNG Tankers",
@@ -3524,32 +3733,32 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
-  "oil prices jump": {
-   "display": "Oil Prices Jump",
+  "oil lifeline has been": {
+   "display": "Oil Lifeline Has Been",
    "evidence": [
     {
      "feed": "OilPrice",
-     "title": "Oil Prices Jump over 7% as Iran Ceasefire Declared \u2018Over\u2019",
-     "ts": "2026-07-08T15:31:00+00:00"
-    },
-    {
-     "feed": "OilPrice",
-     "title": "Oil Prices Jump After Iran Attacks Commercial Vessels",
-     "ts": "2026-07-08T05:58:56+00:00"
+     "title": "Iraq\u2019s Oil Lifeline Has Been Saved, But For How Long?",
+     "ts": "2026-07-13T17:00:00+00:00"
     }
    ],
    "feeds": [
     "OilPrice"
    ],
-   "first_seen": "2026-07-08T06:39:49.312907+00:00",
-   "last_seen": "2026-07-08T17:14:16.367541+00:00",
-   "score": 0.6237
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "oil prices surge": {
    "display": "Oil Prices Surge",
    "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Oil Prices Surge 8% After Trump Reimposes Iran Blockade",
+     "ts": "2026-07-13T18:30:00+00:00"
+    },
     {
      "feed": "OilPrice",
      "title": "Oil Prices Surge 4% as U.S.-Iran Escalation Rekindles Supply Fears",
@@ -3560,8 +3769,8 @@
     "OilPrice"
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
-   "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.9442
   },
   "oil production hits six year": {
    "display": "Oil Production Hits Six-Year",
@@ -3577,7 +3786,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "ongc": {
    "display": "ONGC",
@@ -3593,7 +3802,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "open": {
    "display": "OPEN",
@@ -3619,23 +3828,23 @@
    ],
    "first_seen": "2026-07-10T12:40:14.184302+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 2.1775
+   "score": 2.0561
   },
-  "open nbc interview": {
-   "display": "OPEN NBC INTERVIEW",
+  "past hour irgc forces": {
+   "display": "PAST HOUR IRGC FORCES",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "TRUMP: STRAIT OF HORMUZ IS OPEN -NBC INTERVIEW",
-     "ts": "2026-07-12T15:13:07+00:00"
+     "title": "WITHIN THE PAST HOUR, IRGC FORCES FIRED AT COMMERCIAL SHIPPING TRANSITING THE STRAIT OF HORMUZ. U.S. AIRCRAFT HAVE SUCCESSFULLY SHOT DOWN AN IRANIAN CRUISE MISSILE AND ONE-WAY ATTACK DRONE- CNN, CITING U.S. MILITARY",
+     "ts": "2026-07-12T22:08:12+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "penny": {
    "display": "Penny",
@@ -3661,28 +3870,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-09T14:08:08.755019+00:00",
-   "score": 0.9617
-  },
-  "pfc jay thakkar": {
-   "display": "PFC Jay Thakkar",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Infosys to PFC - Jay Thakkar suggests 3 stocks to buy or sell for short-term in F&O segment",
-     "ts": "2026-07-08T04:22:56+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Infosys to PFC - Jay Thakkar suggests 3 stocks to buy or sell for short-term in F&amp;O segment",
-     "ts": "2026-07-08T04:22:56+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-08T06:39:49.312907+00:00",
-   "last_seen": "2026-07-08T19:25:55.709259+00:00",
-   "score": 0.6306
+   "score": 0.9081
   },
   "pg electroplast puravankara": {
    "display": "PG Electroplast Puravankara",
@@ -3698,81 +3886,39 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "piero cipollone interview": {
+   "display": "Piero Cipollone Interview",
+   "evidence": [
+    {
+     "feed": "ECB press",
+     "title": "Piero Cipollone: Interview with Jornal de Negocios",
+     "ts": "2026-07-13T17:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "ECB press"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
   },
-  "pilates": {
-   "display": "Pilates",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Mind Over Money | How Pilates reshaped Juhi Bhatnagar's approach to leadership, investing and motherhood",
-     "ts": "2026-07-12T03:59:42+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "positioned and prepared": {
-   "display": "POSITIONED AND PREPARED",
+  "position": {
+   "display": "Position",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "U.S. MILITARY: U.S. FORCES ARE POSITIONED AND PREPARED TO ENSURE THAT FREEDOM OF NAVIGATION REMAINS AVAILABLE",
-     "ts": "2026-07-12T12:28:17+00:00"
+     "title": "SK HYNIX VOLATILITY GOES BOTH WAYS SK Hynix plunged a record 15%, dragging the Kospi down 9% and triggering a market-wide trading halt as concerns grew that South Korea\u2019s AI rally had become overstretched. Position for either direction: $SKHX \u2014 2x Long SK Hynix $SKHZ \u2014 1x",
+     "ts": "2026-07-13T10:18:49+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "president trump": {
-   "display": "President Trump",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "HORMUZ TRAFFIC DROPS AS CEASEFIRE COLLAPSES Ship crossings through the Strait of Hormuz fell to 25 yesterday, below the recent daily average of 30\u201350. Traffic slowed after President Trump declared the U.S.\u2013Iran ceasefire over and both sides exchanged further strikes. Maritime",
-     "ts": "2026-07-09T12:23:45+00:00"
-    },
-    {
-     "feed": "DeItaone",
-     "title": "OIL JUMPS AS TRUMP DECLARES CEASE-FIRE OVER Oil prices surged after President Trump said the Iran cease-fire was \"over\" following U.S. strikes and attacks on commercial ships near the Strait of Hormuz. Brent crude rose 6.3% to $78.86 a barrel, while WTI gained 5.9% to $74.60 as",
-     "ts": "2026-07-08T14:53:16+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-08T19:25:55.709259+00:00",
-   "last_seen": "2026-07-09T19:15:27.106311+00:00",
-   "score": 0.7556
-  },
-  "private": {
-   "display": "Private",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "HDFC Bank Q1 results date: Private lender to announce June quarter earnings on 18 July",
-     "ts": "2026-07-09T17:21:28+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Private banks poised for a rally? Experts bullish on these banking heavyweights",
-     "ts": "2026-07-09T08:10:44+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-09T14:08:08.755019+00:00",
-   "last_seen": "2026-07-09T19:15:27.106311+00:00",
-   "score": 0.8217
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "profit": {
    "display": "Profit",
@@ -3793,23 +3939,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 2.0
-  },
-  "public safety users of": {
-   "display": "PUBLIC SAFETY USERS OF",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "QATAR SAYS FOR PUBLIC SAFETY USERS OF ALL MARITIME VESSELS, FISHING BOATS ARE ADVISED TO TEMPORARILY SUSPEND SAILING UNTIL FURTHER NOTICE - MINISTRY",
-     "ts": "2026-07-12T09:08:39+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 1.8885
   },
   "puravankara": {
    "display": "Puravankara Q",
@@ -3825,11 +3955,16 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "q results": {
    "display": "Q Results",
    "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Q1 Results Today Highlights: Bajaj Consumer Care Q1 profit rises, HCL Tech profit up 20%, ICICI Prudential AMC, Nuvoco Vistas Corporation, Khaitan Chemicals announce Q1 results",
+     "ts": "2026-07-13T16:16:23+00:00"
+    },
     {
      "feed": "BusinessLine Mkts",
      "title": "Q1 Results Today Live: Bajaj Consumer Care Q1 profit rises, HCL Tech shares jump ahead of results, ICICI Prudential AMC, Nuvoco Vistas Corporation, Khaitan Chemicals to announce Q1 results",
@@ -3840,24 +3975,8 @@
     "BusinessLine Mkts"
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
-   "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
-  },
-  "qatar condemns iranian attacks": {
-   "display": "QATAR CONDEMNS IRANIAN ATTACKS",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "QATAR CONDEMNS IRANIAN ATTACKS ON ITS TERRITORY AND OTHER ARAB COUNTRIES - FOREIGN MINISTRY",
-     "ts": "2026-07-12T09:33:42+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.9442
   },
   "qatar says": {
    "display": "QATAR SAYS",
@@ -3878,28 +3997,23 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 1.6797
+   "score": 1.586
   },
-  "qip do": {
-   "display": "QIP. Do",
+  "qeshm island": {
+   "display": "QESHM ISLAND",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Adani Enterprises shares trade flat after closure of  \u20b915000 crore QIP. Do you own?",
-     "ts": "2026-07-08T05:14:22+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Adani Enterprises shares trade flat after closure of  \u20b91500 crore QIP. Do you own?",
-     "ts": "2026-07-08T05:14:22+00:00"
+     "feed": "DeItaone",
+     "title": "IRAN REPORTS SAYS EXPLOSIONS HEARD AROUND IRAN'S BANDAR ABBAS AND QESHM ISLAND",
+     "ts": "2026-07-13T09:43:12+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-08T06:39:49.312907+00:00",
-   "last_seen": "2026-07-08T11:23:05.666954+00:00",
-   "score": 0.6057
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "quote": {
    "display": "Quote",
@@ -3935,7 +4049,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 2.3296
+   "score": 2.1997
   },
   "radhika gupta": {
    "display": "Radhika Gupta",
@@ -3951,39 +4065,39 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
-  "radical nuclear reactor design": {
-   "display": "Radical Nuclear Reactor Design",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Kansas Becomes Testing Ground for a Radical Nuclear Reactor Design",
-     "ts": "2026-07-11T21:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "region": {
-   "display": "REGION",
+  "reach trln by": {
+   "display": "REACH TRLN BY",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "QATAR SAYS THE CONTINUATION OF THESE ATTACKS IS A SERIOUS ESCALATION WHICH COMPLICATES EFFORTS TO CONTAIN TENSIONS IN THE REGION",
-     "ts": "2026-07-12T09:33:43+00:00"
+     "title": "MORGAN STANLEY EXPECTS US HYPERSCALER CAPEX TO REACH $1.2 TRLN BY 2027 MORGAN STANLEY EXPECTS US HYPERSCALER CAPEX TO REACH $1.4 TRLN BY 2028",
+     "ts": "2026-07-13T12:23:09+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "reach trln by morgan": {
+   "display": "REACH TRLN BY MORGAN",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "MORGAN STANLEY EXPECTS US HYPERSCALER CAPEX TO REACH $1.2 TRLN BY 2027 MORGAN STANLEY EXPECTS US HYPERSCALER CAPEX TO REACH $1.4 TRLN BY 2028",
+     "ts": "2026-07-13T12:23:09+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "regional escalation continues": {
    "display": "Regional Escalation Continues",
@@ -3999,44 +4113,55 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "remain cheapest power source": {
+   "display": "Remain Cheapest Power Source",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Utility-Scale Solar Costs Rise 18% but Remain Cheapest Power Source",
+     "ts": "2026-07-13T15:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
   },
-  "revenue": {
-   "display": "Revenue",
+  "renewed iran tensions": {
+   "display": "Renewed Iran Tensions",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "HCL Tech Q1 preview: Revenue may dip QoQ; net profit could rise on currency depreciation",
-     "ts": "2026-07-12T06:04:32+00:00"
+     "feed": "OilPrice",
+     "title": "Why Renewed Iran Tensions Could Keep Fuel Prices Elevated",
+     "ts": "2026-07-13T14:17:48+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "OilPrice"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
-  "rocket lab": {
-   "display": "Rocket Lab",
+  "return": {
+   "display": "RETURN",
    "evidence": [
     {
-     "feed": "MarketWatch Top",
-     "title": "Jeff Bezos\u2019s space company may be seeking a valuation more than twice as big as Rocket Lab\u2019s",
-     "ts": "2026-07-08T19:00:00+00:00"
-    },
-    {
-     "feed": "MarketWatch Top",
-     "title": "Rocket Lab\u2019s stock could surge 250% as the company takes a page out of SpaceX\u2019s book, analyst says",
-     "ts": "2026-07-08T16:03:00+00:00"
+     "feed": "DeItaone",
+     "title": "TRUMP SAYS U.S. WILL DEFEND STRAIT, EXPECTS PAYMENT IN RETURN",
+     "ts": "2026-07-13T12:23:12+00:00"
     }
    ],
    "feeds": [
-    "MarketWatch Top"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-08T17:14:16.367541+00:00",
-   "last_seen": "2026-07-08T19:25:55.709259+00:00",
-   "score": 0.6623
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "rpg life sciences": {
    "display": "RPG Life Sciences",
@@ -4052,7 +4177,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "sail ireda power grid": {
    "display": "SAIL IREDA Power Grid",
@@ -4068,33 +4193,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
-  },
-  "samsung": {
-   "display": "Samsung",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Explained: Why did Samsung shares crash 10% even after tech giant forecast 19x jump in profit",
-     "ts": "2026-07-07T00:54:29+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Global Market: Japan's Nikkei falls 2% as Samsung slump sparks chipmaker selloff",
-     "ts": "2026-07-07T01:37:53+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Micron, Intel shares crash up to 8% as Samsung fails to calm concerns over AI",
-     "ts": "2026-07-07T08:49:15+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-07T19:12:33.086553+00:00",
-   "last_seen": "2026-07-07T19:12:33.086553+00:00",
-   "score": 0.7952
+   "score": 0.9442
   },
   "sbi funds management": {
    "display": "SBI Funds Management",
@@ -4110,7 +4209,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "sbi funds management ipo": {
    "display": "SBI Funds Management IPO",
@@ -4146,7 +4245,7 @@
    ],
    "first_seen": "2026-07-10T10:29:04.391230+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 3.8147
+   "score": 3.602
   },
   "sbi mf": {
    "display": "SBI MF",
@@ -4167,7 +4266,23 @@
    ],
    "first_seen": "2026-07-11T06:02:51.803687+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 1.4282
+   "score": 1.3486
+  },
+  "sbi mf ipo": {
+   "display": "SBI MF IPO",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "SBI MF IPO to open on Tuesday, fund house hopes issue will bring investors back",
+     "ts": "2026-07-13T14:38:02+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "schools": {
    "display": "Schools",
@@ -4183,39 +4298,23 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "several vessels": {
+   "display": "SEVERAL VESSELS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "OVER THE LAST 24 HOURS AROUND 20 COMMERCIAL VESSELS HAVE TRANSITED THROUGH THE STRAIT OF HORMUZ IN COORDINATION WITH THE U.S. MILITARY, IN ADDITION TO SEVERAL VESSELS WITHOUT U.S. COORDINATION- REPORT CITING U.S. OFFICIAL",
+     "ts": "2026-07-12T23:08:30+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
-  },
-  "serious escalation": {
-   "display": "SERIOUS ESCALATION",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "QATAR SAYS THE CONTINUATION OF THESE ATTACKS IS A SERIOUS ESCALATION WHICH COMPLICATES EFFORTS TO CONTAIN TENSIONS IN THE REGION",
-     "ts": "2026-07-12T09:33:43+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "several explosions heard east": {
-   "display": "SEVERAL EXPLOSIONS HEARD EAST",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "SEVERAL EXPLOSIONS HEARD EAST OF IRAN'S BANDAR ABBAS AND IN COASTAL AREA OF QESHM; REASONS UNKNOWN - IRANIAN MEDIA",
-     "ts": "2026-07-12T16:03:33+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
   },
   "shriram finance brigade enterprise": {
    "display": "Shriram Finance Brigade Enterprise",
@@ -4231,23 +4330,87 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "sk hynix us listed": {
+   "display": "SK Hynix US-listed",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "SK Hynix US-listed shares slip nearly 8% as Nasdaq debut euphoria cools",
+     "ts": "2026-07-13T14:48:30+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
   },
-  "sign several oil and": {
-   "display": "SIGN SEVERAL OIL AND",
+  "sk hynix volatility goes": {
+   "display": "SK HYNIX VOLATILITY GOES",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "IRAQ WILL SIGN SEVERAL OIL AND GAS MOUS DURING PRIME MINISTER VISIT TO WASHINGTON - GOVERNMENT SPOKESPERSON",
-     "ts": "2026-07-12T10:23:13+00:00"
+     "title": "SK HYNIX VOLATILITY GOES BOTH WAYS SK Hynix plunged a record 15%, dragging the Kospi down 9% and triggering a market-wide trading halt as concerns grew that South Korea\u2019s AI rally had become overstretched. Position for either direction: $SKHX \u2014 2x Long SK Hynix $SKHZ \u2014 1x",
+     "ts": "2026-07-13T10:18:49+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "skhx": {
+   "display": "SKHX",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SK HYNIX VOLATILITY GOES BOTH WAYS SK Hynix plunged a record 15%, dragging the Kospi down 9% and triggering a market-wide trading halt as concerns grew that South Korea\u2019s AI rally had become overstretched. Position for either direction: $SKHX \u2014 2x Long SK Hynix $SKHZ \u2014 1x",
+     "ts": "2026-07-13T10:18:49+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "slow electrification": {
+   "display": "Slow Electrification",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "IEA Chief Slams Europe\u2019s Slow Electrification as Energy Crisis Deepens",
+     "ts": "2026-07-13T16:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "small cap": {
+   "display": "Small-cap",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Small-cap stock under  \u20b950 hits upper circuit after this AI update",
+     "ts": "2026-07-13T14:16:35+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "sme ipo": {
    "display": "SME IPO",
@@ -4263,7 +4426,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "social security": {
    "display": "Social Security",
@@ -4299,44 +4462,23 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 4.532500000000001
+   "score": 4.2798
   },
-  "sodium ion batteries help": {
-   "display": "Sodium-Ion Batteries Help",
+  "solar": {
+   "display": "Solar",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "Can Sodium-Ion Batteries Help the U.S. Close the Gap With China?",
-     "ts": "2026-07-12T17:00:00+00:00"
+     "feed": "DeItaone",
+     "title": "U.S. POWER COSTS SURGE TO MULTI-YEAR HIGHS Natural gas power costs hit $90 per megawatt-hour in 2026\u2014the highest level in at least 17 years\u2014as data-center demand accelerates. Solar and onshore wind costs also jumped more than 10%, reaching their highest levels since at least",
+     "ts": "2026-07-13T11:38:09+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "south": {
-   "display": "South",
-   "evidence": [
-    {
-     "feed": "Mining.com",
-     "title": "South32 clears key US hurdle for $2B Arizona mine",
-     "ts": "2026-07-07T11:19:19+00:00"
-    },
-    {
-     "feed": "Mining.com",
-     "title": "South32 sells nearly all its aluminum business to Alcoa for $5.6B",
-     "ts": "2026-06-30T17:15:18+00:00"
-    }
-   ],
-   "feeds": [
-    "Mining.com"
-   ],
-   "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-07-07T19:15:24.550163+00:00",
-   "score": 0.7372
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "south central railway": {
    "display": "South Central Railway",
@@ -4352,28 +4494,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
-  },
-  "south indian bank": {
-   "display": "South Indian Bank",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "South Indian Bank shares tumble 9% after four-day rise; RBI clears Mahesh Pai as MD & CEO",
-     "ts": "2026-07-08T05:34:05+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "South Indian Bank shares tumble 9% after four-day rise; RBI clears Mahesh Pai as MD &amp; CEO",
-     "ts": "2026-07-08T05:34:05+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-08T06:39:49.312907+00:00",
-   "last_seen": "2026-07-08T19:25:55.709259+00:00",
-   "score": 0.6306
+   "score": 0.9442
   },
   "south korea taiwan": {
    "display": "South Korea Taiwan",
@@ -4389,7 +4510,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "south korean": {
    "display": "South Korean",
@@ -4405,44 +4526,39 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "spacex": {
+   "display": "SpaceX",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "SpaceX extends losses, hovers near IPO price after 39% plunge from peak",
+     "ts": "2026-07-13T17:18:27+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
   },
-  "stay": {
-   "display": "Stay",
+  "speaker": {
+   "display": "Speaker",
    "evidence": [
     {
-     "feed": "MarketWatch Top",
-     "title": "The No. 1 decision for aging retirees: Stay at home or move into a senior community?",
-     "ts": "2026-07-12T13:30:00+00:00"
+     "feed": "DeItaone",
+     "title": "TRUMP\u2019S SCHEDULE TODAY \u2013 MONDAY, JULY 13, 2026 \ud83d\udccd THE WHITE HOUSE \u20228:00 AM EDT \u2014 Executive Time (Closed Press) \u20221:30 PM EDT \u2014 Freedom 250 Grand Prix Showcase (Press Pool) \u2190 PUBLIC APPEARANCE \u20223:00 PM EDT \u2014 Meeting with Speaker of the House & NRCC Chairman (Closed) \u20224:00 PM",
+     "ts": "2026-07-13T10:53:36+00:00"
     }
    ],
    "feeds": [
-    "MarketWatch Top"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "stock market highlights sensex": {
-   "display": "Stock Market Highlights Sensex",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Sensex today | Stock Market Highlights: Sensex ends 238 points higher; Nifty closes above 23,950",
-     "ts": "2026-07-09T11:12:38+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Sensex today | Stock Market Highlights: Sensex tumbles 1,677 points, Nifty slips below 23,900 after Trump\u2019s Iran comments",
-     "ts": "2026-07-08T10:54:25+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-08T11:23:05.666954+00:00",
-   "last_seen": "2026-07-09T14:08:08.755019+00:00",
-   "score": 0.7103
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "stock market highlights stock": {
    "display": "Stock Market Highlights Stock",
@@ -4458,11 +4574,16 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "strait": {
    "display": "STRAIT",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "TRUMP ON IRAN, OIL: WE'RE TAKING OVER THE STRAIT",
+     "ts": "2026-07-13T12:18:30+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "IRAN'S REVOLUTIONARY GUARDS NAVY SAYS U.S. 'ADVENTURISM AND INTERFERENCE' IN DETERMINING TRAFFIC ROUTES IN STRAIT WILL ONLY RESULT IN IRAN'S 'CRUSHING RESPONSE' - STATEMENT",
@@ -4478,8 +4599,8 @@
     "DeItaone"
    ],
    "first_seen": "2026-07-09T19:15:27.106311+00:00",
-   "last_seen": "2026-07-09T19:15:27.106311+00:00",
-   "score": 0.8419
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.795
   },
   "strait of hormuz tanker": {
    "display": "Strait of Hormuz Tanker",
@@ -4495,39 +4616,39 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
-  "strong": {
-   "display": "Strong",
+  "strait of hormuz u s": {
+   "display": "STRAIT OF HORMUZ. U.S.",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Expert view: Strong opening to Q1 with recovery in banks, says Vinod Nair",
-     "ts": "2026-07-12T09:26:05+00:00"
+     "feed": "DeItaone",
+     "title": "WITHIN THE PAST HOUR, IRGC FORCES FIRED AT COMMERCIAL SHIPPING TRANSITING THE STRAIT OF HORMUZ. U.S. AIRCRAFT HAVE SUCCESSFULLY SHOT DOWN AN IRANIAN CRUISE MISSILE AND ONE-WAY ATTACK DRONE- CNN, CITING U.S. MILITARY",
+     "ts": "2026-07-12T22:08:12+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
-  "sudeep shah": {
-   "display": "Sudeep Shah",
+  "strategy": {
+   "display": "Strategy",
    "evidence": [
     {
      "feed": "ET Markets",
-     "title": "F&O Talk: Mid, smallcaps to continue outperformance as Q1 begins, says Sudeep Shah; outlines Kalyan Jewellers, TCS strategy",
-     "ts": "2026-07-11T06:46:22+00:00"
+     "title": "Strategy bitcoin sales shine light on faltering crypto hoarding companies",
+     "ts": "2026-07-13T17:48:58+00:00"
     }
    ],
    "feeds": [
     "ET Markets"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "sumeet bagadia": {
    "display": "Sumeet Bagadia",
@@ -4548,7 +4669,7 @@
    ],
    "first_seen": "2026-07-11T06:02:51.803687+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 1.4282
+   "score": 1.3486
   },
   "super typhoon bavi": {
    "display": "Super Typhoon Bavi",
@@ -4579,60 +4700,7 @@
    ],
    "first_seen": "2026-07-08T06:39:49.312907+00:00",
    "last_seen": "2026-07-09T14:08:08.755019+00:00",
-   "score": 1.3341
-  },
-  "t dome": {
-   "display": "T-Dome",
-   "evidence": [
-    {
-     "feed": "SCMP Economy",
-     "title": "The missile funding dispute endangering Taiwan\u2019s \u2018T-Dome\u2019 air defence plan",
-     "ts": "2026-07-08T04:00:07+00:00"
-    },
-    {
-     "feed": "SCMP Economy",
-     "title": "Enemy within? The dispute endangering Taiwan\u2019s \u2018T-Dome\u2019 air defence plan",
-     "ts": "2026-07-08T04:00:07+00:00"
-    }
-   ],
-   "feeds": [
-    "SCMP Economy"
-   ],
-   "first_seen": "2026-07-08T06:39:49.312907+00:00",
-   "last_seen": "2026-07-08T11:23:05.666954+00:00",
-   "score": 0.6057
-  },
-  "tax break americans": {
-   "display": "TAX BREAK Americans",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "KALSHI WORLD CUP BETS COULD GET A TAX BREAK Americans betting on the World Cup through prediction markets could face lower taxes than sportsbook users. Because event contracts are structured as investments, traders may claim broader loss deductions\u2014and potentially lower tax",
-     "ts": "2026-07-12T12:53:16+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "tcs dabur mrf": {
-   "display": "TCS Dabur MRF",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Dividends and stock splits: TCS, Dabur, MRF among nearly 100 stocks turning ex-date this week. Do you own any?",
-     "ts": "2026-07-12T04:16:04+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 1.2597
   },
   "tcs hcl tech": {
    "display": "TCS HCL Tech",
@@ -4648,7 +4716,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "tcs hcl tech infosys": {
    "display": "TCS HCL Tech Infosys",
@@ -4664,77 +4732,23 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "tech": {
+   "display": "Tech",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Meta and Amazon are leading a trillion-dollar Big Tech spending spree",
+     "ts": "2026-07-13T18:36:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
-  },
-  "tcs q results": {
-   "display": "TCS Q Results",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "TCS Q1 Results Live Updates: Tata Consultancy Services Q1 profit rises 5% YoY, revenue jumps 14%. Board declares dividend at Rs 12/share",
-     "ts": "2026-07-09T06:46:30+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "TCS Q1 Results on July 9: AI Strategy, Dividend, Margins \u2014 Key things to watch from IT major's earnings",
-     "ts": "2026-07-08T07:33:16+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets",
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-08T11:23:05.666954+00:00",
-   "last_seen": "2026-07-09T14:08:08.755019+00:00",
-   "score": 0.7103
-  },
-  "tehran": {
-   "display": "Tehran",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "US-IRAN CONFLICT ESCALATES AS HORMUZ CLOSES US forces struck Iran for the third time in a week after Tehran attacked a Cyprus-flagged container ship. Iran retaliated with missile and drone attacks targeting US-linked sites across the Middle East. Minor damage and several",
-     "ts": "2026-07-12T09:08:38+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "temporarily suspend sailing until": {
-   "display": "TEMPORARILY SUSPEND SAILING UNTIL",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "QATAR SAYS FOR PUBLIC SAFETY USERS OF ALL MARITIME VESSELS, FISHING BOATS ARE ADVISED TO TEMPORARILY SUSPEND SAILING UNTIL FURTHER NOTICE - MINISTRY",
-     "ts": "2026-07-12T09:08:39+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "territory and other arab": {
-   "display": "TERRITORY AND OTHER ARAB",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "QATAR CONDEMNS IRANIAN ATTACKS ON ITS TERRITORY AND OTHER ARAB COUNTRIES - FOREIGN MINISTRY",
-     "ts": "2026-07-12T09:33:42+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
   },
   "textile": {
    "display": "Textile",
@@ -4750,7 +4764,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "time": {
    "display": "Time",
@@ -4771,7 +4785,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.8397999999999999
+   "score": 1.7372
   },
   "top gainers losers": {
    "display": "Top Gainers Losers",
@@ -4807,65 +4821,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 3.0045
-  },
-  "torrent pharma": {
-   "display": "Torrent Pharma",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Torrent Pharma among 6 stocks to hit 52-week highs & rally up to 25% in a month",
-     "ts": "2026-07-08T10:47:41+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Torrent Pharma among 6 stocks to hit 52-week highs &amp; rally up to 25% in a month",
-     "ts": "2026-07-08T10:47:41+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-08T11:23:05.666954+00:00",
-   "last_seen": "2026-07-08T19:25:55.709259+00:00",
-   "score": 0.6444
-  },
-  "trent": {
-   "display": "Trent",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Trent among 5 F&amp;O stocks with a sharp rise in futures open interest",
-     "ts": "2026-07-08T04:01:13+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Airtel to Trent: 44 cos likely to report double-digit profit slump in Q1. Are your stocks on the list?",
-     "ts": "2026-07-08T04:33:56+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-08T06:39:49.312907+00:00",
-   "last_seen": "2026-07-08T06:39:49.312907+00:00",
-   "score": 0.5919
-  },
-  "trent s": {
-   "display": "Trent's",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "From Kalyan Jewellers' 52-week high to Trent's reality check: LKP Securities' top trading ideas",
-     "ts": "2026-07-12T05:35:56+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 2.837
   },
   "trigger further oil and": {
    "display": "Trigger Further Oil and",
@@ -4881,23 +4837,71 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
-  "trump eyes australia s": {
-   "display": "TRUMP EYES AUSTRALIA S",
+  "trump iran didn t get": {
+   "display": "TRUMP IRAN DIDN'T GET",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "TRUMP EYES AUSTRALIA\u2019S RETIREMENT MODEL President Donald Trump wants officials to study Australia\u2019s $3.1 trillion private pension system as a possible blueprint for US retirement reform. Australia requires employers to contribute 12% of workers\u2019 salaries\u2014including for part-time",
-     "ts": "2026-07-12T15:58:23+00:00"
+     "title": "TRUMP: IRAN DIDN'T GET ANYTHING FROM ME",
+     "ts": "2026-07-13T12:18:32+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "trump reimposes iran blockade": {
+   "display": "Trump Reimposes Iran Blockade",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Oil Prices Surge 8% After Trump Reimposes Iran Blockade",
+     "ts": "2026-07-13T18:30:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "trump s schedule": {
+   "display": "TRUMP S SCHEDULE",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "TRUMP\u2019S SCHEDULE TODAY \u2013 MONDAY, JULY 13, 2026 \ud83d\udccd THE WHITE HOUSE \u20228:00 AM EDT \u2014 Executive Time (Closed Press) \u20221:30 PM EDT \u2014 Freedom 250 Grand Prix Showcase (Press Pool) \u2190 PUBLIC APPEARANCE \u20223:00 PM EDT \u2014 Meeting with Speaker of the House & NRCC Chairman (Closed) \u20224:00 PM",
+     "ts": "2026-07-13T10:53:36+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "trump says u s": {
+   "display": "TRUMP SAYS U.S.",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "TRUMP SAYS U.S. WILL DEFEND STRAIT, EXPECTS PAYMENT IN RETURN",
+     "ts": "2026-07-13T12:23:12+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "trump strait of hormuz": {
    "display": "TRUMP STRAIT OF HORMUZ",
@@ -4918,7 +4922,39 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 1.6797
+   "score": 1.586
+  },
+  "trump warns": {
+   "display": "TRUMP WARNS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "TRUMP WARNS OF SEPTEMBER GOVERNMENT SHUTDOWN UNLESS SENATE ENDS FILIBUSTER",
+     "ts": "2026-07-13T12:13:08+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "trump we held": {
+   "display": "TRUMP WE HELD",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "TRUMP: WE HELD AN 11-HOUR MEETING YESTERDAY WITH THE IRANIANS",
+     "ts": "2026-07-13T12:33:33+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "typhoon bavi": {
    "display": "Typhoon Bavi",
@@ -4949,71 +4985,23 @@
    ],
    "first_seen": "2026-07-10T10:29:04.391230+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 2.9157
+   "score": 2.7531
   },
-  "typhoon bavi shanghai hangzhou": {
-   "display": "Typhoon Bavi Shanghai Hangzhou",
-   "evidence": [
-    {
-     "feed": "SCMP Economy",
-     "title": "Typhoon Bavi: Shanghai, Hangzhou brace for impact as nearby cities start evacuations",
-     "ts": "2026-07-11T02:39:36+00:00"
-    }
-   ],
-   "feeds": [
-    "SCMP Economy"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "u s close": {
-   "display": "U.S. Close",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Can Sodium-Ion Batteries Help the U.S. Close the Gap With China?",
-     "ts": "2026-07-12T17:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "u s himars": {
-   "display": "U.S. HIMARS",
+  "u s coordination report citing": {
+   "display": "U.S. COORDINATION- REPORT CITING",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "IRAN REPORTS DRONE STRIKE ON U.S. HIMARS IN KUWAIT Iranian reports claim the IRGC destroyed U.S. HIMARS launchers and missile pods in Kuwait in a precision drone strike. Unofficial sources allege three U.S. officers were killed and several injured. Military analysts claim the",
-     "ts": "2026-07-12T17:33:39+00:00"
+     "title": "OVER THE LAST 24 HOURS AROUND 20 COMMERCIAL VESSELS HAVE TRANSITED THROUGH THE STRAIT OF HORMUZ IN COORDINATION WITH THE U.S. MILITARY, IN ADDITION TO SEVERAL VESSELS WITHOUT U.S. COORDINATION- REPORT CITING U.S. OFFICIAL",
+     "ts": "2026-07-12T23:08:30+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "u s iran": {
-   "display": "U.S. Iran",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "TRUMP: STRAIT OF HORMUZ OPEN TO COMMERCIAL SHIPPING U.S. President Donald Trump said the Strait of Hormuz remains open to commercial traffic. However, continued U.S.\u2013Iran attacks are raising safety concerns along one of the world\u2019s most critical oil shipping routes. Trump made",
-     "ts": "2026-07-12T15:38:25+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "u s iran escalation rekindles supply": {
    "display": "U.S.-Iran Escalation Rekindles Supply",
@@ -5029,119 +5017,55 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "u s military": {
+   "display": "U.S. MILITARY",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "OVER THE LAST 24 HOURS AROUND 20 COMMERCIAL VESSELS HAVE TRANSITED THROUGH THE STRAIT OF HORMUZ IN COORDINATION WITH THE U.S. MILITARY, IN ADDITION TO SEVERAL VESSELS WITHOUT U.S. COORDINATION- REPORT CITING U.S. OFFICIAL",
+     "ts": "2026-07-12T23:08:30+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
   },
-  "u s military conducted": {
-   "display": "U.S. MILITARY CONDUCTED",
+  "u s power costs surge": {
+   "display": "U.S. POWER COSTS SURGE",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "U.S. MILITARY CONDUCTED AN HOUR AGO A FEW STRIKES ON MISSILE AND AIR DEFENSE SYSTEMS -AXIOS U.S. ALSO TARGETED IRGC SMALL BOATS AT A COUPLE OF LOCATIONS AROUND STRAIT OF HORMUZ -AXIOS",
-     "ts": "2026-07-12T16:43:15+00:00"
+     "title": "U.S. POWER COSTS SURGE TO MULTI-YEAR HIGHS Natural gas power costs hit $90 per megawatt-hour in 2026\u2014the highest level in at least 17 years\u2014as data-center demand accelerates. Solar and onshore wind costs also jumped more than 10%, reaching their highest levels since at least",
+     "ts": "2026-07-13T11:38:09+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
-  "u s military strait of": {
-   "display": "U.S. MILITARY STRAIT OF",
+  "understanding": {
+   "display": "UNDERSTANDING",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "U.S. MILITARY: STRAIT OF HORMUZ IS OPEN TO ALL VESSELS SEEKING TO LAWFULLY TRANSIT INTERNATIONAL WATERWAY",
-     "ts": "2026-07-12T12:28:15+00:00"
+     "title": "IRAN SAYS US-IRAN MEMORANDUM OF UNDERSTANDING IN 'CRISIS PHASE'",
+     "ts": "2026-07-13T07:48:43+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "u s military u s forces": {
-   "display": "U.S. MILITARY U.S. FORCES",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "U.S. MILITARY: U.S. FORCES ARE POSITIONED AND PREPARED TO ENSURE THAT FREEDOM OF NAVIGATION REMAINS AVAILABLE",
-     "ts": "2026-07-12T12:28:17+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "ubs global wealth report": {
-   "display": "UBS Global Wealth Report",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "World\u2019s wealth gap is widening, UBS Global Wealth Report shows",
-     "ts": "2026-07-12T10:52:06+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "unique picks": {
-   "display": "Unique Picks",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Unique Picks: 7 stocks held by a single MF scheme in June; rally up to 120% in 3 months",
-     "ts": "2026-07-11T06:18:11+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "unofficial": {
-   "display": "Unofficial",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "IRAN REPORTS DRONE STRIKE ON U.S. HIMARS IN KUWAIT Iranian reports claim the IRGC destroyed U.S. HIMARS launchers and missile pods in Kuwait in a precision drone strike. Unofficial sources allege three U.S. officers were killed and several injured. Military analysts claim the",
-     "ts": "2026-07-12T17:33:39+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "upcoming ipos sbi funds": {
-   "display": "Upcoming IPOs SBI Funds",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Upcoming IPOs: SBI Funds Management IPO, Alpine Texworld IPO among new issues to open this week; full list here",
-     "ts": "2026-07-12T10:03:03+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "uruguay": {
    "display": "Uruguay",
@@ -5157,7 +5081,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "us central bank": {
    "display": "US Central Bank",
@@ -5173,55 +5097,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
-  },
-  "us iran conflict escalates": {
-   "display": "US-IRAN CONFLICT ESCALATES",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "US-IRAN CONFLICT ESCALATES AS HORMUZ CLOSES US forces struck Iran for the third time in a week after Tehran attacked a Cyprus-flagged container ship. Iran retaliated with missile and drone attacks targeting US-linked sites across the Middle East. Minor damage and several",
-     "ts": "2026-07-12T09:08:38+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "us linked": {
-   "display": "US-linked",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "US-IRAN CONFLICT ESCALATES AS HORMUZ CLOSES US forces struck Iran for the third time in a week after Tehran attacked a Cyprus-flagged container ship. Iran retaliated with missile and drone attacks targeting US-linked sites across the Middle East. Minor damage and several",
-     "ts": "2026-07-12T09:08:38+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "us says hormuz": {
-   "display": "US SAYS HORMUZ",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "US SAYS HORMUZ IS OPEN TO ALL VESSELS SEEKING SAFE TRANSIT",
-     "ts": "2026-07-12T12:28:16+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.9442
   },
   "us stock market wall": {
    "display": "US Stock Market Wall",
@@ -5237,6 +5113,22 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "utility scale solar costs rise": {
+   "display": "Utility-Scale Solar Costs Rise",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Utility-Scale Solar Costs Rise 18% but Remain Cheapest Power Source",
+     "ts": "2026-07-13T15:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
   },
   "vaishali parekh": {
@@ -5253,7 +5145,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
   "vedanta iron vedanta aluminium": {
    "display": "Vedanta Iron Vedanta Aluminium",
@@ -5269,23 +5161,23 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
+   "score": 0.9442
   },
-  "vijay kedia": {
-   "display": "Vijay Kedia",
+  "viatris": {
+   "display": "Viatris",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Vijay Kedia buys 3.58 lakh shares in this IT company that nearly doubled investor money",
-     "ts": "2026-07-12T09:21:36+00:00"
+     "feed": "BusinessLine Mkts",
+     "title": "Biocon to see block deals, as Viatris plans to exit",
+     "ts": "2026-07-13T15:03:17+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "BusinessLine Mkts"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "vinay rajani of hdfc": {
    "display": "Vinay Rajani of HDFC",
@@ -5301,44 +5193,23 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
+   "score": 0.9442
+  },
+  "waller": {
+   "display": "Waller",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "A hot inflation reading this week could mean a rate hike soon, Fed\u2019s Waller says",
+     "ts": "2026-07-13T17:10:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
    "score": 1.0
-  },
-  "vinod nair": {
-   "display": "Vinod Nair",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Expert view: Strong opening to Q1 with recovery in banks, says Vinod Nair",
-     "ts": "2026-07-12T09:26:05+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
-  },
-  "vwap": {
-   "display": "VWAP",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Jubilant FoodWorks among 4 stocks closed above VWAP, signalling bullish shift",
-     "ts": "2026-07-08T03:15:57+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Himadri Speciality among 4 stocks that closed below VWAP",
-     "ts": "2026-07-08T03:52:00+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-08T06:39:49.312907+00:00",
-   "last_seen": "2026-07-08T06:39:49.312907+00:00",
-   "score": 0.5919
   },
   "walmart": {
    "display": "Walmart.",
@@ -5364,7 +5235,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-09T23:55:37.717533+00:00",
-   "score": 0.8672
+   "score": 0.8188
   },
   "war related profits anger governments": {
    "display": "War-Related Profits Anger Governments",
@@ -5380,23 +5251,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.0
-  },
-  "washington government spokesperson": {
-   "display": "WASHINGTON GOVERNMENT SPOKESPERSON",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "IRAQ WILL SIGN SEVERAL OIL AND GAS MOUS DURING PRIME MINISTER VISIT TO WASHINGTON - GOVERNMENT SPOKESPERSON",
-     "ts": "2026-07-12T10:23:13+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "score": 0.9442
   },
   "west asia": {
    "display": "West Asia",
@@ -5432,23 +5287,39 @@
    ],
    "first_seen": "2026-07-08T11:23:05.666954+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 4.0859000000000005
+   "score": 3.8581
   },
-  "world cup": {
-   "display": "World Cup",
+  "white house am edt": {
+   "display": "WHITE HOUSE AM EDT",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "KALSHI WORLD CUP BETS COULD GET A TAX BREAK Americans betting on the World Cup through prediction markets could face lower taxes than sportsbook users. Because event contracts are structured as investments, traders may claim broader loss deductions\u2014and potentially lower tax",
-     "ts": "2026-07-12T12:53:16+00:00"
+     "title": "TRUMP\u2019S SCHEDULE TODAY \u2013 MONDAY, JULY 13, 2026 \ud83d\udccd THE WHITE HOUSE \u20228:00 AM EDT \u2014 Executive Time (Closed Press) \u20221:30 PM EDT \u2014 Freedom 250 Grand Prix Showcase (Press Pool) \u2190 PUBLIC APPEARANCE \u20223:00 PM EDT \u2014 Meeting with Speaker of the House & NRCC Chairman (Closed) \u20224:00 PM",
+     "ts": "2026-07-13T10:53:36+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-12T19:00:13.897142+00:00",
-   "last_seen": "2026-07-12T19:00:13.897142+00:00",
-   "score": 0.8398
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
+  },
+  "within": {
+   "display": "WITHIN",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WITHIN THE PAST HOUR, IRGC FORCES FIRED AT COMMERCIAL SHIPPING TRANSITING THE STRAIT OF HORMUZ. U.S. AIRCRAFT HAVE SUCCESSFULLY SHOT DOWN AN IRANIAN CRUISE MISSILE AND ONE-WAY ATTACK DRONE- CNN, CITING U.S. MILITARY",
+     "ts": "2026-07-12T22:08:12+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-13T19:05:37.277705+00:00",
+   "last_seen": "2026-07-13T19:05:37.277705+00:00",
+   "score": 1.0
   },
   "zerodha": {
    "display": "Zerodha",
@@ -5470,7 +5341,7 @@
    ],
    "first_seen": "2026-07-09T19:15:27.106311+00:00",
    "last_seen": "2026-07-10T10:29:04.391230+00:00",
-   "score": 0.9084
+   "score": 0.8577
   }
  },
  "members": {
@@ -5508,7 +5379,7 @@
    "last_mention": "2026-07-10T03:54:17+00:00",
    "name": "ADANI ENTERPRISES LTD.",
    "norm": "adani",
-   "score": 3.2496,
+   "score": 3.0684,
    "status": "active",
    "via": "search"
   },
@@ -5517,6 +5388,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Global Emissions Hit Another Record High Despite Clean Energy Boom",
+     "ts": "2026-07-13T14:00:00+00:00"
+    },
+    {
+     "feed": "OilPrice",
+     "title": "IEA Chief Slams Europe\u2019s Slow Electrification as Energy Crisis Deepens",
+     "ts": "2026-07-13T16:00:00+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "US Stock Market: Inflation gathers pace as tariffs, energy costs and AI investment lift price pressures, says Fed",
@@ -5531,22 +5412,12 @@
      "feed": "Mint Markets",
      "title": "Nomura sees 22% upside in Ather Energy. Here's why it's the brokerage's top EV pick",
      "ts": "2026-07-11T10:16:21+00:00"
-    },
-    {
-     "feed": "OilPrice",
-     "title": "The Escalating Energy War Between California and the White House",
-     "ts": "2026-07-11T19:00:00+00:00"
-    },
-    {
-     "feed": "OilPrice",
-     "title": "Britain Bets on Hydropower to Boost Energy Security",
-     "ts": "2026-07-12T15:00:00+00:00"
     }
    ],
-   "last_mention": "2026-07-13T04:34:26+00:00",
+   "last_mention": "2026-07-13T14:00:00+00:00",
    "name": "ATHER ENERGY LIMITED",
    "norm": "ather energy",
-   "score": 12.4045,
+   "score": 13.7128,
    "status": "active",
    "via": "search"
   },
@@ -5574,7 +5445,7 @@
    "last_mention": "2026-07-09T07:07:46+00:00",
    "name": "Broadcom Inc.",
    "norm": "broadcom",
-   "score": 1.056,
+   "score": 0.9971,
    "status": "active",
    "via": "search"
   },
@@ -5612,7 +5483,7 @@
    "last_mention": "2026-07-12T07:46:07+00:00",
    "name": "BHARTI AIRTEL LIMITED",
    "norm": "bharti airtel",
-   "score": 3.4943,
+   "score": 3.2995,
    "status": "active",
    "via": "search"
   },
@@ -5640,7 +5511,7 @@
    "last_mention": "2026-07-13T04:01:45+00:00",
    "name": "BlackRock, Inc.",
    "norm": "blackrock",
-   "score": 1.5302,
+   "score": 1.4449,
    "status": "active",
    "via": "search"
   },
@@ -5678,7 +5549,7 @@
    "last_mention": "2026-07-13T05:16:26+00:00",
    "name": "PIMCO Active Bond Exchange-Trad",
    "norm": "bond",
-   "score": 8.3134,
+   "score": 7.8498,
    "status": "active",
    "via": "search"
   },
@@ -5689,19 +5560,34 @@
    "evidence": [
     {
      "feed": "Mint Markets",
-     "title": "CarTrade Tech share price gains after UBS assigns \u2018Buy\u2019 call, sees over 42% upside potential",
-     "ts": "2026-07-13T04:42:53+00:00"
+     "title": "HCL Tech Q1 Results 2026: PAT jumps 20%, revenue rises 14%; board declares  \u20b912 interim dividend",
+     "ts": "2026-07-13T05:43:15+00:00"
     },
     {
      "feed": "ET Markets",
-     "title": "UBS initiates coverage on CarTrade Tech with Buy rating, sees 42% upside. 4 reasons why",
-     "ts": "2026-07-13T07:06:39+00:00"
+     "title": "Ahead of IPO, Millworks Tech raises nearly Rs 44 cr from anchor investors",
+     "ts": "2026-07-13T14:46:49+00:00"
+    },
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Q1 Results Today Highlights: Bajaj Consumer Care Q1 profit rises, HCL Tech profit up 20%, ICICI Prudential AMC, Nuvoco Vistas Corporation, Khaitan Chemicals announce Q1 results",
+     "ts": "2026-07-13T16:16:23+00:00"
+    },
+    {
+     "feed": "MarketWatch Top",
+     "title": "Meta and Amazon are leading a trillion-dollar Big Tech spending spree",
+     "ts": "2026-07-13T18:36:00+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "CarTrade Tech share price gains after UBS assigns \u2018Buy\u2019 call, sees over 42% upside potential",
+     "ts": "2026-07-13T04:42:53+00:00"
     }
    ],
-   "last_mention": "2026-07-13T04:42:53+00:00",
+   "last_mention": "2026-07-13T05:43:15+00:00",
    "name": "CARTRADE TECH LIMITED",
    "norm": "cartrade tech",
-   "score": 2.0,
+   "score": 5.8885000000000005,
    "status": "active",
    "via": "search"
   },
@@ -5739,7 +5625,7 @@
    "last_mention": "2026-07-13T05:46:10+00:00",
    "name": "Check Point Software Technologi",
    "norm": "check",
-   "score": 8.6695,
+   "score": 8.1861,
    "status": "active",
    "via": "search"
   },
@@ -5767,7 +5653,7 @@
    "last_mention": "2026-07-08T03:41:04+00:00",
    "name": "COCHIN SHIPYARD LIMITED",
    "norm": "cochin shipyard",
-   "score": 0.768,
+   "score": 0.7252,
    "status": "active",
    "via": "search"
   },
@@ -5777,6 +5663,21 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "OilPrice",
+     "title": "Global Emissions Hit Another Record High Despite Clean Energy Boom",
+     "ts": "2026-07-13T14:00:00+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "Global Markets: Shein eyes up to $3 billion Hong Kong IPO as soon as August, Bloomberg News reports",
+     "ts": "2026-07-13T14:08:30+00:00"
+    },
+    {
+     "feed": "MarketWatch Top",
+     "title": "Global oil prices top $82 a barrel, heading for biggest jump in 3 months after Trump reimposes Strait of Hormuz blockade",
+     "ts": "2026-07-13T18:19:00+00:00"
+    },
+    {
      "feed": "ET Markets",
      "title": "Global Market:  SK Hynix warns of historic memory chip shortage by 2027 as AI demand soars",
      "ts": "2026-07-13T05:29:10+00:00"
@@ -5785,27 +5686,12 @@
      "feed": "ET Markets",
      "title": "Top developments that could move global markets this week",
      "ts": "2026-07-13T05:37:49+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Global market: Chinese stocks sink to one-month lows as Middle East tensions trigger a broad selloff",
-     "ts": "2026-07-13T06:15:53+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Global Market: Japan pension fund strategy may redraw global bond and currency markets",
-     "ts": "2026-07-13T07:07:38+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Global Market: AI stocks take a breather after blistering rally as investors reassess valuations",
-     "ts": "2026-07-13T07:20:03+00:00"
     }
    ],
-   "last_mention": "2026-07-13T05:29:10+00:00",
+   "last_mention": "2026-07-13T14:00:00+00:00",
    "name": "Coinbase Global, Inc.",
    "norm": "global",
-   "score": 28.1799,
+   "score": 29.6086,
    "status": "active",
    "via": "search"
   },
@@ -5843,7 +5729,7 @@
    "last_mention": "2026-07-13T06:10:41+00:00",
    "name": "CUPID LIMITED",
    "norm": "cupid",
-   "score": 3.0171,
+   "score": 2.8489,
    "status": "active",
    "via": "search"
   },
@@ -5876,7 +5762,7 @@
    "last_mention": "2026-07-10T13:59:36+00:00",
    "name": "DR. REDDY S LABORATORIES",
    "norm": "dr reddy s",
-   "score": 1.9054,
+   "score": 1.7992,
    "status": "active",
    "via": "search"
   },
@@ -5904,7 +5790,7 @@
    "last_mention": "2026-07-13T05:27:40+00:00",
    "name": "Goldman Sachs Group, Inc. (The)",
    "norm": "goldman sachs",
-   "score": 2.5299,
+   "score": 2.3888,
    "status": "active",
    "via": "search"
   },
@@ -5913,6 +5799,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Broker\u2019s call: Indian Bank (Buy)",
+     "ts": "2026-07-13T13:09:23+00:00"
+    },
+    {
+     "feed": "MarketWatch Top",
+     "title": "Can big banks\u2019 \u2018cheap\u2019 stocks keep rising? We\u2019ll find out when JPMorgan and an unusual number of others report earnings Tuesday.",
+     "ts": "2026-07-13T15:25:00+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "HDFC Bank shares drop 2%. What lies ahead as lender set to announce Q1 earnings this week?",
@@ -5927,22 +5823,12 @@
      "feed": "ET Markets",
      "title": "US Stock Market: Fed Chair Kevin Warsh unveils expert panels to overhaul US Central Bank policy framework",
      "ts": "2026-07-13T07:56:21+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Fino Payments Bank shares hit 20% upper circuit after June business update",
-     "ts": "2026-07-13T09:25:00+00:00"
-    },
-    {
-     "feed": "MarketWatch Top",
-     "title": "Why Citigroup is the one to watch when banks report earnings this week",
-     "ts": "2026-07-13T10:49:00+00:00"
     }
    ],
-   "last_mention": "2026-07-13T06:10:54+00:00",
+   "last_mention": "2026-07-13T13:09:23+00:00",
    "name": "HDFC Bank Limited",
    "norm": "hdfc bank",
-   "score": 25.3094,
+   "score": 25.8981,
    "status": "active",
    "via": "search"
   },
@@ -5965,7 +5851,7 @@
    "last_mention": "2026-07-10T06:00:53+00:00",
    "name": "Helios Technologies, Inc.",
    "norm": "helios",
-   "score": 0.9748,
+   "score": 0.9204,
    "status": "active",
    "via": "search"
   },
@@ -5975,6 +5861,21 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "BusinessLine Mkts",
+     "title": "Broker\u2019s call: Indian Bank (Buy)",
+     "ts": "2026-07-13T13:09:23+00:00"
+    },
+    {
+     "feed": "MarketWatch Top",
+     "title": "Can big banks\u2019 \u2018cheap\u2019 stocks keep rising? We\u2019ll find out when JPMorgan and an unusual number of others report earnings Tuesday.",
+     "ts": "2026-07-13T15:25:00+00:00"
+    },
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Indian kharif sowing deficit narrows, as 48% of normal area complete; paddy acreage dips 9%",
+     "ts": "2026-07-13T16:32:02+00:00"
+    },
+    {
      "feed": "Mint Markets",
      "title": "US stock market to Kospi: Here\u2019s world equity heatmap you should know before opening of the Indian stock market today",
      "ts": "2026-07-13T02:59:07+00:00"
@@ -5983,27 +5884,12 @@
      "feed": "Mint Markets",
      "title": "The real worry for Indian metal stocks isn't FPI selling. It's more earnings downgrades.",
      "ts": "2026-07-13T06:06:23+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "HDFC Bank shares drop 2%. What lies ahead as lender set to announce Q1 earnings this week?",
-     "ts": "2026-07-13T06:10:54+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "FIIs pour over $1 billion into Indian stocks, biggest weekly buying since June 2025",
-     "ts": "2026-07-13T07:24:56+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "US Stock Market: Fed Chair Kevin Warsh unveils expert panels to overhaul US Central Bank policy framework",
-     "ts": "2026-07-13T07:56:21+00:00"
     }
    ],
-   "last_mention": "2026-07-13T02:59:07+00:00",
+   "last_mention": "2026-07-13T13:09:23+00:00",
    "name": "INDIAN BANK",
    "norm": "indian bank",
-   "score": 18.3586,
+   "score": 20.3349,
    "status": "active",
    "via": "search"
   },
@@ -6012,6 +5898,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Broker\u2019s call: Indian Bank (Buy)",
+     "ts": "2026-07-13T13:09:23+00:00"
+    },
+    {
+     "feed": "MarketWatch Top",
+     "title": "Can big banks\u2019 \u2018cheap\u2019 stocks keep rising? We\u2019ll find out when JPMorgan and an unusual number of others report earnings Tuesday.",
+     "ts": "2026-07-13T15:25:00+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "HDFC Bank shares drop 2%. What lies ahead as lender set to announce Q1 earnings this week?",
@@ -6026,22 +5922,12 @@
      "feed": "Mint Markets",
      "title": "Fino Payments Bank shares hit 20% upper circuit after June business update",
      "ts": "2026-07-13T09:25:00+00:00"
-    },
-    {
-     "feed": "MarketWatch Top",
-     "title": "Why Citigroup is the one to watch when banks report earnings this week",
-     "ts": "2026-07-13T10:49:00+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "HDFC Bank, HCL Tech among 143 companies to announce earnings this week",
-     "ts": "2026-07-12T04:19:30+00:00"
     }
    ],
-   "last_mention": "2026-07-13T06:10:54+00:00",
+   "last_mention": "2026-07-13T13:09:23+00:00",
    "name": "INDUSIND BANK LTD.",
    "norm": "indusind bank",
-   "score": 24.1024,
+   "score": 24.7584,
    "status": "active",
    "via": "search"
   },
@@ -6051,35 +5937,35 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "BusinessLine Mkts",
+     "title": "Broker\u2019s call: Indian Bank (Buy)",
+     "ts": "2026-07-13T13:09:23+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "Mylan to sell up to $363 million stake in India's Biocon, term sheet shows",
+     "ts": "2026-07-13T13:32:25+00:00"
+    },
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Broker\u2019s call: India Nippon Elec (Buy)",
+     "ts": "2026-07-13T13:35:56+00:00"
+    },
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Indian kharif sowing deficit narrows, as 48% of normal area complete; paddy acreage dips 9%",
+     "ts": "2026-07-13T16:32:02+00:00"
+    },
+    {
      "feed": "Mint Markets",
      "title": "US stock market to Kospi: Here\u2019s world equity heatmap you should know before opening of the Indian stock market today",
      "ts": "2026-07-13T02:59:07+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "GE Vernova, Atlanta Electricals among top beneficiaries of India's transmission expansion",
-     "ts": "2026-07-13T05:11:49+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "India bonds fall as oil spike, Treasury rout weigh",
-     "ts": "2026-07-13T05:16:26+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "The real worry for Indian metal stocks isn't FPI selling. It's more earnings downgrades.",
-     "ts": "2026-07-13T06:06:23+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Goodluck India shares rally 7% on 2:1 bonus issue announcement. How will dividend payout be impacted?",
-     "ts": "2026-07-13T07:10:42+00:00"
     }
    ],
-   "last_mention": "2026-07-13T02:59:07+00:00",
+   "last_mention": "2026-07-13T13:09:23+00:00",
    "name": "INOX INDIA LIMITED",
    "norm": "inox india",
-   "score": 33.849199999999996,
+   "score": 35.9617,
    "status": "active",
    "via": "search"
   },
@@ -6117,7 +6003,7 @@
    "last_mention": "2026-07-11T04:18:12+00:00",
    "name": "Jefferies Financial Group Inc.",
    "norm": "jefferies",
-   "score": 2.8561,
+   "score": 2.6968,
    "status": "active",
    "via": "search"
   },
@@ -6140,7 +6026,7 @@
    "last_mention": "2026-07-13T04:29:33+00:00",
    "name": "JUST DIAL LTD.",
    "norm": "just dial",
-   "score": 2.0,
+   "score": 1.8885,
    "status": "active",
    "via": "search"
   },
@@ -6178,7 +6064,7 @@
    "last_mention": "2026-07-13T05:45:34+00:00",
    "name": "KALYAN JEWELLERS IND LTD",
    "norm": "kalyan jewellers",
-   "score": 8.981,
+   "score": 8.4802,
    "status": "active",
    "via": "search"
   },
@@ -6216,7 +6102,7 @@
    "last_mention": "2026-07-08T06:27:53+00:00",
    "name": "KNACK PACKAGING LIMITED",
    "norm": "knack packaging",
-   "score": 1.5211,
+   "score": 1.4363,
    "status": "active",
    "via": "search"
   },
@@ -6244,7 +6130,7 @@
    "last_mention": "2026-07-12T07:46:07+00:00",
    "name": "MCAP Inc.",
    "norm": "mcap",
-   "score": 2.5195,
+   "score": 2.379,
    "status": "active",
    "via": "search"
   },
@@ -6253,6 +6139,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Meta and Amazon are leading a trillion-dollar Big Tech spending spree",
+     "ts": "2026-07-13T18:36:00+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "The real worry for Indian metal stocks isn't FPI selling. It's more earnings downgrades.",
@@ -6272,17 +6163,12 @@
      "feed": "Mint Markets",
      "title": "Meta stock surges 7.5% as report says AI chip production could begin this year",
      "ts": "2026-07-10T14:33:13+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Global Market | Tencent explores stake in AI Startup Manus after China challenges Meta deal: Reports",
-     "ts": "2026-07-10T07:31:11+00:00"
     }
    ],
-   "last_mention": "2026-07-13T06:06:23+00:00",
+   "last_mention": "2026-07-13T18:36:00+00:00",
    "name": "Meta",
    "norm": "meta",
-   "score": 3.8504,
+   "score": 4.6357,
    "status": "active",
    "via": "gazetteer"
   },
@@ -6291,6 +6177,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "MORGAN STANLEY EXPECTS US HYPERSCALER CAPEX TO REACH $1.2 TRLN BY 2027 MORGAN STANLEY EXPECTS US HYPERSCALER CAPEX TO REACH $1.4 TRLN BY 2028",
+     "ts": "2026-07-13T12:23:09+00:00"
+    },
+    {
+     "feed": "MarketWatch Top",
+     "title": "Can big banks\u2019 \u2018cheap\u2019 stocks keep rising? We\u2019ll find out when JPMorgan and an unusual number of others report earnings Tuesday.",
+     "ts": "2026-07-13T15:25:00+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Morgan Stanley warns AI chip rally may be running out of steam",
@@ -6305,22 +6201,12 @@
      "feed": "Mint Markets",
      "title": "Sensex at 1 lakh in one year? Morgan Stanley sees 25% chance; here\u2019s what could trigger the next stock market rally",
      "ts": "2026-07-07T00:12:51+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Forget rockets: Morgan Stanley sets $300 SpaceX target based on a secret AI weapon",
-     "ts": "2026-07-07T01:42:59+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "AI investors may pivot to hyperscalers from chipmakers, Morgan Stanley says",
-     "ts": "2026-07-06T08:25:02+00:00"
     }
    ],
-   "last_mention": "2026-07-10T15:44:23+00:00",
+   "last_mention": "2026-07-13T12:23:09+00:00",
    "name": "Morgan Stanley",
    "norm": "morgan stanley",
-   "score": 1.7544,
+   "score": 3.6566,
    "status": "active",
    "via": "search"
   },
@@ -6329,6 +6215,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Micron and other chip stocks feel the pain of imported volatility \u2014 blame SK Hynix",
+     "ts": "2026-07-13T15:26:00+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "SK Hynix makes US debut today. Will investors sell Micron to buy the AI memory leader?",
@@ -6348,17 +6239,12 @@
      "feed": "MarketWatch Top",
      "title": "With Micron\u2019s stock well off its peak, investors want proof that the AI boom can last",
      "ts": "2026-07-08T19:00:00+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Big Short fame Michael Burry is betting against Nvidia, AMD, Micron and other chipmakers. Is a massive AI crash coming?",
-     "ts": "2026-07-08T07:26:32+00:00"
     }
    ],
-   "last_mention": "2026-07-10T12:39:00+00:00",
+   "last_mention": "2026-07-13T15:26:00+00:00",
    "name": "Micron Technology, Inc.",
    "norm": "micron",
-   "score": 3.3227,
+   "score": 4.1373999999999995,
    "status": "active",
    "via": "search"
   },
@@ -6396,7 +6282,7 @@
    "last_mention": "2026-07-13T05:11:49+00:00",
    "name": "OLA ELECTRIC MOBILITY LTD",
    "norm": "ola electric",
-   "score": 2.8009,
+   "score": 2.6447,
    "status": "active",
    "via": "search"
   },
@@ -6434,7 +6320,7 @@
    "last_mention": "2026-07-13T04:32:49+00:00",
    "name": "PC JEWELLER LTD",
    "norm": "pc jeweller",
-   "score": 8.6219,
+   "score": 8.1411,
    "status": "active",
    "via": "search"
   },
@@ -6443,6 +6329,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "BAHRAIN SAYS ITS AIR DEFENCES INTERCEPTED AND DESTROYED SEVERAL IRANIAN AERIAL ATTACKS ON MONDAY MORNING - STATEMENT",
+     "ts": "2026-07-13T10:13:32+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Multibagger defence stock to raise  \u20b93,322 crore through fresh equity issuance",
@@ -6462,17 +6353,12 @@
      "feed": "SCMP Economy",
      "title": "The missile funding dispute endangering Taiwan\u2019s \u2018T-Dome\u2019 air defence plan",
      "ts": "2026-07-08T04:00:07+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Defence sector Q1 results preview: Muted earnings likely on execution delays; BEL, Bharat Dynamics, GRSE among top picks",
-     "ts": "2026-07-08T09:01:49+00:00"
     }
    ],
-   "last_mention": "2026-07-12T07:22:45+00:00",
+   "last_mention": "2026-07-13T10:13:32+00:00",
    "name": "AEGIS CRITICAL ENERGY DEFENCE C",
    "norm": "defence",
-   "score": 3.5321,
+   "score": 4.335100000000001,
    "status": "active",
    "via": "search"
   },
@@ -6500,7 +6386,7 @@
    "last_mention": "2026-07-08T06:11:16+00:00",
    "name": "Rivian Automotive, Inc.",
    "norm": "rivian",
-   "score": 0.8398,
+   "score": 0.793,
    "status": "active",
    "via": "search"
   },
@@ -6510,6 +6396,21 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "DeItaone",
+     "title": "SK HYNIX VOLATILITY GOES BOTH WAYS SK Hynix plunged a record 15%, dragging the Kospi down 9% and triggering a market-wide trading halt as concerns grew that South Korea\u2019s AI rally had become overstretched. Position for either direction: $SKHX \u2014 2x Long SK Hynix $SKHZ \u2014 1x",
+     "ts": "2026-07-13T10:18:49+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "SK Hynix US-listed shares slip nearly 8% as Nasdaq debut euphoria cools",
+     "ts": "2026-07-13T14:48:30+00:00"
+    },
+    {
+     "feed": "MarketWatch Top",
+     "title": "Micron and other chip stocks feel the pain of imported volatility \u2014 blame SK Hynix",
+     "ts": "2026-07-13T15:26:00+00:00"
+    },
+    {
      "feed": "ET Markets",
      "title": "Global Market:  SK Hynix warns of historic memory chip shortage by 2027 as AI demand soars",
      "ts": "2026-07-13T05:29:10+00:00"
@@ -6518,27 +6419,12 @@
      "feed": "ET Markets",
      "title": "Why SK Hynix shares tumbled after a blockbuster Nasdaq debut",
      "ts": "2026-07-13T07:13:40+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "SK Hynix shares plunge 15% to one-month low after blockbuster Nasdaq debut",
-     "ts": "2026-07-13T11:55:21+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "AI chip fever returns? SK Hynix  share price surges 13% after blockbuster $26.5 billion US listing",
-     "ts": "2026-07-11T06:46:40+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "SK Hynix shares jump in marquee US debut as AI euphoria persists",
-     "ts": "2026-07-11T03:34:42+00:00"
     }
    ],
-   "last_mention": "2026-07-13T05:29:10+00:00",
+   "last_mention": "2026-07-13T10:18:49+00:00",
    "name": "SK hynix Inc. American Depositary Shares When Issued",
    "norm": "sk hynix",
-   "score": 10.704699999999999,
+   "score": 13.1078,
    "status": "active",
    "via": "search"
   },
@@ -6576,7 +6462,7 @@
    "last_mention": "2026-07-13T08:20:12+00:00",
    "name": "SWIGGY LIMITED",
    "norm": "swiggy",
-   "score": 4.2059,
+   "score": 3.9714,
    "status": "active",
    "via": "search"
   },
@@ -6585,6 +6471,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Masdar Secures $5.1 Billion for World\u2019s Largest Solar-and-Battery Project",
+     "ts": "2026-07-13T13:30:00+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "US stock market to Kospi: Here\u2019s world equity heatmap you should know before opening of the Indian stock market today",
@@ -6604,17 +6495,12 @@
      "feed": "Mining.com",
      "title": "Gold price loses its grip: World\u2019s 50 biggest mining companies shed $228 billion in Q2",
      "ts": "2026-07-11T03:22:52+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "World\u2019s wealth gap is widening, UBS Global Wealth Report shows",
-     "ts": "2026-07-12T10:52:06+00:00"
     }
    ],
-   "last_mention": "2026-07-13T02:59:07+00:00",
+   "last_mention": "2026-07-13T13:30:00+00:00",
    "name": "Vanguard Total World Stock Inde",
    "norm": "world",
-   "score": 5.4151,
+   "score": 6.1131,
    "status": "active",
    "via": "search"
   },
@@ -6642,7 +6528,7 @@
    "last_mention": "2026-07-06T20:25:00+00:00",
    "name": "TeraWulf Inc.",
    "norm": "terawulf",
-   "score": 0.6271,
+   "score": 0.5921,
    "status": "active",
    "via": "search"
   }
@@ -6705,6 +6591,7 @@
   "0aba53e48126",
   "0b09ee348c2d",
   "0b1c30383076",
+  "0b7880d46845",
   "0bed69c0e7c3",
   "0c0bab157c41",
   "0c27d43ddc8f",
@@ -6732,6 +6619,7 @@
   "0fad37bbff99",
   "102912f59bb8",
   "103b29b861f8",
+  "112dcdf85e72",
   "1165e2576f23",
   "1177c3e6cbe8",
   "1191e1d99030",
@@ -6742,6 +6630,7 @@
   "13557e00a63b",
   "13bfb7c38b0b",
   "13c348787ced",
+  "13e55cb19f9a",
   "14a7c6236dd1",
   "14b883815fa0",
   "14fcfb9e1f51",
@@ -6755,8 +6644,10 @@
   "15f6adcfe33d",
   "1604c9837437",
   "16179eedd603",
+  "169b2e20a453",
   "16fef5b8e5d2",
   "17394add7659",
+  "17483658fdb5",
   "1771a0f9c003",
   "1777fbebda97",
   "17875c72af23",
@@ -6798,6 +6689,7 @@
   "1eb60b49743f",
   "1ee276aa4951",
   "1f4fc8f0abd7",
+  "1f724c880f3e",
   "1f784731ee98",
   "204c910cca7a",
   "20ceadaff68c",
@@ -6807,8 +6699,10 @@
   "232f12c6d6d6",
   "235a6bddc172",
   "2378f3590dbf",
+  "239229ca9815",
   "239573fbe219",
   "2420800668b2",
+  "247ddea172c1",
   "24b8263e67dd",
   "24e29de07c7d",
   "2543cbbbcc77",
@@ -6850,11 +6744,15 @@
   "2ce721939e99",
   "2d0e17f76bcb",
   "2de8eb433914",
+  "2df484f16614",
   "2e5d5677e446",
   "2eaceaf338ae",
   "2eb1e3587420",
+  "2eef8aa1ee5a",
+  "2f00404d98b5",
   "2f1d4df5f7ba",
   "2f2d49b033c0",
+  "2f46805f58d4",
   "2f76f4da0721",
   "2facbd5142b2",
   "2fb58264c629",
@@ -6894,6 +6792,7 @@
   "355eafe7e99a",
   "3572737dbde0",
   "357fc5b814b7",
+  "35b1a8f7913f",
   "35ef17133b18",
   "36152fd06fa6",
   "36739e00a2bb",
@@ -6915,6 +6814,7 @@
   "3917e6a17de6",
   "393f46d62d6b",
   "39f527fecbe8",
+  "3a071cccca85",
   "3a32b60ac0a0",
   "3a50626f2c05",
   "3a57b9f44db6",
@@ -6938,6 +6838,8 @@
   "3d15f0c9fc80",
   "3d3fb72bb0b8",
   "3d541103bfa2",
+  "3d58f6fb5d7d",
+  "3d6595086182",
   "3dab5a26b048",
   "3dfef5b1ea81",
   "3e27018e009d",
@@ -6959,6 +6861,7 @@
   "4234416abc4a",
   "42d76642b7b3",
   "42d7ca31f957",
+  "4306ae824fa1",
   "431f24912a00",
   "4385ef86376d",
   "439b6d234ade",
@@ -6967,29 +6870,35 @@
   "44a17810316c",
   "44c89bd35b2c",
   "44d08fc4f48c",
-  "44e2ee180707",
+  "45074d129610",
   "45077e5953d5",
-  "4512da1352ce",
   "456001a5e539",
   "45727aac16d5",
   "45847066ba6c",
   "45a85bf13abd",
+  "45f21547af67",
   "460ca83b1fe7",
   "46570fccfffc",
+  "4689f0f9e216",
   "46918b961c49",
   "46a01e758c26",
   "46eaac8dcd45",
   "47e84c86aa7b",
   "485f316c7f7d",
+  "487bb211c6da",
   "489ba682997b",
   "48b92620c410",
   "48c7e398b9f1",
+  "48f15841d1fe",
+  "495f676ec468",
   "49d09e68b650",
   "49f6778eee08",
   "4a0a19c9f073",
   "4a59578fd933",
   "4a6028e48a2d",
   "4a69905a27f1",
+  "4a6bef619276",
+  "4a8d25e50ab9",
   "4ad8de6096b7",
   "4b395e76ff16",
   "4b8acaef7ac7",
@@ -6998,6 +6907,7 @@
   "4c09c8414704",
   "4c1f5a56d128",
   "4c4374791760",
+  "4cadf6f8267e",
   "4d28d7c6531b",
   "4d8368af5a2d",
   "4da31c6fa31a",
@@ -7032,6 +6942,7 @@
   "547411039aef",
   "5488d9cb26b3",
   "548ccc56d7d4",
+  "54ab9ecd4077",
   "54c61af2e8c3",
   "550005560ac1",
   "551c689f914c",
@@ -7058,7 +6969,6 @@
   "58ab0100b529",
   "58e989bfe93a",
   "593880511a39",
-  "594e690e6bf3",
   "5996854ca677",
   "59f2d284f1d9",
   "5a132c5a7f0c",
@@ -7067,6 +6977,7 @@
   "5a31c56ca219",
   "5a86378cae0a",
   "5aa93f8a62a3",
+  "5b0af41727fa",
   "5b1e46967356",
   "5bb2909cb13e",
   "5bf015f8ff84",
@@ -7108,6 +7019,7 @@
   "65968e34d94e",
   "65fb080b098c",
   "661c3363aacd",
+  "6643abc9523e",
   "666990fdfb83",
   "667d40e46d2f",
   "66c3a28cc279",
@@ -7118,6 +7030,7 @@
   "67c698e22fab",
   "67fb8dbd4d4b",
   "688fcab7fb9c",
+  "68c321a88d91",
   "693c2d809d5c",
   "6992bce1016f",
   "69c7d7164499",
@@ -7135,6 +7048,7 @@
   "6add65caf6f9",
   "6b36e1b86fb2",
   "6b82bd081280",
+  "6bae984d8686",
   "6bb3abd69d64",
   "6bf30e8a82b0",
   "6ca002deb8ac",
@@ -7189,15 +7103,18 @@
   "76b0a195eab7",
   "76b127df5243",
   "76c3a0b2af8a",
+  "7709010e969d",
   "77093bec9a33",
   "77598721362f",
   "77aba2ecda52",
   "77fe1bb009a5",
   "7808bdc9c59c",
+  "786980f83940",
   "789aa3be72c1",
   "791ae53b51ec",
   "798047d7bd06",
   "79ab2e8032c2",
+  "7a0f9d78b50a",
   "7a369344561f",
   "7a6761bdd4c7",
   "7a7a4300ad50",
@@ -7215,6 +7132,7 @@
   "7d5835f78300",
   "7d6819ae2e48",
   "7dafb55dd2da",
+  "7dda0af90530",
   "7e555de512f0",
   "7edc279a5c01",
   "7efa27df85ef",
@@ -7234,6 +7152,8 @@
   "8289e3f782d6",
   "82b82c467448",
   "83090e97c879",
+  "83179a23b0e6",
+  "831b81405f84",
   "833eb50293f7",
   "8380be67a06c",
   "83c9bdf33934",
@@ -7252,6 +7172,7 @@
   "86b59b1079d6",
   "86cd81008e29",
   "86d163c4781a",
+  "87088c8cabc7",
   "871fca47f94c",
   "8741935ac4e0",
   "874ebe6d8f11",
@@ -7311,8 +7232,11 @@
   "97507212bcee",
   "9792430fb584",
   "9793d113087d",
+  "97ba83e80b49",
   "97e73ee9ba1b",
+  "97ea00dd25fc",
   "97f250722145",
+  "988fdfb41b87",
   "9892fb7e5346",
   "98ac691acfc2",
   "98d0ae75985e",
@@ -7321,6 +7245,7 @@
   "995e8d4feafb",
   "99813f63d538",
   "99b8f5f8a74b",
+  "99ecd49224ed",
   "9a8b8e78e011",
   "9aa2f30f0107",
   "9b1f8a51452d",
@@ -7341,10 +7266,12 @@
   "9dc95bf26e94",
   "9e168d41247e",
   "9e5579871229",
+  "9e87f5928c76",
   "9e9142055b63",
   "9ea295569573",
   "9f20e31cf8f0",
   "9f3027652afd",
+  "9f4368698976",
   "9f7d2ae873a2",
   "9fc615def7cf",
   "9fd05844c672",
@@ -7353,6 +7280,7 @@
   "a07aa97c7f14",
   "a09764a6221c",
   "a0fd2f83beec",
+  "a11b07cfd89e",
   "a1c43d074a1c",
   "a22130fb9d2b",
   "a22366613dba",
@@ -7433,7 +7361,9 @@
   "b16d5b9e3113",
   "b1963cebe49f",
   "b1e6c86ba5eb",
+  "b28b64ec397f",
   "b293ed3f3260",
+  "b2aedbe1f3d8",
   "b2b9f3a82602",
   "b2cb04fff188",
   "b3360dd93ef0",
@@ -7443,7 +7373,6 @@
   "b47063ca818e",
   "b47e8981c89e",
   "b49ed781d09c",
-  "b4a2c9c8e1a0",
   "b4f35f9b973d",
   "b56bba922997",
   "b57da3bfa4b3",
@@ -7461,12 +7390,12 @@
   "b978d6366060",
   "b9e4b19a4b5a",
   "ba0608cde395",
+  "babd99479acd",
   "baf8f51b2ac9",
   "bb92cfeaff4c",
   "bbc162f12eea",
   "bbcab2df449b",
   "bbff935cda39",
-  "bc320eb3e8c9",
   "bc486e9169b7",
   "bd07494aab9d",
   "bd36a9578168",
@@ -7474,6 +7403,7 @@
   "bd5fe14d6d23",
   "bda835fa10b6",
   "bdaac2e76c3b",
+  "be3a7da45663",
   "bea72cab8588",
   "bec6dafab32d",
   "bef213b19206",
@@ -7490,6 +7420,7 @@
   "c19604cf697c",
   "c198f2f495cc",
   "c1c0e2d1b5a4",
+  "c1edce958964",
   "c238b41d1488",
   "c2e2d6e334c5",
   "c2ea3df618f3",
@@ -7499,6 +7430,7 @@
   "c35249d7b561",
   "c37f33212aa8",
   "c39d5eea5691",
+  "c3a1648e3c4e",
   "c4e14ceeb737",
   "c4fe53ac166f",
   "c5158ea56507",
@@ -7521,11 +7453,13 @@
   "c96c45d34c46",
   "c98559096fad",
   "c9aded108bc0",
+  "caae559bceb9",
   "cb2ab5a0a987",
   "cb482148f029",
   "cbb5b6c5885a",
   "cbd19a812b9e",
   "cc2f215363fe",
+  "cc7c6c0b0727",
   "ccbf77a4aa60",
   "cce2a9536ccb",
   "cd34c816aa46",
@@ -7534,6 +7468,7 @@
   "cd40648562a3",
   "cd8e3e4ce233",
   "cd9b596f8dc7",
+  "cdda1411abde",
   "cdfbe4b6c65b",
   "cdff1c6dd841",
   "ce4f0128b612",
@@ -7542,6 +7477,7 @@
   "ceb2024ed204",
   "cf147eb111fc",
   "cf504d806910",
+  "cf66b2b362c9",
   "cff2ec0e7be1",
   "d035bdab27e1",
   "d03b6ee00b8f",
@@ -7560,17 +7496,20 @@
   "d27b3a5b58d8",
   "d2af8ec9a990",
   "d2f018ee792a",
+  "d3272b292aed",
   "d32877652ecd",
   "d367eb6705c4",
   "d37bb3583c68",
   "d3c85c303294",
   "d410b8cee7aa",
+  "d41530fbcbbc",
   "d4196f8fbae0",
   "d4658bc60a3d",
   "d4ccedfbba40",
   "d545767f292b",
   "d546183e8ea7",
   "d56574aa403a",
+  "d593866d95f2",
   "d5cf4ce3e565",
   "d5ee5a8a36f6",
   "d660d0a379cb",
@@ -7675,6 +7614,7 @@
   "ea768eddba0e",
   "eb30915696b0",
   "eb44efe01714",
+  "ebc947d68409",
   "ec4eebb863e5",
   "ec6b4c521b20",
   "ec6f338ef051",
@@ -7684,9 +7624,11 @@
   "ecf0ab2a3177",
   "ecf5104b0346",
   "ed008812c7ab",
+  "ed098d8d56fd",
   "ed2a8647093b",
   "ed9d96190cff",
   "ee26d7d09a4a",
+  "ee5597770ddf",
   "eea74d339bb9",
   "eed50198b815",
   "eeee7d456f49",
@@ -7704,8 +7646,10 @@
   "f10d42909435",
   "f14548e9bd9e",
   "f1e051202753",
+  "f1e625f57567",
   "f1e82d790a79",
   "f212d8057606",
+  "f240c45def89",
   "f248d535defc",
   "f260e589bcd3",
   "f266a8edeabd",
@@ -7728,6 +7672,7 @@
   "f6a277939272",
   "f71fc291c9c6",
   "f73f3e53b06a",
+  "f787cae3fddb",
   "f7e3cf481d47",
   "f84d5a428d9f",
   "f8e87f059a9d",
@@ -7740,12 +7685,14 @@
   "fa557ccbb273",
   "faebf281b462",
   "fb1100b856f5",
+  "fb24758a9cd7",
   "fbd62bee3877",
   "fbf595c979d2",
   "fc040596e378",
   "fc4876725b57",
   "fcc2afd65fa0",
   "fccdf52009c4",
+  "fcec241f408d",
   "fd94dc6caed9",
   "fe42edcd2903",
   "fe68b21b2841",
@@ -7758,5 +7705,5 @@
   "ff552a971703",
   "ffedf7fd8ee6"
  ],
- "updated": "2026-07-13T13:08:01.665451+00:00"
+ "updated": "2026-07-13T19:05:37.277705+00:00"
 }
