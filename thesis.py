@@ -177,6 +177,30 @@ def _compose_prompt(event: dict, laggards: list[dict], analogues: dict,
     except Exception:
         pass
 
+    # verified transmission setups touching this event + type track records
+    try:
+        from leadlag import load_setups
+        from scorecard import load_scorecard
+        mids = {m["id"] for m in event["members"]}
+        rel_setups = [s for s in load_setups().get("setups", [])
+                      if s["driver"] in mids or s["target"] in mids]
+        if rel_setups:
+            L.append("VERIFIED TRANSMISSION SETUPS (lead-lag measured live, "
+                     "FDR-controlled — cite these, do not invent channels):")
+            for s in rel_setups[:4]:
+                L.append(f"  {s['driver']} -> {s['target']}: leads "
+                         f"{s['lead_days']}d, ccf {s['ccf']}, beta {s['beta']}, "
+                         f"p {s['p_hac']}; expected target move "
+                         f"{s['expected_target_move_pct']}%")
+        card = load_scorecard().get("types", {})
+        if card:
+            L.append("SIGNAL TRACK RECORD (historical hit-rates — weight your "
+                     "confidence by these; ~50% means no edge, say so):")
+            for t, r in card.items():
+                L.append(f"  {t}: {r.get('hit_rate')} (n={r.get('n')})")
+    except Exception:
+        pass
+
     arts = [a for a in bundle.get("articles", []) if a.get("excerpt")]
     if arts:
         L.append("MOTIVATING NEWS (excerpts):")

@@ -47,6 +47,52 @@ def ou_half_life(s: pd.Series) -> tuple[float | None, int]:
     return float(-np.log(2) / np.log(1 + b)), n
 
 
+def hurst_exponent(s: pd.Series, max_lag: int = 20) -> float | None:
+    """Variance-of-differences Hurst: slope of log(std of lag-q diffs) vs
+    log(q). ~0.5 random walk, <0.5 mean-reverting, >0.5 trending."""
+    x = s.dropna().to_numpy(dtype=float)
+    if len(x) < 120:
+        return None
+    lags = range(2, max_lag + 1)
+    tau = [np.std(x[q:] - x[:-q]) for q in lags]
+    if any(t <= 0 for t in tau):
+        return None
+    h = np.polyfit(np.log(list(lags)), np.log(tau), 1)[0]
+    return round(float(h), 3)
+
+
+def engle_granger_pairs(prices: pd.DataFrame,
+                        pairs: list[tuple[str, str]]) -> list[dict]:
+    """Engle-Granger cointegration p-values on log levels for candidate
+    pairs. Evidence only — n~500 daily obs makes these weak tests; the
+    p-value and n are reported, never used as a gate on their own."""
+    try:
+        from statsmodels.tsa.stattools import coint
+    except Exception:
+        return []
+    out = []
+    for a, b in pairs:
+        if a not in prices.columns or b not in prices.columns:
+            continue
+        df = prices[[a, b]].dropna()
+        if len(df) < 200 or (df <= 0).any().any():
+            continue
+        try:
+            _, p, _ = coint(np.log(df[a]), np.log(df[b]))
+            out.append({"a": a, "b": b, "eg_p": round(float(p), 4),
+                        "n_obs": int(len(df)),
+                        "cointegrated_5pct": bool(p < 0.05)})
+        except Exception:
+            continue
+    return out
+
+
+# candidate pairs: the priced ratios' legs + the strongest standing priors
+COINT_PAIRS = [("comex_gold", "comex_silver"), ("brent", "wti"),
+               ("nifty_50", "sp500"), ("nifty_midcap_100", "nifty_50"),
+               ("nifty_metal", "comex_copper")]
+
+
 def adf_pvalue(s: pd.Series) -> float | None:
     try:
         from statsmodels.tsa.stattools import adfuller
@@ -78,9 +124,11 @@ def build_spreads(prices: pd.DataFrame | None = None) -> dict:
             "sigma_vs_1y": sigma_now,
             "half_life_days": None if hl is None else round(hl, 1),
             "adf_p": adf_pvalue(s),
+            "hurst": hurst_exponent(s),
             "n_obs": n,
         }
-    state = {"updated": datetime.now(timezone.utc).isoformat(), "series": out}
+    state = {"updated": datetime.now(timezone.utc).isoformat(), "series": out,
+             "cointegration": engle_granger_pairs(prices, COINT_PAIRS)}
     STATE_JSON.write_text(json.dumps(state), encoding="utf-8")
     return state
 

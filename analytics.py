@@ -27,6 +27,8 @@ def main() -> int:
         ("assumptions", lambda: __import__("assumptions").score_assumptions(prices)),
         ("regime",      lambda: __import__("regime").build_regime(prices)),
         ("spreads",     lambda: __import__("spreads").build_spreads(prices)),
+        ("leadlag",     lambda: __import__("leadlag").build_setups(prices)),
+        ("scorecard",   lambda: __import__("scorecard").evaluate(prices)),
         ("anomalies",   lambda: __import__("anomalies_json").build_anomalies()),
     ):
         try:

@@ -1,4 +1,4 @@
-# Transmission Layer — board brief · 2026-07-14 00:13Z
+# Transmission Layer — board brief · 2026-07-14 08:26Z
 
 data as of **2026-07-14** · 92 series · 8 red / 31 amber · 8 events surfaced (25 suppressed)
 
@@ -14,96 +14,35 @@ data as of **2026-07-14** · 92 series · 8 red / 31 amber · 8 events surfaced 
 - [WEAK] **real_rates_gold_inverse** — corr20 0.24, corr60 -0.26, last shift 2026-05-13. Channel: real yields up -> non-yielding gold down
 - [WEAK] **gsr_stress_gauge** — corr20 0.19, corr60 0.25, last shift 2026-04-21. Channel: gold/silver ratio rises under monetary stress
 
+## Scan control & verified transmission setups
+- FDR (BH q=0.1): **4 of 76** scanned series survive multiplicity control (effective p ≤ 0.001422727937290702)
+- **SETUP** bovespa → aud_usd: leads 1d (ccf 0.4, β 0.2428, p 0.0); driver zc 3.11 → expected 0.694%. Type hit-rate 0.815 (n=1968).
+- Track record · residual_reversion: hit-rate **0.489** (n=1020) — |resid_z|>=2.0 -> fwd 5d return opposes residual
+- Track record · transmission_follow: hit-rate **0.815** (n=1968) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
+- Track record · spread_reversion: hit-rate **0.579** (n=19) — |dev| >= 2sigma vs PIT 252d -> |dev| shrinks >=25% within max(half-life,10) sessions
+
 ## Events (ranked)
 
-### [RED 16.4] dyn_justdial_bo ↑
-- dyn_justdial_bo [EQUITIES]: last 677.50, z20 14.40, zc 1.84, resid-z 1.91 [unexplained], 1d 20.00%, |z20|=14.40
-- **Mechanism**: The surge in Just Dial's stock price is driven by its strong Q1 results, including a 9.9% year-on-year increase in revenue and a 4.1% year-on-year rise in net profit, which has led to a re-rating of the stock. The appointment of a new CEO and CFO has also contributed to the positive sentiment. The move is partially priced, given the stock's z20 level of 14.40 and resid_z of 1.91, indicating that some of the move can be explained by factor exposures, but the unexplained component is still significant.
-- **Gap**: No gap: the stock's move is largely driven by its strong Q1 results and new management appointments, which are priced in by the market
-- **India take**: The Indian instrument that expresses this move is the Nifty 50, which has not yet reacted, but may follow suit given its historical lead over Just Dial. Other transmission candidates like Nifty Midcap 100 and Nifty FMCG have already reacted to the news.
-- Watch next: nifty_50 (up) — not yet - watch; historically leads Just Dial by 1 day
-- **India receivers**: nifty_50 (rho 0.598, z 0.86); nifty_midcap_100 (rho 0.58, z 2.03); dyn_indianb_ns (rho 0.548, z 0.37); nifty_fmcg (rho 0.451, z -1.42)
-- Source: Just Dial share price skyrockets 17% on strong Q1 results, new CEO, CFO announcement. Do you own? — Mint Markets, 2026-07-13. https://www.livemint.com/market/stock-market-news/just-dial-share-price-skyrockets-17-on-strong-q1-results-new-ceo-cfo-announcement-do-you-own-11783922394287.html
-- Source: Just Dial shares rocket 14% as profit rises to Rs 166 crore; revenue grows 10% YoY — ET Markets, 2026-07-13. https://economictimes.indiatimes.com/markets/stocks/news/just-dial-shares-rocket-14-as-profit-rises-to-rs-166-crore-revenue-grows-10-yoy/articleshow/132356592.cms
-- Historical analogues: 2026-06-18 (d=0.19), 2025-06-30 (d=0.52), 2026-01-07 (d=0.52)
+### [RED 5.7] dyn_kalyankjil_ns ↑
+- dyn_kalyankjil_ns [EQUITIES]: last 480.20, z20 5.70, zc 0.90, resid-z 1.63 [unexplained], 1d 8.40%, |z20|=5.70
+- **Mechanism**: dyn_kalyankjil_ns ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-01-07 (z-distance 1.99).
+- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
+- **India take**: nifty_midcap_100 (rho 0.58 via dyn_kalyankjil_ns, z 1.59, reacted); dyn_indianb_ns (rho 0.515 via dyn_kalyankjil_ns, z 1.35, reacted); dyn_pcjeweller_ns (rho 0.439 via dyn_kalyankjil_ns, z 1.89, reacted); nifty_50 (rho 0.408 via dyn_kalyankjil_ns, z 0.82, quiet); dyn_indusindbk_bo (rho 0.378 via dyn_kalyankjil_ns, z 1.98, reacted)
+- **India receivers**: nifty_midcap_100 (rho 0.58, z 1.59); dyn_indianb_ns (rho 0.515, z 1.35); dyn_pcjeweller_ns (rho 0.439, z 1.89); nifty_50 (rho 0.408, z 0.82)
+- Historical analogues: 2026-01-07 (d=1.99), 2026-06-15 (d=2.01), 2025-07-02 (d=3.07)
 
-### [RED 6.87] dyn_kalyankjil_ns ↑
-- dyn_kalyankjil_ns [EQUITIES]: last 511.70, z20 4.87, zc 0.80, resid-z 1.39 [quiet], 1d 7.47%, |z20|=4.87
-- **Mechanism**: The surge in Kalyan Jewellers' share price is driven by strong Q1FY27 business update, robust demand, store expansion, and the company's asset-light franchise model. This move is priced, as indicated by the small resid_z of 1.39, suggesting that the factor exposures have largely explained the move. The valid metal_copper_channel and gold_silver_comove channels may also be contributing to the uptrend in the stock.
-- **Gap**: No gap: the move is largely priced, with a small resid_z of 1.39, indicating that the factor exposures have explained the move
-- **India take**: The Indian instruments that express this move are nifty_midcap_100, dyn_pcjeweller_ns, and dyn_swiggy_ns, which have already reacted to the surge in Kalyan Jewellers' share price. The Nifty 50 has also shown some movement, but its reaction has been relatively quiet so far.
-- Watch next: nifty_midcap_100 (up) — already moved; rho=0.576 via dyn_kalyankjil_ns
-- Watch next: dyn_pcjeweller_ns (up) — already moved; rho=0.445 via dyn_kalyankjil_ns
-- Watch next: dyn_swiggy_ns (up) — already moved; rho=0.395 via dyn_kalyankjil_ns
-- **India receivers**: nifty_midcap_100 (rho 0.577, z 2.03); dyn_indianb_ns (rho 0.498, z 0.37); dyn_pcjeweller_ns (rho 0.448, z 1.46); nifty_50 (rho 0.418, z 0.86)
-- Source: Top Gainers & Losers on 13 July: Newgen Software, Kalyan Jewellers, TCS, Voltas, Paytm, Bajaj Auto among top gainers — Mint Markets, 2026-07-13. https://www.livemint.com/market/stock-market-news/top-gainers-losers-on-13-july-newgen-software-kalyan-jewellers-tcs-voltas-paytm-bajaj-auto-among-top-gainers-11783936105519.html
-- Source: Kalyan Jewellers shares surge 12%, jump 50% in just 4 sessions; is there more steam left? — Mint Markets, 2026-07-13. https://www.livemint.com/market/stock-market-news/kalyan-jewellers-shares-surge-almost-10-jump-47-in-just-4-sessions-is-there-more-steam-left-11783922565597.html
-- Source: 47% rally in 4 days! Kalyan Jewellers shares rise another 10%. Should you book profit? — ET Markets, 2026-07-13. https://economictimes.indiatimes.com/markets/stocks/news/47-rally-in-4-days-kalyan-jewellers-shares-rise-another-10-should-you-book-profit/articleshow/132357947.cms
-- Historical analogues: 2026-01-07 (d=1.76), 2026-06-15 (d=1.78), 2025-07-02 (d=2.84)
+### [RED 5.4] commodities · 3 series ↑
+- wheat [COMMODITIES]: last 639.25, z20 4.08, zc 2.97, resid-z 2.34 [unexplained], 1d 4.58%, |z20|=4.08; 1y-pct=96
+- corn [COMMODITIES]: last 460.25, z20 3.97, zc 6.11, resid-z 5.41 [unexplained], 1d 7.60%, |z20|=3.97
+- soybeans [COMMODITIES]: last 1189.50, z20 1.97, zc 0.81, resid-z 0.89 [quiet], 1d 0.83%, |z20|=1.97
+- **Mechanism**: commodities · 3 series ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-05-22 (z-distance 0.0).
+- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
+- **India take**: dyn_adanient_bo (rho -0.375 via soybeans, z 1.25, reacted)
+- **India receivers**: dyn_adanient_bo (rho -0.375, z 1.25)
+- Historical analogues: 2026-05-22 (d=0.0), 2024-08-30 (d=0.27), 2026-05-06 (d=0.32)
 
-### [RED 6.45] cross-asset · 5 series ↑
-- dyn_bond [EQUITIES]: last 90.93, z20 -2.52, zc -0.27, resid-z 0.14 [quiet], 1d -0.40%, |z20|=2.52; 1y-pct=1
-- tips_10y_real [RATES]: last 2.32, z20 1.79, zc 0.24, resid-z 0.27 [quiet], 1d 0.43%, |z20|=1.79; 1y-pct=100
-- ust_30y [RATES]: last 5.06, z20 1.74, zc 0.27, resid-z 0.32 [quiet], 1d 0.20%, |z20|=1.74; 1y-pct=97
-- ust_10y [RATES]: last 4.56, z20 1.64, zc 0.44, resid-z 0.56 [quiet], 1d 0.44%, |z20|=1.64; 1y-pct=96
-- ust_2y [RATES]: last 4.21, z20 1.40, zc 0.93, resid-z 1.21 [quiet], 1d 1.20%, 1y-pct=99
-- **Mechanism**: The recent surge in Eurozone bond yields, driven by escalating US-Iran tensions and concerns over global inflation, is propagating through the rates channel, affecting US Treasury yields and tips_10y_real. The move is largely priced, with resid_z values indicating that the majority of the move can be explained by factor exposures.
-- **Gap**: No gap: the move in rates is largely priced, with resid_z values close to zero, indicating that the majority of the move can be explained by factor exposures.
-- **India take**: The Indian instrument that expresses this move is the 10-year G-Sec yield, which may react to the global rates move, and the Nifty 50, which could be affected by the change in risk sentiment. However, the inr_oil_channel is weak, and the dxy_inr_channel is also weak, which may limit the transmission of global rates to Indian markets.
-- Watch next: dyn_bond (down) — already moved; High z20 level indicates a significant move in equities
-- Watch next: tips_10y_real (up) — already moved; Rise in real yields due to inflation concerns
-- Source: Global Market: Eurozone bond yields climb as Middle East tensions rekindle inflation concerns — ET Markets, 2026-07-13. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-eurozone-bond-yields-climb-as-middle-east-tensions-rekindle-inflation-concerns/articleshow/132362710.cms
-- Source: Global Market: Japan pension fund strategy may redraw global bond and currency markets — ET Markets, 2026-07-13. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japan-pension-fund-strategy-may-redraw-global-bond-and-currency-markets/articleshow/132359410.cms
-- Historical analogues: 2026-05-22 (d=0.0), 2026-05-07 (d=0.32), 2026-03-30 (d=0.54)
-
-### [AMBER 5.26] indices · 2 series ↓
-- kospi [INDICES]: last 6904.41, z20 -2.43, zc 0.59, resid-z 0.53 [quiet], 1d -7.64%, |z20|=2.43
-- nikkei_225 [INDICES]: last 67132.87, z20 -1.89, zc 0.69, resid-z 0.45 [quiet], 1d -2.08%, |z20|=1.89
-- **Mechanism**: The decline in Kospi and Nikkei 225 indices is attributed to the rise in oil prices due to renewed Middle East conflict, which dims the corporate outlook and increases costs. This move is priced, as indicated by the relatively small resid_z values of 0.52 and 0.45 for Kospi and Nikkei 225, respectively. The move is also reflected in the quiet status of both indices, suggesting that the market has already factored in the news.
-- **Gap**: No gap: The move in Kospi and Nikkei 225 is priced, with small resid_z values indicating that the market has already factored in the news.
-- **India take**: The Indian instrument that expresses this move is Nifty Metal, which has a correlation coefficient of 0.568 with Kospi and has not yet reacted. Nifty 50, which has a correlation coefficient of 0.412 with Nikkei 225, is also a potential responder.
-- Watch next: taiwan_weighted (down) — not yet - watch; Historically leads Kospi by 3 days and has a high correlation coefficient of 0.665
-- Watch next: nifty_metal (down) — not yet - watch; Has a correlation coefficient of 0.568 with Kospi
-- **India receivers**: nifty_metal (rho 0.569, z -0.48); nifty_midcap_100 (rho 0.43, z 2.03); nifty_50 (rho 0.419, z 0.86)
-- Source: Global Market: Japan's Nikkei closes lower as oil price jump dims corporate outlook — ET Markets, 2026-07-13. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japans-nikkei-closes-lower-as-oil-price-jump-dims-corporate-outlook/articleshow/132359942.cms
-
-### [AMBER 5.01] commodities · 2 series ↑
-- brent [COMMODITIES]: last 84.01, z20 2.18, zc 0.00, resid-z 0.01 [quiet], 1d 0.00%, |z20|=2.18
-- wti [COMMODITIES]: last 78.99, z20 1.80, zc 0.05, resid-z -0.13 [quiet], 1d 0.11%, |z20|=1.80
-- **Mechanism**: The recent rise in Brent and WTI crude oil prices is largely priced in, with small resid_z values indicating that the move is explained by factor exposures. However, the historically high correlation between oil prices and the Indian rupee, as well as the recent strength in oil refining, may lead to further movements in the oil market. The valid metal_copper_channel and gold_silver_comove channels may also influence the price of oil and related commodities.
-- **Gap**: No gap: the recent move in oil prices is largely explained by factor exposures, with small resid_z values for Brent and WTI.
-- **India take**: The Indian instrument that expresses this move is the Nifty Midcap 100, which has already reacted to the WTI price movement. Further movements in the oil market may also impact the Indian rupee, although the inr_oil_channel is currently weak.
-- Watch next: nifty_midcap_100 (down) — already moved; reacted to WTI price movement
-- **India receivers**: nifty_midcap_100 (rho -0.516, z 2.03)
-- Source: Oil Refiners Are Cashing In on a Market That Won’t Stay Broken — OilPrice, 2026-07-13. https://oilprice.com/Energy/Crude-Oil/Oil-Refiners-Are-Cashing-In-on-a-Market-That-Wont-Stay-Broken.html
-- Source: The U.S. is maxing out its strategic oil reserves as Trump vows to control the Strait of Hormuz — MarketWatch Top, 2026-07-13. https://www.marketwatch.com/story/the-u-s-is-maxing-out-its-strategic-oil-reserves-as-trump-vows-to-control-the-strait-of-hormuz-b71f88a9?mod=mw_rss_topstories
-- Source: America Extends Its Lead Over Russia and Saudi Arabia in Oil Output — OilPrice, 2026-07-13. https://oilprice.com/Energy/Crude-Oil/America-Extends-Its-Lead-Over-Russia-and-Saudi-Arabia-in-Oil-Output.html
-- Historical analogues: 2026-05-22 (d=0.0), 2024-10-18 (d=0.03), 2024-10-31 (d=0.05)
-
-### [RED 4.73] dyn_qessf ↓
-- dyn_qessf [EQUITIES]: last 0.24, z20 -2.73, zc 0.30, resid-z 0.18 [quiet], 1d -10.51%, |z20|=2.73
-- **Mechanism**: The decline in dyn_qessf is a priced move with a small resid_z of 0.18, indicating that the move is largely explained by factor exposures. The valid metal_copper_channel and gold_silver_comove channels suggest that the move may be related to broader commodity trends. However, the weak inr_oil_channel and dxy_inr_channel suggest that the Indian rupee and oil prices may not be significant drivers of this move.
-- **Gap**: No gap: the move in dyn_qessf is largely priced with a small resid_z, indicating no significant anomaly.
-- **India take**: The Indian instrument dyn_atherenerg_ns has already reacted to the move in dyn_qessf, with a rho of -0.358. The Nifty 50 may also be affected due to the contra correlation with safe_haven_gold.
-- Watch next: dyn_atherenerg_ns (down) — already moved; reacted to dyn_qessf
-- **India receivers**: dyn_atherenerg_ns (rho -0.364, z 1.38)
-- Source: FRANCE'S MACRON: UKRAINE HAS AGREED TO BUY SAMP-T AIR DEFENCE SYSTEM — DeItaone, 2026-07-13. https://t.me/walter_bloomberg/33611
-- Source: Multibagger defence stock to raise  ₹3,322 crore through fresh equity issuance — Mint Markets, 2026-07-12. https://www.livemint.com/market/stock-market-news/multibagger-defence-stock-apollo-micro-systems-to-raise-3-322-crore-through-fresh-equity-issuance-11783836726858.html
-- Historical analogues: 2026-05-22 (d=0.0), 2025-10-15 (d=0.32), 2024-11-14 (d=0.52)
-
-### [RED 4.61] natgas ↓
-- natgas [COMMODITIES]: last 2.89, z20 -2.61, zc 0.00, resid-z -0.91 [quiet], 1d 0.00%, |z20|=2.61
-- **Mechanism**: The decline in natgas prices may propagate through the metal_copper_channel, as a decrease in energy costs can lead to an increase in industrial activity, which in turn can drive up demand for copper and other metals. However, the current move in natgas is largely priced, with a resid_z of -0.91, indicating that the unexplained component is relatively small. The valid gold_silver_comove channel may also play a role, as a decrease in energy costs can lead to a decrease in production costs for gold and silver, potentially driving up their prices.
-- **Gap**: No gap: the current move in natgas is largely priced, with a small resid_z and a low r2 value, indicating that the price move is mostly explained by factor exposures
-- **India take**: The Indian instrument that expresses this move is likely to be the copper futures contract on the MCX, which may react positively to the decrease in energy costs. However, the reaction has not yet occurred, and the market is still watching for a potential move.
-- Watch next: copper (up) — not yet - watch; decrease in energy costs can drive up demand for copper
-- Source: Why the UAE Is Taking a Bigger Piece of America’s LNG Crown Jewel — OilPrice, 2026-07-13. https://oilprice.com/Energy/Natural-Gas/Why-the-UAE-Is-Taking-a-Bigger-Piece-of-Americas-LNG-Crown-Jewel.html
-- Source: EU's Russian LNG Imports Hit Record High Ahead of 2027 Ban — OilPrice, 2026-07-13. https://oilprice.com/Latest-Energy-News/World-News/EUs-Russian-LNG-Imports-Hit-Record-High-Ahead-of-2027-Ban.html
-- Source: U.S. POWER COSTS SURGE TO MULTI-YEAR HIGHS Natural gas power costs hit $90 per megawatt-hour in 2026—the highest level in at least 17 years—as data-center demand accelerates. Solar and onshore wind costs also jumped more than 10%, reaching their highest levels since at least — DeItaone, 2026-07-13. https://t.me/walter_bloomberg/33579
-- Historical analogues: 2026-05-22 (d=0.0), 2025-10-23 (d=0.01), 2025-05-14 (d=0.02)
-
-### [RED 4.59] midcap_largecap_ratio ↑
-- midcap_largecap_ratio [DERIVED]: last 2.60, z20 1.59, zc n/a, resid-z n/a [quiet], 1d 0.03%, 52-wk extreme (pct=98); |z20|=1.59; 1y-pct=98
+### [RED 4.64] midcap_largecap_ratio ↑
+- midcap_largecap_ratio [DERIVED]: last 2.60, z20 1.64, zc n/a, resid-z n/a [quiet], 1d 0.25%, 52-wk extreme (pct=97); |z20|=1.64; 1y-pct=97
 - **Mechanism**: The midcap_largecap_ratio has reached a 52-week extreme, with a z-score of 1.64, indicating a potential mean reversion. This ratio is derived from the relative performance of midcap and largecap stocks, and its extreme value may signal a reversal in the market trend. The historical analogues suggest a mixed outcome for various assets, with the S&P 500 showing a positive median return, while the high-yield OAS shows a negative median return.
 - **Gap**: No gap: the nifty_midcap_100 has already reacted to the extreme midcap_largecap_ratio, with a z-score of 1.59, indicating that the Indian market has likely priced in the event
 - **India take**: The Nifty Midcap 100 index, with a correlation of 0.516 with the midcap_largecap_ratio, has likely expressed this move and may be due for a correction. The Indian market may see a pullback in midcap stocks, as indicated by the high z-score of the nifty_midcap_100
@@ -111,8 +50,53 @@ data as of **2026-07-14** · 92 series · 8 red / 31 amber · 8 events surfaced 
 - **India receivers**: nifty_midcap_100 (rho 0.54, z 2.03); dyn_kalyankjil_ns (rho 0.384, z 4.87); dyn_indianb_ns (rho 0.361, z 0.37); dyn_swiggy_ns (rho 0.359, z 1.23)
 - Historical analogues: 2025-12-31 (d=0.0), 2024-11-06 (d=0.1), 2025-07-03 (d=0.11)
 
+### [RED 3.9] bovespa ↑
+- bovespa [INDICES]: last 177680.62, z20 3.90, zc 3.11, resid-z 3.19 [unexplained], 1d 2.86%, |z20|=3.90
+- **Mechanism**: bovespa ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2024-08-13 (z-distance 0.73).
+- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
+- **India take**: No exposed Indian receivers above the correlation floor.
+- Watch next: ust_2y (inverse) — not yet - watch; rho -0.548 vs bovespa, historically leads by 2d
+- Watch next: russell_2000 (co-move) — not yet - watch; rho 0.543 vs bovespa, historically leads by 2d
+- Historical analogues: 2024-08-13 (d=0.73), 2025-08-12 (d=0.92), 2025-01-30 (d=0.96)
+
+### [RED 3.82] dyn_meta ↑
+- dyn_meta [EQUITIES]: last 669.31, z20 3.82, zc 2.00, resid-z 1.39 [moved], 1d 5.99%, |z20|=3.82
+- **Mechanism**: dyn_meta ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-05-22 (z-distance 0.0).
+- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
+- **India take**: dyn_indianb_ns (rho 0.413 via dyn_meta, z 1.35, reacted); dyn_swiggy_ns (rho 0.393 via dyn_meta, z 2.06, reacted); nifty_midcap_100 (rho 0.391 via dyn_meta, z 1.59, reacted)
+- **India receivers**: dyn_indianb_ns (rho 0.413, z 1.35); dyn_swiggy_ns (rho 0.393, z 2.06); nifty_midcap_100 (rho 0.391, z 1.59)
+- Source: Meta’s stock roars back to life as it notches its best week in years — MarketWatch Top, 2026-07-10. https://www.marketwatch.com/story/metas-stock-roars-back-to-life-as-it-heads-for-its-best-week-in-years-0ff0fa7d?mod=mw_rss_topstories
+- Historical analogues: 2026-05-22 (d=0.0), 2025-08-21 (d=0.05), 2024-10-21 (d=0.07)
+
+### [AMBER 3.81] gold_silver_ratio ↑
+- gold_silver_ratio [DERIVED]: last 68.47, z20 0.81, zc n/a, resid-z n/a [quiet], 1d 0.09%, GSR<75 (extreme low)
+- **Mechanism**: The gold-silver ratio has increased, which may propagate through the commodities market, affecting prices of correlated instruments such as COMEX copper, silver, and gold. This move could be driven by changes in industrial demand or investor sentiment. The historically leading relationships between these instruments and the gold-silver ratio suggest potential follow-through moves.
+- **Gap**: No gap: The correlated instruments have not moved significantly yet, and the historical analogues do not show a consistent pattern of price movement after a similar increase in the gold-silver ratio.
+- **India take**: Indian investors can express this view through instruments such as MCX Copper, MCX Silver, and MCX Gold, which are likely to be affected by the movement in COMEX copper, silver, and gold. However, these instruments have not reacted significantly yet.
+- Watch next: comex_copper (down) — not yet - watch; Historical lead of 3 days
+- Watch next: comex_silver (down) — not yet - watch; High negative correlation
+- Watch next: comex_gold (down) — not yet - watch; Historical lead of 4 days
+- Historical analogues: 2026-05-22 (d=0.0), 2025-08-12 (d=0.01), 2025-10-29 (d=0.08)
+
+### [RED 3.64] sofr ↓
+- sofr [RATES]: last 3.53, z20 -3.64, zc -1.15, resid-z -2.14 [unexplained], 1d -1.40%, |z20|=3.64; 1y-pct=1
+- **Mechanism**: sofr ↓: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-05-22 (z-distance 0.0).
+- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
+- **India take**: No exposed Indian receivers above the correlation floor.
+- Historical analogues: 2026-05-22 (d=0.0), 2025-10-06 (d=0.0), 2025-04-17 (d=0.0)
+
+### [AMBER 3.49] rates · 4 series ↑
+- tips_10y_real [RATES]: last 2.31, z20 1.83, zc 0.00, resid-z 0.32 [quiet], 1d 0.00%, |z20|=1.83; 1y-pct=99
+- ust_30y [RATES]: last 5.05, z20 1.68, zc -0.26, resid-z -0.05 [quiet], 1d -0.20%, |z20|=1.68; 1y-pct=96
+- ust_10y [RATES]: last 4.54, z20 1.29, zc -0.43, resid-z -0.16 [quiet], 1d -0.44%, 1y-pct=95
+- ust_2y [RATES]: last 4.16, z20 0.50, zc -0.91, resid-z -0.90 [quiet], 1d -1.19%, 1y-pct=96
+- **Mechanism**: The recent rise in US Treasury yields has been driven by a sharp selloff, but a strong auction of 30-year government bonds and stable economic data have led to a rebound in bond prices, causing yields to ease. This move is likely to propagate through the fixed income markets. The Indian government bond market has already reacted, with the 10-year bond yield falling 3.8 basis points to 6.7139% on Friday.
+- **Gap**: No gap: the Indian 10-year bond yield has already fallen in response to the easing of US Treasury yields, indicating that the market has priced in the event.
+- **India take**: The Indian 10-year bond yield, as represented by the 6.94% 2036 bond, has reacted to the easing of US Treasury yields, falling 3.8 basis points to 6.7139%. The India 10-year government bond yield, as a transmission candidate, is likely to track this move.
+- Watch next: tips_10y_real (down) — already moved; 10-year real yield has fallen
+
 ## Watchlist (below surfacing floor)
-dyn_meta ↑ (4.37), gold_silver_ratio ↑ (3.91), cross-asset · 2 series ↑ (3.63), commodities · 2 series ↑ (3.5), dyn_cupid_ns ↑ (3.21), shanghai_comp ↓ (3.12), cross-asset · 2 series ↑ (2.86), brent_wti_spread ↑ (2.25), dyn_coin ↓ (2.24), sofr ↓ (2.19), btc_usd ↑ (2.14), nifty_it ↑ (2.13)
+natgas ↓ (3.48), cross-asset · 4 series ↑ (3.35), cross-asset · 2 series ↑ (2.82), brent_wti_spread ↑ (2.3), dyn_qessf ↓ (2.09), dyn_swiggy_ns ↑ (2.06), dyn_atherenerg_ns ↑ (1.89), dyn_cupid_ns ↑ (1.67), dyn_adanient_bo ↑ (1.25), dyn_inoxindia_ns ↑ (1.23), usd_cny ↓ (1.06), eur_usd ↓ (0.42)
 
 ## India macro
 - nifty_50: 24208.5996 (1d 0.01%, z20 0.86, flag none)
@@ -121,7 +105,7 @@ dyn_meta ↑ (4.37), gold_silver_ratio ↑ (3.91), cross-asset · 2 series ↑ (
 - goi_10y: 7.0200 (1d -0.43%, z20 1.89, flag none)
 - india_cpi_yoy: 2.9518 (1d 14.13%, z20 n/a, flag none)
 - goi_ust_spread: 2.6300 (1d -3.31%, z20 n/a, flag none)
-- midcap_largecap_ratio: 2.6050 (1d 0.03%, z20 1.59, flag red)
+- midcap_largecap_ratio: 2.6035 (1d 0.25%, z20 1.64, flag red)
 - Next India prints: India WPI T-0d · NSDL FPI flows T-0d · India trade / CAD data T-1d · RBI Weekly Statistical Supplement T-3d
 
 ## News-tracked universe (why each is watched)

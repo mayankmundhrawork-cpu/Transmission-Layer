@@ -183,6 +183,35 @@ def assemble() -> tuple[str, dict]:
                      f"score={f['score']:.2f} — {reason}")
     L.append("")
 
+    # [2b] verified transmission setups + scan control + track record
+    try:
+        import json as _json
+        anom = _json.loads((DATA_DIR / "anomalies.json").read_text(encoding="utf-8"))
+        f = anom.get("fdr", {})
+        L.append("[2b] SCAN CONTROL & VERIFIED SETUPS")
+        L.append(f"  FDR (Benjamini-Hochberg q={f.get('q')}): "
+                 f"{f.get('n_significant')} of {f.get('n_scanned')} scanned "
+                 f"series significant (effective p<={f.get('effective_p_threshold')})")
+        tr = anom.get("setups_track_record") or {}
+        setups = anom.get("setups", [])
+        if not setups:
+            L.append("  No live transmission setups — drivers quiet or targets repriced.")
+        for s in setups:
+            L.append(f"  SETUP {s['driver']} -> {s['target']}: leads {s['lead_days']}d "
+                     f"(ccf {s['ccf']}, beta {s['beta']}, p {s['p_hac']}); driver "
+                     f"zc {s['driver_zc']} -> expected {s['expected_target_move_pct']}% "
+                     f"| type hit-rate {tr.get('hit_rate')} (n={tr.get('n')})")
+        card = _json.loads((DATA_DIR / "scorecard.json").read_text(encoding="utf-8")) \
+            if (DATA_DIR / "scorecard.json").exists() else {}
+        types = card.get("types", {})
+        if types:
+            L.append("  Track record: " + " · ".join(
+                f"{t} {r.get('hit_rate')} (n={r.get('n')})"
+                for t, r in types.items()))
+        L.append("")
+    except Exception:
+        pass
+
     # [3] RELEASE PROXIMITY
     L.append("[3] RELEASE PROXIMITY")
     for r in cal["upcoming"][:5]:

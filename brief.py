@@ -180,6 +180,32 @@ def build_brief() -> str:
     except Exception:
         pass
 
+    # ── verified setups + scan control (P5/P7/P9) ────────────────────────
+    try:
+        anom = json.loads((DATA_DIR / "anomalies.json").read_text(encoding="utf-8"))
+        f = anom.get("fdr", {})
+        L.append("\n## Scan control & verified transmission setups")
+        L.append(f"- FDR (BH q={f.get('q')}): **{f.get('n_significant')} of "
+                 f"{f.get('n_scanned')}** scanned series survive multiplicity "
+                 f"control (effective p ≤ {f.get('effective_p_threshold')})")
+        tr = anom.get("setups_track_record") or {}
+        if anom.get("setups"):
+            for s in anom["setups"]:
+                L.append(f"- **SETUP** {s['driver']} → {s['target']}: leads "
+                         f"{s['lead_days']}d (ccf {s['ccf']}, β {s['beta']}, "
+                         f"p {s['p_hac']}); driver zc {s['driver_zc']} → expected "
+                         f"{s['expected_target_move_pct']}%. Type hit-rate "
+                         f"{tr.get('hit_rate')} (n={tr.get('n')}).")
+        else:
+            L.append("- No live setups: drivers quiet or targets already repriced.")
+        card = json.loads((DATA_DIR / "scorecard.json").read_text(encoding="utf-8")) \
+            if (DATA_DIR / "scorecard.json").exists() else {}
+        for t, r in card.get("types", {}).items():
+            L.append(f"- Track record · {t}: hit-rate **{r.get('hit_rate')}** "
+                     f"(n={r.get('n')}) — {r.get('definition')}")
+    except Exception:
+        pass
+
     # ── events ──────────────────────────────────────────────────────────
     L.append("\n## Events (ranked)")
     if not ev["events"]:

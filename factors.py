@@ -87,6 +87,18 @@ def _latest_fit_stats(y: pd.Series, X: pd.DataFrame) -> tuple[float, dict]:
     return float(res.rsquared), contrib
 
 
+def resid_z_series(y: pd.Series, X: pd.DataFrame,
+                   window: int = WINDOW) -> pd.Series:
+    """Full-history PIT residual z: residual_t / std(prior `window` residuals).
+    Backtest substrate for scorecard.py."""
+    rr = rolling_residuals(y, X, window)
+    if rr.empty:
+        return pd.Series(dtype=float)
+    resid = rr["resid"]
+    sd = resid.shift(1).rolling(window, min_periods=MIN_OBS).std(ddof=0)
+    return (resid / sd).dropna()
+
+
 def build_factor_state(prices: pd.DataFrame | None = None) -> dict:
     from registry import load_registry
     if prices is None:

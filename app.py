@@ -707,6 +707,19 @@ if ev["watchlist"]:
     st.markdown(f'<div class="watch">watchlist (below floor): {wl}</div>',
                 unsafe_allow_html=True)
 
+# verified transmission setups (P5: lead-lag live + FDR + unrepriced target)
+try:
+    from leadlag import load_setups
+    _setups = load_setups().get("setups", [])
+    if _setups:
+        line = " · ".join(
+            f'{s["driver"]}→{s["target"]} lead {s["lead_days"]}d '
+            f'(exp {s["expected_target_move_pct"]}%)' for s in _setups[:5])
+        st.markdown(f'<div class="watch" style="color:{G2}">verified setups: '
+                    f'{line}</div>', unsafe_allow_html=True)
+except Exception:
+    pass
+
 
 # ── 3) drill-down ──────────────────────────────────────────────────────
 st.markdown('<div class="sec">Drill-down</div>', unsafe_allow_html=True)

@@ -1,7 +1,18 @@
 # MIGRATION — from asserted transmission to measured transmission
 
-> **STATUS (end of first run):** Phases 1–4 implemented, tested and wired;
-> 5–9 stubbed with contracts. 8/8 known-answer tests green.
+> **STATUS (second run):** ALL PHASES 1–9 IMPLEMENTED. 11/11 known-answer
+> tests green. P5: lead-lag verification (CCF + lagged OLS/HAC, Granger as
+> caveated evidence, FDR across the pair scan, three-gate emit) — live run:
+> 106 pairs scanned → 1 setup emitted. P6: OU half-life + ADF + Hurst +
+> Engle-Granger pairs. P7: BH-FDR wired across the full series scan (live:
+> 76 scanned → 4 significant). P9: split-sample hit-rate ledger — measured
+> reality: transmission_follow 0.815 (n=1968), residual_reversion 0.489
+> (n=1020, i.e. NO edge — now labelled on every such record),
+> spread_reversion 0.579 (n=19). Digest [2b], brief, theses and app all
+> consume setups + track records.
+>
+> *(First-run status, retained below for history:)* Phases 1–4 implemented,
+> tested and wired; 5–9 stubbed with contracts. 8/8 known-answer tests green.
 > **Acceptance case live on real data**: digest [0] now opens with
 > `[INVERTED] safe_haven_gold: corr20=-0.28, contra nifty_50 corr20=+0.43,
 > shifted 2025-07-14` — and the inr_oil linked group (measured corr ≈ 0) no

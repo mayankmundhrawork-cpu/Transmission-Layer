@@ -99,6 +99,46 @@ def test_ou_half_life_none_for_random_walk():
     assert hl is None or hl > 200       # no (fast) mean reversion detected
 
 
+# ── P5: lead-lag verification ───────────────────────────────────────────
+def test_leadlag_recovers_planted_lead():
+    """target follows driver by exactly 2 sessions -> k=2, significant."""
+    from leadlag import _best_lag, verify_transmission
+    n = 500
+    dr = pd.Series(rng.normal(0, 0.01, n))
+    tg = 0.7 * dr.shift(2) + pd.Series(rng.normal(0, 0.004, n))
+    k, ccf = _best_lag(dr, tg)
+    assert k == 2 and ccf > 0.5
+    lvl = lambda r: pd.Series(100 * np.exp(np.cumsum(r.fillna(0))))
+    prices = pd.DataFrame({"drv": lvl(dr), "tgt": lvl(tg)})
+    v = verify_transmission("drv", "tgt", prices, zc_latest={})
+    assert v["historically_significant"] and v["lead_days"] == 2
+    assert v["emit"] is False            # driver hasn't moved -> no setup
+
+
+def test_leadlag_rejects_independent_series():
+    from leadlag import verify_transmission
+    n = 500
+    lvl = lambda r: pd.Series(100 * np.exp(np.cumsum(r)))
+    prices = pd.DataFrame({"a": lvl(rng.normal(0, 0.01, n)),
+                           "b": lvl(rng.normal(0, 0.01, n))})
+    v = verify_transmission("a", "b", prices, zc_latest={})
+    assert v is None or not v["historically_significant"]
+
+
+# ── P6: Hurst ───────────────────────────────────────────────────────────
+def test_hurst_orders_processes_correctly():
+    from spreads import hurst_exponent
+    n = 1500
+    ou = np.zeros(n)
+    for t in range(1, n):
+        ou[t] = ou[t - 1] * 0.85 + rng.normal(0, 1)      # strongly mean-rev
+    trend = np.cumsum(rng.normal(0.05, 0.5, n))          # drifting walk
+    h_ou = hurst_exponent(pd.Series(ou))
+    h_tr = hurst_exponent(pd.Series(trend))
+    assert h_ou < 0.5 < h_tr
+    assert h_ou < h_tr
+
+
 # ── P7: Benjamini-Hochberg ──────────────────────────────────────────────
 def test_bh_textbook_example():
     from fdr import benjamini_hochberg

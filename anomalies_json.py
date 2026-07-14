@@ -1,9 +1,8 @@
-"""P8 — machine-readable anomaly records (basic contract now, gates evolve).
+"""P8 — machine-readable anomaly records (full contract).
 
-Emits data/anomalies.json alongside the human digest: one record per
-currently-flagged series with every measured gate input attached, plus
-built-in falsifiers. P5 (lead-lag emit gate) and P7 (BH significance) will
-extend these records rather than reshape them.
+One record per candidate with every measured gate input, FDR control across
+the scan (P7), lead-lag evidence (P5), mean-reversion horizon (P6), the
+signal-type track record (P9), and built-in falsifiers.
 
 Run: python anomalies_json.py
 """
@@ -16,6 +15,8 @@ from pathlib import Path
 
 DATA_DIR = Path(__file__).parent / "data"
 OUT_JSON = DATA_DIR / "anomalies.json"
+
+FDR_Q = 0.10
 
 
 def _falsifiers(r: dict) -> list[str]:
@@ -38,21 +39,50 @@ def _falsifiers(r: dict) -> list[str]:
 def build_anomalies() -> dict:
     from assumptions import load_assumptions_state
     from engine import build_snapshot
+    from fdr import benjamini_hochberg, z_to_p
+    from leadlag import load_setups
     from regime import load_regime
+    from scorecard import load_scorecard
+    from spreads import load_spreads
 
     snap = build_snapshot()
     reg = load_regime()
     ledger = load_assumptions_state().get("assumptions", {})
+    setups_state = load_setups()
+    spreads = load_spreads().get("series", {})
+    card = load_scorecard().get("types", {})
     broken = [n for n, a in ledger.items()
               if a["status"] in ("WEAK", "INVERTED")]
+
+    # ── P7: BH-FDR across the WHOLE scan (every series with a test stat,
+    # not just the flagged ones — that's what controls the discovery rate)
+    scan = []
+    for r in snap.get("series", []):
+        stat = r.get("resid_z") if r.get("resid_z") is not None else r.get("zc")
+        if stat is not None:
+            scan.append((r["id"], float(stat)))
+    bh = benjamini_hochberg([z_to_p(s) for _, s in scan], q=FDR_Q)
+    bh_pass = {sid: rej for (sid, _), rej in zip(scan, bh["reject"])}
+
+    def _track(sig_type):
+        t = card.get(sig_type) or {}
+        return {"type": sig_type, "hit_rate": t.get("hit_rate"),
+                "n": t.get("n"), "definition": t.get("definition")}
 
     records = []
     for r in snap.get("series", []):
         if r.get("flag") not in ("amber", "red") and \
-                r.get("move_label") not in ("unexplained",):
+                r.get("move_label") != "unexplained":
             continue
+        sid = r["id"]
+        sp = spreads.get(sid) or {}
+        ll = [s for s in setups_state.get("setups", [])
+              if s["driver"] == sid or s["target"] == sid] or None
+        sig_type = ("spread_reversion" if sp else
+                    "residual_reversion" if r.get("move_label") == "unexplained"
+                    else None)
         records.append({
-            "id": r["id"], "market": r["market"], "flag": r["flag"],
+            "id": sid, "market": r["market"], "flag": r["flag"],
             "asof": r.get("last_date"),
             "raw": {"last": r.get("last"), "d1_pct": r.get("d1_pct"),
                     "z20": r.get("z20"), "pct_1y": r.get("pct_1y")},
@@ -64,14 +94,23 @@ def build_anomalies() -> dict:
             "reasons": r.get("reasons", []),
             "regime": reg.get("label"),
             "assumptions_degraded": broken,
+            "bh_significant": bh_pass.get(sid),
+            "leadlag_evidence": ll,
+            "mean_reversion": ({"half_life_days": sp.get("half_life_days"),
+                                "adf_p": sp.get("adf_p"),
+                                "hurst": sp.get("hurst")} if sp else None),
+            "track_record": _track(sig_type) if sig_type else None,
             "falsifiers": _falsifiers(r),
-            # P5/P7 extensions land here:
-            "leadlag_evidence": None,      # TODO P5
-            "bh_significant": None,        # TODO P7
-            "mean_reversion_half_life": None,  # spreads only, joined in P6+
         })
+
     out = {"generated": datetime.now(timezone.utc).isoformat(),
-           "regime": reg.get("label"), "n": len(records),
+           "regime": reg.get("label"),
+           "fdr": {"q": FDR_Q, "n_scanned": bh["n"],
+                   "n_significant": bh["n_rejected"],
+                   "effective_p_threshold": bh["threshold"]},
+           "setups": setups_state.get("setups", []),
+           "setups_track_record": _track("transmission_follow"),
+           "n": len(records),
            "records": records}
     OUT_JSON.write_text(json.dumps(out), encoding="utf-8")
     return out
@@ -79,7 +118,13 @@ def build_anomalies() -> dict:
 
 if __name__ == "__main__":
     o = build_anomalies()
-    print(f"anomalies.json: {o['n']} records (regime {o['regime']})")
+    f = o["fdr"]
+    print(f"anomalies.json: {o['n']} records | scan {f['n_scanned']} -> "
+          f"{f['n_significant']} BH-significant (q={f['q']}, "
+          f"p<={f['effective_p_threshold']}) | {len(o['setups'])} setups")
     for rec in o["records"][:6]:
+        tr = rec.get("track_record") or {}
         print(f"  {rec['id']:22} {rec['flag'] or '-':6} zc={rec['conditional_z']} "
-              f"rz={rec['residual_z']} label={rec['move_label']}")
+              f"rz={rec['residual_z']} bh={rec['bh_significant']} "
+              f"label={rec['move_label']}"
+              + (f" | {tr['type']} hit {tr['hit_rate']}" if tr else ""))
