@@ -19,6 +19,16 @@
   "resolved_at": "2026-07-09T19:15:28.430095+00:00",
   "via": "no-acceptable-match"
  },
+ "argentina": {
+  "cls": "equity",
+  "exchange": "NYQ",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-16T06:07:23.119279+00:00",
+  "shortname": "Telecom Argentina SA",
+  "symbol": "TEO",
+  "via": "search"
+ },
  "ather energy": {
   "cls": "equity",
   "exchange": "NSI",
@@ -209,6 +219,16 @@
   "symbol": "GS",
   "via": "search"
  },
+ "govt": {
+  "cls": "etf",
+  "exchange": "DXE",
+  "ok": true,
+  "quoteType": "ETF",
+  "resolved_at": "2026-07-16T06:07:22.989359+00:00",
+  "shortname": "iShares Germany Govt Bond UCITS",
+  "symbol": "IS0LD.XD",
+  "via": "search"
+ },
  "groww": {
   "ok": false,
   "resolved_at": "2026-07-11T06:02:53.150889+00:00",
@@ -223,6 +243,16 @@
   "ok": false,
   "resolved_at": "2026-07-13T13:08:02.646415+00:00",
   "via": "no-acceptable-match"
+ },
+ "hdb financial": {
+  "cls": "equity",
+  "exchange": "BSE",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-16T06:07:22.748603+00:00",
+  "shortname": "HDB FINANCIAL SERVICES LIMITED",
+  "symbol": "HDBFS.BO",
+  "via": "search"
  },
  "hdfc bank": {
   "cls": "equity",
@@ -257,6 +287,16 @@
   "resolved_at": "2026-07-15T10:31:06.221769+00:00",
   "shortname": "HERO MOTOCORP LIMITED",
   "symbol": "HEROMOTOCO.NS",
+  "via": "search"
+ },
+ "icici lombard": {
+  "cls": "equity",
+  "exchange": "BSE",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-16T06:07:22.868734+00:00",
+  "shortname": "ICICI Lombard General Insuranc",
+  "symbol": "ICICIGI.BO",
   "via": "search"
  },
  "icici prudential amc": {
@@ -327,6 +367,16 @@
   "resolved_at": "2026-07-07T19:12:37.566618+00:00",
   "shortname": "Jefferies Financial Group Inc.",
   "symbol": "JEF",
+  "via": "search"
+ },
+ "jio financial services": {
+  "cls": "equity",
+  "exchange": "BSE",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-16T06:07:23.470554+00:00",
+  "shortname": "Jio Financial Services Limited",
+  "symbol": "JIOFIN.BO",
   "via": "search"
  },
  "jpmorgan": {
@@ -409,6 +459,11 @@
   "symbol": "MU",
   "via": "search"
  },
+ "mideast": {
+  "ok": false,
+  "resolved_at": "2026-07-16T06:07:23.234650+00:00",
+  "via": "no-acceptable-match"
+ },
  "milky mist": {
   "ok": false,
   "resolved_at": "2026-07-10T12:40:15.314492+00:00",
@@ -478,6 +533,11 @@
   "shortname": "PayPal Holdings, Inc.",
   "symbol": "PYPL",
   "via": "search"
+ },
+ "paytm": {
+  "ok": false,
+  "resolved_at": "2026-07-16T06:07:23.351798+00:00",
+  "via": "no-acceptable-match"
  },
  "pc jeweller": {
   "cls": "equity",
@@ -593,6 +653,11 @@
   "shortname": "TeraWulf Inc.",
   "symbol": "WULF",
   "via": "search"
+ },
+ "they": {
+  "ok": false,
+  "resolved_at": "2026-07-16T06:07:22.631759+00:00",
+  "via": "no-acceptable-match"
  },
  "titan": {
   "ok": false,
