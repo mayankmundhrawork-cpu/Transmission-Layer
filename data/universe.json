@@ -1,5 +1,66 @@
 {
  "candidates": {
+  "$AAPL": {
+   "display": "AAPL",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "APPLE CLOSES IN ON NVIDIA $AAPL is on the verge of reclaiming the title of the world\u2019s most valuable company, with a market value nearing $4.9T as $NVDA slips. The race highlights a shift in the AI trade. Investors are increasingly betting on Apple\u2019s ability to monetize AI",
+     "ts": "2026-07-17T13:38:22+00:00"
+    },
+    {
+     "feed": "DeItaone",
+     "title": "APPLE SURPASSES NVIDIA TO BECOME WORLD'S MOST VALUABLE COMPANY $AAPL $NVDA",
+     "ts": "2026-07-17T13:38:23+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 2.0,
+   "ticker_hint": "AAPL"
+  },
+  "$NVDA": {
+   "display": "NVDA",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "APPLE CLOSES IN ON NVIDIA $AAPL is on the verge of reclaiming the title of the world\u2019s most valuable company, with a market value nearing $4.9T as $NVDA slips. The race highlights a shift in the AI trade. Investors are increasingly betting on Apple\u2019s ability to monetize AI",
+     "ts": "2026-07-17T13:38:22+00:00"
+    },
+    {
+     "feed": "DeItaone",
+     "title": "APPLE SURPASSES NVIDIA TO BECOME WORLD'S MOST VALUABLE COMPANY $AAPL $NVDA",
+     "ts": "2026-07-17T13:38:23+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 2.0,
+   "ticker_hint": "NVDA"
+  },
+  "$SKHX": {
+   "display": "SKHX",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SKHY \u2013 SK HYNIX DOWN 0.7% IN PREMARKET SK Hynix shares are slipping 0.7% in premarket after a 13.7% decline in Thursday\u2019s session. Leverage Shares recently launched $SKHX, a 2x leveraged ETF tied to SK Hynix. The fund seeks to deliver 2x the stock\u2019s daily performance and",
+     "ts": "2026-07-17T13:18:40+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0,
+   "ticker_hint": "SKHX"
+  },
   "aapl apple hsbc": {
    "display": "AAPL APPLE INC HSBC",
    "evidence": [
@@ -14,7 +75,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "abakkus helios": {
    "display": "Abakkus Helios",
@@ -30,7 +91,7 @@
    ],
    "first_seen": "2026-07-17T06:07:02.999106+00:00",
    "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.8649
   },
   "abb india": {
    "display": "ABB India",
@@ -51,7 +112,7 @@
    ],
    "first_seen": "2026-07-16T06:07:21.526527+00:00",
    "last_seen": "2026-07-16T11:15:15.587204+00:00",
-   "score": 1.4707
+   "score": 1.4078
   },
   "accelerate global expansion": {
    "display": "Accelerate Global Expansion",
@@ -67,7 +128,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "adani current price": {
    "display": "Adani Enterprises Current Price",
@@ -83,7 +144,7 @@
    ],
    "first_seen": "2026-07-17T06:07:02.999106+00:00",
    "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.8649
   },
   "adani ent share price": {
    "display": "Adani Ent Share Price",
@@ -99,7 +160,7 @@
    ],
    "first_seen": "2026-07-17T06:07:02.999106+00:00",
    "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.8649
   },
   "ahead of market": {
    "display": "Ahead of Market",
@@ -135,7 +196,23 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-15T21:34:31.299200+00:00",
-   "score": 2.3578
+   "score": 2.257
+  },
+  "ai driven": {
+   "display": "AI-driven",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "CHIP STOCKS HIT HARD U.S. semiconductor stocks are heading for their worst week in over 15 months, with the Philadelphia Semiconductor Index down 12.5%. Investors are questioning the strength of the AI-driven rally after China\u2019s Moonshot unveiled a powerful open AI model.",
+     "ts": "2026-07-17T14:13:24+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "ajit mishra of religare": {
    "display": "Ajit Mishra of Religare",
@@ -151,7 +228,7 @@
    ],
    "first_seen": "2026-07-17T06:07:02.999106+00:00",
    "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.8649
   },
   "alphabet": {
    "display": "Alphabet",
@@ -173,7 +250,7 @@
    ],
    "first_seen": "2026-07-16T16:52:08.496314+00:00",
    "last_seen": "2026-07-16T21:48:15.481631+00:00",
-   "score": 1.6293
+   "score": 1.5597
   },
   "alpine texworld ipo day": {
    "display": "Alpine Texworld IPO Day",
@@ -195,23 +272,23 @@
    ],
    "first_seen": "2026-07-15T10:31:04.957749+00:00",
    "last_seen": "2026-07-16T06:07:21.526527+00:00",
-   "score": 1.3109
+   "score": 1.2549
   },
-  "alpine texworld ipo focus": {
-   "display": "Alpine Texworld IPO Focus",
+  "amazon zoox unit recalls": {
+   "display": "AMAZON ZOOX UNIT RECALLS",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Alpine Texworld IPO: Focus shifts to allotment date. Latest GMP, step-by-step guide to check status",
-     "ts": "2026-07-17T03:04:06+00:00"
+     "feed": "DeItaone",
+     "title": "AMAZON ZOOX UNIT RECALLS SELF-DRIVING VEHICLES BECAUSE THEY MAY NOT DETECT, RESPOND TO HEAVY SMOKE",
+     "ts": "2026-07-17T12:53:17+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "angel one": {
    "display": "Angel One",
@@ -233,60 +310,39 @@
    ],
    "first_seen": "2026-07-16T06:07:21.526527+00:00",
    "last_seen": "2026-07-16T16:52:08.496314+00:00",
-   "score": 1.5125
+   "score": 1.4478
   },
-  "anthropic": {
-   "display": "Anthropic",
+  "anthropic last down": {
+   "display": "ANTHROPIC LAST DOWN",
    "evidence": [
     {
-     "feed": "BusinessLine Mkts",
-     "title": "LTTS shares jump as Q1 profit and revenue rise, Anthropic partnership",
-     "ts": "2026-07-15T10:42:00+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "LTTS shares jump over 9% as Q1 profit and revenue rise, Anthropic partnership",
-     "ts": "2026-07-15T07:07:37+00:00"
+     "feed": "DeItaone",
+     "title": "META SHARES PARE LOSSES AFTER REPORT OF POTENTIAL $10 BILLION COMPUTING POWER DEAL WITH ANTHROPIC; LAST DOWN 3.2%",
+     "ts": "2026-07-17T16:33:20+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-15T10:31:04.957749+00:00",
-   "last_seen": "2026-07-15T16:53:55.324692+00:00",
-   "score": 1.2252
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
-  "apollo hospital s price movement": {
-   "display": "Apollo Hospital's Price Movement",
+  "apple closes": {
+   "display": "APPLE CLOSES",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Apollo Hospital Share Price Live Updates: Apollo Hospital's Price Movement Today",
-     "ts": "2026-07-17T02:55:40+00:00"
+     "feed": "DeItaone",
+     "title": "APPLE CLOSES IN ON NVIDIA $AAPL is on the verge of reclaiming the title of the world\u2019s most valuable company, with a market value nearing $4.9T as $NVDA slips. The race highlights a shift in the AI trade. Investors are increasingly betting on Apple\u2019s ability to monetize AI",
+     "ts": "2026-07-17T13:38:22+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "apollo hospital share price": {
-   "display": "Apollo Hospital Share Price",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Apollo Hospital Share Price Live Updates: Apollo Hospital's Price Movement Today",
-     "ts": "2026-07-17T02:55:40+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "apple shares up premarket": {
    "display": "APPLE SHARES UP PREMARKET",
@@ -302,6 +358,22 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "apple surpasses nvidia": {
+   "display": "APPLE SURPASSES NVIDIA",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "APPLE SURPASSES NVIDIA TO BECOME WORLD'S MOST VALUABLE COMPANY $AAPL $NVDA",
+     "ts": "2026-07-17T13:38:23+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "apply": {
@@ -338,7 +410,7 @@
    ],
    "first_seen": "2026-07-14T08:31:09.436955+00:00",
    "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 4.3729
+   "score": 4.186
   },
   "armenia": {
    "display": "Armenia",
@@ -354,7 +426,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "arpu": {
    "display": "ARPU",
@@ -370,7 +442,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "ashish kacholia": {
    "display": "Ashish Kacholia",
@@ -391,39 +463,23 @@
    ],
    "first_seen": "2026-07-14T08:31:09.436955+00:00",
    "last_seen": "2026-07-15T10:31:04.957749+00:00",
-   "score": 1.0561
+   "score": 1.011
   },
-  "axis bank share price": {
-   "display": "Axis Bank Share Price",
+  "attacked tanker": {
+   "display": "ATTACKED TANKER",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Axis Bank Share Price Live Updates: Axis Bank Stock Details",
-     "ts": "2026-07-17T02:56:33+00:00"
+     "feed": "DeItaone",
+     "title": "XOM - SOURCES TELL REUTERS THAT ATTACKED TANKER WAS CHARTERED BY EXXONMOBIL",
+     "ts": "2026-07-17T13:33:04+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "axis bank stock details": {
-   "display": "Axis Bank Stock Details",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Axis Bank Share Price Live Updates: Axis Bank Stock Details",
-     "ts": "2026-07-17T02:56:33+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "baghdad bets": {
    "display": "Baghdad Bets",
@@ -439,7 +495,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "bahrain": {
    "display": "BAHRAIN",
@@ -455,39 +511,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
-  },
-  "bajaj finance price movement": {
-   "display": "Bajaj Finance Price Movement",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Bajaj Finance Share Price Live Updates: Bajaj Finance Price Movement",
-     "ts": "2026-07-17T02:50:07+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "bajaj finance share price": {
-   "display": "Bajaj Finance Share Price",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Bajaj Finance Share Price Live Updates: Bajaj Finance Price Movement",
-     "ts": "2026-07-17T02:50:07+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.9017
   },
   "bajaj life s cio": {
    "display": "Bajaj Life's CIO",
@@ -503,39 +527,39 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
-  "bank": {
-   "display": "Bank",
+  "bbl highest since": {
+   "display": "BBL HIGHEST SINCE",
    "evidence": [
     {
-     "feed": "BusinessLine Mkts",
-     "title": "Bank earnings ahead: What to look out for amid margin boost hopes, leadership changes?",
-     "ts": "2026-07-17T04:43:26+00:00"
+     "feed": "DeItaone",
+     "title": "U.S. CRUDE FUTURES RISE OVER 3% TO $81.64/BBL, HIGHEST SINCE JUNE 15",
+     "ts": "2026-07-17T13:18:41+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
-  "bhel cdsl": {
-   "display": "BHEL CDSL",
+  "become world s": {
+   "display": "BECOME WORLD'S",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Stocks to buy for short term: BHEL, CDSL among 3 stocks Ajit Mishra of Religare Broking recommends for next 1-2 weeks",
-     "ts": "2026-07-17T04:52:14+00:00"
+     "feed": "DeItaone",
+     "title": "APPLE SURPASSES NVIDIA TO BECOME WORLD'S MOST VALUABLE COMPANY $AAPL $NVDA",
+     "ts": "2026-07-17T13:38:23+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "bhel s": {
    "display": "BHEL's",
@@ -551,23 +575,23 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
-  "biggest weekly surge since": {
-   "display": "Biggest Weekly Surge Since",
+  "bill": {
+   "display": "BILL",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "Oil Prices Set for Biggest Weekly Surge Since April as Iran War Escalates",
-     "ts": "2026-07-17T05:41:26+00:00"
+     "feed": "DeItaone",
+     "title": "US BILL WOULD TARIFF TOP 5 PURCHASERS OF RUSSIAN OIL SENATORS RELEASE TEXT OF BILL TO SANCTION RUSSIA OIL BUYERS",
+     "ts": "2026-07-17T13:28:36+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "black sea": {
    "display": "BLACK SEA",
@@ -583,6 +607,22 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "bofa": {
+   "display": "BofA",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Chip stocks have entered a bear market. A BofA analyst says not to panic.",
+     "ts": "2026-07-17T20:49:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "bonus": {
@@ -604,23 +644,7 @@
    ],
    "first_seen": "2026-07-15T10:31:04.957749+00:00",
    "last_seen": "2026-07-16T06:07:21.526527+00:00",
-   "score": 1.3109
-  },
-  "boost": {
-   "display": "Boost",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "India, South Africa To Boost Their Strategic Petroleum Reserves",
-     "ts": "2026-07-16T22:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 1.2549
   },
   "boss scam": {
    "display": "Boss Scam'",
@@ -636,39 +660,23 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "bp conocophillips partner": {
+   "display": "BP ConocoPhillips Partner",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "BP, ConocoPhillips Partner In Iraq\u2019s Giant Oilfield",
+     "ts": "2026-07-17T17:30:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
-  },
-  "bpcl moves above day": {
-   "display": "BPCL Moves Above Day",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "BPCL Share Price Live Updates: BPCL Moves Above 100-Day EMA",
-     "ts": "2026-07-17T02:55:41+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "bpcl share price": {
-   "display": "BPCL Share Price",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "BPCL Share Price Live Updates: BPCL Moves Above 100-Day EMA",
-     "ts": "2026-07-17T02:55:41+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
   },
   "breakout": {
    "display": "Breakout",
@@ -689,23 +697,23 @@
    ],
    "first_seen": "2026-07-16T06:07:21.526527+00:00",
    "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 1.6207
+   "score": 1.5514
   },
-  "bse nse kfin tech": {
-   "display": "BSE NSE KFin Tech",
+  "brent gains": {
+   "display": "Brent Gains",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "SBI Funds Management IPO allotment likely today. GMP, steps to check share allotment status on BSE, NSE, KFin Tech",
-     "ts": "2026-07-17T04:28:38+00:00"
+     "feed": "OilPrice",
+     "title": "US Oil Drilling Picks Up As Brent Gains 4%",
+     "ts": "2026-07-17T17:27:07+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "OilPrice"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "bse sme ipo": {
    "display": "BSE SME IPO",
@@ -731,23 +739,7 @@
    ],
    "first_seen": "2026-07-14T08:31:09.436955+00:00",
    "last_seen": "2026-07-16T11:15:15.587204+00:00",
-   "score": 1.7164
-  },
-  "bushehr": {
-   "display": "BUSHEHR",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "EXPLOSIONS HEARD IN BUSHEHR IN SOUTHERN IRAN - IRNA",
-     "ts": "2026-07-16T19:38:37+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 1.643
   },
   "buyer": {
    "display": "Buyer",
@@ -763,7 +755,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "cabinet": {
    "display": "Cabinet",
@@ -784,7 +776,7 @@
    ],
    "first_seen": "2026-07-16T11:15:15.587204+00:00",
    "last_seen": "2026-07-16T16:52:08.496314+00:00",
-   "score": 1.5487
+   "score": 1.4825
   },
   "caliber mining and logistics": {
    "display": "Caliber Mining and Logistics",
@@ -800,23 +792,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
-  },
-  "caliber mining ipo day": {
-   "display": "Caliber Mining IPO Day",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Caliber Mining IPO Day 1: GMP, subscription status, review, other details. Apply or not?",
-     "ts": "2026-07-17T04:24:39+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.9573
   },
   "caliber mining logistics ipo": {
    "display": "Caliber Mining Logistics IPO",
@@ -837,23 +813,23 @@
    ],
    "first_seen": "2026-07-17T06:07:02.999106+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 1.8455
+   "score": 1.7666
   },
-  "caliber mining s rs": {
-   "display": "Caliber Mining's Rs",
+  "centcom": {
+   "display": "CENTCOM",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Abakkus, Helios back Caliber Mining's Rs 135-crore anchor book ahead of IPO",
-     "ts": "2026-07-17T02:50:22+00:00"
+     "feed": "DeItaone",
+     "title": "IRAN WARNS U.S. FORCES Iran\u2019s Revolutionary Guard said it is closely monitoring U.S. military movements in the region, warning that American forces are approaching the \u201czero hour\u201d for potential operations against CENTCOM naval units. The statement ended with a stark message:",
+     "ts": "2026-07-17T14:48:22+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "central bank of india": {
    "display": "Central Bank of India",
@@ -869,23 +845,39 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
-  "chandan taparia of motilal": {
-   "display": "Chandan Taparia of Motilal",
+  "chah bahar shahid kalantari": {
+   "display": "CHAH BAHAR SHAHID KALANTARI",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Shares to buy or sell: Chandan Taparia of Motilal Oswal recommends three stocks to buy today - 17 July 2026",
-     "ts": "2026-07-17T02:41:07+00:00"
+     "feed": "DeItaone",
+     "title": "U.S. MILITARY: ON JULY 16, U.S. FORCES SUCCESSFULLY DESTROYED THE CHAH BAHAR SHAHID KALANTARI PORT SURVEILLANCE TOWER",
+     "ts": "2026-07-17T14:38:27+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "chartered by exxonmobil": {
+   "display": "CHARTERED BY EXXONMOBIL",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "XOM - SOURCES TELL REUTERS THAT ATTACKED TANKER WAS CHARTERED BY EXXONMOBIL",
+     "ts": "2026-07-17T13:33:04+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "check gmp": {
    "display": "Check GMP",
@@ -916,7 +908,7 @@
    ],
    "first_seen": "2026-07-15T10:31:04.957749+00:00",
    "last_seen": "2026-07-16T11:15:15.587204+00:00",
-   "score": 2.6957
+   "score": 2.5805
   },
   "china have begun": {
    "display": "CHINA HAVE BEGUN",
@@ -937,7 +929,7 @@
    ],
    "first_seen": "2026-07-14T21:34:50.456553+00:00",
    "last_seen": "2026-07-14T21:34:50.456553+00:00",
-   "score": 1.0485
+   "score": 1.0037
   },
   "china seeks long term lng": {
    "display": "China Seeks Long-Term LNG",
@@ -953,6 +945,38 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "chip": {
+   "display": "Chip",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Chip stocks have entered a bear market. A BofA analyst says not to panic.",
+     "ts": "2026-07-17T20:49:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "chip stocks hit hard": {
+   "display": "CHIP STOCKS HIT HARD",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "CHIP STOCKS HIT HARD U.S. semiconductor stocks are heading for their worst week in over 15 months, with the Philadelphia Semiconductor Index down 12.5%. Investors are questioning the strength of the AI-driven rally after China\u2019s Moonshot unveiled a powerful open AI model.",
+     "ts": "2026-07-17T14:13:24+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "chipmakers": {
@@ -969,7 +993,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "chips take": {
    "display": "CHIPS TAKE",
@@ -985,7 +1009,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "chris wood": {
    "display": "Chris Wood",
@@ -1001,7 +1025,55 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
+  },
+  "coast of chiapas mexico": {
+   "display": "COAST OF CHIAPAS MEXICO",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "US TSUNAMI WARNING SYSTEM- TSUNAMI THREAT AFTER MAGNITUDE 7.4 EARTHQUAKE NEAR THE COAST OF CHIAPAS MEXICO",
+     "ts": "2026-07-17T15:03:18+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "colombia s": {
+   "display": "Colombia's",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Colombia's New Government Prepares Fossil Fuel Comeback",
+     "ts": "2026-07-17T20:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "confirmed": {
+   "display": "Confirmed",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "HORMUZ TRAFFIC HITS 3-WEEK LOW Confirmed crossings via the Strait of Hormuz dropped to a 3-week low on 16 July, with just 8 recorded, according to Kpler. For the fourth consecutive day, traffic remained heavily concentrated on the Iranian route, which accounted for 7 of the 8",
+     "ts": "2026-07-17T11:43:35+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "crisil": {
    "display": "CRISIL",
@@ -1017,7 +1089,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "crude posts biggest weekly": {
    "display": "Crude Posts Biggest Weekly",
@@ -1033,23 +1105,39 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
-  "cxmt ipo": {
-   "display": "CXMT IPO",
+  "cut oil consumption": {
+   "display": "Cut Oil Consumption",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Global Market: China stocks face steep weekly losses as CXMT IPO sparks liquidity crunch fears",
-     "ts": "2026-07-17T05:42:30+00:00"
+     "feed": "OilPrice",
+     "title": "India Proposes Stricter Vehicle Emission Rules To Cut Oil Consumption",
+     "ts": "2026-07-17T18:30:00+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "OilPrice"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "cyclospora outbreak blaw": {
+   "display": "CYCLOSPORA OUTBREAK BLAW",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "TACO BELL FRANCHISEE SUED OVER CYCLOSPORA OUTBREAK: BLAW",
+     "ts": "2026-07-17T13:18:42+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "day niis": {
    "display": "Day NIIs",
@@ -1080,55 +1168,7 @@
    ],
    "first_seen": "2026-07-14T10:27:01.725183+00:00",
    "last_seen": "2026-07-15T16:53:55.324692+00:00",
-   "score": 2.1968
-  },
-  "deal": {
-   "display": "DEAL",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "WHITE HOUSE: IRAN CONTINUES TO TALK TO U.S., WANTS TO MAKE A DEAL",
-     "ts": "2026-07-16T17:53:20+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "deepfake": {
-   "display": "Deepfake",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Deepfake scam rattles Sky Gold as subsidiary suffers Rs 11 crore loss after unauthorised fund transfer",
-     "ts": "2026-07-17T03:48:21+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "delhi mumbai kolkata bengaluru": {
-   "display": "Delhi Mumbai Kolkata Bengaluru",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Today\u2019s Gold Rate in India July 17: Gold prices down in Delhi, Mumbai, Kolkata, Bengaluru, Ahmedabad",
-     "ts": "2026-07-17T05:03:53+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 2.1029
   },
   "details": {
    "display": "Details",
@@ -1164,7 +1204,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-16T11:15:15.587204+00:00",
-   "score": 1.6706
+   "score": 1.5992
   },
   "dixon tech": {
    "display": "Dixon Tech",
@@ -1186,7 +1226,7 @@
    ],
    "first_seen": "2026-07-16T06:07:21.526527+00:00",
    "last_seen": "2026-07-16T11:15:15.587204+00:00",
-   "score": 1.4707
+   "score": 1.4078
   },
   "does": {
    "display": "Does",
@@ -1202,11 +1242,16 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "dow jones nasdaq s&p": {
    "display": "Dow Jones Nasdaq S&P",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today | Highlights: S&P 500 and Nasdaq slip as chip rout extends; Netflix slides",
+     "ts": "2026-07-17T12:17:31+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today | Live: S&P 500 and Nasdaq slip as chip rout extends; Netflix slides",
@@ -1226,51 +1271,14 @@
      "feed": "ET Markets",
      "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today | Highlights: US stocks end higher on cool inflation data, strong earnings",
      "ts": "2026-07-15T12:16:47+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today | Live: US stocks edge lower as declines hit major indexes; SpaceX shares fall",
-     "ts": "2026-07-15T12:16:47+00:00"
     }
    ],
    "feeds": [
     "ET Markets"
    ],
    "first_seen": "2026-07-08T17:14:16.367541+00:00",
-   "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 7.4447
-  },
-  "dr reddys faces downward": {
-   "display": "Dr. Reddys Faces Downward",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Dr Reddys Share Price Live Updates: Dr. Reddys Faces Downward Price Breakout",
-     "ts": "2026-07-17T02:56:52+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "dr reddys share price": {
-   "display": "Dr Reddys Share Price",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Dr Reddys Share Price Live Updates: Dr. Reddys Faces Downward Price Breakout",
-     "ts": "2026-07-17T02:56:52+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 8.1265
   },
   "drone attack tasnim": {
    "display": "DRONE ATTACK TASNIM",
@@ -1286,7 +1294,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "echostar": {
    "display": "EchoStar",
@@ -1302,6 +1310,22 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "energy": {
+   "display": "Energy",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Look on the bright side: Energy companies are booming",
+     "ts": "2026-07-17T21:08:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "ericsson": {
@@ -1324,23 +1348,7 @@
    ],
    "first_seen": "2026-07-14T08:31:09.436955+00:00",
    "last_seen": "2026-07-14T10:27:01.725183+00:00",
-   "score": 0.9332
-  },
-  "etmarkets smart talk india": {
-   "display": "ETMarkets Smart Talk India",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "ETMarkets Smart Talk | India\u2019s indirect AI play could create wealth in power, data centres and capital goods: Hiren Ved",
-     "ts": "2026-07-17T03:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.8933
   },
   "expert": {
    "display": "Expert",
@@ -1376,23 +1384,23 @@
    ],
    "first_seen": "2026-07-10T12:40:14.184302+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 2.7783
+   "score": 2.6595
   },
-  "explosions heard": {
-   "display": "EXPLOSIONS HEARD",
+  "fast feed of president": {
+   "display": "FAST FEED OF PRESIDENT",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "EXPLOSIONS HEARD IN BUSHEHR IN SOUTHERN IRAN - IRNA",
-     "ts": "2026-07-16T19:38:37+00:00"
+     "title": "TRUMP MEDIA PITCHED $100,000 MONTHLY FEE FOR FAST FEED OF PRESIDENT\u2019S POSTS - FT",
+     "ts": "2026-07-17T16:33:19+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "federal bank": {
    "display": "Federal Bank",
@@ -1414,7 +1422,7 @@
    ],
    "first_seen": "2026-07-17T06:07:02.999106+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.9035
+   "score": 1.8221
   },
   "federal bank central bank": {
    "display": "Federal Bank Central Bank",
@@ -1435,7 +1443,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.942
+   "score": 1.859
   },
   "federal bank q results": {
    "display": "Federal Bank Q Results",
@@ -1451,7 +1459,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "fifa world cup": {
    "display": "Fifa World Cup",
@@ -1472,7 +1480,7 @@
    ],
    "first_seen": "2026-07-14T08:31:09.436955+00:00",
    "last_seen": "2026-07-14T10:27:01.725183+00:00",
-   "score": 0.9332
+   "score": 0.8933
   },
   "fiis": {
    "display": "FIIs",
@@ -1508,39 +1516,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 5.3376
-  },
-  "fiis and diis": {
-   "display": "FIIs and DIIs",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "FIIs and DIIs are betting on these three stocks. Here's why",
-     "ts": "2026-07-17T02:30:31+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "flying": {
-   "display": "Flying",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "The No.1 Commodity Story of the Year Is Flying Under Wall Street\u2019s Radar",
-     "ts": "2026-07-17T00:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 5.1094
   },
   "forecasts q revenue": {
    "display": "CO FORECASTS Q REVENUE",
@@ -1556,7 +1532,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "foreign": {
    "display": "Foreign",
@@ -1577,7 +1553,7 @@
    ],
    "first_seen": "2026-07-17T06:07:02.999106+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 1.8455
+   "score": 1.7666
   },
   "geopolitical risk premium returns": {
    "display": "Geopolitical Risk Premium Returns",
@@ -1593,7 +1569,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "ghk hospitality": {
    "display": "GHK Hospitality",
@@ -1615,23 +1591,23 @@
    ],
    "first_seen": "2026-07-16T11:15:15.587204+00:00",
    "last_seen": "2026-07-16T16:52:08.496314+00:00",
-   "score": 1.5487
+   "score": 1.4825
   },
-  "gift nifty us": {
-   "display": "Gift Nifty US",
+  "giant oilfield": {
+   "display": "Giant Oilfield",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "From Gift Nifty, US chip stocks selloff to oil prices: 10 key things that changed for Indian stock market overnight",
-     "ts": "2026-07-17T01:48:02+00:00"
+     "feed": "OilPrice",
+     "title": "BP, ConocoPhillips Partner In Iraq\u2019s Giant Oilfield",
+     "ts": "2026-07-17T17:30:00+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "OilPrice"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "global market": {
    "display": "Global Market",
@@ -1647,7 +1623,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "global market ai": {
    "display": "Global Market AI",
@@ -1673,7 +1649,7 @@
    ],
    "first_seen": "2026-07-13T13:08:01.665451+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 1.7878
+   "score": 1.7114
   },
   "global market china": {
    "display": "Global Market China",
@@ -1709,23 +1685,7 @@
    ],
    "first_seen": "2026-07-15T10:31:04.957749+00:00",
    "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 3.748
-  },
-  "global market cxmt s": {
-   "display": "Global Market CXMT's",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Global Market: CXMT's $8.6 billion IPO draws strong retail demand, but investor caution persists",
-     "ts": "2026-07-17T05:24:17+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 3.5878
   },
   "global market ecb": {
    "display": "Global Market ECB",
@@ -1741,7 +1701,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "global market euro": {
    "display": "Global Market Euro",
@@ -1757,7 +1717,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "global market european": {
    "display": "Global Market European",
@@ -1793,7 +1753,7 @@
    ],
    "first_seen": "2026-07-08T11:23:05.666954+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 3.5947
+   "score": 3.441
   },
   "global market japan": {
    "display": "Global Market Japan",
@@ -1829,7 +1789,7 @@
    ],
    "first_seen": "2026-07-07T19:12:33.086553+00:00",
    "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 2.2832
+   "score": 2.1856
   },
   "global market south korea s": {
    "display": "Global Market South Korea's",
@@ -1845,7 +1805,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "global market tsmc": {
    "display": "Global Market TSMC",
@@ -1866,71 +1826,39 @@
    ],
    "first_seen": "2026-07-16T06:07:21.526527+00:00",
    "last_seen": "2026-07-16T11:15:15.587204+00:00",
-   "score": 1.4707
+   "score": 1.4078
   },
-  "gmp check": {
-   "display": "GMP Check",
+  "gone": {
+   "display": "Gone",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Caliber Mining & Logistics IPO opens today with 25% GMP; Check price band, and key details",
-     "ts": "2026-07-17T03:31:25+00:00"
+     "feed": "OilPrice",
+     "title": "Jeff Currie: Illusion of Oil Abundance Is Gone",
+     "ts": "2026-07-17T16:30:00+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "OilPrice"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
-  "gold rate": {
-   "display": "Gold Rate",
+  "government prepares fossil fuel": {
+   "display": "Government Prepares Fossil Fuel",
    "evidence": [
     {
-     "feed": "BusinessLine Mkts",
-     "title": "Today\u2019s Gold Rate in India July 17: Gold prices down in Delhi, Mumbai, Kolkata, Bengaluru, Ahmedabad",
-     "ts": "2026-07-17T05:03:53+00:00"
+     "feed": "OilPrice",
+     "title": "Colombia's New Government Prepares Fossil Fuel Comeback",
+     "ts": "2026-07-17T20:00:00+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "OilPrice"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "grasim": {
-   "display": "Grasim Industries",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Grasim Inds Share Price Live Updates: Grasim Industries sees a modest uptick in price",
-     "ts": "2026-07-17T03:06:02+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "grasim inds share price": {
-   "display": "Grasim Inds Share Price",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Grasim Inds Share Price Live Updates: Grasim Industries sees a modest uptick in price",
-     "ts": "2026-07-17T03:06:02+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "groww": {
    "display": "Groww",
@@ -1946,23 +1874,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
-  },
-  "guardian life insurance": {
-   "display": "Guardian Life Insurance",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "HCL Tech shares rise 3% after signing 7-year deal with Guardian Life Insurance",
-     "ts": "2026-07-17T03:21:53+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.9017
   },
   "havells india": {
    "display": "Havells India",
@@ -1983,39 +1895,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.942
-  },
-  "hcl tech": {
-   "display": "HCL Tech",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "HCL Tech shares rise 3% after signing 7-year deal with Guardian Life Insurance",
-     "ts": "2026-07-17T03:21:53+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "hdfc amc": {
-   "display": "HDFC AMC",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "HDFC AMC among 5 F&O stocks with a sharp rise in futures open interest",
-     "ts": "2026-07-17T04:40:09+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 1.859
   },
   "hdfc amc q results": {
    "display": "HDFC AMC Q Results",
@@ -2037,7 +1917,7 @@
    ],
    "first_seen": "2026-07-15T10:31:04.957749+00:00",
    "last_seen": "2026-07-15T16:53:55.324692+00:00",
-   "score": 1.2252
+   "score": 1.1728
   },
   "hdfc bank axis bank": {
    "display": "HDFC Bank Axis Bank",
@@ -2053,7 +1933,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "hdfc life insurance buy": {
    "display": "HDFC Life Insurance Buy",
@@ -2069,7 +1949,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "hdfc mutual fund": {
    "display": "HDFC Mutual Fund",
@@ -2085,6 +1965,22 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "heavy smoke": {
+   "display": "HEAVY SMOKE",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "AMAZON ZOOX UNIT RECALLS SELF-DRIVING VEHICLES BECAUSE THEY MAY NOT DETECT, RESPOND TO HEAVY SMOKE",
+     "ts": "2026-07-17T12:53:17+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "highlights jsw steel": {
@@ -2101,6 +1997,22 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "highlights s&p and nasdaq": {
+   "display": "Highlights S&P and Nasdaq",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today | Highlights: S&P 500 and Nasdaq slip as chip rout extends; Netflix slides",
+     "ts": "2026-07-17T12:17:31+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "hike retail gasoline and": {
@@ -2117,55 +2029,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
-  },
-  "hindalco s price movement signals": {
-   "display": "Hindalco's Price Movement Signals",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Hindalco Share Price Live Updates: Hindalco's Price Movement Signals Weakness",
-     "ts": "2026-07-17T02:55:06+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "hindalco share price": {
-   "display": "Hindalco Share Price",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Hindalco Share Price Live Updates: Hindalco's Price Movement Signals Weakness",
-     "ts": "2026-07-17T02:55:06+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "hiren ved": {
-   "display": "Hiren Ved",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "ETMarkets Smart Talk | India\u2019s indirect AI play could create wealth in power, data centres and capital goods: Hiren Ved",
-     "ts": "2026-07-17T03:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.9573
   },
   "hit semiconductors": {
    "display": "HIT Semiconductors",
@@ -2181,7 +2045,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "hold raises target price": {
    "display": "HOLD RAISES TARGET PRICE",
@@ -2197,7 +2061,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "hormuz disruptions persist": {
    "display": "Hormuz Disruptions Persist",
@@ -2213,6 +2077,22 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "hormuz traffic hits": {
+   "display": "HORMUZ TRAFFIC HITS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "HORMUZ TRAFFIC HITS 3-WEEK LOW Confirmed crossings via the Strait of Hormuz dropped to a 3-week low on 16 July, with just 8 recorded, according to Kpler. For the fourth consecutive day, traffic remained heavily concentrated on the Iranian route, which accounted for 7 of the 8",
+     "ts": "2026-07-17T11:43:35+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "houthis eye red sea": {
@@ -2229,7 +2109,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "however": {
    "display": "However",
@@ -2250,7 +2130,7 @@
    ],
    "first_seen": "2026-07-14T21:34:50.456553+00:00",
    "last_seen": "2026-07-14T21:34:50.456553+00:00",
-   "score": 1.0485
+   "score": 1.0037
   },
   "hsbc raises": {
    "display": "HSBC RAISES",
@@ -2266,71 +2146,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
-  },
-  "hul s current market price": {
-   "display": "HUL's Current Market Price",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "HUL Share Price Live Updates: HUL's Current Market Price",
-     "ts": "2026-07-17T03:00:30+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "hul share price": {
-   "display": "HUL Share Price",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "HUL Share Price Live Updates: HUL's Current Market Price",
-     "ts": "2026-07-17T03:00:30+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "iifl finance": {
-   "display": "IIFL Finance",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "IIFL Finance among 3 stocks flashing bullish signals, hinting at a possible uptrend",
-     "ts": "2026-07-17T03:14:48+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "iifl finance srf hle": {
-   "display": "IIFL Finance SRF HLE",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Rajesh Palviya of Axis Sec suggests IIFL Finance, SRF, HLE Glascoat shares to buy today",
-     "ts": "2026-07-17T04:21:35+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.9573
   },
   "import": {
    "display": "Import",
@@ -2346,7 +2162,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "incident nm south of": {
    "display": "INCIDENT NM SOUTH OF",
@@ -2362,6 +2178,22 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "india proposes stricter vehicle": {
+   "display": "India Proposes Stricter Vehicle",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "India Proposes Stricter Vehicle Emission Rules To Cut Oil Consumption",
+     "ts": "2026-07-17T18:30:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "india s": {
@@ -2378,23 +2210,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
-  },
-  "india south africa": {
-   "display": "India South Africa",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "India, South Africa To Boost Their Strategic Petroleum Reserves",
-     "ts": "2026-07-16T22:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.9573
   },
   "indian gas exchange": {
    "display": "Indian Gas Exchange",
@@ -2415,7 +2231,23 @@
    ],
    "first_seen": "2026-07-15T10:31:04.957749+00:00",
    "last_seen": "2026-07-15T16:53:55.324692+00:00",
-   "score": 1.2252
+   "score": 1.1728
+  },
+  "industrial production rises m": {
+   "display": "INDUSTRIAL PRODUCTION RISES M",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "US JUNE INDUSTRIAL PRODUCTION RISES 0.1% M/M; EST. +0.2%",
+     "ts": "2026-07-17T13:23:26+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "infosys tcs": {
    "display": "Infosys TCS",
@@ -2431,7 +2263,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "infosys tcs hcl": {
    "display": "Infosys TCS HCL Technologies",
@@ -2447,23 +2279,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
-  },
-  "infosys tcs hcl tech": {
-   "display": "Infosys TCS HCL Tech",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Infosys, TCS, HCL Tech, other IT stocks rally up to 3%. 2 major reasons why",
-     "ts": "2026-07-17T05:25:44+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.9017
   },
   "invest": {
    "display": "INVEST",
@@ -2484,23 +2300,7 @@
    ],
    "first_seen": "2026-07-14T21:34:50.456553+00:00",
    "last_seen": "2026-07-14T21:34:50.456553+00:00",
-   "score": 1.0485
-  },
-  "investors": {
-   "display": "Investors",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Investors are watching Jio but Mukesh Ambani-led RIL\u2019s Q1 surprise may come from refining",
-     "ts": "2026-07-17T03:52:09+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 1.0037
   },
   "ipo drhp": {
    "display": "IPO DRHP",
@@ -2516,7 +2316,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "iran expands oil chokepoint": {
    "display": "Iran Expands Oil Chokepoint",
@@ -2532,7 +2332,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "iran linked lpg tankers turn": {
    "display": "Iran-Linked LPG Tankers Turn",
@@ -2548,7 +2348,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "iran s deputy foreign minister": {
    "display": "IRAN'S DEPUTY FOREIGN MINISTER",
@@ -2574,7 +2374,7 @@
    ],
    "first_seen": "2026-07-15T00:11:00.154078+00:00",
    "last_seen": "2026-07-15T00:11:00.154078+00:00",
-   "score": 1.6127
+   "score": 1.5438
   },
   "iran s irgc say they": {
    "display": "IRAN'S IRGC SAY THEY",
@@ -2595,23 +2395,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.942
-  },
-  "iran s semi official tasnim says": {
-   "display": "IRAN'S SEMI-OFFICIAL TASNIM SAYS",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "IRAN'S SEMI-OFFICIAL TASNIM SAYS U.S FIGHTER JETS LAUNCHED MISSILE ATTACK ON IRANSHAHR AIRPORT",
-     "ts": "2026-07-16T20:13:16+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 1.859
   },
   "iran s top negotiator qalibaf": {
    "display": "IRAN'S TOP NEGOTIATOR QALIBAF",
@@ -2642,27 +2426,32 @@
    ],
    "first_seen": "2026-07-15T21:34:31.299200+00:00",
    "last_seen": "2026-07-16T06:07:21.526527+00:00",
-   "score": 2.8119
+   "score": 2.6917
   },
-  "iran war escalates": {
-   "display": "Iran War Escalates",
+  "iran warns u s forces": {
+   "display": "IRAN WARNS U.S. FORCES",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "Oil Prices Set for Biggest Weekly Surge Since April as Iran War Escalates",
-     "ts": "2026-07-17T05:41:26+00:00"
+     "feed": "DeItaone",
+     "title": "IRAN WARNS U.S. FORCES Iran\u2019s Revolutionary Guard said it is closely monitoring U.S. military movements in the region, warning that American forces are approaching the \u201czero hour\u201d for potential operations against CENTCOM naval units. The statement ended with a stark message:",
+     "ts": "2026-07-17T14:48:22+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "DeItaone"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "iranian": {
    "display": "Iranian",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "HORMUZ TRAFFIC HITS 3-WEEK LOW Confirmed crossings via the Strait of Hormuz dropped to a 3-week low on 16 July, with just 8 recorded, according to Kpler. For the fourth consecutive day, traffic remained heavily concentrated on the Iranian route, which accounted for 7 of the 8",
+     "ts": "2026-07-17T11:43:35+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "IRAN THREATENS SECOND GLOBAL ENERGY CHOKEPOINT Iran has reportedly told Yemen\u2019s Houthis to be ready to close the Bab el-Mandeb Strait if the U.S. strikes Iranian power infrastructure, according to Reuters sources. With the Strait of Hormuz already shut, a disruption in the Red",
@@ -2683,8 +2472,8 @@
     "DeItaone"
    ],
    "first_seen": "2026-07-14T21:34:50.456553+00:00",
-   "last_seen": "2026-07-16T21:48:15.481631+00:00",
-   "score": 1.8825
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 2.802
   },
   "iranian army says it": {
    "display": "IRANIAN ARMY SAYS IT",
@@ -2700,7 +2489,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "iranian attack electricity ministry": {
    "display": "IRANIAN ATTACK ELECTRICITY MINISTRY",
@@ -2716,23 +2505,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
-  },
-  "iranshahr airport": {
-   "display": "IRANSHAHR AIRPORT",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "IRAN'S SEMI-OFFICIAL TASNIM SAYS U.S FIGHTER JETS LAUNCHED MISSILE ATTACK ON IRANSHAHR AIRPORT",
-     "ts": "2026-07-16T20:13:16+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.9573
   },
   "itc hotels q results": {
    "display": "ITC Hotels Q Results",
@@ -2754,7 +2527,7 @@
    ],
    "first_seen": "2026-07-16T11:15:15.587204+00:00",
    "last_seen": "2026-07-16T16:52:08.496314+00:00",
-   "score": 1.5487
+   "score": 1.4825
   },
   "j&k bank": {
    "display": "J&K Bank",
@@ -2770,7 +2543,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "jana sfb": {
    "display": "Jana SFB",
@@ -2791,7 +2564,7 @@
    ],
    "first_seen": "2026-07-16T11:15:15.587204+00:00",
    "last_seen": "2026-07-16T16:52:08.496314+00:00",
-   "score": 1.5487
+   "score": 1.4825
   },
   "japan s lng giant weighs": {
    "display": "Japan's LNG Giant Weighs",
@@ -2807,6 +2580,22 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "jeff currie illusion of": {
+   "display": "Jeff Currie Illusion of",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Jeff Currie: Illusion of Oil Abundance Is Gone",
+     "ts": "2026-07-17T16:30:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "jefferies motilal": {
@@ -2823,23 +2612,23 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
-  "jgbs": {
-   "display": "JGBs",
+  "jersey bets": {
+   "display": "Jersey Bets",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "JGBs hold steady as investors weigh inflation, central bank signals",
-     "ts": "2026-07-17T03:48:14+00:00"
+     "feed": "OilPrice",
+     "title": "New Jersey Bets Big on Small Nuclear Reactors",
+     "ts": "2026-07-17T18:00:00+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "OilPrice"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "jio arpu": {
    "display": "Jio ARPU",
@@ -2855,23 +2644,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
-  },
-  "jio finance hcl tech": {
-   "display": "Jio Finance HCL Tech",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Sensex today | Stock Market Live: Sensex surges nearly 700 points, Nifty reclaims 24,200 as IT stocks rally; Jio Finance, HCL Tech lead gainers",
-     "ts": "2026-07-17T05:55:45+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.9573
   },
   "jio financial": {
    "display": "Jio Financial",
@@ -2892,55 +2665,7 @@
    ],
    "first_seen": "2026-07-17T06:07:02.999106+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.9035
-  },
-  "jio financial services sees": {
-   "display": "Jio Financial Services Sees",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Jio Financial Services Share Price Live Updates: Jio Financial Services Sees Share Price Increase",
-     "ts": "2026-07-17T02:50:24+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "jio financial services share": {
-   "display": "Jio Financial Services Share",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Jio Financial Services Share Price Live Updates: Jio Financial Services Sees Share Price Increase",
-     "ts": "2026-07-17T02:50:24+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "jio financial tech mahindra": {
-   "display": "Jio Financial Tech Mahindra",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Q1 Results Today Live: Reliance shares up ahead of results, JSW Steel, Havells, Oberoi Realty, Tata Tech to announce Q1 results, Jio Financial, Tech Mahindra, BHEL soar after Q1, Wipro, WeWork, CEAT, Polycab shares decline",
-     "ts": "2026-07-17T05:59:23+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 1.8221
   },
   "jio ipo": {
    "display": "Jio IPO",
@@ -2956,23 +2681,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
-  },
-  "jio retail": {
-   "display": "Jio Retail",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Reliance Industries Q1 Results LIVE: Here's what brokerages expect from the Mukesh Ambani company - Jio, Retail in focus",
-     "ts": "2026-07-17T05:07:55+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.9573
   },
   "joel tillinghast people": {
    "display": "Joel Tillinghast People",
@@ -2988,7 +2697,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "jordan state tv": {
    "display": "JORDAN STATE TV",
@@ -3004,7 +2713,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "josh duhamel": {
    "display": "Josh Duhamel",
@@ -3020,7 +2729,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "jsw one platforms ipo": {
    "display": "JSW One Platforms IPO",
@@ -3036,7 +2745,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "jsw steel": {
    "display": "JSW Steel",
@@ -3052,23 +2761,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
-  },
-  "jsw steel havells oberoi": {
-   "display": "JSW Steel Havells Oberoi",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Q1 Results Today Live: Reliance shares up ahead of results, JSW Steel, Havells, Oberoi Realty, Tata Tech to announce Q1 results, Jio Financial, Tech Mahindra, BHEL soar after Q1, Wipro, WeWork, CEAT, Polycab shares decline",
-     "ts": "2026-07-17T05:59:23+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.9573
   },
   "jsw steel q results": {
    "display": "JSW Steel Q Results",
@@ -3084,7 +2777,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "kimi k": {
    "display": "Kimi K",
@@ -3100,7 +2793,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "know": {
    "display": "Know",
@@ -3116,7 +2809,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "korean": {
    "display": "Korean",
@@ -3132,23 +2825,23 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
-  "kuwait defence ministry says": {
-   "display": "KUWAIT DEFENCE MINISTRY SAYS",
+  "kpler": {
+   "display": "Kpler.",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "KUWAIT DEFENCE MINISTRY SAYS IRANIAN 'AGGRESSION' ON THURSDAY TARGETED NUMBER OF VITAL FACILITIES, RESULTING IN MATERIAL DAMAGE",
-     "ts": "2026-07-16T19:08:34+00:00"
+     "title": "HORMUZ TRAFFIC HITS 3-WEEK LOW Confirmed crossings via the Strait of Hormuz dropped to a 3-week low on 16 July, with just 8 recorded, according to Kpler. For the fourth consecutive day, traffic remained heavily concentrated on the Iranian route, which accounted for 7 of the 8",
+     "ts": "2026-07-17T11:43:35+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "kuwait says electrical and": {
    "display": "KUWAIT SAYS ELECTRICAL AND",
@@ -3164,39 +2857,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
-  },
-  "l&t s stock performance declines": {
-   "display": "L&T's Stock Performance Declines",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "L&T Share Price Live Updates: L&T's Stock Performance Declines by 2.84% This Week",
-     "ts": "2026-07-17T02:50:06+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "l&t share price": {
-   "display": "L&T Share Price",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "L&T Share Price Live Updates: L&T's Stock Performance Declines by 2.84% This Week",
-     "ts": "2026-07-17T02:50:06+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.9573
   },
   "landmark cars": {
    "display": "Landmark Cars",
@@ -3218,28 +2879,7 @@
    ],
    "first_seen": "2026-07-14T10:27:01.725183+00:00",
    "last_seen": "2026-07-15T10:31:04.957749+00:00",
-   "score": 1.0648
-  },
-  "last": {
-   "display": "Last",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Dividend alert! Last day to buy HCL Tech, MRF, Dabur, among 68 stocks for dividend payout worth Rs 1,365",
-     "ts": "2026-07-16T03:49:10+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Bonus issue alert! Last day to buy this microcap pharma stock that rallied 200% in one year",
-     "ts": "2026-07-15T04:30:28+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-15T10:31:04.957749+00:00",
-   "last_seen": "2026-07-16T06:07:21.526527+00:00",
-   "score": 1.3109
+   "score": 1.0193
   },
   "latest gmp": {
    "display": "Latest GMP",
@@ -3260,7 +2900,39 @@
    ],
    "first_seen": "2026-07-17T06:07:02.999106+00:00",
    "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 1.807
+   "score": 1.7298
+  },
+  "lease computing power": {
+   "display": "LEASE COMPUTING POWER",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "META IN TALKS TO LEASE COMPUTING POWER TO ANTHROPIC IN POTENTIAL $10 BILLION DEAL - NYT",
+     "ts": "2026-07-17T16:28:27+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "leverage shares": {
+   "display": "Leverage Shares",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SKHY \u2013 SK HYNIX DOWN 0.7% IN PREMARKET SK Hynix shares are slipping 0.7% in premarket after a 13.7% decline in Thursday\u2019s session. Leverage Shares recently launched $SKHX, a 2x leveraged ETF tied to SK Hynix. The fund seeks to deliver 2x the stock\u2019s daily performance and",
+     "ts": "2026-07-17T13:18:40+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "libya declares major oil": {
    "display": "Libya Declares Major Oil",
@@ -3276,7 +2948,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "liftoff": {
    "display": "LIFTOFF",
@@ -3292,6 +2964,22 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "look": {
+   "display": "Look",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Look on the bright side: Energy companies are booming",
+     "ts": "2026-07-17T21:08:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "ltts": {
@@ -3318,39 +3006,7 @@
    ],
    "first_seen": "2026-07-14T16:47:51.549844+00:00",
    "last_seen": "2026-07-15T16:53:55.324692+00:00",
-   "score": 1.7259
-  },
-  "m&m s current market price": {
-   "display": "M&M's Current Market Price",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "M&M Share Price Live Updates: M&M's Current Market Price",
-     "ts": "2026-07-17T02:57:21+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "m&m share price": {
-   "display": "M&M Share Price",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "M&M Share Price Live Updates: M&M's Current Market Price",
-     "ts": "2026-07-17T02:57:21+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 1.6521
   },
   "ma xingrui": {
    "display": "Ma Xingrui",
@@ -3371,7 +3027,23 @@
    ],
    "first_seen": "2026-07-14T08:31:09.436955+00:00",
    "last_seen": "2026-07-14T16:47:51.549844+00:00",
-   "score": 0.9629
+   "score": 0.9217
+  },
+  "magnitude earthquake near": {
+   "display": "MAGNITUDE EARTHQUAKE NEAR",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "US TSUNAMI WARNING SYSTEM- TSUNAMI THREAT AFTER MAGNITUDE 7.4 EARTHQUAKE NEAR THE COAST OF CHIAPAS MEXICO",
+     "ts": "2026-07-17T15:03:18+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "maharatna psu": {
    "display": "Maharatna PSU",
@@ -3393,7 +3065,7 @@
    ],
    "first_seen": "2026-07-16T16:52:08.496314+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 1.7373
+   "score": 1.663
   },
   "make": {
    "display": "MAKE",
@@ -3419,7 +3091,7 @@
    ],
    "first_seen": "2026-07-15T21:34:31.299200+00:00",
    "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 2.2244
+   "score": 2.1293
   },
   "makemytrip": {
    "display": "MakeMyTrip",
@@ -3435,7 +3107,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "makemytrip india": {
    "display": "MakeMyTrip India",
@@ -3451,71 +3123,23 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
-  "markets wrap": {
-   "display": "Markets Wrap",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Stocks drop as chip selloff deepens, crude oil prices climb: Markets Wrap",
-     "ts": "2026-07-17T04:58:25+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "marketsmith india": {
-   "display": "MarketSmith India",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Stock recommendations for 17 July from MarketSmith India",
-     "ts": "2026-07-17T00:30:09+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "maruti suzuki hcltech coal": {
-   "display": "Maruti Suzuki HCLTech Coal",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "12 Stocks to Watch: Maruti Suzuki, HCLTech, Coal India, PhysicsWallah, ITI & Sky Gold",
-     "ts": "2026-07-17T04:48:22+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "material damage": {
-   "display": "MATERIAL DAMAGE",
+  "meta shares pare losses": {
+   "display": "META SHARES PARE LOSSES",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "KUWAIT DEFENCE MINISTRY SAYS IRANIAN 'AGGRESSION' ON THURSDAY TARGETED NUMBER OF VITAL FACILITIES, RESULTING IN MATERIAL DAMAGE",
-     "ts": "2026-07-16T19:08:34+00:00"
+     "title": "META SHARES PARE LOSSES AFTER REPORT OF POTENTIAL $10 BILLION COMPUTING POWER DEAL WITH ANTHROPIC; LAST DOWN 3.2%",
+     "ts": "2026-07-17T16:33:20+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "millworks ipo": {
    "display": "Millworks Technologies IPO",
@@ -3541,7 +3165,7 @@
    ],
    "first_seen": "2026-07-14T08:31:09.436955+00:00",
    "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 1.8664
+   "score": 1.7866
   },
   "minnesota": {
    "display": "Minnesota",
@@ -3557,7 +3181,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "months": {
    "display": "Months",
@@ -3573,11 +3197,16 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "moonshot": {
    "display": "Moonshot",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "CHIP STOCKS HIT HARD U.S. semiconductor stocks are heading for their worst week in over 15 months, with the Philadelphia Semiconductor Index down 12.5%. Investors are questioning the strength of the AI-driven rally after China\u2019s Moonshot unveiled a powerful open AI model.",
+     "ts": "2026-07-17T14:13:24+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "CHIPS TAKE A HIT Semiconductors are under pressure as investors reassess the AI trade. China\u2019s Moonshot claims its Kimi K3 model can compete with OpenAI and Anthropic, sparking fresh concerns over AI valuations and chip spending. Despite the selloff, market breadth remains",
@@ -3588,8 +3217,8 @@
     "DeItaone"
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
-   "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.9573
   },
   "motilal oswal": {
    "display": "Motilal Oswal",
@@ -3605,7 +3234,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "mrpl": {
    "display": "MRPL",
@@ -3627,7 +3256,7 @@
    ],
    "first_seen": "2026-07-16T06:07:21.526527+00:00",
    "last_seen": "2026-07-16T11:15:15.587204+00:00",
-   "score": 1.4707
+   "score": 1.4078
   },
   "msci india": {
    "display": "MSCI India",
@@ -3649,7 +3278,7 @@
    ],
    "first_seen": "2026-07-16T06:07:21.526527+00:00",
    "last_seen": "2026-07-16T11:15:15.587204+00:00",
-   "score": 1.4707
+   "score": 1.4078
   },
   "mukesh ambani": {
    "display": "Mukesh Ambani",
@@ -3671,39 +3300,7 @@
    ],
    "first_seen": "2026-07-17T06:07:02.999106+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.9035
-  },
-  "mukesh ambani led": {
-   "display": "Mukesh Ambani-led",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Reliance Industries shares jump 2% ahead of Mukesh Ambani-led company\u2019s Q1 earnings. How to trade stock today?",
-     "ts": "2026-07-17T04:08:30+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "mukesh ambani led ril": {
-   "display": "Mukesh Ambani-led RIL",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Investors are watching Jio but Mukesh Ambani-led RIL\u2019s Q1 surprise may come from refining",
-     "ts": "2026-07-17T03:52:09+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 1.8221
   },
   "mukul agrawal": {
    "display": "Mukul Agrawal",
@@ -3719,7 +3316,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "multibagger": {
    "display": "Multibagger",
@@ -3755,7 +3352,7 @@
    ],
    "first_seen": "2026-07-08T06:39:49.312907+00:00",
    "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 2.3748
+   "score": 2.2733
   },
   "nbfc": {
    "display": "NBFC",
@@ -3771,39 +3368,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
-  },
-  "nestle india share price": {
-   "display": "Nestle India Share Price",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Nestle India Share Price Live Updates: Nestle India Stock Details",
-     "ts": "2026-07-17T02:57:46+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "nestle india stock details": {
-   "display": "Nestle India Stock Details",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Nestle India Share Price Live Updates: Nestle India Stock Details",
-     "ts": "2026-07-17T02:57:46+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.9017
   },
   "net profit": {
    "display": "Net Profit",
@@ -3819,7 +3384,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "netflix s": {
    "display": "Netflix's",
@@ -3835,7 +3400,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "nflx netflix shares drop": {
    "display": "NFLX NETFLIX SHARES DROP",
@@ -3851,7 +3416,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "nifty bank": {
    "display": "Nifty Bank",
@@ -3867,7 +3432,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "nifty india fpi index": {
    "display": "Nifty India FPI Index",
@@ -3889,7 +3454,7 @@
    ],
    "first_seen": "2026-07-16T06:07:21.526527+00:00",
    "last_seen": "2026-07-16T16:52:08.496314+00:00",
-   "score": 1.5125
+   "score": 1.4478
   },
   "nlc india renewables": {
    "display": "NLC India Renewables",
@@ -3905,7 +3470,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "nlc india renewables ipo": {
    "display": "NLC India Renewables IPO",
@@ -3921,55 +3486,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
-  },
-  "no commodity story": {
-   "display": "No. Commodity Story",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "The No.1 Commodity Story of the Year Is Flying Under Wall Street\u2019s Radar",
-     "ts": "2026-07-17T00:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "nomura motilal": {
-   "display": "Nomura Motilal",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Wipro shares fall over 3% after Q1 results. Why have Nomura, Motilal & others cut target prices?",
-     "ts": "2026-07-17T03:59:43+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
-  },
-  "nomura nuvama": {
-   "display": "Nomura Nuvama",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Tech Mahindra shares jump 3% after Q1 earnings beat estimates. What Nomura, Nuvama, other brokerages now expect",
-     "ts": "2026-07-17T04:04:00+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-07-17T06:07:02.999106+00:00",
-   "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 0.9035
+   "score": 0.9017
   },
   "norges motilal oswal": {
    "display": "Norges Motilal Oswal",
@@ -3985,6 +3502,70 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "not detect respond": {
+   "display": "NOT DETECT RESPOND",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "AMAZON ZOOX UNIT RECALLS SELF-DRIVING VEHICLES BECAUSE THEY MAY NOT DETECT, RESPOND TO HEAVY SMOKE",
+     "ts": "2026-07-17T12:53:17+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "nuclear reactors": {
+   "display": "Nuclear Reactors",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "New Jersey Bets Big on Small Nuclear Reactors",
+     "ts": "2026-07-17T18:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "nvda": {
+   "display": "NVDA",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "APPLE CLOSES IN ON NVIDIA $AAPL is on the verge of reclaiming the title of the world\u2019s most valuable company, with a market value nearing $4.9T as $NVDA slips. The race highlights a shift in the AI trade. Investors are increasingly betting on Apple\u2019s ability to monetize AI",
+     "ts": "2026-07-17T13:38:22+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "nvidia aapl": {
+   "display": "NVIDIA AAPL",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "APPLE CLOSES IN ON NVIDIA $AAPL is on the verge of reclaiming the title of the world\u2019s most valuable company, with a market value nearing $4.9T as $NVDA slips. The race highlights a shift in the AI trade. Investors are increasingly betting on Apple\u2019s ability to monetize AI",
+     "ts": "2026-07-17T13:38:22+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "oil jumps": {
@@ -4001,7 +3582,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "oil markets ignore mounting": {
    "display": "Oil Markets Ignore Mounting",
@@ -4017,7 +3598,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "oil tanker struck near": {
    "display": "OIL TANKER STRUCK NEAR",
@@ -4033,7 +3614,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "oman state media": {
    "display": "OMAN STATE MEDIA",
@@ -4049,7 +3630,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "open": {
    "display": "OPEN",
@@ -4080,7 +3661,7 @@
    ],
    "first_seen": "2026-07-10T12:40:14.184302+00:00",
    "last_seen": "2026-07-13T23:29:16.922467+00:00",
-   "score": 1.2591
+   "score": 1.2053
   },
   "openai and anthropic": {
    "display": "OpenAI and Anthropic",
@@ -4096,7 +3677,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "own peril": {
    "display": "Own Peril",
@@ -4112,7 +3693,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "pakistan plans fresh lng": {
    "display": "Pakistan Plans Fresh LNG",
@@ -4128,7 +3709,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "pat yoy": {
    "display": "PAT YoY",
@@ -4144,7 +3725,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "pb fintech": {
    "display": "PB Fintech",
@@ -4160,6 +3741,38 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "peak spacex": {
+   "display": "PEAK SpaceX",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SPCX - SPACEX PLUNGES FROM PEAK SpaceX shares fell 4.6% on Friday, extending a sharp slide that has erased more than $1 trillion in market value since June. The stock is now below its IPO price after a Starship launch was aborted because of an engine issue. Despite the setback,",
+     "ts": "2026-07-17T14:03:28+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "philadelphia semiconductor index": {
+   "display": "Philadelphia Semiconductor Index",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "CHIP STOCKS HIT HARD U.S. semiconductor stocks are heading for their worst week in over 15 months, with the Philadelphia Semiconductor Index down 12.5%. Investors are questioning the strength of the AI-driven rally after China\u2019s Moonshot unveiled a powerful open AI model.",
+     "ts": "2026-07-17T14:13:24+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "piero cipollone": {
@@ -4176,7 +3789,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "piramal finance": {
    "display": "Piramal Finance",
@@ -4197,7 +3810,7 @@
    ],
    "first_seen": "2026-07-16T16:52:08.496314+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 1.7373
+   "score": 1.663
   },
   "pnb metlife": {
    "display": "PNB MetLife",
@@ -4213,7 +3826,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "polycab": {
    "display": "Polycab",
@@ -4229,7 +3842,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "polycab india": {
    "display": "Polycab India",
@@ -4251,7 +3864,55 @@
    ],
    "first_seen": "2026-07-17T06:07:02.999106+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 1.8455
+   "score": 1.7666
+  },
+  "potential billion deal nyt": {
+   "display": "POTENTIAL BILLION DEAL NYT",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "META IN TALKS TO LEASE COMPUTING POWER TO ANTHROPIC IN POTENTIAL $10 BILLION DEAL - NYT",
+     "ts": "2026-07-17T16:28:27+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "premarket sk hynix": {
+   "display": "PREMARKET SK Hynix",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SKHY \u2013 SK HYNIX DOWN 0.7% IN PREMARKET SK Hynix shares are slipping 0.7% in premarket after a 13.7% decline in Thursday\u2019s session. Leverage Shares recently launched $SKHX, a 2x leveraged ETF tied to SK Hynix. The fund seeks to deliver 2x the stock\u2019s daily performance and",
+     "ts": "2026-07-17T13:18:40+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "pro business leader": {
+   "display": "PRO-BUSINESS LEADER",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "UK LABOUR LEADER BURNHAM: I WILL BE A PRO-BUSINESS LEADER",
+     "ts": "2026-07-17T11:38:15+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "production revival gains pace": {
    "display": "Production Revival Gains Pace",
@@ -4267,7 +3928,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "profit": {
    "display": "Profit",
@@ -4283,7 +3944,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "pulse": {
    "display": "Pulse",
@@ -4299,7 +3960,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "q fy check": {
    "display": "Q FY Check",
@@ -4315,7 +3976,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "q results": {
    "display": "Q Results",
@@ -4336,7 +3997,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.942
+   "score": 1.859
   },
   "qibs": {
    "display": "QIBs",
@@ -4357,7 +4018,7 @@
    ],
    "first_seen": "2026-07-16T11:15:15.587204+00:00",
    "last_seen": "2026-07-16T16:52:08.496314+00:00",
-   "score": 1.5487
+   "score": 1.4825
   },
   "quick commerce": {
    "display": "Quick-commerce",
@@ -4373,7 +4034,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "quote": {
    "display": "Quote",
@@ -4409,7 +4070,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 3.8209
+   "score": 3.6576
   },
   "reality": {
    "display": "Reality",
@@ -4425,7 +4086,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "red sea route": {
    "display": "Red Sea Route",
@@ -4441,7 +4102,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "rekha jhunjhunwala": {
    "display": "Rekha Jhunjhunwala",
@@ -4462,7 +4123,7 @@
    ],
    "first_seen": "2026-07-14T08:31:09.436955+00:00",
    "last_seen": "2026-07-14T10:27:01.725183+00:00",
-   "score": 0.9332
+   "score": 0.8933
   },
   "relaxo footwears": {
    "display": "Relaxo Footwears",
@@ -4478,7 +4139,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "reliance consumer": {
    "display": "Reliance Consumer",
@@ -4494,7 +4155,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "reliance hdfc bank icici": {
    "display": "Reliance HDFC Bank ICICI",
@@ -4510,7 +4171,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "reliance jio q results": {
    "display": "Reliance Jio Q Results",
@@ -4526,7 +4187,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "reliance q results profit": {
    "display": "Reliance Q Results Profit",
@@ -4542,11 +4203,16 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "reliance retail": {
    "display": "Reliance Retail Q",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Reliance Retail Q1 revenue rises, but profit falls as e-commerce weighs",
+     "ts": "2026-07-17T16:46:57+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Reliance Retail Q1 results: Quick-commerce spends drag PAT 14% YoY to Rs 2,806 crore; revenue rises 7%",
@@ -4557,8 +4223,8 @@
     "ET Markets"
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
-   "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.9573
   },
   "reliance tata tech": {
    "display": "Reliance Tata Tech",
@@ -4574,6 +4240,22 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "report of potential billion": {
+   "display": "REPORT OF POTENTIAL BILLION",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "META SHARES PARE LOSSES AFTER REPORT OF POTENTIAL $10 BILLION COMPUTING POWER DEAL WITH ANTHROPIC; LAST DOWN 3.2%",
+     "ts": "2026-07-17T16:33:20+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "rescuers": {
@@ -4595,7 +4277,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.942
+   "score": 1.859
   },
   "retail": {
    "display": "Retail",
@@ -4611,7 +4293,23 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
+  },
+  "revolutionary guard": {
+   "display": "Revolutionary Guard",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "IRAN WARNS U.S. FORCES Iran\u2019s Revolutionary Guard said it is closely monitoring U.S. military movements in the region, warning that American forces are approaching the \u201czero hour\u201d for potential operations against CENTCOM naval units. The statement ended with a stark message:",
+     "ts": "2026-07-17T14:48:22+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "ril oberoi realty tata": {
    "display": "RIL Oberoi Realty Tata",
@@ -4627,7 +4325,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "ril q results revenue": {
    "display": "RIL Q Results Revenue",
@@ -4643,7 +4341,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "ril q takeaways": {
    "display": "RIL Q Takeaways",
@@ -4659,7 +4357,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "rising": {
    "display": "Rising",
@@ -4680,7 +4378,7 @@
    ],
    "first_seen": "2026-07-14T10:27:01.725183+00:00",
    "last_seen": "2026-07-14T16:47:51.549844+00:00",
-   "score": 0.9716
+   "score": 0.9301
   },
   "saab": {
    "display": "Saab",
@@ -4696,7 +4394,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "sakhir base": {
    "display": "SAKHIR BASE",
@@ -4712,7 +4410,23 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
+  },
+  "sanction russia oil buyers": {
+   "display": "SANCTION RUSSIA OIL BUYERS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "US BILL WOULD TARIFF TOP 5 PURCHASERS OF RUSSIAN OIL SENATORS RELEASE TEXT OF BILL TO SANCTION RUSSIA OIL BUYERS",
+     "ts": "2026-07-17T13:28:36+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "sbi capital markets hdfc": {
    "display": "SBI Capital Markets HDFC",
@@ -4728,7 +4442,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "sebi check": {
    "display": "Sebi. Check",
@@ -4744,7 +4458,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "secure oil exports": {
    "display": "Secure Oil Exports",
@@ -4760,7 +4474,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "shapoorji pallonji": {
    "display": "Shapoorji Pallonji Group",
@@ -4776,7 +4490,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "silently": {
    "display": "Silently",
@@ -4792,7 +4506,39 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
+  },
+  "skhx": {
+   "display": "SKHX",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SKHY \u2013 SK HYNIX DOWN 0.7% IN PREMARKET SK Hynix shares are slipping 0.7% in premarket after a 13.7% decline in Thursday\u2019s session. Leverage Shares recently launched $SKHX, a 2x leveraged ETF tied to SK Hynix. The fund seeks to deliver 2x the stock\u2019s daily performance and",
+     "ts": "2026-07-17T13:18:40+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "skhy sk hynix down": {
+   "display": "SKHY SK HYNIX DOWN",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SKHY \u2013 SK HYNIX DOWN 0.7% IN PREMARKET SK Hynix shares are slipping 0.7% in premarket after a 13.7% decline in Thursday\u2019s session. Leverage Shares recently launched $SKHX, a 2x leveraged ETF tied to SK Hynix. The fund seeks to deliver 2x the stock\u2019s daily performance and",
+     "ts": "2026-07-17T13:18:40+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "small cap": {
    "display": "Small-cap",
@@ -4814,7 +4560,23 @@
    ],
    "first_seen": "2026-07-16T06:07:21.526527+00:00",
    "last_seen": "2026-07-16T11:15:15.587204+00:00",
-   "score": 1.4707
+   "score": 1.4078
+  },
+  "soccer world cup final": {
+   "display": "SOCCER WORLD CUP FINAL",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SOCCER WORLD CUP FINAL HALFTIME TO LAST MORE THAN 15 MINUTES, BROADCASTING SOURCES SAY",
+     "ts": "2026-07-17T14:13:25+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "social security": {
    "display": "Social Security",
@@ -4850,7 +4612,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-15T10:31:04.957749+00:00",
-   "score": 3.3338
+   "score": 3.1913
   },
   "south indian bank buy": {
    "display": "South Indian Bank Buy",
@@ -4866,7 +4628,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "south korea bets": {
    "display": "South Korea Bets",
@@ -4882,7 +4644,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "spacex": {
    "display": "SpaceX",
@@ -4913,7 +4675,23 @@
    ],
    "first_seen": "2026-07-16T21:48:15.481631+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 3.7761
+   "score": 3.6147
+  },
+  "spcx spacex plunges": {
+   "display": "SPCX SPACEX PLUNGES",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SPCX - SPACEX PLUNGES FROM PEAK SpaceX shares fell 4.6% on Friday, extending a sharp slide that has erased more than $1 trillion in market value since June. The stock is now below its IPO price after a Starship launch was aborted because of an engine issue. Despite the setback,",
+     "ts": "2026-07-17T14:03:28+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "spcx spacex shares fall": {
    "display": "SPCX SPACEX SHARES FALL",
@@ -4929,6 +4707,22 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "starship": {
+   "display": "Starship",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SPCX - SPACEX PLUNGES FROM PEAK SpaceX shares fell 4.6% on Friday, extending a sharp slide that has erased more than $1 trillion in market value since June. The stock is now below its IPO price after a Starship launch was aborted because of an engine issue. Despite the setback,",
+     "ts": "2026-07-17T14:03:28+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "stock market highlights sensex": {
@@ -4945,7 +4739,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "strait": {
    "display": "STRAIT",
@@ -4981,7 +4775,7 @@
    ],
    "first_seen": "2026-07-09T19:15:27.106311+00:00",
    "last_seen": "2026-07-16T21:48:15.481631+00:00",
-   "score": 2.9351
+   "score": 2.8096
   },
   "strait of hormuz shutdown": {
    "display": "Strait of Hormuz Shutdown",
@@ -4997,7 +4791,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "sumeet bagadia": {
    "display": "Sumeet Bagadia",
@@ -5033,7 +4827,7 @@
    ],
    "first_seen": "2026-07-11T06:02:51.803687+00:00",
    "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 2.6307
+   "score": 2.5182
   },
   "swp stp": {
    "display": "SWP STP",
@@ -5049,7 +4843,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "syria and turkey pipelines": {
    "display": "Syria and Turkey Pipelines",
@@ -5065,6 +4859,54 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "taco bell franchisee sued": {
+   "display": "TACO BELL FRANCHISEE SUED",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "TACO BELL FRANCHISEE SUED OVER CYCLOSPORA OUTBREAK: BLAW",
+     "ts": "2026-07-17T13:18:42+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "talks": {
+   "display": "TALKS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "META IN TALKS TO LEASE COMPUTING POWER TO ANTHROPIC IN POTENTIAL $10 BILLION DEAL - NYT",
+     "ts": "2026-07-17T16:28:27+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "tariff top purchasers of": {
+   "display": "TARIFF TOP PURCHASERS OF",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "US BILL WOULD TARIFF TOP 5 PURCHASERS OF RUSSIAN OIL SENATORS RELEASE TEXT OF BILL TO SANCTION RUSSIA OIL BUYERS",
+     "ts": "2026-07-17T13:28:36+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "tata capital": {
@@ -5096,7 +4938,7 @@
    ],
    "first_seen": "2026-07-15T10:31:04.957749+00:00",
    "last_seen": "2026-07-16T06:07:21.526527+00:00",
-   "score": 2.6028
+   "score": 2.4915
   },
   "tata power": {
    "display": "Tata Power",
@@ -5112,7 +4954,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "tata q results": {
    "display": "Tata Technologies Q Results",
@@ -5128,11 +4970,16 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "taylor farms": {
    "display": "Taylor Farms",
    "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Taylor Farms to recall iceberg lettuce that may be the cause of the cyclospora outbreak",
+     "ts": "2026-07-17T19:41:00+00:00"
+    },
     {
      "feed": "MarketWatch Top",
      "title": "Taylor Farms to recall produce that may be the cause of the cyclospora outbreak: report",
@@ -5143,8 +4990,8 @@
     "MarketWatch Top"
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
-   "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.9573
   },
   "tehran retaliates across": {
    "display": "Tehran Retaliates Across",
@@ -5160,6 +5007,22 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "than minutes broadcasting sources": {
+   "display": "THAN MINUTES BROADCASTING SOURCES",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SOCCER WORLD CUP FINAL HALFTIME TO LAST MORE THAN 15 MINUTES, BROADCASTING SOURCES SAY",
+     "ts": "2026-07-17T14:13:25+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "three": {
@@ -5182,7 +5045,7 @@
    ],
    "first_seen": "2026-07-15T00:11:00.154078+00:00",
    "last_seen": "2026-07-15T10:31:04.957749+00:00",
-   "score": 1.1314
+   "score": 1.083
   },
   "time": {
    "display": "Time",
@@ -5208,7 +5071,7 @@
    ],
    "first_seen": "2026-07-12T19:00:13.897142+00:00",
    "last_seen": "2026-07-14T08:31:09.436955+00:00",
-   "score": 1.1681
+   "score": 1.1182
   },
   "top gainers losers": {
    "display": "Top Gainers Losers",
@@ -5244,7 +5107,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-07-16T11:15:15.587204+00:00",
-   "score": 2.3771
+   "score": 2.2755
   },
   "trump backed trade corridor moves": {
    "display": "Trump-Backed Trade Corridor Moves",
@@ -5260,6 +5123,22 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "trump media pitched monthly": {
+   "display": "TRUMP MEDIA PITCHED MONTHLY",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "TRUMP MEDIA PITCHED $100,000 MONTHLY FEE FOR FAST FEED OF PRESIDENT\u2019S POSTS - FT",
+     "ts": "2026-07-17T16:33:19+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "trump we": {
@@ -5286,7 +5165,7 @@
    ],
    "first_seen": "2026-07-14T21:34:50.456553+00:00",
    "last_seen": "2026-07-16T06:07:21.526527+00:00",
-   "score": 1.7657
+   "score": 1.6902
   },
   "typhoon bavi": {
    "display": "Typhoon Bavi",
@@ -5317,7 +5196,7 @@
    ],
    "first_seen": "2026-07-10T10:29:04.391230+00:00",
    "last_seen": "2026-07-13T13:08:01.665451+00:00",
-   "score": 1.1185
+   "score": 1.0707
   },
   "u s blockade tightens": {
    "display": "U.S. Blockade Tightens",
@@ -5333,7 +5212,23 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
+  },
+  "u s crude futures rise": {
+   "display": "U.S. CRUDE FUTURES RISE",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "U.S. CRUDE FUTURES RISE OVER 3% TO $81.64/BBL, HIGHEST SINCE JUNE 15",
+     "ts": "2026-07-17T13:18:41+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "u s expands iran strikes": {
    "display": "U.S. Expands Iran Strikes",
@@ -5349,6 +5244,54 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "u s forces successfully destroyed": {
+   "display": "U.S. FORCES SUCCESSFULLY DESTROYED",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "U.S. MILITARY: ON JULY 16, U.S. FORCES SUCCESSFULLY DESTROYED THE CHAH BAHAR SHAHID KALANTARI PORT SURVEILLANCE TOWER",
+     "ts": "2026-07-17T14:38:27+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "u s military": {
+   "display": "U.S. MILITARY",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "U.S. MILITARY: ON JULY 16, U.S. FORCES SUCCESSFULLY DESTROYED THE CHAH BAHAR SHAHID KALANTARI PORT SURVEILLANCE TOWER",
+     "ts": "2026-07-17T14:38:27+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "uk labour leader burnham": {
+   "display": "UK LABOUR LEADER BURNHAM",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "UK LABOUR LEADER BURNHAM: I WILL BE A PRO-BUSINESS LEADER",
+     "ts": "2026-07-17T11:38:15+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "ukmto says it received": {
@@ -5365,7 +5308,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "unitedhealth": {
    "display": "UnitedHealth",
@@ -5387,7 +5330,23 @@
    ],
    "first_seen": "2026-07-16T11:15:15.587204+00:00",
    "last_seen": "2026-07-16T16:52:08.496314+00:00",
-   "score": 1.5487
+   "score": 1.4825
+  },
+  "us bill": {
+   "display": "US BILL",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "US BILL WOULD TARIFF TOP 5 PURCHASERS OF RUSSIAN OIL SENATORS RELEASE TEXT OF BILL TO SANCTION RUSSIA OIL BUYERS",
+     "ts": "2026-07-17T13:28:36+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "us data": {
    "display": "US Data",
@@ -5403,6 +5362,54 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
+   "score": 0.9573
+  },
+  "us oil drilling picks": {
+   "display": "US Oil Drilling Picks",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "US Oil Drilling Picks Up As Brent Gains 4%",
+     "ts": "2026-07-17T17:27:07+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "us tsunami warning system": {
+   "display": "US TSUNAMI WARNING SYSTEM-",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "US TSUNAMI WARNING SYSTEM- TSUNAMI THREAT AFTER MAGNITUDE 7.4 EARTHQUAKE NEAR THE COAST OF CHIAPAS MEXICO",
+     "ts": "2026-07-17T15:03:18+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
+  },
+  "valuable aapl nvda": {
+   "display": "VALUABLE COMPANY AAPL NVDA",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "APPLE SURPASSES NVIDIA TO BECOME WORLD'S MOST VALUABLE COMPANY $AAPL $NVDA",
+     "ts": "2026-07-17T13:38:23+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
    "score": 1.0
   },
   "vedanta": {
@@ -5419,7 +5426,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "vedanta aluminium vedanta oil": {
    "display": "Vedanta Aluminium Vedanta Oil",
@@ -5435,7 +5442,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T10:27:13.475761+00:00",
-   "score": 0.942
+   "score": 0.9017
   },
   "west asia": {
    "display": "West Asia",
@@ -5471,7 +5478,7 @@
    ],
    "first_seen": "2026-07-08T11:23:05.666954+00:00",
    "last_seen": "2026-07-17T06:07:02.999106+00:00",
-   "score": 2.9715
+   "score": 2.8445
   },
   "wework india": {
    "display": "WeWork India",
@@ -5487,7 +5494,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   },
   "wipro tech mahindra": {
    "display": "Wipro Tech Mahindra Q",
@@ -5513,7 +5520,7 @@
    ],
    "first_seen": "2026-07-16T06:07:21.526527+00:00",
    "last_seen": "2026-07-16T16:52:08.496314+00:00",
-   "score": 2.2659
+   "score": 2.169
   },
   "world cup": {
    "display": "World Cup",
@@ -5535,7 +5542,23 @@
    ],
    "first_seen": "2026-07-15T21:34:31.299200+00:00",
    "last_seen": "2026-07-16T06:07:21.526527+00:00",
-   "score": 1.3777
+   "score": 1.3188
+  },
+  "xom sources tell reuters": {
+   "display": "XOM SOURCES TELL REUTERS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "XOM - SOURCES TELL REUTERS THAT ATTACKED TANKER WAS CHARTERED BY EXXONMOBIL",
+     "ts": "2026-07-17T13:33:04+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-07-17T21:11:52.372495+00:00",
+   "last_seen": "2026-07-17T21:11:52.372495+00:00",
+   "score": 1.0
   },
   "yemen": {
    "display": "Yemen",
@@ -5556,7 +5579,7 @@
    ],
    "first_seen": "2026-07-16T21:48:15.481631+00:00",
    "last_seen": "2026-07-16T21:48:15.481631+00:00",
-   "score": 1.668
+   "score": 1.5967
   },
   "zepto": {
    "display": "Zepto",
@@ -5578,7 +5601,7 @@
    ],
    "first_seen": "2026-07-17T10:27:13.475761+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.942
+   "score": 1.859
   },
   "zepto ipo": {
    "display": "Zepto IPO",
@@ -5594,7 +5617,7 @@
    ],
    "first_seen": "2026-07-17T16:39:35.488207+00:00",
    "last_seen": "2026-07-17T16:39:35.488207+00:00",
-   "score": 1.0
+   "score": 0.9573
   }
  },
  "members": {
@@ -5603,6 +5626,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "APPLE CLOSES IN ON NVIDIA $AAPL is on the verge of reclaiming the title of the world\u2019s most valuable company, with a market value nearing $4.9T as $NVDA slips. The race highlights a shift in the AI trade. Investors are increasingly betting on Apple\u2019s ability to monetize AI",
+     "ts": "2026-07-17T13:38:22+00:00"
+    },
+    {
+     "feed": "DeItaone",
+     "title": "APPLE SURPASSES NVIDIA TO BECOME WORLD'S MOST VALUABLE COMPANY $AAPL $NVDA",
+     "ts": "2026-07-17T13:38:23+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Apple overtakes Nvidia as world's most valuable company amid chip selloff",
@@ -5619,10 +5652,10 @@
      "ts": "2026-07-17T14:58:00+00:00"
     }
    ],
-   "last_mention": "2026-07-17T14:06:59+00:00",
+   "last_mention": "2026-07-17T13:38:22+00:00",
    "name": "Apple Inc.",
    "norm": "apple",
-   "score": 3.0,
+   "score": 4.8718,
    "status": "active",
    "via": "search"
   },
@@ -5660,7 +5693,7 @@
    "last_mention": "2026-07-17T03:05:07+00:00",
    "name": "ADANI ENTERPRISES LTD.",
    "norm": "adani",
-   "score": 6.2639,
+   "score": 5.9961,
    "status": "active",
    "via": "search"
   },
@@ -5669,6 +5702,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Look on the bright side: Energy companies are booming",
+     "ts": "2026-07-17T21:08:00+00:00"
+    },
     {
      "feed": "SCMP Economy",
      "title": "Rescuers in southwest China race extreme weather to reach residents trapped by landslide",
@@ -5688,17 +5726,12 @@
      "feed": "DeItaone",
      "title": "IRAN THREATENS SECOND GLOBAL ENERGY CHOKEPOINT Iran has reportedly told Yemen\u2019s Houthis to be ready to close the Bab el-Mandeb Strait if the U.S. strikes Iranian power infrastructure, according to Reuters sources. With the Strait of Hormuz already shut, a disruption in the Red",
      "ts": "2026-07-16T11:58:36+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "MSCI India August Review: Groww, Adani Green, Adani Energy among likely additions; Astral, SBI Cards face exclusion risk",
-     "ts": "2026-07-16T06:49:15+00:00"
     }
    ],
-   "last_mention": "2026-07-17T08:00:19+00:00",
+   "last_mention": "2026-07-17T21:08:00+00:00",
    "name": "ATHER ENERGY LIMITED",
    "norm": "ather energy",
-   "score": 18.5463,
+   "score": 18.7535,
    "status": "active",
    "via": "search"
   },
@@ -5707,6 +5740,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "IRAN WARNS U.S. FORCES Iran\u2019s Revolutionary Guard said it is closely monitoring U.S. military movements in the region, warning that American forces are approaching the \u201czero hour\u201d for potential operations against CENTCOM naval units. The statement ended with a stark message:",
+     "ts": "2026-07-17T14:48:22+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Federal Bank among 4 stocks that hit 52-week highs and rallied up to 25% in a month",
@@ -5726,17 +5764,12 @@
      "feed": "ET Markets",
      "title": "J&K Bank sells 0.5% stake in PNB MetLife for Rs 120 crore",
      "ts": "2026-07-17T13:42:59+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Q1 Results Today Highlights: JSW Steel profit doubles, Havells India profit declines; Oberoi Realty, The Federal Bank, Central Bank of India profit up, Reliance & Tata Tech announce Q1 results",
-     "ts": "2026-07-17T16:09:10+00:00"
     }
    ],
-   "last_mention": "2026-07-17T11:20:11+00:00",
+   "last_mention": "2026-07-17T14:48:22+00:00",
    "name": "Bank of America Corporation",
    "norm": "bank of america",
-   "score": 41.7698,
+   "score": 40.9843,
    "status": "active",
    "via": "search"
   },
@@ -5774,7 +5807,7 @@
    "last_mention": "2026-07-17T06:28:58+00:00",
    "name": "BHEL",
    "norm": "bhel",
-   "score": 8.4874,
+   "score": 8.1246,
    "status": "active",
    "via": "search"
   },
@@ -5812,45 +5845,7 @@
    "last_mention": "2026-07-14T17:35:00+00:00",
    "name": "BIOCON LTD.",
    "norm": "biocon",
-   "score": 2.3943,
-   "status": "active",
-   "via": "search"
-  },
-  "BLK": {
-   "added": "2026-07-07T19:12:33.086553+00:00",
-   "amber_z": 2.0,
-   "cls": "EQUITIES",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "BlackRock assets hit record $15 trillion on boost from buoyant markets, ETF inflows",
-     "ts": "2026-07-15T13:00:06+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Wall Street surges on soft producer inflation, robust earnings; PayPal climbs 13.58%, BlackRock soars 7.6%",
-     "ts": "2026-07-15T13:55:32+00:00"
-    },
-    {
-     "feed": "MarketWatch Top",
-     "title": "BlackRock has best-ever start to a year as investment flows double and profits surge",
-     "ts": "2026-07-15T15:10:00+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "SBI Funds IPO anchor book 20 times subscribed; draws Capital Group, BlackRock, Goldman, ADIA, GIC",
-     "ts": "2026-07-13T04:01:45+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "BlackRock to launch Nasdaq-100 ETF as AI rally pulls investors into tech stocks",
-     "ts": "2026-07-07T06:27:42+00:00"
-    }
-   ],
-   "last_mention": "2026-07-15T13:00:06+00:00",
-   "name": "BlackRock, Inc.",
-   "norm": "blackrock",
-   "score": 2.4811,
+   "score": 2.292,
    "status": "active",
    "via": "search"
   },
@@ -5888,7 +5883,7 @@
    "last_mention": "2026-07-17T12:29:06+00:00",
    "name": "PIMCO Active Bond Exchange-Trad",
    "norm": "bond",
-   "score": 23.9853,
+   "score": 22.96,
    "status": "active",
    "via": "search"
   },
@@ -5926,7 +5921,7 @@
    "last_mention": "2026-07-17T10:27:11+00:00",
    "name": "CARTRADE TECH LIMITED",
    "norm": "cartrade tech",
-   "score": 46.469,
+   "score": 44.4826,
    "status": "active",
    "via": "search"
   },
@@ -5959,7 +5954,7 @@
    "last_mention": "2026-07-17T06:11:51+00:00",
    "name": "CEAT LIMITED",
    "norm": "ceat",
-   "score": 3.5443,
+   "score": 3.3928,
    "status": "active",
    "via": "search"
   },
@@ -5997,7 +5992,7 @@
    "last_mention": "2026-07-17T12:39:26+00:00",
    "name": "Check Point Software Technologi",
    "norm": "check",
-   "score": 28.8915,
+   "score": 27.6565,
    "status": "active",
    "via": "search"
   },
@@ -6035,7 +6030,7 @@
    "last_mention": "2026-07-17T10:30:00+00:00",
    "name": "Coinbase Global, Inc.",
    "norm": "global",
-   "score": 55.3061,
+   "score": 52.9419,
    "status": "active",
    "via": "search"
   },
@@ -6073,7 +6068,7 @@
    "last_mention": "2026-07-14T07:14:56+00:00",
    "name": "CUPID LIMITED",
    "norm": "cupid",
-   "score": 1.6198,
+   "score": 1.5506,
    "status": "active",
    "via": "search"
   },
@@ -6111,7 +6106,7 @@
    "last_mention": "2026-07-16T01:24:21+00:00",
    "name": "Goldman Sachs Group, Inc. (The)",
    "norm": "goldman sachs",
-   "score": 3.7451,
+   "score": 3.585,
    "status": "active",
    "via": "search"
   },
@@ -6149,7 +6144,7 @@
    "last_mention": "2026-07-17T10:27:11+00:00",
    "name": "HDFC Bank Limited",
    "norm": "hdfc bank",
-   "score": 63.2399,
+   "score": 60.5366,
    "status": "active",
    "via": "search"
   },
@@ -6158,6 +6153,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "A bad health diagnosis will upend your financial plan, but you can set it right again",
+     "ts": "2026-07-17T17:27:00+00:00"
+    },
     {
      "feed": "BusinessLine Mkts",
      "title": "Jio Financial shares surge 3% as Q1 profit jumps 156% y-o-y",
@@ -6177,17 +6177,12 @@
      "feed": "BusinessLine Mkts",
      "title": "Sensex today | Stock Market Live: Sensex surges 965 points, Nifty tops 24,334; banking, financial stocks shine ahead of key earnings",
      "ts": "2026-07-17T10:14:35+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Jio Financial Services Share Price Live Updates: Jio Financial Services Sees Share Price Increase",
-     "ts": "2026-07-17T02:50:24+00:00"
     }
    ],
-   "last_mention": "2026-07-17T10:32:12+00:00",
+   "last_mention": "2026-07-17T17:27:00+00:00",
    "name": "HDB FINANCIAL SERVICES LIMITED",
    "norm": "hdb financial",
-   "score": 15.0909,
+   "score": 15.4458,
    "status": "active",
    "via": "search"
   },
@@ -6225,7 +6220,7 @@
    "last_mention": "2026-07-17T06:27:09+00:00",
    "name": "ICICI Lombard General Insuranc",
    "norm": "icici lombard",
-   "score": 7.0472,
+   "score": 6.746,
    "status": "active",
    "via": "search"
   },
@@ -6263,7 +6258,7 @@
    "last_mention": "2026-07-17T11:20:11+00:00",
    "name": "IDBI BANK LIMITED",
    "norm": "idbi bank",
-   "score": 30.019,
+   "score": 28.7358,
    "status": "active",
    "via": "search"
   },
@@ -6301,7 +6296,7 @@
    "last_mention": "2026-07-17T11:20:11+00:00",
    "name": "INDIAN BANK",
    "norm": "indian bank",
-   "score": 70.9618,
+   "score": 67.9284,
    "status": "active",
    "via": "search"
   },
@@ -6339,7 +6334,7 @@
    "last_mention": "2026-07-17T11:20:11+00:00",
    "name": "INDUSIND BANK LTD.",
    "norm": "indusind bank",
-   "score": 54.0997,
+   "score": 51.7871,
    "status": "active",
    "via": "search"
   },
@@ -6348,6 +6343,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "India Proposes Stricter Vehicle Emission Rules To Cut Oil Consumption",
+     "ts": "2026-07-17T18:30:00+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "WeWork India posts Rs 4.3 cr loss in Jun quarter",
@@ -6367,17 +6367,12 @@
      "feed": "BusinessLine Mkts",
      "title": "Broker\u2019s call: South Indian Bank (Buy)",
      "ts": "2026-07-17T13:30:04+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "India's gold jewellery demand revives as prices stabilise; festive orders pick up: WGC",
-     "ts": "2026-07-17T13:44:49+00:00"
     }
    ],
-   "last_mention": "2026-07-17T12:25:10+00:00",
+   "last_mention": "2026-07-17T18:30:00+00:00",
    "name": "INOX INDIA LIMITED",
    "norm": "inox india",
-   "score": 83.4438,
+   "score": 80.8768,
    "status": "active",
    "via": "search"
   },
@@ -6386,6 +6381,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "A bad health diagnosis will upend your financial plan, but you can set it right again",
+     "ts": "2026-07-17T17:27:00+00:00"
+    },
     {
      "feed": "BusinessLine Mkts",
      "title": "Jio Financial shares surge 3% as Q1 profit jumps 156% y-o-y",
@@ -6405,17 +6405,12 @@
      "feed": "BusinessLine Mkts",
      "title": "Sensex today | Stock Market Live: Sensex surges 965 points, Nifty tops 24,334; banking, financial stocks shine ahead of key earnings",
      "ts": "2026-07-17T10:14:35+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Jio Financial Services Share Price Live Updates: Jio Financial Services Sees Share Price Increase",
-     "ts": "2026-07-17T02:50:24+00:00"
     }
    ],
-   "last_mention": "2026-07-17T10:32:12+00:00",
+   "last_mention": "2026-07-17T17:27:00+00:00",
    "name": "Jio Financial Services Limited",
    "norm": "jio financial services",
-   "score": 15.1273,
+   "score": 15.4807,
    "status": "active",
    "via": "search"
   },
@@ -6424,6 +6419,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "HORMUZ TRAFFIC HITS 3-WEEK LOW Confirmed crossings via the Strait of Hormuz dropped to a 3-week low on 16 July, with just 8 recorded, according to Kpler. For the fourth consecutive day, traffic remained heavily concentrated on the Iranian route, which accounted for 7 of the 8",
+     "ts": "2026-07-17T11:43:35+00:00"
+    },
     {
      "feed": "OilPrice",
      "title": "IEA Warns World Has Just Weeks to Avoid Hormuz Economic Shock",
@@ -6443,17 +6443,12 @@
      "feed": "OilPrice",
      "title": "China Just Connected the World's Biggest Hybrid Solar Plant to the Grid",
      "ts": "2026-07-15T20:00:00+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "101 equity mutual funds doubled money in 5 years; 4 did it in just 3 years. Should you invest now?",
-     "ts": "2026-07-15T04:09:24+00:00"
     }
    ],
-   "last_mention": "2026-07-16T07:30:00+00:00",
+   "last_mention": "2026-07-17T11:43:35+00:00",
    "name": "JUST DIAL LTD.",
    "norm": "just dial",
-   "score": 9.7854,
+   "score": 10.3671,
    "status": "active",
    "via": "search"
   },
@@ -6491,7 +6486,7 @@
    "last_mention": "2026-07-14T05:44:00+00:00",
    "name": "KALYAN JEWELLERS IND LTD",
    "norm": "kalyan jewellers",
-   "score": 3.9074,
+   "score": 3.7404,
    "status": "active",
    "via": "search"
   },
@@ -6500,6 +6495,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "META IN TALKS TO LEASE COMPUTING POWER TO ANTHROPIC IN POTENTIAL $10 BILLION DEAL - NYT",
+     "ts": "2026-07-17T16:28:27+00:00"
+    },
+    {
+     "feed": "DeItaone",
+     "title": "META SHARES PARE LOSSES AFTER REPORT OF POTENTIAL $10 BILLION COMPUTING POWER DEAL WITH ANTHROPIC; LAST DOWN 3.2%",
+     "ts": "2026-07-17T16:33:20+00:00"
+    },
     {
      "feed": "MarketWatch Top",
      "title": "Is SpaceX\u2019s stock a bust because it fell below $135? Look what happened after Meta\u2019s IPO.",
@@ -6514,22 +6519,12 @@
      "feed": "ET Markets",
      "title": "Global Market: China Q2 growth slows to 4.3% yoy; Asia, metals stocks likely to remain volatile",
      "ts": "2026-07-15T04:47:06+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Nifty gives up morning gains by midday; Bank Nifty outperforms as IT, metals drag",
-     "ts": "2026-07-15T07:54:38+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Vedanta AGM: Anil Agarwal maps aggressive expansion after demerger, targets scale-up across metals, oil and power",
-     "ts": "2026-07-14T12:35:02+00:00"
     }
    ],
-   "last_mention": "2026-07-16T16:12:00+00:00",
+   "last_mention": "2026-07-17T16:28:27+00:00",
    "name": "Meta",
    "norm": "meta",
-   "score": 5.5828,
+   "score": 7.3442,
    "status": "active",
    "via": "gazetteer"
   },
@@ -6567,7 +6562,7 @@
    "last_mention": "2026-07-15T12:47:11+00:00",
    "name": "Morgan Stanley",
    "norm": "morgan stanley",
-   "score": 4.381,
+   "score": 4.1937,
    "status": "active",
    "via": "search"
   },
@@ -6605,7 +6600,7 @@
    "last_mention": "2026-07-17T02:11:00+00:00",
    "name": "Micron Technology, Inc.",
    "norm": "micron",
-   "score": 2.5844,
+   "score": 2.4739,
    "status": "active",
    "via": "search"
   },
@@ -6614,6 +6609,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today | Highlights: S&P 500 and Nasdaq slip as chip rout extends; Netflix slides",
+     "ts": "2026-07-17T12:17:31+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "NFLX - NETFLIX SHARES DROP 9.2% PREMARKET AFTER CO FORECASTS Q3 REVENUE, PROFIT BELOW ESTIMATES",
@@ -6633,17 +6633,12 @@
      "feed": "ET Markets",
      "title": "Netflix shares tumble over 10% as slowing growth, less viewership data spook investors",
      "ts": "2026-07-17T16:03:46+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Netflix shares tumble 13% after weak sales forecast, hit 22-month low",
-     "ts": "2026-07-17T16:25:46+00:00"
     }
    ],
-   "last_mention": "2026-07-17T08:33:32+00:00",
+   "last_mention": "2026-07-17T12:17:31+00:00",
    "name": "Netflix, Inc.",
    "norm": "netflix",
-   "score": 7.609999999999999,
+   "score": 8.2847,
    "status": "active",
    "via": "search"
   },
@@ -6652,6 +6647,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "APPLE CLOSES IN ON NVIDIA $AAPL is on the verge of reclaiming the title of the world\u2019s most valuable company, with a market value nearing $4.9T as $NVDA slips. The race highlights a shift in the AI trade. Investors are increasingly betting on Apple\u2019s ability to monetize AI",
+     "ts": "2026-07-17T13:38:22+00:00"
+    },
+    {
+     "feed": "DeItaone",
+     "title": "APPLE SURPASSES NVIDIA TO BECOME WORLD'S MOST VALUABLE COMPANY $AAPL $NVDA",
+     "ts": "2026-07-17T13:38:23+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Wall Street falls on deepening selloff in chip stocks, Netflix slumps10.6%, Nvidia tumbles 4%",
@@ -6668,10 +6673,38 @@
      "ts": "2026-07-17T14:56:01+00:00"
     }
    ],
-   "last_mention": "2026-07-17T14:00:02+00:00",
+   "last_mention": "2026-07-17T13:38:22+00:00",
    "name": "NVIDIA Corporation",
    "norm": "nvidia",
-   "score": 3.0,
+   "score": 4.8718,
+   "status": "active",
+   "via": "search"
+  },
+  "OHI": {
+   "added": "2026-07-17T21:11:52.372495+00:00",
+   "amber_z": 2.0,
+   "cls": "EQUITIES",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "APPLE CLOSES IN ON NVIDIA $AAPL is on the verge of reclaiming the title of the world\u2019s most valuable company, with a market value nearing $4.9T as $NVDA slips. The race highlights a shift in the AI trade. Investors are increasingly betting on Apple\u2019s ability to monetize AI",
+     "ts": "2026-07-17T13:38:22+00:00"
+    },
+    {
+     "feed": "DeItaone",
+     "title": "CHIP STOCKS HIT HARD U.S. semiconductor stocks are heading for their worst week in over 15 months, with the Philadelphia Semiconductor Index down 12.5%. Investors are questioning the strength of the AI-driven rally after China\u2019s Moonshot unveiled a powerful open AI model.",
+     "ts": "2026-07-17T14:13:24+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "Investors are watching Jio but Mukesh Ambani-led RIL\u2019s Q1 surprise may come from refining",
+     "ts": "2026-07-17T03:52:09+00:00"
+    }
+   ],
+   "last_mention": "2026-07-17T13:38:22+00:00",
+   "name": "Omega Healthcare Investors, Inc",
+   "norm": "investors",
+   "score": 2.8649,
    "status": "active",
    "via": "search"
   },
@@ -6709,7 +6742,7 @@
    "last_mention": "2026-07-17T09:03:46+00:00",
    "name": "OLA ELECTRIC MOBILITY LTD",
    "norm": "ola electric",
-   "score": 4.1112,
+   "score": 3.9355,
    "status": "active",
    "via": "search"
   },
@@ -6732,7 +6765,7 @@
    "last_mention": "2026-07-15T07:08:00+00:00",
    "name": "PATANJALI FOODS LIMITED",
    "norm": "patanjali foods",
-   "score": 1.1877,
+   "score": 1.1369,
    "status": "active",
    "via": "search"
   },
@@ -6770,7 +6803,7 @@
    "last_mention": "2026-07-17T13:44:49+00:00",
    "name": "PC JEWELLER LTD",
    "norm": "pc jeweller",
-   "score": 6.8888,
+   "score": 6.5943,
    "status": "active",
    "via": "search"
   },
@@ -6803,7 +6836,7 @@
    "last_mention": "2026-07-15T13:40:48+00:00",
    "name": "PayPal Holdings, Inc.",
    "norm": "paypal",
-   "score": 2.5255,
+   "score": 2.4175,
    "status": "active",
    "via": "search"
   },
@@ -6841,7 +6874,7 @@
    "last_mention": "2026-07-16T19:08:34+00:00",
    "name": "AEGIS CRITICAL ENERGY DEFENCE C",
    "norm": "defence",
-   "score": 4.9066,
+   "score": 4.6969,
    "status": "active",
    "via": "search"
   },
@@ -6850,6 +6883,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SKHY \u2013 SK HYNIX DOWN 0.7% IN PREMARKET SK Hynix shares are slipping 0.7% in premarket after a 13.7% decline in Thursday\u2019s session. Leverage Shares recently launched $SKHX, a 2x leveraged ETF tied to SK Hynix. The fund seeks to deliver 2x the stock\u2019s daily performance and",
+     "ts": "2026-07-17T13:18:40+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "NEW 2X SK HYNIX ETF DEBUTS Leverage Shares launched $SKHX on Tuesday, a 2x leveraged ETF tied to SK Hynix. The fund aims to deliver 2x the stock\u2019s daily performance and carries a 0.75% expense ratio. Like all leveraged ETFs, it\u2019s designed for short-term trading and comes with",
@@ -6869,17 +6907,12 @@
      "feed": "ET Markets",
      "title": "Global Market: SK Hynix jumps 13% as easing US inflation, AI memory optimism lift chip stocks",
      "ts": "2026-07-15T04:18:54+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Explained: Why SK Hynix ADR premiums soared 50% over South Korean shares and how this reminds market of dotcom bubble",
-     "ts": "2026-07-15T05:35:17+00:00"
     }
    ],
-   "last_mention": "2026-07-16T14:53:23+00:00",
+   "last_mention": "2026-07-17T13:18:40+00:00",
    "name": "SK hynix Inc. American Depositary Shares When Issued",
    "norm": "sk hynix",
-   "score": 9.8168,
+   "score": 10.3972,
    "status": "active",
    "via": "search"
   },
@@ -6917,7 +6950,7 @@
    "last_mention": "2026-07-16T03:21:17+00:00",
    "name": "SWIGGY LIMITED",
    "norm": "swiggy",
-   "score": 3.5188,
+   "score": 3.3684,
    "status": "active",
    "via": "search"
   },
@@ -6955,7 +6988,7 @@
    "last_mention": "2026-07-17T12:31:38+00:00",
    "name": "TATA ELXSI LIMITED",
    "norm": "tata elxsi",
-   "score": 11.6065,
+   "score": 11.1104,
    "status": "active",
    "via": "search"
   },
@@ -6993,7 +7026,7 @@
    "last_mention": "2026-07-17T10:27:11+00:00",
    "name": "TECH MAHINDRA LIMITED",
    "norm": "tech mahindra",
-   "score": 12.0077,
+   "score": 11.4944,
    "status": "active",
    "via": "search"
   },
@@ -7003,6 +7036,21 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "DeItaone",
+     "title": "APPLE CLOSES IN ON NVIDIA $AAPL is on the verge of reclaiming the title of the world\u2019s most valuable company, with a market value nearing $4.9T as $NVDA slips. The race highlights a shift in the AI trade. Investors are increasingly betting on Apple\u2019s ability to monetize AI",
+     "ts": "2026-07-17T13:38:22+00:00"
+    },
+    {
+     "feed": "DeItaone",
+     "title": "APPLE SURPASSES NVIDIA TO BECOME WORLD'S MOST VALUABLE COMPANY $AAPL $NVDA",
+     "ts": "2026-07-17T13:38:23+00:00"
+    },
+    {
+     "feed": "DeItaone",
+     "title": "SOCCER WORLD CUP FINAL HALFTIME TO LAST MORE THAN 15 MINUTES, BROADCASTING SOURCES SAY",
+     "ts": "2026-07-17T14:13:25+00:00"
+    },
+    {
      "feed": "Mint Markets",
      "title": "Apple overtakes Nvidia as world's most valuable company amid chip selloff",
      "ts": "2026-07-17T14:06:59+00:00"
@@ -7011,27 +7059,12 @@
      "feed": "ET Markets",
      "title": "Apple unseats Nvidia to become world's most valuable company as AI bets shift",
      "ts": "2026-07-17T14:56:01+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Alpine Texworld IPO: Focus shifts to allotment date. Latest GMP, step-by-step guide to check status",
-     "ts": "2026-07-17T03:04:06+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Alpine Texworld IPO allotment today; GMP hints at flat listing. Here's how to check your status",
-     "ts": "2026-07-17T03:18:36+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Explained: Why China is buying less oil and why it matters to the world",
-     "ts": "2026-07-17T05:52:30+00:00"
     }
    ],
-   "last_mention": "2026-07-17T14:06:59+00:00",
+   "last_mention": "2026-07-17T13:38:22+00:00",
    "name": "Vanguard Total World Stock Inde",
    "norm": "world",
-   "score": 20.1231,
+   "score": 22.2629,
    "status": "active",
    "via": "search"
   },
@@ -7069,7 +7102,7 @@
    "last_mention": "2026-07-17T01:20:51+00:00",
    "name": "Wipro Limited",
    "norm": "wipro",
-   "score": 9.8445,
+   "score": 9.4237,
    "status": "active",
    "via": "search"
   }
@@ -7133,6 +7166,7 @@
   "08d1358041ff",
   "0937cbe4209f",
   "099f3fc3c0d1",
+  "09bf42146f57",
   "09d7b19865f5",
   "0a7a111664e7",
   "0a7b923ed8bb",
@@ -7160,6 +7194,7 @@
   "0d0ff2c9459f",
   "0d19a559048a",
   "0d3967b29604",
+  "0d65bb97d907",
   "0d8197626b0c",
   "0d8ac2c4602e",
   "0d8afcad0006",
@@ -7256,7 +7291,6 @@
   "1b64ff5a97e1",
   "1bd5d70b5a0e",
   "1bec2bb55859",
-  "1bf4d94c7865",
   "1bf99dd20bc2",
   "1c1b162df332",
   "1c9dee31b443",
@@ -7274,13 +7308,14 @@
   "1ef2ffb25516",
   "1f018ac2ebd3",
   "1f267ce16686",
+  "1f4827cf0b01",
   "1f4fc8f0abd7",
   "1f724c880f3e",
   "201bfb779045",
   "20354a2c02c3",
-  "204c910cca7a",
   "20cc0084b54f",
   "20e4895ea870",
+  "20e873ab17d3",
   "20ea6733474b",
   "210ded04c93f",
   "211117f21af2",
@@ -7289,7 +7324,6 @@
   "218c7a4b9108",
   "2211d06271fc",
   "22975cb1f4ae",
-  "230488e9647c",
   "23186091d596",
   "232f12c6d6d6",
   "239229ca9815",
@@ -7330,6 +7364,7 @@
   "2a3d5f16830f",
   "2a51cb19e29e",
   "2a59d305c0b6",
+  "2aba92573030",
   "2ad4a3e8dae3",
   "2aff68860872",
   "2b1a5eb609a9",
@@ -7368,6 +7403,7 @@
   "315d0d60810f",
   "3167ca8db4ea",
   "318b39b85915",
+  "319f47ce000c",
   "31d22c8a52d4",
   "31fc5e5bc327",
   "3222cc07653d",
@@ -7418,7 +7454,6 @@
   "388bf4c9e0c0",
   "38c842ae2f1f",
   "38d3e2be742b",
-  "38f4841aa854",
   "3917e6a17de6",
   "3926918ee07e",
   "3930a25da5ed",
@@ -7449,6 +7484,7 @@
   "3c017e0843fb",
   "3c4c7bd0176a",
   "3c50d667bf34",
+  "3cca82251e35",
   "3ccf8d6f51c0",
   "3cdafbf543ba",
   "3cfb3bf9ec21",
@@ -7462,7 +7498,7 @@
   "3df287d47749",
   "3e4a5ee18838",
   "3e5aae88471a",
-  "3f13959ac11c",
+  "3f1b28e45c2c",
   "3f89f5e32d5e",
   "3ffb02963cc9",
   "40687fbefa19",
@@ -7474,6 +7510,7 @@
   "40f2a12809fb",
   "414c93cda16f",
   "418dc430d233",
+  "41a8818a43f3",
   "41bcc9b91d78",
   "4205a64d480a",
   "420e1ebd22c2",
@@ -7502,6 +7539,7 @@
   "45f21547af67",
   "460ca83b1fe7",
   "46122f0db373",
+  "464530ee6a70",
   "464947d42d9f",
   "46584e57beec",
   "46766aa959d7",
@@ -7516,6 +7554,7 @@
   "47ba09cbd9b6",
   "47ce940d72a9",
   "48004a7648b5",
+  "4845a6ebfc23",
   "486048fdf7d2",
   "487bb211c6da",
   "489ba682997b",
@@ -7548,7 +7587,6 @@
   "4d0973fd25fe",
   "4d28d7c6531b",
   "4d2e5d6af517",
-  "4d8368af5a2d",
   "4d86eb14e13f",
   "4da31c6fa31a",
   "4da405530e05",
@@ -7620,19 +7658,16 @@
   "5723c27c0e3f",
   "5795f27e64ce",
   "57b52cf922f6",
-  "57ed33639b40",
   "58382599af1f",
   "5847f17d976f",
   "59339d7710d8",
   "596b4bd3e817",
   "5993d5ccffa3",
-  "5996854ca677",
   "59995587fa58",
   "59bfdbeb5590",
   "5a132c5a7f0c",
   "5a31169bc88e",
   "5a71b2d77b48",
-  "5a86378cae0a",
   "5a8fba37b0b7",
   "5acea52750f5",
   "5ad510745880",
@@ -7643,6 +7678,8 @@
   "5af9fbd7d48e",
   "5b03676e39ba",
   "5b0af41727fa",
+  "5b2be5ce51d8",
+  "5b533c66f7ed",
   "5b7a7a21b2da",
   "5bda2c1ebf30",
   "5bf015f8ff84",
@@ -7650,6 +7687,7 @@
   "5c1408dabf8b",
   "5c3730e0eabf",
   "5c38202ce8c6",
+  "5c87ec66e2da",
   "5c92db5c80db",
   "5cec545d398c",
   "5d15ddb2c093",
@@ -7668,10 +7706,10 @@
   "604f85d2e078",
   "6088d4acd3cb",
   "60f806d870df",
+  "612fd79b8ada",
   "6157da218635",
   "61865f7f5013",
   "618b006ebc24",
-  "61b0cacba44b",
   "6218e2541851",
   "621b11ff6f61",
   "624201ad8321",
@@ -7684,12 +7722,13 @@
   "63e2cb4bf2f4",
   "64209613b22e",
   "642db53c5b27",
-  "64424379d5d9",
   "6450ebd3b6b3",
   "647c220c10ba",
   "647d7862b2df",
   "6491ea3273a0",
   "64f46efd298a",
+  "6513d68103e6",
+  "65188dee779e",
   "6523dd32d18d",
   "65245400d406",
   "65256ac55f0d",
@@ -7705,6 +7744,7 @@
   "666990fdfb83",
   "6699ac700659",
   "66a4dc236ff4",
+  "66dd74939669",
   "66efe39c7147",
   "673570ae974d",
   "6751d9bbb2ce",
@@ -7719,6 +7759,7 @@
   "68a4d19a6e1c",
   "68c321a88d91",
   "68ebce45977f",
+  "68fbcf67f991",
   "692197f9b11d",
   "6938058d4258",
   "696cae5683cb",
@@ -7746,7 +7787,6 @@
   "6d5ac410d1cf",
   "6d6615f4823d",
   "6d75d561c428",
-  "6d7b8a7a1aea",
   "6d9b29e25160",
   "6d9ef07319cf",
   "6d9fd9a425d7",
@@ -7823,6 +7863,7 @@
   "786980f83940",
   "7869c7bd1da2",
   "789aa3be72c1",
+  "790b94330dd0",
   "791ae53b51ec",
   "794c86fa2cf1",
   "79582c624899",
@@ -7896,7 +7937,6 @@
   "8499fae1c3b4",
   "84c50fc1ca32",
   "84dba9fdde17",
-  "84eb5eb509e8",
   "8509faf9f875",
   "8528cca30c18",
   "85cd09f72361",
@@ -7954,6 +7994,7 @@
   "8e835e9c052b",
   "8ee84dbe0e3c",
   "8eecbfc3fb69",
+  "8effa9995cb2",
   "8f3b7c0ea81a",
   "8f530e23a5dd",
   "8f7445a81a2b",
@@ -7986,15 +8027,16 @@
   "940911ec214a",
   "942417316b0b",
   "9424b42fe784",
-  "9479900ec531",
   "948946d8c06b",
   "9492606faa90",
   "949813a15db5",
   "949cba1689bc",
+  "94a1bcd2b5be",
   "94a77a54d9a6",
   "954c41c76add",
   "959239129e66",
   "95eb6a130eea",
+  "961583d87320",
   "969cfcb5f2d5",
   "969f6abf7e98",
   "96b4bc6ca82c",
@@ -8043,8 +8085,10 @@
   "9d96d0cf7258",
   "9dbd2f195a22",
   "9dc6e12cde60",
+  "9e261067bb39",
   "9e87f5928c76",
   "9ecaa79feb88",
+  "9ed7bae4992d",
   "9ef9f7cca44a",
   "9f20e31cf8f0",
   "9f3396b3f511",
@@ -8086,7 +8130,6 @@
   "a440abe02685",
   "a45de2157596",
   "a46faf124036",
-  "a474802f04ea",
   "a49f3f036985",
   "a4f89e574498",
   "a5008e664faa",
@@ -8109,6 +8152,7 @@
   "a9e8054ba11b",
   "a9fd333728a6",
   "aa4482b18ea6",
+  "aa4c5328173d",
   "aa550fcda019",
   "aa93d03bfb1c",
   "aa9a1ec129af",
@@ -8120,6 +8164,7 @@
   "ab8ae83add40",
   "abc566534be4",
   "abe2841d9824",
+  "ac012145765d",
   "ac1303bc7008",
   "ac64d855cea6",
   "ac9beeb69430",
@@ -8143,6 +8188,7 @@
   "af4799772be3",
   "afc8a30987d2",
   "afcfbe9376b2",
+  "b00f980deaf8",
   "b011f52e235f",
   "b025f5c8d03a",
   "b0406eb3ca32",
@@ -8165,14 +8211,12 @@
   "b277facfd874",
   "b27889dcba41",
   "b28b64ec397f",
-  "b293ed3f3260",
   "b2aedbe1f3d8",
   "b317ae1a75a6",
   "b395dd4f2e2b",
   "b3d137984c23",
   "b415fbadec83",
   "b4613fbcacd4",
-  "b47063ca818e",
   "b4b8ae1bbe40",
   "b52ed131a5bf",
   "b5a025d6d253",
@@ -8184,7 +8228,6 @@
   "b77f304a0b2e",
   "b78b69fe8b0c",
   "b79ba9d12ee1",
-  "b7f0a48da868",
   "b8083082ed22",
   "b855e5acd9bc",
   "b8987d106e4e",
@@ -8239,6 +8282,7 @@
   "c0a0e4972b83",
   "c0a5c57cd8de",
   "c0d3c483b470",
+  "c110c8fc96ad",
   "c118ac028ded",
   "c14654ed8637",
   "c1530b6c2ba0",
@@ -8247,15 +8291,16 @@
   "c1a0679382ab",
   "c1c0e2d1b5a4",
   "c1edce958964",
-  "c238b41d1488",
   "c24d9f2d6432",
   "c2eab99e45b7",
   "c30a91162946",
   "c3303e18ce66",
   "c35249d7b561",
   "c372fdd9f09d",
+  "c39d5eea5691",
   "c3a1648e3c4e",
   "c4867f551b14",
+  "c4bd4ae6351b",
   "c4c87bdeddc5",
   "c53ca1149eab",
   "c548ae5e6506",
@@ -8295,11 +8340,9 @@
   "cdf1cfb2a0d4",
   "ce1b3f3a5d05",
   "ce32a679674e",
-  "ce4f0128b612",
   "ce5206a77faa",
   "ce98cf7e1d85",
   "cf11bb856c0a",
-  "cf147eb111fc",
   "cf66b2b362c9",
   "cf6cfe6f2dce",
   "cf772bf7b86f",
@@ -8312,6 +8355,7 @@
   "d01c7182600f",
   "d0296f40215c",
   "d048689d359e",
+  "d056ae9c59b5",
   "d05f6abc3e4a",
   "d07b310357cb",
   "d09783669f49",
@@ -8335,7 +8379,6 @@
   "d4956c3f3b5d",
   "d4cb9d539d09",
   "d4ccedfbba40",
-  "d545767f292b",
   "d57017eb97a0",
   "d573dabca905",
   "d580a08ea65d",
@@ -8404,6 +8447,7 @@
   "e10a1ef1a32e",
   "e118398e5621",
   "e1350cd22bfc",
+  "e17e03cbd838",
   "e192260d2137",
   "e1a2ce46850f",
   "e25ed5543e9d",
@@ -8441,7 +8485,6 @@
   "e82839fb4a7d",
   "e87938aa8e84",
   "e87ee20e19ee",
-  "e935a7d5824d",
   "e990df08139f",
   "e9fcc1f5041d",
   "ea6946d2cf43",
@@ -8505,6 +8548,8 @@
   "f2e5e59da8bf",
   "f31b88ef9f8b",
   "f35011798f69",
+  "f36f3b4f0499",
+  "f38a05e98324",
   "f3bda1f791cc",
   "f3e0ca2deae6",
   "f3fb539ca351",
@@ -8530,6 +8575,7 @@
   "f843af8a40cb",
   "f84d5a428d9f",
   "f8a13d257223",
+  "f9675413765d",
   "f967c5a6681a",
   "f9850891ac7c",
   "f99206fa2af8",
@@ -8568,5 +8614,5 @@
   "ff19044b550d",
   "ff4c949c5fe3"
  ],
- "updated": "2026-07-17T16:39:35.488207+00:00"
+ "updated": "2026-07-17T21:11:52.372495+00:00"
 }
