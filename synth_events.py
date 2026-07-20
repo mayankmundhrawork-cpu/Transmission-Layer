@@ -76,37 +76,46 @@ def _compile_lexicon():
             m = uni.get(sym, {})
             norm = m.get("norm") or ""
             if len(norm) >= 4:
-                entries.append((rx(norm), [sid], [], "L1"))
+                entries.append((rx(norm), [sid], [], "L1", {}))
             for tok in norm.split():
                 if len(tok) >= 5:
-                    entries.append((rx(tok), [sid], [], "L1"))
+                    entries.append((rx(tok), [sid], [], "L1", {}))
     # L2 — backbone aliases
     for sid, phrases in NEWS_ALIASES.items():
         for p in phrases:
-            entries.append((rx(p), [sid], [], "L2"))
-    # L3 — curated topic map
+            entries.append((rx(p), [sid], [], "L2", {}))
+    # L3 — curated topic map (carries per-series edge weights + watch flag)
     for e in TOPIC_ALIASES:
+        w = e.get("weights", {})
+        watch = bool(e.get("watch"))
         for p in e["phrases"]:
-            entries.append((rx(p), e["series"], e.get("topics", []), "L3"))
+            entries.append((rx(p), e["series"], e.get("topics", []),
+                            "L3:watch" if watch else "L3", w))
     topic_only = [(rx(p), tags) for p, tags in TOPIC_ONLY.items()]
     return entries, topic_only
 
 
-def tag_text(text: str, lexicon) -> tuple[list[str], list[str], list[str]]:
-    """(entities, topics, layers_hit) for one text."""
+def tag_text(text: str, lexicon):
+    """(entities, topics, layers_hit, entity_weights) for one text.
+    entity weight = max weight across matching entries (default 1.0)."""
     entries, topic_only = lexicon
     tl = text.lower()
     ents, topics, layers = [], [], []
-    for pat, series, tags, layer in entries:
+    weights: dict[str, float] = {}
+    for entry in entries:
+        pat, series, tags, layer = entry[0], entry[1], entry[2], entry[3]
+        w = entry[4] if len(entry) > 4 else {}
         if pat.search(tl):
-            ents += series
+            for sid in series:
+                ents.append(sid)
+                weights[sid] = max(weights.get(sid, 0.0), w.get(sid, 1.0))
             topics += tags
             layers.append(layer)
     for pat, tags in topic_only:
         if pat.search(tl):
             topics += tags
     dedupe = lambda xs: list(dict.fromkeys(xs))
-    return dedupe(ents), dedupe(topics), dedupe(layers)
+    return dedupe(ents), dedupe(topics), dedupe(layers), weights
 
 
 # ── salience (deterministic, per source) ───────────────────────────────
@@ -170,7 +179,7 @@ def text_events(now: datetime, lexicon) -> tuple[list[dict], list[dict]]:
             ts = datetime.fromisoformat(it["ts"])
         except Exception:
             continue
-        ents, topics, layers = tag_text(it["title"], lexicon)
+        ents, topics, layers, wts = tag_text(it["title"], lexicon)
         if not ents and not topics:
             misses.append({"ts": it["ts"], "source": source,
                            "title": it["title"][:160]})
@@ -180,7 +189,9 @@ def text_events(now: datetime, lexicon) -> tuple[list[dict], list[dict]]:
             "entities": ents, "topics": topics,
             "payload": {"title": it["title"], "feed": it.get("feed"),
                         "link": it.get("link", ""), "layers": layers,
-                        "store_id": it["id"]},
+                        "store_id": it["id"],
+                        "entity_weights": {k: v for k, v in wts.items()
+                                           if v != 1.0} or None},
             "salience": _salience_text(source, ts, len(ents), now),
         })
     return out, misses

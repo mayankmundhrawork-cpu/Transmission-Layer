@@ -51,9 +51,14 @@ TOPIC_ALIASES = [
     {"phrases": ["india cpi", "india inflation", "wpi", "food inflation"],
      "series": ["india_cpi_yoy", "goi_10y", "usd_inr"],
      "topics": ["india_macro", "inflation"]},
+    # nifty_50 enters at weight 0.5 (owner ruling): rural demand routes to
+    # index-heavy autos/staples/financials, but monsoon is not usually a
+    # broad-index driver — down-weighted so a false join costs less.
     {"phrases": ["monsoon", "rainfall", "kharif", "sowing", "el nino",
                  "la nina", "imd"],
-     "series": ["nifty_fmcg", "india_cpi_yoy", "wheat", "corn", "soybeans"],
+     "series": ["nifty_fmcg", "india_cpi_yoy", "wheat", "corn", "soybeans",
+                "nifty_50"],
+     "weights": {"nifty_50": 0.5},
      "topics": ["monsoon", "agri", "india_macro"]},
     {"phrases": ["fii", "fpi", "dii", "foreign outflow", "foreign inflow"],
      "series": ["nifty_50", "nifty_midcap_100", "usd_inr"],
@@ -75,8 +80,11 @@ TOPIC_ALIASES = [
                  "ism ", "us inflation"],
      "series": ["ust_2y", "ust_10y", "dxy", "sp500"],
      "topics": ["us_macro", "inflation"]},
+    # Indian legs added (owner ruling): tariff escalation transmits to
+    # Indian IT (US-demand proxy) and metals (global price + dumping flows)
     {"phrases": ["tariff", "tariffs", "trade war", "trade deal", "import duty"],
-     "series": ["sp500", "usd_cny", "usd_inr", "comex_copper", "hang_seng"],
+     "series": ["sp500", "usd_cny", "usd_inr", "comex_copper", "hang_seng",
+                "nifty_it", "nifty_metal"],
      "topics": ["trade_policy", "geopolitics"]},
     {"phrases": ["treasury yield", "bond selloff", "duration", "term premium",
                  "10-year"],
@@ -117,10 +125,15 @@ TOPIC_ALIASES = [
      "series": ["dxy"], "topics": ["fx"]},
 
     # ── tech / semis (drives both US and Indian IT baskets) ────────────
+    # watch=True (owner ruling): semis->nifty_it is the loosest causal link
+    # in the map — most likely to generate spurious transmission gaps. The
+    # S2 audit surfaces every candidate whose news-join came through a
+    # watch-flagged entry so its hit rate is visible early; cut if noise.
     {"phrases": ["nvidia", "semiconductor", "semiconductors", "chipmaker",
                  "chips act", "tsmc", "ai capex", "data center",
                  "datacenter", "h100", "h200"],
      "series": ["nasdaq_100", "taiwan_weighted", "nifty_it"],
+     "watch": True,
      "topics": ["semis", "ai"]},
     {"phrases": ["it services", "infosys", "tcs", "wipro", "hcl tech"],
      "series": ["nifty_it"], "topics": ["india_it"]},
