@@ -38,8 +38,9 @@ TOPIC_ALIASES = [
     {"phrases": ["sanction", "sanctions", "price cap", "urals"],
      "series": ["brent", "wti", "comex_gold"],
      "topics": ["sanctions", "geopolitics"]},
-    {"phrases": ["iranian", "tehran", "gulf escalation", "attacks on ships",
-                 "israel strikes", "strait closure"],
+    {"phrases": ["iran", "iranian", "tehran", "gulf escalation",
+                 "attacks on ships", "israel", "israel strikes",
+                 "strait closure", "strait of hormuz"],
      "series": ["brent", "wti", "comex_gold", "vix"],
      "topics": ["geopolitics", "energy_chokepoint"]},
 

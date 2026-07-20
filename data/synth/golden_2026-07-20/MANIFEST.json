@@ -1,0 +1,41 @@
+{
+  "frozen_utc": "2026-07-20T15:44:25.722389+00:00",
+  "data_date": "2026-07-20",
+  "purpose": "FROZEN acceptance fixture for SYNTH_V2 (owner ruling 4). Do not regenerate; latest/ is for smoke tests only.",
+  "files": {
+    "channels.json": {
+      "sha1": "6a424e6b940c",
+      "bytes": 227758
+    },
+    "conditional.json": {
+      "sha1": "a7a3edd4bd47",
+      "bytes": 12096
+    },
+    "events.json": {
+      "sha1": "399b8a247bdb",
+      "bytes": 123385
+    },
+    "headlines.json": {
+      "sha1": "1182dcde3150",
+      "bytes": 119902
+    },
+    "prices.csv": {
+      "sha1": "9985c7872379",
+      "bytes": 681324
+    },
+    "relations.json": {
+      "sha1": "b7d754b1e00c",
+      "bytes": 214790
+    },
+    "squawk.json": {
+      "sha1": "ba85a2a513ba",
+      "bytes": 5216
+    },
+    "universe.json": {
+      "sha1": "0da6aa491a1b",
+      "bytes": 225568
+    }
+  },
+  "expected_anomalies": [],
+  "expected_anomalies_note": "hand-labelled with owner, pending"
+}

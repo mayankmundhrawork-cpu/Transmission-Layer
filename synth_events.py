@@ -47,7 +47,10 @@ EVENTS_JSON = SYNTH_DIR / "events.json"
 MISSES_JSON = SYNTH_DIR / "join_misses.json"
 
 MOVE_QUANTILE = 0.98      # adaptive per-series bar on |zc| history
-MOVE_MIN_HISTORY = 120
+MOVE_MIN_HISTORY = 180    # sessions of |zc| needed to trust the adaptive bar
+MOVE_FLOOR_HISTORY = 60   # below this there is no market event at all
+MOVE_FIXED_BAR = 3.0      # conservative bar used between floor and full hist
+MOVE_STALE_SESSIONS = 1   # a series' last bar must be this fresh to fire live
 EVENT_DAYS = 7            # rolling bus window
 MISS_CAP = 400
 
@@ -137,35 +140,90 @@ def _eid(source: str, key: str) -> str:
 
 
 # ── adapters ───────────────────────────────────────────────────────────
+def _move_event(sid: str, s: pd.Series, rets: pd.Series, pos: int) -> dict | None:
+    """One market event for series `sid` at integer position `pos` of its own
+    |zc| series, judged ONLY on history strictly before pos (point-in-time).
+    Returns None when the bar is not cleared. Shared by the live adapter and
+    the historical backfill so a reconstructed trigger is the same object the
+    live tick would have emitted."""
+    if pos < MOVE_FLOOR_HISTORY:
+        return None                       # ruling 5: no event below the floor
+    hist = s.abs().iloc[:pos]
+    z_now = float(s.iloc[pos])
+    # Short history makes a q98 estimate of a series' own tail unreliable
+    # (it is one of ~3 observations). Below MOVE_MIN_HISTORY the bar is a
+    # conservative fixed one and the event carries low_history: True.
+    low_history = pos < MOVE_MIN_HISTORY
+    bar = MOVE_FIXED_BAR if low_history else float(hist.quantile(MOVE_QUANTILE))
+    if bar <= 0 or abs(z_now) < bar:
+        return None
+    pctile = float((hist < abs(z_now)).mean())
+    d = s.index[pos]
+    ret = rets.get(d)
+    return {
+        "id": _eid("market", f"{sid}|{d:%Y-%m-%d}"),
+        "ts": pd.Timestamp(d, tz="UTC").isoformat(),
+        "source": "market", "kind": "move",
+        "entities": [sid], "topics": [],
+        "payload": {"series": sid, "zc": round(z_now, 2),
+                    "adaptive_bar": round(bar, 2),
+                    "bar_kind": "fixed" if low_history else "adaptive",
+                    "low_history": low_history,
+                    "history_n": int(pos + 1),
+                    "move_pctile": round(pctile, 4),
+                    "ret_1d_pct": None if ret is None or pd.isna(ret)
+                    else round(float(ret) * 100, 3)},
+        # short history => the percentile itself is a weak estimate, so
+        # the event enters the bus discounted rather than suppressed
+        "salience": round(_salience_market(pctile) *
+                          (0.5 if low_history else 1.0), 3),
+    }
+
+
 def market_events(prices: pd.DataFrame, now: datetime) -> list[dict]:
+    """Live adapter: events on the latest bar only.
+
+    A series whose feed has gone quiet still has a "last observation", and
+    without the staleness guard its final big move would be re-emitted on
+    every tick forever. Only bars within MOVE_STALE_SESSIONS of the matrix's
+    own latest date count as live."""
     from conditional import zc_frame
     zc = zc_frame(prices)
+    rets = prices.pct_change(fill_method=None)
+    cal = prices.index.sort_values()
+    fresh_from = cal[max(0, len(cal) - 1 - MOVE_STALE_SESSIONS)]
     out = []
     for sid in zc.columns:
         s = zc[sid].dropna()
-        if len(s) < MOVE_MIN_HISTORY:
+        if not len(s) or s.index[-1] < fresh_from:
             continue
-        hist = s.abs().iloc[:-1]
-        bar = float(hist.quantile(MOVE_QUANTILE))
-        z_now = float(s.iloc[-1])
-        if abs(z_now) < bar or bar <= 0:
-            continue
-        pctile = float((hist < abs(z_now)).mean())
-        d = s.index[-1]
-        out.append({
-            "id": _eid("market", f"{sid}|{d:%Y-%m-%d}"),
-            "ts": pd.Timestamp(d, tz="UTC").isoformat(),
-            "source": "market", "kind": "move",
-            "entities": [sid], "topics": [],
-            "payload": {"series": sid, "zc": round(z_now, 2),
-                        "adaptive_bar": round(bar, 2),
-                        "move_pctile": round(pctile, 4),
-                        "ret_1d_pct": round(float(
-                            prices[sid].pct_change(fill_method=None)
-                            .dropna().iloc[-1] * 100), 3)
-                        if sid in prices.columns else None},
-            "salience": _salience_market(pctile),
-        })
+        e = _move_event(sid, s, rets.get(sid, pd.Series(dtype=float)), len(s) - 1)
+        if e:
+            out.append(e)
+    return out
+
+
+def market_events_backfill(prices: pd.DataFrame, sessions: int = 10,
+                           zc: pd.DataFrame | None = None) -> list[dict]:
+    """Replay the market adapter over the last `sessions` bars.
+
+    The live adapter only ever sees the newest bar, so a bus assembled from a
+    frozen snapshot contains whatever happened to be captured live. Detectors
+    and base rates need the triggers that WOULD have fired (ruling 8), so this
+    re-runs the identical bar per session with strictly-prior history."""
+    from conditional import zc_frame
+    if zc is None:
+        zc = zc_frame(prices)
+    rets = prices.pct_change(fill_method=None)
+    out = []
+    for sid in zc.columns:
+        s = zc[sid].dropna()
+        r = rets[sid] if sid in rets.columns else pd.Series(dtype=float)
+        for pos in range(max(0, len(s) - sessions), len(s)):
+            e = _move_event(sid, s, r, pos)
+            if e:
+                out.append(e)
+    out.sort(key=lambda e: e["ts"], reverse=True)
     return out
 
 
