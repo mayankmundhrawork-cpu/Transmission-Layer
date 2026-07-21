@@ -46,8 +46,14 @@ def is_single_name(sid: str) -> bool:
 
 
 def driver_admissible(driver: str, target: str) -> tuple[bool, str | None]:
-    """(admissible, reason_if_not). The sole structural veto: a single-name
-    equity driving a macro target."""
-    if is_single_name(driver) and is_macro(target):
-        return False, "single_name_drives_macro"
+    """(admissible, reason_if_not). Only macro may drive macro. This FAILS
+    CLOSED: any driver that is not positively classified macro is inadmissible
+    for a macro target — a single-name equity OR an unclassified series (a
+    registry gap must never silently admit a stock as a driver of the S&P).
+    Non-macro targets are unconstrained (macro can drive single names; single
+    names can drive single names)."""
+    if is_macro(target) and not is_macro(driver):
+        reason = ("single_name_drives_macro" if is_single_name(driver)
+                  else "unclassified_drives_macro")
+        return False, reason
     return True, None

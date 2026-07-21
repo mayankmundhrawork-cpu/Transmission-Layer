@@ -377,6 +377,43 @@ def test_outcome_horizon_is_clamped():
     assert resolve_outcome(px, _trig(t, 1.0, 0.0, 1, lead_lag=99))["K"] == K_MAX
 
 
+# ── taxonomy completeness (no fail-open registry hole) ──────────────────
+def test_every_price_and_relations_series_is_classified():
+    """A series in prices/relations with no registry class fails the class
+    prior OPEN — the exact bug the coverage reconstruction surfaced
+    (britannia/bpcl/dabur). Guard it so a future orphan can't reintroduce it."""
+    import json
+    import pandas as pd
+    from registry import load_registry
+    from synth_classes import market_of
+    reg = {s["id"] for s in load_registry()}
+    cols = pd.read_csv(ROOT / "data" / "prices.csv", index_col=0, nrows=1).columns
+    unclassified = [c for c in cols if market_of(c) is None]
+    assert unclassified == [], f"unclassified price series: {unclassified}"
+    rel = json.loads((ROOT / "data" / "relations.json").read_text())
+    rel_series = set(rel.get("series", []))
+    assert [s for s in rel_series if market_of(s) is None] == []
+
+
+def test_class_prior_fails_closed_on_unclassified_driver():
+    from synth_classes import driver_admissible
+    # a series not in the registry must NOT be admissible as a macro driver
+    assert driver_admissible("ghost_unregistered", "sp500") == \
+        (False, "unclassified_drives_macro")
+    # and a now-registered single name is blocked with the single-name reason
+    assert driver_admissible("britannia", "sp500")[0] is False
+
+
+def test_wilson_interval_uses_cluster_n():
+    from synth_baserates import _wilson
+    p, lo, hi = _wilson(6, 8)
+    assert p == 0.75 and 0.0 <= lo < p < hi <= 1.0
+    # smaller n -> wider interval (cluster N must widen it, not raw N)
+    _, lo8, hi8 = _wilson(6, 8)
+    _, lo40, hi40 = _wilson(30, 40)      # same p, larger n
+    assert (hi8 - lo8) > (hi40 - lo40)
+
+
 # ── spec: nothing hardcoded ─────────────────────────────────────────────
 def test_no_registry_series_id_is_hardcoded_in_synth_modules():
     """Detection must be data-driven: no universe series id may appear as a

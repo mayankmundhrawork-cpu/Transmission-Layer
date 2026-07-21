@@ -361,6 +361,15 @@ def viability_table(pop_path: Path | str | None = None,
         return d
 
     glob = row(gradeable)
+    # global is the COARSEST bucket — it pools INDICES->INDICES with FX->FX
+    # etc. into one "all-transmission" reference class with no shared mechanism.
+    # It answers "do cross-asset setups in general resolve," never a claim about
+    # the specific setup on the board. So it is CAPPED at CONDITIONAL: a
+    # last-resort reference class, never a clean CLEAR (owner ruling — enforced
+    # verdict, not a qualifier a reader must notice).
+    if glob["verdict"] == "CLEAR":
+        glob["verdict"] = "CONDITIONAL"
+        glob["capped"] = "global_is_last_resort_bucket"
     by_cp, by_pair = defaultdict(list), defaultdict(list)
     for t in gradeable:
         by_cp[(t["driver_class"], t["target_class"])].append(t)
@@ -402,6 +411,131 @@ def viability_table(pop_path: Path | str | None = None,
 def market_class(sid: str) -> str | None:
     from synth_classes import market_of
     return market_of(sid)
+
+
+# ── pooled hit rates (cluster-as-unit) + display contract ────────────────
+def _wilson(k: int, n: int, z: float = 1.96) -> tuple:
+    """Wilson 95% interval for k/n. n is the CLUSTER count (effective sample),
+    never the raw trigger count."""
+    if n == 0:
+        return (None, None, None)
+    p = k / n
+    d = 1 + z * z / n
+    centre = (p + z * z / (2 * n)) / d
+    half = (z * ((p * (1 - p) / n + z * z / (4 * n * n)) ** 0.5)) / d
+    return (round(p, 3), round(max(0.0, centre - half), 3),
+            round(min(1.0, centre + half), 3))
+
+
+def family_clusters(gradeable: list, sess_ord: dict, dc: str, tc: str) -> list:
+    """Clusters for one class-pair family, each with its member legs + the
+    episode-level outcome (CLOSED if a majority of legs closed@0.5) — so the
+    rate is one binary per INDEPENDENT episode, not per correlated leg."""
+    fam = [t for t in gradeable if t["driver_class"] == dc
+           and t["target_class"] == tc]
+    if not fam:
+        return []
+    labels = cluster_labels(fam, sess_ord)
+    groups: dict[int, list] = defaultdict(list)
+    for t, lab in zip(fam, labels):
+        groups[lab].append(t)
+    out = []
+    for lab, legs in groups.items():
+        closed = sum(1 for l in legs if l["closed_05"])
+        out.append({
+            "cluster": lab, "n_legs": len(legs),
+            "episode_closed": closed * 2 >= len(legs),   # majority of legs
+            "legs": [{"driver": l["driver"], "target": l["target"],
+                      "date": l["asof"], "outcome": l["outcome"],
+                      "closed_05": l["closed_05"], "ttt_05": l["ttt_05"]}
+                     for l in legs],
+        })
+    return out
+
+
+def family_rate(gradeable: list, sess_ord: dict, dc: str, tc: str) -> dict:
+    """Episode-level hit rate for a class-pair family: closed episodes /
+    total clusters, Wilson CI on the CLUSTER count."""
+    cl = family_clusters(gradeable, sess_ord, dc, tc)
+    n = len(cl)
+    k = sum(1 for c in cl if c["episode_closed"])
+    p, lo, hi = _wilson(k, n)
+    # leg-level for reference (correlated, inflated N — shown, not used for CI)
+    legs = [l for c in cl for l in c["legs"]]
+    leg_closed = sum(1 for l in legs if l["closed_05"])
+    return {"class_pair": f"{dc}->{tc}", "clusters": n, "closed_episodes": k,
+            "rate": p, "wilson95": [lo, hi],
+            "leg_level": {"n": len(legs), "closed": leg_closed,
+                          "rate": round(leg_closed / len(legs), 3) if legs else None},
+            "clusters_detail": cl}
+
+
+def base_rate_record(driver: str, target: str, pop: dict | None = None,
+                     n_min: int = N_MIN_DEFAULT,
+                     ratio_veto: float = RATIO_VETO) -> dict:
+    """DISPLAY CONTRACT: resolve the base rate for a live (driver -> target)
+    candidate. Back-off pair -> class-pair -> global(CONDITIONAL) ->
+    INSUFFICIENT. The record ALWAYS carries `frame: reference_class` (never a
+    per-instance claim, section B) and, when INSUFFICIENT, its own denominators
+    so the absence of a rate defends itself — a bare INSUFFICIENT invites a
+    later 'fix' by loosening a bucket; one that shows '3 episodes in 2y, below
+    the 8-cluster floor' does not."""
+    import json
+    if pop is None:
+        p = DATA_DIR / "synth" / "reconstruction_population.json"
+        pop = json.loads(p.read_text(encoding="utf-8"))
+    prices = pd.read_csv(DATA_DIR / "prices.csv", index_col=0,
+                         parse_dates=True).sort_index()
+    sess = _session_ord(prices)
+    grad = [t for t in pop["triggers"] if t["outcome"] in
+            ("CLOSED", "FADED_FLAT", "FADED_AGAINST")]
+    dc, tc = market_class(driver), market_class(target)
+    window = pop.get("data_window", "")
+
+    def rate_at(subset, level, cap_conditional=False):
+        n = cluster_count(subset, sess)
+        raw = len(subset)
+        ratio = round(raw / n, 2) if n else None
+        if n < n_min:
+            return {"level": level, "verdict": "INSUFFICIENT",
+                    "frame": "reference_class", "clusters": n, "raw": raw,
+                    "ratio": ratio,
+                    "basis": f"{level} reference class: {n} independent "
+                             f"episodes ({raw} legs) over {window}, below the "
+                             f"{n_min}-cluster floor. Too rare to rate."}
+        verdict = "CONDITIONAL" if (cap_conditional or
+                                    (ratio and ratio > ratio_veto)) else "CLEAR"
+        if level.startswith("class_pair"):
+            fr = family_rate(grad, sess, dc, tc)
+            rate, ci = fr["rate"], fr["wilson95"]
+        else:
+            cl = None
+            k = None
+            # global: episode-level over all clusters
+            labels = cluster_labels(subset, sess)
+            groups: dict[int, list] = defaultdict(list)
+            for t, lab in zip(subset, labels):
+                groups[lab].append(t)
+            k = sum(1 for legs in groups.values()
+                    if sum(l["closed_05"] for l in legs) * 2 >= len(legs))
+            rate, lo, hi = _wilson(k, n)
+            ci = [lo, hi]
+        return {"level": level, "verdict": verdict, "frame": "reference_class",
+                "clusters": n, "raw": raw, "ratio": ratio,
+                "rate": rate, "wilson95": ci,
+                "basis": f"{level} reference class, N={n} independent episodes, "
+                         f"raw:cluster {ratio}:1{' (fan-out vetoed)' if verdict=='CONDITIONAL' and ratio and ratio>ratio_veto else ''}."}
+
+    pair = [t for t in grad if t["driver"] == driver and t["target"] == target]
+    r = rate_at(pair, f"pair {driver}->{target}")
+    if r["verdict"] != "INSUFFICIENT":
+        return {"instance": f"{driver}->{target}", **r}
+    cp = [t for t in grad if t["driver_class"] == dc and t["target_class"] == tc]
+    r = rate_at(cp, f"class_pair {dc}->{tc}")
+    if r["verdict"] != "INSUFFICIENT":
+        return {"instance": f"{driver}->{target}", **r}
+    r = rate_at(grad, "global", cap_conditional=True)   # last resort
+    return {"instance": f"{driver}->{target}", **r}
 
 
 # ── audit (owner gate: check CLOSED-calling before any rate) ─────────────

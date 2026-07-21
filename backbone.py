@@ -42,6 +42,12 @@ BACKBONE = [
     {"id": "nifty_fmcg",       "market": "INDICES", "source": "yfinance", "symbol": "^CNXFMCG",           "freq": "eod", "framework": {}},
     {"id": "nifty_metal",      "market": "INDICES", "source": "yfinance", "symbol": "^CNXMETAL",          "freq": "eod", "framework": {}},
     {"id": "nifty_it",         "market": "INDICES", "source": "yfinance", "symbol": "^CNXIT",             "freq": "eod", "framework": {}},
+    # ── Equity single names · India (legacy price history; classed so the
+    #    class prior can never fail OPEN on them — an unclassified series must
+    #    not be admissible as a macro driver). Detector uses them as targets. ─
+    {"id": "britannia", "market": "EQUITIES", "source": "yfinance", "symbol": "BRITANNIA.NS", "freq": "eod", "framework": {}},
+    {"id": "bpcl",      "market": "EQUITIES", "source": "yfinance", "symbol": "BPCL.NS",      "freq": "eod", "framework": {}},
+    {"id": "dabur",     "market": "EQUITIES", "source": "yfinance", "symbol": "DABUR.NS",     "freq": "eod", "framework": {}},
 
     # ── FX ─────────────────────────────────────────────────────────────
     {"id": "dxy",     "market": "FX", "source": "yfinance", "symbol": "DX-Y.NYB", "freq": "eod", "framework": {"range_extreme_days": 20}},
