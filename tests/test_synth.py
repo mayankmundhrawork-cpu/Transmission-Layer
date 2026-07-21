@@ -128,6 +128,79 @@ def test_market_event_floor_and_low_history_tag():
     assert e2["payload"]["bar_kind"] == "adaptive"
 
 
+# ── driver-eligibility gate ─────────────────────────────────────────────
+def test_class_prior_blocks_single_name_driving_macro():
+    """A single-name equity may not drive a macro series; macro->macro,
+    macro->single and single->single stay admissible. Registry-derived."""
+    from registry import load_registry
+    from synth_classes import driver_admissible
+    r = load_registry()
+    eq = next(s["id"] for s in r if s.get("market") == "EQUITIES")
+    com = next(s["id"] for s in r if s.get("market") == "COMMODITIES")
+    idx = next(s["id"] for s in r if s.get("market") == "INDICES")
+    assert driver_admissible(eq, com) == (False, "single_name_drives_macro")
+    assert driver_admissible(idx, com)[0] is True
+    assert driver_admissible(idx, eq)[0] is True
+    assert driver_admissible(eq, eq)[0] is True
+
+
+def test_strength_floor_excludes_weak_channel():
+    """A pair that is 'active' only by its own weak history sits below the
+    cross-sectional |rho| floor and is denied driver status."""
+    from synth_detect import detect_transmission_gaps
+    px, d = _pair_prices(tgt_window_rets=[0.0, 0.0, 0.0])
+    channels, evts = _fixtures(d)
+    channels[0]["rho_now"] = 0.25                    # our pair: weak
+    channels += [{"driver": "f", "target": "g", "state": "active",
+                  "beta_pair": 1.0, "rho_now": 0.85, "pctile_now": 0.9}
+                 for _ in range(10)]                 # strong pool lifts the floor
+    out = detect_transmission_gaps(px, channels, evts, bus_events=[])
+    assert out == []
+
+
+def test_fanout_dedup_collapses_one_driver_date():
+    """One driver on one date is one pulse with ranked targets, not N rows."""
+    from synth_detect import collapse_to_pulses
+    keys = dict(target_class="INDICES", beta_pair=0.5, expected_pct=2.0,
+                actual_pct=0.0, residual_sigma=-1.5, gap_bar_sigma=1.2,
+                channel_state="active", channel_rho=0.6, lead_lag=2,
+                sessions_elapsed=3, window_open=False, low_history=False,
+                known_as=None, components={})
+    gaps = [dict(driver="d", asof="2026-07-10", target=f"t{i}",
+                 shortfall_sigma=1.5, score=0.4 + 0.1 * i, driver_zc=4.0,
+                 driver_ret_pct=2.0, driver_class="INDICES",
+                 driver_stale=False, driver_last_obs="2026-07-10",
+                 news_support=[], **keys) for i in range(3)]
+    pulses = collapse_to_pulses(gaps)
+    assert len(pulses) == 1
+    assert pulses[0]["n_targets"] == 3
+    assert pulses[0]["targets"][0]["target"] == "t2"   # highest score first
+
+
+def test_news_corroborated_ranks_above_high_score_no_news():
+    """The ranked surface privileges a live-news mechanism over a stronger
+    no-news correlation (owner directive)."""
+    from synth_detect import _surface
+    pulse = {"kind": "driver_pulse", "news_corroborated": False, "top_score": 0.9}
+    nnm = {"kind": "news_no_move", "score": 0.2}
+    surf = [_surface(pulse), _surface(nnm)]
+    surf.sort(key=lambda c: (not c["news_corroborated"],
+                             -(c["surface_score"] or 0)))
+    assert surf[0]["kind"] == "news_no_move"
+
+
+def test_stale_driver_is_tagged_not_dropped():
+    """A driver whose own move-signal has gone dark near the matrix date is
+    flagged, not silently emitted as a live setup."""
+    from synth_detect import detect_transmission_gaps
+    px, d = _pair_prices(tgt_window_rets=[0.0, 0.0, 0.0])
+    # blank the driver's last two sessions so its zc series ends early
+    px.iloc[-2:, px.columns.get_loc("drv")] = np.nan
+    channels, evts = _fixtures(d)
+    out = detect_transmission_gaps(px, channels, evts, bus_events=[])
+    assert out and all(c["driver_stale"] is True for c in out)
+
+
 # ── spec: nothing hardcoded ─────────────────────────────────────────────
 def test_no_registry_series_id_is_hardcoded_in_synth_modules():
     """Detection must be data-driven: no universe series id may appear as a

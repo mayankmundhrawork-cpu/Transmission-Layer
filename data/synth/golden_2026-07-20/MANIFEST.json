@@ -37,5 +37,5 @@
     }
   },
   "expected_anomalies": [],
-  "expected_anomalies_note": "hand-labelled with owner, pending"
+  "expected_anomalies_note": "hand-labelled with owner, pending. Candidate table produced by synth_detect after the driver-eligibility gate (channel-strength floor + macro-driver class prior + fan-out dedup). Note for labelling: the india_vix driver_pulse (asof 2026-07-08 -> cac_40, nifty_midcap_100) carries driver_stale=true (its zc feed's last obs is 2026-07-14, gappy to the 07-20 matrix date) and must be labelled stale-driver, NOT expected-live. The bovespa driver_pulse (asof 2026-07-10 -> dow_jones, russell_2000) is the one live macro->macro transmission pulse. The wti/brent/vix news_no_move cluster (Gulf/Hormuz newsflow, prices below own median |zc|) is the news-corroborated top of the ranked surface."
 }

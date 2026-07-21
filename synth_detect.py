@@ -62,6 +62,13 @@ COUNTER_QUANTILE = 0.50     # a gap is a LAGGARD: any against-move beyond the
 COUNTER_FIXED_BAR = 0.67    # target's own MEDIAN window move breaks the lag
 #                             story (|N(0,1)| median as the low-history bar)
 CHANNEL_STATES_OK = ("active", "turning_on")
+# driver-eligibility gate (owner sign-off on the S2 table): a channel only
+# admits a driver when its |rho| clears a CROSS-SECTIONAL floor — the p-th
+# percentile of every live channel's strength, adaptive, nothing fixed.
+CHANNEL_STRENGTH_PCTILE = 0.25
+STALE_DRIVER_SESSIONS = 1   # driver's own move-signal must be this fresh
+NEWS_ABSENT_DISCOUNT = 0.35  # a no-news pulse is correlation, not mechanism —
+#                              it ranks below anything news-corroborated
 
 NEWS_WINDOW_H = 48          # entity-join window around a market event
 NEWS_INTENSITY_PCTILE = 0.90
@@ -117,20 +124,42 @@ def _news_support(bus_events: list[dict], sid: str, ts_iso: str,
 
 
 # ── detector 1: transmission_gap ───────────────────────────────────────
+def _strength_floor(channels: list[dict]) -> float:
+    """Cross-sectional |rho| floor: the CHANNEL_STRENGTH_PCTILE quantile of
+    every live channel's strength. A pair that is 'active' only because its
+    own history is weak (india_bank -> crude at |rho| 0.33) sits in the
+    bottom of this distribution and is denied driver status."""
+    live = [abs(c["rho_now"]) for c in channels
+            if c["state"] in CHANNEL_STATES_OK and c.get("rho_now") is not None]
+    if not live:
+        return 0.0
+    return float(pd.Series(live).quantile(CHANNEL_STRENGTH_PCTILE))
+
+
 def detect_transmission_gaps(prices: pd.DataFrame, channels: list[dict],
                              market_evts: list[dict],
                              bus_events: list[dict]) -> list[dict]:
     from conditional import ewma_sigma, zc_frame
     from synth_channels import pair_beta_series
+    from synth_classes import driver_admissible, market_of
 
     rets = prices.pct_change(fill_method=None)
     sigma = ewma_sigma(rets)
     zc = zc_frame(prices)
+    cal = prices.index.sort_values()
+    matrix_max = cal[-1]
+    strength_floor = _strength_floor(channels)
 
     by_driver: dict[str, list[dict]] = {}
     for c in channels:
-        if c["state"] in CHANNEL_STATES_OK and c.get("beta_pair") is not None:
-            by_driver.setdefault(c["driver"], []).append(c)
+        if c["state"] not in CHANNEL_STATES_OK or c.get("beta_pair") is None:
+            continue
+        if c.get("rho_now") is None or abs(c["rho_now"]) < strength_floor:
+            continue                      # driver-eligibility: strength floor
+        ok, _reason = driver_admissible(c["driver"], c["target"])
+        if not ok:
+            continue                      # driver-eligibility: class prior
+        by_driver.setdefault(c["driver"], []).append(c)
 
     # newest event per (series, date); only drivers that have channels
     ev_by_series: dict[str, list[dict]] = {}
@@ -141,6 +170,15 @@ def detect_transmission_gaps(prices: pd.DataFrame, channels: list[dict],
 
     out = []
     for drv, evts in ev_by_series.items():
+        # driver staleness: the driver's OWN move-signal (its zc series) must
+        # still be printing near the matrix date. A gappy feed (india_vix, last
+        # zc 07-14 while the matrix runs to 07-20) makes its replayed move a
+        # backfill artifact, not a live setup — tagged, not silently dropped.
+        drv_zc_dates = zc[drv].dropna().index if drv in zc.columns else []
+        drv_last_obs = drv_zc_dates.max() if len(drv_zc_dates) else None
+        drv_stale = bool(
+            drv_last_obs is not None and
+            (cal > drv_last_obs).sum() > STALE_DRIVER_SESSIONS)
         for ch in by_driver[drv]:
             tgt = ch["target"]
             if drv not in rets.columns or tgt not in rets.columns:
@@ -233,6 +271,11 @@ def detect_transmission_gaps(prices: pd.DataFrame, channels: list[dict],
                     "implied_dir": int(implied_dir),
                     "channel_state": ch["state"],
                     "channel_rho": ch["rho_now"],
+                    "driver_class": market_of(drv),
+                    "target_class": market_of(tgt),
+                    "driver_stale": drv_stale,
+                    "driver_last_obs": None if drv_last_obs is None
+                    else drv_last_obs.strftime("%Y-%m-%d"),
                     "known_as": ch.get("known_as"),
                     "lead_lag": ch.get("lead_lag"),
                     "sessions_elapsed": int(h_avail),
@@ -246,6 +289,62 @@ def detect_transmission_gaps(prices: pd.DataFrame, channels: list[dict],
                 })
     out.sort(key=lambda c: -(c["score"] or 0))
     return out
+
+
+def collapse_to_pulses(gaps: list[dict]) -> list[dict]:
+    """Fan-out dedup: one driver on one date is ONE event, not N. Six gaps off
+    a single Goldman +4.6sigma day collapse into one pulse whose lagging
+    targets are ranked — so the critic rejects (or keeps) the pulse once, and
+    one earnings move can't crowd the ranked surface. The driver's news join
+    is a pulse-level property (shared by all its targets)."""
+    groups: dict[tuple[str, str], list[dict]] = {}
+    for g in gaps:
+        groups.setdefault((g["driver"], g["asof"]), []).append(g)
+    pulses = []
+    for (drv, asof), gs in groups.items():
+        gs.sort(key=lambda x: -(x["score"] or 0))
+        news = gs[0].get("news_support") or []
+        top = gs[0]
+        pulses.append({
+            "id": _cid("pulse", f"{drv}|{asof}"),
+            "kind": "driver_pulse", "driver": drv, "asof": asof,
+            "driver_zc": top["driver_zc"], "driver_ret_pct": top["driver_ret_pct"],
+            "driver_class": top["driver_class"],
+            "driver_stale": top["driver_stale"],
+            "driver_last_obs": top["driver_last_obs"],
+            "n_targets": len(gs),
+            "news_support": news,
+            "news_corroborated": bool(news),
+            "watch_join": any(n.get("via_watch") for n in news),
+            "top_score": top["score"],
+            "targets": [{k: g[k] for k in (
+                "target", "target_class", "beta_pair", "expected_pct",
+                "actual_pct", "residual_sigma", "shortfall_sigma",
+                "gap_bar_sigma", "channel_state", "channel_rho", "lead_lag",
+                "sessions_elapsed", "window_open", "low_history", "known_as",
+                "components", "score")} for g in gs],
+        })
+    pulses.sort(key=lambda p: -(p["top_score"] or 0))
+    return pulses
+
+
+def _surface(candidate: dict) -> dict:
+    """Attach surface_score + news_corroborated so the ranked surface can put
+    a live-news mechanism above a no-news correlation (owner directive). The
+    news-join is what separates a mechanism from a correlation, so no-news
+    candidates are discounted AND tiered below corroborated ones."""
+    kind = candidate["kind"]
+    if kind == "driver_pulse":
+        corro = candidate["news_corroborated"]
+        base = candidate["top_score"] or 0.0
+    elif kind == "news_no_move":
+        corro, base = True, candidate["score"] or 0.0
+    else:  # move_no_news, channel_shift — no live news cluster attached
+        corro, base = False, candidate["score"] or 0.0
+    candidate["news_corroborated"] = corro
+    candidate["surface_score"] = round(
+        base * (1.0 if corro else NEWS_ABSENT_DISCOUNT), 4)
+    return candidate
 
 
 # ── detector 2: news_move_divergence ───────────────────────────────────
@@ -381,14 +480,30 @@ def build_candidates(data_dir: Path | str | None = None,
     bus = _load("events.json", SYNTH_DIR / "events.json")
     channels = channels_state.get("channels", [])
     bus_events = bus.get("events", [])
+    # `now` anchors the news-divergence windows. For a frozen snapshot it MUST
+    # come from the bus build time, not wall-clock, or the golden fixture is
+    # not reproducible (ruling 4). Live runs fall back to real now.
     now = datetime.now(timezone.utc)
+    try:
+        if bus.get("updated"):
+            now = datetime.fromisoformat(bus["updated"])
+    except Exception:
+        pass
 
     # reconstructed driver triggers — what WOULD have fired (ruling 8)
     market_evts = market_events_backfill(prices, sessions=GAP_LOOKBACK_SESSIONS)
 
     gaps = detect_transmission_gaps(prices, channels, market_evts, bus_events)
+    pulses = collapse_to_pulses(gaps)
     divs = detect_news_move_divergence(prices, bus, now)
     shifts = detect_channel_shifts(channels)
+
+    # unified ranked surface: news-corroborated mechanisms first (owner
+    # directive), then by discounted surface score. driver_pulses replace the
+    # raw fan-out gaps; the gaps stay reachable inside each pulse's targets[].
+    surface = [_surface(c) for c in pulses + divs + shifts]
+    surface.sort(key=lambda c: (not c["news_corroborated"],
+                                -(c["surface_score"] or 0)))
 
     state = {
         "updated": now.isoformat(),
@@ -396,15 +511,20 @@ def build_candidates(data_dir: Path | str | None = None,
         "source_dir": str(base),
         "params": {"gap_quantile": GAP_QUANTILE,
                    "gap_lookback_sessions": GAP_LOOKBACK_SESSIONS,
+                   "channel_strength_pctile": CHANNEL_STRENGTH_PCTILE,
+                   "strength_floor": round(_strength_floor(channels), 3),
                    "news_window_h": NEWS_WINDOW_H,
-                   "news_intensity_pctile": NEWS_INTENSITY_PCTILE},
-        "counts": {"transmission_gap": len(gaps),
+                   "news_intensity_pctile": NEWS_INTENSITY_PCTILE,
+                   "news_absent_discount": NEWS_ABSENT_DISCOUNT},
+        "counts": {"driver_pulse": len(pulses),
+                   "transmission_gap": len(gaps),
                    "move_no_news": sum(1 for c in divs
                                        if c["kind"] == "move_no_news"),
                    "news_no_move": sum(1 for c in divs
                                        if c["kind"] == "news_no_move"),
                    "channel_shift": len(shifts)},
-        "candidates": gaps + divs + shifts,
+        "ranked": surface,
+        "candidates": pulses + divs + shifts,
     }
     outp = Path(out_path) if out_path else CANDIDATES_JSON
     outp.parent.mkdir(parents=True, exist_ok=True)
@@ -426,23 +546,28 @@ if __name__ == "__main__":
     st = build_candidates(src)
     c = st["counts"]
     print(f"candidates from {st['source_dir']} (data {st['data_date']}): "
-          + " · ".join(f"{k} {v}" for k, v in c.items()))
-    for cd in st["candidates"]:
-        if cd["kind"] == "transmission_gap":
-            nm = f" [{cd['known_as']}]" if cd.get("known_as") else ""
-            print(f"  GAP  {cd['driver']:>14} -> {cd['target']:<14} "
-                  f"drv_zc={cd['driver_zc']:+.1f} beta={cd['beta_pair']:+.3f} "
-                  f"exp={cd['expected_pct']:+.2f}% act={cd['actual_pct']:+.2f}% "
-                  f"short={cd['shortfall_sigma']:.2f}s(bar {cd['gap_bar_sigma']:.2f}) "
-                  f"ch={cd['channel_state']} score={cd['score']}{nm}")
-        elif cd["kind"] == "move_no_news":
-            print(f"  MNN  {cd['series']:>14} zc={cd['zc']:+.1f} "
-                  f"ret={cd['ret_1d_pct']}% score={cd['score']}")
+          + " · ".join(f"{k} {v}" for k, v in c.items())
+          + f" | strength_floor {st['params']['strength_floor']}")
+    print("RANKED SURFACE (news-corroborated first):")
+    for cd in st["ranked"]:
+        tag = "NEWS" if cd["news_corroborated"] else "    "
+        if cd["kind"] == "driver_pulse":
+            stale = " STALE" if cd["driver_stale"] else ""
+            tgts = ", ".join(
+                f"{t['target']}({t['shortfall_sigma']:.1f}s)"
+                for t in cd["targets"][:4])
+            print(f"  [{tag}] PULSE {cd['driver']} +{cd['driver_zc']:.1f}z "
+                  f"[{cd['driver_class']}]{stale} surf={cd['surface_score']} "
+                  f"-> {cd['n_targets']} tgts: {tgts}")
         elif cd["kind"] == "news_no_move":
-            print(f"  NNM  {cd['series']:>14} zc={cd['zc']:+.1f} "
+            print(f"  [{tag}] NNM   {cd['series']} zc={cd['zc']:+.1f} "
                   f"intensity={cd['news_intensity']} n={cd['n_headlines']} "
-                  f"score={cd['score']}")
+                  f"surf={cd['surface_score']}")
+        elif cd["kind"] == "move_no_news":
+            print(f"  [{tag}] MNN   {cd['series']} zc={cd['zc']:+.1f} "
+                  f"ret={cd['ret_1d_pct']}% surf={cd['surface_score']}")
         else:
-            print(f"  CHS  {cd['driver']:>14} -> {cd['target']:<14} "
-                  f"{cd['state']}{' SIGN-FLIP' if cd['sign_flip'] else ''} "
-                  f"rho {cd['rho_prev20']} -> {cd['rho_now']} score={cd['score']}")
+            print(f"  [{tag}] CHS   {cd['driver']} -> {cd['target']} "
+                  f"{cd['state']}{' FLIP' if cd['sign_flip'] else ''} "
+                  f"rho {cd['rho_prev20']}->{cd['rho_now']} "
+                  f"surf={cd['surface_score']}")
