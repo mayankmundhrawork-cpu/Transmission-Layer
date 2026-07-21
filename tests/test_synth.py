@@ -404,6 +404,19 @@ def test_class_prior_fails_closed_on_unclassified_driver():
     assert driver_admissible("britannia", "sp500")[0] is False
 
 
+def test_edge_gate_is_orthogonal_to_adequacy():
+    """A sample-adequate family whose Wilson lower bound is below a coin flip
+    with against-dominated misses is NO_RELIABLE_EDGE — adequacy != edge."""
+    from synth_baserates import EDGE_LB_MIN, edge_finding
+    lo_below = {"wilson95": [EDGE_LB_MIN - 0.15, 0.8]}
+    lo_above = {"wilson95": [EDGE_LB_MIN + 0.05, 0.9]}
+    against = {"faded_against": 6, "faded_flat": 1}
+    flat = {"faded_against": 1, "faded_flat": 6}
+    assert edge_finding(lo_below, against)["finding"] == "NO_RELIABLE_EDGE"
+    assert edge_finding(lo_below, flat)["finding"] == "NO_DEMONSTRATED_EDGE"
+    assert edge_finding(lo_above, against)["finding"] == "PROVISIONAL_EDGE"
+
+
 def test_wilson_interval_uses_cluster_n():
     from synth_baserates import _wilson
     p, lo, hi = _wilson(6, 8)

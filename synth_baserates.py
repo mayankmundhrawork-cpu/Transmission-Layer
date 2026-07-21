@@ -427,6 +427,43 @@ def _wilson(k: int, n: int, z: float = 1.96) -> tuple:
             round(min(1.0, centre + half), 3))
 
 
+EDGE_LB_MIN = 0.5    # a CLEAR (sample-adequate) family whose Wilson LOWER bound
+#                      is below this is not distinguishable from a coin flip —
+#                      no demonstrated edge, regardless of a friendly midpoint.
+#                      Adequacy and edge are ORTHOGONAL gates (owner): enough
+#                      episodes to HAVE a rate does not mean the rate is signal.
+
+
+def edge_finding(rate05: dict, miss: dict) -> dict:
+    """The practitioner-facing conclusion, separate from sample adequacy. If the
+    Wilson lower bound sits below a coin flip AND the misses skew AGAINST the
+    implied direction, the honest surface is NOT the rate — it is 'no reliable
+    edge; the misses hurt', with the rate and skew shown as the EVIDENCE for
+    that verdict (never laundered into a percentage that looks like signal)."""
+    lo = rate05["wilson95"][0]
+    against, flat = miss["faded_against"], miss["faded_flat"]
+    against_dom = against > flat
+    if lo is None:
+        return {"finding": "INSUFFICIENT", "basis": "no episodes"}
+    if lo < EDGE_LB_MIN and against_dom:
+        return {"finding": "NO_RELIABLE_EDGE",
+                "basis": f"Wilson lower bound {lo} < {EDGE_LB_MIN} (indistinct "
+                         f"from a coin flip) AND misses against-dominated "
+                         f"({against} against vs {flat} flat) — this reference "
+                         f"class does not reliably transmit and the misses skew "
+                         f"against the implied direction (they lose, not merely "
+                         f"fail to gain)."}
+    if lo < EDGE_LB_MIN:
+        return {"finding": "NO_DEMONSTRATED_EDGE",
+                "basis": f"Wilson lower bound {lo} < {EDGE_LB_MIN} — no edge "
+                         f"demonstrable at this sample; misses are flat-"
+                         f"dominated ({flat} flat vs {against} against), so "
+                         f"benign rather than adverse."}
+    return {"finding": "PROVISIONAL_EDGE",
+            "basis": f"Wilson lower bound {lo} >= {EDGE_LB_MIN} — a demonstrable "
+                     f"lean even at the floor; still an interval, not a point."}
+
+
 def _episode_category(legs: list) -> str:
     """One 3-way outcome per independent episode by majority vote of its legs:
     CLOSED (>=0.5 threshold) else the dominant miss type. FADED_AGAINST is the
@@ -481,13 +518,15 @@ def family_rate(gradeable: list, sess_ord: dict, dc: str, tc: str) -> dict:
     p10, lo10, hi10 = _wilson(k10, n)
     cats = [c["category"] for c in cl]
     legs = [l for c in cl for l in c["legs"]]
+    rate_05 = {"closed": k05, "point": p05, "wilson95": [lo05, hi05]}
+    miss = {"faded_flat": cats.count("FADED_FLAT"),
+            "faded_against": cats.count("FADED_AGAINST")}
     return {
         "class_pair": f"{dc}->{tc}", "clusters": n,
-        "rate_05": {"closed": k05, "point": p05, "wilson95": [lo05, hi05]},
+        "rate_05": rate_05,
         "rate_10": {"closed": k10, "point": p10, "wilson95": [lo10, hi10]},
-        "miss_split_episodes": {
-            "faded_flat": cats.count("FADED_FLAT"),
-            "faded_against": cats.count("FADED_AGAINST")},
+        "miss_split_episodes": miss,
+        "edge": edge_finding(rate_05, miss),
         "leg_level": {"n": len(legs),
                       "closed_05": sum(l["closed_05"] for l in legs),
                       "closed_10": sum(l["closed_10"] for l in legs),
@@ -538,7 +577,10 @@ def base_rate_record(driver: str, target: str, pop: dict | None = None,
             fr = family_rate(grad, sess, dc, tc)
             r05, r10 = fr["rate_05"], fr["rate_10"]
             rate, ci = r05["point"], r05["wilson95"]
-            extra = {"rate_10": r10, "miss_split_episodes": fr["miss_split_episodes"]}
+            # edge is a SECOND gate: a sample-adequate family can still be a
+            # coin flip. The practitioner-facing finding is the edge verdict.
+            extra = {"rate_10": r10, "miss_split_episodes": fr["miss_split_episodes"],
+                     "edge": fr["edge"]}
         else:
             labels = cluster_labels(subset, sess)
             groups: dict[int, list] = defaultdict(list)
