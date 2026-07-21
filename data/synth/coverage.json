@@ -1,0 +1,181 @@
+{
+  "data_window": "2024-07-22..2026-07-20",
+  "n_min": 8,
+  "n_drivers": 87,
+  "triggers_raw": 109,
+  "triggers_censored": 9,
+  "triggers_gradeable": 100,
+  "clustering": "transitive union-find across (driver,date)+(target,date)+(same-channel within K_MAX); clustered N is <= per-axis min",
+  "timing_profile": {
+    "n_dates": 246,
+    "total_s": 10849.0,
+    "per_date_min_s": 2.308,
+    "per_date_max_s": 8900.081,
+    "first_third_avg_s": 5.644,
+    "last_third_avg_s": 8.971
+  },
+  "global": {
+    "raw": 100,
+    "clusters": 52,
+    "ratio": 1.92,
+    "clears_n_min": true
+  },
+  "class_pair": {
+    "INDICES->INDICES": {
+      "raw": 23,
+      "clusters": 16,
+      "ratio": 1.44,
+      "clears_n_min": true
+    },
+    "EQUITIES->EQUITIES": {
+      "raw": 15,
+      "clusters": 12,
+      "ratio": 1.25,
+      "clears_n_min": true
+    },
+    "COMMODITIES->INDICES": {
+      "raw": 13,
+      "clusters": 3,
+      "ratio": 4.33,
+      "clears_n_min": false
+    },
+    "INDICES->EQUITIES": {
+      "raw": 9,
+      "clusters": 6,
+      "ratio": 1.5,
+      "clears_n_min": false
+    },
+    "COMMODITIES->COMMODITIES": {
+      "raw": 8,
+      "clusters": 4,
+      "ratio": 2.0,
+      "clears_n_min": false
+    },
+    "None->INDICES": {
+      "raw": 5,
+      "clusters": 4,
+      "ratio": 1.25,
+      "clears_n_min": false
+    },
+    "FX->FX": {
+      "raw": 5,
+      "clusters": 4,
+      "ratio": 1.25,
+      "clears_n_min": false
+    },
+    "INDICES->RATES": {
+      "raw": 5,
+      "clusters": 3,
+      "ratio": 1.67,
+      "clears_n_min": false
+    },
+    "COMMODITIES->EQUITIES": {
+      "raw": 4,
+      "clusters": 3,
+      "ratio": 1.33,
+      "clears_n_min": false
+    },
+    "RATES->INDICES": {
+      "raw": 3,
+      "clusters": 3,
+      "ratio": 1.0,
+      "clears_n_min": false
+    },
+    "INDICES->FX": {
+      "raw": 3,
+      "clusters": 2,
+      "ratio": 1.5,
+      "clears_n_min": false
+    },
+    "CRYPTO->CRYPTO": {
+      "raw": 1,
+      "clusters": 1,
+      "ratio": 1.0,
+      "clears_n_min": false
+    },
+    "None->EQUITIES": {
+      "raw": 1,
+      "clusters": 1,
+      "ratio": 1.0,
+      "clears_n_min": false
+    },
+    "DERIVED->COMMODITIES": {
+      "raw": 1,
+      "clusters": 1,
+      "ratio": 1.0,
+      "clears_n_min": false
+    },
+    "CRYPTO->INDICES": {
+      "raw": 1,
+      "clusters": 1,
+      "ratio": 1.0,
+      "clears_n_min": false
+    },
+    "EQUITIES->None": {
+      "raw": 1,
+      "clusters": 1,
+      "ratio": 1.0,
+      "clears_n_min": false
+    },
+    "FX->INDICES": {
+      "raw": 1,
+      "clusters": 1,
+      "ratio": 1.0,
+      "clears_n_min": false
+    },
+    "INDICES->COMMODITIES": {
+      "raw": 1,
+      "clusters": 1,
+      "ratio": 1.0,
+      "clears_n_min": false
+    }
+  },
+  "pair_level": {
+    "n_pairs": 86,
+    "pairs_clearing_n_min_on_clusters": [],
+    "top_pairs_by_clusters": {
+      "dyn_coin->dyn_blk": {
+        "raw": 2,
+        "clusters": 2,
+        "ratio": 1.0,
+        "clears_n_min": false
+      },
+      "britannia->nifty_50": {
+        "raw": 2,
+        "clusters": 2,
+        "ratio": 1.0,
+        "clears_n_min": false
+      },
+      "comex_gold->nasdaq_100": {
+        "raw": 2,
+        "clusters": 2,
+        "ratio": 1.0,
+        "clears_n_min": false
+      },
+      "comex_gold->sp500": {
+        "raw": 2,
+        "clusters": 2,
+        "ratio": 1.0,
+        "clears_n_min": false
+      },
+      "comex_gold->dow_jones": {
+        "raw": 3,
+        "clusters": 2,
+        "ratio": 1.5,
+        "clears_n_min": false
+      },
+      "comex_gold->dyn_vt": {
+        "raw": 3,
+        "clusters": 2,
+        "ratio": 1.5,
+        "clears_n_min": false
+      }
+    }
+  },
+  "worked_collapse_hy_oas": {
+    "2026-01-09": [
+      "stoxx_50",
+      "cac_40"
+    ]
+  }
+}
