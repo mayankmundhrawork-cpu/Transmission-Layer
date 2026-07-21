@@ -316,6 +316,94 @@ def build_coverage(prices=None, relations=None, n_min: int = 8) -> dict:
     return cov
 
 
+# ── viability verdict (pre-registered reading lens, owner sign-off) ──────
+N_MIN_DEFAULT = 8
+RATIO_VETO = 2.0     # a level clearing N_MIN but with raw:cluster worse than
+#                      this is fan-out inflating toward the floor from below —
+#                      CONDITIONAL at best, never a clean CLEAR (rule fixed
+#                      BLIND, before the numbers, so the ratio column decides
+#                      viability and a reassuring numerator can't move it).
+
+
+def _verdict(row: dict, n_min: int, ratio_veto: float) -> str:
+    if row["clusters"] < n_min:
+        return "INSUFFICIENT"
+    if row["ratio"] is not None and row["ratio"] > ratio_veto:
+        return "CONDITIONAL"      # clears on count, vetoed by fan-out ratio
+    return "CLEAR"
+
+
+def viability_table(pop_path: Path | str | None = None,
+                    n_min: int = N_MIN_DEFAULT,
+                    ratio_veto: float = RATIO_VETO) -> dict:
+    """Read the materialised population (NO reconstruction) and, per class-pair
+    setup family, report the tightest level that clears N_MIN on CLUSTERS with
+    its raw:cluster ratio and the pre-registered verdict. The taxonomy is the
+    registry `market` field UNCHANGED — never coarsened at the pooling layer to
+    rescue a cell (that would be the exposure-feed temptation in a new costume).
+    """
+    import json
+    p = Path(pop_path) if pop_path else DATA_DIR / "synth" / "reconstruction_population.json"
+    pop = json.loads(p.read_text(encoding="utf-8"))
+    trg = pop["triggers"]
+    prices = pd.read_csv(DATA_DIR / "prices.csv", index_col=0,
+                         parse_dates=True).sort_index()
+    sess = _session_ord(prices)
+    gradeable = [t for t in trg if t["outcome"] in
+                 ("CLOSED", "FADED_FLAT", "FADED_AGAINST")]
+
+    def row(ts):
+        raw = len(ts)
+        cl = cluster_count(ts, sess)
+        r = round(raw / cl, 2) if cl else None
+        d = {"raw": raw, "clusters": cl, "ratio": r}
+        d["verdict"] = _verdict(d, n_min, ratio_veto)
+        return d
+
+    glob = row(gradeable)
+    by_cp, by_pair = defaultdict(list), defaultdict(list)
+    for t in gradeable:
+        by_cp[(t["driver_class"], t["target_class"])].append(t)
+        by_pair[(t["driver"], t["target"])].append(t)
+    pair_rows = {pr: row(ts) for pr, ts in by_pair.items()}
+
+    families = {}
+    for (dc, tc), ts in sorted(by_cp.items(), key=lambda kv: -len(kv[1])):
+        cp = row(ts)
+        # pairs inside this class-pair that clear at pair-level (expected ~none)
+        pairs_in = [pr for pr in pair_rows if market_class(pr[0]) == dc
+                    and market_class(pr[1]) == tc]
+        pair_clears = [f"{a}->{b}" for (a, b) in pairs_in
+                       if pair_rows[(a, b)]["verdict"] == "CLEAR"]
+        # tightest clearing level for a candidate in this family: pair -> cp ->
+        # global -> INSUFFICIENT
+        if pair_clears:
+            headline = "pair"
+        elif cp["verdict"] != "INSUFFICIENT":
+            headline = "class_pair"
+        elif glob["verdict"] != "INSUFFICIENT":
+            headline = "global"
+        else:
+            headline = "none"
+        families[f"{dc}->{tc}"] = {
+            "class_pair": cp,
+            "n_pairs": len(pairs_in),
+            "pairs_clearing_at_pair_level": pair_clears,
+            "headline_level": headline,
+            "headline_verdict": (cp["verdict"] if headline == "class_pair"
+                                 else glob["verdict"] if headline == "global"
+                                 else "CLEAR" if headline == "pair"
+                                 else "INSUFFICIENT"),
+        }
+    return {"n_min": n_min, "ratio_veto": ratio_veto,
+            "global": glob, "families": families}
+
+
+def market_class(sid: str) -> str | None:
+    from synth_classes import market_of
+    return market_of(sid)
+
+
 # ── audit (owner gate: check CLOSED-calling before any rate) ─────────────
 def _counter_move_exclusion_demo(prices, relations):
     """Show the ruling-6 counter-move logic refusing to score dyn_gs->dyn_mu on
