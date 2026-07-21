@@ -427,10 +427,22 @@ def _wilson(k: int, n: int, z: float = 1.96) -> tuple:
             round(min(1.0, centre + half), 3))
 
 
+def _episode_category(legs: list) -> str:
+    """One 3-way outcome per independent episode by majority vote of its legs:
+    CLOSED (>=0.5 threshold) else the dominant miss type. FADED_AGAINST is the
+    dangerous miss — the target drifts against the implied direction, where a
+    practitioner acting on the rate actually loses, not merely fails to gain."""
+    if sum(l["closed_05"] for l in legs) * 2 >= len(legs):
+        return "CLOSED"
+    against = sum(1 for l in legs if l["outcome"] == "FADED_AGAINST")
+    flat = sum(1 for l in legs if l["outcome"] == "FADED_FLAT")
+    return "FADED_AGAINST" if against >= flat else "FADED_FLAT"
+
+
 def family_clusters(gradeable: list, sess_ord: dict, dc: str, tc: str) -> list:
-    """Clusters for one class-pair family, each with its member legs + the
-    episode-level outcome (CLOSED if a majority of legs closed@0.5) — so the
-    rate is one binary per INDEPENDENT episode, not per correlated leg."""
+    """Clusters for one class-pair family, each with member legs and episode
+    outcomes at BOTH thresholds (0.5 and 1.0) plus a 3-way category — the rate
+    is one observation per INDEPENDENT episode, not per correlated leg."""
     fam = [t for t in gradeable if t["driver_class"] == dc
            and t["target_class"] == tc]
     if not fam:
@@ -441,33 +453,49 @@ def family_clusters(gradeable: list, sess_ord: dict, dc: str, tc: str) -> list:
         groups[lab].append(t)
     out = []
     for lab, legs in groups.items():
-        closed = sum(1 for l in legs if l["closed_05"])
         out.append({
             "cluster": lab, "n_legs": len(legs),
-            "episode_closed": closed * 2 >= len(legs),   # majority of legs
+            "episode_closed_05": sum(l["closed_05"] for l in legs) * 2 >= len(legs),
+            "episode_closed_10": sum(l["closed_10"] for l in legs) * 2 >= len(legs),
+            "category": _episode_category(legs),
             "legs": [{"driver": l["driver"], "target": l["target"],
                       "date": l["asof"], "outcome": l["outcome"],
-                      "closed_05": l["closed_05"], "ttt_05": l["ttt_05"]}
+                      "closed_05": l["closed_05"], "closed_10": l["closed_10"],
+                      "ttt_05": l["ttt_05"], "ttt_10": l["ttt_10"],
+                      "gap_pct": l.get("gap_pct")}
                      for l in legs],
         })
     return out
 
 
 def family_rate(gradeable: list, sess_ord: dict, dc: str, tc: str) -> dict:
-    """Episode-level hit rate for a class-pair family: closed episodes /
-    total clusters, Wilson CI on the CLUSTER count."""
+    """Episode-level hit rate at BOTH thresholds with Wilson CI on the CLUSTER
+    count, and the miss column split into flat vs against. The headline is the
+    INTERVAL, not the point estimate; the 0.5-vs-1.0 gap is the shape of
+    resolution; against-fades are the real downside risk."""
     cl = family_clusters(gradeable, sess_ord, dc, tc)
     n = len(cl)
-    k = sum(1 for c in cl if c["episode_closed"])
-    p, lo, hi = _wilson(k, n)
-    # leg-level for reference (correlated, inflated N — shown, not used for CI)
+    k05 = sum(1 for c in cl if c["episode_closed_05"])
+    k10 = sum(1 for c in cl if c["episode_closed_10"])
+    p05, lo05, hi05 = _wilson(k05, n)
+    p10, lo10, hi10 = _wilson(k10, n)
+    cats = [c["category"] for c in cl]
     legs = [l for c in cl for l in c["legs"]]
-    leg_closed = sum(1 for l in legs if l["closed_05"])
-    return {"class_pair": f"{dc}->{tc}", "clusters": n, "closed_episodes": k,
-            "rate": p, "wilson95": [lo, hi],
-            "leg_level": {"n": len(legs), "closed": leg_closed,
-                          "rate": round(leg_closed / len(legs), 3) if legs else None},
-            "clusters_detail": cl}
+    return {
+        "class_pair": f"{dc}->{tc}", "clusters": n,
+        "rate_05": {"closed": k05, "point": p05, "wilson95": [lo05, hi05]},
+        "rate_10": {"closed": k10, "point": p10, "wilson95": [lo10, hi10]},
+        "miss_split_episodes": {
+            "faded_flat": cats.count("FADED_FLAT"),
+            "faded_against": cats.count("FADED_AGAINST")},
+        "leg_level": {"n": len(legs),
+                      "closed_05": sum(l["closed_05"] for l in legs),
+                      "closed_10": sum(l["closed_10"] for l in legs),
+                      "faded_against": sum(1 for l in legs
+                                           if l["outcome"] == "FADED_AGAINST"),
+                      "faded_flat": sum(1 for l in legs
+                                        if l["outcome"] == "FADED_FLAT")},
+        "clusters_detail": cl}
 
 
 def base_rate_record(driver: str, target: str, pop: dict | None = None,
@@ -505,13 +533,13 @@ def base_rate_record(driver: str, target: str, pop: dict | None = None,
                              f"{n_min}-cluster floor. Too rare to rate."}
         verdict = "CONDITIONAL" if (cap_conditional or
                                     (ratio and ratio > ratio_veto)) else "CLEAR"
+        extra = {}
         if level.startswith("class_pair"):
             fr = family_rate(grad, sess, dc, tc)
-            rate, ci = fr["rate"], fr["wilson95"]
+            r05, r10 = fr["rate_05"], fr["rate_10"]
+            rate, ci = r05["point"], r05["wilson95"]
+            extra = {"rate_10": r10, "miss_split_episodes": fr["miss_split_episodes"]}
         else:
-            cl = None
-            k = None
-            # global: episode-level over all clusters
             labels = cluster_labels(subset, sess)
             groups: dict[int, list] = defaultdict(list)
             for t, lab in zip(subset, labels):
@@ -522,9 +550,11 @@ def base_rate_record(driver: str, target: str, pop: dict | None = None,
             ci = [lo, hi]
         return {"level": level, "verdict": verdict, "frame": "reference_class",
                 "clusters": n, "raw": raw, "ratio": ratio,
-                "rate": rate, "wilson95": ci,
+                # headline is the INTERVAL; point estimate lives inside it
+                "rate_point": rate, "wilson95": ci, **extra,
                 "basis": f"{level} reference class, N={n} independent episodes, "
-                         f"raw:cluster {ratio}:1{' (fan-out vetoed)' if verdict=='CONDITIONAL' and ratio and ratio>ratio_veto else ''}."}
+                         f"Wilson95 {ci}, raw:cluster {ratio}:1"
+                         f"{' (fan-out vetoed)' if verdict=='CONDITIONAL' and ratio and ratio>ratio_veto else ''}."}
 
     pair = [t for t in grad if t["driver"] == driver and t["target"] == target]
     r = rate_at(pair, f"pair {driver}->{target}")
