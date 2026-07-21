@@ -94,7 +94,15 @@ def _name_overlay() -> dict[tuple[str, str], dict]:
 
 
 def build_channels(prices: pd.DataFrame | None = None,
-                   relations: dict | None = None) -> dict:
+                   relations: dict | None = None,
+                   changepoints: bool = True, persist: bool = True) -> dict:
+    """`changepoints=False` skips change-point dating — the expensive step. The
+    PIT base-rate reconstruction (synth_baserates) rebuilds channels at every
+    historical t and does not need change-point dates (they only feed the
+    confidence penalty, not the trigger predicate), so it opts out for speed.
+    `persist=False` skips writing channels.json — MANDATORY for the
+    reconstruction, whose truncated PIT frames must never overwrite the live
+    state file."""
     from relations import load_relations
 
     SYNTH_DIR.mkdir(parents=True, exist_ok=True)
@@ -146,7 +154,7 @@ def build_channels(prices: pd.DataFrame | None = None,
             "changepoint": None,
         }
         # change-point dating is the expensive step — only for live channels
-        if state != "dormant":
+        if changepoints and state != "dormant":
             from assumptions import _changepoint_date
             rec["changepoint"] = _changepoint_date(roll)
         nm = overlay.get((drv, tgt))
@@ -168,7 +176,8 @@ def build_channels(prices: pd.DataFrame | None = None,
         "counts": counts,
         "channels": channels,
     }
-    CHANNELS_JSON.write_text(json.dumps(state), encoding="utf-8")
+    if persist:
+        CHANNELS_JSON.write_text(json.dumps(state), encoding="utf-8")
     return state
 
 

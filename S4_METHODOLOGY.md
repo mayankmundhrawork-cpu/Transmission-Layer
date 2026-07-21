@@ -71,20 +71,19 @@ resolution window `t+1 … t+K`:
   caught up), OR the target moved further against the implied direction.
 - The hit rate = P(CLOSED | triggered).
 
-**Open choices I need you to rule on:**
+**Rulings (owner sign-off 2026-07-21):**
 
-| knob | proposal | alternative |
+| knob | RULED | note |
 |---|---|---|
-| `K` (resolution horizon) | `K = max(lead_lag, 5)` — tie it to the pair's own lead-lag, floored at a week | fixed `K=10` for all pairs (simpler, comparable across pairs) |
-| `CLOSE_FRAC` | `0.5` — catch half the outstanding gap | `1.0` (full convergence) — stricter, lower hit rate |
-| direction of "against" | any close beyond `−0.5σ` against = not a fade, still open | strict: any against-move ends it as FADED |
-| first-touch vs end-of-window | CLOSED on first k that clears (path-based) | evaluate only at t+K (endpoint) |
+| `K` (resolution horizon) | **`clamp(lead_lag, 5, 15)`** | floor a week, CAP at 15 sessions (3 weeks). Past the cap a "resolution" is drift contaminated by everything else, not transmission attributable to the pulse. |
+| `CLOSE_FRAC` | **compute BOTH 0.5 and 1.0**; surface 0.5 as headline, 1.0 alongside | the gap between them is signal: 0.5-often/1.0-rarely = a partial-convergence pattern the practitioner must see when sizing. Cheap to store both. |
+| first-touch vs endpoint | **first-touch** | matches how the trade is taken; endpoint-only would fail a setup that converged day 3 and reversed by day 10. |
+| time-to-touch | **store the distribution, not just the boolean** | first-touch-day-2 and first-touch-day-14 are both "hits" but very different trades; a median TTT of 11 on a 15-cap is drift sneaking under the cap. |
+| against-direction | a material against-move (`caught ≤ −0.5·gap`) tags `FADED_AGAINST` vs `FADED_FLAT` | keeps "moved the wrong way" distinct from "never came" |
 
-My recommendation: `K = max(lead_lag, 5)`, `CLOSE_FRAC = 0.5`, first-touch,
-because a practitioner acts on partial convergence within the lead-lag
-horizon, not full mean-reversion at a fixed endpoint. But this is the single
-most consequential definitional choice in S4 — it decides what "worked"
-means — so it's yours.
+`CLOSED` = target catches ≥ `CLOSE_FRAC · outstanding_gap` in the implied
+direction at some k ≤ K (first-touch). Outstanding gap = `expected − realized`
+at the trigger day. Both fracs and the time-to-touch are stored per trigger.
 
 ---
 
@@ -106,6 +105,15 @@ candidate so the reader sees which level answered:
 Each candidate's base rate cites the tightest level that clears `N_MIN`, its N,
 and a Wilson 95% CI — never a bare point estimate.
 
+**Ruled additions:**
+- **Disclose the pooling level in the surfaced output**, not just internally.
+  "72%" means something different at pair-level N=40 than global-level N=600;
+  the level IS part of the number (ties to the editorial standard — a
+  proprietary metric without its disclosed basis is uncitable).
+- **Hard floor:** if even the global pool is below `N_MIN`, return
+  `INSUFFICIENT` — never a computed rate on n<8. S6 already consumes
+  `INSUFFICIENT`.
+
 ---
 
 ## 4 · Independence / clustering (honest N, not inflated N)
@@ -124,6 +132,15 @@ independence:
 
 Proposed: report the clustered (conservative) N alongside the raw N so the
 discount is visible.
+
+**Ruled tightening — cluster count IS the effective N for the floor.** The
+clustering is not only a CI-width correction, it is a sample-adequacy
+correction. If a pair's N=8 is really 8 target-legs from 2 driver-dates, the
+effective N is ~2 and it must FAIL `N_MIN` despite the raw count clearing it.
+So `N_MIN` is evaluated against the **cluster count** (independent
+driver-date × channel episodes), never the row count — otherwise fan-out
+inflates the sample past the floor and the gate leaks back in through the
+denominator.
 
 ---
 
@@ -153,6 +170,36 @@ the hashed set. Output: `data/synth/base_rates.json`.
 
 ---
 
+## A · Point-in-time channel state — no survivorship (owner-added, binding)
+
+The reconstruction re-runs the detector on data ≤ t, and **the channel used at
+historical t is the channel as it would have been measured at t** — rolling
+correlation, `beta_pair`, the pair's own active-percentile, and every adaptive
+bar recomputed on the trailing window ending at t. A pair that is an active
+channel today may have been dormant in 2024; grading a 2024 trigger with
+today's `beta_pair` or today's `rho` is lookahead and is forbidden.
+
+Concretely, the reconstruction rebuilds channels PIT at each t via
+`synth_channels.build_channels(prices.loc[:t])` and feeds THAT into
+`detect_transmission_gaps` — it never reads `data/synth/channels.json` (which
+is today's state). The cross-sectional strength floor is likewise the p25 of
+the trailing-window `|rho|` across the channel universe AT t, not today's
+0.385. This is the leak that is easiest to introduce accidentally and
+impossible to see in the output, so it is stated explicitly and guarded by a
+test (a trigger's `beta_pair` must equal the PIT trailing-window beta at t,
+never the golden channels.json beta).
+
+## B · The base rate describes the reference class, not the instance
+
+The reconstruction grades CLOSED historical windows; the live board surfaces
+OPEN ones (the golden table's two bovespa legs). So a base rate attached to a
+live candidate is a claim about a population the candidate **has not joined
+yet**. The surfaced copy must therefore read "setups of this type historically
+resolved X%," never "this setup is X% likely to resolve." It is the same
+priced-vs-gap honesty one layer up: the number describes the reference class,
+not the instance. This is enforced in the packet/copy schema (S5/S7) and noted
+in the base-rate record as `frame: "reference_class"`.
+
 ## 7 · Deferred
 
 - `news_no_move` / `channel_shift` outcome semantics (what does a
@@ -162,14 +209,13 @@ the hashed set. Output: `data/synth/base_rates.json`.
 
 ---
 
-## What I need from you before writing a line of S4 code
+## Status — all rulings received (2026-07-21)
 
-1. The §2 outcome knobs — `K`, `CLOSE_FRAC`, first-touch vs endpoint,
-   against-direction strictness. **This is the ruling that matters most.**
-2. Confirm the §3 pooling back-off (pair → class-pair → global) and `N_MIN=8`.
-3. Confirm §4 clustering by channel + driver-date for the CI.
-
-Then I build the reconstruction, show you the trigger population and the
-resolved outcomes on a few pairs (the reconstruction audit) — still before
-any headline hit-rate — so you can sanity-check that "CLOSED" is being called
-correctly, exactly as this S2 table let you sanity-check the detector.
+Five knobs accepted with modifications (K-cap 15, dual CLOSE_FRAC,
+time-to-touch distribution, pooling-level disclosure + INSUFFICIENT floor,
+cluster-count-as-effective-N), plus binding additions A (PIT channel state)
+and B (reference-class framing). Next deliverable: the **reconstruction
+audit** — trigger population + resolved outcomes on a few pairs, showing a
+couple of genuine closes, one first-touch near the cap, and one the
+counter-move logic correctly refuses to score — BEFORE any headline hit rate,
+so the outcome definition can be checked for honesty on the rows themselves.

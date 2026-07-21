@@ -326,6 +326,57 @@ def test_golden_negatives_stay_rejected(tmp_path):
                                                      for t in bov["targets"]}
 
 
+# ── S4 outcome grading (reconstruction) ─────────────────────────────────
+def _prices_with_target_path(target_fwd, n_pre=80):
+    """A 2-col frame where 'tgt' has controlled forward returns after the
+    trigger date; 'drv' is filler. Trigger sits at index position n_pre-1."""
+    dates = pd.bdate_range("2025-01-01", periods=n_pre + len(target_fwd))
+    tgt = np.concatenate([rng.normal(0, 0.003, n_pre),
+                          np.array(target_fwd)])
+    drv = rng.normal(0, 0.003, len(dates))
+    px = pd.DataFrame({"drv": 100 * np.cumprod(1 + drv),
+                       "tgt": 100 * np.cumprod(1 + tgt)}, index=dates)
+    return px, dates[n_pre - 1]
+
+
+def _trig(asof, expected_pct, actual_pct, implied_dir, lead_lag=4):
+    return {"target": "tgt", "asof": str(asof.date()),
+            "expected_pct": expected_pct, "actual_pct": actual_pct,
+            "implied_dir": implied_dir, "lead_lag": lead_lag}
+
+
+def test_outcome_closes_on_catchup():
+    from synth_baserates import resolve_outcome
+    # implied +2%, realised 0 at t; target then climbs +1.2% day1 -> catches
+    # >0.5*2% quickly
+    px, t = _prices_with_target_path([0.012, 0.004, 0.0, 0.0, 0.0])
+    o = resolve_outcome(px, _trig(t, 2.0, 0.0, 1))
+    assert o["outcome"] == "CLOSED" and o["ttt_05"] == 1
+
+
+def test_outcome_fades_against_on_full_window():
+    from synth_baserates import resolve_outcome
+    # implied +2%, target instead falls each day — never catches, moves against
+    px, t = _prices_with_target_path([-0.01, -0.01, -0.01, -0.01, -0.01])
+    o = resolve_outcome(px, _trig(t, 2.0, 0.0, 1))
+    assert o["outcome"] == "FADED_AGAINST" and not o["closed_05"]
+
+
+def test_outcome_censors_short_window():
+    from synth_baserates import resolve_outcome
+    # only 2 forward sessions exist (trigger near matrix end), K=5 -> censored,
+    # never called a fade
+    px, t = _prices_with_target_path([0.0, 0.0])
+    o = resolve_outcome(px, _trig(t, 2.0, 0.0, 1))
+    assert o["outcome"] == "CENSORED"
+
+
+def test_outcome_horizon_is_clamped():
+    from synth_baserates import K_MAX, resolve_outcome
+    px, t = _prices_with_target_path([0.0] * 40)
+    assert resolve_outcome(px, _trig(t, 1.0, 0.0, 1, lead_lag=99))["K"] == K_MAX
+
+
 # ── spec: nothing hardcoded ─────────────────────────────────────────────
 def test_no_registry_series_id_is_hardcoded_in_synth_modules():
     """Detection must be data-driven: no universe series id may appear as a
