@@ -1,6 +1,6 @@
 {
   "data_window": "2024-07-22..2026-07-20",
-  "n_triggers": 109,
+  "n_triggers": 104,
   "triggers": [
     {
       "id": "e501f18468fe",
@@ -167,47 +167,6 @@
       "k_ch": "dyn_coin|dyn_blk"
     },
     {
-      "id": "1c78fc843e37",
-      "kind": "transmission_gap",
-      "asof": "2025-08-05",
-      "driver": "britannia",
-      "target": "nifty_50",
-      "driver_class": null,
-      "target_class": "INDICES",
-      "beta_pair": 0.4481,
-      "expected_pct": -1.173,
-      "actual_pct": -0.296,
-      "residual_sigma": 1.47,
-      "shortfall_sigma": 1.47,
-      "gap_bar_sigma": 1.21,
-      "implied_dir": -1,
-      "channel_state": "active",
-      "channel_rho": 0.451,
-      "channel_stability": 1.0,
-      "lead_lag": 2,
-      "K": 5,
-      "window_n": 5,
-      "avail_sessions": 251,
-      "gap_pct": -0.877,
-      "closed_05": true,
-      "closed_10": true,
-      "ttt_05": 3,
-      "ttt_10": 3,
-      "outcome": "CLOSED",
-      "caught_path_pct": [
-        0.306,
-        0.217,
-        1.161,
-        0.262,
-        0.658
-      ],
-      "beta_pit": 0.4481,
-      "global_cluster": 4,
-      "k_dd": "britannia|2025-08-05",
-      "k_td": "nifty_50|2025-08-05",
-      "k_ch": "britannia|nifty_50"
-    },
-    {
       "id": "930df8c39074",
       "kind": "transmission_gap",
       "asof": "2025-08-11",
@@ -243,7 +202,7 @@
         0.795
       ],
       "beta_pit": -0.4251,
-      "global_cluster": 5,
+      "global_cluster": 4,
       "k_dd": "comex_gold|2025-08-11",
       "k_td": "nasdaq_100|2025-08-11",
       "k_ch": "comex_gold|nasdaq_100"
@@ -284,7 +243,7 @@
         1.188
       ],
       "beta_pit": -0.3255,
-      "global_cluster": 5,
+      "global_cluster": 4,
       "k_dd": "comex_gold|2025-08-11",
       "k_td": "sp500|2025-08-11",
       "k_ch": "comex_gold|sp500"
@@ -325,7 +284,7 @@
         2.41
       ],
       "beta_pit": -0.3248,
-      "global_cluster": 5,
+      "global_cluster": 4,
       "k_dd": "comex_gold|2025-08-11",
       "k_td": "cac_40|2025-08-11",
       "k_ch": "comex_gold|cac_40"
@@ -366,7 +325,7 @@
         2.13
       ],
       "beta_pit": -0.3121,
-      "global_cluster": 5,
+      "global_cluster": 4,
       "k_dd": "comex_gold|2025-08-11",
       "k_td": "dow_jones|2025-08-11",
       "k_ch": "comex_gold|dow_jones"
@@ -407,7 +366,7 @@
         1.514
       ],
       "beta_pit": -0.2138,
-      "global_cluster": 5,
+      "global_cluster": 4,
       "k_dd": "comex_gold|2025-08-11",
       "k_td": "dyn_vt|2025-08-11",
       "k_ch": "comex_gold|dyn_vt"
@@ -448,7 +407,7 @@
         0.398
       ],
       "beta_pit": 0.5653,
-      "global_cluster": 6,
+      "global_cluster": 5,
       "k_dd": "nifty_metal|2025-09-03",
       "k_td": "dyn_bhartiartl_ns|2025-09-03",
       "k_ch": "nifty_metal|dyn_bhartiartl_ns"
@@ -489,7 +448,7 @@
         3.381
       ],
       "beta_pit": 0.5569,
-      "global_cluster": 6,
+      "global_cluster": 5,
       "k_dd": "nifty_metal|2025-09-03",
       "k_td": "hang_seng|2025-09-03",
       "k_ch": "nifty_metal|hang_seng"
@@ -500,7 +459,7 @@
       "asof": "2025-09-29",
       "driver": "bpcl",
       "target": "dyn_pcjeweller_ns",
-      "driver_class": null,
+      "driver_class": "EQUITIES",
       "target_class": "EQUITIES",
       "beta_pair": 1.6655,
       "expected_pct": 7.061,
@@ -530,7 +489,7 @@
         0.721
       ],
       "beta_pit": 1.6655,
-      "global_cluster": 7,
+      "global_cluster": 6,
       "k_dd": "bpcl|2025-09-29",
       "k_td": "dyn_pcjeweller_ns|2025-09-29",
       "k_ch": "bpcl|dyn_pcjeweller_ns"
@@ -571,7 +530,7 @@
         1.436
       ],
       "beta_pit": -0.5456,
-      "global_cluster": 8,
+      "global_cluster": 7,
       "k_dd": "usd_jpy|2025-10-06",
       "k_td": "aud_usd|2025-10-06",
       "k_ch": "usd_jpy|aud_usd"
@@ -612,7 +571,7 @@
         0.727
       ],
       "beta_pit": -0.6023,
-      "global_cluster": 8,
+      "global_cluster": 7,
       "k_dd": "usd_jpy|2025-10-06",
       "k_td": "gbp_usd|2025-10-06",
       "k_ch": "usd_jpy|gbp_usd"
@@ -653,7 +612,7 @@
         -0.673
       ],
       "beta_pit": 0.8373,
-      "global_cluster": 9,
+      "global_cluster": 8,
       "k_dd": "aud_usd|2025-10-13",
       "k_td": "gbp_usd|2025-10-13",
       "k_ch": "aud_usd|gbp_usd"
@@ -694,7 +653,7 @@
         -0.991
       ],
       "beta_pit": -0.1699,
-      "global_cluster": 10,
+      "global_cluster": 9,
       "k_dd": "india_vix|2025-10-13",
       "k_td": "nifty_midcap_100|2025-10-13",
       "k_ch": "india_vix|nifty_midcap_100"
@@ -735,7 +694,7 @@
         -14.059
       ],
       "beta_pit": -3.4212,
-      "global_cluster": 11,
+      "global_cluster": 10,
       "k_dd": "ust_10y|2025-10-29",
       "k_td": "vix|2025-10-29",
       "k_ch": "ust_10y|vix"
@@ -776,7 +735,7 @@
         -2.974
       ],
       "beta_pit": 0.8103,
-      "global_cluster": 12,
+      "global_cluster": 11,
       "k_dd": "wheat|2025-11-06",
       "k_td": "corn|2025-11-06",
       "k_ch": "wheat|corn"
@@ -817,7 +776,7 @@
         -2.53
       ],
       "beta_pit": 0.8698,
-      "global_cluster": 13,
+      "global_cluster": 12,
       "k_dd": "soybeans|2025-11-17",
       "k_td": "corn|2025-11-17",
       "k_ch": "soybeans|corn"
@@ -858,7 +817,7 @@
         0.186
       ],
       "beta_pit": 0.2815,
-      "global_cluster": 14,
+      "global_cluster": 13,
       "k_dd": "bovespa|2025-12-05",
       "k_td": "ftse_100|2025-12-05",
       "k_ch": "bovespa|ftse_100"
@@ -899,7 +858,7 @@
         null
       ],
       "beta_pit": 0.2253,
-      "global_cluster": 15,
+      "global_cluster": 14,
       "k_dd": "comex_copper|2025-12-26",
       "k_td": "dow_jones|2025-12-26",
       "k_ch": "comex_copper|dow_jones"
@@ -940,7 +899,7 @@
         null
       ],
       "beta_pit": 0.3568,
-      "global_cluster": 15,
+      "global_cluster": 14,
       "k_dd": "comex_copper|2025-12-26",
       "k_td": "russell_2000|2025-12-26",
       "k_ch": "comex_copper|russell_2000"
@@ -981,7 +940,7 @@
         null
       ],
       "beta_pit": 0.268,
-      "global_cluster": 15,
+      "global_cluster": 14,
       "k_dd": "comex_copper|2025-12-26",
       "k_td": "dyn_vt|2025-12-26",
       "k_ch": "comex_copper|dyn_vt"
@@ -1022,7 +981,7 @@
         null
       ],
       "beta_pit": -2.372,
-      "global_cluster": 15,
+      "global_cluster": 14,
       "k_dd": "comex_copper|2025-12-26",
       "k_td": "vix|2025-12-26",
       "k_ch": "comex_copper|vix"
@@ -1063,7 +1022,7 @@
         null
       ],
       "beta_pit": 0.3469,
-      "global_cluster": 15,
+      "global_cluster": 14,
       "k_dd": "comex_copper|2025-12-26",
       "k_td": "nasdaq_100|2025-12-26",
       "k_ch": "comex_copper|nasdaq_100"
@@ -1104,7 +1063,7 @@
         null
       ],
       "beta_pit": 0.42,
-      "global_cluster": 16,
+      "global_cluster": 15,
       "k_dd": "comex_silver|2025-12-26",
       "k_td": "comex_gold|2025-12-26",
       "k_ch": "comex_silver|comex_gold"
@@ -1145,7 +1104,7 @@
         2.831
       ],
       "beta_pit": -0.3692,
-      "global_cluster": 16,
+      "global_cluster": 15,
       "k_dd": "gold_silver_ratio|2025-12-30",
       "k_td": "comex_gold|2025-12-30",
       "k_ch": "gold_silver_ratio|comex_gold"
@@ -1186,7 +1145,7 @@
         2.831
       ],
       "beta_pit": 0.41,
-      "global_cluster": 16,
+      "global_cluster": 15,
       "k_dd": "comex_silver|2025-12-30",
       "k_td": "comex_gold|2025-12-30",
       "k_ch": "comex_silver|comex_gold"
@@ -1227,7 +1186,7 @@
         -0.726
       ],
       "beta_pit": 0.383,
-      "global_cluster": 17,
+      "global_cluster": 16,
       "k_dd": "nifty_metal|2026-01-08",
       "k_td": "shanghai_comp|2026-01-08",
       "k_ch": "nifty_metal|shanghai_comp"
@@ -1268,7 +1227,7 @@
         -1.482
       ],
       "beta_pit": 0.5493,
-      "global_cluster": 17,
+      "global_cluster": 16,
       "k_dd": "nifty_metal|2026-01-08",
       "k_td": "taiwan_weighted|2026-01-08",
       "k_ch": "nifty_metal|taiwan_weighted"
@@ -1309,7 +1268,7 @@
         -1.616
       ],
       "beta_pit": 0.3696,
-      "global_cluster": 18,
+      "global_cluster": 17,
       "k_dd": "nifty_midcap_100|2026-01-08",
       "k_td": "asx_200|2026-01-08",
       "k_ch": "nifty_midcap_100|asx_200"
@@ -1350,7 +1309,7 @@
         -1.616
       ],
       "beta_pit": 0.5583,
-      "global_cluster": 18,
+      "global_cluster": 17,
       "k_dd": "nifty_50|2026-01-08",
       "k_td": "asx_200|2026-01-08",
       "k_ch": "nifty_50|asx_200"
@@ -1391,7 +1350,7 @@
         3.285
       ],
       "beta_pit": -1.8273,
-      "global_cluster": 19,
+      "global_cluster": 18,
       "k_dd": "stoxx_50|2026-01-09",
       "k_td": "hy_oas|2026-01-09",
       "k_ch": "stoxx_50|hy_oas"
@@ -1432,7 +1391,7 @@
         3.285
       ],
       "beta_pit": -1.7904,
-      "global_cluster": 19,
+      "global_cluster": 18,
       "k_dd": "cac_40|2026-01-09",
       "k_td": "hy_oas|2026-01-09",
       "k_ch": "cac_40|hy_oas"
@@ -1473,7 +1432,7 @@
         2.135
       ],
       "beta_pit": 0.422,
-      "global_cluster": 19,
+      "global_cluster": 18,
       "k_dd": "stoxx_50|2026-01-09",
       "k_td": "asx_200|2026-01-09",
       "k_ch": "stoxx_50|asx_200"
@@ -1514,7 +1473,7 @@
         1.509
       ],
       "beta_pit": -1.4373,
-      "global_cluster": 19,
+      "global_cluster": 18,
       "k_dd": "stoxx_50|2026-01-19",
       "k_td": "hy_oas|2026-01-19",
       "k_ch": "stoxx_50|hy_oas"
@@ -1555,7 +1514,7 @@
         null
       ],
       "beta_pit": 0.3771,
-      "global_cluster": 20,
+      "global_cluster": 19,
       "k_dd": "comex_silver|2026-01-26",
       "k_td": "comex_copper|2026-01-26",
       "k_ch": "comex_silver|comex_copper"
@@ -1596,7 +1555,7 @@
         0.162
       ],
       "beta_pit": 0.3829,
-      "global_cluster": 21,
+      "global_cluster": 20,
       "k_dd": "hang_seng|2026-01-28",
       "k_td": "asx_200|2026-01-28",
       "k_ch": "hang_seng|asx_200"
@@ -1637,7 +1596,7 @@
         4.579
       ],
       "beta_pit": 0.9365,
-      "global_cluster": 20,
+      "global_cluster": 19,
       "k_dd": "comex_gold|2026-01-28",
       "k_td": "comex_copper|2026-01-28",
       "k_ch": "comex_gold|comex_copper"
@@ -1678,7 +1637,7 @@
         -0.588
       ],
       "beta_pit": 0.2276,
-      "global_cluster": 20,
+      "global_cluster": 19,
       "k_dd": "comex_gold|2026-01-28",
       "k_td": "dow_jones|2026-01-28",
       "k_ch": "comex_gold|dow_jones"
@@ -1719,7 +1678,7 @@
         -1.286
       ],
       "beta_pit": 0.1882,
-      "global_cluster": 20,
+      "global_cluster": 19,
       "k_dd": "comex_gold|2026-01-28",
       "k_td": "dyn_vt|2026-01-28",
       "k_ch": "comex_gold|dyn_vt"
@@ -1760,7 +1719,7 @@
         0.176
       ],
       "beta_pit": 0.5466,
-      "global_cluster": 22,
+      "global_cluster": 21,
       "k_dd": "dax|2026-01-29",
       "k_td": "dow_jones|2026-01-29",
       "k_ch": "dax|dow_jones"
@@ -1801,7 +1760,7 @@
         1.768
       ],
       "beta_pit": 0.53,
-      "global_cluster": 22,
+      "global_cluster": 21,
       "k_dd": "dax|2026-01-29",
       "k_td": "sp500|2026-01-29",
       "k_ch": "dax|sp500"
@@ -1842,7 +1801,7 @@
         0.043
       ],
       "beta_pit": 0.9337,
-      "global_cluster": 20,
+      "global_cluster": 19,
       "k_dd": "comex_gold|2026-01-30",
       "k_td": "comex_copper|2026-01-30",
       "k_ch": "comex_gold|comex_copper"
@@ -1883,7 +1842,7 @@
         1.902
       ],
       "beta_pit": 0.1984,
-      "global_cluster": 20,
+      "global_cluster": 19,
       "k_dd": "comex_gold|2026-01-30",
       "k_td": "dyn_vt|2026-01-30",
       "k_ch": "comex_gold|dyn_vt"
@@ -1924,7 +1883,7 @@
         0.043
       ],
       "beta_pit": 0.3286,
-      "global_cluster": 20,
+      "global_cluster": 19,
       "k_dd": "comex_silver|2026-01-30",
       "k_td": "comex_copper|2026-01-30",
       "k_ch": "comex_silver|comex_copper"
@@ -1965,7 +1924,7 @@
         1.01
       ],
       "beta_pit": 0.236,
-      "global_cluster": 20,
+      "global_cluster": 19,
       "k_dd": "comex_gold|2026-01-30",
       "k_td": "dow_jones|2026-01-30",
       "k_ch": "comex_gold|dow_jones"
@@ -2006,7 +1965,7 @@
         2.552
       ],
       "beta_pit": 0.186,
-      "global_cluster": 20,
+      "global_cluster": 19,
       "k_dd": "comex_gold|2026-01-30",
       "k_td": "sp500|2026-01-30",
       "k_ch": "comex_gold|sp500"
@@ -2047,7 +2006,7 @@
         4.623
       ],
       "beta_pit": 0.2138,
-      "global_cluster": 20,
+      "global_cluster": 19,
       "k_dd": "comex_gold|2026-01-30",
       "k_td": "nasdaq_100|2026-01-30",
       "k_ch": "comex_gold|nasdaq_100"
@@ -2088,7 +2047,7 @@
         -5.355
       ],
       "beta_pit": 0.9718,
-      "global_cluster": 23,
+      "global_cluster": 22,
       "k_dd": "nifty_metal|2026-01-30",
       "k_td": "dyn_indianb_ns|2026-01-30",
       "k_ch": "nifty_metal|dyn_indianb_ns"
@@ -2129,7 +2088,7 @@
         1.01
       ],
       "beta_pit": 0.0553,
-      "global_cluster": 20,
+      "global_cluster": 19,
       "k_dd": "comex_silver|2026-01-30",
       "k_td": "dow_jones|2026-01-30",
       "k_ch": "comex_silver|dow_jones"
@@ -2170,7 +2129,7 @@
         5.841
       ],
       "beta_pit": 0.4753,
-      "global_cluster": 24,
+      "global_cluster": 23,
       "k_dd": "dyn_adanient_bo|2026-02-03",
       "k_td": "dyn_justdial_bo|2026-02-03",
       "k_ch": "dyn_adanient_bo|dyn_justdial_bo"
@@ -2211,7 +2170,7 @@
         0.116
       ],
       "beta_pit": 0.256,
-      "global_cluster": 25,
+      "global_cluster": 24,
       "k_dd": "kospi|2026-02-03",
       "k_td": "asx_200|2026-02-03",
       "k_ch": "kospi|asx_200"
@@ -2252,7 +2211,7 @@
         -0.566
       ],
       "beta_pit": 0.2213,
-      "global_cluster": 26,
+      "global_cluster": 25,
       "k_dd": "btc_usd|2026-02-05",
       "k_td": "nasdaq_100|2026-02-05",
       "k_ch": "btc_usd|nasdaq_100"
@@ -2293,7 +2252,7 @@
         -1.129
       ],
       "beta_pit": -8.774,
-      "global_cluster": 27,
+      "global_cluster": 26,
       "k_dd": "sp500|2026-02-06",
       "k_td": "vix|2026-02-06",
       "k_ch": "sp500|vix"
@@ -2334,7 +2293,7 @@
         -0.649
       ],
       "beta_pit": -1.404,
-      "global_cluster": 28,
+      "global_cluster": 27,
       "k_dd": "stoxx_50|2026-03-03",
       "k_td": "hy_oas|2026-03-03",
       "k_ch": "stoxx_50|hy_oas"
@@ -2375,7 +2334,7 @@
         0.516
       ],
       "beta_pit": 0.5275,
-      "global_cluster": 28,
+      "global_cluster": 27,
       "k_dd": "stoxx_50|2026-03-03",
       "k_td": "sp500|2026-03-03",
       "k_ch": "stoxx_50|sp500"
@@ -2416,7 +2375,7 @@
         -1.248
       ],
       "beta_pit": 0.2109,
-      "global_cluster": 29,
+      "global_cluster": 28,
       "k_dd": "kospi|2026-03-04",
       "k_td": "shanghai_comp|2026-03-04",
       "k_ch": "kospi|shanghai_comp"
@@ -2457,7 +2416,7 @@
         2.229
       ],
       "beta_pit": 0.6361,
-      "global_cluster": 30,
+      "global_cluster": 29,
       "k_dd": "ftse_100|2026-03-19",
       "k_td": "dyn_vt|2026-03-19",
       "k_ch": "ftse_100|dyn_vt"
@@ -2498,7 +2457,7 @@
         14.048
       ],
       "beta_pit": -5.176,
-      "global_cluster": 30,
+      "global_cluster": 29,
       "k_dd": "ftse_100|2026-03-19",
       "k_td": "vix|2026-03-19",
       "k_ch": "ftse_100|vix"
@@ -2539,7 +2498,7 @@
         0.056
       ],
       "beta_pit": 0.7069,
-      "global_cluster": 30,
+      "global_cluster": 29,
       "k_dd": "ftse_100|2026-03-19",
       "k_td": "russell_2000|2026-03-19",
       "k_ch": "ftse_100|russell_2000"
@@ -2580,7 +2539,7 @@
         null
       ],
       "beta_pit": -0.2375,
-      "global_cluster": 31,
+      "global_cluster": 30,
       "k_dd": "hy_oas|2026-03-27",
       "k_td": "ftse_100|2026-03-27",
       "k_ch": "hy_oas|ftse_100"
@@ -2621,51 +2580,10 @@
         3.219
       ],
       "beta_pit": -0.7764,
-      "global_cluster": 32,
+      "global_cluster": 31,
       "k_dd": "aud_usd|2026-04-08",
       "k_td": "usd_brl|2026-04-08",
       "k_ch": "aud_usd|usd_brl"
-    },
-    {
-      "id": "cd3418bdeea9",
-      "kind": "transmission_gap",
-      "asof": "2026-05-08",
-      "driver": "britannia",
-      "target": "nifty_50",
-      "driver_class": null,
-      "target_class": "INDICES",
-      "beta_pair": 0.4483,
-      "expected_pct": -2.267,
-      "actual_pct": -0.619,
-      "residual_sigma": 1.44,
-      "shortfall_sigma": 1.44,
-      "gap_bar_sigma": 1.31,
-      "implied_dir": -1,
-      "channel_state": "active",
-      "channel_rho": 0.491,
-      "channel_stability": 0.98,
-      "lead_lag": 2,
-      "K": 5,
-      "window_n": 5,
-      "avail_sessions": 51,
-      "gap_pct": -1.648,
-      "closed_05": true,
-      "closed_10": true,
-      "ttt_05": 1,
-      "ttt_10": 2,
-      "outcome": "CLOSED",
-      "caught_path_pct": [
-        1.49,
-        3.295,
-        3.158,
-        2.013,
-        2.203
-      ],
-      "beta_pit": 0.4483,
-      "global_cluster": 33,
-      "k_dd": "britannia|2026-05-08",
-      "k_td": "nifty_50|2026-05-08",
-      "k_ch": "britannia|nifty_50"
     },
     {
       "id": "e90839702d33",
@@ -2703,7 +2621,7 @@
         -7.61
       ],
       "beta_pit": 1.0091,
-      "global_cluster": 34,
+      "global_cluster": 32,
       "k_dd": "dyn_bhartiartl_ns|2026-05-11",
       "k_td": "dyn_adanient_bo|2026-05-11",
       "k_ch": "dyn_bhartiartl_ns|dyn_adanient_bo"
@@ -2744,7 +2662,7 @@
         -2.585
       ],
       "beta_pit": 0.5917,
-      "global_cluster": 35,
+      "global_cluster": 33,
       "k_dd": "dyn_adanient_bo|2026-05-14",
       "k_td": "dyn_pcjeweller_ns|2026-05-14",
       "k_ch": "dyn_adanient_bo|dyn_pcjeweller_ns"
@@ -2756,7 +2674,7 @@
       "driver": "dyn_adanient_bo",
       "target": "bpcl",
       "driver_class": "EQUITIES",
-      "target_class": null,
+      "target_class": "EQUITIES",
       "beta_pair": 0.5465,
       "expected_pct": 4.672,
       "actual_pct": -0.707,
@@ -2785,7 +2703,7 @@
         0.475
       ],
       "beta_pit": 0.5465,
-      "global_cluster": 35,
+      "global_cluster": 33,
       "k_dd": "dyn_adanient_bo|2026-05-14",
       "k_td": "bpcl|2026-05-14",
       "k_ch": "dyn_adanient_bo|bpcl"
@@ -2826,7 +2744,7 @@
         -2.216
       ],
       "beta_pit": 0.662,
-      "global_cluster": 35,
+      "global_cluster": 33,
       "k_dd": "dyn_adanient_bo|2026-05-14",
       "k_td": "dyn_kalyankjil_ns|2026-05-14",
       "k_ch": "dyn_adanient_bo|dyn_kalyankjil_ns"
@@ -2867,7 +2785,7 @@
         null
       ],
       "beta_pit": 1.2137,
-      "global_cluster": 36,
+      "global_cluster": 34,
       "k_dd": "dyn_blk|2026-05-19",
       "k_td": "dyn_jef|2026-05-19",
       "k_ch": "dyn_blk|dyn_jef"
@@ -2908,7 +2826,7 @@
         null
       ],
       "beta_pit": 0.4282,
-      "global_cluster": 36,
+      "global_cluster": 34,
       "k_dd": "dyn_blk|2026-05-19",
       "k_td": "dyn_vt|2026-05-19",
       "k_ch": "dyn_blk|dyn_vt"
@@ -2949,7 +2867,7 @@
         3.674
       ],
       "beta_pit": 0.4675,
-      "global_cluster": 37,
+      "global_cluster": 35,
       "k_dd": "kospi|2026-05-21",
       "k_td": "dyn_indusindbk_bo|2026-05-21",
       "k_ch": "kospi|dyn_indusindbk_bo"
@@ -2990,7 +2908,7 @@
         null
       ],
       "beta_pit": 0.3259,
-      "global_cluster": 37,
+      "global_cluster": 35,
       "k_dd": "kospi|2026-05-21",
       "k_td": "nifty_midcap_100|2026-05-21",
       "k_ch": "kospi|nifty_midcap_100"
@@ -3031,7 +2949,7 @@
         null
       ],
       "beta_pit": 0.2534,
-      "global_cluster": 37,
+      "global_cluster": 35,
       "k_dd": "kospi|2026-05-21",
       "k_td": "nifty_50|2026-05-21",
       "k_ch": "kospi|nifty_50"
@@ -3072,7 +2990,7 @@
         null
       ],
       "beta_pit": 1.0193,
-      "global_cluster": 37,
+      "global_cluster": 35,
       "k_dd": "shanghai_comp|2026-05-21",
       "k_td": "nifty_midcap_100|2026-05-21",
       "k_ch": "shanghai_comp|nifty_midcap_100"
@@ -3113,7 +3031,7 @@
         null
       ],
       "beta_pit": -1.5717,
-      "global_cluster": 37,
+      "global_cluster": 35,
       "k_dd": "kospi|2026-05-21",
       "k_td": "india_vix|2026-05-21",
       "k_ch": "kospi|india_vix"
@@ -3154,7 +3072,7 @@
         -0.493
       ],
       "beta_pit": 0.6525,
-      "global_cluster": 38,
+      "global_cluster": 36,
       "k_dd": "dyn_swiggy_ns|2026-05-27",
       "k_td": "dyn_kalyankjil_ns|2026-05-27",
       "k_ch": "dyn_swiggy_ns|dyn_kalyankjil_ns"
@@ -3195,7 +3113,7 @@
         -0.661
       ],
       "beta_pit": -0.3257,
-      "global_cluster": 39,
+      "global_cluster": 37,
       "k_dd": "hang_seng|2026-06-02",
       "k_td": "usd_mxn|2026-06-02",
       "k_ch": "hang_seng|usd_mxn"
@@ -3236,7 +3154,7 @@
         -0.92
       ],
       "beta_pit": 0.1541,
-      "global_cluster": 39,
+      "global_cluster": 37,
       "k_dd": "hang_seng|2026-06-02",
       "k_td": "eur_usd|2026-06-02",
       "k_ch": "hang_seng|eur_usd"
@@ -3277,7 +3195,7 @@
         null
       ],
       "beta_pit": 0.4251,
-      "global_cluster": 39,
+      "global_cluster": 37,
       "k_dd": "hang_seng|2026-06-02",
       "k_td": "asx_200|2026-06-02",
       "k_ch": "hang_seng|asx_200"
@@ -3318,7 +3236,7 @@
         14.238
       ],
       "beta_pit": 0.6619,
-      "global_cluster": 40,
+      "global_cluster": 38,
       "k_dd": "dyn_avgo|2026-06-04",
       "k_td": "dyn_rivn|2026-06-04",
       "k_ch": "dyn_avgo|dyn_rivn"
@@ -3359,7 +3277,7 @@
         -0.69
       ],
       "beta_pit": -0.0303,
-      "global_cluster": 41,
+      "global_cluster": 39,
       "k_dd": "vix|2026-06-05",
       "k_td": "dyn_bond|2026-06-05",
       "k_ch": "vix|dyn_bond"
@@ -3400,7 +3318,7 @@
         -3.246
       ],
       "beta_pit": -0.2144,
-      "global_cluster": 41,
+      "global_cluster": 39,
       "k_dd": "vix|2026-06-05",
       "k_td": "dyn_hdb|2026-06-05",
       "k_ch": "vix|dyn_hdb"
@@ -3441,7 +3359,7 @@
         -0.798
       ],
       "beta_pit": -0.3788,
-      "global_cluster": 42,
+      "global_cluster": 40,
       "k_dd": "nasdaq_100|2026-06-05",
       "k_td": "ust_30y|2026-06-05",
       "k_ch": "nasdaq_100|ust_30y"
@@ -3482,7 +3400,7 @@
         -0.999
       ],
       "beta_pit": -0.3859,
-      "global_cluster": 43,
+      "global_cluster": 41,
       "k_dd": "ust_2y|2026-06-05",
       "k_td": "ftse_100|2026-06-05",
       "k_ch": "ust_2y|ftse_100"
@@ -3523,7 +3441,7 @@
         -8.583
       ],
       "beta_pit": -0.3948,
-      "global_cluster": 41,
+      "global_cluster": 39,
       "k_dd": "vix|2026-06-05",
       "k_td": "dyn_wulf|2026-06-05",
       "k_ch": "vix|dyn_wulf"
@@ -3564,51 +3482,10 @@
         -2.071
       ],
       "beta_pit": -0.0997,
-      "global_cluster": 41,
+      "global_cluster": 39,
       "k_dd": "vix|2026-06-05",
       "k_td": "stoxx_50|2026-06-05",
       "k_ch": "vix|stoxx_50"
-    },
-    {
-      "id": "276b7f1cdb41",
-      "kind": "transmission_gap",
-      "asof": "2026-06-12",
-      "driver": "bpcl",
-      "target": "india_vix",
-      "driver_class": null,
-      "target_class": "INDICES",
-      "beta_pair": -2.0623,
-      "expected_pct": -11.523,
-      "actual_pct": -5.701,
-      "residual_sigma": 1.06,
-      "shortfall_sigma": 1.06,
-      "gap_bar_sigma": 0.96,
-      "implied_dir": -1,
-      "channel_state": "active",
-      "channel_rho": -0.635,
-      "channel_stability": 0.975,
-      "lead_lag": 2,
-      "K": 5,
-      "window_n": 5,
-      "avail_sessions": 26,
-      "gap_pct": -5.822,
-      "closed_05": true,
-      "closed_10": true,
-      "ttt_05": 2,
-      "ttt_10": 2,
-      "outcome": "CLOSED",
-      "caught_path_pct": [
-        2.514,
-        9.239,
-        10.394,
-        13.927,
-        11.889
-      ],
-      "beta_pit": -2.0623,
-      "global_cluster": 44,
-      "k_dd": "bpcl|2026-06-12",
-      "k_td": "india_vix|2026-06-12",
-      "k_ch": "bpcl|india_vix"
     },
     {
       "id": "ebd4ad06986b",
@@ -3646,7 +3523,7 @@
         1.354
       ],
       "beta_pit": 0.5541,
-      "global_cluster": 45,
+      "global_cluster": 42,
       "k_dd": "dyn_kalyankjil_ns|2026-06-15",
       "k_td": "dyn_indianb_ns|2026-06-15",
       "k_ch": "dyn_kalyankjil_ns|dyn_indianb_ns"
@@ -3687,7 +3564,7 @@
         -1.088
       ],
       "beta_pit": 0.5973,
-      "global_cluster": 45,
+      "global_cluster": 42,
       "k_dd": "dyn_kalyankjil_ns|2026-06-15",
       "k_td": "dyn_indusindbk_bo|2026-06-15",
       "k_ch": "dyn_kalyankjil_ns|dyn_indusindbk_bo"
@@ -3728,7 +3605,7 @@
         1.688
       ],
       "beta_pit": 1.5515,
-      "global_cluster": 46,
+      "global_cluster": 43,
       "k_dd": "eur_usd|2026-06-18",
       "k_td": "aud_usd|2026-06-18",
       "k_ch": "eur_usd|aud_usd"
@@ -3769,92 +3646,10 @@
         0.463
       ],
       "beta_pit": 1.7412,
-      "global_cluster": 46,
+      "global_cluster": 43,
       "k_dd": "eur_usd|2026-06-18",
       "k_td": "nifty_50|2026-06-18",
       "k_ch": "eur_usd|nifty_50"
-    },
-    {
-      "id": "031cc711c603",
-      "kind": "transmission_gap",
-      "asof": "2026-07-01",
-      "driver": "dabur",
-      "target": "india_vix",
-      "driver_class": null,
-      "target_class": "INDICES",
-      "beta_pair": -2.312,
-      "expected_pct": -12.349,
-      "actual_pct": -2.647,
-      "residual_sigma": 1.98,
-      "shortfall_sigma": 1.98,
-      "gap_bar_sigma": 1.15,
-      "implied_dir": -1,
-      "channel_state": "active",
-      "channel_rho": -0.548,
-      "channel_stability": 0.987,
-      "lead_lag": 1,
-      "K": 5,
-      "window_n": 5,
-      "avail_sessions": 13,
-      "gap_pct": -9.702,
-      "closed_05": true,
-      "closed_10": true,
-      "ttt_05": 1,
-      "ttt_10": 2,
-      "outcome": "CLOSED",
-      "caught_path_pct": [
-        7.175,
-        10.876,
-        10.725,
-        12.009,
-        -10.876
-      ],
-      "beta_pit": -2.312,
-      "global_cluster": 47,
-      "k_dd": "dabur|2026-07-01",
-      "k_td": "india_vix|2026-07-01",
-      "k_ch": "dabur|india_vix"
-    },
-    {
-      "id": "02d74496ac0d",
-      "kind": "transmission_gap",
-      "asof": "2026-07-01",
-      "driver": "dabur",
-      "target": "nifty_50",
-      "driver_class": null,
-      "target_class": "INDICES",
-      "beta_pair": 0.3749,
-      "expected_pct": 2.003,
-      "actual_pct": 0.587,
-      "residual_sigma": -1.79,
-      "shortfall_sigma": 1.79,
-      "gap_bar_sigma": 1.2,
-      "implied_dir": 1,
-      "channel_state": "active",
-      "channel_rho": 0.528,
-      "channel_stability": 0.951,
-      "lead_lag": 3,
-      "K": 5,
-      "window_n": 5,
-      "avail_sessions": 13,
-      "gap_pct": 1.416,
-      "closed_05": true,
-      "closed_10": true,
-      "ttt_05": 2,
-      "ttt_10": 3,
-      "outcome": "CLOSED",
-      "caught_path_pct": [
-        0.708,
-        1.104,
-        1.768,
-        1.636,
-        -0.516
-      ],
-      "beta_pit": 0.3749,
-      "global_cluster": 47,
-      "k_dd": "dabur|2026-07-01",
-      "k_td": "nifty_50|2026-07-01",
-      "k_ch": "dabur|nifty_50"
     },
     {
       "id": "f4303cadc433",
@@ -3892,7 +3687,7 @@
         14.146
       ],
       "beta_pit": 0.7473,
-      "global_cluster": 48,
+      "global_cluster": 44,
       "k_dd": "dyn_pcjeweller_ns|2026-07-02",
       "k_td": "dyn_kalyankjil_ns|2026-07-02",
       "k_ch": "dyn_pcjeweller_ns|dyn_kalyankjil_ns"
@@ -3933,7 +3728,7 @@
         -6.267
       ],
       "beta_pit": -2.5742,
-      "global_cluster": 49,
+      "global_cluster": 45,
       "k_dd": "ftse_100|2026-07-02",
       "k_td": "brent|2026-07-02",
       "k_ch": "ftse_100|brent"
@@ -3974,7 +3769,7 @@
         null
       ],
       "beta_pit": 0.1267,
-      "global_cluster": 50,
+      "global_cluster": 46,
       "k_dd": "dyn_rivn|2026-07-07",
       "k_td": "dyn_vt|2026-07-07",
       "k_ch": "dyn_rivn|dyn_vt"
@@ -4200,7 +3995,7 @@
         0.588
       ],
       "beta_pit": 0.1586,
-      "global_cluster": 51,
+      "global_cluster": 47,
       "k_dd": "bovespa|2026-07-10",
       "k_td": "dyn_bond|2026-07-10",
       "k_ch": "bovespa|dyn_bond"
@@ -4315,7 +4110,7 @@
         -2.565
       ],
       "beta_pit": 0.9143,
-      "global_cluster": 51,
+      "global_cluster": 47,
       "k_dd": "bovespa|2026-07-10",
       "k_td": "dyn_ms|2026-07-10",
       "k_ch": "bovespa|dyn_ms"
@@ -4356,7 +4151,7 @@
         null
       ],
       "beta_pit": -0.1584,
-      "global_cluster": 51,
+      "global_cluster": 47,
       "k_dd": "bovespa|2026-07-10",
       "k_td": "dxy|2026-07-10",
       "k_ch": "bovespa|dxy"

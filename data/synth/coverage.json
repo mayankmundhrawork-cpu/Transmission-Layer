@@ -2,22 +2,22 @@
   "data_window": "2024-07-22..2026-07-20",
   "n_min": 8,
   "n_drivers": 87,
-  "triggers_raw": 109,
+  "triggers_raw": 104,
   "triggers_censored": 9,
-  "triggers_gradeable": 100,
+  "triggers_gradeable": 95,
   "clustering": "transitive union-find across (driver,date)+(target,date)+(same-channel within K_MAX); clustered N is <= per-axis min",
   "timing_profile": {
     "n_dates": 246,
-    "total_s": 10849.0,
-    "per_date_min_s": 2.308,
-    "per_date_max_s": 8900.081,
-    "first_third_avg_s": 5.644,
-    "last_third_avg_s": 8.971
+    "total_s": 1580.3,
+    "per_date_min_s": 0.84,
+    "per_date_max_s": 14.223,
+    "first_third_avg_s": 2.584,
+    "last_third_avg_s": 9.851
   },
   "global": {
-    "raw": 100,
-    "clusters": 52,
-    "ratio": 1.92,
+    "raw": 95,
+    "clusters": 48,
+    "ratio": 1.98,
     "clears_n_min": true
   },
   "class_pair": {
@@ -28,9 +28,9 @@
       "clears_n_min": true
     },
     "EQUITIES->EQUITIES": {
-      "raw": 15,
-      "clusters": 12,
-      "ratio": 1.25,
+      "raw": 17,
+      "clusters": 13,
+      "ratio": 1.31,
       "clears_n_min": true
     },
     "COMMODITIES->INDICES": {
@@ -49,12 +49,6 @@
       "raw": 8,
       "clusters": 4,
       "ratio": 2.0,
-      "clears_n_min": false
-    },
-    "None->INDICES": {
-      "raw": 5,
-      "clusters": 4,
-      "ratio": 1.25,
       "clears_n_min": false
     },
     "FX->FX": {
@@ -93,12 +87,6 @@
       "ratio": 1.0,
       "clears_n_min": false
     },
-    "None->EQUITIES": {
-      "raw": 1,
-      "clusters": 1,
-      "ratio": 1.0,
-      "clears_n_min": false
-    },
     "DERIVED->COMMODITIES": {
       "raw": 1,
       "clusters": 1,
@@ -106,12 +94,6 @@
       "clears_n_min": false
     },
     "CRYPTO->INDICES": {
-      "raw": 1,
-      "clusters": 1,
-      "ratio": 1.0,
-      "clears_n_min": false
-    },
-    "EQUITIES->None": {
       "raw": 1,
       "clusters": 1,
       "ratio": 1.0,
@@ -131,16 +113,10 @@
     }
   },
   "pair_level": {
-    "n_pairs": 86,
+    "n_pairs": 82,
     "pairs_clearing_n_min_on_clusters": [],
     "top_pairs_by_clusters": {
       "dyn_coin->dyn_blk": {
-        "raw": 2,
-        "clusters": 2,
-        "ratio": 1.0,
-        "clears_n_min": false
-      },
-      "britannia->nifty_50": {
         "raw": 2,
         "clusters": 2,
         "ratio": 1.0,
@@ -165,6 +141,12 @@
         "clears_n_min": false
       },
       "comex_gold->dyn_vt": {
+        "raw": 3,
+        "clusters": 2,
+        "ratio": 1.5,
+        "clears_n_min": false
+      },
+      "stoxx_50->hy_oas": {
         "raw": 3,
         "clusters": 2,
         "ratio": 1.5,
