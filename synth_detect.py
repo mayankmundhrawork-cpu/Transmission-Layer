@@ -69,6 +69,17 @@ CHANNEL_STRENGTH_PCTILE = 0.25
 STALE_DRIVER_SESSIONS = 1   # driver's own move-signal must be this fresh
 NEWS_ABSENT_DISCOUNT = 0.35  # a no-news pulse is correlation, not mechanism —
 #                              it ranks below anything news-corroborated
+# breaking-channel penalty (owner ruling): a gap projects an expected move
+# through beta_pair; if that pair's correlation regime is itself destabilising,
+# the projection is suspect and the gap's confidence is cut BEFORE S4. Channel
+# discovery thus gates the flagship detector — it is load-bearing, not a fourth
+# readout. All penalties are multiplicative into a [0,1] stability factor.
+SIGN_FLIP_PENALTY = 0.5          # rho sign disagrees with its own median
+CHANGEPOINT_PENALTY = 0.6        # beta regime shifted inside the recent window
+CHANGEPOINT_RECENT_SESSIONS = 40
+COOLING_CAP = 0.5                # max pctile drop (heading toward breaking)
+UNSTABLE_BELOW = 0.8             # stability under this tags the gap unstable
+STALE_DRIVER_DISCOUNT = 0.4      # a stale-feed pulse must not outrank a live one
 
 NEWS_WINDOW_H = 48          # entity-join window around a market event
 NEWS_INTENSITY_PCTILE = 0.90
@@ -134,6 +145,34 @@ def _strength_floor(channels: list[dict]) -> float:
     if not live:
         return 0.0
     return float(pd.Series(live).quantile(CHANNEL_STRENGTH_PCTILE))
+
+
+def _channel_stability(ch: dict, cal: pd.DatetimeIndex) -> tuple[float, list[str]]:
+    """[0,1] confidence in a channel's beta_pair as a projection basis, with
+    reasons. A gap riding an unstable channel (sign-flipped, freshly
+    change-pointed, or cooling toward breaking) is distrusted (owner ruling).
+    turning_on channels HEAT (pctile rising) and are not penalised — that is
+    the watchlist signal, not instability."""
+    s, reasons = 1.0, []
+    if ch.get("sign_flip"):
+        s *= SIGN_FLIP_PENALTY
+        reasons.append("sign_flip")
+    cp = ch.get("changepoint")
+    if cp:
+        try:
+            since = int((cal > pd.Timestamp(cp)).sum())
+            if since <= CHANGEPOINT_RECENT_SESSIONS:
+                s *= CHANGEPOINT_PENALTY
+                reasons.append(f"changepoint_{since}s_ago")
+        except Exception:
+            pass
+    cooling = (ch.get("pctile_prev20") or 0.0) - (ch.get("pctile_now") or 0.0)
+    if cooling > 0:
+        cool = min(cooling, COOLING_CAP)
+        s *= (1.0 - cool)
+        if cool >= 0.1:
+            reasons.append(f"cooling_{round(cooling, 2)}")
+    return round(s, 3), reasons
 
 
 def detect_transmission_gaps(prices: pd.DataFrame, channels: list[dict],
@@ -255,6 +294,8 @@ def detect_transmission_gaps(prices: pd.DataFrame, channels: list[dict],
                 if all(v is not None for v in comp.values()):
                     score = round(comp["driver_move_pctile"] *
                                   comp["channel_pctile"] * comp["gap_pctile"], 4)
+                stability, streasons = _channel_stability(ch, cal)
+                confidence = None if score is None else round(score * stability, 4)
                 out.append({
                     "id": _cid("gap", f"{drv}|{tgt}|{d:%Y-%m-%d}"),
                     "kind": "transmission_gap",
@@ -271,6 +312,10 @@ def detect_transmission_gaps(prices: pd.DataFrame, channels: list[dict],
                     "implied_dir": int(implied_dir),
                     "channel_state": ch["state"],
                     "channel_rho": ch["rho_now"],
+                    "channel_stability": stability,
+                    "channel_unstable": bool(stability < UNSTABLE_BELOW),
+                    "stability_reasons": streasons,
+                    "confidence": confidence,
                     "driver_class": market_of(drv),
                     "target_class": market_of(tgt),
                     "driver_stale": drv_stale,
@@ -302,7 +347,9 @@ def collapse_to_pulses(gaps: list[dict]) -> list[dict]:
         groups.setdefault((g["driver"], g["asof"]), []).append(g)
     pulses = []
     for (drv, asof), gs in groups.items():
-        gs.sort(key=lambda x: -(x["score"] or 0))
+        # rank lagging targets by CONFIDENCE (score already discounted for
+        # channel instability), not raw score
+        gs.sort(key=lambda x: -(x.get("confidence") or 0))
         news = gs[0].get("news_support") or []
         top = gs[0]
         pulses.append({
@@ -317,14 +364,17 @@ def collapse_to_pulses(gaps: list[dict]) -> list[dict]:
             "news_corroborated": bool(news),
             "watch_join": any(n.get("via_watch") for n in news),
             "top_score": top["score"],
+            "top_confidence": top.get("confidence"),
+            "any_unstable_channel": any(g.get("channel_unstable") for g in gs),
             "targets": [{k: g[k] for k in (
                 "target", "target_class", "beta_pair", "expected_pct",
                 "actual_pct", "residual_sigma", "shortfall_sigma",
-                "gap_bar_sigma", "channel_state", "channel_rho", "lead_lag",
-                "sessions_elapsed", "window_open", "low_history", "known_as",
-                "components", "score")} for g in gs],
+                "gap_bar_sigma", "channel_state", "channel_rho",
+                "channel_stability", "channel_unstable", "stability_reasons",
+                "lead_lag", "sessions_elapsed", "window_open", "low_history",
+                "known_as", "components", "score", "confidence")} for g in gs],
         })
-    pulses.sort(key=lambda p: -(p["top_score"] or 0))
+    pulses.sort(key=lambda p: -(p["top_confidence"] or 0))
     return pulses
 
 
@@ -334,16 +384,19 @@ def _surface(candidate: dict) -> dict:
     news-join is what separates a mechanism from a correlation, so no-news
     candidates are discounted AND tiered below corroborated ones."""
     kind = candidate["kind"]
+    stale_factor = 1.0
     if kind == "driver_pulse":
         corro = candidate["news_corroborated"]
-        base = candidate["top_score"] or 0.0
+        base = candidate.get("top_confidence") or 0.0   # instability-adjusted
+        if candidate.get("driver_stale"):
+            stale_factor = STALE_DRIVER_DISCOUNT         # never top a live pulse
     elif kind == "news_no_move":
         corro, base = True, candidate["score"] or 0.0
     else:  # move_no_news, channel_shift — no live news cluster attached
         corro, base = False, candidate["score"] or 0.0
     candidate["news_corroborated"] = corro
     candidate["surface_score"] = round(
-        base * (1.0 if corro else NEWS_ABSENT_DISCOUNT), 4)
+        base * (1.0 if corro else NEWS_ABSENT_DISCOUNT) * stale_factor, 4)
     return candidate
 
 
@@ -437,9 +490,15 @@ def detect_channel_shifts(channels: list[dict]) -> list[dict]:
         if not shift and not c.get("sign_flip"):
             continue
         move = abs(c["pctile_now"] - c["pctile_prev20"])
+        # a break/sign-flip is a map-health WARNING (a relationship the other
+        # detectors lean on has stopped holding); a turning_on channel is a
+        # WATCHLIST feeder (where next week's gaps will come from). Different
+        # readings, not trades — hence their own lane (owner ruling).
+        role = "watchlist" if (c["state"] == "turning_on"
+                               and not c.get("sign_flip")) else "warning"
         out.append({
             "id": _cid("chs", f"{c['driver']}|{c['target']}|{c['state']}"),
-            "kind": "channel_shift",
+            "kind": "channel_shift", "lane": "regime", "lane_role": role,
             "driver": c["driver"], "target": c["target"],
             "state": c["state"], "sign_flip": c.get("sign_flip", False),
             "rho_now": c["rho_now"], "rho_prev20": c["rho_prev20"],
@@ -450,7 +509,7 @@ def detect_channel_shifts(channels: list[dict]) -> list[dict]:
             "score": round(move, 4),
             "refs": {},
         })
-    out.sort(key=lambda c: -(c["score"] or 0))
+    out.sort(key=lambda c: (c["lane_role"] != "warning", -(c["score"] or 0)))
     return out
 
 
@@ -498,10 +557,13 @@ def build_candidates(data_dir: Path | str | None = None,
     divs = detect_news_move_divergence(prices, bus, now)
     shifts = detect_channel_shifts(channels)
 
-    # unified ranked surface: news-corroborated mechanisms first (owner
-    # directive), then by discounted surface score. driver_pulses replace the
-    # raw fan-out gaps; the gaps stay reachable inside each pulse's targets[].
-    surface = [_surface(c) for c in pulses + divs + shifts]
+    # TRADE surface: transmission pulses + news divergences, news-corroborated
+    # mechanisms first (owner directive), then by instability-adjusted surface
+    # score. driver_pulses replace the raw fan-out gaps; the gaps stay reachable
+    # inside each pulse's targets[]. Channel-shifts are NOT here — they are a
+    # separate regime/map-health lane (owner ruling), and they already feed the
+    # gap detector's confidence as an instability penalty.
+    surface = [_surface(c) for c in pulses + divs]
     surface.sort(key=lambda c: (not c["news_corroborated"],
                                 -(c["surface_score"] or 0)))
 
@@ -522,8 +584,13 @@ def build_candidates(data_dir: Path | str | None = None,
                                        if c["kind"] == "move_no_news"),
                    "news_no_move": sum(1 for c in divs
                                        if c["kind"] == "news_no_move"),
-                   "channel_shift": len(shifts)},
-        "ranked": surface,
+                   "channel_shift": len(shifts),
+                   "regime_warning": sum(1 for c in shifts
+                                         if c["lane_role"] == "warning"),
+                   "regime_watchlist": sum(1 for c in shifts
+                                           if c["lane_role"] == "watchlist")},
+        "ranked": surface,          # trade surface
+        "regime": shifts,           # map-health / watchlist lane (own axis)
         "candidates": pulses + divs + shifts,
     }
     outp = Path(out_path) if out_path else CANDIDATES_JSON
@@ -548,16 +615,19 @@ if __name__ == "__main__":
     print(f"candidates from {st['source_dir']} (data {st['data_date']}): "
           + " · ".join(f"{k} {v}" for k, v in c.items())
           + f" | strength_floor {st['params']['strength_floor']}")
-    print("RANKED SURFACE (news-corroborated first):")
+    print("TRADE SURFACE (news-corroborated first):")
     for cd in st["ranked"]:
         tag = "NEWS" if cd["news_corroborated"] else "    "
         if cd["kind"] == "driver_pulse":
             stale = " STALE" if cd["driver_stale"] else ""
+            unst = " UNSTABLE-CH" if cd.get("any_unstable_channel") else ""
             tgts = ", ".join(
-                f"{t['target']}({t['shortfall_sigma']:.1f}s)"
+                f"{t['target']}({t['shortfall_sigma']:.1f}s"
+                f"{'!' if t['channel_unstable'] else ''})"
                 for t in cd["targets"][:4])
             print(f"  [{tag}] PULSE {cd['driver']} +{cd['driver_zc']:.1f}z "
-                  f"[{cd['driver_class']}]{stale} surf={cd['surface_score']} "
+                  f"[{cd['driver_class']}]{stale}{unst} "
+                  f"surf={cd['surface_score']} conf={cd['top_confidence']} "
                   f"-> {cd['n_targets']} tgts: {tgts}")
         elif cd["kind"] == "news_no_move":
             print(f"  [{tag}] NNM   {cd['series']} zc={cd['zc']:+.1f} "
@@ -566,8 +636,9 @@ if __name__ == "__main__":
         elif cd["kind"] == "move_no_news":
             print(f"  [{tag}] MNN   {cd['series']} zc={cd['zc']:+.1f} "
                   f"ret={cd['ret_1d_pct']}% surf={cd['surface_score']}")
-        else:
-            print(f"  [{tag}] CHS   {cd['driver']} -> {cd['target']} "
-                  f"{cd['state']}{' FLIP' if cd['sign_flip'] else ''} "
-                  f"rho {cd['rho_prev20']}->{cd['rho_now']} "
-                  f"surf={cd['surface_score']}")
+    print("REGIME LANE (map-health / watchlist, own axis):")
+    for cd in st["regime"][:12]:
+        role = "WARN" if cd["lane_role"] == "warning" else "WATCH"
+        print(f"  [{role:5}] {cd['driver']} -> {cd['target']} "
+              f"{cd['state']}{' FLIP' if cd['sign_flip'] else ''} "
+              f"rho {cd['rho_prev20']}->{cd['rho_now']} mag={cd['score']}")

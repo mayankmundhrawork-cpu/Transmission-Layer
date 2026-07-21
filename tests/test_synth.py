@@ -163,11 +163,13 @@ def test_fanout_dedup_collapses_one_driver_date():
     from synth_detect import collapse_to_pulses
     keys = dict(target_class="INDICES", beta_pair=0.5, expected_pct=2.0,
                 actual_pct=0.0, residual_sigma=-1.5, gap_bar_sigma=1.2,
-                channel_state="active", channel_rho=0.6, lead_lag=2,
+                channel_state="active", channel_rho=0.6, channel_stability=1.0,
+                channel_unstable=False, stability_reasons=[], lead_lag=2,
                 sessions_elapsed=3, window_open=False, low_history=False,
                 known_as=None, components={})
     gaps = [dict(driver="d", asof="2026-07-10", target=f"t{i}",
-                 shortfall_sigma=1.5, score=0.4 + 0.1 * i, driver_zc=4.0,
+                 shortfall_sigma=1.5, score=0.4 + 0.1 * i,
+                 confidence=0.4 + 0.1 * i, driver_zc=4.0,
                  driver_ret_pct=2.0, driver_class="INDICES",
                  driver_stale=False, driver_last_obs="2026-07-10",
                  news_support=[], **keys) for i in range(3)]
@@ -199,6 +201,122 @@ def test_stale_driver_is_tagged_not_dropped():
     channels, evts = _fixtures(d)
     out = detect_transmission_gaps(px, channels, evts, bus_events=[])
     assert out and all(c["driver_stale"] is True for c in out)
+
+
+# ── breaking-channel penalty + regime lane ──────────────────────────────
+def test_channel_stability_penalises_instability_not_heating():
+    from synth_detect import (CHANGEPOINT_PENALTY, SIGN_FLIP_PENALTY,
+                              _channel_stability)
+    cal = pd.bdate_range("2024-01-02", periods=300)
+    # sign flip: beta sign disagrees with its own history
+    assert _channel_stability({"sign_flip": True}, cal)[0] == SIGN_FLIP_PENALTY
+    # cooling toward breaking: pctile fell 0.4 -> stability 0.6
+    s, r = _channel_stability({"pctile_prev20": 0.9, "pctile_now": 0.5}, cal)
+    assert s == pytest.approx(0.6) and any("cooling" in x for x in r)
+    # recent change-point: beta regime just shifted
+    cp = cal[-5].strftime("%Y-%m-%d")
+    assert _channel_stability({"changepoint": cp}, cal)[0] == CHANGEPOINT_PENALTY
+    # HEATING (turning_on): pctile rising is the watchlist signal, no penalty
+    assert _channel_stability({"pctile_prev20": 0.3, "pctile_now": 0.9}, cal) \
+        == (1.0, [])
+
+
+def test_cooling_channel_cuts_gap_confidence_below_score():
+    from synth_detect import detect_transmission_gaps
+    px, d = _pair_prices(tgt_window_rets=[0.0, 0.0, 0.0])
+    channels, evts = _fixtures(d)
+    channels[0].update(pctile_now=0.6, pctile_prev20=0.9)   # cooling 0.3
+    out = detect_transmission_gaps(px, channels, evts, bus_events=[])
+    assert len(out) == 1
+    g = out[0]
+    assert g["confidence"] < g["score"]
+    assert g["channel_unstable"] is True
+    assert any("cooling" in x for x in g["stability_reasons"])
+
+
+def test_channel_shifts_are_a_separate_lane_not_the_trade_surface():
+    from synth_detect import build_candidates
+    st = build_candidates("data/synth/golden_2026-07-20",
+                          "data/synth/golden_2026-07-20/candidates.json")
+    assert all(c["kind"] != "channel_shift" for c in st["ranked"])
+    assert st["regime"] and all(c["kind"] == "channel_shift"
+                                for c in st["regime"])
+    roles = {c["lane_role"] for c in st["regime"]}
+    assert roles <= {"warning", "watchlist"}
+
+
+def test_stale_pulse_ranks_below_a_live_one():
+    from synth_detect import _surface
+    live = {"kind": "driver_pulse", "news_corroborated": False,
+            "driver_stale": False, "top_confidence": 0.6}
+    stale = {"kind": "driver_pulse", "news_corroborated": False,
+             "driver_stale": True, "top_confidence": 0.9}
+    surf = sorted([_surface(live), _surface(stale)],
+                  key=lambda c: (not c["news_corroborated"],
+                                 -(c["surface_score"] or 0)))
+    assert surf[0] is live       # live 0.6 beats stale 0.9*0.4=0.36
+
+
+# ── golden fixture: labelled expectations are load-bearing ──────────────
+def _golden(tmp_path):
+    """Build candidates on the frozen snapshot into a throwaway path so a test
+    run never dirties the committed golden candidates.json."""
+    import json
+    from synth_detect import build_candidates
+    gdir = ROOT / "data" / "synth" / "golden_2026-07-20"
+    man = json.loads((gdir / "MANIFEST.json").read_text(encoding="utf-8"))
+    st = build_candidates(str(gdir), str(tmp_path / "cand.json"))
+    return man.get("expected_anomalies", {}), st
+
+
+def test_golden_positives_and_stale_tag(tmp_path):
+    exp, st = _golden(tmp_path)
+    ranked = st["ranked"]
+    pulses = [c for c in ranked if c["kind"] == "driver_pulse"]
+
+    def pulse(driver, asof):
+        return next((p for p in pulses if p["driver"] == driver
+                     and p["asof"] == asof), None)
+
+    for pos in exp.get("positives", []):
+        if pos["kind"] == "driver_pulse":
+            p = pulse(pos["driver"], pos["asof"])
+            assert p is not None, pos["label"]
+            assert set(pos["targets"]) <= {t["target"] for t in p["targets"]}
+            assert p["driver_stale"] is False
+        elif pos["kind"] == "news_no_move":
+            first_pulse = next((i for i, c in enumerate(ranked)
+                                if c["kind"] == "driver_pulse"), len(ranked))
+            for i, c in enumerate(ranked):
+                if c["kind"] == "news_no_move" and c["series"] in pos["series"]:
+                    assert c["news_corroborated"] and i < first_pulse
+
+    for tg in exp.get("tagged_not_expected", []):
+        p = pulse(tg["driver"], tg["asof"])
+        assert p is not None and p["driver_stale"] is True
+        bov = pulse("bovespa", "2026-07-10")
+        if bov:
+            assert p["surface_score"] < bov["surface_score"]
+
+
+def test_golden_negatives_stay_rejected(tmp_path):
+    """The expected-negatives are what keep the gate honest: if a future edit
+    loosens the class prior or the strength floor, one of these fails."""
+    exp, st = _golden(tmp_path)
+    pulses = [c for c in st["ranked"] if c["kind"] == "driver_pulse"]
+
+    def has(driver, target=None):
+        return any(p["driver"] == driver and
+                   (target is None or
+                    any(t["target"] == target for t in p["targets"]))
+                   for p in pulses)
+
+    for neg in exp.get("negatives", []):
+        assert not has(neg["driver"], neg.get("target")), neg["label"]
+    # the floor rejects the weak channel, NOT the whole driver
+    bov = next((p for p in pulses if p["driver"] == "bovespa"), None)
+    assert bov and {"dow_jones", "russell_2000"} <= {t["target"]
+                                                     for t in bov["targets"]}
 
 
 # ── spec: nothing hardcoded ─────────────────────────────────────────────

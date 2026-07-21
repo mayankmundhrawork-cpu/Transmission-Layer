@@ -36,6 +36,79 @@
       "bytes": 225568
     }
   },
-  "expected_anomalies": [],
-  "expected_anomalies_note": "hand-labelled with owner, pending. Candidate table produced by synth_detect after the driver-eligibility gate (channel-strength floor + macro-driver class prior + fan-out dedup). Note for labelling: the india_vix driver_pulse (asof 2026-07-08 -> cac_40, nifty_midcap_100) carries driver_stale=true (its zc feed's last obs is 2026-07-14, gappy to the 07-20 matrix date) and must be labelled stale-driver, NOT expected-live. The bovespa driver_pulse (asof 2026-07-10 -> dow_jones, russell_2000) is the one live macro->macro transmission pulse. The wti/brent/vix news_no_move cluster (Gulf/Hormuz newsflow, prices below own median |zc|) is the news-corroborated top of the ranked surface."
+  "expected_anomalies": {
+    "labelling_status": "DRAFT - owner eyeball pending, negatives especially",
+    "positives": [
+      {
+        "label": "bovespa_pulse_live",
+        "class": "expected_live_positive",
+        "kind": "driver_pulse",
+        "driver": "bovespa",
+        "asof": "2026-07-10",
+        "targets": [
+          "dow_jones",
+          "russell_2000"
+        ],
+        "rationale": "The one clean macro->macro transmission pulse on the day. Driver not stale. russell_2000 leg rides a cooling channel (stability 0.76, tagged channel_unstable) so the pulse surfaces with reduced confidence - that is correct, not a miss.",
+        "assert": "ranked[] contains a driver_pulse driver=bovespa asof=2026-07-10 with driver_stale=false and targets including dow_jones and russell_2000"
+      },
+      {
+        "label": "energy_news_no_move",
+        "class": "news_positive",
+        "kind": "news_no_move",
+        "series": [
+          "wti",
+          "brent",
+          "vix"
+        ],
+        "rationale": "Gulf/Hormuz escalation newsflow (27-28 headlines on wti/brent) with price below its own median |zc| - un-priced anticipatory signal, the real story of 07-20 and the inverse of the Goldman artifact. Must top the trade surface.",
+        "assert": "the highest-ranked ranked[] entries are news_no_move for wti/brent/vix with news_corroborated=true, above every driver_pulse"
+      }
+    ],
+    "tagged_not_expected": [
+      {
+        "label": "india_vix_pulse_stale",
+        "class": "stale_driver_not_expected",
+        "kind": "driver_pulse",
+        "driver": "india_vix",
+        "asof": "2026-07-08",
+        "targets": [
+          "cac_40",
+          "nifty_midcap_100"
+        ],
+        "rationale": "driver_stale=true - the india_vix zc feed's last obs is 2026-07-14 (NaN-broken to the 07-20 matrix), so the +5.6z is a backfill replay of an old bar. Present-but-tagged and discounted BELOW the live bovespa pulse. NOT an expected-live positive.",
+        "assert": "driver_pulse india_vix asof=2026-07-08 has driver_stale=true and surface_score < the bovespa pulse surface_score"
+      }
+    ],
+    "negatives": [
+      {
+        "label": "goldman_fanout_no_mechanism",
+        "class": "expected_negative",
+        "gate": "macro_driver_class_prior",
+        "driver": "dyn_gs",
+        "example_target": "comex_silver",
+        "rationale": "Goldman +4.6z (earnings) fanning out onto silver, copper, 30Y, DAX etc. is one idiosyncratic move, not six transmission setups. A single-name equity cannot drive a macro series. All six dyn_gs rows must stay rejected.",
+        "assert": "no transmission_gap or driver_pulse has driver=dyn_gs"
+      },
+      {
+        "label": "indian_bank_drives_crude",
+        "class": "expected_negative",
+        "gate": "class_prior_and_strength_floor",
+        "driver": "dyn_indianb_ns",
+        "target": "wti",
+        "rationale": "An Indian bank 'driving' crude at rho -0.33 - high pairwise correlation, no causal channel. The obviously-absurd case; fails both the class prior and the floor.",
+        "assert": "no gap/pulse with driver=dyn_indianb_ns and target=wti"
+      },
+      {
+        "label": "bovespa_drives_crude_floor_test",
+        "class": "expected_negative",
+        "gate": "strength_floor_only",
+        "driver": "bovespa",
+        "target": "wti",
+        "rationale": "Class-admissible (macro->macro) but rho 0.354 sits below the p25 cross-sectional strength floor (0.385). This is the negative that guards the FLOOR specifically: loosening CHANNEL_STRENGTH_PCTILE readmits it. bovespa->dow_jones/russell (stronger channels) still survive, so the floor rejects the weak channel, not the driver.",
+        "assert": "no gap/pulse target=wti driver=bovespa, WHILE bovespa->dow_jones and bovespa->russell_2000 remain present"
+      }
+    ]
+  },
+  "expected_anomalies_note": "DRAFT proposed by build, pending owner confirmation. Labelled against candidates.json in this dir (synth_detect output after the driver-eligibility gate: channel-strength floor + macro-driver class prior + fan-out dedup + breaking-channel confidence penalty). Encodes what must PASS and what must stay REJECTED, so a future threshold loosening breaks a test."
 }
