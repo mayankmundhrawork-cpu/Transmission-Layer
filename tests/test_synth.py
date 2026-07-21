@@ -285,18 +285,25 @@ def test_golden_positives_and_stale_tag(tmp_path):
             assert set(pos["targets"]) <= {t["target"] for t in p["targets"]}
             assert p["driver_stale"] is False
         elif pos["kind"] == "news_no_move":
-            first_pulse = next((i for i, c in enumerate(ranked)
-                                if c["kind"] == "driver_pulse"), len(ranked))
-            for i, c in enumerate(ranked):
-                if c["kind"] == "news_no_move" and c["series"] in pos["series"]:
-                    assert c["news_corroborated"] and i < first_pulse
+            # ORDERING, not presence: the news cluster must rank ABOVE every
+            # no-news candidate — a no-news pulse outscoring it must fail here.
+            news_idx = [i for i, c in enumerate(ranked)
+                        if c["kind"] == "news_no_move"
+                        and c["series"] in pos["series"]]
+            noncorro_idx = [i for i, c in enumerate(ranked)
+                            if not c["news_corroborated"]]
+            assert news_idx, pos["label"]
+            assert all(ranked[i]["news_corroborated"] for i in news_idx)
+            if noncorro_idx:
+                assert max(news_idx) < min(noncorro_idx)
 
+    # ORDERING invariant: a live pulse outranks a stale one (tag alone is not
+    # the assertion — the rank is).
     for tg in exp.get("tagged_not_expected", []):
         p = pulse(tg["driver"], tg["asof"])
         assert p is not None and p["driver_stale"] is True
         bov = pulse("bovespa", "2026-07-10")
-        if bov:
-            assert p["surface_score"] < bov["surface_score"]
+        assert bov is not None and p["surface_score"] < bov["surface_score"]
 
 
 def test_golden_negatives_stay_rejected(tmp_path):

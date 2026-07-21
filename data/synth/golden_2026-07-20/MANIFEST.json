@@ -62,7 +62,7 @@
           "vix"
         ],
         "rationale": "Gulf/Hormuz escalation newsflow (27-28 headlines on wti/brent) with price below its own median |zc| - un-priced anticipatory signal, the real story of 07-20 and the inverse of the Goldman artifact. Must top the trade surface.",
-        "assert": "the highest-ranked ranked[] entries are news_no_move for wti/brent/vix with news_corroborated=true, above every driver_pulse"
+        "assert": "ORDERING: every wti/brent/vix news_no_move entry ranks ABOVE every no-news candidate in ranked[] (news_corroborated entries strictly precede all non-corroborated ones). Presence is not enough - a threshold change that lets a no-news pulse outscore the energy cluster must fail here."
       }
     ],
     "tagged_not_expected": [
@@ -77,7 +77,7 @@
           "nifty_midcap_100"
         ],
         "rationale": "driver_stale=true - the india_vix zc feed's last obs is 2026-07-14 (NaN-broken to the 07-20 matrix), so the +5.6z is a backfill replay of an old bar. Present-but-tagged and discounted BELOW the live bovespa pulse. NOT an expected-live positive.",
-        "assert": "driver_pulse india_vix asof=2026-07-08 has driver_stale=true and surface_score < the bovespa pulse surface_score"
+        "assert": "ORDERING: india_vix pulse surface_score < bovespa pulse surface_score (a live pulse outranks a stale one). driver_stale=true is necessary but NOT the assertion - the ranking invariant is. A future scoring tweak could keep the tag correct while violating the order; this catches that."
       }
     ],
     "negatives": [
@@ -86,9 +86,9 @@
         "class": "expected_negative",
         "gate": "macro_driver_class_prior",
         "driver": "dyn_gs",
-        "example_target": "comex_silver",
         "rationale": "Goldman +4.6z (earnings) fanning out onto silver, copper, 30Y, DAX etc. is one idiosyncratic move, not six transmission setups. A single-name equity cannot drive a macro series. All six dyn_gs rows must stay rejected.",
-        "assert": "no transmission_gap or driver_pulse has driver=dyn_gs"
+        "assert": "no gap/pulse driver=dyn_gs target=comex_silver (rejected by the class prior at BOTH counter-move q50 and q90 - the rejection is class, not directionality). Loosening the class prior readmits it; loosening the counter-move bar does NOT - so this guards the class gate alone.",
+        "target": "comex_silver"
       },
       {
         "label": "indian_bank_drives_crude",
@@ -107,6 +107,15 @@
         "target": "wti",
         "rationale": "Class-admissible (macro->macro) but rho 0.354 sits below the p25 cross-sectional strength floor (0.385). This is the negative that guards the FLOOR specifically: loosening CHANNEL_STRENGTH_PCTILE readmits it. bovespa->dow_jones/russell (stronger channels) still survive, so the floor rejects the weak channel, not the driver.",
         "assert": "no gap/pulse target=wti driver=bovespa, WHILE bovespa->dow_jones and bovespa->russell_2000 remain present"
+      },
+      {
+        "label": "goldman_counter_move_not_a_gap",
+        "class": "expected_negative",
+        "gate": "counter_move_directionality",
+        "driver": "dyn_gs",
+        "target": "dyn_mu",
+        "rationale": "dyn_gs +4.6z implied dyn_mu +9.4% (beta +1.04); dyn_mu instead closed -9.4% - a hard counter-move, the target's own story, NOT a lag gap (ruling 6). Class-admissible (single->single), so the class prior never touches it: the counter-move rejection is the ONLY gate that kills it. VERIFIED sensitive to the q50-vs-q90 knob - absent at COUNTER_QUANTILE=0.50 (current), READMITTED at 0.90. This is the tripwire on the subtlest gate: loosen the counter-move bar and this is the row that leaks back in as a false laggard.",
+        "assert": "no gap/pulse driver=dyn_gs target=dyn_mu"
       }
     ]
   },
