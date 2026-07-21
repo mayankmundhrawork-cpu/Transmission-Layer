@@ -117,11 +117,14 @@ def _filter_relations(relations: dict, drivers: set) -> dict:
 
 
 def reconstruct(prices: pd.DataFrame, drivers: list, relations: dict,
-                full_floor: bool = True) -> list:
+                full_floor: bool = True, timing_out: list | None = None) -> list:
     """Reconstructed trigger population for `drivers` with forward outcomes.
     full_floor=True rebuilds ALL channels PIT so the cross-sectional strength
     floor is exact; False restricts to the drivers' pairs (faster, floor
-    approximate — only safe for strong audit pairs)."""
+    approximate — only safe for strong audit pairs). If `timing_out` is given,
+    (date, seconds) is appended per event-date so the per-date cost can be
+    profiled (flat = healthy; growth toward recent dates = accidental O(n^2))."""
+    import time as _time
     from synth_channels import build_channels
     from synth_detect import detect_transmission_gaps
 
@@ -137,6 +140,7 @@ def reconstruct(prices: pd.DataFrame, drivers: list, relations: dict,
             "channel_state", "channel_rho", "channel_stability", "lead_lag")
     triggers = []
     for t in sorted(by_date):
+        t0 = _time.monotonic()
         pt = prices.loc[:t]
         ch = build_channels(pt, relations=rel, changepoints=False,
                             persist=False)["channels"]
@@ -148,6 +152,8 @@ def reconstruct(prices: pd.DataFrame, drivers: list, relations: dict,
             row.update(resolve_outcome(prices, g))
             row["beta_pit"] = g["beta_pair"]     # PIT beta used (section A)
             triggers.append(row)
+        if timing_out is not None:
+            timing_out.append((f"{t:%Y-%m-%d}", round(_time.monotonic() - t0, 3)))
     return triggers
 
 
@@ -156,16 +162,21 @@ def _session_ord(prices: pd.DataFrame) -> dict:
     return {d: i for i, d in enumerate(prices.index)}
 
 
-def cluster_count(trigs: list, sess_ord: dict) -> int:
-    """Independent-episode count via union-find over the three correlated-
-    outcome structures the audit exposed:
+def cluster_labels(trigs: list, sess_ord: dict) -> list:
+    """Connected-component label per trigger via a SINGLE union-find over the
+    three correlated-outcome structures the audit exposed:
       (1) same (driver, date)  — fan-out (one pulse, many targets)
       (2) same (target, date)  — shared target path (the hy_oas case: two
                                  drivers, one target-date, ONE outcome)
       (3) same (driver, target) within K_MAX sessions — overlapping windows
-    Two triggers whose outcomes are correlated through any of these are one
-    episode. Conservative by construction — chains collapse (owner: rather
-    INSUFFICIENT than an inflated numerator)."""
+
+    The closure is TRANSITIVE ACROSS AXES BY DESIGN: all edges feed one
+    union-find, so if A~B on driver-date and B~C on target-date, A-B-C become
+    one component even though A and C share nothing directly. This is correct —
+    they are linked through a common outcome path and are not independent draws
+    — and it means the clustered N is LOWER than a naive per-axis minimum: one
+    dense driver-date can transitively swallow a large component. Conservative
+    by construction (owner: rather INSUFFICIENT than an inflated numerator)."""
     n = len(trigs)
     parent = list(range(n))
 
@@ -196,7 +207,13 @@ def cluster_count(trigs: list, sess_ord: dict) -> int:
                 ob = sess_ord.get(pd.Timestamp(trigs[idxs[b]]["asof"]))
                 if oa is not None and ob is not None and abs(oa - ob) < K_MAX:
                     union(idxs[a], idxs[b])
-    return len({find(i) for i in range(n)})
+    roots = [find(i) for i in range(n)]
+    relabel = {r: k for k, r in enumerate(dict.fromkeys(roots))}
+    return [relabel[r] for r in roots]
+
+
+def cluster_count(trigs: list, sess_ord: dict) -> int:
+    return len(set(cluster_labels(trigs, sess_ord))) if trigs else 0
 
 
 def build_coverage(prices=None, relations=None, n_min: int = 8) -> dict:
@@ -210,12 +227,34 @@ def build_coverage(prices=None, relations=None, n_min: int = 8) -> dict:
     if relations is None:
         from relations import load_relations
         relations = load_relations()
+    import json
     drivers = sorted({p["leader"] for p in relations["pairs"]} |
                      {p["follower"] for p in relations["pairs"]})
-    trg = reconstruct(prices, drivers, relations, full_floor=True)
+    timing: list = []
+    trg = reconstruct(prices, drivers, relations, full_floor=True,
+                      timing_out=timing)
     gradeable = [t for t in trg if t["outcome"] in
                  ("CLOSED", "FADED_FLAT", "FADED_AGAINST")]
     sess = _session_ord(prices)
+
+    # global connected-component id per gradeable trigger — materialised so any
+    # drill-down (a cluster's members) is a cheap read, never a 35-min recompute
+    glabels = cluster_labels(gradeable, sess)
+    for t, lab in zip(gradeable, glabels):
+        t["global_cluster"] = lab
+        t["k_dd"] = f"{t['driver']}|{t['asof']}"     # axis keys for inspection
+        t["k_td"] = f"{t['target']}|{t['asof']}"
+        t["k_ch"] = f"{t['driver']}|{t['target']}"
+    # timing profile: flat is healthy, growth toward recent dates is a smell
+    secs = [s for _, s in timing]
+    third = max(1, len(secs) // 3)
+    timing_profile = {
+        "n_dates": len(timing), "total_s": round(sum(secs), 1),
+        "per_date_min_s": round(min(secs), 3) if secs else None,
+        "per_date_max_s": round(max(secs), 3) if secs else None,
+        "first_third_avg_s": round(sum(secs[:third]) / third, 3) if secs else None,
+        "last_third_avg_s": round(sum(secs[-third:]) / third, 3) if secs else None,
+    }
 
     def level_row(trigs):
         raw = len(trigs)
@@ -253,6 +292,9 @@ def build_coverage(prices=None, relations=None, n_min: int = 8) -> dict:
         "triggers_raw": len(trg),
         "triggers_censored": sum(1 for t in trg if t["outcome"] == "CENSORED"),
         "triggers_gradeable": len(gradeable),
+        "clustering": "transitive union-find across (driver,date)+(target,date)"
+                      "+(same-channel within K_MAX); clustered N is <= per-axis min",
+        "timing_profile": timing_profile,
         "global": glob,
         "class_pair": class_pairs,
         "pair_level": {
@@ -262,8 +304,15 @@ def build_coverage(prices=None, relations=None, n_min: int = 8) -> dict:
         },
         "worked_collapse_hy_oas": worked,
     }
-    (DATA_DIR / "synth" / "coverage.json").write_text(
-        __import__("json").dumps(cov, indent=2), encoding="utf-8")
+    synth = DATA_DIR / "synth"
+    (synth / "coverage.json").write_text(json.dumps(cov, indent=2),
+                                         encoding="utf-8")
+    # full per-trigger population (incl. censored) — materialise once, query
+    # many; every follow-up about the table is a read against this file
+    (synth / "reconstruction_population.json").write_text(
+        json.dumps({"data_window": cov["data_window"],
+                    "n_triggers": len(trg), "triggers": trg}, indent=2),
+        encoding="utf-8")
     return cov
 
 
