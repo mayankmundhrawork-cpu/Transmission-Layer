@@ -151,6 +151,122 @@ def reconstruct(prices: pd.DataFrame, drivers: list, relations: dict,
     return triggers
 
 
+# ── coverage (owner gate: denominators before any pooled rate) ───────────
+def _session_ord(prices: pd.DataFrame) -> dict:
+    return {d: i for i, d in enumerate(prices.index)}
+
+
+def cluster_count(trigs: list, sess_ord: dict) -> int:
+    """Independent-episode count via union-find over the three correlated-
+    outcome structures the audit exposed:
+      (1) same (driver, date)  — fan-out (one pulse, many targets)
+      (2) same (target, date)  — shared target path (the hy_oas case: two
+                                 drivers, one target-date, ONE outcome)
+      (3) same (driver, target) within K_MAX sessions — overlapping windows
+    Two triggers whose outcomes are correlated through any of these are one
+    episode. Conservative by construction — chains collapse (owner: rather
+    INSUFFICIENT than an inflated numerator)."""
+    n = len(trigs)
+    parent = list(range(n))
+
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    def union(a, b):
+        ra, rb = find(a), find(b)
+        if ra != rb:
+            parent[ra] = rb
+
+    by_dd, by_td, by_ch = defaultdict(list), defaultdict(list), defaultdict(list)
+    for i, t in enumerate(trigs):
+        by_dd[(t["driver"], t["asof"])].append(i)
+        by_td[(t["target"], t["asof"])].append(i)
+        by_ch[(t["driver"], t["target"])].append(i)
+    for grp in list(by_dd.values()) + list(by_td.values()):
+        for j in grp[1:]:
+            union(grp[0], j)
+    for idxs in by_ch.values():
+        idxs.sort(key=lambda i: trigs[i]["asof"])
+        for a in range(len(idxs)):
+            for b in range(a + 1, len(idxs)):
+                oa = sess_ord.get(pd.Timestamp(trigs[idxs[a]]["asof"]))
+                ob = sess_ord.get(pd.Timestamp(trigs[idxs[b]]["asof"]))
+                if oa is not None and ob is not None and abs(oa - ob) < K_MAX:
+                    union(idxs[a], idxs[b])
+    return len({find(i) for i in range(n)})
+
+
+def build_coverage(prices=None, relations=None, n_min: int = 8) -> dict:
+    """Reconstruct over the FULL driver universe and report, per pooling level,
+    raw trigger count vs independent-cluster count vs their ratio, and whether
+    the level clears N_MIN on CLUSTERS (not rows). No pooled rate is computed —
+    this is the denominator audit that decides whether a rate is even honest."""
+    if prices is None:
+        prices = pd.read_csv(DATA_DIR / "prices.csv", index_col=0,
+                             parse_dates=True).sort_index()
+    if relations is None:
+        from relations import load_relations
+        relations = load_relations()
+    drivers = sorted({p["leader"] for p in relations["pairs"]} |
+                     {p["follower"] for p in relations["pairs"]})
+    trg = reconstruct(prices, drivers, relations, full_floor=True)
+    gradeable = [t for t in trg if t["outcome"] in
+                 ("CLOSED", "FADED_FLAT", "FADED_AGAINST")]
+    sess = _session_ord(prices)
+
+    def level_row(trigs):
+        raw = len(trigs)
+        cl = cluster_count(trigs, sess) if trigs else 0
+        return {"raw": raw, "clusters": cl,
+                "ratio": round(raw / cl, 2) if cl else None,
+                "clears_n_min": cl >= n_min}
+
+    # global
+    glob = level_row(gradeable)
+    # class-pair
+    by_cp = defaultdict(list)
+    for t in gradeable:
+        by_cp[(t["driver_class"], t["target_class"])].append(t)
+    class_pairs = {f"{a}->{b}": level_row(ts) for (a, b), ts in
+                   sorted(by_cp.items(), key=lambda kv: -len(kv[1]))}
+    # pair
+    by_pair = defaultdict(list)
+    for t in gradeable:
+        by_pair[(t["driver"], t["target"])].append(t)
+    pair_rows = {f"{a}->{b}": level_row(ts) for (a, b), ts in by_pair.items()}
+    pairs_clearing = [k for k, v in pair_rows.items() if v["clears_n_min"]]
+    top_pairs = sorted(pair_rows.items(), key=lambda kv: -kv[1]["clusters"])[:6]
+
+    # worked example: the hy_oas same-target-date collapse
+    hy = [t for t in gradeable if t["target"] == "hy_oas"]
+    hy_dates = defaultdict(list)
+    for t in hy:
+        hy_dates[t["asof"]].append(t["driver"])
+    worked = {d: drv for d, drv in hy_dates.items() if len(drv) > 1}
+
+    cov = {
+        "data_window": f"{prices.index.min():%Y-%m-%d}..{prices.index.max():%Y-%m-%d}",
+        "n_min": n_min, "n_drivers": len(drivers),
+        "triggers_raw": len(trg),
+        "triggers_censored": sum(1 for t in trg if t["outcome"] == "CENSORED"),
+        "triggers_gradeable": len(gradeable),
+        "global": glob,
+        "class_pair": class_pairs,
+        "pair_level": {
+            "n_pairs": len(pair_rows),
+            "pairs_clearing_n_min_on_clusters": pairs_clearing,
+            "top_pairs_by_clusters": {k: v for k, v in top_pairs},
+        },
+        "worked_collapse_hy_oas": worked,
+    }
+    (DATA_DIR / "synth" / "coverage.json").write_text(
+        __import__("json").dumps(cov, indent=2), encoding="utf-8")
+    return cov
+
+
 # ── audit (owner gate: check CLOSED-calling before any rate) ─────────────
 def _counter_move_exclusion_demo(prices, relations):
     """Show the ruling-6 counter-move logic refusing to score dyn_gs->dyn_mu on
