@@ -377,6 +377,54 @@ def test_outcome_horizon_is_clamped():
     assert resolve_outcome(px, _trig(t, 1.0, 0.0, 1, lead_lag=99))["K"] == K_MAX
 
 
+# ── S5 investigation-assembler (deterministic, LLM-off) ─────────────────
+def test_cap_is_arithmetic_monotonic_not_a_request():
+    """S6/Call B may only LOWER a disposition; a proposed promotion above the
+    reference-class cap is overridden in CODE and flagged (owner: the cap is
+    real because it is arithmetic, not a polite instruction to the model)."""
+    from synth_packet import VERDICT_CAP, clamp_disposition
+    # NO_RELIABLE_EDGE caps at LEAD — a hallucinated OBSERVATION is clamped
+    assert VERDICT_CAP["NO_RELIABLE_EDGE"] == "LEAD"
+    final, overridden = clamp_disposition("OBSERVATION", "LEAD")
+    assert final == "LEAD" and overridden is True
+    # lowering is always allowed and not flagged as an override
+    assert clamp_disposition("DISMISS", "LEAD") == ("DISMISS", False)
+    assert clamp_disposition("LEAD", "LEAD") == ("LEAD", False)
+
+
+def test_golden_bovespa_lead_packet_is_self_sufficient():
+    """The hard case: a NO_RELIABLE_EDGE transmission divergence, no news,
+    cooling channel. The deterministic packet must carry everything a cold
+    reader needs — verdict headline, evidence, news-absence, the question,
+    the falsifier — with the LLM OFF."""
+    import json
+    import pandas as pd
+    from relations import load_relations
+    from synth_packet import assemble_transmission_packet, render_packet
+    gdir = ROOT / "data" / "synth" / "golden_2026-07-20"
+    prices = pd.read_csv(gdir / "prices.csv", index_col=0,
+                         parse_dates=True).sort_index()
+    cands = json.loads((gdir / "candidates.json").read_text(encoding="utf-8"))
+    bov = next(c for c in cands["candidates"]
+               if c["kind"] == "driver_pulse" and c["driver"] == "bovespa")
+    pkt = assemble_transmission_packet(
+        bov, prices, load_relations().get("neighbours", {}))
+    # capped to LEAD by the reference-class verdict, never OBSERVATION
+    assert pkt["disposition"] == "LEAD"
+    assert pkt["reference_class"]["verdict"] == "NO_RELIABLE_EDGE"
+    # evidence present, and it is under reference_class, never the headline
+    ev = pkt["reference_class"]["evidence"]
+    assert ev["rate_05"]["wilson95"][0] < 0.5           # coin-flip floor
+    assert ev["miss_split_episodes"]["faded_against"] > \
+        ev["miss_split_episodes"]["faded_flat"]         # against-skew shown
+    # the honest context a cold reader needs
+    assert pkt["corroboration"]["news_join"] is None    # no catalyst
+    assert any(d["channel_unstable"] for d in pkt["divergence"])  # cooling ch
+    assert pkt["the_question"] and pkt["falsifier"]
+    rendered = render_packet(pkt)
+    assert "NO_RELIABLE_EDGE" in rendered and "FALSIFIER" in rendered
+
+
 # ── taxonomy completeness (no fail-open registry hole) ──────────────────
 def test_every_price_and_relations_series_is_classified():
     """A series in prices/relations with no registry class fails the class
