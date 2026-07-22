@@ -425,6 +425,31 @@ def test_golden_bovespa_lead_packet_is_self_sufficient():
     assert "NO_RELIABLE_EDGE" in rendered and "FALSIFIER" in rendered
 
 
+def test_golden_wti_news_packet_is_loud_about_no_reference_class():
+    """The tier-1 anatomy: no base-rate verdict to lean on. Self-sufficiency
+    must come from newsflow density + complex co-quiet, and the absence of a
+    rateable reference class must be STATED (an omitted section reads as
+    'nothing to say'; an explicit NOT_APPLICABLE reads as the honest gap)."""
+    import json
+    from synth_packet import assemble_news_packet, render_news_packet
+    cands = json.loads((ROOT / "data" / "synth" / "golden_2026-07-20"
+                        / "candidates.json").read_text(encoding="utf-8"))["candidates"]
+    wti = next(c for c in cands if c["kind"] == "news_no_move"
+               and c["series"] == "wti")
+    pkt = assemble_news_packet(wti, cands)
+    assert pkt["disposition"] == "OBSERVATION"
+    # the no-reference-class section is PRESENT and explicit, not omitted
+    assert pkt["reference_class"]["verdict"] == "NOT_APPLICABLE"
+    assert "not" in pkt["reference_class"]["basis"].lower() and \
+        "base-rate" in pkt["reference_class"]["basis"].lower()
+    # self-sufficiency fields: newsflow density + complex co-quiet
+    assert pkt["corroboration"]["news_cluster"]["n_headlines"] >= 10
+    assert set(pkt["corroboration"]["complex_co_quiet"]) & {"brent", "vix"}
+    assert pkt["the_question"] and pkt["falsifier"]
+    rendered = render_news_packet(pkt)
+    assert "NOT_APPLICABLE" in rendered and "co-quiet" in rendered
+
+
 # ── taxonomy completeness (no fail-open registry hole) ──────────────────
 def test_every_price_and_relations_series_is_classified():
     """A series in prices/relations with no registry class fails the class

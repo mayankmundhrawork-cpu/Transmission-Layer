@@ -186,6 +186,117 @@ def assemble_transmission_packet(pulse: dict, prices: pd.DataFrame,
     }
 
 
+def assemble_news_packet(cand: dict, all_candidates: list,
+                         prices_stale: bool = False) -> dict:
+    """Deterministic packet for a news_no_move OBSERVATION (tier 1). Its
+    self-sufficiency comes from ENTIRELY different fields than the transmission
+    LEAD — no base-rate verdict to headline. It leans on newsflow density, the
+    intensity-vs-price gap, and complex-wide co-quiet. Crucially it is LOUD
+    about having no rateable reference class (an omitted base-rate section would
+    read as 'nothing to say'; an explicit 'no reference class applies, here's
+    why' reads as the honest gap it is)."""
+    from synth_classes import market_of
+    s = cand["series"]
+    comp = cand.get("components", {})
+    news = cand.get("news_support") or []
+    my_ids = {n["event_id"] for n in news}
+    # complex co-quiet: other news_no_move series sharing this news cluster and
+    # also sitting below their own median |zc| — the WHOLE complex not pricing
+    # the same flow is stronger than one series
+    co_quiet = [c["series"] for c in all_candidates
+                if c is not cand and c.get("kind") == "news_no_move"
+                and my_ids & {n["event_id"] for n in (c.get("news_support") or [])}]
+    return {
+        "instance": f"{s} ({market_of(s)}) — heavy newsflow, no price response",
+        "asof": cand["asof"],
+        "disposition": "OBSERVATION",
+        "disposition_cap": "OBSERVATION",
+        "cap_reason": "catalyst-grounded mechanism (news cluster); tier-1 — but "
+                      "UNRATED (see reference class)",
+        "divergence": {
+            "series": s, "series_class": market_of(s),
+            "zc": cand["zc"], "own_median_abs_zc": cand.get("own_median_abs_zc"),
+            "quietness_pctile": comp.get("quietness_pctile"),
+            "news_intensity": cand.get("news_intensity"),
+            "intensity_pctile": comp.get("intensity_pctile"),
+            "n_headlines": cand.get("n_headlines"),
+            "reading": f"{cand.get('n_headlines')} headlines (intensity pctile "
+                       f"{comp.get('intensity_pctile')}) but price at zc "
+                       f"{cand['zc']:+.2f} vs its own median |zc| "
+                       f"{cand.get('own_median_abs_zc')} — below a typical day.",
+        },
+        "reference_class": {
+            "verdict": "NOT_APPLICABLE",
+            "adequacy": "NOT_APPLICABLE",
+            "basis": "No transmission-gap reference class applies: this is a "
+                     "catalyst-vs-price divergence, not a driver->target "
+                     "transmission. news_no_move resolution is NOT historically "
+                     "base-rated (deferred in S4). UNRATED — an observation "
+                     "grounded in the catalyst, not a probabilistic claim.",
+        },
+        "corroboration": {
+            "news_cluster": {
+                "n_headlines": cand.get("n_headlines"),
+                "intensity": cand.get("news_intensity"),
+                "intensity_pctile": comp.get("intensity_pctile"),
+                "watch_only_join": cand.get("watch_join", False),
+                "top": [{"salience": n["salience"], "title": n["title"],
+                         "via_watch": n.get("via_watch", False)}
+                        for n in sorted(news, key=lambda x: -x["salience"])[:3]],
+            },
+            "complex_co_quiet": co_quiet,
+        },
+        "the_question": (
+            f"Heavy newsflow ({cand.get('n_headlines')} headlines, intensity "
+            f"pctile {comp.get('intensity_pctile')}) with {s} sitting BELOW its "
+            f"own median |zc|"
+            + (f", and the wider complex ({', '.join(co_quiet)}) is quiet on the "
+               f"same cluster" if co_quiet else "")
+            + ". Is the market genuinely not pricing this (a real mispricing to "
+              "investigate), or is the flow already discounted / low-signal? "
+              "Check the catalyst and whether the LEVEL (not just today's zc) is "
+              "already elevated."),
+        "falsifier": (
+            "Killed if the newsflow is stale or already priced (the series' "
+            "LEVEL is already elevated, not just today's return quiet), if the "
+            "headlines are low-signal on inspection, or if the divergence is "
+            "already resolving (price beginning to move). No historical "
+            "resolution rate exists to lean on — this is a catalyst to verify, "
+            "not a probability to trade."),
+        "prices_stale": prices_stale,
+    }
+
+
+def render_news_packet(pkt: dict) -> str:
+    d = pkt["divergence"]
+    c = pkt["corroboration"]
+    nc = c["news_cluster"]
+    L = [f"INVESTIGATION PACKET  [{pkt['disposition']}]  (tier-1 news "
+         f"observation — {pkt['cap_reason']})",
+         f"  instance : {pkt['instance']}  @ {pkt['asof']}",
+         f"  DIVERGENCE (catalyst vs price):",
+         f"    {d['reading']}",
+         f"    quietness pctile {d['quietness_pctile']}  |  intensity pctile "
+         f"{d['intensity_pctile']}",
+         f"  REFERENCE CLASS : {pkt['reference_class']['verdict']}",
+         f"    {pkt['reference_class']['basis']}",
+         f"  CORROBORATION:",
+         f"    news cluster: {nc['n_headlines']} headlines, intensity "
+         f"{nc['intensity']} (pctile {nc['intensity_pctile']}), "
+         f"{'WATCH-ONLY joins' if nc['watch_only_join'] else 'solid entity joins'}"]
+    for h in nc["top"]:
+        L.append(f"      - sal {h['salience']:.2f} "
+                 f"{'[watch] ' if h['via_watch'] else ''}{h['title'][:74]}")
+    L.append(f"    complex co-quiet: "
+             + (", ".join(c["complex_co_quiet"]) + " also quiet on this cluster"
+                if c["complex_co_quiet"] else "none (single-series)"))
+    L.append(f"  THE QUESTION:\n    {pkt['the_question']}")
+    L.append(f"  FALSIFIER:\n    {pkt['falsifier']}")
+    if pkt.get("prices_stale"):
+        L.append("  [prices_stale: true]")
+    return "\n".join(L)
+
+
 def render_packet(pkt: dict) -> str:
     L = []
     L.append(f"INVESTIGATION PACKET  [{pkt['disposition']}]  (cap: "
