@@ -318,11 +318,13 @@ def build_coverage(prices=None, relations=None, n_min: int = 8) -> dict:
 
 # ── viability verdict (pre-registered reading lens, owner sign-off) ──────
 N_MIN_DEFAULT = 8
-RATIO_VETO = 2.0     # a level clearing N_MIN but with raw:cluster worse than
+RATIO_VETO = 1.9     # a level clearing N_MIN but with raw:cluster worse than
 #                      this is fan-out inflating toward the floor from below —
-#                      CONDITIONAL at best, never a clean CLEAR (rule fixed
-#                      BLIND, before the numbers, so the ratio column decides
-#                      viability and a reassuring numerator can't move it).
+#                      CONDITIONAL at best, never a clean CLEAR. Tightened from
+#                      2.0 to 1.9 (owner) so global at 1.98 reads INSUFFICIENT:
+#                      the coarsest, no-shared-mechanism bucket that is also
+#                      ~half fan-out is honestly unratable, not a CONDITIONAL a
+#                      tired reader launders into "well, global says 60%".
 
 
 def _verdict(row: dict, n_min: int, ratio_veto: float) -> str:
@@ -364,10 +366,13 @@ def viability_table(pop_path: Path | str | None = None,
     # global is the COARSEST bucket — it pools INDICES->INDICES with FX->FX
     # etc. into one "all-transmission" reference class with no shared mechanism.
     # It answers "do cross-asset setups in general resolve," never a claim about
-    # the specific setup on the board. So it is CAPPED at CONDITIONAL: a
-    # last-resort reference class, never a clean CLEAR (owner ruling — enforced
-    # verdict, not a qualifier a reader must notice).
-    if glob["verdict"] == "CLEAR":
+    # the specific setup on the board. Never a clean CLEAR; and when it is also
+    # fan-out-inflated past the veto (as it is, 1.98 > 1.9) it is honestly
+    # UNRATABLE (owner ruling — enforced verdict, not a qualifier to notice).
+    if glob["ratio"] is not None and glob["ratio"] > ratio_veto:
+        glob["verdict"] = "INSUFFICIENT"
+        glob["capped"] = "global_fanout_inflated_unratable"
+    elif glob["verdict"] != "INSUFFICIENT":
         glob["verdict"] = "CONDITIONAL"
         glob["capped"] = "global_is_last_resort_bucket"
     by_cp, by_pair = defaultdict(list), defaultdict(list)
@@ -559,55 +564,61 @@ def base_rate_record(driver: str, target: str, pop: dict | None = None,
     dc, tc = market_class(driver), market_class(target)
     window = pop.get("data_window", "")
 
-    def rate_at(subset, level, cap_conditional=False):
+    def assess(subset, level, is_global=False):
+        """VERDICT-primary: the practitioner-facing `verdict` is the edge
+        finding (NO_RELIABLE_EDGE / ... / INSUFFICIENT); the rate/interval/
+        miss-skew live under `evidence`, never as the headline (owner: the
+        verdict is the assertion, the rate is its evidence)."""
         n = cluster_count(subset, sess)
         raw = len(subset)
         ratio = round(raw / n, 2) if n else None
+        base = {"level": level, "frame": "reference_class",
+                "evidence": {"clusters": n, "raw": raw, "ratio": ratio}}
         if n < n_min:
-            return {"level": level, "verdict": "INSUFFICIENT",
-                    "frame": "reference_class", "clusters": n, "raw": raw,
-                    "ratio": ratio,
-                    "basis": f"{level} reference class: {n} independent "
-                             f"episodes ({raw} legs) over {window}, below the "
-                             f"{n_min}-cluster floor. Too rare to rate."}
-        verdict = "CONDITIONAL" if (cap_conditional or
-                                    (ratio and ratio > ratio_veto)) else "CLEAR"
-        extra = {}
-        if level.startswith("class_pair"):
-            fr = family_rate(grad, sess, dc, tc)
-            r05, r10 = fr["rate_05"], fr["rate_10"]
-            rate, ci = r05["point"], r05["wilson95"]
-            # edge is a SECOND gate: a sample-adequate family can still be a
-            # coin flip. The practitioner-facing finding is the edge verdict.
-            extra = {"rate_10": r10, "miss_split_episodes": fr["miss_split_episodes"],
-                     "edge": fr["edge"]}
-        else:
+            return {**base, "verdict": "INSUFFICIENT", "adequacy": "INSUFFICIENT",
+                    "basis": f"{level}: {n} independent episodes ({raw} legs) "
+                             f"over {window}, below the {n_min}-cluster floor. "
+                             f"Reference class too rare to rate."}
+        if is_global:
+            if ratio and ratio > ratio_veto:
+                return {**base, "verdict": "INSUFFICIENT",
+                        "adequacy": "INSUFFICIENT",
+                        "basis": f"global: {n} episodes but raw:cluster "
+                                 f"{ratio}:1 (> {ratio_veto}) and no shared "
+                                 f"mechanism across pooled classes — fan-out-"
+                                 f"inflated and heterogeneous, unratable."}
             labels = cluster_labels(subset, sess)
             groups: dict[int, list] = defaultdict(list)
             for t, lab in zip(subset, labels):
                 groups[lab].append(t)
             k = sum(1 for legs in groups.values()
                     if sum(l["closed_05"] for l in legs) * 2 >= len(legs))
-            rate, lo, hi = _wilson(k, n)
-            ci = [lo, hi]
-        return {"level": level, "verdict": verdict, "frame": "reference_class",
-                "clusters": n, "raw": raw, "ratio": ratio,
-                # headline is the INTERVAL; point estimate lives inside it
-                "rate_point": rate, "wilson95": ci, **extra,
-                "basis": f"{level} reference class, N={n} independent episodes, "
-                         f"Wilson95 {ci}, raw:cluster {ratio}:1"
-                         f"{' (fan-out vetoed)' if verdict=='CONDITIONAL' and ratio and ratio>ratio_veto else ''}."}
+            _, lo, hi = _wilson(k, n)
+            base["evidence"]["rate_05"] = {"closed": k, "point": round(k / n, 3),
+                                           "wilson95": [lo, hi]}
+            return {**base, "verdict": "CONDITIONAL", "adequacy": "CONDITIONAL",
+                    "basis": f"global last-resort reference class, N={n}, "
+                             f"Wilson95 [{lo}, {hi}] — pooled across mechanisms, "
+                             f"never an actionable per-setup claim."}
+        # class-pair, sample-adequate: the edge finding IS the verdict
+        adequacy = "CONDITIONAL" if (ratio and ratio > ratio_veto) else "CLEAR"
+        fr = family_rate(grad, sess, dc, tc)
+        base["evidence"].update({"rate_05": fr["rate_05"], "rate_10": fr["rate_10"],
+                                 "miss_split_episodes": fr["miss_split_episodes"]})
+        return {**base, "verdict": fr["edge"]["finding"], "adequacy": adequacy,
+                "basis": f"{level}: N={n} episodes (raw:cluster {ratio}:1, "
+                         f"adequacy {adequacy}). {fr['edge']['basis']}"}
 
     pair = [t for t in grad if t["driver"] == driver and t["target"] == target]
-    r = rate_at(pair, f"pair {driver}->{target}")
+    r = assess(pair, f"pair {driver}->{target}")
     if r["verdict"] != "INSUFFICIENT":
         return {"instance": f"{driver}->{target}", **r}
     cp = [t for t in grad if t["driver_class"] == dc and t["target_class"] == tc]
-    r = rate_at(cp, f"class_pair {dc}->{tc}")
+    r = assess(cp, f"class_pair {dc}->{tc}")
     if r["verdict"] != "INSUFFICIENT":
         return {"instance": f"{driver}->{target}", **r}
-    r = rate_at(grad, "global", cap_conditional=True)   # last resort
-    return {"instance": f"{driver}->{target}", **r}
+    return {"instance": f"{driver}->{target}",
+            **assess(grad, "global", is_global=True)}
 
 
 # ── audit (owner gate: check CLOSED-calling before any rate) ─────────────
