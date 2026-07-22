@@ -400,6 +400,47 @@ def _surface(candidate: dict) -> dict:
     return candidate
 
 
+# ── disposition + three-tier board (S5 reframe) ─────────────────────────
+# The board is DISPOSITIONED, not scored-and-narrated. Tiers:
+#   1  OBSERVATION — news-corroborated mechanism (catalyst-grounded)
+#   2  OBSERVATION — exposure divergence  (reserved; deferred detector)
+#   3  LEAD        — transmission divergence (its own base rate is a coin flip)
+# A transmission LEAD can NEVER outrank a news OBSERVATION: the tier is the
+# primary sort key, and the disposition is CAPPED by the S4 reference-class
+# verdict (arithmetic, in synth_packet) — no scoring quirk can re-promote a
+# capped lead.
+TIER_NEWS_OBS, TIER_EXPOSURE_OBS, TIER_TRANSMISSION_LEAD = 1, 2, 3
+
+
+def _dispose(candidate: dict) -> dict:
+    """Attach disposition / tier / reference-class verdict. Transmission pulses
+    are capped by their reference class (LEAD when NO_RELIABLE_EDGE/INSUFFICIENT);
+    news is a tier-1 OBSERVATION (unrated, catalyst-grounded). Degrades
+    gracefully to LEAD if the base-rate population is unavailable — never
+    auto-promotes."""
+    kind = candidate["kind"]
+    if kind == "news_no_move":
+        candidate.update(disposition="OBSERVATION", tier=TIER_NEWS_OBS,
+                         reference_verdict="NOT_APPLICABLE")
+    elif kind == "driver_pulse":
+        verdict, cap = "UNRATED", "LEAD"
+        try:
+            from synth_baserates import base_rate_record
+            from synth_packet import VERDICT_CAP
+            rec = base_rate_record(candidate["driver"],
+                                   candidate["targets"][0]["target"])
+            verdict = rec["verdict"]
+            cap = VERDICT_CAP.get(verdict, "LEAD")
+        except Exception:
+            pass
+        candidate.update(disposition=cap, tier=TIER_TRANSMISSION_LEAD,
+                         reference_verdict=verdict)
+    else:  # move_no_news — unexplained move, no mechanism: a lead to chase
+        candidate.update(disposition="LEAD", tier=TIER_TRANSMISSION_LEAD,
+                         reference_verdict="NOT_APPLICABLE")
+    return candidate
+
+
 # ── detector 2: news_move_divergence ───────────────────────────────────
 def detect_news_move_divergence(prices: pd.DataFrame, bus: dict,
                                 now: datetime) -> list[dict]:
@@ -563,9 +604,10 @@ def build_candidates(data_dir: Path | str | None = None,
     # inside each pulse's targets[]. Channel-shifts are NOT here — they are a
     # separate regime/map-health lane (owner ruling), and they already feed the
     # gap detector's confidence as an instability penalty.
-    surface = [_surface(c) for c in pulses + divs]
-    surface.sort(key=lambda c: (not c["news_corroborated"],
-                                -(c["surface_score"] or 0)))
+    surface = [_dispose(_surface(c)) for c in pulses + divs]
+    # tier is the PRIMARY sort key (news OBSERVATION above transmission LEAD),
+    # then surface_score within a tier. A capped lead cannot re-promote.
+    surface.sort(key=lambda c: (c["tier"], -(c["surface_score"] or 0)))
 
     state = {
         "updated": now.isoformat(),
@@ -615,9 +657,12 @@ if __name__ == "__main__":
     print(f"candidates from {st['source_dir']} (data {st['data_date']}): "
           + " · ".join(f"{k} {v}" for k, v in c.items())
           + f" | strength_floor {st['params']['strength_floor']}")
-    print("TRADE SURFACE (news-corroborated first):")
+    print("ASSEMBLED BOARD (dispositioned; tier 1 OBSERVATION -> tier 3 LEAD):")
+    _tier_name = {1: "OBSERVATION/news", 2: "OBSERVATION/exposure",
+                  3: "LEAD/transmission"}
     for cd in st["ranked"]:
-        tag = "NEWS" if cd["news_corroborated"] else "    "
+        disp = cd.get("disposition", "?")
+        rv = cd.get("reference_verdict", "")
         if cd["kind"] == "driver_pulse":
             stale = " STALE" if cd["driver_stale"] else ""
             unst = " UNSTABLE-CH" if cd.get("any_unstable_channel") else ""
@@ -625,18 +670,17 @@ if __name__ == "__main__":
                 f"{t['target']}({t['shortfall_sigma']:.1f}s"
                 f"{'!' if t['channel_unstable'] else ''})"
                 for t in cd["targets"][:4])
-            print(f"  [{tag}] PULSE {cd['driver']} +{cd['driver_zc']:.1f}z "
-                  f"[{cd['driver_class']}]{stale}{unst} "
-                  f"surf={cd['surface_score']} conf={cd['top_confidence']} "
-                  f"-> {cd['n_targets']} tgts: {tgts}")
+            print(f"  T{cd['tier']} [{disp:11}] PULSE {cd['driver']} "
+                  f"+{cd['driver_zc']:.1f}z [{cd['driver_class']}]{stale}{unst} "
+                  f"ref={rv} surf={cd['surface_score']} -> {tgts}")
         elif cd["kind"] == "news_no_move":
-            print(f"  [{tag}] NNM   {cd['series']} zc={cd['zc']:+.1f} "
-                  f"intensity={cd['news_intensity']} n={cd['n_headlines']} "
-                  f"surf={cd['surface_score']}")
+            print(f"  T{cd['tier']} [{disp:11}] NNM   {cd['series']} "
+                  f"zc={cd['zc']:+.1f} n={cd['n_headlines']} "
+                  f"intensity={cd['news_intensity']} surf={cd['surface_score']}")
         elif cd["kind"] == "move_no_news":
-            print(f"  [{tag}] MNN   {cd['series']} zc={cd['zc']:+.1f} "
-                  f"ret={cd['ret_1d_pct']}% surf={cd['surface_score']}")
-    print("REGIME LANE (map-health / watchlist, own axis):")
+            print(f"  T{cd['tier']} [{disp:11}] MNN   {cd['series']} "
+                  f"zc={cd['zc']:+.1f} ref={rv} surf={cd['surface_score']}")
+    print("REGIME LANE (map-health / watchlist, own axis — NOT the trade surface):")
     for cd in st["regime"][:12]:
         role = "WARN" if cd["lane_role"] == "warning" else "WATCH"
         print(f"  [{role:5}] {cd['driver']} -> {cd['target']} "

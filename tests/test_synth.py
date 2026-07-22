@@ -425,6 +425,32 @@ def test_golden_bovespa_lead_packet_is_self_sufficient():
     assert "NO_RELIABLE_EDGE" in rendered and "FALSIFIER" in rendered
 
 
+def test_golden_board_tiers_news_above_capped_transmission_leads(tmp_path):
+    """Integration: on the golden board a news OBSERVATION always outranks every
+    transmission LEAD, the leads are capped by their NO_RELIABLE_EDGE reference
+    class (never OBSERVATION), and no scoring quirk re-promotes a capped lead."""
+    from synth_detect import build_candidates
+    st = build_candidates("data/synth/golden_2026-07-20",
+                          str(tmp_path / "c.json"))
+    ranked = st["ranked"]
+    tiers = [c["tier"] for c in ranked]
+    assert tiers == sorted(tiers)                       # tier is primary order
+    last_obs = max((i for i, c in enumerate(ranked)
+                    if c["disposition"] == "OBSERVATION"), default=-1)
+    first_lead = min((i for i, c in enumerate(ranked)
+                      if c["disposition"] == "LEAD"), default=len(ranked))
+    assert last_obs < first_lead                        # every OBS above LEADs
+    for c in ranked:
+        if c["kind"] == "driver_pulse":
+            assert c["reference_verdict"] == "NO_RELIABLE_EDGE"
+            assert c["disposition"] == "LEAD"           # capped, not promoted
+        if c["kind"] == "news_no_move":
+            assert c["disposition"] == "OBSERVATION" and c["tier"] == 1
+    # regime lane stays separate from the trade surface
+    assert all(c["kind"] != "channel_shift" for c in ranked)
+    assert st["regime"]
+
+
 def test_golden_wti_news_packet_is_loud_about_no_reference_class():
     """The tier-1 anatomy: no base-rate verdict to lean on. Self-sufficiency
     must come from newsflow density + complex co-quiet, and the absence of a
