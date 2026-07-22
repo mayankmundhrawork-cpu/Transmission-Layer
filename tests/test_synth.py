@@ -440,15 +440,44 @@ def test_golden_board_tiers_news_above_capped_transmission_leads(tmp_path):
     first_lead = min((i for i, c in enumerate(ranked)
                       if c["disposition"] == "LEAD"), default=len(ranked))
     assert last_obs < first_lead                        # every OBS above LEADs
+    # four-tier ordering: news(1) OBS > unexplained-move(2) LEAD > transmission(3)
+    tier_of = {"news_no_move": 1, "move_no_news": 2, "driver_pulse": 3}
     for c in ranked:
+        assert c["tier"] == tier_of[c["kind"]]
         if c["kind"] == "driver_pulse":
             assert c["reference_verdict"] == "NO_RELIABLE_EDGE"
             assert c["disposition"] == "LEAD"           # capped, not promoted
         if c["kind"] == "news_no_move":
-            assert c["disposition"] == "OBSERVATION" and c["tier"] == 1
+            assert c["disposition"] == "OBSERVATION"
+        if c["kind"] == "move_no_news":
+            assert c["disposition"] == "LEAD" and c["tier"] == 2
+    # an unexplained move outranks every transmission lead, categorically
+    mnn_idx = [i for i, c in enumerate(ranked) if c["kind"] == "move_no_news"]
+    pulse_idx = [i for i, c in enumerate(ranked) if c["kind"] == "driver_pulse"]
+    if mnn_idx and pulse_idx:
+        assert max(mnn_idx) < min(pulse_idx)
     # regime lane stays separate from the trade surface
     assert all(c["kind"] != "channel_shift" for c in ranked)
     assert st["regime"]
+
+
+def test_move_packet_discloses_join_trust_not_silent_no_cause():
+    """A move_no_news LEAD must disclose HOW HARD it looked: 'no news' at low
+    join-trust is a low-recall maybe, not a confident dislocation. The packet
+    must never let 'no news joined' quietly imply 'no cause'."""
+    from synth_packet import assemble_move_packet, render_move_packet
+    cand = {"kind": "move_no_news", "asof": "2026-07-14",
+            "series": "wti", "zc": 9.5, "ret_1d_pct": 16.6,
+            "components": {"move_pctile": 1.0, "join_trust": 0.735}}
+    pkt = assemble_move_packet(cand)
+    assert pkt["disposition"] == "LEAD"
+    assert pkt["reference_class"]["verdict"] == "NOT_APPLICABLE"
+    assert pkt["explanation_search"]["join_trust"] == 0.735
+    assert "low-recall" in pkt["explanation_search"]["reading"].lower()
+    # a high-trust move reads as a confident no
+    hi = assemble_move_packet({**cand, "components": {"join_trust": 0.95}})
+    assert "confident" in hi["explanation_search"]["reading"].lower()
+    assert "join-trust" in render_move_packet(pkt).lower()
 
 
 def test_golden_wti_news_packet_is_loud_about_no_reference_class():

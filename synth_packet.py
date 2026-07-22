@@ -267,6 +267,85 @@ def assemble_news_packet(cand: dict, all_candidates: list,
     }
 
 
+def assemble_move_packet(cand: dict, join_miss_rate: float | None = None,
+                         prices_stale: bool = False) -> dict:
+    """Deterministic packet for a move_no_news LEAD (tier 2): a large move with
+    no catalyst joined. Its tier-appropriate self-sufficiency is HONESTY ABOUT
+    HOW HARD IT LOOKED — 'no news' can mean genuinely unexplained OR the alias
+    map missed the catalyst, and only the join-trust disambiguates. A low
+    join-trust move is a low-recall maybe, not a confident dislocation; the
+    packet must not let 'no news joined' quietly imply 'no cause'."""
+    from synth_classes import market_of
+    s = cand["series"]
+    comp = cand.get("components", {})
+    trust = comp.get("join_trust")
+    if trust is None and join_miss_rate is not None:
+        trust = round(1.0 - join_miss_rate, 3)
+    confident = trust is not None and trust >= 0.8
+    return {
+        "instance": f"{s} ({market_of(s)}) — large move, no catalyst joined",
+        "asof": cand["asof"],
+        "disposition": "LEAD",
+        "disposition_cap": "LEAD",
+        "cap_reason": "no mechanism to characterise",
+        "divergence": {
+            "series": s, "series_class": market_of(s),
+            "zc": cand["zc"], "ret_1d_pct": cand.get("ret_1d_pct"),
+            "low_history": cand.get("low_history"),
+            "reading": f"{s} moved {cand.get('ret_1d_pct')}% (zc {cand['zc']:+.1f})"
+                       f" with no news joined to it in the bus.",
+        },
+        "reference_class": {
+            "verdict": "NOT_APPLICABLE",
+            "adequacy": "NOT_APPLICABLE",
+            "basis": "No reference class applies: an unexplained move is not a "
+                     "transmission gap and is not base-rated. UNRATED.",
+        },
+        "explanation_search": {
+            "news_joined": False,
+            "join_trust": trust,
+            "reading": (f"'No news' here is a CONFIDENT no — the entity join "
+                        f"covered ~{int((trust or 0)*100)}% of the bus, so a "
+                        f"missed catalyst is unlikely."
+                        if confident else
+                        f"'No news' here is a LOW-RECALL maybe — the entity "
+                        f"join only covered ~{int((trust or 0)*100)}% of the "
+                        f"bus (join-trust {trust}); the catalyst may simply "
+                        f"have been missed. Check the join-miss log."),
+        },
+        "the_question": (
+            f"{s} moved {cand.get('ret_1d_pct')}% ({cand['zc']:+.1f}z) with no "
+            f"catalyst joined (join-trust {trust}). Is this a genuine "
+            f"dislocation, a missed catalyst (low join recall), or a data "
+            f"error? Verify the print and check the tape directly."),
+        "falsifier": (
+            "Explained (and dropped) if a catalyst is found on manual check — "
+            "the join-miss log is where to look first — or if it is a data "
+            "error (verify the print). An unexplained move is a lead only until "
+            "it is explained."),
+        "prices_stale": prices_stale,
+    }
+
+
+def render_move_packet(pkt: dict) -> str:
+    d, es = pkt["divergence"], pkt["explanation_search"]
+    L = [f"INVESTIGATION PACKET  [{pkt['disposition']}]  (tier-2 unexplained "
+         f"move — {pkt['cap_reason']})",
+         f"  instance : {pkt['instance']}  @ {pkt['asof']}",
+         f"  DIVERGENCE (move vs explanation):",
+         f"    {d['reading']}"
+         + ("  [LOW-HISTORY]" if d.get("low_history") else ""),
+         f"  REFERENCE CLASS : {pkt['reference_class']['verdict']}",
+         f"    {pkt['reference_class']['basis']}",
+         f"  EXPLANATION SEARCH (how hard we looked):",
+         f"    join-trust {es['join_trust']} — {es['reading']}",
+         f"  THE QUESTION:\n    {pkt['the_question']}",
+         f"  FALSIFIER:\n    {pkt['falsifier']}"]
+    if pkt.get("prices_stale"):
+        L.append("  [prices_stale: true]")
+    return "\n".join(L)
+
+
 def render_news_packet(pkt: dict) -> str:
     d = pkt["divergence"]
     c = pkt["corroboration"]

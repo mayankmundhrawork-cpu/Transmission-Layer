@@ -400,27 +400,40 @@ def _surface(candidate: dict) -> dict:
     return candidate
 
 
-# ── disposition + three-tier board (S5 reframe) ─────────────────────────
-# The board is DISPOSITIONED, not scored-and-narrated. Tiers:
+# ── disposition + four-tier board (S5 reframe) ──────────────────────────
+# The board is DISPOSITIONED, not scored-and-narrated. Tiers are CATEGORICAL and
+# the primary sort key, so ordering encodes epistemics, not the day's arithmetic
+# (two non-commensurable signal types never resolve by a score comparison that
+# isn't apples-to-apples):
 #   1  OBSERVATION — news-corroborated mechanism (catalyst-grounded)
-#   2  OBSERVATION — exposure divergence  (reserved; deferred detector)
-#   3  LEAD        — transmission divergence (its own base rate is a coin flip)
-# A transmission LEAD can NEVER outrank a news OBSERVATION: the tier is the
-# primary sort key, and the disposition is CAPPED by the S4 reference-class
-# verdict (arithmetic, in synth_packet) — no scoring quirk can re-promote a
-# capped lead.
-TIER_NEWS_OBS, TIER_EXPOSURE_OBS, TIER_TRANSMISSION_LEAD = 1, 2, 3
+#   2  LEAD        — unexplained large move (move_no_news): strong but
+#                    uncharacterisable — a more urgent call on attention than a
+#                    divergence whose own history says it's a coin flip
+#   3  LEAD        — transmission divergence (characterised: reference class is
+#                    a coin flip, misses skew against)
+# Reserved: exposure-divergence OBSERVATION — slots in as an observation when
+# the deferred cross-sectional detector is built (position per owner ruling).
+# Disposition is CAPPED by the S4 reference-class verdict (arithmetic, in
+# synth_packet) — no scoring quirk can re-promote a capped lead.
+TIER_NEWS_OBS = 1
+TIER_UNEXPLAINED_LEAD = 2
+TIER_TRANSMISSION_LEAD = 3
 
 
 def _dispose(candidate: dict) -> dict:
     """Attach disposition / tier / reference-class verdict. Transmission pulses
     are capped by their reference class (LEAD when NO_RELIABLE_EDGE/INSUFFICIENT);
-    news is a tier-1 OBSERVATION (unrated, catalyst-grounded). Degrades
-    gracefully to LEAD if the base-rate population is unavailable — never
-    auto-promotes."""
+    news is a tier-1 OBSERVATION (unrated, catalyst-grounded); an unexplained
+    move is its own tier-2 LEAD. Degrades gracefully to LEAD if the base-rate
+    population is unavailable — never auto-promotes."""
     kind = candidate["kind"]
     if kind == "news_no_move":
         candidate.update(disposition="OBSERVATION", tier=TIER_NEWS_OBS,
+                         reference_verdict="NOT_APPLICABLE")
+    elif kind == "move_no_news":
+        # unexplained large move — its own lane, above transmission: strong but
+        # uncharacterisable, not commensurable with a conditional residual
+        candidate.update(disposition="LEAD", tier=TIER_UNEXPLAINED_LEAD,
                          reference_verdict="NOT_APPLICABLE")
     elif kind == "driver_pulse":
         verdict, cap = "UNRATED", "LEAD"
@@ -435,7 +448,7 @@ def _dispose(candidate: dict) -> dict:
             pass
         candidate.update(disposition=cap, tier=TIER_TRANSMISSION_LEAD,
                          reference_verdict=verdict)
-    else:  # move_no_news — unexplained move, no mechanism: a lead to chase
+    else:
         candidate.update(disposition="LEAD", tier=TIER_TRANSMISSION_LEAD,
                          reference_verdict="NOT_APPLICABLE")
     return candidate
