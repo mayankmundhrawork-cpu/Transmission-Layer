@@ -505,6 +505,101 @@ def test_golden_wti_news_packet_is_loud_about_no_reference_class():
     assert "NOT_APPLICABLE" in rendered and "co-quiet" in rendered
 
 
+# ── S5 Call A — classify (LLM injected; testable with NO network) ───────
+def _golden_packets():
+    import json
+    import pandas as pd
+    from relations import load_relations
+    from synth_packet import (assemble_move_packet, assemble_news_packet,
+                              assemble_transmission_packet)
+    gdir = ROOT / "data" / "synth" / "golden_2026-07-20"
+    prices = pd.read_csv(gdir / "prices.csv", index_col=0,
+                         parse_dates=True).sort_index()
+    cands = json.loads((gdir / "candidates.json").read_text(encoding="utf-8"))["candidates"]
+    neigh = load_relations().get("neighbours", {})
+    bov = next(c for c in cands if c["kind"] == "driver_pulse"
+               and c["driver"] == "bovespa")
+    wti = next(c for c in cands if c["kind"] == "news_no_move"
+               and c["series"] == "wti")
+    mnn = next(c for c in cands if c["kind"] == "move_no_news")
+    return {"transmission": assemble_transmission_packet(bov, prices, neigh),
+            "news": assemble_news_packet(wti, cands),
+            "move": assemble_move_packet(mnn)}
+
+
+# HAND-AUTHORED expected classifications (NOT real model output) — what a
+# correct model SHOULD produce from each packet. CI gates that these agree with
+# implied_classification; if they ever disagree, it's a real bug.
+_FIXTURES = {
+    "transmission": {"classification": "DISMISS", "confidence": 0.8,
+                     "cited_fields": ["reference_class.verdict",
+                                      "corroboration.news_join", "divergence"],
+                     "rationale": "coin-flip class, no catalyst, cooling channel"},
+    "news": {"classification": "INVESTIGATE", "confidence": 0.8,
+             "cited_fields": ["corroboration.news_cluster",
+                              "corroboration.complex_co_quiet"],
+             "rationale": "dense real catalyst, whole complex quiet"},
+    "move": {"classification": "INSUFFICIENT_CONTEXT", "confidence": 0.7,
+             "cited_fields": ["explanation_search.join_trust"],
+             "rationale": "low join recall — could be a missed catalyst"},
+}
+
+
+def test_call_a_fixtures_agree_with_packet_implied_call():
+    from synth_classify import (FixtureClient, classify,
+                                implied_classification)
+    for kind, pkt in _golden_packets().items():
+        res = classify(pkt, FixtureClient({pkt["instance"]: _FIXTURES[kind]}))
+        assert res["classification"] == implied_classification(pkt), kind
+        assert res["grounded"] and res["escape_reason"] is None
+
+
+def test_call_a_escape_hatches_default_to_silence_never_investigate():
+    import json
+    from synth_classify import classify
+    pkt = _golden_packets()["news"]
+
+    class Bad:
+        def complete(self, p): return "not json {"
+
+    class LowConf:
+        def complete(self, p):
+            return json.dumps({"classification": "INVESTIGATE", "confidence": 0.3,
+                               "cited_fields": ["divergence"], "rationale": "x"})
+
+    class BadClass:
+        def complete(self, p):
+            return json.dumps({"classification": "BUY", "confidence": 0.9,
+                               "cited_fields": [], "rationale": "x"})
+
+    class Halluc:
+        def complete(self, p):
+            return json.dumps({"classification": "INVESTIGATE", "confidence": 0.9,
+                               "cited_fields": ["made_up.field"],
+                               "rationale": "cites a field not in the packet"})
+    for c in (Bad(), LowConf(), BadClass(), Halluc()):
+        assert classify(pkt, c)["classification"] == "INSUFFICIENT_CONTEXT"
+    # the hallucinated citation is VOIDED and logged (a prompt smell to watch)
+    r = classify(pkt, Halluc())
+    assert r["ungrounded"] == ["made_up.field"]
+    assert r["escape_reason"] == "ungrounded_citation"
+
+
+def test_convergence_failure_points_at_the_assembler_not_the_model():
+    import json
+    from synth_classify import FixtureClient, run_convergence
+    pkt = _golden_packets()["news"]
+    mid = FixtureClient({pkt["instance"]: {
+        "classification": "DISMISS", "confidence": 0.8,
+        "cited_fields": ["divergence"], "rationale": "x"}})
+    frontier = FixtureClient({pkt["instance"]: {
+        "classification": "INVESTIGATE", "confidence": 0.8,
+        "cited_fields": ["corroboration.news_cluster"], "rationale": "y"}})
+    div = run_convergence([pkt], mid, frontier)
+    assert div and "under-specified" in div[0]["action"]
+    assert "assembler" in div[0]["action"]
+
+
 # ── taxonomy completeness (no fail-open registry hole) ──────────────────
 def test_every_price_and_relations_series_is_classified():
     """A series in prices/relations with no registry class fails the class
