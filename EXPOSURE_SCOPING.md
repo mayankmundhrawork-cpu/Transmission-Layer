@@ -138,3 +138,48 @@ Two questions for you before I proceed past §1:
    judgments on each field are yours to enter or confirm — I will not invent
    exposure numbers. Confirm that division of labour so the store is never seeded
    with guessed values.
+
+---
+
+## Sign-off (2026-07-23) — answers folded, binding for §2+
+
+1. **WPI fetcher: NOW, with the store.** It is a blocker, not a nicety —
+   acceptance test #1 (reproduce the Margin Trap ranking) needs rubber, which is
+   WPI-only. Two conditions, both binding:
+   - **Vintage storage, as-published, never overwritten on revision.** WPI prints
+     provisional and is revised; grading a pre-registered screen against a later
+     revised value is lookahead — the same error as S4 point A (PIT channel
+     state). The store keys every value by `(series, publish_date)` and
+     `wpi_asof(series, registration_date)` returns the value that existed AT
+     registration, never today's revision.
+   - **Confirm granularity before wiring, and tag coarseness as `proxy`.** Rubber
+     is plausible as a WPI line; a specific pigment (TiO2) almost certainly is
+     not — WPI carries "chemicals & chemical products" far coarser than a pigment.
+     Where only a coarse bucket exists, that coarseness is a `quality: proxy`
+     fact, tagged, never passed off as the input. Precedent: the published Margin
+     Trap piece used a **sector input-basket WPI shock** (coarse) and held up — so
+     coarse is workable *if labelled coarse*.
+   - **WPI staleness is first-class**, like exposure staleness: monthly with a
+     publication lag → a WPI-driven shock can be ~6 weeks old at worst. That goes
+     in the packet's data-quality header, not discovered by the reader.
+2. **Curation authorship: confirmed AND structural (fail-closed).** I build
+   schema/tests/fetcher and pre-fill the skeleton structure; owner supplies
+   `value`/`source`/`quality`; I never invent a number. Enforced, not agreed: a
+   row with a `value` but null `source` or null `quality` FAILS the completeness
+   test, and the skeleton ships with sentinels that fail until curated —
+   fail-closed exactly like `driver_admissible`. The division survives a tired
+   evening because the store literally cannot hold an unprovenanced value.
+3. **Spot-check priority: inventory cadence FIRST**, then RM/sales. Inventory-days
+   is the Margin Trap lag dampener; if it is genuinely H1/FY rather than
+   quarterly, the dampener runs on up-to-two-quarters-stale data and the whole
+   screen's staleness profile changes. RM/sales second (the load-bearing disclosed
+   field).
+4. **Margin Trap is the first fixture because its core field is the cleanest.**
+   RM/sales is `disclosed`+quarterly — the highest-quality field in the whole
+   table — while the FX basket's core (currency mix) is structurally `proxy` and
+   its hedge maturity is unobtainable. The first fixture must test the MACHINERY,
+   not the proxy assumptions; the messy basket stresses it second.
+
+§2 proceeds: exposure store schema + completeness/staleness tests (fail-closed) +
+WPI fetcher with vintage storage. **No detector predicate until the store exists
+and the Margin Trap basket is curated by the owner.**

@@ -1,0 +1,52 @@
+# SYNTH_V2 exposure store · basket: margin_trap
+# paints / tyres / electricals — RM-cost margin-at-risk screen (first fixture).
+#
+# STRUCTURE ONLY. Every field ships as a sentinel (value: null) and FAILS the
+# completeness check until the owner curates it — the store cannot hold a value
+# without provenance (fail-closed). Claude pre-fills the skeleton; the owner
+# supplies value / as_of / source / quality. Claude never invents a number.
+#
+# quality: disclosed = a filing line; derived = computed from disclosed lines;
+#          proxy     = a stand-in (geography for currency, coarse WPI bucket, ...)
+# input_shock_ref.value = the shock series that drives this name's input cost:
+#          a price-matrix id (e.g. comex_copper) OR a WPI code (e.g. wpi_rubber).
+#          Tag quality=proxy when the shock is a coarse bucket, not the input.
+#
+# Only the two names the brief named (CEAT, Havells) are pre-seeded as structural
+# examples. The owner adds the remaining ~8 (the published Margin Trap universe)
+# by copying the template block. Do NOT let Claude guess the universe.
+
+basket: margin_trap
+description: paints / tyres / electricals — RM-cost margin-at-risk screen
+updated: null
+reporting_cycle_days: 100          # ~one quarter; as_of older than this => STALE
+required_fields:
+  - rm_to_sales                    # cost of materials consumed / revenue (disclosed, quarterly)
+  - inventory_days                 # inventory / (materials per period) — the lag dampener
+  - input_shock_ref                # which shock series drives input cost
+
+names:
+  ceat:
+    series_id: null                # link to a price-matrix id if the name is tracked
+    sector: tyres
+    fields:
+      rm_to_sales:     {value: null, as_of: null, source: null, quality: null}
+      inventory_days:  {value: null, as_of: null, source: null, quality: null}
+      input_shock_ref: {value: null, as_of: null, source: null, quality: null}
+
+  havells:
+    series_id: null
+    sector: electricals
+    fields:
+      rm_to_sales:     {value: null, as_of: null, source: null, quality: null}
+      inventory_days:  {value: null, as_of: null, source: null, quality: null}
+      input_shock_ref: {value: null, as_of: null, source: null, quality: null}
+
+  # --- template: owner copies this block per additional name -----------------
+  # <name_key>:
+  #   series_id: <price-matrix id or null>
+  #   sector: <tyres | paints | electricals>
+  #   fields:
+  #     rm_to_sales:     {value: 0.62, as_of: 2026-06-30, source: "Q1FY27 results, P&L", quality: disclosed}
+  #     inventory_days:  {value: 55,   as_of: 2026-03-31, source: "FY26 AR, BS note 8",  quality: derived}
+  #     input_shock_ref: {value: wpi_rubber, as_of: 2026-06-30, source: "sector input basket", quality: proxy}
