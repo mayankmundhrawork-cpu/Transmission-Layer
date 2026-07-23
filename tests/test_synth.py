@@ -600,6 +600,93 @@ def test_convergence_failure_points_at_the_assembler_not_the_model():
     assert "assembler" in div[0]["action"]
 
 
+# ── S5 Call B — articulate (grounding + falsifier-or-drop, all in code) ──
+def _wti_packet():
+    return _golden_packets()["news"]
+
+
+def test_call_b_clean_articulation_is_used():
+    from synth_articulate import articulate
+    from synth_classify import FixtureClient
+    pkt = _wti_packet()
+    fx = {pkt["instance"]: {
+        "headline": "wti not pricing a dense escalation cluster; complex quiet",
+        "question": "Is the market genuinely not pricing this, or is it "
+                    "discounted?",
+        "falsifier": "Killed if wti's LEVEL is already elevated (not just "
+                     "today's return quiet) or the divergence is already "
+                     "resolving over the next sessions.",
+        "cited_fields": ["corroboration.news_cluster",
+                         "corroboration.complex_co_quiet"]}}
+    b = articulate(pkt, "INVESTIGATE", FixtureClient(fx))
+    assert b["articulated"] and b["source"] == "llm"
+    assert "elevated" in b["falsifier"].lower()
+
+
+def test_call_b_invented_mechanism_voids_to_scaffold():
+    """Articulation is the highest-risk call: a rich news cluster invites a tidy
+    causal story. An ungrounded fact voids to the packet's own question and
+    falsifier — the reader never sees the invention, and loses nothing."""
+    from synth_articulate import articulate
+    from synth_classify import FixtureClient
+    pkt = _wti_packet()
+    fx = {pkt["instance"]: {
+        "headline": "wti fell because OPEC secretly agreed to raise output",
+        "question": "will the secret OPEC deal hold?",
+        "falsifier": "killed if the secret OPEC deal is announced next week",
+        "cited_fields": ["opec.secret_deal"]}}
+    b = articulate(pkt, "INVESTIGATE", FixtureClient(fx))
+    assert b["source"] == "scaffold" and b["reason"] == "ungrounded_citation"
+    assert b["voided"] == ["opec.secret_deal"]
+    assert b["falsifier"] == pkt["falsifier"]          # reader gets scaffold
+    assert "OPEC" not in b["question"]                  # invention never shown
+
+
+def test_call_b_forbidden_verdict_language_voids():
+    from synth_articulate import articulate
+    from synth_classify import FixtureClient
+    pkt = _wti_packet()
+    fx = {pkt["instance"]: {
+        "headline": "a clean wti setup worth taking",     # 'setup' is forbidden
+        "question": "is this the trade?",
+        "falsifier": "killed if wti level is already elevated over next sessions",
+        "cited_fields": ["corroboration.news_cluster"]}}
+    b = articulate(pkt, "INVESTIGATE", FixtureClient(fx))
+    assert b["source"] == "scaffold" and b["reason"] == "forbidden_language"
+
+
+def test_call_b_vacuous_falsifier_falls_back_to_checkable_scaffold_one():
+    """Falsifier-or-drop, mechanical: a vague falsifier is dropped for the
+    packet's deterministic one so a card ALWAYS ends on a checkable falsifier."""
+    from synth_articulate import articulate
+    from synth_classify import FixtureClient
+    pkt = _wti_packet()
+    fx = {pkt["instance"]: {
+        "headline": "wti quiet against a dense escalation cluster",
+        "question": "is the market pricing the escalation?",
+        "falsifier": "killed if it proves wrong",          # vacuous
+        "cited_fields": ["corroboration.news_cluster"]}}
+    b = articulate(pkt, "INVESTIGATE", FixtureClient(fx))
+    assert b["reason"] == "falsifier_not_checkable"
+    assert b["falsifier"] == pkt["falsifier"]              # checkable scaffold one
+
+
+def test_call_b_only_runs_on_investigate():
+    from synth_articulate import articulate
+    from synth_classify import FixtureClient
+    pkt = _golden_packets()["transmission"]                # bovespa -> DISMISS
+    b = articulate(pkt, "DISMISS", FixtureClient({}))
+    assert b["source"] == "scaffold" and b["reason"] == "call_a_not_investigate"
+
+
+def test_call_b_card_always_ends_on_a_checkable_falsifier():
+    from synth_articulate import _falsifier_checkable, articulate
+    from synth_classify import FixtureClient
+    for pkt in _golden_packets().values():
+        b = articulate(pkt, "INVESTIGATE", FixtureClient({}))  # no fixture -> fallback
+        assert b["falsifier"] and _falsifier_checkable(b["falsifier"])
+
+
 # ── taxonomy completeness (no fail-open registry hole) ──────────────────
 def test_every_price_and_relations_series_is_classified():
     """A series in prices/relations with no registry class fails the class
