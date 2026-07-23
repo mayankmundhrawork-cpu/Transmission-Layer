@@ -91,21 +91,28 @@ def _copy_packet(cand, packet, call_a, card) -> str:
     return "\n".join(L)
 
 
-def build_board(data_dir=None, client=None, out_path=None) -> dict:
+def build_board(data_dir=None, client=None, out_path=None,
+                candidates_state=None, prices_df=None, persist=True) -> dict:
+    """`candidates_state` + `prices_df` let the in-app tick build a board from
+    an in-memory live pipeline with no file I/O (persist=False)."""
     from relations import load_relations
     from synth_articulate import articulate
     from synth_classify import classify, implied_classification
     from synth_gate import gate
 
     base = Path(data_dir) if data_dir else SYNTH_DIR
-    cfile = (base / "candidates.json") if (base / "candidates.json").exists() \
-        else SYNTH_DIR / "candidates.json"
-    cands_state = json.loads(cfile.read_text(encoding="utf-8"))
-    all_cands = cands_state["candidates"]
-    ranked = cands_state.get("ranked", [])
-    pfile = (base / "prices.csv") if (base / "prices.csv").exists() \
-        else DATA_DIR / "prices.csv"
-    prices = pd.read_csv(pfile, index_col=0, parse_dates=True).sort_index()
+    if candidates_state is None:
+        cfile = (base / "candidates.json") if (base / "candidates.json").exists() \
+            else SYNTH_DIR / "candidates.json"
+        candidates_state = json.loads(cfile.read_text(encoding="utf-8"))
+    all_cands = candidates_state["candidates"]
+    ranked = candidates_state.get("ranked", [])
+    if prices_df is not None:
+        prices = prices_df
+    else:
+        pfile = (base / "prices.csv") if (base / "prices.csv").exists() \
+            else DATA_DIR / "prices.csv"
+        prices = pd.read_csv(pfile, index_col=0, parse_dates=True).sort_index()
     neighbours = load_relations().get("neighbours", {})
 
     surfaced, dismissed = [], []
@@ -130,9 +137,10 @@ def build_board(data_dir=None, client=None, out_path=None) -> dict:
     state = {"data_date": prices.index.max().strftime("%Y-%m-%d"),
              "llm": bool(client),
              "surfaced": surfaced, "dismissed": dismissed}
-    outp = Path(out_path) if out_path else BOARD_JSON
-    outp.parent.mkdir(parents=True, exist_ok=True)
-    outp.write_text(json.dumps(state), encoding="utf-8")
+    if persist:
+        outp = Path(out_path) if out_path else BOARD_JSON
+        outp.parent.mkdir(parents=True, exist_ok=True)
+        outp.write_text(json.dumps(state), encoding="utf-8")
     return state
 
 

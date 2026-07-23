@@ -36,7 +36,7 @@ from release_calendar import build_calendar
 from research import event_key, load_bundles
 from scratchpad import (add_pin, clear_pad, export_markdown, load_pad,
                         remove_pin, set_note)
-from settings import UNIVERSE_CAP
+from settings import SYNTH_LIVE_TTL, SYNTH_V2, UNIVERSE_CAP
 from squawk import fetch_live, load_squawk
 from thesis import load_theses
 
@@ -446,6 +446,32 @@ def _drilldown_fig(sid: str, cur_flag: str) -> go.Figure:
     return fig
 
 
+# ── SYNTH_V2 investigation board (read-only render) ────────────────────
+def _render_synth_panel(board: dict) -> None:
+    stale = board.get("prices_stale")
+    n_live = board.get("n_live_bars", 0)
+    surf, dism = board.get("surfaced", []), board.get("dismissed", [])
+    live_bit = ("prices STALE (last committed close)" if stale
+                else f"live · +{n_live} provisional bars")
+    st.markdown(
+        f'<div class="sec">SYNTH_V2 · INVESTIGATION BOARD &nbsp;·&nbsp; '
+        f'{board.get("data_date","·")} &nbsp;·&nbsp; {len(surf)} leads &nbsp;·&nbsp; '
+        f'{len(dism)} dismissed &nbsp;·&nbsp; {live_bit}</div>',
+        unsafe_allow_html=True)
+    if not surf:
+        st.markdown('<div class="calm">No investigation-grade divergences on '
+                    'this tick.</div>', unsafe_allow_html=True)
+    for e in surf:
+        label = f"[{e['final_disposition']}] {e['instance']}  ·  {e['call_a']}"
+        with st.expander(label, expanded=False):
+            st.code(e["copy_packet"], language="markdown")  # native copy button
+    if dism:
+        with st.expander(f"Dismissed ({len(dism)}) · reference class shows no "
+                         f"reliable edge", expanded=False):
+            for e in dism:
+                st.markdown(f"- **{e['instance']}** — {e['call_a']}")
+
+
 # ── load everything (read-only) ────────────────────────────────────────
 snap = build_snapshot()
 prices = _load_prices(PRICES_CSV.stat().st_mtime if PRICES_CSV.exists() else 0.0)
@@ -491,6 +517,39 @@ st.markdown(
     f'{_regime_chip()}'
     f'</div>',
     unsafe_allow_html=True)
+
+
+# ── SYNTH_V2 · investigation board (behind flag; fully guarded) ────────
+if SYNTH_V2:
+    @st.cache_data(ttl=SYNTH_LIVE_TTL, show_spinner=False)
+    def _synth_board_off(_mtime: float):
+        from synth_panel import synth_tick
+        return synth_tick(client=None, use_live=True)
+
+    try:
+        board = _synth_board_off(
+            PRICES_CSV.stat().st_mtime if PRICES_CSV.exists() else 0.0)
+        # LLM is EVENT-TRIGGERED: fire Groq only for candidates that are NEW vs
+        # the prior tick (owner ruling 1); everything else stays LLM-off.
+        from synth_panel import surfaced_ids
+        cur_ids = surfaced_ids(board)
+        new_ids = cur_ids - st.session_state.get("synth_prior_ids", set())
+        if new_ids:
+            try:
+                from synth_classify import http_client
+                from synth_panel import synth_tick as _tick
+                cli = http_client()
+                if cli is not None:
+                    board = _tick(client=cli, use_live=True)
+            except Exception:
+                pass  # LLM path failed → keep the deterministic board, no crash
+        st.session_state["synth_prior_ids"] = cur_ids
+        _render_synth_panel(board)
+    except Exception as _e:
+        st.markdown('<div class="sec">SYNTH_V2 · investigation board</div>',
+                    unsafe_allow_html=True)
+        st.markdown(f'<div class="calm">synth board unavailable this tick '
+                    f'({str(_e)[:120]})</div>', unsafe_allow_html=True)
 
 
 # ── 0) squawk — DeItaone via public mirror, ~2min lag ──────────────────

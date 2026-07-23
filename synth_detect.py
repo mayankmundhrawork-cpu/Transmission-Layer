@@ -569,16 +569,21 @@ def detect_channel_shifts(channels: list[dict]) -> list[dict]:
 
 # ── build ──────────────────────────────────────────────────────────────
 def build_candidates(data_dir: Path | str | None = None,
-                     out_path: Path | str | None = None) -> dict:
-    """Run all detectors. `data_dir` overrides where prices/channels/events
-    are read from (golden-snapshot mode); output still goes to out_path
-    (default data/synth/candidates.json) unless overridden."""
+                     out_path: Path | str | None = None,
+                     prices: pd.DataFrame | None = None,
+                     persist: bool = True) -> dict:
+    """Run all detectors. `data_dir` overrides where prices/channels/events are
+    read from (golden-snapshot mode). `prices` overrides the price matrix in
+    memory — the 3-min in-app tick passes a LIVE matrix while still reading the
+    committed channels/bus (the 2h truth), and sets persist=False so the tick
+    never overwrites the committed candidates.json (owner ruling 1)."""
     from synth_events import market_events_backfill
 
     base = Path(data_dir) if data_dir else DATA_DIR
-    prices = pd.read_csv(
-        base / "prices.csv" if (base / "prices.csv").exists()
-        else DATA_DIR / "prices.csv", index_col=0, parse_dates=True).sort_index()
+    if prices is None:
+        prices = pd.read_csv(
+            base / "prices.csv" if (base / "prices.csv").exists()
+            else DATA_DIR / "prices.csv", index_col=0, parse_dates=True).sort_index()
 
     def _load(name: str, fallback: Path) -> dict:
         p = base / name
@@ -648,9 +653,10 @@ def build_candidates(data_dir: Path | str | None = None,
         "regime": shifts,           # map-health / watchlist lane (own axis)
         "candidates": pulses + divs + shifts,
     }
-    outp = Path(out_path) if out_path else CANDIDATES_JSON
-    outp.parent.mkdir(parents=True, exist_ok=True)
-    outp.write_text(json.dumps(state), encoding="utf-8")
+    if persist:
+        outp = Path(out_path) if out_path else CANDIDATES_JSON
+        outp.parent.mkdir(parents=True, exist_ok=True)
+        outp.write_text(json.dumps(state), encoding="utf-8")
     return state
 
 

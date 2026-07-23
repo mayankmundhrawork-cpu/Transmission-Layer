@@ -156,6 +156,33 @@ class FixtureClient:
                            "rationale": "no fixture for this instance"})
 
 
+def http_client(backend: dict | None = None, temperature: float = 0.2):
+    """Zero-budget OpenAI-compatible client reusing settings.get_llm_backend
+    (Groq free tier / OpenRouter :free). stdlib only (urllib) — no new dep.
+    Returns None if no key is configured, so the panel stays LLM-off cleanly."""
+    import json as _json
+    import urllib.request
+    from settings import get_llm_backend
+    backend = backend or get_llm_backend()
+    if not backend:
+        return None
+
+    class _C:
+        def complete(self, prompt: str) -> str:
+            body = _json.dumps({
+                "model": backend["model"], "temperature": temperature,
+                "response_format": {"type": "json_object"},
+                "messages": [{"role": "user", "content": prompt}]}).encode()
+            req = urllib.request.Request(
+                backend["url"], data=body, method="POST",
+                headers={"Authorization": f"Bearer {backend['key']}",
+                         "Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                out = _json.loads(r.read().decode())
+            return out["choices"][0]["message"]["content"]
+    return _C()
+
+
 def groq_client(model: str = "llama-3.3-70b-versatile", temperature: float = 0.2):
     """Production client (temp <=0.2, strict JSON). Lazy — only touches the
     network/keys when actually called, so importing this module never requires

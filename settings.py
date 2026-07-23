@@ -65,6 +65,10 @@ PATTERN_HORIZONS = (5, 20)   # aftermath windows
 ANALOGUE_TOP = 5             # nearest historical analogues per event
 
 
+SYNTH_V2 = (os.environ.get("SYNTH_V2", "1").strip() not in ("0", "", "false"))
+SYNTH_LIVE_TTL = 180         # in-app live-price cache (owner ruling 1: 3-min tick)
+
+
 def get_llm_backend() -> dict | None:
     """Zero-budget LLM routing: free OpenAI-compatible endpoints only.
     Priority: Groq free tier, then OpenRouter :free models. No key -> None,

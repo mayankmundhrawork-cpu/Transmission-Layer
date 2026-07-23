@@ -687,6 +687,32 @@ def test_call_b_card_always_ends_on_a_checkable_falsifier():
         assert b["falsifier"] and _falsifier_checkable(b["falsifier"])
 
 
+# ── in-app tick (live-price plumbing, LLM-off, no file writes) ──────────
+def test_synth_tick_runs_on_committed_prices_without_writing_files():
+    """The 3-min tick builds the full board in-memory (persist=False) so it
+    never overwrites the committed 2h-truth candidates/board files."""
+    import hashlib
+    import pathlib
+    from synth_panel import surfaced_ids, synth_tick
+    cj = pathlib.Path("data/synth/candidates.json")
+    before = hashlib.sha1(cj.read_bytes()).hexdigest()
+    board = synth_tick(client=None, use_live=False)     # no network
+    assert board["surfaced"] and board["prices_stale"] is False
+    assert surfaced_ids(board)                           # ids for the event trigger
+    # every surfaced card is LLM-off scaffold and still carries a copy-packet
+    assert all("copy_packet" in e for e in board["surfaced"])
+    assert hashlib.sha1(cj.read_bytes()).hexdigest() == before  # nothing written
+
+
+def test_build_candidates_accepts_in_memory_prices():
+    import pandas as pd
+    from synth_detect import build_candidates
+    px = pd.read_csv("data/synth/golden_2026-07-20/prices.csv", index_col=0,
+                     parse_dates=True).sort_index()
+    st = build_candidates(prices=px, persist=False)
+    assert st["ranked"] and "candidates" in st
+
+
 # ── S6 gate (thin: arithmetic clamp + override log) ─────────────────────
 def test_s6_gate_clamps_promotion_and_drops_dismiss():
     from synth_gate import gate
