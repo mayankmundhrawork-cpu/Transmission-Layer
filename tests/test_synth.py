@@ -687,6 +687,44 @@ def test_call_b_card_always_ends_on_a_checkable_falsifier():
         assert b["falsifier"] and _falsifier_checkable(b["falsifier"])
 
 
+# ── S6 gate (thin: arithmetic clamp + override log) ─────────────────────
+def test_s6_gate_clamps_promotion_and_drops_dismiss():
+    from synth_gate import gate
+    # a hallucinated promotion above the cap is clamped and flagged
+    r = gate("LEAD", "INVESTIGATE", proposed_override="OBSERVATION", log=False)
+    assert r["final_disposition"] == "LEAD" and r["clamped"] is True
+    # normal paths do not clamp; DISMISS is not surfaced
+    assert gate("LEAD", "INVESTIGATE", log=False)["clamped"] is False
+    assert gate("OBSERVATION", "DISMISS", log=False)["surfaced"] is False
+    assert gate("LEAD", "INSUFFICIENT_CONTEXT", log=False)["surfaced"] is True
+
+
+# ── S7 end-to-end board (the five acceptance conditions) ────────────────
+def test_end_to_end_board_llm_off_is_usable_and_capped(tmp_path):
+    from synth_articulate import _falsifier_checkable
+    from synth_output import build_board
+    st = build_board("data/synth/golden_2026-07-20", client=None,
+                     out_path=str(tmp_path / "b.json"))
+    # (#3) LLM-off still useful — a usable board with no model at all
+    assert st["llm"] is False and st["surfaced"]
+    # transmission NO_RELIABLE_EDGE -> DISMISS -> dismissed, never surfaced
+    assert any("bovespa" in e["instance"] for e in st["dismissed"])
+    assert all("bovespa" not in e["instance"] for e in st["surfaced"])
+    # (#2) every surfaced card cites its reference class AND ends on a checkable
+    # falsifier — a lead can never read as a thesis
+    for e in st["surfaced"]:
+        cp = e["copy_packet"]
+        assert ("Reference class" in cp) or ("Explanation search" in cp)
+        fals = cp.split("**Falsifier**:", 1)[1].split("\n", 1)[0]
+        assert _falsifier_checkable(fals)
+        # cap holds: nothing surfaces above its tier's disposition
+        assert e["final_disposition"] in ("OBSERVATION", "LEAD")
+        assert not e["clamped"]
+    # news surfaces as INVESTIGATE observations (tier 1)
+    news = [e for e in st["surfaced"] if e["kind"] == "news_no_move"]
+    assert news and all(e["call_a"] == "INVESTIGATE" for e in news)
+
+
 # ── taxonomy completeness (no fail-open registry hole) ──────────────────
 def test_every_price_and_relations_series_is_classified():
     """A series in prices/relations with no registry class fails the class
