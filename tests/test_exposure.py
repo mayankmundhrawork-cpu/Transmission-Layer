@@ -89,6 +89,22 @@ def test_input_basket_missing_weight_or_components_is_an_error():
     assert any("source is null" in e for e in r["errors"])
 
 
+def test_rm_to_sales_unit_mismatch_fails_closed():
+    """RM/Sales is a 0-1 ratio. A percentage slip (80.3 for 0.803) passes every
+    provenance check but is a 100x error — it must fail the range guard."""
+    from synth_exposure import validate_basket
+    base = {"basket": "t", "required_fields": ["rm_to_sales"],
+            "value_ranges": {"rm_to_sales": {"min": 0, "max": 1}},
+            "reporting_cycle_days": 100}
+
+    def one(v):
+        return validate_basket({**base, "names": {"ceat": {"fields": {
+            "rm_to_sales": {"value": v, "as_of": "2026-06-21",
+                            "source": "aggregator", "quality": "derived"}}}}})
+    assert any("unit mismatch" in e for e in one(80.3)["errors"])   # percent slip
+    assert not one(0.803)["errors"]                                 # correct ratio
+
+
 def test_proxy_heavy_basket_is_flagged_mostly_proxy():
     from synth_exposure import basket_quality_summary
     b = {"names": {"a": {"fields": {

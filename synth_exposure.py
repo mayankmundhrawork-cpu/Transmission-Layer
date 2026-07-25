@@ -66,6 +66,7 @@ def validate_basket(basket: dict, today: date | None = None) -> dict:
     today = today or date.today()
     cycle = int(basket.get("reporting_cycle_days", 100))
     required = basket.get("required_fields", [])
+    ranges = basket.get("value_ranges", {})    # unit-mismatch guard (0-1 ratios)
     errors, uncurated, stale, curated = [], [], [], 0
     names = basket.get("names", {})
 
@@ -91,6 +92,17 @@ def validate_basket(basket: dict, today: date | None = None) -> dict:
                 errors.append(f"{nm}.{fk}: field absent (required)")
                 continue
             _account(f"{nm}.{fk}", fields[fk])
+            # unit-mismatch guard: a curated ranged value must sit in band. A
+            # 100x percentage-vs-ratio slip (80.3 for 0.803) passes every
+            # provenance check and silently wrecks the GM-at-Risk arithmetic —
+            # this catches it (fail-closed).
+            rng = ranges.get(fk)
+            v = fields[fk].get("value") if isinstance(fields[fk], dict) else None
+            if rng and isinstance(v, (int, float)):
+                lo, hi = rng.get("min"), rng.get("max")
+                if v <= lo or v >= hi:
+                    errors.append(f"{nm}.{fk}: value {v} outside ({lo},{hi}) — "
+                                  f"unit mismatch? ratios are 0-1, not percent")
         # input basket: the COMPONENT MAPPING is structural (must be non-empty);
         # each component WEIGHT is a fail-closed field like any other value.
         # Required only when the basket opts in (require_input_basket); a name
