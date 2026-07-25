@@ -183,3 +183,40 @@ Two questions for you before I proceed past §1:
 §2 proceeds: exposure store schema + completeness/staleness tests (fail-closed) +
 WPI fetcher with vintage storage. **No detector predicate until the store exists
 and the Margin Trap basket is curated by the owner.**
+
+---
+
+## §2b — schema unblocked + Margin Trap fixture spec (recorded 2026-07-23)
+
+**Input basket is now structural.** The sector→input mapping is recoverable from
+the published piece (what each sector buys), even though the weights are not, so
+`input_basket.components` carries the SERIES per name (tyres→rubber+crude,
+paints→coarse-chemicals(TiO2 proxy)+crude, electricals→copper+basic-metals) and
+each component **weight is a failing sentinel** until curated. Mapping defined,
+weights fail-closed — schema unblocked without inventing a number.
+
+**Model parameters are config, not constants** (`model:` block in the YAML): the
+`90/(90+inventory_days)` dampener and the `0.75` applicability haircut are stated
+modelling choices from the piece. The §3 predicate READS them; the fixture does
+**not** assert them.
+
+**Fixture assertion spec** (runs only after curation + predicate — recorded now
+so it is written correctly):
+- **Assert the two hike columns INDEPENDENTLY**, not a single derived number —
+  the gap between them (hike-needed vs hike-taken) is the published thesis, and
+  collapsing it hides the finding.
+- **Do NOT assert strict rank order.** MRF and Berger tie at −419 GM-at-Risk;
+  strict ordering is fragile to float tie-breaking. Assert bucketed / within-
+  tolerance (e.g. `abs(mrf - berger) < 1bp`, both in the top-risk band).
+- **Assert the trap-quadrant MEMBERSHIP** — the stronger test than the ranking:
+  - high-risk / outperformed (the trap): **berger, kansai, asian_paints, polycab**
+  - high-risk / no-rerating (the counter-case): **ceat, mrf**
+  The divergence flag must reproduce that split. Reference GM-at-Risk for
+  calibration: ceat −508, mrf/berger −419 (tie), havells −289 (bps).
+- **Field-quality guard** (already enforced by the store): a basket with a
+  missing or stale required field fails to build or surfaces the discount, never
+  silently.
+
+**Still failing sentinels, by design:** per-name `rm_to_sales`, `inventory_days`,
+and every `input_basket` component weight — these need filings / the original
+working files and are the owner's to curate.

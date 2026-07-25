@@ -68,24 +68,50 @@ def validate_basket(basket: dict, today: date | None = None) -> dict:
     required = basket.get("required_fields", [])
     errors, uncurated, stale, curated = [], [], [], 0
     names = basket.get("names", {})
+
+    def _account(label, f):
+        """Fold one field into curated/uncurated/error/stale accounting."""
+        nonlocal curated
+        state, err = _field_state(f)
+        if state == "error":
+            errors.append(f"{label}: {err}")
+        elif state == "uncurated":
+            uncurated.append(label)
+        else:
+            curated += 1
+            d = _as_of_date(f.get("as_of"))
+            if d is not None and (today - d).days > cycle:
+                stale.append({"field": label, "as_of": str(d),
+                              "age_days": (today - d).days})
+
     for nm, rec in names.items():
         fields = (rec or {}).get("fields", {})
         for fk in required:
             if fk not in fields:
                 errors.append(f"{nm}.{fk}: field absent (required)")
                 continue
-            state, err = _field_state(fields[fk])
-            if state == "error":
-                errors.append(f"{nm}.{fk}: {err}")
-            elif state == "uncurated":
-                uncurated.append(f"{nm}.{fk}")
-            else:
-                curated += 1
-                d = _as_of_date(fields[fk].get("as_of"))
-                if d is not None and (today - d).days > cycle:
-                    stale.append({"field": f"{nm}.{fk}",
-                                  "as_of": str(d),
-                                  "age_days": (today - d).days})
+            _account(f"{nm}.{fk}", fields[fk])
+        # input basket: the COMPONENT MAPPING is structural (must be non-empty);
+        # each component WEIGHT is a fail-closed field like any other value.
+        # Required only when the basket opts in (require_input_basket); a name
+        # that has one is always validated.
+        ib = (rec or {}).get("input_basket")
+        if ib is None:
+            if basket.get("require_input_basket"):
+                errors.append(f"{nm}.input_basket: required but absent")
+            continue
+        comps = (ib or {}).get("components", [])
+        if not comps:
+            errors.append(f"{nm}.input_basket: no components (mapping absent)")
+        for c in comps:
+            series = (c or {}).get("series")
+            if not series:
+                errors.append(f"{nm}.input_basket: component missing series")
+                continue
+            if "weight" not in (c or {}):
+                errors.append(f"{nm}.input_wt[{series}]: weight field absent")
+                continue
+            _account(f"{nm}.input_wt[{series}]", c["weight"])
     ready = not errors and not uncurated and bool(names) and bool(required)
     return {"basket": basket.get("basket"), "ready": ready,
             "n_names": len(names), "n_required": len(required),
@@ -98,14 +124,22 @@ def basket_quality_summary(basket: dict) -> dict:
     disclosed vs derived vs proxy, and the oldest as_of (loudness requirement)."""
     counts = {q: 0 for q in QUALITY}
     oldest = None
+
+    def _tally(f):
+        nonlocal oldest
+        state, _ = _field_state(f) if isinstance(f, dict) else ("error", "")
+        if state == "curated":
+            counts[f["quality"]] += 1
+            d = _as_of_date(f.get("as_of"))
+            if d and (oldest is None or d < oldest):
+                oldest = d
+
     for rec in basket.get("names", {}).values():
         for f in (rec or {}).get("fields", {}).values():
-            state, _ = _field_state(f) if isinstance(f, dict) else ("error", "")
-            if state == "curated":
-                counts[f["quality"]] += 1
-                d = _as_of_date(f.get("as_of"))
-                if d and (oldest is None or d < oldest):
-                    oldest = d
+            _tally(f)
+        for c in ((rec or {}).get("input_basket") or {}).get("components", []):
+            if isinstance(c, dict) and "weight" in c:
+                _tally(c["weight"])
     total = sum(counts.values())
     return {"counts": counts, "total": total,
             "mostly_proxy": total > 0 and counts["proxy"] * 2 >= total,

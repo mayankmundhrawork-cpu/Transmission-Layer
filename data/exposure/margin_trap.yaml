@@ -1,52 +1,104 @@
 # SYNTH_V2 exposure store · basket: margin_trap
 # paints / tyres / electricals — RM-cost margin-at-risk screen (first fixture).
 #
-# STRUCTURE ONLY. Every field ships as a sentinel (value: null) and FAILS the
-# completeness check until the owner curates it — the store cannot hold a value
-# without provenance (fail-closed). Claude pre-fills the skeleton; the owner
-# supplies value / as_of / source / quality. Claude never invents a number.
+# STRUCTURE curated by Claude; VALUES curated by the owner. Every value ships as
+# a sentinel (value: null) and FAILS completeness until filled — the store cannot
+# hold a value without provenance (fail-closed). Claude never invents a number.
+#
+# What Claude may fill (structural, recoverable — NOT a value judgement):
+#   * the universe (names the owner has named) and their sector
+#   * each name's input_basket COMPONENTS — which shock series a sector buys
+#     (tyres->rubber+crude, paints->TiO2(coarse chemicals)+crude, electricals->
+#     copper+basic-metals). Recoverable from the published piece; confirm exact
+#     composition alongside the inventory spot-check.
+#   * the model config (dampener + haircut) — stated modelling choices, config.
+# What stays a FAILING SENTINEL until the owner curates (needs filings / working
+# files): rm_to_sales, inventory_days, and every input_basket component WEIGHT.
 #
 # quality: disclosed = a filing line; derived = computed from disclosed lines;
-#          proxy     = a stand-in (geography for currency, coarse WPI bucket, ...)
-# input_shock_ref.value = the shock series that drives this name's input cost:
-#          a price-matrix id (e.g. comex_copper) OR a WPI code (e.g. wpi_rubber).
-#          Tag quality=proxy when the shock is a coarse bucket, not the input.
-#
-# Only the two names the brief named (CEAT, Havells) are pre-seeded as structural
-# examples. The owner adds the remaining ~8 (the published Margin Trap universe)
-# by copying the template block. Do NOT let Claude guess the universe.
+#          proxy     = a stand-in (coarse WPI bucket for a specific input, ...)
 
 basket: margin_trap
 description: paints / tyres / electricals — RM-cost margin-at-risk screen
 updated: null
 reporting_cycle_days: 100          # ~one quarter; as_of older than this => STALE
-required_fields:
+require_input_basket: true         # every name MUST carry an input basket
+required_fields:                   # flat per-name fields (fail-closed)
   - rm_to_sales                    # cost of materials consumed / revenue (disclosed, quarterly)
   - inventory_days                 # inventory / (materials per period) — the lag dampener
-  - input_shock_ref                # which shock series drives input cost
+
+# Model config — stated modelling choices from the published piece. CONFIG, read
+# by the §3 predicate; NOT asserted by the fixture, NOT constants in code.
+model:
+  inventory_dampener: "90 / (90 + inventory_days)"   # RM-move pass-through lag
+  applicability_haircut: 0.75                          # fraction of move that bites
+
+# _SENTINEL_ marks a failing weight/value the owner must fill.
+_sentinel: &sentinel {value: null, as_of: null, source: null, quality: null}
 
 names:
+  # --- tyres: rubber + crude (carbon black) --------------------------------
   ceat:
-    series_id: null                # link to a price-matrix id if the name is tracked
+    series_id: null
     sector: tyres
-    fields:
-      rm_to_sales:     {value: null, as_of: null, source: null, quality: null}
-      inventory_days:  {value: null, as_of: null, source: null, quality: null}
-      input_shock_ref: {value: null, as_of: null, source: null, quality: null}
+    fields: {rm_to_sales: *sentinel, inventory_days: *sentinel}
+    input_basket:
+      components:
+        - {series: wpi_rubber, weight: *sentinel}
+        - {series: brent,      weight: *sentinel}
+  mrf:
+    series_id: null
+    sector: tyres
+    fields: {rm_to_sales: *sentinel, inventory_days: *sentinel}
+    input_basket:
+      components:
+        - {series: wpi_rubber, weight: *sentinel}
+        - {series: brent,      weight: *sentinel}
 
+  # --- paints: TiO2 (coarse chemicals, proxy) + crude-derived solvents ------
+  asian_paints:
+    series_id: null
+    sector: paints
+    fields: {rm_to_sales: *sentinel, inventory_days: *sentinel}
+    input_basket:
+      components:
+        - {series: wpi_chemicals, weight: *sentinel}   # TiO2 proxy (coarse)
+        - {series: brent,         weight: *sentinel}
+  berger:
+    series_id: null
+    sector: paints
+    fields: {rm_to_sales: *sentinel, inventory_days: *sentinel}
+    input_basket:
+      components:
+        - {series: wpi_chemicals, weight: *sentinel}
+        - {series: brent,         weight: *sentinel}
+  kansai:
+    series_id: null
+    sector: paints
+    fields: {rm_to_sales: *sentinel, inventory_days: *sentinel}
+    input_basket:
+      components:
+        - {series: wpi_chemicals, weight: *sentinel}
+        - {series: brent,         weight: *sentinel}
+
+  # --- electricals: copper + basic metals (aluminium / steel) ---------------
   havells:
     series_id: null
     sector: electricals
-    fields:
-      rm_to_sales:     {value: null, as_of: null, source: null, quality: null}
-      inventory_days:  {value: null, as_of: null, source: null, quality: null}
-      input_shock_ref: {value: null, as_of: null, source: null, quality: null}
+    fields: {rm_to_sales: *sentinel, inventory_days: *sentinel}
+    input_basket:
+      components:
+        - {series: comex_copper,    weight: *sentinel}
+        - {series: wpi_basic_metals, weight: *sentinel}
+  polycab:
+    series_id: null
+    sector: electricals
+    fields: {rm_to_sales: *sentinel, inventory_days: *sentinel}
+    input_basket:
+      components:
+        - {series: comex_copper,    weight: *sentinel}
+        - {series: wpi_basic_metals, weight: *sentinel}
 
-  # --- template: owner copies this block per additional name -----------------
-  # <name_key>:
-  #   series_id: <price-matrix id or null>
-  #   sector: <tyres | paints | electricals>
-  #   fields:
-  #     rm_to_sales:     {value: 0.62, as_of: 2026-06-30, source: "Q1FY27 results, P&L", quality: disclosed}
-  #     inventory_days:  {value: 55,   as_of: 2026-03-31, source: "FY26 AR, BS note 8",  quality: derived}
-  #     input_shock_ref: {value: wpi_rubber, as_of: 2026-06-30, source: "sector input basket", quality: proxy}
+  # Owner adds any remaining published-universe names (same block shape). The
+  # trap-quadrant fixture references: CEAT, MRF (high-risk / no-rerating) and
+  # Berger, Kansai, Asian Paints, Polycab (high-risk / outperformed) — all above.

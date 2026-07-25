@@ -60,6 +60,35 @@ def test_stale_field_still_builds_but_is_flagged():
     assert r["stale"][0]["age_days"] > 100
 
 
+def test_input_basket_mapping_present_but_weights_fail_closed():
+    """The sector->input mapping is structural (recoverable); the weights are
+    sentinels. A basket with the mapping but unfilled weights is not-ready but
+    NOT errored — the schema is unblocked while fail-closed holds."""
+    from synth_exposure import load_basket, validate_basket
+    b = load_basket("margin_trap")
+    rep = validate_basket(b)
+    assert rep["ready"] is False and not rep["errors"]
+    # every name carries an input-basket weight sentinel in the uncurated set
+    assert any(".input_wt[" in u for u in rep["uncurated"])
+
+
+def test_input_basket_missing_weight_or_components_is_an_error():
+    from synth_exposure import validate_basket
+    base = {"basket": "t", "required_fields": [], "reporting_cycle_days": 100}
+    # empty components -> error (mapping absent)
+    r = validate_basket({**base, "names": {"a": {"input_basket": {"components": []}}}})
+    assert any("no components" in e for e in r["errors"])
+    # component missing its weight field -> error
+    r = validate_basket({**base, "names": {"a": {"input_basket":
+        {"components": [{"series": "wpi_rubber"}]}}}})
+    assert any("weight field absent" in e for e in r["errors"])
+    # a weight value without provenance -> error (fail-closed on weights too)
+    r = validate_basket({**base, "names": {"a": {"input_basket": {"components":
+        [{"series": "brent", "weight": {"value": 0.4, "as_of": "2026-06-30",
+                                        "source": None, "quality": "derived"}}]}}}})
+    assert any("source is null" in e for e in r["errors"])
+
+
 def test_proxy_heavy_basket_is_flagged_mostly_proxy():
     from synth_exposure import basket_quality_summary
     b = {"names": {"a": {"fields": {
