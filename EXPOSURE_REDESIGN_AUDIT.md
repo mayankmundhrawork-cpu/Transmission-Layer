@@ -108,6 +108,50 @@ non-matrix inputs (rubber) rides WPI and its vintages straddle the base change.
   guard STAY. The redesign changes where values come from (fetched-with-vintage),
   not the guards on them.
 
+## 7 · Reproduction across conventions (all ten, measured) — the provenance finding
+
+Owner supplied the published RM/Sales table; fetched `Cost Of Revenue /
+Total Revenue` computed three ways. Best-fit Δ = smallest gap to published over
+the three conventions.
+
+| name | published | latest-Q | ttm-4Q | annual | best Δ |
+|---|---:|---:|---:|---:|---|
+| CEAT | 0.610 | 0.661 | 0.624 | 0.622 | annual 0.012 |
+| Kansai Nerolac | 0.571 | 0.652 | 0.647 | 0.653 | **ttm 0.076** |
+| MRF | 0.607 | 0.612 | 0.627 | 0.652 | latestQ 0.005 |
+| Berger | 0.581 | 0.558 | 0.572 | 0.581 | annual 0.000 |
+| Asian Paints | 0.482 | 0.553 | 0.563 | 0.566 | **latestQ 0.071** |
+| Blue Star | 0.778 | 0.785 | 0.774 | 0.769 | ttm 0.004 |
+| Polycab | 0.755 | 0.762 | 0.764 | 0.784 | latestQ 0.007 |
+| Apollo | 0.551 | 0.530 | 0.546 | 0.557 | ttm 0.005 |
+| Voltas | 0.803 | 0.801 | 0.784 | 0.785 | latestQ 0.002 |
+| Havells | 0.669 | 0.687 | 0.678 | 0.702 | ttm 0.009 |
+
+**Findings:**
+1. **8 of 10 reproduce to ≤ 0.012 on their best-fit convention.** The feed does
+   carry the aggregator's number for most of the basket.
+2. **Two names diverge ~7 points on EVERY convention: Asian Paints (0.071) and
+   Kansai Nerolac (0.076) — both paints, both fetched HIGH.** Published is *below*
+   fetched COGS/Rev, which is the signature of the aggregate-vs-materials gap:
+   yfinance `Cost Of Revenue` ≥ cost-of-materials-consumed, and the surplus
+   (processing, solvents, packaging) is largest for paints. Voltas (traded goods,
+   COGS≈materials) matches to 0.002. The divergence is **definitional, not
+   period** — no convention closes it.
+3. **No single convention reproduces the whole basket** (best-fit splits across
+   latest-Q / ttm / annual). This is decisive for the design choice: pick
+   **trailing-4Q on principle** (seasonality smoothing), NOT to maximise matches —
+   matching is a definitional problem a period choice cannot fix.
+4. **Consequence, pre-authorised:** fixture 4b (fetched) will NOT reproduce 4a
+   (published) for the two paints names; their GM-at-Risk will differ. That is
+   recorded provenance about the published screen, not a fetcher bug, and the
+   fetcher will NOT be tuned to close it.
+
+**Rulings folded (2026-07-26):** production default **trailing-4Q**, store all
+three; `inventory_days` = latest available (balance sheet is 2–3 Q only) with the
+longer staleness tolerance, disclosed in the packet; **CEATLTD.NS** goes in a
+ticker-mapping config, not inline; provenance strings name the actual fields
+(`CostOfRevenue/TotalRevenue`) so the reader sees it is an aggregate.
+
 ## Stop — questions before Step 1
 
 1. **Confirm the other nine published RM/Sales values** (or point me at them) so
