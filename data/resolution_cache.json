@@ -59,6 +59,11 @@
   "symbol": "AAPL",
   "via": "search"
  },
+ "apply": {
+  "ok": false,
+  "resolved_at": "2026-07-31T08:15:12.718098+00:00",
+  "via": "no-acceptable-match"
+ },
  "argentina": {
   "cls": "equity",
   "exchange": "NYQ",
@@ -139,9 +144,24 @@
   "resolved_at": "2026-07-13T13:08:02.710022+00:00",
   "via": "no-acceptable-match"
  },
+ "bajaj finance": {
+  "cls": "equity",
+  "exchange": "NSI",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-31T08:15:12.790235+00:00",
+  "shortname": "BAJAJ FINANCE LIMITED",
+  "symbol": "BAJFINANCE.NS",
+  "via": "search"
+ },
  "bajaj finance q results": {
   "ok": false,
   "resolved_at": "2026-07-30T11:31:35.191554+00:00",
+  "via": "no-acceptable-match"
+ },
+ "bajaj finserv q results": {
+  "ok": false,
+  "resolved_at": "2026-07-31T08:15:13.077317+00:00",
   "via": "no-acceptable-match"
  },
  "bajaj housing finance": {
@@ -629,6 +649,16 @@
   "resolved_at": "2026-07-23T17:04:53.462169+00:00",
   "via": "no-acceptable-match"
  },
+ "hyundai motor india": {
+  "cls": "equity",
+  "exchange": "NSI",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-31T08:15:12.931263+00:00",
+  "shortname": "HYUNDAI MOTOR INDIA LTD",
+  "symbol": "HYUNDAI.NS",
+  "via": "search"
+ },
  "icici": {
   "cls": "equity",
   "exchange": "BSE",
@@ -914,6 +944,11 @@
   "resolved_at": "2026-07-17T10:27:14.372079+00:00",
   "via": "no-acceptable-match"
  },
+ "maruti suzuki sun pharma": {
+  "ok": false,
+  "resolved_at": "2026-07-31T08:15:12.996151+00:00",
+  "via": "no-acceptable-match"
+ },
  "master chains n jewels": {
   "ok": false,
   "resolved_at": "2026-07-27T13:45:18.274086+00:00",
@@ -997,6 +1032,11 @@
  "mv electrosystems ipo": {
   "ok": false,
   "resolved_at": "2026-07-28T11:38:28.287943+00:00",
+  "via": "no-acceptable-match"
+ },
+ "mv electrosystems ipo day": {
+  "ok": false,
+  "resolved_at": "2026-07-31T08:15:12.855001+00:00",
   "via": "no-acceptable-match"
  },
  "mylan": {
@@ -1368,6 +1408,16 @@
   "ok": false,
   "resolved_at": "2026-07-29T07:51:47.185287+00:00",
   "via": "no-acceptable-match"
+ },
+ "thermax": {
+  "cls": "equity",
+  "exchange": "BSE",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-31T08:15:13.141092+00:00",
+  "shortname": "THERMAX LTD.",
+  "symbol": "THERMAX.BO",
+  "via": "search"
  },
  "they": {
   "ok": false,
