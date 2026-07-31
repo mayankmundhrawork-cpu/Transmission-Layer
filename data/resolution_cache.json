@@ -29,6 +29,16 @@
   "resolved_at": "2026-07-17T06:07:04.113928+00:00",
   "via": "no-acceptable-match"
  },
+ "amazon": {
+  "cls": "equity",
+  "exchange": "NMS",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-07-31T17:13:54.838256+00:00",
+  "shortname": "Amazon.com, Inc.",
+  "symbol": "AMZN",
+  "via": "search"
+ },
  "american express": {
   "cls": "equity",
   "exchange": "NYQ",
@@ -153,6 +163,11 @@
   "shortname": "BAJAJ FINANCE LIMITED",
   "symbol": "BAJFINANCE.NS",
   "via": "search"
+ },
+ "bajaj finance bajaj finserv": {
+  "ok": false,
+  "resolved_at": "2026-07-31T17:13:54.912406+00:00",
+  "via": "no-acceptable-match"
  },
  "bajaj finance q results": {
   "ok": false,
@@ -533,6 +548,11 @@
   "shortname": "Coinbase Global, Inc.",
   "symbol": "COIN",
   "via": "search"
+ },
+ "global aggregate index": {
+  "ok": false,
+  "resolved_at": "2026-07-31T17:13:55.016580+00:00",
+  "via": "no-acceptable-match"
  },
  "goldman": {
   "cls": "equity",
