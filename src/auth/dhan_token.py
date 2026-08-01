@@ -88,8 +88,45 @@ class TokenRecord:
     __str__ = __repr__
 
 
+def restrict_to_owner(path: Path) -> bool:
+    """Make a file readable only by its owner, on POSIX *and* Windows.
+
+    `os.chmod` is not enough. On Windows it only toggles the read-only
+    attribute — the POSIX mode bits it reports are synthesised, and a
+    `chmod(0o600)` there leaves the file readable by anyone with access to the
+    directory. Claiming 0600 protection while not delivering it is worse than
+    not claiming it, so Windows gets a real ACL: inheritance removed, then the
+    current user granted full control and nobody else.
+
+    Returns True if the restriction was applied. A False return is not fatal —
+    the token lives under the user's profile either way — but the caller can
+    surface it rather than assume protection that is not there.
+    """
+    path = Path(path)
+    if sys.platform != "win32":
+        try:
+            path.chmod(stat.S_IRUSR | stat.S_IWUSR)
+            return True
+        except OSError:
+            return False
+
+    import subprocess
+
+    user = os.environ.get("USERNAME")
+    if not user:
+        return False
+    try:
+        result = subprocess.run(
+            ["icacls", str(path), "/inheritance:r", "/grant:r", f"{user}:F"],
+            capture_output=True, text=True, timeout=20, check=False,
+        )
+        return result.returncode == 0
+    except (OSError, subprocess.SubprocessError):
+        return False
+
+
 class TokenStore:
-    """Persists the current token to a 0600 file under the DB directory."""
+    """Persists the current token to an owner-only file under the DB directory."""
 
     def __init__(self, path: Path) -> None:
         self.path = Path(path)
@@ -123,11 +160,11 @@ class TokenStore:
         )
         # Restrict before publishing the name, so the token is never briefly
         # world-readable at its final path.
-        try:
-            tmp.chmod(stat.S_IRUSR | stat.S_IWUSR)
-        except OSError:
-            pass
+        restrict_to_owner(tmp)
         os.replace(tmp, self.path)
+        # On Windows an ACL set on the temp name survives the rename, but
+        # re-applying is cheap and covers filesystems where it does not.
+        restrict_to_owner(self.path)
 
     def clear(self) -> None:
         self.path.unlink(missing_ok=True)

@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import sys
 
 import pytest
 import requests
@@ -120,11 +121,48 @@ def test_token_store_round_trip(tmp_path):
     assert abs((loaded.expires_at - rec.expires_at).total_seconds()) < 1
 
 
-def test_token_file_is_not_world_readable(tmp_path):
+@pytest.mark.skipif(sys.platform == "win32", reason="POSIX mode bits")
+def test_token_file_is_not_world_readable_posix(tmp_path):
     store = TokenStore(tmp_path / "tok.json")
     store.save(record(5))
     mode = store.path.stat().st_mode
     assert not mode & 0o077, "token file must be owner-only"
+
+
+@pytest.mark.skipif(sys.platform != "win32", reason="Windows ACLs")
+def test_token_file_acl_excludes_other_principals_windows(tmp_path):
+    """The Windows half of the same property.
+
+    `os.chmod` on Windows only toggles the read-only attribute — the mode bits
+    it reports are synthesised, so the POSIX assertion above would pass while
+    the file stayed readable by everyone. This checks the ACL that actually
+    governs access.
+    """
+    import subprocess
+
+    store = TokenStore(tmp_path / "tok.json")
+    store.save(record(5))
+
+    result = subprocess.run(["icacls", str(store.path)], capture_output=True,
+                            text=True, timeout=20, check=False)
+    if result.returncode != 0:
+        pytest.skip("icacls unavailable")
+    acl = result.stdout
+    for principal in ("Everyone", "BUILTIN\\Users", "Authenticated Users"):
+        assert principal not in acl, (
+            f"the token file grants access to {principal}:\n{acl}"
+        )
+
+
+def test_restrict_to_owner_reports_whether_it_worked(tmp_path):
+    """A False return must be possible to observe — assuming protection that
+    was never applied is the failure mode worth avoiding."""
+    from src.auth.dhan_token import restrict_to_owner
+
+    target = tmp_path / "f.txt"
+    target.write_text("x", encoding="utf-8")
+    assert restrict_to_owner(target) is True
+    assert restrict_to_owner(tmp_path / "does-not-exist") is False
 
 
 def test_corrupt_token_file_is_treated_as_absent(tmp_path):
