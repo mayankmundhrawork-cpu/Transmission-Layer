@@ -1,0 +1,66 @@
+{
+  "study_id": "PREREG-000-noise-control",
+  "registered_on": "2026-08-01",
+  "hypothesis": "A deterministic pseudo-random score, seeded on (ISIN, as-of date) and carrying no information about any company, has no cross-sectional predictive content for forward returns in the smallcap-inclusive Indian equity universe. This study is a calibration control for the evaluation harness itself, not an investment hypothesis: its purpose is to confirm that the harness returns NOT SIGNIFICANT on a factor that is empty by construction.",
+
+  "factor": {
+    "name": "seeded_noise",
+    "definition": "SHA-256 of the string '<seed>|<as_of_date>|<isin>', with the leading 8 bytes read as a big-endian unsigned integer and divided by 2^64 to give a value in [0, 1). Deterministic across runs, independent across names and dates.",
+    "seed": 20240101,
+    "required_facts": [],
+    "min_publication_lag_days": 0,
+    "rationale_for_inclusion": "Control. If this factor is ever reported as significant after multiple-testing correction, the harness is miscalibrated and every other result it has produced is suspect."
+  },
+
+  "preprocessing": {
+    "winsorise_lower_pct": 1.0,
+    "winsorise_upper_pct": 99.0,
+    "standardise": true,
+    "sector_neutralise": false,
+    "rank_transform": false
+  },
+
+  "universe_tier": "nifty500",
+  "evaluation_window": { "start": "2019-01-01", "end": "2023-12-29" },
+  "rebalance_frequency": "quarterly",
+  "forward_return_horizon_days": 63,
+
+  "null_structure": "The null is that the true cross-sectional rank correlation between the factor score and the forward 63-session return is zero at every rebalance date, and that the top-quantile portfolio's net-of-cost excess return over NIFTY_500_TRI has zero mean. Under the null, the observed mean IC is distributed around zero with a standard error inflated by the cross-sectional correlation structure of the universe, which is why the reported t-statistic uses effective N rather than raw N and an autocorrelation-adjusted standard error rather than the naive one.",
+
+  "primary_metric": {
+    "name": "mean_net_long_only_excess_return",
+    "description": "Mean net-of-cost return of the top quintile minus the benchmark total return over the same horizon.",
+    "threshold": 0.0,
+    "relative_to": "NIFTY_500_TRI",
+    "direction": "greater_than",
+    "significance_requirement": "Must survive Benjamini-Hochberg FDR control at q=0.10 across every trial in the persistent registry AND achieve a deflated Sharpe ratio of at least 0.95."
+  },
+
+  "secondary_metrics": [
+    "mean_rank_ic",
+    "ic_t_statistic_newey_west",
+    "ic_decay_curve_across_21_63_126_252_sessions",
+    "top_quantile_turnover",
+    "cost_drag",
+    "long_short_spread_net",
+    "short_leg_contribution",
+    "fama_macbeth_coefficient_on_score_controlling_for_log_free_float_size"
+  ],
+
+  "era_splits": ["2020-04-01", "2022-01-01"],
+
+  "kill_conditions": [
+    "Mean rank IC is negative over the full window.",
+    "Result is NOT SIGNIFICANT after Benjamini-Hochberg correction across the full trial registry.",
+    "Mean top-quantile turnover exceeds 90% per rebalance, which would make any gross signal uncapturable net of cost.",
+    "Fewer than 12 usable rebalance periods in the window."
+  ],
+
+  "interpretation_asymmetry": {
+    "null_result_rules_out": "That this specific seeded-noise construction, on this universe tier, at this horizon, with this preprocessing, carries exploitable cross-sectional signal. For a control factor this is the expected and desired outcome: it demonstrates the harness does not manufacture significance from a factor that is empty by construction.",
+    "null_result_does_not_rule_out": "Anything about any real factor. A null here says the measuring instrument reads zero on a blank sample; it says nothing about what the instrument would read on a real one. It also does not establish that the harness has power to detect a true effect — that is a separate question requiring a factor with known signal.",
+    "positive_result_does_not_establish": "Nothing whatsoever. A positive result on this study is not a discovery; it is evidence that the harness is broken. The correct response is to stop running studies and debug the evaluation code, not to investigate the factor."
+  },
+
+  "notes": "Registered as part of §17 CP8. This is the only study in this repo whose desired outcome is a null, and the only one where a positive result should be read as a bug report rather than a finding."
+}

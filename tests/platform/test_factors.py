@@ -75,7 +75,10 @@ def test_cp7_factor_computes_on_ten_dates(factor_name, contexts):
         coverage.append(score.notna().mean())
 
     # A factor that is NaN everywhere computes without erroring and is useless.
-    # Flags are legitimately sparse; everything else should cover most names.
+    # Two exemptions, both deliberate: flags are legitimately sparse, and
+    # lookahead_canary MUST be empty — see the dedicated test below.
+    if factor_name == "lookahead_canary":
+        return
     threshold = 0.0 if factor_name in ("auditor_change", "auditor_qualification") else 0.5
     assert max(coverage) > threshold, (
         f"{factor_name} produced no usable values on any of the ten dates "
@@ -93,6 +96,24 @@ def test_cp7_no_factor_can_reach_latest(contexts):
             factor(ctx)
         except LookAheadViolation as exc:  # pragma: no cover
             pytest.fail(f"{name}: {exc}")
+
+
+@pytest.mark.acceptance
+def test_lookahead_canary_is_empty_on_every_date(contexts):
+    """The canary tries to score names by their own FUTURE return.
+
+    It must come back entirely NaN on every date, because `FactorContext` is
+    bounded at the as-of date and exposes no path to later data. A single
+    non-NaN value here means research code has been handed a time machine, and
+    every result the platform has ever produced would be suspect.
+    """
+    canary = all_factors()["lookahead_canary"]
+    for date, ctx in contexts.items():
+        score = canary(ctx)
+        assert score.isna().all(), (
+            f"{date}: the look-ahead canary produced {score.notna().sum()} "
+            "non-null values — future data is reachable from a factor"
+        )
 
 
 def test_the_guard_would_actually_fire_from_a_factor(contexts):

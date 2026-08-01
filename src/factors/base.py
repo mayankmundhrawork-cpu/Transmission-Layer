@@ -304,5 +304,5 @@ def all_factors() -> dict[str, Factor]:
 
 def _load_all() -> None:
     from src.factors import (  # noqa: F401  (import for side-effect registration)
-        growth, india, momentum, quality, risk, size, value,
+        growth, india, momentum, noise, quality, risk, size, value,
     )
