@@ -1,0 +1,108 @@
+# Statutory and broker cost rates for NSE cash-delivery equity (BUILD_SPEC §9).
+#
+# ─────────────────────────────────────────────────────────────────────────────
+# VERIFICATION STATUS — READ THIS BEFORE TRUSTING A BACKTEST
+#
+# §9 requires: "Verify all statutory rates against current official sources
+# before use and record the rate table with its effective date — rates change
+# and a stale table silently biases every backtest."
+#
+# The entries below were written from published rate structures but have NOT
+# been verified against primary sources in this environment (no outbound
+# network access to nseindia.com / incometaxindia.gov.in / cbic.gov.in).
+# Every entry therefore carries `verified: false`, and CostModel emits a loud
+# warning whenever it prices a trade using an unverified table.
+#
+# To verify: check each rate against the source_url, set `verified: true` and
+# `verified_on: <date>`, and commit. The tests in tests/platform/test_costs.py
+# assert the arithmetic, not the rate values — so correcting a rate here does
+# not require touching any code.
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# All rates are fractions of turnover unless the name says otherwise.
+# `effective_from` is inclusive; the model picks the latest table at or before
+# the trade date.
+
+tables:
+  - effective_from: "2010-04-01"
+    verified: false
+    verified_on: null
+    note: "Pre-2016 structure. Stamp duty was state-specific before the 2020 uniform regime."
+    sources:
+      stt: "https://incometaxindia.gov.in — Securities Transaction Tax rates"
+      stamp_duty: "State stamp acts (pre-2020, non-uniform)"
+      exchange_txn: "https://www.nseindia.com — transaction charges circulars"
+      sebi_fee: "https://www.sebi.gov.in — turnover fees"
+    rates:
+      stt_delivery_buy: 0.001        # 0.1% on buy value
+      stt_delivery_sell: 0.001       # 0.1% on sell value
+      stamp_duty_buy: 0.0001         # ~0.01%, state-dependent before 2020
+      exchange_txn: 0.0000325        # NSE cash market
+      sebi_turnover_fee: 0.000002    # ₹20 per crore (pre-2021)
+      gst_rate: 0.0                  # service tax era; folded into brokerage below
+      dp_charge_per_sell: 13.5       # ₹ per scrip per sell day (CDSL/NSDL + broker)
+      brokerage_pct: 0.0             # discount-broker delivery: zero
+      brokerage_max_per_order: 0.0
+
+  - effective_from: "2017-07-01"
+    verified: false
+    verified_on: null
+    note: "GST replaces service tax at 18% on brokerage + exchange + SEBI fees."
+    sources:
+      gst: "https://cbic.gov.in — GST on financial services, 18%"
+    rates:
+      stt_delivery_buy: 0.001
+      stt_delivery_sell: 0.001
+      stamp_duty_buy: 0.0001
+      exchange_txn: 0.0000325
+      sebi_turnover_fee: 0.000002
+      gst_rate: 0.18
+      dp_charge_per_sell: 13.5
+      brokerage_pct: 0.0
+      brokerage_max_per_order: 0.0
+
+  - effective_from: "2020-07-01"
+    verified: false
+    verified_on: null
+    note: >
+      Uniform stamp duty regime (Finance Act 2019, effective 1 July 2020):
+      0.015% on delivery-based purchase, levied on the buy leg only.
+    sources:
+      stamp_duty: "Finance Act 2019, Indian Stamp Act amendments — uniform rates"
+    rates:
+      stt_delivery_buy: 0.001
+      stt_delivery_sell: 0.001
+      stamp_duty_buy: 0.00015        # 0.015%, buy leg only
+      exchange_txn: 0.0000325
+      sebi_turnover_fee: 0.000001    # ₹10 per crore
+      gst_rate: 0.18
+      dp_charge_per_sell: 13.5
+      brokerage_pct: 0.0
+      brokerage_max_per_order: 0.0
+
+  - effective_from: "2024-10-01"
+    verified: false
+    verified_on: null
+    note: >
+      NSE cash-market transaction charge revised to ₹2.97 per lakh of traded
+      value (0.00297%) on a uniform, non-slab basis.
+    sources:
+      exchange_txn: "https://www.nseindia.com — revised transaction charges, Oct 2024"
+    rates:
+      stt_delivery_buy: 0.001
+      stt_delivery_sell: 0.001
+      stamp_duty_buy: 0.00015
+      exchange_txn: 0.0000297        # ₹2.97 per lakh
+      sebi_turnover_fee: 0.000001
+      gst_rate: 0.18
+      dp_charge_per_sell: 13.5
+      brokerage_pct: 0.0
+      brokerage_max_per_order: 0.0
+
+# Which components GST applies to. Statutory levies (STT, stamp duty) are not
+# GST-able; broker and exchange/regulator service charges are.
+gst_applies_to:
+  - brokerage
+  - exchange_txn
+  - sebi_fee
+  - dp_charges
