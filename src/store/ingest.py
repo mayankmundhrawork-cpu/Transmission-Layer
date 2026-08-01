@@ -25,7 +25,7 @@ import pandas as pd
 from src.archive.fetchers.nse import parse_bhavcopy
 from src.archive.store import Archive, ArchiveEntry, utc_now
 from src.master.security import SecurityMaster, as_iso
-from src.store.schema import transaction
+from src.store.schema import FUNDAMENTALS_TABLE as _FUNDAMENTALS_TABLE, transaction
 
 
 @dataclass
@@ -300,6 +300,181 @@ class Ingestor:
             self._log("index_constituents", entry.content_hash, entry.doc_key, rows)
         return report
 
+    # -- fundamentals (§7) -------------------------------------------------
+
+    def ingest_fundamentals(self, *, skip_ingested: bool = True) -> IngestReport:
+        """Join XBRL documents to their broadcast timestamps and store facts.
+
+        The join is the point. An XBRL document on its own has numbers but no
+        credible publication time; the results index has the broadcast time but
+        no numbers. A document with no matching index entry is *rejected* —
+        §5 — because the alternative is inventing a publication date, and an
+        invented date is indistinguishable from look-ahead in the output.
+        """
+        from src.archive.fetchers.xbrl import (
+            XBRL_DOC_SOURCE, XBRL_INDEX_SOURCE, parse_results_index, parse_xbrl,
+        )
+        from src.store.bitemporal import BitemporalStore, Fact, FactRejected
+
+        report = IngestReport(stage="fundamentals")
+        store = BitemporalStore(self.conn)
+
+        # 1. Build the publication-timestamp index from every archived index doc.
+        refs: dict[str, Any] = {}
+        for entry, raw in self.archive.iter_documents(XBRL_INDEX_SOURCE):
+            try:
+                for ref in parse_results_index(raw):
+                    if ref.doc_key:
+                        # Earliest broadcast wins: a filing re-announced later
+                        # was still public from its first dissemination.
+                        prior = refs.get(ref.doc_key)
+                        if prior is None or ref.published_at < prior.published_at:
+                            refs[ref.doc_key] = ref
+            except Exception as exc:
+                report.errors.append((entry.doc_key, str(exc)))
+
+        done = self.ingested_keys("fundamentals") if skip_ingested else set()
+
+        # 2. Walk the XBRL documents **in publication order**.
+        # revision_seq is assigned by arrival, so processing in filename order
+        # would give a restatement a lower revision than the original whenever
+        # the restatement's file happened to sort first — and as_of() resolves
+        # by highest revision_seq, so the store would then serve the superseded
+        # figure forever. Publication order is the only correct order here.
+        def _pub_order(key: str) -> tuple[str, str]:
+            ref = refs.get(key)
+            return (ref.published_at if ref else "9999", key)
+
+        for doc_key in sorted(self.archive.doc_keys(XBRL_DOC_SOURCE), key=_pub_order):
+            if doc_key in done:
+                continue
+            entry = self.archive.latest_entry(XBRL_DOC_SOURCE, doc_key)
+            if entry is None:
+                continue
+
+            ref = refs.get(doc_key)
+            if ref is None:
+                report.errors.append((doc_key, "no publication timestamp in any index"))
+                self._log("fundamentals", entry.content_hash, doc_key, 0,
+                          note="rejected: no broadcast timestamp")
+                continue
+
+            try:
+                filing = parse_xbrl(self.archive.read_entry(entry))
+            except Exception as exc:
+                report.errors.append((doc_key, f"{type(exc).__name__}: {exc}"))
+                self._log("fundamentals", entry.content_hash, doc_key, 0, note=str(exc))
+                continue
+
+            isin = _clean_isin(filing.isin) or _clean_isin(ref.isin)
+            if not isin and (filing.symbol or ref.symbol):
+                isin = self.master.resolve_symbol(
+                    str(filing.symbol or ref.symbol).strip(),
+                    filing.period_end or ref.period_end or "9999-12-31",
+                )
+            if not isin:
+                report.unresolved_symbols += 1
+                self._log("fundamentals", entry.content_hash, doc_key, 0,
+                          note="unresolved ISIN")
+                continue
+
+            period_end = filing.period_end or ref.period_end
+            period_start = filing.period_start or ref.period_start or period_end
+            rows = 0
+            with transaction(self.conn):
+                for fact_name, value in filing.facts.items():
+                    try:
+                        store.add_fact(Fact(
+                            isin=isin, fact_name=fact_name,
+                            period_type=filing.period_type,
+                            period_start=period_start, period_end=period_end,
+                            value=value, published_at=ref.published_at,
+                            source_doc_hash=entry.content_hash,
+                            revision_seq=self._revision_for(
+                                isin, fact_name, period_end, entry.content_hash,
+                                ref.published_at, store,
+                            ),
+                            defensible=True,
+                        ))
+                        rows += 1
+                    except FactRejected as exc:
+                        report.errors.append((doc_key, str(exc)))
+                self._log("fundamentals", entry.content_hash, doc_key, rows)
+            report.documents += 1
+            report.rows_written += rows
+
+        return report
+
+    def _revision_for(self, isin: str, fact_name: str, period_end: str,
+                      doc_hash: str, published_at: str, store: Any) -> int:
+        """Revision number for an incoming fact.
+
+        Re-ingesting the same document must not manufacture a restatement, so a
+        fact already present with this document hash and timestamp keeps its
+        revision. Anything genuinely new gets the next sequence number.
+        """
+        existing = self.conn.execute(
+            f"SELECT revision_seq FROM {_FUNDAMENTALS_TABLE}"
+            " WHERE isin=? AND fact_name=? AND period_end=?"
+            "   AND source_doc_hash=? AND published_at=?",
+            (isin, fact_name, period_end, doc_hash, published_at),
+        ).fetchone()
+        if existing is not None:
+            return int(existing["revision_seq"])
+        return store.next_revision(isin, fact_name, period_end)
+
+    def ingest_screener_prototype(self, doc_source: str = "screener.fundamentals") -> IngestReport:
+        """Ingest screener.in facts as NON-DEFENSIBLE (§5).
+
+        Prototyping only. Every fact lands with `defensible=0`, and any study
+        that touches one prints a prominent warning in its report. The flag is
+        set here, at the boundary, so there is no path by which a screener fact
+        can enter the store looking like a filing-sourced one.
+        """
+        from src.store.bitemporal import BitemporalStore, Fact, FactRejected
+
+        report = IngestReport(stage="screener")
+        store = BitemporalStore(self.conn)
+        for entry, raw in self.archive.iter_documents(doc_source):
+            try:
+                frame = _read_tabular(raw)
+            except Exception as exc:
+                report.errors.append((entry.doc_key, str(exc)))
+                continue
+            rows = 0
+            with transaction(self.conn):
+                for record in frame.to_dict("records"):
+                    isin = _clean_isin(_pick(record, "isin", "ISIN"))
+                    period_end = _pick_date(record, "period_end", "period", "date")
+                    published = _pick_date(record, "published_at", "filing_date")
+                    if not isin or not period_end or not published:
+                        continue
+                    for key, value in record.items():
+                        name = str(key).strip().lower()
+                        if name in ("isin", "period_end", "period", "date",
+                                    "published_at", "filing_date"):
+                            continue
+                        number = _f(value)
+                        if number is None:
+                            continue
+                        try:
+                            store.add_fact(Fact(
+                                isin=isin, fact_name=name, period_type="A",
+                                period_start=period_end, period_end=period_end,
+                                value=number, published_at=f"{published}T00:00:00+00:00",
+                                source_doc_hash=entry.content_hash,
+                                revision_seq=store.next_revision(isin, name, period_end),
+                                defensible=False,
+                            ))
+                            rows += 1
+                        except FactRejected:
+                            continue
+                self._log("screener", entry.content_hash, entry.doc_key, rows,
+                          note="NON-DEFENSIBLE: prototyping source")
+            report.documents += 1
+            report.rows_written += rows
+        return report
+
     # -- surveillance ------------------------------------------------------
 
     def ingest_surveillance(self) -> IngestReport:
@@ -343,6 +518,14 @@ class Ingestor:
 # ---------------------------------------------------------------------------
 # Parsing helpers
 # ---------------------------------------------------------------------------
+
+def _clean_isin(value: Any) -> str | None:
+    """Normalise an ISIN, returning None for anything that is not one."""
+    if value is None:
+        return None
+    text = str(value).strip().upper()
+    return text if len(text) == 12 and text[:2].isalpha() and text[2:].isalnum() else None
+
 
 def _f(value: Any) -> float | None:
     try:

@@ -73,3 +73,77 @@ HTML_BLOCK_PAGE = (
 )
 
 HTML_ERROR_PAGE = b"<!DOCTYPE html><html><body>Resource not available</body></html>"
+
+
+# --- Ind-AS XBRL instance documents -----------------------------------------
+
+_XBRL_TEMPLATE = """<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance"
+            xmlns:in-capmkt="http://www.icai.org/xbrl/taxonomy/in-capmkt">
+  <xbrli:context id="{ctx}">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.nseindia.com">{isin}</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>{period_start}</xbrli:startDate>
+      <xbrli:endDate>{period_end}</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <in-capmkt:ISIN contextRef="{ctx}">{isin}</in-capmkt:ISIN>
+  <in-capmkt:Symbol contextRef="{ctx}">{symbol}</in-capmkt:Symbol>
+  <in-capmkt:NatureOfReportStandaloneConsolidated contextRef="{ctx}">{result_type}</in-capmkt:NatureOfReportStandaloneConsolidated>
+{facts}
+</xbrli:xbrl>
+"""
+
+
+def make_xbrl(isin="INE002A01018", symbol="RELIANCE", period_start="2020-04-01",
+              period_end="2021-03-31", result_type="Consolidated", **facts) -> bytes:
+    """Build an Ind-AS XBRL instance document with the given canonical facts.
+
+    Keyword args are canonical fact names (revenue, net_profit, total_assets…)
+    and are emitted under their real taxonomy element names, so the tests
+    exercise the actual tag map rather than a shortcut.
+    """
+    from src.archive.fetchers.xbrl import FACT_MAP
+
+    reverse = {}
+    for tag, canonical in FACT_MAP.items():
+        reverse.setdefault(canonical, tag)
+
+    ctx = f"D{period_end.replace('-', '')}"
+    lines = []
+    for name, value in facts.items():
+        tag = reverse.get(name)
+        if tag is None:
+            raise KeyError(f"no XBRL tag maps to canonical fact {name!r}")
+        lines.append(
+            f'  <in-capmkt:{tag} contextRef="{ctx}" unitRef="INR" decimals="0">'
+            f"{value}</in-capmkt:{tag}>"
+        )
+    return _XBRL_TEMPLATE.format(
+        ctx=ctx, isin=isin, symbol=symbol, period_start=period_start,
+        period_end=period_end, result_type=result_type, facts="\n".join(lines),
+    ).encode()
+
+
+def make_results_index(entries) -> bytes:
+    """NSE financial-results index JSON.
+
+    `entries` is a list of dicts with keys: isin, symbol, from, to, broadcast
+    (an IST 'DD-Mon-YYYY HH:MM:SS' string), xbrl (file name), period.
+    """
+    import json
+
+    return json.dumps({"data": [
+        {
+            "symbol": e.get("symbol", "RELIANCE"),
+            "isin": e.get("isin", "INE002A01018"),
+            "fromDate": e["from"],
+            "toDate": e["to"],
+            "relatingTo": e.get("period", "Annual"),
+            "broadCastDate": e["broadcast"],
+            "xbrl": f"https://nsearchives.nseindia.com/corporate/xbrl/{e['xbrl']}",
+        }
+        for e in entries
+    ]}).encode()
