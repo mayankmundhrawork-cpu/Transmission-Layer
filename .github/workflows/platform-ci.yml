@@ -1,0 +1,51 @@
+name: Factor platform CI
+
+# The point-in-time factor platform (src/) has its own dependency set and its
+# own suite. It shares a repo with the intraday board but not a runtime, so it
+# gets its own workflow rather than riding along on the scheduled fetch.
+
+on:
+  push:
+    paths:
+      - "src/**"
+      - "tests/platform/**"
+      - "prereg/**"
+      - "requirements-platform.txt"
+      - "pyproject.toml"
+      - ".github/workflows/platform-ci.yml"
+  pull_request:
+    paths:
+      - "src/**"
+      - "tests/platform/**"
+      - "prereg/**"
+      - "requirements-platform.txt"
+      - "pyproject.toml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: platform-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-platform.txt
+
+      - name: Run platform tests
+        # No network tests here: PLATFORM_NETWORK_TESTS is unset, so anything
+        # marked `network` is skipped. CI must never depend on NSE being up.
+        run: python -m pytest -q tests/platform

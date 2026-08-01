@@ -47,7 +47,9 @@ jobs:
         # known-answer fixtures for the analytics math (conditional z,
         # residuals, assumption scorer, OU half-life, BH-FDR). A red suite
         # stops the run before any state is written.
-        run: python -m pytest -q tests/
+        # tests/platform belongs to the factor-research platform (src/), which
+        # has its own deps and its own workflow — see platform-ci.yml.
+        run: python -m pytest -q tests/ --ignore=tests/platform
 
       - name: Update universe from news
         # headlines pull + entity extraction + symbol resolution + universe

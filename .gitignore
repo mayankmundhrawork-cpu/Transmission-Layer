@@ -8,6 +8,8 @@ venv/
 .env
 .env.*
 *.env
+# ...but the template, which holds only empty keys, is committed deliberately.
+!.env.example
 
 # Claude Code local settings (machine-specific)
 .claude/settings.local.json
@@ -15,3 +17,17 @@ venv/
 
 # separate project living in this folder — not part of the board
 screener/
+
+# --- point-in-time factor platform (src/) ----------------------------------
+# The archive is large and reproducible from the fetch ledger; the DB derives
+# from the archive. Neither belongs in git. `prereg/` DOES — pre-registrations
+# are the audit trail (§12) and are committed deliberately.
+data/archive/
+data/db/
+data/reports/
+
+# desktop build artifacts (PyInstaller / Inno Setup)
+build/
+dist/
+*.manifest
+installer/Output/

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pit-factor-platform"
+version = "0.1.0"
+description = "Point-in-time fundamental factor research platform for Indian equities"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+# The repo root also holds the (unrelated) flat-module intraday board, so scope
+# packaging to the `src.*` tree explicitly rather than auto-discovering.
+packages = [
+    "src", "src.archive", "src.archive.fetchers", "src.auth", "src.master",
+    "src.store", "src.prices", "src.factors", "src.costs", "src.eval",
+    "src.prereg", "src.portfolio", "src.execution", "src.llm", "src.dashboard",
+]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements-platform.txt"] }
+
+[tool.pytest.ini_options]
+# rootdir-relative imports: tests do `from src.config import ...`
+pythonpath = ["."]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+markers = [
+    "network: hits a live source; skipped unless PLATFORM_NETWORK_TESTS=1",
+    "slow: multi-second test",
+    "acceptance: a §18 acceptance test — these are the ones that catch the failures that invalidate factor research",
+]
