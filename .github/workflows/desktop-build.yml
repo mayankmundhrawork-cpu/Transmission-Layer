@@ -71,24 +71,43 @@ jobs:
         # Start the app headless and confirm the API answers. Catches the
         # classic freeze failure — a hidden import that only resolves from
         # source — before a user does.
+        #
+        # Output is redirected to files and dumped on failure. The app is built
+        # with console=False, so without this a startup crash produces no
+        # diagnostic at all: the process just exits and the port never opens.
         shell: pwsh
         run: |
           $exe = "dist/PITFactorPlatform/PITFactorPlatform.exe"
           if (-not (Test-Path $exe)) { throw "PyInstaller produced no executable" }
-          $proc = Start-Process -FilePath $exe -ArgumentList "--no-window","--port","8765" -PassThru
+          $out = "smoke-stdout.txt"; $err = "smoke-stderr.txt"
+          $proc = Start-Process -FilePath $exe `
+            -ArgumentList "--no-window","--port","8765" -PassThru `
+            -RedirectStandardOutput $out -RedirectStandardError $err
           try {
             $ok = $false
-            foreach ($i in 1..40) {
-              Start-Sleep -Seconds 3
+            foreach ($i in 1..30) {
+              Start-Sleep -Seconds 2
+              if ($proc.HasExited) { break }
               try {
                 $r = Invoke-WebRequest -Uri "http://127.0.0.1:8765/api/status" -UseBasicParsing -TimeoutSec 5
                 if ($r.StatusCode -eq 200) { $ok = $true; break }
               } catch { }
             }
-            if (-not $ok) { throw "the frozen app did not answer /api/status" }
+            if (-not $ok) {
+              Write-Host "--- exited: $($proc.HasExited) ---"
+              foreach ($f in @($out, $err,
+                               "$env:LOCALAPPDATA\PITFactorPlatform\desktop.log")) {
+                if (Test-Path $f) {
+                  Write-Host "--- $f ---"; Get-Content $f -Tail 60 | Write-Host
+                }
+              }
+              throw "the frozen app did not answer /api/status"
+            }
             $page = Invoke-WebRequest -Uri "http://127.0.0.1:8765/" -UseBasicParsing -TimeoutSec 10
             if ($page.Content -notmatch "Factor Research Platform") { throw "dashboard did not render" }
-            Write-Host "frozen build responded correctly"
+            $factors = (Invoke-WebRequest -Uri "http://127.0.0.1:8765/api/factors" -UseBasicParsing -TimeoutSec 10).Content | ConvertFrom-Json
+            if ($factors.factors.Count -lt 30) { throw "only $($factors.factors.Count) factors registered in the frozen build" }
+            Write-Host "frozen build responded correctly ($($factors.factors.Count) factors)"
           } finally {
             if ($proc -and -not $proc.HasExited) { Stop-Process -Id $proc.Id -Force }
           }

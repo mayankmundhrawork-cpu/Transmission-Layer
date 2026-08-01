@@ -7,6 +7,7 @@ system most likely to grow a convenient "just fix this row" button, and the
 from __future__ import annotations
 
 import sqlite3
+import sys
 
 import pytest
 from fastapi.testclient import TestClient
@@ -252,3 +253,36 @@ def test_installer_script_preserves_user_data_on_uninstall():
     assert "{app}" in iss
     for user_data in ("{localappdata}", "%LOCALAPPDATA%"):
         assert f"Type: filesandordirs; Name: \"{user_data}" not in iss
+
+
+def test_launcher_survives_none_stdio(tmp_path, monkeypatch):
+    """A PyInstaller build with console=False starts with sys.stdout and
+    sys.stderr set to None on Windows. Every print(..., file=sys.stderr) then
+    raises AttributeError, uvicorn's logging does the same, and because the app
+    has no console the traceback goes nowhere — it just fails to launch.
+
+    ensure_streams() must replace them before anything writes.
+    """
+    import sys as real_sys
+
+    from src.desktop.main import ensure_streams
+
+    monkeypatch.setenv("DATA_DIR", str(tmp_path / "data"))
+    monkeypatch.setattr(real_sys, "stdout", None)
+    monkeypatch.setattr(real_sys, "stderr", None)
+
+    ensure_streams()
+
+    assert real_sys.stdout is not None
+    assert real_sys.stderr is not None
+    # The thing that used to crash.
+    print("hello", file=real_sys.stderr)
+    real_sys.stderr.flush()
+
+
+def test_ensure_streams_is_a_noop_when_streams_exist():
+    from src.desktop.main import ensure_streams
+
+    before_out, before_err = sys.stdout, sys.stderr
+    assert ensure_streams() is None
+    assert (sys.stdout, sys.stderr) == (before_out, before_err)
