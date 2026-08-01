@@ -211,3 +211,118 @@ def rebalance_dates(freq: str = "quarterly", start: dt.date = dt.date(2019, 3, 2
                 break
             day -= dt.timedelta(days=1)
     return out
+
+
+# ---------------------------------------------------------------------------
+# Fundamentals (§7/§8) — filed with realistic publication lags
+# ---------------------------------------------------------------------------
+
+#: Annual facts and their rough scale relative to revenue.
+_ANNUAL_SHAPE = {
+    "revenue": 1.0,
+    "cost_of_materials": 0.45,
+    "purchases_stock_in_trade": 0.08,
+    "inventory_change": 0.01,
+    "employee_cost": 0.12,
+    "finance_cost": 0.04,
+    "depreciation": 0.05,
+    "profit_before_tax": 0.14,
+    "tax_expense": 0.035,
+    "net_profit": 0.105,
+    "total_assets": 1.6,
+    "total_equity": 0.7,
+    "borrowings_current": 0.15,
+    "borrowings_noncurrent": 0.25,
+    "cash": 0.09,
+    "cfo": 0.13,
+    "capex": 0.07,
+    "related_party_value": 0.06,
+}
+
+
+def build_fundamentals(conn: sqlite3.Connection, isins: list[str], *,
+                       seed: int = 21, first_fy: int = 2015,
+                       last_fy: int = 2023) -> int:
+    """Annual and quarterly facts for every ISIN, with LODR-shaped filing lags.
+
+    Annual results are filed 55-75 days after the 31 March year end (the
+    statutory limit is 60 for audited annual results; late filers exist).
+    Shareholding patterns land 25-45 days after each quarter end. Those lags
+    are what acceptance test 3 measures, so they are generated rather than
+    assumed.
+    """
+    from src.store.bitemporal import BitemporalStore, Fact
+
+    rng = np.random.default_rng(seed)
+    store = BitemporalStore(conn)
+    facts: list[Fact] = []
+    shares_rows: list[tuple] = []
+
+    for i, isin in enumerate(isins):
+        scale = 5e8 * (1.0 + (i % 17))
+        growth = 1.0 + rng.normal(0.11, 0.07)
+        margin_drift = rng.normal(1.0, 0.12)
+        promoter = float(np.clip(rng.normal(58.0, 12.0), 20.0, 75.0))
+        pledge = float(max(0.0, rng.normal(8.0, 14.0)))
+        total_shares = float(scale / 40.0)
+
+        for year_index, fy in enumerate(range(first_fy, last_fy + 1)):
+            period_start = f"{fy - 1}-04-01"
+            period_end = f"{fy}-03-31"
+            lag = float(rng.uniform(55, 75))
+            published = (pd.Timestamp(period_end) + pd.Timedelta(days=lag)
+                         ).tz_localize("UTC").isoformat()
+            revenue = scale * (growth ** year_index)
+
+            for name, ratio in _ANNUAL_SHAPE.items():
+                noise = 1.0 + rng.normal(0.0, 0.06)
+                value = revenue * ratio * noise
+                if name in ("profit_before_tax", "net_profit", "tax_expense"):
+                    value *= margin_drift
+                facts.append(Fact(
+                    isin=isin, fact_name=name, period_type="A",
+                    period_start=period_start, period_end=period_end,
+                    value=float(value), published_at=published,
+                    source_doc_hash="synthetic",
+                ))
+
+            for name, value in (
+                ("auditor_change_flag", float(rng.random() < 0.08)),
+                ("auditor_qualification_flag", float(rng.random() < 0.05)),
+            ):
+                facts.append(Fact(
+                    isin=isin, fact_name=name, period_type="A",
+                    period_start=period_start, period_end=period_end,
+                    value=value, published_at=published,
+                    source_doc_hash="synthetic",
+                ))
+
+            shares_rows.append((isin, period_end, total_shares,
+                                float(100.0 - promoter), published, "synthetic"))
+
+        # Quarterly shareholding disclosures.
+        for fy in range(first_fy, last_fy + 1):
+            for quarter_end in (f"{fy - 1}-06-30", f"{fy - 1}-09-30",
+                                f"{fy - 1}-12-31", f"{fy}-03-31"):
+                lag = float(rng.uniform(25, 45))
+                published = (pd.Timestamp(quarter_end) + pd.Timedelta(days=lag)
+                             ).tz_localize("UTC").isoformat()
+                promoter = float(np.clip(promoter + rng.normal(0, 0.4), 15.0, 78.0))
+                pledge = float(np.clip(pledge + rng.normal(0, 1.2), 0.0, 95.0))
+                for name, value in (("promoter_holding_pct", promoter),
+                                    ("promoter_pledge_pct", pledge)):
+                    facts.append(Fact(
+                        isin=isin, fact_name=name, period_type="Q",
+                        period_start=quarter_end, period_end=quarter_end,
+                        value=value, published_at=published,
+                        source_doc_hash="synthetic",
+                    ))
+
+    with transaction(conn):
+        for fact in facts:
+            store.add_fact(fact)
+        conn.executemany(
+            "INSERT OR REPLACE INTO shares_outstanding (isin, as_of_date,"
+            " total_shares, free_float_pct, published_at, source_doc_hash)"
+            " VALUES (?,?,?,?,?,?)", shares_rows)
+    return len(facts)
