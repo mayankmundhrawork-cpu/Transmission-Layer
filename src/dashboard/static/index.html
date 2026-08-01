@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PIT Factor Research Platform</title>
+<style>
+  :root {
+    --bg: #0e1116; --panel: #161b22; --line: #262d36; --fg: #e6edf3;
+    --muted: #8b949e; --accent: #4493f8; --warn: #d29922; --bad: #f85149;
+    --good: #3fb950;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#fff; --panel:#f6f8fa; --line:#d0d7de; --fg:#1f2328;
+            --muted:#656d76; --accent:#0969da; --warn:#9a6700; --bad:#cf222e;
+            --good:#1a7f37; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:14px/1.5 ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  header { padding:14px 20px; border-bottom:1px solid var(--line);
+           display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
+  h1 { font-size:15px; margin:0; font-weight:600; letter-spacing:.2px; }
+  .sub { color:var(--muted); font-size:12px; }
+  nav { display:flex; gap:2px; padding:0 12px; border-bottom:1px solid var(--line);
+        overflow-x:auto; }
+  nav button { background:none; border:none; color:var(--muted); padding:10px 14px;
+               cursor:pointer; font-size:13px; border-bottom:2px solid transparent;
+               white-space:nowrap; }
+  nav button:hover { color:var(--fg); }
+  nav button.on { color:var(--fg); border-bottom-color:var(--accent); }
+  main { padding:18px 20px 60px; }
+  section { display:none; } section.on { display:block; }
+  .row { display:flex; gap:10px; align-items:flex-end; flex-wrap:wrap;
+         margin-bottom:14px; }
+  label { display:block; font-size:11px; color:var(--muted); margin-bottom:3px;
+          text-transform:uppercase; letter-spacing:.4px; }
+  select,input,button.go { background:var(--panel); color:var(--fg);
+      border:1px solid var(--line); border-radius:6px; padding:6px 9px;
+      font-size:13px; font-family:inherit; }
+  button.go { cursor:pointer; border-color:var(--accent); color:var(--accent); }
+  button.go:hover { background:var(--accent); color:#fff; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr));
+           gap:10px; margin-bottom:16px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:8px;
+          padding:11px 13px; }
+  .card .k { font-size:11px; color:var(--muted); text-transform:uppercase;
+             letter-spacing:.4px; }
+  .card .v { font-size:19px; font-weight:600; margin-top:3px;
+             font-variant-numeric:tabular-nums; }
+  .scroll { overflow-x:auto; border:1px solid var(--line); border-radius:8px; }
+  table { border-collapse:collapse; width:100%; font-size:12.5px; }
+  th,td { padding:6px 10px; text-align:left; border-bottom:1px solid var(--line);
+          white-space:nowrap; }
+  th { background:var(--panel); position:sticky; top:0; font-weight:600;
+       font-size:11px; text-transform:uppercase; letter-spacing:.4px;
+       color:var(--muted); }
+  td.num { text-align:right; font-variant-numeric:tabular-nums; }
+  tbody tr:hover { background:var(--panel); }
+  .banner { border-radius:8px; padding:10px 13px; margin-bottom:14px;
+            border:1px solid; font-size:13px; }
+  .banner.warn { border-color:var(--warn); color:var(--warn);
+                 background:color-mix(in srgb, var(--warn) 10%, transparent); }
+  .banner.bad { border-color:var(--bad); color:var(--bad);
+                background:color-mix(in srgb, var(--bad) 10%, transparent); }
+  .muted { color:var(--muted); }
+  pre { background:var(--panel); border:1px solid var(--line); border-radius:8px;
+        padding:13px; overflow-x:auto; font-size:12.5px; white-space:pre-wrap;
+        word-break:break-word; }
+  .pill { display:inline-block; padding:1px 7px; border-radius:20px; font-size:11px;
+          border:1px solid var(--line); color:var(--muted); }
+  .checklist { list-style:none; padding-left:0; }
+  .checklist li { padding:3px 0; }
+  h2 { font-size:14px; margin:20px 0 8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Point-in-Time Factor Research Platform</h1>
+  <span class="sub" id="hdr">loading…</span>
+</header>
+
+<nav>
+  <button data-tab="overview" class="on">Overview</button>
+  <button data-tab="universe">Universe</button>
+  <button data-tab="factors">Factor exposures</button>
+  <button data-tab="portfolio">Target portfolio</button>
+  <button data-tab="studies">Studies &amp; ledger</button>
+</nav>
+
+<main>
+  <section id="overview" class="on">
+    <div id="ovBanners"></div>
+    <div class="cards" id="ovCards"></div>
+    <h2>Configuration</h2>
+    <div class="scroll"><table id="ovConfig"></table></div>
+    <h2>Cost rate tables</h2>
+    <div class="scroll"><table id="ovRates"></table></div>
+  </section>
+
+  <section id="universe">
+    <div class="row">
+      <div><label>As-of date</label><select id="uDate"></select></div>
+      <div><label>Tier</label><select id="uTier">
+        <option>smallcap_inclusive</option><option>nifty500</option>
+        <option>total_market</option></select></div>
+      <button class="go" id="uGo">Load universe</button>
+    </div>
+    <p class="muted" style="font-size:12.5px">
+      Every screen is evaluated using only data available on the as-of date, and
+      the candidate pool includes securities that have since been delisted.
+    </p>
+    <div class="cards" id="uCards"></div>
+    <h2>Exclusions</h2>
+    <div class="scroll"><table id="uExcl"></table></div>
+    <h2>Members</h2>
+    <div class="scroll"><table id="uMembers"></table></div>
+  </section>
+
+  <section id="factors">
+    <div class="row">
+      <div><label>As-of date</label><select id="fDate"></select></div>
+      <div><label>Tier</label><select id="fTier">
+        <option>smallcap_inclusive</option><option>nifty500</option>
+        <option>total_market</option></select></div>
+      <div><label>Factors (ctrl-click for several)</label>
+        <select id="fNames" multiple size="6" style="min-width:230px"></select></div>
+      <button class="go" id="fGo">Compute exposures</button>
+    </div>
+    <div class="scroll"><table id="fTable"></table></div>
+    <h2>Factor catalogue</h2>
+    <div class="scroll"><table id="fCat"></table></div>
+  </section>
+
+  <section id="portfolio">
+    <div class="row">
+      <div><label>As-of date</label><select id="pDate"></select></div>
+      <div><label>Tier</label><select id="pTier">
+        <option>smallcap_inclusive</option><option>nifty500</option>
+        <option>total_market</option></select></div>
+      <div><label>Factor</label><select id="pFactor" style="min-width:200px"></select></div>
+      <button class="go" id="pGo">Build target portfolio</button>
+    </div>
+    <div class="cards" id="pCards"></div>
+    <div id="pWarn"></div>
+    <div class="scroll"><table id="pTable"></table></div>
+  </section>
+
+  <section id="studies">
+    <div class="cards" id="sCards"></div>
+    <h2>Pre-registrations</h2>
+    <div class="scroll"><table id="sSpecs"></table></div>
+    <h2>Reports</h2>
+    <div class="row"><select id="sReport" style="min-width:340px"></select>
+      <button class="go" id="sGo">Open report</button></div>
+    <pre id="sBody" class="muted">Select a report.</pre>
+    <h2>Ledger</h2>
+    <pre id="sLedger" class="muted">—</pre>
+    <h2>Trial registry (multiple-testing burden)</h2>
+    <div class="scroll"><table id="sTrials"></table></div>
+  </section>
+</main>
+
+<script>
+const $ = s => document.querySelector(s);
+const api = async (p) => {
+  const r = await fetch(p);
+  const body = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(body.detail || r.statusText);
+  return body;
+};
+const esc = v => String(v ?? "").replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const isNum = v => typeof v === "number";
+const fmt = v => v === null || v === undefined ? "—"
+  : isNum(v) ? (Number.isInteger(v) ? v.toLocaleString("en-IN")
+      : v.toLocaleString("en-IN", {maximumFractionDigits: 4})) : esc(v);
+
+function table(el, rows, cols) {
+  const t = $(el);
+  if (!rows || !rows.length) { t.innerHTML = "<tbody><tr><td class='muted'>No rows.</td></tr></tbody>"; return; }
+  cols = cols || Object.keys(rows[0]);
+  t.innerHTML = "<thead><tr>" + cols.map(c => `<th>${esc(c)}</th>`).join("") + "</tr></thead><tbody>"
+    + rows.map(r => "<tr>" + cols.map(c =>
+        `<td class="${isNum(r[c]) ? "num" : ""}">${fmt(r[c])}</td>`).join("") + "</tr>").join("")
+    + "</tbody>";
+}
+function kv(el, obj) {
+  table(el, Object.entries(obj || {}).map(([k, v]) =>
+    ({ key: k, value: typeof v === "object" ? JSON.stringify(v) : v })), ["key", "value"]);
+}
+function cards(el, pairs) {
+  $(el).innerHTML = pairs.map(([k, v]) =>
+    `<div class="card"><div class="k">${esc(k)}</div><div class="v">${fmt(v)}</div></div>`).join("");
+}
+
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("nav button").forEach(x => x.classList.toggle("on", x === b));
+  document.querySelectorAll("section").forEach(s =>
+    s.classList.toggle("on", s.id === b.dataset.tab));
+});
+
+let SESSIONS = [];
+async function boot() {
+  let st;
+  try { st = await api("/api/status"); }
+  catch (e) { $("#hdr").textContent = "backend unavailable: " + e.message; return; }
+
+  $("#hdr").textContent = `${st.config.universe_tier} · ${st.config.benchmark} · `
+    + `₹${st.config.capital_inr.toLocaleString("en-IN")} · `
+    + (st.config.live_enabled ? "LIVE ENABLED" : "live off") + ` · LLM ${st.config.llm_mode}`;
+
+  const banners = [];
+  if (!st.store_present) banners.push(["bad",
+    "No derived store yet. Run <code>python -m src.archive.backfill</code> to fetch "
+    + "source documents, then <code>python -m src.store.build</code>."]);
+  if (st.rates && !st.rates.all_verified) banners.push(["warn",
+    `${st.rates.unverified_count} of ${st.rates.tables.length} cost rate tables are `
+    + "UNVERIFIED against primary sources. Every net-of-cost figure inherits whatever "
+    + "error they contain — see src/costs/rates.yaml."]);
+  if (st.config.live_enabled) banners.push(["bad",
+    "LIVE_ENABLED is true. Live orders require a typed per-rebalance confirmation, "
+    + "but this flag should be false unless you are actively trading."]);
+  $("#ovBanners").innerHTML = banners.map(([k, m]) =>
+    `<div class="banner ${k}">${m}</div>`).join("");
+
+  const s = st.store || {}, a = st.archive || {};
+  cards("#ovCards", [
+    ["Securities", s.securities], ["Price rows", s.price_rows],
+    ["First session", s.first_session], ["Last session", s.last_session],
+    ["Registered trials", s.trials],
+    ["Archive entries", a.entries], ["Archive blobs", a.distinct_blobs],
+  ]);
+  kv("#ovConfig", st.config);
+  table("#ovRates", (st.rates && st.rates.tables) || []);
+
+  try { SESSIONS = (await api("/api/sessions")).sessions || []; } catch { SESSIONS = []; }
+  for (const id of ["#uDate", "#fDate", "#pDate"]) {
+    $(id).innerHTML = SESSIONS.map(d => `<option>${d}</option>`).join("");
+  }
+  for (const id of ["#uTier", "#fTier", "#pTier"]) $(id).value = st.config.universe_tier;
+
+  const cat = (await api("/api/factors")).factors;
+  $("#fNames").innerHTML = cat.map(f =>
+    `<option value="${f.name}">${f.name} (${f.category})</option>`).join("");
+  $("#pFactor").innerHTML = cat.map(f => `<option value="${f.name}">${f.name}</option>`).join("");
+  table("#fCat", cat.map(f => ({
+    name: f.name, category: f.category,
+    higher_is_better: f.higher_is_better, period: f.period_type,
+    min_lag_days: f.min_publication_lag_days,
+    required_facts: (f.required_facts || []).join(" ") || "—",
+    definition: f.doc,
+  })));
+  loadStudies();
+}
+
+$("#uGo").onclick = async () => {
+  try {
+    const u = await api(`/api/universe?date=${$("#uDate").value}&tier=${$("#uTier").value}`);
+    cards("#uCards", [["Members", u.count], ["As-of", u.date], ["Tier", u.tier]]);
+    table("#uExcl", Object.entries(u.excluded).map(([k, v]) => ({ screen: k, excluded: v })));
+    table("#uMembers", u.members.map(m => ({
+      isin: m.isin, symbol: m.symbol, sector: m.sector,
+      close: m.close, median_turnover: m.median_turnover, sessions: m.sessions,
+    })));
+  } catch (e) { $("#uMembers").innerHTML = `<tbody><tr><td class="muted">${esc(e.message)}</td></tr></tbody>`; }
+};
+
+$("#fGo").onclick = async () => {
+  const names = [...$("#fNames").selectedOptions].map(o => o.value);
+  if (!names.length) return alert("Select at least one factor.");
+  try {
+    const r = await api(`/api/exposures?date=${$("#fDate").value}&tier=${$("#fTier").value}`
+      + `&names=${names.join(",")}`);
+    table("#fTable", r.rows);
+  } catch (e) { $("#fTable").innerHTML = `<tbody><tr><td class="muted">${esc(e.message)}</td></tr></tbody>`; }
+};
+
+$("#pGo").onclick = async () => {
+  try {
+    const p = await api(`/api/portfolio?date=${$("#pDate").value}&tier=${$("#pTier").value}`
+      + `&factor=${$("#pFactor").value}`);
+    const s = p.summary;
+    cards("#pCards", [
+      ["Positions", s.n_positions], ["Invested", (s.invested_weight * 100).toFixed(2) + "%"],
+      ["Cash", (s.cash_weight * 100).toFixed(2) + "%"],
+      ["Max position", (s.max_position_weight * 100).toFixed(2) + "%"],
+      ["Max sector", (s.max_sector_weight * 100).toFixed(2) + "%"],
+      ["Worst days to liquidate", s.worst_days_to_liquidate.toFixed(2)],
+    ]);
+    $("#pWarn").innerHTML = s.binding_constraints.length
+      ? `<div class="banner warn">Binding constraints: ${s.binding_constraints.join(", ")}.
+         Where <b>capacity</b> binds, the book is too large for what this tier can absorb
+         at the participation cap.</div>` : "";
+    table("#pTable", p.positions);
+  } catch (e) {
+    $("#pWarn").innerHTML = `<div class="banner bad">${esc(e.message)}</div>`;
+    table("#pTable", []);
+  }
+};
+
+async function loadStudies() {
+  const st = await api("/api/studies");
+  cards("#sCards", [["Pre-registrations", st.specs.length],
+                    ["Reports", st.reports.length],
+                    ["Registered trials", st.trial_count]]);
+  table("#sSpecs", st.specs.map(s => ({
+    study_id: s.study_id, factor: s.factor, tier: s.tier,
+    window: s.window.join(" → "), horizon_days: s.horizon_days,
+    prereg_hash: s.prereg_hash.slice(0, 12), fingerprint: s.spec_fingerprint,
+  })));
+  $("#sReport").innerHTML = st.reports.map(r => `<option>${esc(r)}</option>`).join("")
+    || "<option value=''>(no reports yet)</option>";
+  $("#sLedger").textContent = st.ledger || "No ledger yet.";
+  table("#sTrials", st.trials.map(t => ({
+    trial_id: t.trial_id, factor: t.factor_name, tier: t.universe_tier,
+    horizon: t.horizon_days, p_value: t.p_value, sharpe: t.sharpe,
+    effective_n: t.effective_n, run_at: t.run_at,
+  })));
+}
+
+$("#sGo").onclick = async () => {
+  const name = $("#sReport").value;
+  if (!name) return;
+  try { $("#sBody").textContent = (await api(`/api/report/${encodeURIComponent(name)}`)).markdown; }
+  catch (e) { $("#sBody").textContent = e.message; }
+};
+
+boot();
+</script>
+</body>
+</html>

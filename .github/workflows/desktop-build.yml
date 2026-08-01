@@ -1,0 +1,137 @@
+name: Desktop build (Windows installer)
+
+# Builds the desktop program and produces a downloadable Windows installer.
+#
+# Every run uploads the installer as a workflow artifact. Pushing a tag like
+# v0.1.0 additionally publishes a GitHub Release with the installer attached,
+# which is the link to hand someone who just wants to install the thing.
+
+on:
+  push:
+    branches: ["**"]
+    paths:
+      - "src/**"
+      - "prereg/**"
+      - "desktop.spec"
+      - "installer/**"
+      - "requirements-platform.txt"
+      - ".github/workflows/desktop-build.yml"
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version stamped into the installer"
+        required: false
+        default: "0.1.0"
+
+permissions:
+  contents: write   # needed to create a release on a tag
+
+concurrency:
+  group: desktop-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Resolve version
+        id: version
+        shell: bash
+        run: |
+          if [[ "${GITHUB_REF}" == refs/tags/v* ]]; then
+            echo "value=${GITHUB_REF#refs/tags/v}" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=${{ github.event.inputs.version || '0.1.0' }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-platform.txt
+          python -m pip install pyinstaller==6.11.1
+
+      - name: Run the test suite
+        # A red suite must not produce an installer. The whole point of this
+        # platform is that its results are trustworthy; shipping a build whose
+        # look-ahead canaries are failing would defeat that entirely.
+        run: python -m pytest -q tests/platform
+
+      - name: Freeze with PyInstaller
+        run: pyinstaller desktop.spec --noconfirm --clean
+
+      - name: Smoke-test the frozen build
+        # Start the app headless and confirm the API answers. Catches the
+        # classic freeze failure — a hidden import that only resolves from
+        # source — before a user does.
+        shell: pwsh
+        run: |
+          $exe = "dist/PITFactorPlatform/PITFactorPlatform.exe"
+          if (-not (Test-Path $exe)) { throw "PyInstaller produced no executable" }
+          $proc = Start-Process -FilePath $exe -ArgumentList "--no-window","--port","8765" -PassThru
+          try {
+            $ok = $false
+            foreach ($i in 1..40) {
+              Start-Sleep -Seconds 3
+              try {
+                $r = Invoke-WebRequest -Uri "http://127.0.0.1:8765/api/status" -UseBasicParsing -TimeoutSec 5
+                if ($r.StatusCode -eq 200) { $ok = $true; break }
+              } catch { }
+            }
+            if (-not $ok) { throw "the frozen app did not answer /api/status" }
+            $page = Invoke-WebRequest -Uri "http://127.0.0.1:8765/" -UseBasicParsing -TimeoutSec 10
+            if ($page.Content -notmatch "Factor Research Platform") { throw "dashboard did not render" }
+            Write-Host "frozen build responded correctly"
+          } finally {
+            if ($proc -and -not $proc.HasExited) { Stop-Process -Id $proc.Id -Force }
+          }
+
+      - name: Build the installer
+        shell: pwsh
+        run: |
+          $iscc = "C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
+          if (-not (Test-Path $iscc)) {
+            choco install innosetup --no-progress -y
+          }
+          & $iscc "/DAppVersion=${{ steps.version.outputs.value }}" "installer\setup.iss"
+          Get-ChildItem installer\Output
+
+      - name: Upload installer artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PITFactorPlatform-${{ steps.version.outputs.value }}-setup
+          path: installer/Output/*.exe
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Publish release on a tag
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: installer/Output/*.exe
+          generate_release_notes: true
+          body: |
+            Windows installer for the Point-in-Time Factor Research Platform.
+
+            **Install:** download the `.exe` below and run it. No Python needed.
+
+            On first launch the app opens with an empty store. Populate it with:
+
+            ```
+            python -m src.archive.backfill --source bhavcopy --start 2022-04-01
+            python -m src.store.build
+            ```
+
+            (Or use the equivalent commands from the install directory.)
+            Credentials go in `.env` under
+            `%LOCALAPPDATA%\PITFactorPlatform\` — see `.env.example`.
+
+            Live trading is OFF by default and stays off until `LIVE_ENABLED=True`
+            plus a typed per-rebalance confirmation.

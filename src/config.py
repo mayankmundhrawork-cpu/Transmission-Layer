@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import datetime as dt
 import os
+import sys
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Final, Literal, get_args
@@ -26,8 +27,48 @@ from typing import Final, Literal, get_args
 # Paths
 # ---------------------------------------------------------------------------
 
-REPO_ROOT: Final[Path] = Path(__file__).resolve().parent.parent
-ENV_FILE: Final[Path] = REPO_ROOT / ".env"
+#: True when running from a PyInstaller bundle (the desktop build).
+FROZEN: Final[bool] = bool(getattr(sys, "frozen", False))
+
+
+def _bundle_root() -> Path:
+    """Where the read-only application files live.
+
+    In a frozen build that is the PyInstaller extraction directory; from source
+    it is the repo root. Both hold `prereg/` and the bundled static assets.
+    """
+    if FROZEN:
+        return Path(getattr(sys, "_MEIPASS", Path(sys.executable).parent))
+    return Path(__file__).resolve().parent.parent
+
+
+def _default_data_dir(root: Path) -> Path:
+    """Where the archive and database live.
+
+    An installed app cannot write next to its executable — on Windows that is
+    Program Files, which is read-only for a normal user, and on macOS it is
+    inside the bundle. So a frozen build keeps its data under the user's
+    profile, which also means uninstalling the app does not delete a
+    multi-hour backfill.
+    """
+    if not FROZEN:
+        return root / "data"
+    if sys.platform == "win32":
+        base = Path(os.environ.get("LOCALAPPDATA", Path.home() / "AppData" / "Local"))
+    elif sys.platform == "darwin":
+        base = Path.home() / "Library" / "Application Support"
+    else:
+        base = Path(os.environ.get("XDG_DATA_HOME", Path.home() / ".local" / "share"))
+    return base / "PITFactorPlatform"
+
+
+REPO_ROOT: Final[Path] = _bundle_root()
+
+#: `.env` sits next to the data, not inside the bundle: a frozen app's
+#: directory is read-only, and credentials should not live in Program Files.
+ENV_FILE: Final[Path] = (
+    _default_data_dir(REPO_ROOT) / ".env" if FROZEN else REPO_ROOT / ".env"
+)
 
 UniverseTier = Literal["nifty500", "smallcap_inclusive", "total_market"]
 RebalanceFreq = Literal["monthly", "quarterly"]
@@ -278,7 +319,7 @@ class Config:
 def load_config(repo_root: Path | None = None) -> Config:
     """Build a :class:`Config` from environment + `.env`, applying §0 defaults."""
     root = Path(repo_root) if repo_root else REPO_ROOT
-    data_dir = Path(_get_str("DATA_DIR", str(root / "data")))
+    data_dir = Path(_get_str("DATA_DIR", str(_default_data_dir(root))))
 
     cfg = Config(
         # CAPITAL_INR default is the deployable book this platform was
