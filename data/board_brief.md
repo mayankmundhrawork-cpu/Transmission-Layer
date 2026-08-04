@@ -1,45 +1,29 @@
-# Transmission Layer — board brief · 2026-08-03 21:19Z
+# Transmission Layer — board brief · 2026-08-04 06:40Z
 
-data as of **2026-08-03** · 98 series · 21 red / 29 amber · 8 events surfaced (26 suppressed)
+data as of **2026-08-04** · 98 series · 18 red / 27 amber · 8 events surfaced (21 suppressed)
 
 ## Regime & assumption health (measured at generation)
-- **Regime: RISK_ON** (score 0.33, 1d in regime; vol-pct 0.367, breadth-off 0.294, Markov P(high-vol) 0.07)
-- [INVERTED] **safe_haven_gold** — corr20 -0.43, corr60 -0.44, contra nifty_50 corr20=0.21, last shift 2026-06-04. Channel: risk-off safe-haven bid: vol up -> gold bid
+- **Regime: NEUTRAL** (score 0.475, 1d in regime; vol-pct 0.45, breadth-off 0.5, Markov P(high-vol) 0.07)
+- [INVERTED] **safe_haven_gold** — corr20 -0.43, corr60 -0.44, contra nifty_50 corr20=0.18, last shift 2026-06-04. Channel: risk-off safe-haven bid: vol up -> gold bid
 - [VALID] **gold_silver_comove** — corr20 0.92, corr60 0.82, last shift 2026-05-13. Channel: monetary metals co-move; ratio extremes are rotations
-- [VALID] **metal_copper_channel** — corr20 0.35, corr60 0.32, last shift 2026-05-19. Channel: global copper leads Indian metal equities
-- [WEAK] **inr_oil_channel** — corr20 0.15, corr60 -0.05, last shift 2026-06-09. Channel: oil up -> import bill -> INR weakens (usd_inr up)
+- [VALID] **metal_copper_channel** — corr20 0.32, corr60 0.32, last shift 2026-05-19. Channel: global copper leads Indian metal equities
+- [WEAK] **inr_oil_channel** — corr20 0.16, corr60 -0.04, last shift 2026-06-09. Channel: oil up -> import bill -> INR weakens (usd_inr up)
 - [INSUFFICIENT_DATA] **goi_ust_comove** — corr20 None, corr60 None. Channel: global duration transmits to GoI yields
 - [VALID] **vix_equity_inverse** — corr20 -0.96, corr60 -0.84, last shift 2026-05-05. Channel: vol spike -> equity drawdown
-- [WEAK] **dxy_inr_channel** — corr20 -0.07, corr60 -0.05, last shift 2026-01-22. Channel: broad dollar strength -> EM FX weakness incl INR
+- [WEAK] **dxy_inr_channel** — corr20 -0.09, corr60 -0.03, last shift 2026-01-22. Channel: broad dollar strength -> EM FX weakness incl INR
 - [WEAK] **real_rates_gold_inverse** — corr20 -0.18, corr60 -0.25, last shift 2026-05-13. Channel: real yields up -> non-yielding gold down
 - [WEAK] **gsr_stress_gauge** — corr20 0.29, corr60 0.2, last shift 2026-04-21. Channel: gold/silver ratio rises under monetary stress
 
 ## Scan control & verified transmission setups
 - FDR (BH q=0.1): **6 of 90** scanned series survive multiplicity control (effective p ≤ 0.0010380708664139426)
-- **SETUP** ust_10y → usd_jpy: leads 1d (ccf 0.484, β 0.2629, p 0.0); driver zc 1.58 → expected 0.393%. Type hit-rate 0.816 (n=3048).
-- **SETUP** dyn_coin → asx_200: leads 1d (ccf 0.322, β 0.05, p 0.0); driver zc -2.26 → expected -0.529%. Type hit-rate 0.816 (n=3048).
-- **SETUP** ust_10y → gbp_usd: leads 1d (ccf -0.28, β -0.1138, p 0.0); driver zc 1.58 → expected -0.17%. Type hit-rate 0.816 (n=3048).
-- **SETUP** dyn_coin → aud_usd: leads 1d (ccf 0.264, β 0.0328, p 0.00023); driver zc -2.26 → expected -0.348%. Type hit-rate 0.816 (n=3048).
-- **SETUP** tips_10y_real → gbp_usd: leads 1d (ccf -0.25, β -0.0562, p 4e-05); driver zc 1.57 → expected -0.14%. Type hit-rate 0.816 (n=3048).
-- Track record · residual_reversion: hit-rate **0.493** (n=1136) — |resid_z|>=2.0 -> fwd 5d return opposes residual
-- Track record · transmission_follow: hit-rate **0.816** (n=3048) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
+- **SETUP** ust_10y → usd_jpy: leads 1d (ccf 0.484, β 0.2629, p 0.0); driver zc 1.58 → expected 0.393%. Type hit-rate 0.815 (n=3075).
+- **SETUP** dyn_amzn → taiwan_weighted: leads 1d (ccf 0.363, β 0.2869, p 0.0); driver zc 6.66 → expected 4.395%. Type hit-rate 0.815 (n=3075).
+- **SETUP** dyn_coin → asx_200: leads 1d (ccf 0.322, β 0.05, p 0.0); driver zc -2.26 → expected -0.529%. Type hit-rate 0.815 (n=3075).
+- Track record · residual_reversion: hit-rate **0.495** (n=1144) — |resid_z|>=2.0 -> fwd 5d return opposes residual
+- Track record · transmission_follow: hit-rate **0.815** (n=3075) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
 - Track record · spread_reversion: hit-rate **0.6** (n=15) — |dev| >= 2sigma vs PIT 252d -> |dev| shrinks >=25% within max(half-life,10) sessions
 
 ## Events (ranked)
-
-### [RED 9.06] cross-asset · 2 series ↑
-- usd_jpy [FX]: last 157.15, z20 -6.23, zc -6.07, resid-z -5.83 [unexplained], 1d -1.89%, |z20|=6.23
-- dyn_amzn [EQUITIES]: last 284.02, z20 4.05, zc 6.66, resid-z 9.76 [unexplained], 1d 4.58%, |z20|=4.05; 1y-pct=100
-- **Mechanism**: The joint intervention by Japan and the US to support the yen has triggered a move in usd_jpy, while Amazon's strong earnings and cloud growth have driven dyn_amzn higher. These moves are unexplained by factor exposures, with resid_z values of -5.83 and 9.76, respectively.
-- **Gap**: No gap: the big raw moves in usd_jpy and dyn_amzn are accompanied by small resid_z values, indicating that they are largely priced in
-- **India take**: Indian instruments such as dyn_muthootfin_ns and dyn_thangamayl_ns have already reacted to the moves in usd_jpy and dyn_amzn, with z20 values of -3.09 and -3.5, respectively. dyn_cartrade_ns remains quiet with a z20 value of 0.13.
-- Watch next: usd_jpy (down) — already moved; joint intervention to support yen
-- Watch next: dyn_amzn (up) — already moved; strong earnings and cloud growth
-- **India receivers**: dyn_muthootfin_ns (rho -0.512, z -3.09); dyn_thangamayl_ns (rho -0.369, z -3.5); dyn_cartrade_ns (rho -0.364, z 0.13)
-- Source: Yen holds gains after Japan, US confirm joint intervention, signal more action — ET Markets, 2026-08-03. https://economictimes.indiatimes.com/markets/forex/forex-news/yen-holds-gains-after-japan-us-confirm-joint-intervention-signal-more-action/articleshow/132839035.cms
-- Source: Amazon joins $3 trillion club as AI, cloud growth fuel stock rally — ET Markets, 2026-08-03. https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/amazon-joins-3-trillion-club-as-ai-cloud-growth-fuel-stock-rally/articleshow/132835634.cms
-- Source: Why the U.S. decided to help Japan by boosting the flailing yen — MarketWatch Top, 2026-08-03. https://www.marketwatch.com/story/joint-u-s-japanese-intervention-boosts-the-yen-but-will-it-be-enough-069451f5?mod=mw_rss_topstories
-- Historical analogues: 2024-10-16 (d=0.15), 2024-11-21 (d=0.23), 2026-03-31 (d=0.24)
 
 ### [RED 9.02] cross-asset · 5 series ↑
 - ust_30y [RATES]: last 5.27, z20 2.89, zc 1.53, resid-z 1.91 [unexplained], 1d 1.15%, |z20|=2.89; 1y-pct=100
@@ -56,39 +40,51 @@ data as of **2026-08-03** · 98 series · 21 red / 29 amber · 8 events surfaced
 - Source: BNP SEES FED HIKES PUSHING YIELDS HIGHER BNP Paribas expects U.S. Treasury yields to keep rising as markets price in future Fed rate hikes. The bank forecasts three Fed hikes starting in December, arguing investors will continue to question the Fed's credibility after last — DeItaone, 2026-08-03. https://t.me/walter_bloomberg/34210
 - Historical analogues: 2026-05-22 (d=0.0), 2026-05-07 (d=0.32), 2026-03-30 (d=0.54)
 
-### [RED 8.22] cross-asset · 8 series ↑
+### [RED 8.36] cross-asset · 9 series ↑
 - cac_40 [INDICES]: last 8626.25, z20 3.72, zc 0.32, resid-z 0.18 [quiet], 1d 1.37%, |z20|=3.72; 1y-pct=100
 - stoxx_50 [INDICES]: last 6431.81, z20 3.17, zc 0.20, resid-z -0.13 [quiet], 1d 1.16%, |z20|=3.17; 1y-pct=100
 - dax [INDICES]: last 26038.36, z20 2.90, zc 0.08, resid-z -0.25 [quiet], 1d 1.60%, |z20|=2.90; 1y-pct=100
-- comex_copper [COMMODITIES]: last 6.54, z20 2.33, zc -0.06, resid-z -0.83 [quiet], 1d 1.67%, |z20|=2.33; 1y-pct=98; co-occur[metal_copper] same-direction (channel VALID)
+- comex_copper [COMMODITIES]: last 6.60, z20 2.47, zc 0.37, resid-z -0.83 [quiet], 1d 0.85%, |z20|=2.47; 1y-pct=99; co-occur[metal_copper] same-direction (channel VALID)
 - dow_jones [INDICES]: last 53184.43, z20 2.23, zc 0.47, resid-z 0.22 [quiet], 1d 1.33%, |z20|=2.23; 1y-pct=100
 - sp500 [INDICES]: last 7599.97, z20 1.85, zc 0.67, resid-z 0.82 [quiet], 1d 1.47%, |z20|=1.85; 1y-pct=99
 - dyn_vt [EQUITIES]: last 157.60, z20 1.44, zc 0.23, resid-z -2.02 [unexplained], 1d 1.11%, 1y-pct=95
 - ftse_100 [INDICES]: last 10850.38, z20 1.38, zc -0.46, resid-z -0.48 [quiet], 1d -0.16%, 1y-pct=98
-- **Mechanism**: The recent rally in global equities, led by the Dow Jones and S&P 500, is driven by easing geopolitical tensions and optimism about inflation. This risk-on sentiment is transmitted to Indian markets through correlated instruments like Nifty 50, which has already reacted. The metal_copper_channel, a valid and active channel, also supports this transmission.
-- **Gap**: No gap: the recent move in global equities is largely priced in, with most indices showing high z20 levels and low resid_z values, indicating that the move is largely explained by factor exposures.
-- **India take**: Indian instruments like Nifty 50 and Nifty Midcap 100 have already reacted to the global rally, with Nifty 50 showing a correlation of 0.545 with cac_40. However, the metal_copper_channel may lead to further movements in Indian metal equities.
-- Watch next: nifty_50 (up) — already moved; correlated with cac_40
-- **India receivers**: nifty_50 (rho 0.545, z 3.43); nifty_midcap_100 (rho 0.51, z 2.51); nifty_it (rho 0.366, z 2.46)
+- gold_silver_ratio [DERIVED]: last 69.59, z20 -0.21, zc n/a, resid-z n/a [quiet], 1d -1.14%, GSR<75 (extreme low)
+- **Mechanism**: The recent rally in global equities, led by the Dow Jones and S&P 500, is driven by easing geopolitical tensions in the Middle East and optimism about inflation easing, as expressed by Fed's Williams. This sentiment is transmitted to Indian markets through correlated instruments like Nifty 50 and Nifty Midcap 100.
+- **Gap**: No gap: the big raw move in global equities is largely priced in, with most indices showing high z20 levels and low resid_z values, indicating that the move is explained by factor exposures.
+- **India take**: Indian instruments like Nifty 50 and Nifty Midcap 100 have already reacted to the global equity rally, while Nifty Metal has also moved in response to the gold-silver ratio. However, the metal_copper_channel, which is a valid channel, suggests that global copper prices may lead Indian metal equities, potentially driving further moves in Nifty Metal.
+- Watch next: nifty_50 (up) — already moved; reacted to global equity rally
+- Watch next: nifty_midcap_100 (up) — already moved; reacted to global equity rally
+- **India receivers**: nifty_50 (rho 0.539, z 1.6); nifty_midcap_100 (rho 0.535, z 1.46); nifty_metal (rho -0.423, z 3.04)
 - Source: Traders in the world’s most important financial market are bracing for a wild stretch ahead — MarketWatch Top, 2026-08-03. https://www.marketwatch.com/story/traders-in-the-worlds-most-important-financial-market-are-bracing-for-a-wild-stretch-ahead-4a1507dc?mod=mw_rss_topstories
 - Source: Wall Street rallies, Dow closes at record on Iran talks optimism — Mint Markets, 2026-08-03. https://www.livemint.com/market/wall-street-rallies-dow-closes-at-record-on-iran-talks-optimism-11785787392771.html
 - Source: Wall Street climbs as crude oil prices plunge, Amazon jumps 3.8% — Mint Markets, 2026-08-03. https://www.livemint.com/market/stock-market-news/wall-street-climbs-as-crude-oil-prices-plunge-amazon-jumps-38-11785765123026.html
-- Historical analogues: 2024-10-10 (d=0.89), 2024-10-03 (d=0.97), 2024-10-22 (d=1.02)
+- Historical analogues: 2024-10-10 (d=0.85), 2024-10-03 (d=1.01), 2024-11-07 (d=1.05)
 
-### [RED 7.03] cross-asset · 3 series ↑
-- dyn_jiofin_bo [EQUITIES]: last 262.00, z20 3.71, zc 1.84, resid-z 2.39 [unexplained], 1d 2.16%, |z20|=3.71
-- nifty_50 [INDICES]: last 24774.30, z20 3.43, zc 0.36, resid-z 0.42 [quiet], 1d 1.60%, |z20|=3.43
-- nifty_midcap_100 [INDICES]: last 63668.10, z20 2.51, zc 0.40, resid-z -0.10 [quiet], 1d 1.26%, |z20|=2.51; 1y-pct=100
-- **Mechanism**: The Nifty 50's unusual surge of nearly 200 points in the final minutes of trade, due to the new closing auction session, has created a discrepancy in the Indian stock market. This move is not fully explained by factor exposures, as evidenced by the resid_z of 0.42 for Nifty 50. The metal_copper_channel and vix_equity_inverse channels are valid and may be contributing to the propagation of this move.
-- **Gap**: No gap: The move in Nifty 50 is largely priced, given its z20 level of 3.43 and the small resid_z of 0.42, indicating that the market has already accounted for this move.
-- **India take**: The Indian instruments that express this move are dyn_muthootfin_ns, dyn_bharatcoal_ns, and nifty_metal, which have already reacted. However, dyn_indianb_ns and dyn_indusindbk_bo have not yet reacted and may be worth watching.
-- Watch next: dyn_jiofin_bo (up) — already moved; High z20 level and unexplained move
-- Watch next: nifty_50 (up) — already moved; Unusual surge in the final minutes of trade
-- **India receivers**: dyn_muthootfin_ns (rho 0.692, z -3.09); dyn_bharatcoal_ns (rho 0.633, z -1.52); dyn_indianb_ns (rho 0.622, z 0.79); dyn_indusindbk_bo (rho 0.614, z 0.04)
-- Source: New closing auction sparks rare Nifty-Sensex split amid low participation — Mint Markets, 2026-08-03. https://www.livemint.com/market/new-closing-auction-sparks-rare-nifty-sensex-split-amid-low-participation-11785769915392.html
-- Source: Closing price discovery faces first test as CAS spikes Nifty by nearly 200 points — BusinessLine Mkts, 2026-08-03. https://www.thehindubusinessline.com/markets/closing-price-discovery-faces-first-test-as-cas-spikes-nifty-by-nearly-200-points/article71302249.ece
-- Source: Why did Nifty 50 jump 200 points in the final minutes of trade? Here's what happened — Mint Markets, 2026-08-03. https://www.livemint.com/market/stock-market-news/why-did-the-nifty-50-jump-200-points-in-the-final-minutes-of-trade-heres-what-happened-11785765452716.html
-- Historical analogues: 2025-07-17 (d=0.69), 2024-11-07 (d=0.98), 2025-08-13 (d=1.26)
+### [RED 7.56] dyn_atherenerg_ns ↑
+- dyn_atherenerg_ns [EQUITIES]: last 1466.30, z20 5.56, zc 4.69, resid-z 0.51 [moved], 1d 14.55%, |z20|=5.56; 1y-pct=100
+- **Mechanism**: The surge in Ather Energy's stock price is driven by its strong Q1 FY27 results, which showed a significant narrowing in its net loss, signaling improved operating performance. This move is priced, given the stock's z20 level of 5.56 and a relatively low resid_z of 0.51, indicating that the move is largely explained by factor exposures. The metal_copper_channel, which is VALID, may also contribute to the move, as global copper leads Indian metal equities.
+- **Gap**: No gap: the move in Ather Energy's stock is largely explained by its strong Q1 results and factor exposures, with a low resid_z indicating that the price move is priced
+- **India take**: The Indian instrument that expresses this move is the Nifty Auto index, which may react positively to Ather Energy's strong results. The Nifty Auto index has not yet reacted, but is worth watching for potential upside.
+- Watch next: nifty_50 (up) — not yet - watch; Improved sentiment from Ather Energy's results may lift the broader market
+- Source: Multibagger stock Ather Energy share price soars 18% to record high post Q1 FY27 results: Should you buy? — Mint Markets, 2026-08-04. https://www.livemint.com/market/stock-market-news/multibagger-stock-ather-energy-share-price-soars-18-to-record-high-post-q1-fy27-results-should-you-buy-11785824415092.html
+- Source: Ather Energy share price target goes up to Rs 1,714. What are CLSA, Nomura, and HSBC saying? — ET Markets, 2026-08-04. https://economictimes.indiatimes.com/markets/stocks/news/ather-energy-share-price-target-goes-up-to-rs-1714-what-are-clsa-nomura-and-hsbc-saying/articleshow/132848638.cms
+- Source: Q1 Results Today Live: Bharti Airtel, ONGC, Pidilite, Marico, Nykaa, Bharti Hexacom, NHPC, MCX, Godrej Properties, Kalyan Jewellers, Alembic, RITES, Zydus Wellness to announce Q1 results, Ather Energy, KEI, Sundaram Finance shares gain after Q1, DLF, UPL, Nazara, IREDA in red — BusinessLine Mkts, 2026-08-04. https://www.thehindubusinessline.com/markets/q1-results-today-live-updates-bharti-airtel-ongc-pidilite-nykaa-marico-nhpc-mcx-godrej-properties-zydus-alembic-rites-kalyan-jewellers-uno-minda-tata-invest-united-breweries-results-04-august-2026/article71300717.ece
+- Historical analogues: 2026-07-10 (d=0.0), 2025-07-31 (d=0.03), 2025-07-15 (d=0.03)
+
+### [RED 6.88] cross-asset · 2 series ↑
+- dyn_amzn [EQUITIES]: last 284.02, z20 4.05, zc 6.66, resid-z 9.76 [unexplained], 1d 4.58%, |z20|=4.05; 1y-pct=100
+- usd_jpy [FX]: last 157.64, z20 -3.43, zc 0.05, resid-z -5.83 [unexplained], 1d 0.04%, |z20|=3.43
+- **Mechanism**: The recent surge in the yen, fueled by speculation of further intervention by Japanese authorities, has led to a significant move in the USD/JPY currency pair, which in turn has triggered a reaction in the US equities market, particularly in Amazon stocks. This cross-asset move is likely driven by the transmission of monetary policy and risk sentiment across markets. The verified transmission setup of ust_10y -> usd_jpy and dyn_amzn -> taiwan_weighted suggests a lead-lag relationship between these assets, which may be contributing to the current price action.
+- **Gap**: No gap: the big raw move in USD/JPY and Amazon stocks is accompanied by a significant resid_z, indicating that the move is largely unexplained by factor exposures, but the magnitude of the move is not unusually large given the current market conditions and the transmission channels at play.
+- **India take**: The Indian transmission candidates, such as dyn_muthootfin_ns and dyn_thangamayl_ns, have already reacted to the move in USD/JPY and Amazon stocks, respectively, suggesting that the Indian market has largely priced in the current developments. However, dyn_cartrade_ns remains quiet and may be worth watching for potential follow-through.
+- Watch next: dyn_amzn (up) — already moved; resid_z=9.76 indicates an unexplained move
+- Watch next: usd_jpy (down) — already moved; resid_z=-5.83 indicates an unexplained move
+- **India receivers**: dyn_muthootfin_ns (rho -0.511, z -2.65); dyn_cartrade_ns (rho -0.369, z -0.34); dyn_thangamayl_ns (rho -0.368, z -3.12)
+- Source: Yen surges to three-month peak, dollar pares losses after intervention — Mint Markets, 2026-08-03. https://www.livemint.com/market/yen-surges-to-three-month-peak-dollar-pares-losses-after-intervention-11785792603276.html
+- Source: Yen Holds Steady in US Hours After Speculation of Intervention — Mint Markets, 2026-08-03. https://www.livemint.com/market/yen-holds-steady-in-us-hours-after-speculation-of-intervention-11785792595897.html
+- Source: Oil drops, stocks gain amid Iran peace hopes; yen firms as investors watch for further intervention — Mint Markets, 2026-08-03. https://www.livemint.com/market/oil-drops-stocks-gain-amid-iran-peace-hopes-yen-firms-as-investors-watch-for-further-intervention-11785792593711.html
+- Historical analogues: 2024-10-16 (d=0.15), 2024-11-21 (d=0.23), 2026-03-31 (d=0.24)
 
 ### [RED 6.27] dyn_msft ↑
 - dyn_msft [EQUITIES]: last 487.60, z20 4.27, zc 0.72, resid-z 0.18 [quiet], 1d 4.92%, |z20|=4.27
@@ -96,102 +92,102 @@ data as of **2026-08-03** · 98 series · 21 red / 29 amber · 8 events surfaced
 - **Gap**: No gap: the big raw move in Microsoft's stock is accompanied by a small z20 of 4.31, indicating that the move is largely priced in.
 - **India take**: The Indian instrument dyn_thangamayl_ns has already reacted to the move in Microsoft's stock, with a negative rho of -0.383. Further reaction in Indian metal equities may be expected via the valid metal_copper_channel.
 - Watch next: dyn_msft (up) — already moved; recent surge in stock price
-- **India receivers**: dyn_thangamayl_ns (rho -0.383, z -3.5)
+- **India receivers**: dyn_thangamayl_ns (rho -0.382, z -3.12)
 - Source: Microsoft’s stock is on a run not seen in 26 years — erasing its year-to-date losses — MarketWatch Top, 2026-08-03. https://www.marketwatch.com/story/microsofts-stock-is-on-a-run-not-seen-in-26-years-erasing-its-year-to-date-losses-d9827b6c?mod=mw_rss_topstories
 - Source: SHARES OF US HYPERSCALERS CLIMB • META RISES 6.1% • MICROSOFT JUMPS 4.7% • AMAZON GAINS 4.6% — DeItaone, 2026-08-03. https://t.me/walter_bloomberg/34236
 - Source: GOLDMAN REFRESHES U.S. CONVICTION LIST Goldman Sachs added Applied Materials ( $AMAT), Delta ( $DAL), Microsoft ( $MSFT), O'Reilly Automotive ( $ORLY), Viking Holdings ( $VIK) and UPS to its U.S. Conviction List. The firm removed Broadcom ( $AVGO), Dick's Sporting Goods ( — DeItaone, 2026-08-03. https://t.me/walter_bloomberg/34209
 - Historical analogues: 2026-05-22 (d=0.0), 2026-05-06 (d=0.02), 2025-10-20 (d=0.06)
 
-### [AMBER 6.14] commodities · 2 series ↓
-- brent [COMMODITIES]: last 83.51, z20 -0.31, zc 0.28, resid-z 0.70 [quiet], 1d -7.33%, 1-session move -7.33% ≥ 1.5%
-- wti [COMMODITIES]: last 80.06, z20 -0.03, zc 0.36, resid-z 0.65 [quiet], 1d -5.44%, 1-session move -5.44% ≥ 1.5%
-- **Mechanism**: The recent decline in Brent and WTI crude oil prices can be attributed to the reduced Russian oil refining due to Ukraine's drone campaign, which has disrupted Russia's oil production and export infrastructure. This supply-side shock has led to a decrease in oil prices, which is a priced move given the small resid_z values. The valid metal_copper_channel and gold_silver_comove channels suggest that the decline in oil prices may have a ripple effect on other commodities and metals.
-- **Gap**: No gap: the move in oil prices is largely explained by the supply-side shock and is a priced move given the small resid_z values.
-- **India take**: The decline in oil prices has already been reflected in the Indian market, with the nifty_midcap_100, midcap_largecap_ratio, and dyn_hdbfs_bo reacting to the price decline. However, the metal_copper_channel and gold_silver_comove channels suggest that there may be further implications for Indian metal equities.
-- Watch next: nifty_midcap_100 (down) — already moved; reacted to WTI price decline
-- Watch next: midcap_largecap_ratio (down) — already moved; reacted to WTI price decline
-- Watch next: dyn_hdbfs_bo (down) — already moved; reacted to Brent price decline
-- **India receivers**: nifty_midcap_100 (rho -0.498, z 2.51); midcap_largecap_ratio (rho -0.415, z -1.14); dyn_hdbfs_bo (rho -0.381, z -1.26)
-- Source: Russia Is Running Out of Soldiers, Oil, and Time — OilPrice, 2026-08-03. https://oilprice.com/Energy/Energy-General/Russia-Is-Running-Out-of-Soldiers-Oil-and-Time.html
-- Source: Ukraine’s Drone Campaign Drives Russian Oil Refining to 24-Year Low — OilPrice, 2026-08-03. https://oilprice.com/Latest-Energy-News/World-News/Ukraines-Drone-Campaign-Drives-Russian-Oil-Refining-to-24-Year-Low.html
-- Source: Big Oil Companies Report Record Profits Amid High Oil Prices — OilPrice, 2026-08-03. https://oilprice.com/Energy/Energy-General/Big-Oil-Companies-Report-Record-Profits-Amid-High-Oil-Prices.html
-- Historical analogues: 2026-05-22 (d=0.0), 2024-10-18 (d=0.03), 2024-10-31 (d=0.05)
+### [RED 6.26] cross-asset · 3 series ↑
+- dyn_jiofin_bo [EQUITIES]: last 263.50, z20 2.94, zc 0.25, resid-z 2.39 [unexplained], 1d 0.57%, |z20|=2.94
+- nifty_50 [INDICES]: last 24508.95, z20 1.60, zc -1.46, resid-z 0.42 [quiet], 1d -1.07%, |z20|=1.60
+- nifty_midcap_100 [INDICES]: last 63330.45, z20 1.46, zc -0.67, resid-z -0.10 [quiet], 1d -0.53%, 1y-pct=99
+- **Mechanism**: The recent move in dyn_jiofin_bo is driven by its high z20 level of 2.94, indicating a significant deviation from its historical mean. This move is unexplained by factor exposures, as evidenced by its high resid_z of 2.39. The correlated instruments, such as india_vix and dyn_indianb_ns, have not moved in tandem, suggesting a potential transmission opportunity. The valid channels, including gold_silver_comove and metal_copper_channel, may influence the Indian metal equities, while the vix_equity_inverse channel indicates a potential vol spike -> equity drawdown scenario.
+- **Gap**: No gap: The move in dyn_jiofin_bo is largely priced in, given its high z20 level and significant resid_z, indicating that the market has already accounted for the underlying factors driving the move.
+- **India take**: The Indian instrument dyn_muthootfin_ns, which is correlated with nifty_midcap_100, has already reacted with a z20 of -2.65. Other transmission candidates, such as dyn_bharatcoal_ns and nifty_metal, have also reacted, suggesting that the move has been partially transmitted to the Indian market.
+- Watch next: dyn_jiofin_bo (up) — already moved; high z20 level and resid_z
+- **India receivers**: dyn_muthootfin_ns (rho 0.688, z -2.65); dyn_bharatcoal_ns (rho 0.628, z -1.28); dyn_indianb_ns (rho 0.62, z 0.61); dyn_indusindbk_bo (rho 0.611, z 0.24)
+- Source: Sensex today | Stock Market Live: Sensex flat, Nifty down 200 pts to 24,560 as CAS correction weighs; RBI MPC meet outcome in focus — BusinessLine Mkts, 2026-08-04. https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-live-updates-4th-august-2026/article71301258.ece
+- Source: Textile stock under  ₹100 hits 10% upper circuit despite muted trend on Dalal Street — Mint Markets, 2026-08-04. https://www.livemint.com/market/stock-market-news/textile-stock-under-100-aastha-spintex-hits-10-upper-circuit-despite-muted-trend-on-dalal-street-11785818344958.html
+- Source: Sensex rises over 100 points, but Nifty50 slips near 24,600. What’s driving the divergence? — ET Markets, 2026-08-04. https://economictimes.indiatimes.com/markets/stocks/news/sensex-rises-over-100-points-but-nifty50-slips-near-24600-heres-why/articleshow/132845868.cms
+- Historical analogues: 2025-07-17 (d=0.69), 2024-11-07 (d=0.98), 2025-08-13 (d=1.26)
 
-### [RED 5.5] dyn_thangamayl_ns ↓
-- dyn_thangamayl_ns [EQUITIES]: last 4965.50, z20 -3.50, zc -1.06, resid-z -2.34 [unexplained], 1d -4.99%, |z20|=3.50
+### [RED 5.12] dyn_thangamayl_ns ↓
+- dyn_thangamayl_ns [EQUITIES]: last 4717.50, z20 -3.12, zc -0.53, resid-z -2.34 [unexplained], 1d -4.99%, |z20|=3.12
 - **Mechanism**: dyn_thangamayl_ns ↓: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-07-10 (z-distance 0.0).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: dyn_jiofin_bo (rho -0.371 via dyn_thangamayl_ns, z 3.71, reacted)
-- **India receivers**: dyn_jiofin_bo (rho -0.371, z 3.71)
+- **India take**: dyn_jiofin_bo (rho -0.374 via dyn_thangamayl_ns, z 2.94, reacted)
+- **India receivers**: dyn_jiofin_bo (rho -0.374, z 2.94)
+- Source: Thangamayil share selloff continues: Stock drops 5% despite Rs 344 crore sales in first 3 days of August — ET Markets, 2026-08-04. https://economictimes.indiatimes.com/markets/stocks/news/thangamayil-share-selloff-continues-stock-drops-5-despite-rs-344-crore-sales-in-first-3-days-of-august/articleshow/132847383.cms
 - Source: Thangamayil Jewellery shares crash 32% in a week. What should investors do? — ET Markets, 2026-08-03. https://economictimes.indiatimes.com/markets/stocks/news/thangamayil-jewellery-shares-crash-32-in-a-week-what-should-investors-do/articleshow/132821479.cms
 - Historical analogues: 2026-07-10 (d=0.0), 2026-06-29 (d=0.01), 2026-06-11 (d=0.01)
 
-### [RED 5.34] fx · 2 series ↑
-- eur_usd [FX]: last 1.15, z20 2.51, zc 1.31, resid-z 1.62 [unexplained], 1d -0.10%, |z20|=2.51
-- usd_mxn [FX]: last 17.30, z20 -2.38, zc -1.30, resid-z -1.35 [quiet], 1d -0.23%, |z20|=2.38
+### [AMBER 4.81] fx · 2 series ↑
+- usd_mxn [FX]: last 17.31, z20 -1.98, zc 0.04, resid-z -1.35 [quiet], 1d 0.02%, |z20|=1.98
+- eur_usd [FX]: last 1.15, z20 1.86, zc -0.75, resid-z 1.62 [unexplained], 1d -0.29%, |z20|=1.86
 - **Mechanism**: fx · 2 series ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-07-10 (z-distance 0.0).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: dyn_muthootfin_ns (rho -0.52 via usd_mxn, z -3.09, reacted)
-- Watch next: gbp_usd (co-move) — not yet - watch; rho 0.848 vs eur_usd, historically leads by 4d
-- Watch next: usd_brl (inverse) — not yet - watch; rho -0.687 vs eur_usd, historically leads by 4d
-- **India receivers**: dyn_muthootfin_ns (rho -0.52, z -3.09)
+- **India take**: dyn_muthootfin_ns (rho -0.523 via usd_mxn, z -2.65, reacted)
+- Watch next: usd_brl (co-move) — not yet - watch; rho 0.771 vs usd_mxn, historically leads by 3d
+- Watch next: gbp_usd (inverse) — not yet - watch; rho -0.627 vs usd_mxn, historically leads by 5d
+- **India receivers**: dyn_muthootfin_ns (rho -0.523, z -2.65)
 - Source: Global Market: Euro zone bond yields decline as falling oil prices boost market sentiment — ET Markets, 2026-08-03. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-euro-zone-bond-yields-decline-as-falling-oil-prices-boost-market-sentiment/articleshow/132826355.cms
 - Historical analogues: 2026-07-10 (d=0.0), 2026-05-05 (d=0.17), 2025-09-05 (d=0.21)
 
 ## Watchlist (below surfacing floor)
-dyn_muthootfin_ns ↓ (5.09), dyn_coin ↓ (4.63), dyn_chkp ↓ (4.59), dyn_aapl ↓ (4.15), gold_silver_ratio ↑ (3.73), dyn_tech ↑ (3.39), nifty_metal ↑ (3.27), dyn_atherenerg_ns ↑ (3.07), dyn_lth ↑ (3.07), dyn_havells_ns ↑ (2.88), ust_2s10s ↑ (2.86), corn ↑ (2.66)
+dyn_muthootfin_ns ↓ (4.65), dyn_coin ↓ (4.63), dyn_chkp ↓ (4.59), dyn_aapl ↓ (4.15), asx_200 ↑ (3.45), dyn_tech ↑ (3.39), dyn_lth ↑ (3.07), nifty_metal ↑ (3.04), ust_2s10s ↑ (2.86), dyn_icicigi_bo ↓ (2.65), dyn_cupid_ns ↑ (2.28), dyn_301077_sz ↓ (2.26)
 
 ## India macro
-- nifty_50: 24774.3008 (1d 1.60%, z20 3.43, flag red)
-- nifty_midcap_100: 63668.1016 (1d 1.26%, z20 2.51, flag red)
-- usd_inr: 95.3270 (1d -0.37%, z20 -1.43, flag none)
+- nifty_50: 24508.9492 (1d -1.07%, z20 1.60, flag amber)
+- nifty_midcap_100: 63330.4492 (1d -0.53%, z20 1.46, flag amber)
+- usd_inr: 95.3550 (1d -0.05%, z20 -1.44, flag none)
 - goi_10y: 7.0200 (1d -0.43%, z20 1.89, flag none)
 - india_cpi_yoy: 2.9518 (1d 14.13%, z20 n/a, flag none)
 - goi_ust_spread: 2.6300 (1d -3.31%, z20 n/a, flag none)
-- midcap_largecap_ratio: 2.5699 (1d -0.33%, z20 -1.14, flag none)
-- Next India prints: NSDL FPI flows T-0d · IMD weekly rainfall T-0d · RBI MPC decision T-4d · RBI Weekly Statistical Supplement T-4d
+- midcap_largecap_ratio: 2.5840 (1d 0.55%, z20 -0.38, flag none)
+- Next India prints: NSDL FPI flows T-0d · RBI MPC decision T-3d · RBI Weekly Statistical Supplement T-3d · Kharif sowing data T-3d
 
 ## News-tracked universe (why each is watched)
-- INOXINDIA.NS (INOX INDIA LIMITED) score 65.1 — "VENEZUELA OIL EXPORTS HIT FIVE-MONTH LOW Venezuela's crude exports fell 25% in July to 856"
-- COALINDIA.NS (COAL INDIA LTD) score 63.0 — "VENEZUELA OIL EXPORTS HIT FIVE-MONTH LOW Venezuela's crude exports fell 25% in July to 856"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 61.8 — "VENEZUELA OIL EXPORTS HIT FIVE-MONTH LOW Venezuela's crude exports fell 25% in July to 856"
-- INDIANB.NS (INDIAN BANK) score 52.9 — "BNP SEES FED HIKES PUSHING YIELDS HIGHER BNP Paribas expects U.S. Treasury yields to keep "
-- COIN (Coinbase Global, Inc.) score 45.4 — "THIS WEEK'S U.S. ECONOMIC CALENDAR (ET) 🟢 Monday • 9:45 AM – S&P Global Manufacturing PMI "
-- TECHM.NS (TECH MAHINDRA LIMITED) score 40.6 — "Dow Jones| Nasdaq | US Stock Market Today | Live: Dow soars over 700 pts to end at record "
-- BAC (Bank of America Corporation) score 39.1 — "Should wealthier Americans forgo their Social Security benefits as a charitable gesture?"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 38.7 — "Dow Jones| Nasdaq | US Stock Market Today | Live: Dow soars over 700 pts to end at record "
-- HDB (HDFC Bank Limited) score 37.0 — "BNP SEES FED HIKES PUSHING YIELDS HIGHER BNP Paribas expects U.S. Treasury yields to keep "
-- OHI (Omega Healthcare Investors, In) score 36.5 — "BNP SEES FED HIKES PUSHING YIELDS HIGHER BNP Paribas expects U.S. Treasury yields to keep "
-- IDBI.NS (IDBI BANK LIMITED) score 36.1 — "BNP SEES FED HIKES PUSHING YIELDS HIGHER BNP Paribas expects U.S. Treasury yields to keep "
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 36.1 — "BNP SEES FED HIKES PUSHING YIELDS HIGHER BNP Paribas expects U.S. Treasury yields to keep "
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 33.7 — "BNP SEES FED HIKES PUSHING YIELDS HIGHER BNP Paribas expects U.S. Treasury yields to keep "
-- TECH (Bio-Techne Corp) score 31.6 — "Dow Jones| Nasdaq | US Stock Market Today | Live: Dow soars over 700 pts to end at record "
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 28.5 — "IRAN SEES TRUMP FAVORING TALKS OVER ESCALATION Iranian leaders reportedly believe Presiden"
-- CHKP (Check Point Software Technolog) score 27.3 — "LIC OFS opens on August 4 as govt looks to sell up to 6.5% stake. Check details"
-- LTH (Life Time Group Holdings, Inc.) score 26.3 — "Russia Is Running Out of Soldiers, Oil, and Time"
-- BOND (PIMCO Active Bond Exchange-Tra) score 22.3 — "Oil, dollar inflows blunt impact on Indian bonds from index inclusion snub"
-- 301077.SZ (CHINASTARS) score 17.7 — "How Geothermal and Nuclear Could Help the U.S. Catch China in the Energy Race"
-- MS (Morgan Stanley) score 12.8 — "U.S. TIGHTENS ROBOT IMPORT RULES The FCC will restrict imports of certain foreign-made adv"
-- AMZN (Amazon.com, Inc.) score 12.1 — "Wall Street climbs as crude oil prices plunge, Amazon jumps 5.3%"
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 11.1 — "Stocks to watch, Aug 3: Tata Motors Passenger vehicles, TMCV, Maruti Suzuki, Mahindra & Ma"
-- JIOFIN.BO (Jio Financial Services Limited) score 10.4 — "CITADEL WARNS FED MESSAGING IS HURTING CREDIBILITY Citadel Securities said Fed Chair Kevin"
-- JUSTDIAL.BO (JUST DIAL LTD.) score 9.9 — "Why Have China and Russia Just Stepped Out Of The Shadows In The U.S.-Iran War?"
-- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 9.6 — "Adani Total Gas raises CNG prices by ₹4 per kg amid rising LNG costs"
-- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 9.5 — "CITADEL WARNS FED MESSAGING IS HURTING CREDIBILITY Citadel Securities said Fed Chair Kevin"
-- MSFT (Microsoft Corporation) score 9.3 — "SHARES OF US HYPERSCALERS CLIMB • META RISES 6.1% • MICROSOFT JUMPS 4.7% • AMAZON GAINS 4."
-- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 8.9 — "‘NCDEX entry into MF distribution will be a Vande Bharat movement for the industry’"
-- AAPL (Apple Inc.) score 8.5 — "Apple suffers worst rout since 2025 on disappointing outlook"
-- VT (Vanguard Total World Stock Ind) score 6.9 — "Traders in the world’s most important financial market are bracing for a wild stretch ahea"
-- META (Meta) score 6.7 — "META INVITED TO WHITE HOUSE TUESDAY TO DISCUSS AI SAFETY TESTING BY U.S. GOVERNMENT - COMP"
-- GS (Goldman Sachs Group, Inc. (The) score 5.8 — "GOLDMAN REFRESHES U.S. CONVICTION LIST Goldman Sachs added Applied Materials ( $AMAT), Del"
-- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 5.7 — "Muthoot Microfin case: Sebi exempts six family trusts from open offer obligation"
-- ICICIGI.BO (ICICI Lombard General Insuranc) score 5.4 — "HSBC, SBI and ICICI Bank get half of India's FCNR flows under incentive window"
-- PCJEWELLER.NS (PC JEWELLER LTD) score 5.4 — "Thangamayil Jewellery shares crash 32% in a week. What should investors do?"
-- INFY (Infosys Limited) score 4.7 — "Kospi’s mammoth 17% surge spells caution for Indian IT stocks. Why TCS, Infosys, others ar"
-- NVDA (NVIDIA Corporation) score 3.7 — "Did China build a top-tier AI model by itself? A new report suggests Nvidia chips played a"
-- THANGAMAYL.NS (THANGAMAYIL JEWELLERY LTD) score 3.0 — "Thangamayil Jewellery shares crash 32% in a week. What should investors do?"
-- PATANJALI.NS (PATANJALI FOODS LIMITED) score 1.0 — "LT Foods shares jump 4% on strong Q1 results; stock outperforms market"
-- CUPID.NS (CUPID LIMITED) score 0.7 — "Cupid increases investment by $5 million in GII’s Healthcare-focused platform"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 67.5 — "Stock recommendations for 4 August from MarketSmith India"
+- COALINDIA.NS (COAL INDIA LTD) score 65.6 — "Stock recommendations for 4 August from MarketSmith India"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 64.4 — "Stock recommendations for 4 August from MarketSmith India"
+- INDIANB.NS (INDIAN BANK) score 55.4 — "From Gift Nifty to RBI MPC meeting, crude oil prices: 8 key things that changed for Indian"
+- COIN (Coinbase Global, Inc.) score 46.5 — "Big Oil Warns Global Fuel Stocks Are Running Dangerously Low"
+- TECHM.NS (TECH MAHINDRA LIMITED) score 41.1 — "Tech Mahindra Share Price Live Updates: Tech Mahindra's Current Price and Market Performan"
+- BAC (Bank of America Corporation) score 39.7 — "Kotak Bank Share Price Live Updates: Kotak Bank's Price Movement Today"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 39.4 — "Tech Mahindra Share Price Live Updates: Tech Mahindra's Current Price and Market Performan"
+- HDB (HDFC Bank Limited) score 38.8 — "Kotak Bank Share Price Live Updates: Kotak Bank's Price Movement Today"
+- IDBI.NS (IDBI BANK LIMITED) score 37.0 — "Kotak Bank Share Price Live Updates: Kotak Bank's Price Movement Today"
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 37.0 — "Kotak Bank Share Price Live Updates: Kotak Bank's Price Movement Today"
+- OHI (Omega Healthcare Investors, In) score 35.4 — "Oil drops, stocks gain amid Iran peace hopes; yen firms as investors watch for further int"
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 34.8 — "Kotak Bank Share Price Live Updates: Kotak Bank's Price Movement Today"
+- TECH (Bio-Techne Corp) score 32.9 — "Tech Mahindra Share Price Live Updates: Tech Mahindra's Current Price and Market Performan"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 32.1 — "Ather Energy shares zoom 18% after Q1 results. Why is it Nomura's top 2-wheeler pick?"
+- CHKP (Check Point Software Technolog) score 30.9 — "Nifty 50, Sensex prediction today: Check how Indian stock market is expected to trade on 4"
+- LTH (Life Time Group Holdings, Inc.) score 24.1 — "Russia Is Running Out of Soldiers, Oil, and Time"
+- BOND (PIMCO Active Bond Exchange-Tra) score 21.4 — "India bonds pause before RBI policy, debt supply"
+- 301077.SZ (CHINASTARS) score 17.2 — "KMT accuses Taiwan’s government of failing to uphold South China Sea claims"
+- MS (Morgan Stanley) score 11.7 — "U.S. TIGHTENS ROBOT IMPORT RULES The FCC will restrict imports of certain foreign-made adv"
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 11.2 — "Tata Steel Share Price Live Updates: Tata Steel's Price Movement Today"
+- AMZN (Amazon.com, Inc.) score 11.0 — "Wall Street climbs as crude oil prices plunge, Amazon jumps 5.3%"
+- JIOFIN.BO (Jio Financial Services Limited) score 10.5 — "Power Grid Share Price Live Updates: Power Grid's Financial Snapshot"
+- JUSTDIAL.BO (JUST DIAL LTD.) score 10.1 — "Delayed justice in market violation cases makes a pittance of penalties"
+- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 9.7 — "Power Grid Share Price Live Updates: Power Grid's Financial Snapshot"
+- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 9.1 — "Coal India Share Price Live Updates: Coal India  Market Performance"
+- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 8.7 — "Adani Total Gas raises CNG prices by ₹4 per kg amid rising LNG costs"
+- MSFT (Microsoft Corporation) score 8.5 — "SHARES OF US HYPERSCALERS CLIMB • META RISES 6.1% • MICROSOFT JUMPS 4.7% • AMAZON GAINS 4."
+- AAPL (Apple Inc.) score 7.7 — "Apple suffers worst rout since 2025 on disappointing outlook"
+- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 7.2 — "Bajaj Finance Share Price Live Updates: Bajaj Finance Marks New 52-Week High"
+- VT (Vanguard Total World Stock Ind) score 6.3 — "Traders in the world’s most important financial market are bracing for a wild stretch ahea"
+- META (Meta) score 6.1 — "META INVITED TO WHITE HOUSE TUESDAY TO DISCUSS AI SAFETY TESTING BY U.S. GOVERNMENT - COMP"
+- ICICIGI.BO (ICICI Lombard General Insuranc) score 5.9 — "SBI, HDFC Bank, to ICICI Bank, Axis Bank: Bank stocks fall ahead of RBI monetary policy de"
+- PCJEWELLER.NS (PC JEWELLER LTD) score 5.9 — "Q1 Results Today Live: Bharti Airtel, ONGC, Pidilite, Marico, Nykaa, Bharti Hexacom, NHPC,"
+- GS (Goldman Sachs Group, Inc. (The) score 5.3 — "GOLDMAN REFRESHES U.S. CONVICTION LIST Goldman Sachs added Applied Materials ( $AMAT), Del"
+- INFY (Infosys Limited) score 5.3 — "Infosys Share Price Live Updates: Infosys market movement today"
+- PLTR (Palantir Technologies Inc.) score 3.8 — "Palantir’s stock climbs after earnings, as AI drives turbocharged growth"
+- THANGAMAYL.NS (THANGAMAYIL JEWELLERY LTD) score 3.7 — "Thangamayil share selloff continues: Stock drops 5% despite Rs 344 crore sales in first 3 "
+- NVDA (NVIDIA Corporation) score 3.4 — "Did China build a top-tier AI model by itself? A new report suggests Nvidia chips played a"
+- CUPID.NS (CUPID LIMITED) score 0.6 — "Cupid increases investment by $5 million in GII’s Healthcare-focused platform"
 
 ---
 ## Appendix — how every statistic in this brief is computed
