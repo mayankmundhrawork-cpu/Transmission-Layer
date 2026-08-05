@@ -1,11 +1,11 @@
-# Transmission Layer — board brief · 2026-08-05 21:24Z
+# Transmission Layer — board brief · 2026-08-05 22:33Z
 
-data as of **2026-08-05** · 98 series · 18 red / 28 amber · 8 events surfaced (20 suppressed)
+data as of **2026-08-05** · 98 series · 19 red / 27 amber · 8 events surfaced (20 suppressed)
 
 ## Regime & assumption health (measured at generation)
 - **Regime: RISK_ON** (score 0.3, 1d in regime; vol-pct 0.365, breadth-off 0.235, Markov P(high-vol) 0.058)
 - [INVERTED] **safe_haven_gold** — corr20 -0.4, corr60 -0.42, contra nifty_50 corr20=0.09, last shift 2026-06-04. Channel: risk-off safe-haven bid: vol up -> gold bid
-- [VALID] **gold_silver_comove** — corr20 0.86, corr60 0.81, last shift 2026-05-13. Channel: monetary metals co-move; ratio extremes are rotations
+- [VALID] **gold_silver_comove** — corr20 0.87, corr60 0.81, last shift 2026-05-13. Channel: monetary metals co-move; ratio extremes are rotations
 - [VALID] **metal_copper_channel** — corr20 0.42, corr60 0.34, last shift 2026-05-19. Channel: global copper leads Indian metal equities
 - [WEAK] **inr_oil_channel** — corr20 0.21, corr60 -0.05, last shift 2026-06-09. Channel: oil up -> import bill -> INR weakens (usd_inr up)
 - [INSUFFICIENT_DATA] **goi_ust_comove** — corr20 None, corr60 None. Channel: global duration transmits to GoI yields
@@ -24,24 +24,26 @@ data as of **2026-08-05** · 98 series · 18 red / 28 amber · 8 events surfaced
 ## Events (ranked)
 
 ### [RED 11.08] cross-asset · 13 series ↑
-- comex_gold [COMMODITIES]: last 4308.00, z20 6.01, zc 3.60, resid-z 1.40 [moved], 1d 5.19%, |z20|=6.01; co-occur[gold_silver] same-direction (channel VALID)
-- dow_jones [INDICES]: last 54349.94, z20 3.66, zc 0.43, resid-z 0.95 [quiet], 1d 0.49%, |z20|=3.66; 1y-pct=100
-- comex_silver [COMMODITIES]: last 62.26, z20 3.29, zc 1.34, resid-z -2.81 [unexplained], 1d 3.66%, |z20|=3.29; co-occur[gold_silver] same-direction (channel VALID)
-- comex_copper [COMMODITIES]: last 6.75, z20 3.29, zc 0.87, resid-z 1.46 [quiet], 1d 1.96%, |z20|=3.29; 1y-pct=100; co-occur[metal_copper] same-direction (channel VALID)
-- stoxx_50 [INDICES]: last 6477.07, z20 2.75, zc -0.15, resid-z -0.27 [quiet], 1d -0.15%, |z20|=2.75; 1y-pct=99
-- cac_40 [INDICES]: last 8665.36, z20 2.64, zc -0.02, resid-z -0.17 [quiet], 1d -0.01%, |z20|=2.64; 1y-pct=99
+- comex_gold [COMMODITIES]: last 4307.70, z20 6.00, zc 3.59, resid-z 1.40 [moved], 1d 5.18%, |z20|=6.00; co-occur[gold_silver] same-direction (channel VALID)
+- dow_jones [INDICES]: last 54349.94, z20 3.66, zc 0.43, resid-z 0.97 [quiet], 1d 0.49%, |z20|=3.66; 1y-pct=100
+- comex_silver [COMMODITIES]: last 62.33, z20 3.35, zc 1.39, resid-z -2.73 [unexplained], 1d 3.79%, |z20|=3.35; co-occur[gold_silver] same-direction (channel VALID)
+- comex_copper [COMMODITIES]: last 6.75, z20 3.30, zc 0.88, resid-z 1.48 [quiet], 1d 1.99%, |z20|=3.30; 1y-pct=100; co-occur[metal_copper] same-direction (channel VALID)
+- stoxx_50 [INDICES]: last 6477.07, z20 2.75, zc -0.15, resid-z -0.25 [quiet], 1d -0.15%, |z20|=2.75; 1y-pct=99
+- cac_40 [INDICES]: last 8665.36, z20 2.64, zc -0.02, resid-z -0.14 [quiet], 1d -0.01%, |z20|=2.64; 1y-pct=99
 - sp500 [INDICES]: last 7722.12, z20 2.58, zc -0.17, resid-z 3.71 [unexplained], 1d -0.19%, |z20|=2.58; 1y-pct=99
 - dyn_vt [EQUITIES]: last 160.14, z20 2.53, zc -0.17, resid-z -0.90 [quiet], 1d -0.19%, |z20|=2.53; 1y-pct=99
-- dax [INDICES]: last 26144.19, z20 2.39, zc -0.26, resid-z -0.24 [quiet], 1d -0.22%, |z20|=2.39; 1y-pct=99
+- dax [INDICES]: last 26144.19, z20 2.39, zc -0.26, resid-z -0.22 [quiet], 1d -0.22%, |z20|=2.39; 1y-pct=99
 - dyn_nvda [EQUITIES]: last 219.20, z20 2.37, zc 1.32, resid-z -1.09 [quiet], 1d 3.43%, |z20|=2.37; 1y-pct=95
-- russell_2000 [INDICES]: last 3018.42, z20 2.11, zc -0.46, resid-z -0.61 [quiet], 1d -0.61%, |z20|=2.11; 1y-pct=99
-- ftse_100 [INDICES]: last 10894.68, z20 1.40, zc 0.26, resid-z -0.20 [quiet], 1d 0.14%, 1y-pct=98
-- gold_silver_ratio [DERIVED]: last 69.20, z20 -0.65, zc n/a, resid-z n/a [quiet], 1d 1.48%, GSR<75 (extreme low)
-- **Mechanism**: The recent surge in gold prices, driven by a technical breakout and reduced expectations for Federal Reserve rate hikes, has triggered a co-movement in monetary metals, with silver also climbing. This move is priced, given the big raw move in gold with a relatively small resid_z of 1.4, indicating that the move is largely explained by factor exposures.
-- **Gap**: No gap: the move in gold is largely priced, with a resid_z of 1.4, indicating that the move is mostly explained by factor exposures
-- **India take**: The Indian instrument nifty_metal, which has a correlation with comex_silver, has already reacted to the move in silver, with a z20 of 4.14. Other Indian instruments such as nifty_50 and nifty_midcap_100 have also reacted, with z20 values of 1.92 and 1.74, respectively.
-- Watch next: comex_gold (up) — already moved; technical breakout and reduced expectations for Federal Reserve rate hikes
-- **India receivers**: nifty_fmcg (rho -0.528, z 0.59); nifty_50 (rho 0.524, z 1.92); nifty_midcap_100 (rho 0.519, z 1.74); nifty_metal (rho 0.476, z 4.14)
+- russell_2000 [INDICES]: last 3018.42, z20 2.11, zc -0.46, resid-z -0.60 [quiet], 1d -0.61%, |z20|=2.11; 1y-pct=99
+- ftse_100 [INDICES]: last 10894.68, z20 1.40, zc 0.26, resid-z -0.18 [quiet], 1d 0.14%, 1y-pct=98
+- gold_silver_ratio [DERIVED]: last 69.11, z20 -0.75, zc n/a, resid-z n/a [quiet], 1d 1.34%, GSR<75 (extreme low)
+- **Mechanism**: The recent surge in gold prices is driven by a combination of factors, including a technical breakout and reduced expectations for Federal Reserve rate hikes due to prospects of a deal to reopen the Strait of Hormuz. This has led to a rise in gold and silver prices, with comex_gold and comex_silver showing significant moves. The VALID gold_silver_comove channel suggests that monetary metals are co-moving, and the gold/silver ratio extremes are indicative of rotations.
+- **Gap**: No gap: The big raw move in comex_gold is PRICED, with a resid_z of 1.4, indicating that the move is largely explained by factor exposures.
+- **India take**: The Indian instrument nifty_metal has reacted to the move in comex_silver, with a z20 of 4.14. Other Indian instruments such as nifty_50 and nifty_midcap_100 have also reacted, with z20 values of 1.92 and 1.74, respectively.
+- Watch next: comex_gold (up) — already moved; Technical breakout and reduced expectations for Federal Reserve rate hikes
+- Watch next: comex_silver (up) — already moved; Co-movement with gold due to VALID gold_silver_comove channel
+- Watch next: nifty_metal (up) — already moved; Transmission from comex_silver via metal_copper_channel
+- **India receivers**: nifty_fmcg (rho -0.528, z 0.59); nifty_50 (rho 0.524, z 1.92); nifty_midcap_100 (rho 0.519, z 1.74); nifty_metal (rho 0.477, z 4.14)
 - Source: Gold Jumps Most Since February on Hormuz, Technical Breakout — Mint Markets, 2026-08-05. https://www.livemint.com/market/gold-jumps-most-since-february-on-hormuz-technical-breakout-11785964080778.html
 - Source: Aggressive options trading helped drive the S&P 500’s latest rally. What that means for investors. — MarketWatch Top, 2026-08-05. https://www.marketwatch.com/story/aggressive-options-trading-helped-drive-the-s-p-500s-latest-rally-what-that-means-for-investors-623fe41c?mod=mw_rss_topstories
 - Source: Philippines Could Become the World's First Geologic Hydrogen Hub — OilPrice, 2026-08-05. https://oilprice.com/Energy/Energy-General/Philippines-Could-Become-the-Worlds-First-Geologic-Hydrogen-Hub.html
@@ -71,8 +73,8 @@ data as of **2026-08-05** · 98 series · 18 red / 28 amber · 8 events surfaced
 - Historical analogues: 2026-07-10 (d=0.0), 2025-07-31 (d=0.03), 2025-07-15 (d=0.03)
 
 ### [AMBER 5.43] cross-asset · 3 series ↑
-- dyn_jiofin_bo [EQUITIES]: last 261.50, z20 2.11, zc -0.53, resid-z -0.93 [quiet], 1d -1.15%, |z20|=2.11
-- nifty_50 [INDICES]: last 24624.65, z20 1.92, zc 0.05, resid-z -0.12 [quiet], 1d 0.04%, |z20|=1.92
+- dyn_jiofin_bo [EQUITIES]: last 261.50, z20 2.11, zc -0.53, resid-z -0.94 [quiet], 1d -1.15%, |z20|=2.11
+- nifty_50 [INDICES]: last 24624.65, z20 1.92, zc 0.05, resid-z -0.11 [quiet], 1d 0.04%, |z20|=1.92
 - nifty_midcap_100 [INDICES]: last 63597.60, z20 1.74, zc 0.23, resid-z 0.10 [quiet], 1d 0.18%, |z20|=1.74; 1y-pct=99
 - **Mechanism**: The recent move in smallcap stocks, particularly the Nifty Midcap 100, may propagate through the metal_copper_channel, given its VALID status and the strong correlation between global copper and Indian metal equities. The Nifty Midcap 100's 1.74 z20 level and the Nifty Smallcap 100's record high suggest a potential rotation into smaller stocks. However, the resid_z values for the Nifty 50 and Nifty Midcap 100 are relatively low, indicating that the move may be largely priced in.
 - **Gap**: No gap: the recent move in smallcap stocks is largely priced in, given the low resid_z values for the Nifty 50 and Nifty Midcap 100
@@ -86,8 +88,8 @@ data as of **2026-08-05** · 98 series · 18 red / 28 amber · 8 events surfaced
 - Source: Smallcaps hit all-time high even as Nifty, Sensex remain directionless — BusinessLine Mkts, 2026-08-05. https://www.thehindubusinessline.com/markets/smallcaps-hit-all-time-high-as-nifty-treads-water/article71309640.ece
 - Historical analogues: 2025-07-17 (d=0.69), 2024-11-07 (d=0.98), 2025-08-13 (d=1.26)
 
-### [RED 5.39] cross-asset · 2 series ↑
-- usd_jpy [FX]: last 157.70, z20 -2.56, zc 0.19, resid-z 0.22 [quiet], 1d 0.11%, |z20|=2.56
+### [RED 5.4] cross-asset · 2 series ↑
+- usd_jpy [FX]: last 157.69, z20 -2.56, zc 0.19, resid-z 0.21 [quiet], 1d 0.10%, |z20|=2.56
 - dyn_amzn [EQUITIES]: last 272.60, z20 1.69, zc -0.74, resid-z -1.63 [unexplained], 1d -1.74%, 1y-pct=97
 - **Mechanism**: The recent move in usd_jpy and dyn_amzn is driven by a cross-asset event, with the Japanese yen firming after a landmark intervention and the dollar hovering near six-week lows against major peers. The move in usd_jpy has a low resid_z, indicating that it is largely priced in, while the move in dyn_amzn has a higher resid_z, suggesting some unexplained component. The valid vix_equity_inverse channel suggests that the vol spike may lead to an equity drawdown.
 - **Gap**: No gap: the move in usd_jpy has a low resid_z, indicating that it is largely priced in, and the move in dyn_amzn, although having a higher resid_z, is still within the realm of explained moves given the cross-asset event
@@ -111,8 +113,8 @@ data as of **2026-08-05** · 98 series · 18 red / 28 amber · 8 events surfaced
 - Source: Palantir Short Sellers Take $3 Billion Hit After 30% Stock Surge — Mint Markets, 2026-08-04. https://www.livemint.com/market/palantir-short-sellers-take-3-billion-hit-after-30-stock-surge-11785872351134.html
 - Historical analogues: 2026-05-22 (d=0.0), 2025-04-01 (d=0.08), 2025-10-13 (d=0.13)
 
-### [RED 5.18] dxy ↓
-- dxy [FX]: last 99.68, z20 -2.18, zc -0.58, resid-z 0.43 [quiet], 1d -0.21%, 20d range extreme; |z20|=2.18
+### [RED 5.17] dxy ↓
+- dxy [FX]: last 99.69, z20 -2.17, zc -0.56, resid-z 0.43 [quiet], 1d -0.20%, 20d range extreme; |z20|=2.17
 - **Mechanism**: The recent decline in the US Dollar Index (DXY) may propagate through the VALID gold_silver_comove channel, potentially leading to a move in monetary metals. However, the INVERTED safe_haven_gold channel suggests that the usual risk-off safe-haven bid for gold may not be present. The VALID metal_copper_channel could also play a role, as global copper leads Indian metal equities.
 - **Gap**: No gap: The big raw move in DXY has a small resid_z of -0.92, indicating that the move is largely priced in and not an anomaly.
 - **India take**: The Indian instrument that expresses this move is likely to be the MCX Gold or MCX Copper, but the weak dxy_inr_channel and inr_oil_channel suggest that the transmission to Indian markets may be limited. The metal_copper_channel, however, could lead to a move in Indian metal equities.
@@ -134,7 +136,7 @@ data as of **2026-08-05** · 98 series · 18 red / 28 amber · 8 events surfaced
 - Historical analogues: 2026-05-22 (d=0.0), 2026-03-30 (d=0.28), 2026-05-07 (d=0.32)
 
 ## Watchlist (below surfacing floor)
-fx · 3 series ↑ (4.47), dyn_msft ↑ (4.31), nifty_metal ↑ (4.14), dyn_thangamayl_ns ↓ (4.1), dyn_bac ↑ (3.78), dyn_lth ↑ (3.65), natgas ↓ (3.56), dyn_coin ↓ (3.5), asx_200 ↑ (3.41), dyn_cupid_ns ↑ (3.22), dyn_tech ↑ (2.87), dyn_icicigi_bo ↓ (2.18)
+dyn_msft ↑ (4.31), fx · 3 series ↑ (4.18), nifty_metal ↑ (4.14), dyn_thangamayl_ns ↓ (4.1), dyn_bac ↑ (3.78), dyn_lth ↑ (3.65), natgas ↓ (3.58), dyn_coin ↓ (3.5), asx_200 ↑ (3.41), dyn_cupid_ns ↑ (3.22), dyn_tech ↑ (2.87), usd_cny ↓ (2.56)
 
 ## India macro
 - nifty_50: 24624.6504 (1d 0.04%, z20 1.92, flag amber)
@@ -147,45 +149,45 @@ fx · 3 series ↑ (4.47), dyn_msft ↑ (4.31), nifty_metal ↑ (4.14), dyn_than
 - Next India prints: NSDL FPI flows T-0d · RBI MPC decision T-2d · RBI Weekly Statistical Supplement T-2d · Kharif sowing data T-2d
 
 ## News-tracked universe (why each is watched)
-- INOXINDIA.NS (INOX INDIA LIMITED) score 82.2 — "Hormuz Bottleneck Pushes Indian Refiners Toward West African Grades"
-- COALINDIA.NS (COAL INDIA LTD) score 80.0 — "Hormuz Bottleneck Pushes Indian Refiners Toward West African Grades"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 79.2 — "Hormuz Bottleneck Pushes Indian Refiners Toward West African Grades"
-- INDIANB.NS (INDIAN BANK) score 62.8 — "BOFA CEO BACKS THREE FED RATE HIKES Bank of America CEO Brian Moynihan reiterated the bank"
-- COIN (Coinbase Global, Inc.) score 53.0 — "Hormuz Crisis Is Rewriting the Global LPG Trade"
-- TECHM.NS (TECH MAHINDRA LIMITED) score 48.2 — "Gold Jumps Most Since February on Hormuz, Technical Breakout"
-- BAC (Bank of America Corporation) score 47.0 — "BOFA CEO BACKS THREE FED RATE HIKES Bank of America CEO Brian Moynihan reiterated the bank"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 47.0 — "Gold Jumps Most Since February on Hormuz, Technical Breakout"
-- OHI (Omega Healthcare Investors, In) score 46.8 — "Aggressive options trading helped drive the S&P 500’s latest rally. What that means for in"
-- HDB (HDFC Bank Limited) score 44.7 — "BOFA CEO BACKS THREE FED RATE HIKES Bank of America CEO Brian Moynihan reiterated the bank"
-- IDBI.NS (IDBI BANK LIMITED) score 43.5 — "BOFA CEO BACKS THREE FED RATE HIKES Bank of America CEO Brian Moynihan reiterated the bank"
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 43.5 — "BOFA CEO BACKS THREE FED RATE HIKES Bank of America CEO Brian Moynihan reiterated the bank"
-- TECH (Bio-Techne Corp) score 42.5 — "Gold Jumps Most Since February on Hormuz, Technical Breakout"
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 42.0 — "BOFA CEO BACKS THREE FED RATE HIKES Bank of America CEO Brian Moynihan reiterated the bank"
-- LTH (Life Time Group Holdings, Inc.) score 33.9 — "Venezuela’s Oil Production Grows at a Crucial Time Despite Challenges"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 30.3 — "DIMON PUSHES AI SECURITY ALLIANCE JPMorgan CEO Jamie Dimon is urging more than 40 companie"
-- CHKP (Check Point Software Technolog) score 28.8 — "RBI MPC meeting outcome today: Check date, time, and where to watch Governor Sanjay Malhot"
-- 301077.SZ (CHINASTARS) score 26.5 — "China Accelerates Its Economic Push Across Central Asia"
-- BOND (PIMCO Active Bond Exchange-Tra) score 19.6 — "India bonds rally on 'dovish' RBI hold, lower oil prices"
-- JUSTDIAL.BO (JUST DIAL LTD.) score 14.6 — "GOLDMAN STICKS TO PAYROLL FORECAST Goldman Sachs maintained its 75,000 July nonfarm payrol"
-- MS (Morgan Stanley) score 13.2 — "SPCX : JP MORGAN RAISES TARGET PRICE TO $240 FROM $225"
-- JIOFIN.BO (Jio Financial Services Limited) score 12.6 — "US S&P JULY SERVICES PMI AT 54.6 VS 51.2 PRIOR *US S&P JULY COMPOSITE PMI AT 54.5 VS 51.9 "
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 11.2 — "Top Gainers & Losers on 5 August: Hindustan Copper, OLA, HFCL, Mphasis, Tata Capital among"
-- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 10.1 — "Market wrap: Shriram Finance, Grasim, TCS among top gainers and losers on Nifty and Sensex"
-- VT (Vanguard Total World Stock Ind) score 9.3 — "Philippines Could Become the World's First Geologic Hydrogen Hub"
-- PCJEWELLER.NS (PC JEWELLER LTD) score 8.8 — "Kalyan Jewellers shares extend slide, tumble 5% after Q1 results; down 11% in four days"
-- PLTR (Palantir Technologies Inc.) score 8.3 — "Why is Wall Street ignoring the controversy surrounding Palantir? Expert says 'It's not a "
-- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 8.3 — "Vodafone Idea sets AGM date to declare financial statement for FY26. Details here"
-- AMZN (Amazon.com, Inc.) score 8.3 — "What bubble? Amazon enters $3 trillion market cap club, CEO highlights striking AI demand"
-- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 8.2 — "Oil Ministry to deploy tactical teams for petrol pump inspections, says Team Bharat"
-- NVDA (NVIDIA Corporation) score 7.6 — "NVDA - NVIDIA SHARES HIT HIGHEST IN OVER TWO MONTHS, LAST UP 4.3%"
-- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 7.4 — "Adani Ent Share Price Live Updates: Adani Ent. News"
-- MSFT (Microsoft Corporation) score 6.9 — "OPENAI DRIVES MOST OF MICROSOFT'S AI REVENUE Microsoft disclosed it generated $24.1 billio"
-- ICICIGI.BO (ICICI Lombard General Insuranc) score 6.6 — "HSBC picks ICICI Bank, Titan, 8 other stocks to ride a potential $25 billion FII inflow as"
-- AAPL (Apple Inc.) score 6.3 — "AAPL - APPLE RAMPS UP FOR NEXT IPHONE Bank of America reiterated its Buy rating and $380 p"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 81.3 — "Hormuz Bottleneck Pushes Indian Refiners Toward West African Grades"
+- COALINDIA.NS (COAL INDIA LTD) score 79.1 — "Hormuz Bottleneck Pushes Indian Refiners Toward West African Grades"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 78.4 — "Hormuz Bottleneck Pushes Indian Refiners Toward West African Grades"
+- INDIANB.NS (INDIAN BANK) score 62.1 — "BOFA CEO BACKS THREE FED RATE HIKES Bank of America CEO Brian Moynihan reiterated the bank"
+- COIN (Coinbase Global, Inc.) score 52.4 — "Hormuz Crisis Is Rewriting the Global LPG Trade"
+- TECHM.NS (TECH MAHINDRA LIMITED) score 48.6 — "Big Tech Turns to Fuel Cells to Power the AI Boom"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 47.4 — "Big Tech Turns to Fuel Cells to Power the AI Boom"
+- BAC (Bank of America Corporation) score 46.5 — "BOFA CEO BACKS THREE FED RATE HIKES Bank of America CEO Brian Moynihan reiterated the bank"
+- OHI (Omega Healthcare Investors, In) score 46.3 — "Aggressive options trading helped drive the S&P 500’s latest rally. What that means for in"
+- HDB (HDFC Bank Limited) score 44.2 — "BOFA CEO BACKS THREE FED RATE HIKES Bank of America CEO Brian Moynihan reiterated the bank"
+- TECH (Bio-Techne Corp) score 43.0 — "Big Tech Turns to Fuel Cells to Power the AI Boom"
+- IDBI.NS (IDBI BANK LIMITED) score 43.0 — "BOFA CEO BACKS THREE FED RATE HIKES Bank of America CEO Brian Moynihan reiterated the bank"
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 43.0 — "BOFA CEO BACKS THREE FED RATE HIKES Bank of America CEO Brian Moynihan reiterated the bank"
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 41.5 — "BOFA CEO BACKS THREE FED RATE HIKES Bank of America CEO Brian Moynihan reiterated the bank"
+- LTH (Life Time Group Holdings, Inc.) score 34.5 — "Bitcoin stabilizes above $64K as macro sentiment improves; Ethereum recovery remains weake"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 29.9 — "DIMON PUSHES AI SECURITY ALLIANCE JPMorgan CEO Jamie Dimon is urging more than 40 companie"
+- CHKP (Check Point Software Technolog) score 29.5 — "Tips Music announces Rs 44 crore buyback at 12% premium. Check details"
+- 301077.SZ (CHINASTARS) score 26.2 — "China Accelerates Its Economic Push Across Central Asia"
+- BOND (PIMCO Active Bond Exchange-Tra) score 19.4 — "India bonds rally on 'dovish' RBI hold, lower oil prices"
+- JUSTDIAL.BO (JUST DIAL LTD.) score 15.4 — "Missouri voters just rejected a bid to ditch income tax, while other tax votes loom in Flo"
+- MS (Morgan Stanley) score 13.0 — "SPCX : JP MORGAN RAISES TARGET PRICE TO $240 FROM $225"
+- JIOFIN.BO (Jio Financial Services Limited) score 12.5 — "US S&P JULY SERVICES PMI AT 54.6 VS 51.2 PRIOR *US S&P JULY COMPOSITE PMI AT 54.5 VS 51.9 "
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 11.1 — "Top Gainers & Losers on 5 August: Hindustan Copper, OLA, HFCL, Mphasis, Tata Capital among"
+- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 10.0 — "Market wrap: Shriram Finance, Grasim, TCS among top gainers and losers on Nifty and Sensex"
+- VT (Vanguard Total World Stock Ind) score 9.2 — "Philippines Could Become the World's First Geologic Hydrogen Hub"
+- PCJEWELLER.NS (PC JEWELLER LTD) score 8.7 — "Kalyan Jewellers shares extend slide, tumble 5% after Q1 results; down 11% in four days"
+- PLTR (Palantir Technologies Inc.) score 8.2 — "Why is Wall Street ignoring the controversy surrounding Palantir? Expert says 'It's not a "
+- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 8.2 — "Vodafone Idea sets AGM date to declare financial statement for FY26. Details here"
+- AMZN (Amazon.com, Inc.) score 8.2 — "What bubble? Amazon enters $3 trillion market cap club, CEO highlights striking AI demand"
+- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 8.1 — "Oil Ministry to deploy tactical teams for petrol pump inspections, says Team Bharat"
+- NVDA (NVIDIA Corporation) score 7.5 — "NVDA - NVIDIA SHARES HIT HIGHEST IN OVER TWO MONTHS, LAST UP 4.3%"
+- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 7.3 — "Adani Ent Share Price Live Updates: Adani Ent. News"
+- MSFT (Microsoft Corporation) score 6.8 — "OPENAI DRIVES MOST OF MICROSOFT'S AI REVENUE Microsoft disclosed it generated $24.1 billio"
+- ICICIGI.BO (ICICI Lombard General Insuranc) score 6.5 — "HSBC picks ICICI Bank, Titan, 8 other stocks to ride a potential $25 billion FII inflow as"
+- AAPL (Apple Inc.) score 6.2 — "AAPL - APPLE RAMPS UP FOR NEXT IPHONE Bank of America reiterated its Buy rating and $380 p"
 - META (Meta) score 6.0 — "Explained: Why South Korea bought gold after 13 years and what it means for yellow metal i"
 - GS (Goldman Sachs Group, Inc. (The) score 5.3 — "GOLDMAN STICKS TO PAYROLL FORECAST Goldman Sachs maintained its 75,000 July nonfarm payrol"
-- INFY (Infosys Limited) score 4.5 — "Infosys Share Price Live Updates: Infosys Stock Details"
-- THANGAMAYL.NS (THANGAMAYIL JEWELLERY LTD) score 2.6 — "Thangamayil share selloff continues: Stock drops 5% despite Rs 344 crore sales in first 3 "
+- INFY (Infosys Limited) score 4.4 — "Infosys Share Price Live Updates: Infosys Stock Details"
+- THANGAMAYL.NS (THANGAMAYIL JEWELLERY LTD) score 2.5 — "Thangamayil share selloff continues: Stock drops 5% despite Rs 344 crore sales in first 3 "
 - CUPID.NS (CUPID LIMITED) score 0.4 — "Cupid increases investment by $5 million in GII’s Healthcare-focused platform"
 
 ---
