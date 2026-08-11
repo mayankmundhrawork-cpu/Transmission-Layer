@@ -1,6 +1,6 @@
-# Transmission Layer — board brief · 2026-08-11 21:03Z
+# Transmission Layer — board brief · 2026-08-11 22:11Z
 
-data as of **2026-08-11** · 98 series · 7 red / 34 amber · 8 events surfaced (18 suppressed)
+data as of **2026-08-11** · 98 series · 9 red / 32 amber · 8 events surfaced (18 suppressed)
 
 ## Regime & assumption health (measured at generation)
 - **Regime: RISK_ON** (score 0.268, 1d in regime; vol-pct 0.348, breadth-off 0.188, Markov P(high-vol) 0.012)
@@ -16,33 +16,34 @@ data as of **2026-08-11** · 98 series · 7 red / 34 amber · 8 events surfaced 
 
 ## Scan control & verified transmission setups
 - FDR (BH q=0.1): **0 of 89** scanned series survive multiplicity control (effective p ≤ None)
-- **SETUP** bovespa → aud_usd: leads 1d (ccf 0.396, β 0.2381, p 0.0); driver zc -2.34 → expected -0.616%. Type hit-rate 0.814 (n=2485).
-- **SETUP** bovespa → usd_mxn: leads 1d (ccf -0.365, β -0.2213, p 0.0); driver zc -2.34 → expected 0.572%. Type hit-rate 0.814 (n=2485).
-- **SETUP** ust_10y → gbp_usd: leads 1d (ccf -0.275, β -0.1119, p 0.0); driver zc 1.52 → expected -0.168%. Type hit-rate 0.814 (n=2485).
+- **SETUP** bovespa → aud_usd: leads 1d (ccf 0.396, β 0.2381, p 0.0); driver zc -2.34 → expected -0.616%. Type hit-rate 0.815 (n=2507).
+- **SETUP** bovespa → usd_mxn: leads 1d (ccf -0.365, β -0.2213, p 0.0); driver zc -2.34 → expected 0.572%. Type hit-rate 0.815 (n=2507).
+- **SETUP** ust_10y → eur_usd: leads 1d (ccf -0.282, β -0.1155, p 0.0); driver zc 1.52 → expected -0.174%. Type hit-rate 0.815 (n=2507).
+- **SETUP** ust_10y → gbp_usd: leads 1d (ccf -0.275, β -0.1119, p 0.0); driver zc 1.52 → expected -0.168%. Type hit-rate 0.815 (n=2507).
 - Track record · residual_reversion: hit-rate **0.491** (n=1134) — |resid_z|>=2.0 -> fwd 5d return opposes residual
-- Track record · transmission_follow: hit-rate **0.814** (n=2485) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
+- Track record · transmission_follow: hit-rate **0.815** (n=2507) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
 - Track record · spread_reversion: hit-rate **0.6** (n=15) — |dev| >= 2sigma vs PIT 252d -> |dev| shrinks >=25% within max(half-life,10) sessions
 
 ## Events (ranked)
 
-### [RED 9.11] cross-asset · 11 series ↑
-- comex_gold [COMMODITIES]: last 4426.30, z20 3.05, zc 0.83, resid-z 0.81 [quiet], 1d 1.48%, |z20|=3.05; co-occur[gold_silver] same-direction (channel VALID)
-- comex_silver [COMMODITIES]: last 64.84, z20 2.49, zc -0.15, resid-z -1.43 [quiet], 1d -0.41%, |z20|=2.49; co-occur[gold_silver] same-direction (channel VALID)
-- stoxx_50 [INDICES]: last 6553.86, z20 2.01, zc 0.35, resid-z 0.62 [quiet], 1d 0.28%, |z20|=2.01; 1y-pct=100
-- dax [INDICES]: last 26392.05, z20 1.74, zc 0.34, resid-z 0.59 [quiet], 1d 0.26%, |z20|=1.74; 1y-pct=100
-- cac_40 [INDICES]: last 8717.47, z20 1.67, zc -0.13, resid-z 0.12 [quiet], 1d -0.10%, |z20|=1.67; 1y-pct=99
+### [RED 9.14] cross-asset · 11 series ↑
+- comex_gold [COMMODITIES]: last 4430.50, z20 3.09, zc 0.88, resid-z 0.81 [quiet], 1d 1.58%, |z20|=3.09; co-occur[gold_silver] same-direction (channel VALID)
+- comex_silver [COMMODITIES]: last 64.93, z20 2.53, zc -0.10, resid-z -1.45 [quiet], 1d -0.28%, |z20|=2.53; co-occur[gold_silver] same-direction (channel VALID)
+- stoxx_50 [INDICES]: last 6553.86, z20 2.01, zc 0.35, resid-z 0.63 [quiet], 1d 0.28%, |z20|=2.01; 1y-pct=100
+- dax [INDICES]: last 26392.05, z20 1.74, zc 0.34, resid-z 0.60 [quiet], 1d 0.26%, |z20|=1.74; 1y-pct=100
+- cac_40 [INDICES]: last 8717.47, z20 1.67, zc -0.13, resid-z 0.13 [quiet], 1d -0.10%, |z20|=1.67; 1y-pct=99
 - dyn_vt [EQUITIES]: last 160.80, z20 1.62, zc -0.11, resid-z 0.13 [quiet], 1d -0.10%, 1y-pct=99
 - russell_2000 [INDICES]: last 3026.71, z20 1.58, zc 0.25, resid-z 1.13 [quiet], 1d 0.31%, |z20|=1.58; 1y-pct=99
 - sp500 [INDICES]: last 7727.41, z20 1.45, zc -0.38, resid-z 0.97 [quiet], 1d -0.33%, 1y-pct=98
-- comex_copper [COMMODITIES]: last 6.63, z20 1.39, zc 0.22, resid-z 0.62 [quiet], 1d 0.50%, 1y-pct=98
-- dow_jones [INDICES]: last 53785.19, z20 1.24, zc -0.41, resid-z -0.19 [quiet], 1d -0.35%, 1y-pct=98
-- gold_silver_ratio [DERIVED]: last 68.26, z20 -1.24, zc n/a, resid-z n/a [quiet], 1d 1.90%, GSR<75 (extreme low)
-- **Mechanism**: The recent rally in gold and other commodities is driven by market anticipation of the US inflation data and its potential impact on the Federal Reserve's policy. The gold-silver co-move channel is valid, indicating a potential rotation between the two metals. The metal copper channel is also valid, suggesting a potential transmission to Indian metal equities.
-- **Gap**: No gap: The big raw move in gold has a small resid_z of 1.08, indicating that the move is largely priced in by factor exposures.
-- **India take**: The Indian instruments that express this move are nifty_metal and nifty_midcap_100, which have already reacted to the global commodity rally. The nifty_50 is also correlated with the European indices but has not yet reacted significantly.
-- Watch next: nifty_metal (up) — reacted; Correlated with comex_silver, which has moved up
-- Watch next: nifty_midcap_100 (up) — reacted; Correlated with dax, which has moved up
-- **India receivers**: nifty_50 (rho 0.498, z 0.72); nifty_midcap_100 (rho 0.495, z 1.71); nifty_metal (rho 0.476, z 1.33)
+- comex_copper [COMMODITIES]: last 6.63, z20 1.38, zc 0.21, resid-z 0.59 [quiet], 1d 0.47%, 1y-pct=98
+- gold_silver_ratio [DERIVED]: last 68.24, z20 -1.26, zc n/a, resid-z n/a [quiet], 1d 1.86%, GSR<75 (extreme low)
+- dow_jones [INDICES]: last 53785.19, z20 1.24, zc -0.41, resid-z -0.17 [quiet], 1d -0.35%, 1y-pct=98
+- **Mechanism**: The current move in gold and other commodities is driven by market participants awaiting key US inflation figures, which could shape expectations for the Federal Reserve's policy. The VALID gold_silver_comove channel and metal_copper_channel suggest that monetary metals and copper are co-moving, with the gold-silver ratio extremes indicating rotations. The RISK_ON regime and the vix_equity_inverse channel also support this move.
+- **Gap**: No gap: the big raw move in gold is largely priced, with a resid_z of 0.81, indicating that the move is mostly explained by factor exposures.
+- **India take**: The Indian instruments nifty_metal and nifty_midcap_100 have reacted, with the former driven by the comex_silver price and the latter by the dax index. The nifty_50 is still quiet, with a z20 of 0.72.
+- Watch next: comex_gold (up) — already moved; market awaits US inflation data
+- Watch next: comex_silver (up) — already moved; co-movement with gold
+- **India receivers**: nifty_50 (rho 0.498, z 0.72); nifty_midcap_100 (rho 0.495, z 1.71); nifty_metal (rho 0.475, z 1.33)
 - Source: Gold edges lower as markets await key US inflation data — Mint Markets, 2026-08-11. https://www.livemint.com/market/gold-edges-lower-as-markets-await-key-us-inflation-data-11786474118005.html
 - Source: Gold Nears Two-Month High Ahead of Wednesday's CPI Report — OilPrice, 2026-08-11. https://oilprice.com/Metals/Gold/Gold-Nears-Two-Month-High-Ahead-of-Wednesdays-CPI-Report.html
 - Source: Gold edges higher near two-month peak ahead of US inflation data — ET Markets, 2026-08-11. https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/gold-edges-higher-near-two-month-peak-ahead-of-us-inflation-data/articleshow/133159810.cms
@@ -50,7 +51,7 @@ data as of **2026-08-11** · 98 series · 7 red / 34 amber · 8 events surfaced 
 
 ### [AMBER 6.16] commodities · 2 series ↑
 - wti [COMMODITIES]: last 83.40, z20 0.33, zc 0.45, resid-z 0.24 [quiet], 1d 1.55%, 1-session move +1.55% ≥ 1.5%
-- brent [COMMODITIES]: last 89.12, z20 0.28, zc 0.44, resid-z 0.25 [quiet], 1d 1.60%, 1-session move +1.60% ≥ 1.5%
+- brent [COMMODITIES]: last 89.23, z20 0.30, zc 0.47, resid-z 0.28 [quiet], 1d 1.72%, 1-session move +1.72% ≥ 1.5%
 - **Mechanism**: The recent surprise build in US crude oil inventories has led to a moderate increase in oil prices, with WTI and Brent crude rising by 1.55% and 1.60% respectively. This move is largely priced in, given the relatively low resid_z values of 0.24 and 0.25 for WTI and Brent respectively. The RISK_ON regime and VALID gold_silver_comove and metal_copper_channel suggest that the market is positioned for further risk-on moves, but the weak inr_oil_channel and dxy_inr_channel may limit the transmission of oil price moves to Indian markets.
 - **Gap**: No gap: the move in oil prices is largely priced in, with low resid_z values and a moderate price increase
 - **India take**: Indian markets, such as the nifty_midcap_100, have already reacted to the oil price move, while dyn_bharatcoal_ns and midcap_largecap_ratio have also moved in response to the oil price increase. However, the weak inr_oil_channel may limit further transmission of oil price moves to Indian markets.
@@ -89,7 +90,7 @@ data as of **2026-08-11** · 98 series · 7 red / 34 amber · 8 events surfaced 
 - Historical analogues: 2026-05-22 (d=0.0), 2025-04-14 (d=0.06), 2024-10-15 (d=0.09)
 
 ### [RED 4.64] dyn_cupid_ns ↑
-- dyn_cupid_ns [EQUITIES]: last 276.65, z20 2.64, zc 1.31, resid-z 1.69 [unexplained], 1d 5.31%, |z20|=2.64; 1y-pct=100
+- dyn_cupid_ns [EQUITIES]: last 276.65, z20 2.64, zc 1.31, resid-z 1.70 [unexplained], 1d 5.31%, |z20|=2.64; 1y-pct=100
 - **Mechanism**: The recent surge in Cupid's Q1 FY27 profit, which tripled to Rs 44 crore, and the company's raised revenue and profit guidance for FY27, may have triggered a positive response in the stock. However, the stock's quiet move, with a low resid_z of 0.02, suggests that the move is largely priced in. The VALID metal_copper_channel and the company's strong financial performance may be contributing to the stock's upward momentum.
 - **Gap**: No gap: the stock's move is largely priced in, with a low resid_z of 0.02 and a strong financial performance
 - **India take**: The Indian instrument that expresses this move is the Nifty Midcap 100, which has already reacted with a rho of 0.357 via dyn_cupid_ns. The stock's strong financial performance and the VALID metal_copper_channel may continue to support the Nifty Midcap 100's upward momentum.
@@ -108,7 +109,7 @@ data as of **2026-08-11** · 98 series · 7 red / 34 amber · 8 events surfaced 
 - Historical analogues: 2025-12-31 (d=0.0), 2024-11-06 (d=0.1), 2025-07-03 (d=0.11)
 
 ### [AMBER 4.34] dyn_tatatech_ns ↑
-- dyn_tatatech_ns [EQUITIES]: last 865.20, z20 2.34, zc -0.49, resid-z -0.65 [quiet], 1d -1.59%, |z20|=2.34; 1y-pct=99
+- dyn_tatatech_ns [EQUITIES]: last 865.20, z20 2.34, zc -0.49, resid-z -0.64 [quiet], 1d -1.59%, |z20|=2.34; 1y-pct=99
 - **Mechanism**: The recent surge in dyn_tatatech_ns is largely priced, with a small resid_z of 0.15, indicating that the move is mostly explained by factor exposures. The metal_copper_channel, which is currently valid, may provide a mechanism for this move to propagate, given the global copper leads Indian metal equities. However, the lack of a strong channel connecting dyn_tatatech_ns to other assets limits the potential for further propagation.
 - **Gap**: No gap: the move in dyn_tatatech_ns is largely priced, with a small resid_z and no clear dislocation from historical analogues
 - **India take**: Indian instruments such as dyn_tataelxsi_ns and nifty_it have already reacted to the move in dyn_tatatech_ns, given their correlations of 0.467 and 0.461, respectively. Further reaction is unlikely, given the priced nature of the move.
@@ -129,7 +130,7 @@ data as of **2026-08-11** · 98 series · 7 red / 34 amber · 8 events surfaced 
 - Historical analogues: 2026-07-10 (d=0.0), 2025-07-31 (d=0.03), 2025-07-15 (d=0.03)
 
 ## Watchlist (below surfacing floor)
-dyn_bac ↑ (4.22), bovespa ↓ (4.03), fx · 2 series ↑ (3.68), dyn_coin ↓ (3.18), dyn_tech ↑ (3.09), dyn_hdb ↓ (2.81), dyn_icicigi_bo ↓ (2.5), dyn_idbi_ns ↓ (2.5), dyn_lth ↑ (2.32), dyn_pltr ↑ (2.23), usd_brl ↑ (2.19), usd_cny ↓ (1.89)
+dyn_bac ↑ (4.22), bovespa ↓ (4.03), fx · 2 series ↑ (3.81), dyn_coin ↓ (3.18), dyn_tech ↑ (3.09), dyn_hdb ↓ (2.81), usd_cny ↓ (2.74), usd_brl ↑ (2.6), dyn_icicigi_bo ↓ (2.5), dyn_idbi_ns ↓ (2.5), dyn_lth ↑ (2.32), dyn_pltr ↑ (2.23)
 
 ## India macro
 - nifty_50: 24471.6992 (1d -0.46%, z20 0.72, flag none)
@@ -142,46 +143,46 @@ dyn_bac ↑ (4.22), bovespa ↓ (4.03), fx · 2 series ↑ (3.68), dyn_coin ↓ 
 - Next India prints: NSDL FPI flows T-0d · India CPI T-1d · India WPI T-3d · RBI Weekly Statistical Supplement T-3d
 
 ## News-tracked universe (why each is watched)
-- COALINDIA.NS (COAL INDIA LTD) score 89.1 — "China's Coal-to-Gas Industry Set to Triple by 2030, Rystad Says"
-- INOXINDIA.NS (INOX INDIA LIMITED) score 88.6 — "Bata India Q1 Results: Profit jumps 23% to Rs 64 crore on operational efficiency"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 87.9 — "Bata India Q1 Results: Profit jumps 23% to Rs 64 crore on operational efficiency"
-- INDIANB.NS (INDIAN BANK) score 67.3 — "MORGAN STANLEY TURNS BULLISH ON CHINA AI STOCKS Morgan Stanley sees China’s LLM market shi"
-- BAC (Bank of America Corporation) score 56.8 — "MORGAN STANLEY TURNS BULLISH ON CHINA AI STOCKS Morgan Stanley sees China’s LLM market shi"
-- TECHM.NS (TECH MAHINDRA LIMITED) score 50.1 — "Dow Jones| Nasdaq | US Stock Market Today | Live: US stocks inch lower as tech weighs, Ira"
-- HDB (HDFC Bank Limited) score 50.0 — "MORGAN STANLEY TURNS BULLISH ON CHINA AI STOCKS Morgan Stanley sees China’s LLM market shi"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 49.1 — "Dow Jones| Nasdaq | US Stock Market Today | Live: US stocks inch lower as tech weighs, Ira"
-- OHI (Omega Healthcare Investors, In) score 48.9 — "ETHEREUM BUYERS ACCUMULATE AHEAD OF CPI Investors are accumulating Ethereum ahead of Wedne"
-- TECH (Bio-Techne Corp) score 47.9 — "Dow Jones| Nasdaq | US Stock Market Today | Live: US stocks inch lower as tech weighs, Ira"
-- IDBI.NS (IDBI BANK LIMITED) score 47.0 — "MORGAN STANLEY TURNS BULLISH ON CHINA AI STOCKS Morgan Stanley sees China’s LLM market shi"
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 47.0 — "MORGAN STANLEY TURNS BULLISH ON CHINA AI STOCKS Morgan Stanley sees China’s LLM market shi"
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 46.7 — "MORGAN STANLEY TURNS BULLISH ON CHINA AI STOCKS Morgan Stanley sees China’s LLM market shi"
-- COIN (Coinbase Global, Inc.) score 42.0 — "IEA Numbers Point to a Two-Speed Recovery in Global Fuel Prices"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 39.5 — "U.S. SAYS HORMUZ OIL FLOWS ARE RECOVERING Energy Secretary Chris Wright says nearly 9 mill"
-- CHKP (Check Point Software Technolog) score 34.6 — "Milky Mist IPO Day 1: Issue booked 65% so far. Check GMP, key dates, review, issue details"
-- LTH (Life Time Group Holdings, Inc.) score 31.3 — "ETHEREUM BUYERS ACCUMULATE AHEAD OF CPI Investors are accumulating Ethereum ahead of Wedne"
-- BOND (PIMCO Active Bond Exchange-Tra) score 24.4 — "U.S. TREASURY YIELDS SET TO EASE A Reuters poll sees Treasury yields declining over the ne"
-- 301077.SZ (CHINASTARS) score 23.6 — "Middle East War Pushes China Toward the Arctic Trade Route"
-- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 17.0 — "Manappuram Finance Q1 Results: Profit soars four-fold to Rs 585 crore"
-- JUSTDIAL.BO (JUST DIAL LTD.) score 16.0 — "Strait of Hormuz Traffic Sank To Just Six Vessels Monday"
-- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 14.4 — "China's Coal-to-Gas Industry Set to Triple by 2030, Rystad Says"
-- PCJEWELLER.NS (PC JEWELLER LTD) score 12.1 — "Lalithaa Jewellery’s ₹1,700 crore IPO opens August 17; price band fixed at ₹190-201"
-- JIOFIN.BO (Jio Financial Services Limited) score 12.1 — "NVDA - NVIDIA’S $500 BILLION AI FINANCING PLAN DIVIDES WALL STREET Nvidia unveiled partner"
-- MS (Morgan Stanley) score 11.0 — "MORGAN STANLEY TURNS BULLISH ON CHINA AI STOCKS Morgan Stanley sees China’s LLM market shi"
-- NVDA (NVIDIA Corporation) score 10.6 — "NVDA - NVIDIA’S $500 BILLION AI FINANCING PLAN DIVIDES WALL STREET Nvidia unveiled partner"
-- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 10.4 — "NVDA - NVIDIA’S $500 BILLION AI FINANCING PLAN DIVIDES WALL STREET Nvidia unveiled partner"
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 10.3 — "Tata Consumer Share Price Live Updates: Tata Consumer's Current Market Position"
-- BHARATFORG.BO (BHARAT FORGE LTD.) score 9.5 — "ideaForge Technology shares slide 5% after Q1 gross profit margin falls 49%"
+- COALINDIA.NS (COAL INDIA LTD) score 88.1 — "China's Coal-to-Gas Industry Set to Triple by 2030, Rystad Says"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 87.6 — "Bata India Q1 Results: Profit jumps 23% to Rs 64 crore on operational efficiency"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 86.9 — "Bata India Q1 Results: Profit jumps 23% to Rs 64 crore on operational efficiency"
+- INDIANB.NS (INDIAN BANK) score 66.6 — "MORGAN STANLEY TURNS BULLISH ON CHINA AI STOCKS Morgan Stanley sees China’s LLM market shi"
+- BAC (Bank of America Corporation) score 56.2 — "MORGAN STANLEY TURNS BULLISH ON CHINA AI STOCKS Morgan Stanley sees China’s LLM market shi"
+- TECHM.NS (TECH MAHINDRA LIMITED) score 49.5 — "Dow Jones| Nasdaq | US Stock Market Today | Live: US stocks inch lower as tech weighs, Ira"
+- HDB (HDFC Bank Limited) score 49.5 — "MORGAN STANLEY TURNS BULLISH ON CHINA AI STOCKS Morgan Stanley sees China’s LLM market shi"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 48.5 — "Dow Jones| Nasdaq | US Stock Market Today | Live: US stocks inch lower as tech weighs, Ira"
+- OHI (Omega Healthcare Investors, In) score 48.3 — "ETHEREUM BUYERS ACCUMULATE AHEAD OF CPI Investors are accumulating Ethereum ahead of Wedne"
+- TECH (Bio-Techne Corp) score 47.4 — "Dow Jones| Nasdaq | US Stock Market Today | Live: US stocks inch lower as tech weighs, Ira"
+- IDBI.NS (IDBI BANK LIMITED) score 46.5 — "MORGAN STANLEY TURNS BULLISH ON CHINA AI STOCKS Morgan Stanley sees China’s LLM market shi"
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 46.5 — "MORGAN STANLEY TURNS BULLISH ON CHINA AI STOCKS Morgan Stanley sees China’s LLM market shi"
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 46.1 — "MORGAN STANLEY TURNS BULLISH ON CHINA AI STOCKS Morgan Stanley sees China’s LLM market shi"
+- COIN (Coinbase Global, Inc.) score 41.5 — "IEA Numbers Point to a Two-Speed Recovery in Global Fuel Prices"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 39.1 — "U.S. SAYS HORMUZ OIL FLOWS ARE RECOVERING Energy Secretary Chris Wright says nearly 9 mill"
+- CHKP (Check Point Software Technolog) score 34.2 — "Milky Mist IPO Day 1: Issue booked 65% so far. Check GMP, key dates, review, issue details"
+- LTH (Life Time Group Holdings, Inc.) score 31.0 — "ETHEREUM BUYERS ACCUMULATE AHEAD OF CPI Investors are accumulating Ethereum ahead of Wedne"
+- BOND (PIMCO Active Bond Exchange-Tra) score 24.1 — "U.S. TREASURY YIELDS SET TO EASE A Reuters poll sees Treasury yields declining over the ne"
+- 301077.SZ (CHINASTARS) score 23.3 — "Middle East War Pushes China Toward the Arctic Trade Route"
+- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 16.8 — "Manappuram Finance Q1 Results: Profit soars four-fold to Rs 585 crore"
+- JUSTDIAL.BO (JUST DIAL LTD.) score 15.8 — "Strait of Hormuz Traffic Sank To Just Six Vessels Monday"
+- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 14.3 — "China's Coal-to-Gas Industry Set to Triple by 2030, Rystad Says"
+- PCJEWELLER.NS (PC JEWELLER LTD) score 12.0 — "Lalithaa Jewellery’s ₹1,700 crore IPO opens August 17; price band fixed at ₹190-201"
+- JIOFIN.BO (Jio Financial Services Limited) score 12.0 — "NVDA - NVIDIA’S $500 BILLION AI FINANCING PLAN DIVIDES WALL STREET Nvidia unveiled partner"
+- MS (Morgan Stanley) score 10.9 — "MORGAN STANLEY TURNS BULLISH ON CHINA AI STOCKS Morgan Stanley sees China’s LLM market shi"
+- NVDA (NVIDIA Corporation) score 10.5 — "NVDA - NVIDIA’S $500 BILLION AI FINANCING PLAN DIVIDES WALL STREET Nvidia unveiled partner"
+- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 10.3 — "NVDA - NVIDIA’S $500 BILLION AI FINANCING PLAN DIVIDES WALL STREET Nvidia unveiled partner"
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 10.2 — "Tata Consumer Share Price Live Updates: Tata Consumer's Current Market Position"
+- BHARATFORG.BO (BHARAT FORGE LTD.) score 9.4 — "ideaForge Technology shares slide 5% after Q1 gross profit margin falls 49%"
 - AAPL (Apple Inc.) score 8.3 — "Apple shares fall amid confusion over 2027 ‘all-glass’ iPhone plans; company clarifies, ‘d"
-- META (Meta) score 7.2 — "Q1 Results Today Highlights: Bharat Forge shares tank after Q1 loss, Kwality Pharma, Ramco"
-- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 6.8 — "QIP fundraising hits one-year high, Adani firms dominate"
+- META (Meta) score 7.1 — "Q1 Results Today Highlights: Bharat Forge shares tank after Q1 loss, Kwality Pharma, Ramco"
+- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 6.7 — "QIP fundraising hits one-year high, Adani firms dominate"
 - VT (Vanguard Total World Stock Ind) score 6.6 — "GLENCORE'S EXPOSURE TO IRON ORE TRADER RADIANT WORLD MORE THAN $500 MILLION, SOURCES SAY"
-- INTC (Intel Corporation) score 5.3 — "Intel’s $15 billion stock sale. Why shares fell despite AI boom"
+- INTC (Intel Corporation) score 5.2 — "Intel’s $15 billion stock sale. Why shares fell despite AI boom"
 - ICICIGI.BO (ICICI Lombard General Insuranc) score 3.4 — "ICICI Bank Share Price Live Updates: ICICI Bank's Price Movement Indicates Positive Trend"
 - GOOGL (Alphabet) score 3.2 — "US Stock Market: Berkshire steps up buybacks, boosts Alphabet stake as cash falls"
 - TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 2.9 — "Tata Consumer Share Price Live Updates: Tata Consumer's Current Market Position"
 - PLTR (Palantir Technologies Inc.) score 2.9 — "Palantir’s stock stages best week since 2024 — showing it’s no longer an AI loser"
 - AMZN (Amazon.com, Inc.) score 2.1 — "What bubble? Amazon enters $3 trillion market cap club, CEO highlights striking AI demand"
-- CUPID.NS (CUPID LIMITED) score 1.9 — "Q1 Results Highlights: BEML loss narrows to ₹27 cr, Eveready profit up 22%, Aditya Birla F"
+- CUPID.NS (CUPID LIMITED) score 1.8 — "Q1 Results Highlights: BEML loss narrows to ₹27 cr, Eveready profit up 22%, Aditya Birla F"
 
 ---
 ## Appendix — how every statistic in this brief is computed
