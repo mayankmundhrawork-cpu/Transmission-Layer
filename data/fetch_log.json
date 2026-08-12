@@ -1,11 +1,12 @@
 {
-  "fetched_at": "2026-08-12T11:10:15.074442Z",
+  "fetched_at": "2026-08-12T13:42:05.115421Z",
   "registry_series": 98,
-  "tails": 82,
-  "backfills": 1,
-  "live_updates": 83,
+  "tails": 81,
+  "backfills": 2,
+  "live_updates": 82,
   "deferred_backfills": [],
   "legacy_columns": [
+    "dyn_googl",
     "dyn_heromotoco_ns",
     "dyn_msft",
     "dyn_sndk",
@@ -54,25 +55,25 @@
   "series": {
     "sp500": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 7727.41015625,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 7753.2900390625,
       "corrections": [],
       "live": true
     },
     "nasdaq_100": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 29522.923828125,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 29774.767578125,
       "corrections": [],
       "live": true
     },
     "dow_jones": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 53785.19140625,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 53913.62109375,
       "corrections": [],
       "live": true
     },
@@ -80,15 +81,14 @@
       "status": "OK",
       "rows": 501,
       "last_date": "2026-08-11",
-      "last_value": 3026.70703125,
-      "corrections": [],
-      "live": true
+      "last_value": 3027.1201171875,
+      "corrections": []
     },
     "vix": {
       "status": "OK",
       "rows": 503,
       "last_date": "2026-08-12",
-      "last_value": 15.399999618530273,
+      "last_value": 14.949999809265137,
       "corrections": [],
       "live": true
     },
@@ -104,7 +104,7 @@
       "status": "OK",
       "rows": 507,
       "last_date": "2026-08-12",
-      "last_value": 10855.0498046875,
+      "last_value": 10823.8701171875,
       "corrections": [],
       "live": true
     },
@@ -112,7 +112,7 @@
       "status": "OK",
       "rows": 507,
       "last_date": "2026-08-12",
-      "last_value": 26517.630859375,
+      "last_value": 26468.4609375,
       "corrections": [],
       "live": true
     },
@@ -120,7 +120,7 @@
       "status": "OK",
       "rows": 511,
       "last_date": "2026-08-12",
-      "last_value": 8704.1904296875,
+      "last_value": 8680.8603515625,
       "corrections": [],
       "live": true
     },
@@ -128,7 +128,7 @@
       "status": "OK",
       "rows": 500,
       "last_date": "2026-08-12",
-      "last_value": 6564.009765625,
+      "last_value": 6555.68017578125,
       "corrections": [],
       "live": true
     },
@@ -182,9 +182,9 @@
     },
     "bovespa": {
       "status": "OK",
-      "rows": 499,
-      "last_date": "2026-08-11",
-      "last_value": 167728.125,
+      "rows": 500,
+      "last_date": "2026-08-12",
+      "last_value": 167306.6875,
       "corrections": [],
       "live": true
     },
@@ -232,7 +232,7 @@
       "status": "OK",
       "rows": 505,
       "last_date": "2026-08-12",
-      "last_value": 99.85800170898438,
+      "last_value": 99.68000030517578,
       "corrections": [],
       "live": true
     },
@@ -240,7 +240,7 @@
       "status": "OK",
       "rows": 518,
       "last_date": "2026-08-12",
-      "last_value": 1.1539349555969238,
+      "last_value": 1.1552680730819702,
       "corrections": [],
       "live": true
     },
@@ -248,7 +248,7 @@
       "status": "OK",
       "rows": 518,
       "last_date": "2026-08-12",
-      "last_value": 159.14700317382812,
+      "last_value": 158.96800231933594,
       "corrections": [],
       "live": true
     },
@@ -256,7 +256,7 @@
       "status": "OK",
       "rows": 518,
       "last_date": "2026-08-12",
-      "last_value": 1.351807951927185,
+      "last_value": 1.3522284030914307,
       "corrections": [],
       "live": true
     },
@@ -264,7 +264,7 @@
       "status": "OK",
       "rows": 518,
       "last_date": "2026-08-12",
-      "last_value": 0.706763744354248,
+      "last_value": 0.7083156108856201,
       "corrections": [],
       "live": true
     },
@@ -272,7 +272,7 @@
       "status": "OK",
       "rows": 518,
       "last_date": "2026-08-12",
-      "last_value": 6.731599807739258,
+      "last_value": 6.741300106048584,
       "corrections": [],
       "live": true
     },
@@ -288,7 +288,7 @@
       "status": "OK",
       "rows": 518,
       "last_date": "2026-08-12",
-      "last_value": 110.00299835205078,
+      "last_value": 110.1093978881836,
       "corrections": [],
       "live": true
     },
@@ -296,7 +296,7 @@
       "status": "OK",
       "rows": 518,
       "last_date": "2026-08-12",
-      "last_value": 17.05500030517578,
+      "last_value": 17.0403995513916,
       "corrections": [],
       "live": true
     },
@@ -304,7 +304,7 @@
       "status": "OK",
       "rows": 518,
       "last_date": "2026-08-12",
-      "last_value": 5.172500133514404,
+      "last_value": 5.169000148773193,
       "corrections": [],
       "live": true
     },
@@ -312,7 +312,7 @@
       "status": "OK",
       "rows": 505,
       "last_date": "2026-08-12",
-      "last_value": 83.37999725341797,
+      "last_value": 82.95999908447266,
       "corrections": [],
       "live": true
     },
@@ -320,7 +320,7 @@
       "status": "OK",
       "rows": 505,
       "last_date": "2026-08-12",
-      "last_value": 89.02999877929688,
+      "last_value": 88.61000061035156,
       "corrections": [],
       "live": true
     },
@@ -328,7 +328,7 @@
       "status": "OK",
       "rows": 504,
       "last_date": "2026-08-12",
-      "last_value": 2.7899999618530273,
+      "last_value": 2.813999891281128,
       "corrections": [],
       "live": true
     },
@@ -336,7 +336,7 @@
       "status": "OK",
       "rows": 505,
       "last_date": "2026-08-12",
-      "last_value": 4470.39990234375,
+      "last_value": 4476.2001953125,
       "corrections": [],
       "live": true
     },
@@ -344,7 +344,7 @@
       "status": "OK",
       "rows": 505,
       "last_date": "2026-08-12",
-      "last_value": 66.46499633789062,
+      "last_value": 66.01499938964844,
       "corrections": [],
       "live": true
     },
@@ -352,7 +352,7 @@
       "status": "OK",
       "rows": 505,
       "last_date": "2026-08-12",
-      "last_value": 6.678500175476074,
+      "last_value": 6.6570000648498535,
       "corrections": [],
       "live": true
     },
@@ -360,7 +360,7 @@
       "status": "OK",
       "rows": 503,
       "last_date": "2026-08-12",
-      "last_value": 649.75,
+      "last_value": 646.25,
       "corrections": [],
       "live": true
     },
@@ -368,7 +368,7 @@
       "status": "OK",
       "rows": 503,
       "last_date": "2026-08-12",
-      "last_value": 465.0,
+      "last_value": 463.75,
       "corrections": [],
       "live": true
     },
@@ -376,7 +376,7 @@
       "status": "OK",
       "rows": 503,
       "last_date": "2026-08-12",
-      "last_value": 1174.5,
+      "last_value": 1170.75,
       "corrections": [],
       "live": true
     },
@@ -384,7 +384,7 @@
       "status": "OK",
       "rows": 537,
       "last_date": "2026-08-12",
-      "last_value": 64058.5,
+      "last_value": 63910.44921875,
       "corrections": [],
       "live": true
     },
@@ -392,7 +392,7 @@
       "status": "OK",
       "rows": 537,
       "last_date": "2026-08-12",
-      "last_value": 1906.5799560546875,
+      "last_value": 1902.3800048828125,
       "corrections": [],
       "live": true
     },
@@ -406,9 +406,9 @@
     },
     "dyn_aapl": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 304.8999938964844,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 303.3450012207031,
       "corrections": [],
       "live": true
     },
@@ -422,9 +422,9 @@
     },
     "dyn_amzn": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 272.2799987792969,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 272.1300048828125,
       "corrections": [],
       "live": true
     },
@@ -438,9 +438,9 @@
     },
     "dyn_bac": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 64.0,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 64.1500015258789,
       "corrections": [],
       "live": true
     },
@@ -454,9 +454,9 @@
     },
     "dyn_bond": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 90.4749984741211,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 90.68229675292969,
       "corrections": [],
       "live": true
     },
@@ -470,9 +470,9 @@
     },
     "dyn_chkp": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 129.10000610351562,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 127.62000274658203,
       "corrections": [],
       "live": true
     },
@@ -486,9 +486,9 @@
     },
     "dyn_coin": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 148.5998992919922,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 150.4499969482422,
       "corrections": [],
       "live": true
     },
@@ -497,14 +497,6 @@
       "rows": 500,
       "last_date": "2026-08-12",
       "last_value": 290.0,
-      "corrections": [],
-      "live": true
-    },
-    "dyn_googl": {
-      "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 343.7900085449219,
       "corrections": [],
       "live": true
     },
@@ -518,9 +510,9 @@
     },
     "dyn_hdb": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 23.299999237060547,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 23.2450008392334,
       "corrections": [],
       "live": true
     },
@@ -574,9 +566,9 @@
     },
     "dyn_intc": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 97.69999694824219,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 102.17500305175781,
       "corrections": [],
       "live": true
     },
@@ -606,25 +598,25 @@
     },
     "dyn_lth": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 43.81999969482422,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 44.310001373291016,
       "corrections": [],
       "live": true
     },
     "dyn_meta": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 599.2100219726562,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 595.3699951171875,
       "corrections": [],
       "live": true
     },
     "dyn_ms": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 215.08999633789062,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 218.71499633789062,
       "corrections": [],
       "live": true
     },
@@ -638,17 +630,17 @@
     },
     "dyn_nvda": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 217.47999572753906,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 221.16000366210938,
       "corrections": [],
       "live": true
     },
     "dyn_ohi": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 45.58000183105469,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 45.77000045776367,
       "corrections": [],
       "live": true
     },
@@ -662,9 +654,9 @@
     },
     "dyn_pltr": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 174.92999267578125,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 170.75,
       "corrections": [],
       "live": true
     },
@@ -686,9 +678,9 @@
     },
     "dyn_tech": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 72.16000366210938,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 72.11499786376953,
       "corrections": [],
       "live": true
     },
@@ -702,16 +694,27 @@
     },
     "dyn_vt": {
       "status": "OK",
-      "rows": 501,
-      "last_date": "2026-08-11",
-      "last_value": 160.80499267578125,
+      "rows": 502,
+      "last_date": "2026-08-12",
+      "last_value": 161.64999389648438,
       "corrections": [],
       "live": true
     },
     "dyn_bharatforg_bo": {
-      "status": "STALE",
+      "status": "OK",
       "rows": 4,
-      "last_date": "2026-08-12"
+      "last_date": "2026-08-12",
+      "last_value": 2077.25,
+      "corrections": [],
+      "live": true
+    },
+    "dyn_fincables_ns": {
+      "status": "OK",
+      "rows": 498,
+      "last_date": "2026-08-12",
+      "last_value": 1268.5,
+      "corrections": [],
+      "live": true
     },
     "ust_2y": {
       "status": "OK",
@@ -743,9 +746,9 @@
     },
     "sofr": {
       "status": "OK",
-      "rows": 497,
-      "last_date": "2026-08-10",
-      "last_value": 3.63,
+      "rows": 498,
+      "last_date": "2026-08-11",
+      "last_value": 3.64,
       "corrections": []
     },
     "hy_oas": {
@@ -801,7 +804,7 @@
       "status": "OK",
       "rows": 505,
       "last_date": "2026-08-12",
-      "last_value": 67.25946210268948,
+      "last_value": 67.8058052972488,
       "corrections": []
     },
     "goi_ust_spread": {
