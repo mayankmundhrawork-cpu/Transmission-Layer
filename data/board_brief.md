@@ -1,18 +1,18 @@
-# Transmission Layer — board brief · 2026-08-13 11:10Z
+# Transmission Layer — board brief · 2026-08-13 13:42Z
 
-data as of **2026-08-13** · 98 series · 10 red / 37 amber · 8 events surfaced (23 suppressed)
+data as of **2026-08-13** · 98 series · 8 red / 37 amber · 8 events surfaced (21 suppressed)
 
 ## Regime & assumption health (measured at generation)
-- **Regime: RISK_ON** (score 0.218, 2d in regime; vol-pct 0.27, breadth-off 0.167, Markov P(high-vol) 0.011)
+- **Regime: RISK_ON** (score 0.229, 2d in regime; vol-pct 0.27, breadth-off 0.188, Markov P(high-vol) 0.012)
 - [INVERTED] **safe_haven_gold** — corr20 -0.39, corr60 -0.41, last shift 2026-06-05. Channel: risk-off safe-haven bid: vol up -> gold bid
 - [VALID] **gold_silver_comove** — corr20 0.86, corr60 0.85, last shift 2026-05-14. Channel: monetary metals co-move; ratio extremes are rotations
-- [VALID] **metal_copper_channel** — corr20 0.32, corr60 0.36, last shift 2026-05-13. Channel: global copper leads Indian metal equities
+- [VALID] **metal_copper_channel** — corr20 0.3, corr60 0.36, last shift 2026-05-13. Channel: global copper leads Indian metal equities
 - [WEAK] **inr_oil_channel** — corr20 0.17, corr60 -0.07, last shift 2026-06-03. Channel: oil up -> import bill -> INR weakens (usd_inr up)
 - [INSUFFICIENT_DATA] **goi_ust_comove** — corr20 None, corr60 None. Channel: global duration transmits to GoI yields
 - [VALID] **vix_equity_inverse** — corr20 -0.74, corr60 -0.81, last shift 2026-05-06. Channel: vol spike -> equity drawdown
 - [WEAK] **dxy_inr_channel** — corr20 -0.06, corr60 -0.06, last shift 2026-01-23. Channel: broad dollar strength -> EM FX weakness incl INR
 - [WEAK] **real_rates_gold_inverse** — corr20 -0.4, corr60 -0.23, last shift 2026-05-14. Channel: real yields up -> non-yielding gold down
-- [WEAK] **gsr_stress_gauge** — corr20 -0.04, corr60 0.17, last shift 2026-04-22. Channel: gold/silver ratio rises under monetary stress
+- [WEAK] **gsr_stress_gauge** — corr20 -0.05, corr60 0.17, last shift 2026-04-22. Channel: gold/silver ratio rises under monetary stress
 
 ## Scan control & verified transmission setups
 - FDR (BH q=0.1): **0 of 89** scanned series survive multiplicity control (effective p ≤ None)
@@ -23,30 +23,31 @@ data as of **2026-08-13** · 98 series · 10 red / 37 amber · 8 events surfaced
 
 ## Events (ranked)
 
-### [RED 8.93] cross-asset · 13 series ↑
-- comex_gold [COMMODITIES]: last 4450.10, z20 2.31, zc 0.63, resid-z 0.33 [quiet], 1d 0.93%, |z20|=2.31; co-occur[gold_silver] same-direction (channel VALID)
-- russell_2000 [INDICES]: last 3045.74, z20 1.92, zc 0.51, resid-z 0.53 [quiet], 1d 0.62%, |z20|=1.92; 1y-pct=100
-- comex_silver [COMMODITIES]: last 65.14, z20 1.85, zc -0.25, resid-z -1.09 [quiet], 1d -0.63%, |z20|=1.85; co-occur[gold_silver] same-direction (channel VALID)
-- dyn_nvda [EQUITIES]: last 224.13, z20 1.83, zc 1.21, resid-z 0.48 [quiet], 1d 3.05%, 1y-pct=98
-- dyn_vt [EQUITIES]: last 161.55, z20 1.73, zc 0.53, resid-z 0.98 [quiet], 1d 0.46%, 1y-pct=100
-- stoxx_50 [INDICES]: last 6571.05, z20 1.71, zc 0.73, resid-z -0.56 [quiet], 1d 0.57%, |z20|=1.71; 1y-pct=100
-- dax [INDICES]: last 26479.39, z20 1.54, zc 0.77, resid-z -0.24 [quiet], 1d 0.56%, |z20|=1.54; 1y-pct=100
-- sp500 [INDICES]: last 7748.71, z20 1.47, zc 0.32, resid-z -1.19 [quiet], 1d 0.27%, 1y-pct=99
-- vix [INDICES]: last 14.60, z20 -1.46, zc 0.04, resid-z n/a [quiet], 1d 0.34%, 1y-pct=4
-- cac_40 [INDICES]: last 8694.31, z20 1.21, zc 0.30, resid-z -0.72 [quiet], 1d 0.22%, 1y-pct=98
-- dow_jones [INDICES]: last 53769.86, z20 1.11, zc -0.05, resid-z -0.49 [quiet], 1d -0.04%, 1y-pct=97
-- gold_silver_ratio [DERIVED]: last 68.32, z20 -0.85, zc n/a, resid-z n/a [quiet], 1d 1.58%, GSR<75 (extreme low)
-- comex_copper [COMMODITIES]: last 6.58, z20 0.85, zc -0.11, resid-z -0.18 [quiet], 1d -0.25%, 1y-pct=96
-- **Mechanism**: The recent drop in silver and gold prices can be attributed to a sell-off by participants and weaker spot demand, which has led to a decline in precious metal prices. This move is largely priced, with small resid_z values for comex_gold and comex_silver, indicating that the move is largely explained by factor exposures. The VALID gold_silver_comove channel suggests that monetary metals are co-moving, and the ratio extremes are rotations.
-- **Gap**: No gap: the move in comex_gold and comex_silver is largely priced, with small resid_z values, indicating that the move is largely explained by factor exposures.
-- **India take**: The Indian instrument nifty_metal, which has a rho of 0.52 with comex_silver, is expected to move down, while nifty_fmcg, which has a rho of -0.512 with dyn_nvda, is expected to move up. The nifty_metal has not reacted yet, and is worth watching.
-- Watch next: nifty_metal (down) — not yet - watch; rho=0.52 via comex_silver
-- Watch next: nifty_fmcg (up) — not yet - watch; rho=-0.512 via dyn_nvda
-- **India receivers**: nifty_metal (rho 0.52, z 0.85); nifty_midcap_100 (rho 0.514, z 1.73); nifty_fmcg (rho -0.512, z -0.89); nifty_50 (rho 0.489, z 0.32)
+### [RED 9.19] cross-asset · 14 series ↑
+- comex_gold [COMMODITIES]: last 4439.90, z20 2.23, zc 0.48, resid-z 0.33 [quiet], 1d 0.70%, |z20|=2.23; co-occur[gold_silver] same-direction (channel VALID)
+- russell_2000 [INDICES]: last 3045.48, z20 1.91, zc 0.50, resid-z 0.52 [quiet], 1d 0.61%, |z20|=1.91; 1y-pct=100
+- comex_silver [COMMODITIES]: last 65.19, z20 1.87, zc -0.22, resid-z -0.84 [quiet], 1d -0.55%, |z20|=1.87; co-occur[gold_silver] same-direction (channel VALID)
+- dyn_nvda [EQUITIES]: last 225.10, z20 1.75, zc 0.18, resid-z 0.48 [quiet], 1d 0.45%, 1y-pct=98
+- dyn_vt [EQUITIES]: last 162.14, z20 1.75, zc 0.46, resid-z 0.98 [quiet], 1d 0.38%, 1y-pct=100
+- sp500 [INDICES]: last 7785.73, z20 1.60, zc 0.60, resid-z -1.19 [quiet], 1d 0.48%, |z20|=1.60; 1y-pct=100
+- stoxx_50 [INDICES]: last 6556.24, z20 1.58, zc 0.44, resid-z -0.37 [quiet], 1d 0.34%, |z20|=1.58; 1y-pct=100
+- vix [INDICES]: last 14.43, z20 -1.57, zc -0.11, resid-z n/a [quiet], 1d -0.82%, |z20|=1.57; 1y-pct=3
+- nasdaq_100 [INDICES]: last 29932.08, z20 1.54, zc 0.47, resid-z 0.63 [quiet], 1d 0.64%, |z20|=1.54
+- dax [INDICES]: last 26399.98, z20 1.40, zc 0.36, resid-z -0.13 [quiet], 1d 0.26%, 1y-pct=100
+- dow_jones [INDICES]: last 53932.89, z20 1.20, zc 0.40, resid-z -0.66 [quiet], 1d 0.30%, 1y-pct=98
+- cac_40 [INDICES]: last 8673.68, z20 1.07, zc -0.02, resid-z -0.64 [quiet], 1d -0.01%, 1y-pct=98
+- comex_copper [COMMODITIES]: last 6.61, z20 1.07, zc 0.11, resid-z -0.32 [quiet], 1d 0.24%, 1y-pct=98
+- gold_silver_ratio [DERIVED]: last 68.10, z20 -1.03, zc n/a, resid-z n/a [quiet], 1d 1.26%, GSR<75 (extreme low)
+- **Mechanism**: The recent move in global markets is driven by a decline in oil prices and a softer-than-expected producer price inflation reading, which has improved risk appetite. This has led to a rally in equity markets, with the Russell 2000 and S&P 500 showing significant gains. The gold-silver ratio is also at an extreme low, indicating a potential rotation between the two metals.
+- **Gap**: No gap: the big raw move in comex_gold and comex_silver is largely priced, with resid_z values of 0.33 and -0.84 respectively, indicating that the move is largely explained by factor exposures
+- **India take**: The Indian instrument nifty_metal, which is correlated with comex_silver, is expected to move up, while nifty_midcap_100 has already reacted. The Nifty 50 is also expected to move, although it has not yet reacted.
+- Watch next: nifty_metal (up) — not yet - watch; correlated with comex_silver
+- Watch next: nifty_midcap_100 (up) — already moved; correlated with dax
+- **India receivers**: nifty_metal (rho 0.519, z 0.85); nifty_midcap_100 (rho 0.515, z 1.73); nifty_fmcg (rho -0.504, z -0.89); nifty_50 (rho 0.491, z 0.32)
+- Source: Dow Jones| Nasdaq | US Stock Market Today | Live: US futures tick higher as oil retreats ahead of inflation data — ET Markets, 2026-08-13. https://economictimes.indiatimes.com/markets/us-stocks/news/dow-jones-stock-market-live-updates-nasdaq-sp-500-us-iran-israel-hormuz-deal-crude-oil-fed-warsh-rate-hike-alphabet-amazon-apple-cerebras-systems-accelerant-chip-stock-price-news-13th-august-2026/liveblog/133211930.cms
+- Source: Down 48% from peak, but silver still beats gold, equity to post best 5-year returns. Time to buy? — ET Markets, 2026-08-13. https://economictimes.indiatimes.com/markets/commodities/news/down-48-from-peak-but-silver-still-beats-gold-equity-to-post-best-5-year-returns-time-to-buy/articleshow/133210805.cms
 - Source: Cisco stock falls on margin concerns. Here’s what Wall Street analysts are saying. — MarketWatch Top, 2026-08-13. https://www.marketwatch.com/story/cisco-stock-falls-on-margin-concerns-heres-what-wall-street-analysts-are-saying-582e39fe?mod=mw_rss_topstories
-- Source: Silver price drops ₹836 to ₹2.36 lakh/kg — BusinessLine Mkts, 2026-08-13. https://www.thehindubusinessline.com/markets/gold/silver-price-drops-836-to-236-lakhkg/article71340231.ece
-- Source: Gold price falls ₹437 to ₹1,54,445/10g — BusinessLine Mkts, 2026-08-13. https://www.thehindubusinessline.com/markets/gold/gold-price-falls-437-to-15444510g/article71340233.ece
-- Historical analogues: 2024-11-26 (d=0.92), 2025-10-31 (d=1.0), 2025-10-24 (d=1.11)
+- Historical analogues: 2024-11-26 (d=0.9), 2025-10-31 (d=0.97), 2025-10-24 (d=1.11)
 
 ### [RED 6.94] dyn_301077_sz ↑
 - dyn_301077_sz [EQUITIES]: last 24.63, z20 4.94, zc 4.42, resid-z 0.59 [moved], 1d 13.76%, |z20|=4.94
@@ -58,17 +59,17 @@ data as of **2026-08-13** · 98 series · 10 red / 37 amber · 8 events surfaced
 - Source: Global Market: China stocks rise as tech shares lead gains ahead of US CPI — ET Markets, 2026-08-12. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-china-stocks-rise-as-tech-shares-lead-gains-ahead-of-us-cpi/articleshow/133172233.cms
 - Historical analogues: 2026-06-18 (d=0.0), 2026-03-30 (d=0.02), 2026-06-03 (d=0.03)
 
-### [AMBER 6.06] commodities · 2 series ↓
-- wti [COMMODITIES]: last 81.44, z20 -0.23, zc -0.74, resid-z 0.08 [quiet], 1d -2.20%, 1-session move -2.20% ≥ 1.5%
-- brent [COMMODITIES]: last 87.22, z20 -0.16, zc -0.67, resid-z 0.10 [quiet], 1d -1.98%, 1-session move -1.98% ≥ 1.5%
-- **Mechanism**: The recent decline in WTI and Brent crude oil prices may propagate through the metal_copper_channel, potentially affecting Indian metal equities. However, the current move in oil prices is largely priced, with small resid_z values indicating that the move is mostly explained by factor exposures. The valid gold_silver_comove channel may also play a role, but its impact on Indian markets is less direct.
-- **Gap**: No gap: the current move in oil prices is largely priced, with small resid_z values indicating that the move is mostly explained by factor exposures.
-- **India take**: The Indian instrument that expresses this move is the nifty_midcap_100, which has already reacted to the WTI price move. The dyn_bharatcoal_ns has not yet reacted, but its rho with WTI suggests it may be affected.
-- Watch next: nifty_midcap_100 (down) — already moved; reacted to WTI price move
-- **India receivers**: nifty_midcap_100 (rho -0.425, z 1.73); dyn_bharatcoal_ns (rho -0.377, z -0.79)
-- Source: High Oil Prices Deliver a Windfall for China’s Coal-to-Chemicals Industry — OilPrice, 2026-08-13. https://oilprice.com/Latest-Energy-News/World-News/High-Oil-Prices-Deliver-a-Windfall-for-Chinas-Coal-to-Chemicals-Industry.html
-- Source: New Zealand Approves New Oil and Gas Production as Energy Security Concerns Grow — OilPrice, 2026-08-13. https://oilprice.com/Latest-Energy-News/World-News/New-Zealand-Approves-New-Oil-and-Gas-Production-as-Energy-Security-Concerns-Grow.html
-- Source: Sensex today | Stock Market Live:  Sensex, Nifty trade with negative bias amid firm crude oil prices — BusinessLine Mkts, 2026-08-13. https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-live-updates-13th-august-2026/article71337670.ece
+### [AMBER 6.19] commodities · 2 series ↓
+- wti [COMMODITIES]: last 80.92, z20 -0.35, zc -0.94, resid-z -0.63 [quiet], 1d -2.82%, 1-session move -2.82% ≥ 1.5%
+- brent [COMMODITIES]: last 86.75, z20 -0.25, zc -0.84, resid-z -0.60 [quiet], 1d -2.51%, 1-session move -2.51% ≥ 1.5%
+- **Mechanism**: The recent decline in WTI and Brent crude oil prices may propagate through the metal_copper_channel, potentially affecting Indian metal equities. However, the inr_oil_channel is weak, which may limit the transmission of oil price moves to the Indian rupee. The valid gold_silver_comove channel may also influence the price action, but its impact is uncertain.
+- **Gap**: No gap: the move in WTI and Brent is largely priced, with resid_z values of -0.63 and -0.6, respectively, indicating that the decline is mostly explained by factor exposures.
+- **India take**: The Indian instrument nifty_midcap_100 has already reacted to the move in WTI, while dyn_bharatcoal_ns remains quiet. The metal_copper_channel may influence Indian metal equities, but the impact is uncertain.
+- Watch next: nifty_midcap_100 (down) — already moved; reacted to WTI move
+- **India receivers**: nifty_midcap_100 (rho -0.424, z 1.73); dyn_bharatcoal_ns (rho -0.376, z -0.79)
+- Source: Hormuz blockade, crude, and CPI keep D-Street on edge — BusinessLine Mkts, 2026-08-13. https://www.thehindubusinessline.com/markets/hormuz-blockade-crude-and-cpi-keep-d-street-on-edge/article71341083.ece
+- Source: India Eyes Two New Sites to Expand Strategic Oil Reserves — OilPrice, 2026-08-13. https://oilprice.com/Latest-Energy-News/World-News/India-Eyes-Two-New-Sites-to-Expand-Strategic-Oil-Reserves.html
+- Source: Indian bonds mirror gains in Treasuries as oil slips — ET Markets, 2026-08-13. https://economictimes.indiatimes.com/markets/bonds/indian-bonds-mirror-gains-in-treasuries-as-oil-slips/articleshow/133211927.cms
 - Historical analogues: 2026-05-22 (d=0.0), 2024-10-18 (d=0.03), 2024-10-31 (d=0.05)
 
 ### [RED 5.76] midcap_largecap_ratio ↑
@@ -81,7 +82,7 @@ data as of **2026-08-13** · 98 series · 10 red / 37 amber · 8 events surfaced
 - Historical analogues: 2025-12-31 (d=0.0), 2024-11-06 (d=0.1), 2025-07-03 (d=0.11)
 
 ### [RED 5.36] corn ↑
-- corn [COMMODITIES]: last 478.25, z20 3.36, zc 3.64, resid-z 2.93 [unexplained], 1d 4.65%, |z20|=3.36; 1y-pct=100
+- corn [COMMODITIES]: last 478.25, z20 3.36, zc 3.64, resid-z 2.98 [unexplained], 1d 4.65%, |z20|=3.36; 1y-pct=100
 - **Mechanism**: The surge in corn prices is driven by the USDA's unexpected cut in yield due to heat waves, which has created a supply shock. This move is likely to propagate through the metal_copper_channel, given the historical correlation between global copper prices and Indian metal equities. The VALID gold_silver_comove channel may also play a role, as monetary metals co-move in response to changes in commodity prices.
 - **Gap**: No gap: the big raw move in corn with a resid_z of 2.93 is largely unexplained by factors, but given the specific news-driven event, it appears PRICED rather than an anomaly.
 - **India take**: The Indian instrument that expresses this move is likely to be the MCX Copper futures, which may react in tandem with the global copper prices. However, the reaction has not been observed yet.
@@ -89,36 +90,19 @@ data as of **2026-08-13** · 98 series · 10 red / 37 amber · 8 events surfaced
 - Source: Corn Jumps as USDA Cuts Yield More Than Expected Amid Heat Waves — Mint Markets, 2026-08-12. https://www.livemint.com/market/corn-jumps-as-usda-cuts-yield-more-than-expected-amid-heat-waves-11786572052753.html
 - Historical analogues: 2026-05-22 (d=0.0), 2025-10-21 (d=0.01), 2025-12-31 (d=0.02)
 
-### [RED 5.31] dyn_crwv ↑
-- dyn_crwv [EQUITIES]: last 107.68, z20 3.31, zc 3.21, resid-z 0.90 [moved], 1d 19.22%, |z20|=3.31
+### [RED 5.3] dyn_crwv ↑
+- dyn_crwv [EQUITIES]: last 115.75, z20 3.30, zc 1.22, resid-z 0.90 [quiet], 1d 7.44%, |z20|=3.30
 - **Mechanism**: The recent surge in CoreWeave's stock price, driven by strong AI infrastructure company earnings and positive quarterly results, has fueled AI optimism and boosted the stock prices of related companies. This move is priced, with a relatively small resid_z of 0.9, indicating that the move is largely explained by factor exposures. The VALID vix_equity_inverse channel suggests that the vol spike may lead to an equity drawdown, but the current RISK_ON regime and strong earnings reports may mitigate this effect.
 - **Gap**: No gap: the move is largely priced, with a small resid_z and a big raw move, indicating that the market has already incorporated the information from CoreWeave's earnings report
 - **India take**: The Indian instrument nifty_fmcg has already reacted to the move, with a rho of -0.38 via dyn_crwv. However, the metal_copper_channel may also be relevant, as global copper leads Indian metal equities, and the recent surge in AI infrastructure demand may have implications for Indian metal stocks.
 - Watch next: nifty_fmcg (down) — already moved; rho=-0.38 via dyn_crwv
-- **India receivers**: nifty_fmcg (rho -0.381, z -0.89)
 - Source: US stocks: S&P 500 ends higher as CoreWeave results fuel AI optimism — ET Markets, 2026-08-12. https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-sp-500-ends-higher-as-coreweave-results-fuel-ai-optimism/articleshow/133192806.cms
 - Source: US stocks: CoreWeave, Super Micro surge on signs of sustained AI buildout — ET Markets, 2026-08-12. https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-coreweave-super-micro-surge-on-signs-of-sustained-ai-buildout/articleshow/133187386.cms
 - Source: CoreWeave’s stock is rocketing after earnings lead to praise from bulls and bears alike — MarketWatch Top, 2026-08-12. https://www.marketwatch.com/story/coreweaves-stock-is-rocketing-after-earnings-lead-to-praise-from-bulls-and-bears-alike-46c831e7?mod=mw_rss_topstories
 - Historical analogues: 2026-05-22 (d=0.0), 2026-05-13 (d=0.01), 2025-08-05 (d=0.04)
 
-### [AMBER 5.03] cross-asset · 4 series ↑
-- ust_30y [RATES]: last 5.24, z20 1.37, zc -0.23, resid-z -0.75 [quiet], 1d -0.19%, 1y-pct=99
-- ust_10y [RATES]: last 4.70, z20 0.96, zc -0.42, resid-z -0.98 [quiet], 1d -0.42%, 1y-pct=98
-- dyn_bond [EQUITIES]: last 90.54, z20 -0.80, zc 0.24, resid-z -0.57 [quiet], 1d 0.07%, 1y-pct=2
-- tips_10y_real [RATES]: last 2.43, z20 0.80, zc 0.00, resid-z -0.59 [quiet], 1d 0.00%, 1y-pct=97
-- **Mechanism**: The recent rise in US bond yields, particularly the 10-year yield reaching its highest level since 2007, is driving the current market move. This increase in yields is likely due to expectations of further monetary tightening and fiscal concerns, which is also affecting the Indian market through the transmission of global rates. The VALID gold_silver_comove and metal_copper_channel are potential channels for this transmission, but the primary driver is the global rate environment.
-- **Gap**: No gap: The big raw move in US bond yields is largely priced in, with resid_z values indicating that the moves are mostly explained by factor exposures.
-- **India take**: The Indian market is likely to react to the global rate environment, with potential impacts on Indian bond yields and the equity market. However, the reaction may be muted due to the already high yields in the Indian market. The MCX gold and silver prices are lacklustre, indicating that the Indian market is not yet reacting strongly to the global developments.
-- Watch next: ust_30y (down) — already moved; High US bond yields are pricing in expected rate hikes
-- Watch next: dyn_bond (down) — already moved; Equity market is reacting to higher US bond yields
-- Watch next: tips_10y_real (down) — already moved; Real yields are rising in line with nominal yields
-- Source: Global Market: Japanese bond yields hold near highs as markets brace for BOJ rate hike — ET Markets, 2026-08-13. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japanese-bond-yields-hold-near-highs-as-markets-brace-for-boj-rate-hike/articleshow/133203276.cms
-- Source: Gold and silver trade lacklustre on MCX despite soft US inflation data; elevated dollar, bond yields weigh — Mint Markets, 2026-08-13. https://www.livemint.com/market/commodities/gold-and-silver-prices-today-rates-lacklustre-on-mcx-despite-soft-us-inflation-data-elevated-dollar-bond-yields-weigh-11786591359947.html
-- Source: US Sells 10-Year Debt at Highest Yields Since Financial Crisis — Mint Markets, 2026-08-12. https://www.livemint.com/market/us-sells-10-year-debt-at-highest-yields-since-financial-crisis-11786566124472.html
-- Historical analogues: 2026-05-22 (d=0.0), 2026-03-30 (d=0.28), 2026-05-07 (d=0.32)
-
 ### [RED 4.9] dyn_fincables_ns ↑
-- dyn_fincables_ns [EQUITIES]: last 1249.30, z20 2.90, zc -0.57, resid-z -0.77 [quiet], 1d -2.40%, |z20|=2.90; 1y-pct=99
+- dyn_fincables_ns [EQUITIES]: last 1249.30, z20 2.90, zc -0.57, resid-z -0.80 [quiet], 1d -2.40%, |z20|=2.90; 1y-pct=99
 - **Mechanism**: The recent surge in Finolex Cables' shares is driven by its strong Q1 performance, with a 52.6% YoY rise in net profit and a 44.3% increase in revenue. This move is priced, given the company's robust operational performance and the resultant expansion in margins. The metal_copper_channel, which is currently valid, may also contribute to the propagation of this move, as global copper leads Indian metal equities.
 - **Gap**: No gap: the move in Finolex Cables' shares is largely explained by its strong Q1 performance and is therefore priced
 - **India take**: The Indian instruments that express this move are the nifty_midcap_100 and midcap_largecap_ratio, both of which have already reacted to the surge in Finolex Cables' shares. Additionally, dyn_bharatcoal_ns may also be affected, although it has not yet reacted.
@@ -130,8 +114,22 @@ data as of **2026-08-13** · 98 series · 10 red / 37 amber · 8 events surfaced
 - Source: Q1 Results Today Live: Tata Motors, Apollo Hospitals, HAL, Grasim GMR Airports, Lenskart, Abbott, VA Tech, IRCON, AIA, IRCTC, Sun TV, EID Parry to announce Q1 results, NBCC, Siemens, RVNL, Kalpataru, MRF, Zydus Lifesciences, KPI Green, Manappuram Finance in focus, TD Power Systems, Finolex shares hit 52-week high — BusinessLine Mkts, 2026-08-12. https://www.thehindubusinessline.com/markets/q1-results-today-live-updates-hal-grasim-ind-tata-motors-apollo-hospitals-gmr-airports-lenskart-gic-abbott-aia-engg-irctc-sun-tv-eid-parry-va-tech-ircon-titagarh-results-12-august-2026/article71332017.ece
 - Historical analogues: 2026-07-10 (d=0.0), 2025-02-19 (d=0.0), 2025-02-07 (d=0.02)
 
+### [AMBER 4.69] rates · 3 series ↑
+- ust_30y [RATES]: last 5.24, z20 1.37, zc -0.23, resid-z -0.75 [quiet], 1d -0.19%, 1y-pct=99
+- ust_10y [RATES]: last 4.70, z20 0.96, zc -0.42, resid-z -0.98 [quiet], 1d -0.42%, 1y-pct=98
+- tips_10y_real [RATES]: last 2.43, z20 0.80, zc 0.00, resid-z -0.59 [quiet], 1d 0.00%, 1y-pct=97
+- **Mechanism**: The recent rise in US Treasury yields, particularly the 10-year yield reaching its highest level since 2007, is likely to propagate through the metal_copper_channel, affecting Indian metal equities. The valid gold_silver_comove channel may also influence the price of gold and silver in the Indian market. However, the weak inr_oil_channel and dxy_inr_channel may limit the transmission of global rate hikes to the Indian rupee.
+- **Gap**: No gap: the big raw move in US Treasury yields has a small resid_z, indicating that the move is largely priced in
+- **India take**: The Indian instrument that expresses this move is the 10-year Government of India bond yield, which may react to the rise in US Treasury yields. However, the weak inr_oil_channel and dxy_inr_channel may limit the transmission of global rate hikes to the Indian rupee.
+- Watch next: dyn_bond (down) — not yet - watch; historically leads by 1d
+- Watch next: brent (up) — not yet - watch; historically leads by 3d
+- Source: Global Market: Japanese bond yields hold near highs as markets brace for BOJ rate hike — ET Markets, 2026-08-13. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japanese-bond-yields-hold-near-highs-as-markets-brace-for-boj-rate-hike/articleshow/133203276.cms
+- Source: Gold and silver trade lacklustre on MCX despite soft US inflation data; elevated dollar, bond yields weigh — Mint Markets, 2026-08-13. https://www.livemint.com/market/commodities/gold-and-silver-prices-today-rates-lacklustre-on-mcx-despite-soft-us-inflation-data-elevated-dollar-bond-yields-weigh-11786591359947.html
+- Source: US Sells 10-Year Debt at Highest Yields Since Financial Crisis — Mint Markets, 2026-08-12. https://www.livemint.com/market/us-sells-10-year-debt-at-highest-yields-since-financial-crisis-11786566124472.html
+- Historical analogues: 2026-05-22 (d=0.0), 2026-05-07 (d=0.25), 2026-03-30 (d=0.31)
+
 ## Watchlist (below surfacing floor)
-dyn_bac ↑ (4.81), dyn_cupid_ns ↑ (4.48), indices · 2 series ↑ (4.45), dyn_ohi ↓ (4.44), dyn_lenskart_ns ↑ (4.26), dyn_tatatech_ns ↑ (3.8), dyn_atherenerg_ns ↑ (3.61), dyn_tech ↑ (3.46), bovespa ↓ (3.1), dyn_coin ↓ (3.02), dyn_hdb ↓ (2.92), usd_cny ↓ (2.81)
+dyn_cupid_ns ↑ (4.48), indices · 2 series ↑ (4.45), dyn_lenskart_ns ↑ (4.26), dyn_bac ↑ (4.24), dyn_tatatech_ns ↑ (3.8), dyn_atherenerg_ns ↑ (3.61), dyn_tech ↑ (3.01), dyn_icicigi_bo ↓ (2.79), dyn_hdb ↓ (2.76), usd_brl ↑ (2.67), indices · 2 series ↑ (2.63), dyn_lth ↑ (2.48)
 
 ## India macro
 - nifty_50: 24395.8496 (1d -0.16%, z20 0.32, flag none)
@@ -144,46 +142,46 @@ dyn_bac ↑ (4.81), dyn_cupid_ns ↑ (4.48), indices · 2 series ↑ (4.45), dyn
 - Next India prints: NSDL FPI flows T-0d · India WPI T-1d · RBI Weekly Statistical Supplement T-1d · Kharif sowing data T-1d
 
 ## News-tracked universe (why each is watched)
-- COALINDIA.NS (COAL INDIA LTD) score 94.6 — "Coal India Share Price Live Updates: Coal India  Current Valuation"
-- INOXINDIA.NS (INOX INDIA LIMITED) score 93.3 — "Coal India Share Price Live Updates: Coal India  Current Valuation"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 92.8 — "Coal India Share Price Live Updates: Coal India  Current Valuation"
-- INDIANB.NS (INDIAN BANK) score 71.7 — "Fintech startup Navi said to hire banks for $315 million IPO"
-- BAC (Bank of America Corporation) score 55.8 — "Fintech startup Navi said to hire banks for $315 million IPO"
-- COIN (Coinbase Global, Inc.) score 53.8 — "Global Market | Shein plans Hong Kong stock market debut on August 28: Reports"
-- TECHM.NS (TECH MAHINDRA LIMITED) score 53.1 — "Technocraft Ventures IPO listing in focus. Here's what GMP signals ahead of debut"
-- HDB (HDFC Bank Limited) score 51.9 — "Fintech startup Navi said to hire banks for $315 million IPO"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 51.4 — "Technocraft Ventures IPO listing in focus. Here's what GMP signals ahead of debut"
-- TECH (Bio-Techne Corp) score 50.7 — "Technocraft Ventures IPO listing in focus. Here's what GMP signals ahead of debut"
-- CHKP (Check Point Software Technolog) score 50.4 — "IPO GMP Today Live Updates: Dhoot Transmission, Milky Mist, Shiprocket & Behari Lal in Foc"
-- OHI (Omega Healthcare Investors, In) score 49.1 — "Anthropic to beat SpaceX? Investors bet on $2 trillion valuation in record IPO"
-- IDBI.NS (IDBI BANK LIMITED) score 47.3 — "Fintech startup Navi said to hire banks for $315 million IPO"
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 47.3 — "Fintech startup Navi said to hire banks for $315 million IPO"
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 47.1 — "Fintech startup Navi said to hire banks for $315 million IPO"
-- LTH (Life Time Group Holdings, Inc.) score 37.8 — "Solar Industries shares jump 8% to fresh lifetime high after Q1 net profit soars 93% YoY t"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 32.0 — "New Zealand Approves New Oil and Gas Production as Energy Security Concerns Grow"
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 30.8 — "Tata Motors PV Q1 Results: Net profit plunges 80% YoY to Rs 775 crore, revenue rises 9%"
-- 301077.SZ (CHINASTARS) score 28.7 — "High Oil Prices Deliver a Windfall for China’s Coal-to-Chemicals Industry"
-- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 25.7 — "Tata Motors PV Q1 Results: Net profit plunges 80% YoY to Rs 775 crore, revenue rises 9%"
-- BOND (PIMCO Active Bond Exchange-Tra) score 24.7 — "Global Market: Japanese bond yields hold near highs as markets brace for BOJ rate hike"
-- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 21.2 — "Muthoot Fincorp files draft papers for ₹3,000 crore IPO"
-- JIOFIN.BO (Jio Financial Services Limited) score 18.0 — "Will Bharti Airtel’s ARPU increase after scrapping Rs 299, other popular prepaid plans? Wh"
-- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 17.6 — "Coal India Share Price Live Updates: Coal India  Current Valuation"
-- JUSTDIAL.BO (JUST DIAL LTD.) score 15.3 — "Grasim Inds Share Price Live Updates: Grasim Industries Sees Price Adjustment"
-- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 15.0 — "Will Bharti Airtel’s ARPU increase after scrapping Rs 299, other popular prepaid plans? Wh"
-- MS (Morgan Stanley) score 12.5 — "SPCX - MORGAN STANLEY: SPACEX LOCK-UP IS A BUYING OPPORTUNITY Morgan Stanley reiterated Ov"
-- NVDA (NVIDIA Corporation) score 10.7 — "Alphabet’s stock slips as Nvidia’s $500 billion financing deal threatens custom chips"
-- BHARATFORG.BO (BHARAT FORGE LTD.) score 9.3 — "Sugar stocks Balrampur Chini, Dhampur Sugar, Dalmia Bharat Sugar, others rally up to 7%. H"
-- PCJEWELLER.NS (PC JEWELLER LTD) score 9.2 — "Motilal Oswal bullish on jewellery stocks; picks Titan, Kalyan Jewellers as top bets, sees"
-- META (Meta) score 8.6 — "Newly-listed metal stock Rajputana Stainless surges 10%, hits record high after strong Q1 "
-- AAPL (Apple Inc.) score 7.4 — "Nvidia, Apple, Google fuel record $185 billion gain for Norway’s wealth fund, but CEO say,"
-- VT (Vanguard Total World Stock Ind) score 7.2 — "China’s next economic ambition: workshop for the Muslim world"
-- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 6.7 — "Adani Ports SEZ Share Price Live Updates: Adani Ports SEZ Dividend Updates"
-- INTC (Intel Corporation) score 4.5 — "Nvidia, Intel, Google: Wall Street is partying like it’s 1999"
-- LENSKART.NS (LENSKART SOLUTIONS LTD) score 3.9 — "Lenskart gets leg-up from international biz even as India expansion continues"
-- ICICIGI.BO (ICICI Lombard General Insuranc) score 3.1 — "ICICI Bank Share Price Live Updates: ICICI Bank Stock Details"
-- CRWV (CoreWeave, Inc.) score 2.4 — "US stocks: S&P 500 ends higher as CoreWeave results fuel AI optimism"
+- COALINDIA.NS (COAL INDIA LTD) score 97.3 — "Indian bonds mirror gains in Treasuries as oil slips"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 96.1 — "Indian bonds mirror gains in Treasuries as oil slips"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 95.6 — "Indian bonds mirror gains in Treasuries as oil slips"
+- INDIANB.NS (INDIAN BANK) score 71.0 — "Indian bonds mirror gains in Treasuries as oil slips"
+- BAC (Bank of America Corporation) score 54.5 — "Fintech startup Navi said to hire banks for $315 million IPO"
+- TECHM.NS (TECH MAHINDRA LIMITED) score 52.8 — "Semiconductor and spacetech boom: Is India entering a new deep-tech investment cycle?"
+- COIN (Coinbase Global, Inc.) score 52.5 — "Global Market | Shein plans Hong Kong stock market debut on August 28: Reports"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 51.2 — "Semiconductor and spacetech boom: Is India entering a new deep-tech investment cycle?"
+- HDB (HDFC Bank Limited) score 50.6 — "Fintech startup Navi said to hire banks for $315 million IPO"
+- TECH (Bio-Techne Corp) score 50.5 — "Semiconductor and spacetech boom: Is India entering a new deep-tech investment cycle?"
+- CHKP (Check Point Software Technolog) score 49.2 — "IPO GMP Today Live Updates: Dhoot Transmission, Milky Mist, Shiprocket & Behari Lal in Foc"
+- OHI (Omega Healthcare Investors, In) score 49.0 — "Sebi proposes easier accreditation, wider pool of accredited investors"
+- IDBI.NS (IDBI BANK LIMITED) score 46.2 — "Fintech startup Navi said to hire banks for $315 million IPO"
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 46.2 — "Fintech startup Navi said to hire banks for $315 million IPO"
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 45.9 — "Fintech startup Navi said to hire banks for $315 million IPO"
+- LTH (Life Time Group Holdings, Inc.) score 40.9 — "Milky Mist Dairy Food IPO subscribed over 56 times, GMP hints 16% listing gain. Allotment "
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 31.2 — "New Zealand Approves New Oil and Gas Production as Energy Security Concerns Grow"
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 31.0 — "Tata Motors CV shares surge over 4% after Q1 profit growth"
+- 301077.SZ (CHINASTARS) score 28.0 — "High Oil Prices Deliver a Windfall for China’s Coal-to-Chemicals Industry"
+- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 26.1 — "Tata Motors CV shares surge over 4% after Q1 profit growth"
+- BOND (PIMCO Active Bond Exchange-Tra) score 25.1 — "Indian bonds mirror gains in Treasuries as oil slips"
+- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 20.7 — "Muthoot Fincorp files draft papers for ₹3,000 crore IPO"
+- JIOFIN.BO (Jio Financial Services Limited) score 17.5 — "Will Bharti Airtel’s ARPU increase after scrapping Rs 299, other popular prepaid plans? Wh"
+- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 17.2 — "Coal India Share Price Live Updates: Coal India  Current Valuation"
+- JUSTDIAL.BO (JUST DIAL LTD.) score 15.9 — "The AI boom is not just driving stocks — it’s also moving the foreign-exchange market"
+- MS (Morgan Stanley) score 15.2 — "UPGRADES • $ABBV: Upgraded Peerperform → Outperform by Wolfe Research; PT $300 • $ABT: Upg"
+- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 14.6 — "Will Bharti Airtel’s ARPU increase after scrapping Rs 299, other popular prepaid plans? Wh"
+- NVDA (NVIDIA Corporation) score 10.4 — "Alphabet’s stock slips as Nvidia’s $500 billion financing deal threatens custom chips"
+- BHARATFORG.BO (BHARAT FORGE LTD.) score 9.1 — "Sugar stocks Balrampur Chini, Dhampur Sugar, Dalmia Bharat Sugar, others rally up to 7%. H"
+- PCJEWELLER.NS (PC JEWELLER LTD) score 9.0 — "Motilal Oswal bullish on jewellery stocks; picks Titan, Kalyan Jewellers as top bets, sees"
+- META (Meta) score 8.4 — "Newly-listed metal stock Rajputana Stainless surges 10%, hits record high after strong Q1 "
+- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 7.5 — "Adani Ports SEZ Share Price Highlights: Adani Ports SEZ Stock Price History"
+- AAPL (Apple Inc.) score 7.2 — "Nvidia, Apple, Google fuel record $185 billion gain for Norway’s wealth fund, but CEO say,"
+- VT (Vanguard Total World Stock Ind) score 7.0 — "China’s next economic ambition: workshop for the Muslim world"
+- LENSKART.NS (LENSKART SOLUTIONS LTD) score 5.8 — "Lenskart shares soar after strong Q1 results and MSCI inclusion buzz"
+- INTC (Intel Corporation) score 5.4 — "PRESIDENT’S SCHEDULE — AUGUST 13, 2026 🔸 8:00 AM — Executive Time White House · Closed Pre"
+- ICICIGI.BO (ICICI Lombard General Insuranc) score 3.0 — "ICICI Bank Share Price Live Updates: ICICI Bank Stock Details"
+- CRWV (CoreWeave, Inc.) score 2.3 — "US stocks: S&P 500 ends higher as CoreWeave results fuel AI optimism"
 - FINCABLES.NS (FINOLEX CABLES LTD) score 2.3 — "Finolex Cables ends 6% higher after Q1 results, Jefferies lift target to ₹1,410"
-- CUPID.NS (CUPID LIMITED) score 2.1 — "Cupid shares jump nearly 9% in two days post Q1 earnings"
+- CUPID.NS (CUPID LIMITED) score 2.0 — "Cupid shares jump nearly 9% in two days post Q1 earnings"
 
 ---
 ## Appendix — how every statistic in this brief is computed
