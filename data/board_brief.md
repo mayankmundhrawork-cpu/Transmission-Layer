@@ -1,4 +1,4 @@
-# Transmission Layer — board brief · 2026-08-13 21:00Z
+# Transmission Layer — board brief · 2026-08-13 22:09Z
 
 data as of **2026-08-13** · 98 series · 9 red / 38 amber · 8 events surfaced (22 suppressed)
 
@@ -18,26 +18,26 @@ data as of **2026-08-13** · 98 series · 9 red / 38 amber · 8 events surfaced 
 - FDR (BH q=0.1): **1 of 89** scanned series survive multiplicity control (effective p ≤ 0.0007248582980661222)
 - No live setups: drivers quiet or targets already repriced.
 - Track record · residual_reversion: hit-rate **0.494** (n=1111) — |resid_z|>=2.0 -> fwd 5d return opposes residual
-- Track record · transmission_follow: hit-rate **0.821** (n=2503) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
+- Track record · transmission_follow: hit-rate **0.821** (n=2481) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
 - Track record · spread_reversion: hit-rate **0.6** (n=15) — |dev| >= 2sigma vs PIT 252d -> |dev| shrinks >=25% within max(half-life,10) sessions
 
 ## Events (ranked)
 
-### [RED 9.09] cross-asset · 14 series ↑
-- comex_gold [COMMODITIES]: last 4406.20, z20 1.98, zc -0.04, resid-z 0.62 [quiet], 1d -0.06%, |z20|=1.98; co-occur[gold_silver] same-direction (channel VALID)
-- russell_2000 [INDICES]: last 3052.63, z20 1.86, zc 0.20, resid-z -0.70 [quiet], 1d 0.23%, |z20|=1.86; 1y-pct=100
+### [RED 9.08] cross-asset · 14 series ↑
+- comex_gold [COMMODITIES]: last 4407.10, z20 1.99, zc -0.03, resid-z 0.62 [quiet], 1d -0.04%, |z20|=1.99; co-occur[gold_silver] same-direction (channel VALID)
+- russell_2000 [INDICES]: last 3052.63, z20 1.86, zc 0.20, resid-z -0.71 [quiet], 1d 0.23%, |z20|=1.86; 1y-pct=100
 - dyn_vt [EQUITIES]: last 162.38, z20 1.83, zc 0.64, resid-z 0.94 [quiet], 1d 0.53%, 1y-pct=100
 - dyn_nvda [EQUITIES]: last 225.37, z20 1.78, zc 0.22, resid-z 1.25 [quiet], 1d 0.57%, 1y-pct=99
 - nasdaq_100 [INDICES]: last 30085.28, z20 1.75, zc 0.85, resid-z 0.61 [quiet], 1d 1.15%, |z20|=1.75; 1y-pct=96
 - sp500 [INDICES]: last 7798.86, z20 1.69, zc 0.81, resid-z -0.45 [quiet], 1d 0.65%, |z20|=1.69; 1y-pct=100
-- comex_silver [COMMODITIES]: last 64.58, z20 1.66, zc -0.59, resid-z -0.66 [quiet], 1d -1.48%, |z20|=1.66; co-occur[gold_silver] same-direction (channel VALID)
-- stoxx_50 [INDICES]: last 6544.01, z20 1.48, zc 0.20, resid-z -0.64 [quiet], 1d 0.15%, 1y-pct=99
+- comex_silver [COMMODITIES]: last 64.58, z20 1.66, zc -0.59, resid-z -0.68 [quiet], 1d -1.48%, |z20|=1.66; co-occur[gold_silver] same-direction (channel VALID)
+- stoxx_50 [INDICES]: last 6544.01, z20 1.48, zc 0.20, resid-z -0.65 [quiet], 1d 0.15%, 1y-pct=99
 - vix [INDICES]: last 14.63, z20 -1.44, zc 0.07, resid-z n/a [quiet], 1d 0.55%, 1y-pct=5
-- dax [INDICES]: last 26290.12, z20 1.21, zc -0.21, resid-z -0.62 [quiet], 1d -0.16%, 1y-pct=98
+- dax [INDICES]: last 26290.12, z20 1.21, zc -0.21, resid-z -0.63 [quiet], 1d -0.16%, 1y-pct=98
 - dow_jones [INDICES]: last 53834.58, z20 1.09, zc 0.16, resid-z -1.18 [quiet], 1d 0.12%, 1y-pct=98
-- gold_silver_ratio [DERIVED]: last 68.22, z20 -0.93, zc n/a, resid-z n/a [quiet], 1d 1.44%, GSR<75 (extreme low)
+- gold_silver_ratio [DERIVED]: last 68.24, z20 -0.92, zc n/a, resid-z n/a [quiet], 1d 1.46%, GSR<75 (extreme low)
 - cac_40 [INDICES]: last 8649.46, z20 0.91, zc -0.40, resid-z -0.96 [quiet], 1d -0.29%, 1y-pct=97
-- comex_copper [COMMODITIES]: last 6.58, z20 0.86, zc -0.09, resid-z -0.72 [quiet], 1d -0.21%, 1y-pct=96
+- comex_copper [COMMODITIES]: last 6.59, z20 0.91, zc -0.05, resid-z -0.65 [quiet], 1d -0.11%, 1y-pct=96
 - **Mechanism**: The recent surge in US stocks, particularly in the technology sector, has led to a record-high close for the S&P 500, driven by easing rate-hike worries. This move is priced, with a small resid_z, indicating that the market has already accounted for the factors driving the move. The VALID gold_silver_comove channel suggests that monetary metals are co-moving, but the recent retreat in gold prices due to profit-taking may indicate a rotation rather than a trend reversal.
 - **Gap**: No gap: The recent move in US stocks is largely priced, with small resid_z values indicating that the market has already accounted for the driving factors. The Indian transmission candidates, such as nifty_metal and nifty_midcap_100, have not yet fully reacted to the move, but there is no significant event-to-price gap.
 - **India take**: The Indian market may react to the US stock surge through the nifty_metal and nifty_midcap_100 indices, which are correlated with comex_silver and dax, respectively. However, the reaction is not yet significant, and the market is still watching for further developments.
@@ -60,8 +60,8 @@ data as of **2026-08-13** · 98 series · 9 red / 38 amber · 8 events surfaced 
 - Historical analogues: 2026-06-18 (d=0.0), 2026-03-30 (d=0.02), 2026-06-03 (d=0.03)
 
 ### [AMBER 6.12] commodities · 2 series ↓
-- wti [COMMODITIES]: last 81.20, z20 -0.29, zc -0.83, resid-z -0.43 [quiet], 1d -2.49%, 1-session move -2.49% ≥ 1.5%
-- brent [COMMODITIES]: last 87.00, z20 -0.20, zc -0.75, resid-z -0.41 [quiet], 1d -2.23%, 1-session move -2.23% ≥ 1.5%
+- wti [COMMODITIES]: last 81.21, z20 -0.28, zc -0.83, resid-z -0.43 [quiet], 1d -2.47%, 1-session move -2.47% ≥ 1.5%
+- brent [COMMODITIES]: last 86.96, z20 -0.21, zc -0.76, resid-z -0.43 [quiet], 1d -2.27%, 1-session move -2.27% ≥ 1.5%
 - **Mechanism**: The recent decline in WTI and Brent crude oil prices can be attributed to the influx of Middle Eastern oil hitting American shores, which may alleviate the market squeeze caused by wartime demand for American exports. This supply increase may lead to a decrease in oil prices, which in turn could affect the demand for oil and related markets. The valid metal_copper_channel and the weak inr_oil_channel may also play a role in transmitting this move to Indian metal equities and the INR.
 - **Gap**: No gap: the big raw move in oil prices has a relatively small resid_z, indicating that the move is largely priced in and not an anomaly.
 - **India take**: The Indian instrument that expresses this move is the Nifty Midcap 100, which has already reacted to the WTI move. The Dyn Bharat Coal NS, which has a correlation with WTI, is still quiet and worth watching.
@@ -130,7 +130,7 @@ data as of **2026-08-13** · 98 series · 9 red / 38 amber · 8 events surfaced 
 - Historical analogues: 2026-07-10 (d=0.0), 2025-08-06 (d=0.01), 2025-07-24 (d=0.02)
 
 ## Watchlist (below surfacing floor)
-indices · 2 series ↑ (4.45), dyn_crwv ↑ (4.42), dyn_lenskart_ns ↑ (4.26), dyn_ohi ↓ (4.05), dyn_tatatech_ns ↑ (3.8), dyn_bac ↑ (3.63), dyn_atherenerg_ns ↑ (3.61), fx · 2 series ↑ (3.36), dyn_tech ↑ (3.05), dyn_hdb ↓ (2.89), usd_brl ↑ (2.84), dyn_icicigi_bo ↓ (2.79)
+indices · 2 series ↑ (4.45), dyn_crwv ↑ (4.42), dyn_lenskart_ns ↑ (4.26), dyn_ohi ↓ (4.05), dyn_tatatech_ns ↑ (3.8), dyn_bac ↑ (3.63), dyn_atherenerg_ns ↑ (3.61), fx · 2 series ↑ (3.34), dyn_tech ↑ (3.05), usd_brl ↑ (2.95), dyn_hdb ↓ (2.89), dyn_icicigi_bo ↓ (2.79)
 
 ## India macro
 - nifty_50: 24395.8496 (1d -0.16%, z20 0.32, flag none)
@@ -143,44 +143,44 @@ indices · 2 series ↑ (4.45), dyn_crwv ↑ (4.42), dyn_lenskart_ns ↑ (4.26),
 - Next India prints: NSDL FPI flows T-0d · India WPI T-1d · RBI Weekly Statistical Supplement T-1d · Kharif sowing data T-1d
 
 ## News-tracked universe (why each is watched)
-- COALINDIA.NS (COAL INDIA LTD) score 92.6 — "LG Electronics India Q1 Results: PAT rises 27% YoY to Rs 653 crore; revenue up 15%"
-- INOXINDIA.NS (INOX INDIA LIMITED) score 91.5 — "LG Electronics India Q1 Results: PAT rises 27% YoY to Rs 653 crore; revenue up 15%"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 91.0 — "LG Electronics India Q1 Results: PAT rises 27% YoY to Rs 653 crore; revenue up 15%"
-- INDIANB.NS (INDIAN BANK) score 69.0 — "Indian govt should disclose sugar stock after physical verification, says Naiknavare of NF"
-- BAC (Bank of America Corporation) score 57.6 — "Rich Americans are propping up the travel economy as airfares soar 25% from a year ago"
-- OHI (Omega Healthcare Investors, In) score 54.3 — "Dow Jones| Nasdaq | US Stock Market Today | Live: S&P, Nasdaq gain as investors assess Mid"
-- TECHM.NS (TECH MAHINDRA LIMITED) score 53.1 — "US stocks: S&P 500 hits intraday record as tech stocks rally, crude oil prices fall"
-- COIN (Coinbase Global, Inc.) score 51.9 — "Solar Surpasses Wind In Global Electricity Generation For The First Time"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 51.6 — "US stocks: S&P 500 hits intraday record as tech stocks rally, crude oil prices fall"
-- TECH (Bio-Techne Corp) score 50.9 — "US stocks: S&P 500 hits intraday record as tech stocks rally, crude oil prices fall"
-- HDB (HDFC Bank Limited) score 49.1 — "Bank of Baroda raises $700 million in first overseas bond issue since 2019"
-- CHKP (Check Point Software Technolog) score 45.9 — "IPO GMP Today Live Updates: Dhoot Transmission, Milky Mist, Shiprocket & Behari Lal in Foc"
-- IDBI.NS (IDBI BANK LIMITED) score 44.9 — "Bank of Baroda raises $700 million in first overseas bond issue since 2019"
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 44.9 — "Bank of Baroda raises $700 million in first overseas bond issue since 2019"
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 44.7 — "Bank of Baroda raises $700 million in first overseas bond issue since 2019"
-- LTH (Life Time Group Holdings, Inc.) score 40.1 — "Solar Surpasses Wind In Global Electricity Generation For The First Time"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 32.0 — "U.S. Backs X-Energy Reactor With Up to $2.15 Billion"
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 28.9 — "Tata Motors CV shares surge over 4% after Q1 profit growth"
-- BOND (PIMCO Active Bond Exchange-Tra) score 26.3 — "AMD - AMD EYES $5 BILLION DEBT SALE FOR AI EXPANSION AMD plans to raise up to $5B through "
-- 301077.SZ (CHINASTARS) score 26.1 — "High Oil Prices Deliver a Windfall for China’s Coal-to-Chemicals Industry"
-- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 24.3 — "Tata Motors CV shares surge over 4% after Q1 profit growth"
-- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 19.3 — "Muthoot Fincorp files draft papers for ₹3,000 crore IPO"
-- JIOFIN.BO (Jio Financial Services Limited) score 17.3 — "PCE INFLATION SEEN AT 3.6% IN JULY Oxford Economics expects the Fed’s preferred inflation "
-- JUSTDIAL.BO (JUST DIAL LTD.) score 16.7 — "DEEPSEEK ANNOUNCES ADJUSTMENT TO API RPICING - STATEMENT"
-- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 16.0 — "Coal India Share Price Live Updates: Coal India  Current Valuation"
-- MS (Morgan Stanley) score 14.1 — "UPGRADES • $ABBV: Upgraded Peerperform → Outperform by Wolfe Research; PT $300 • $ABT: Upg"
-- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 13.6 — "Will Bharti Airtel’s ARPU increase after scrapping Rs 299, other popular prepaid plans? Wh"
-- NVDA (NVIDIA Corporation) score 9.7 — "Alphabet’s stock slips as Nvidia’s $500 billion financing deal threatens custom chips"
-- PCJEWELLER.NS (PC JEWELLER LTD) score 9.3 — "Gem, jewellery export up a tad on rise in gold prices"
-- BHARATFORG.BO (BHARAT FORGE LTD.) score 8.5 — "Sugar stocks Balrampur Chini, Dhampur Sugar, Dalmia Bharat Sugar, others rally up to 7%. H"
-- META (Meta) score 7.8 — "Newly-listed metal stock Rajputana Stainless surges 10%, hits record high after strong Q1 "
-- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 7.0 — "Adani Ports SEZ Share Price Highlights: Adani Ports SEZ Stock Price History"
+- COALINDIA.NS (COAL INDIA LTD) score 91.6 — "LG Electronics India Q1 Results: PAT rises 27% YoY to Rs 653 crore; revenue up 15%"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 90.4 — "LG Electronics India Q1 Results: PAT rises 27% YoY to Rs 653 crore; revenue up 15%"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 90.0 — "LG Electronics India Q1 Results: PAT rises 27% YoY to Rs 653 crore; revenue up 15%"
+- INDIANB.NS (INDIAN BANK) score 68.2 — "Indian govt should disclose sugar stock after physical verification, says Naiknavare of NF"
+- BAC (Bank of America Corporation) score 56.9 — "Rich Americans are propping up the travel economy as airfares soar 25% from a year ago"
+- OHI (Omega Healthcare Investors, In) score 54.7 — "Markets are looking eerily calm as investors chase FOMO rally"
+- TECHM.NS (TECH MAHINDRA LIMITED) score 52.5 — "US stocks: S&P 500 hits intraday record as tech stocks rally, crude oil prices fall"
+- COIN (Coinbase Global, Inc.) score 51.3 — "Solar Surpasses Wind In Global Electricity Generation For The First Time"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 51.0 — "US stocks: S&P 500 hits intraday record as tech stocks rally, crude oil prices fall"
+- TECH (Bio-Techne Corp) score 50.3 — "US stocks: S&P 500 hits intraday record as tech stocks rally, crude oil prices fall"
+- HDB (HDFC Bank Limited) score 48.5 — "Bank of Baroda raises $700 million in first overseas bond issue since 2019"
+- CHKP (Check Point Software Technolog) score 45.4 — "IPO GMP Today Live Updates: Dhoot Transmission, Milky Mist, Shiprocket & Behari Lal in Foc"
+- IDBI.NS (IDBI BANK LIMITED) score 44.4 — "Bank of Baroda raises $700 million in first overseas bond issue since 2019"
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 44.4 — "Bank of Baroda raises $700 million in first overseas bond issue since 2019"
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 44.2 — "Bank of Baroda raises $700 million in first overseas bond issue since 2019"
+- LTH (Life Time Group Holdings, Inc.) score 39.7 — "Solar Surpasses Wind In Global Electricity Generation For The First Time"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 31.6 — "U.S. Backs X-Energy Reactor With Up to $2.15 Billion"
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 28.6 — "Tata Motors CV shares surge over 4% after Q1 profit growth"
+- 301077.SZ (CHINASTARS) score 26.8 — "China Races to Finish Molten-Salt Solar Plant as Stocks Whipsaw"
+- BOND (PIMCO Active Bond Exchange-Tra) score 26.0 — "AMD - AMD EYES $5 BILLION DEBT SALE FOR AI EXPANSION AMD plans to raise up to $5B through "
+- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 24.0 — "Tata Motors CV shares surge over 4% after Q1 profit growth"
+- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 19.1 — "Muthoot Fincorp files draft papers for ₹3,000 crore IPO"
+- JIOFIN.BO (Jio Financial Services Limited) score 17.1 — "PCE INFLATION SEEN AT 3.6% IN JULY Oxford Economics expects the Fed’s preferred inflation "
+- JUSTDIAL.BO (JUST DIAL LTD.) score 16.6 — "DEEPSEEK ANNOUNCES ADJUSTMENT TO API RPICING - STATEMENT"
+- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 15.9 — "Coal India Share Price Live Updates: Coal India  Current Valuation"
+- MS (Morgan Stanley) score 14.0 — "UPGRADES • $ABBV: Upgraded Peerperform → Outperform by Wolfe Research; PT $300 • $ABT: Upg"
+- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 13.5 — "Will Bharti Airtel’s ARPU increase after scrapping Rs 299, other popular prepaid plans? Wh"
+- NVDA (NVIDIA Corporation) score 9.6 — "Alphabet’s stock slips as Nvidia’s $500 billion financing deal threatens custom chips"
+- PCJEWELLER.NS (PC JEWELLER LTD) score 9.2 — "Gem, jewellery export up a tad on rise in gold prices"
+- BHARATFORG.BO (BHARAT FORGE LTD.) score 8.4 — "Sugar stocks Balrampur Chini, Dhampur Sugar, Dalmia Bharat Sugar, others rally up to 7%. H"
+- META (Meta) score 7.7 — "Newly-listed metal stock Rajputana Stainless surges 10%, hits record high after strong Q1 "
+- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 6.9 — "Adani Ports SEZ Share Price Highlights: Adani Ports SEZ Stock Price History"
 - AAPL (Apple Inc.) score 6.7 — "Nvidia, Apple, Google fuel record $185 billion gain for Norway’s wealth fund, but CEO say,"
-- VT (Vanguard Total World Stock Ind) score 6.6 — "China’s next economic ambition: workshop for the Muslim world"
-- LENSKART.NS (LENSKART SOLUTIONS LTD) score 5.4 — "Lenskart shares soar after strong Q1 results and MSCI inclusion buzz"
+- VT (Vanguard Total World Stock Ind) score 6.5 — "China’s next economic ambition: workshop for the Muslim world"
+- LENSKART.NS (LENSKART SOLUTIONS LTD) score 5.3 — "Lenskart shares soar after strong Q1 results and MSCI inclusion buzz"
 - INTC (Intel Corporation) score 5.0 — "PRESIDENT’S SCHEDULE — AUGUST 13, 2026 🔸 8:00 AM — Executive Time White House · Closed Pre"
 - ICICIGI.BO (ICICI Lombard General Insuranc) score 2.8 — "ICICI Bank Share Price Live Updates: ICICI Bank Stock Details"
-- CRWV (CoreWeave, Inc.) score 2.2 — "US stocks: S&P 500 ends higher as CoreWeave results fuel AI optimism"
+- CRWV (CoreWeave, Inc.) score 2.1 — "US stocks: S&P 500 ends higher as CoreWeave results fuel AI optimism"
 - FINCABLES.NS (FINOLEX CABLES LTD) score 2.1 — "Finolex Cables ends 6% higher after Q1 results, Jefferies lift target to ₹1,410"
 - CUPID.NS (CUPID LIMITED) score 1.9 — "Cupid shares jump nearly 9% in two days post Q1 earnings"
 
