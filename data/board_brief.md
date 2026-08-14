@@ -1,11 +1,11 @@
-# Transmission Layer — board brief · 2026-08-14 20:43Z
+# Transmission Layer — board brief · 2026-08-14 21:47Z
 
-data as of **2026-08-14** · 98 series · 7 red / 38 amber · 8 events surfaced (23 suppressed)
+data as of **2026-08-14** · 98 series · 8 red / 37 amber · 8 events surfaced (23 suppressed)
 
 ## Regime & assumption health (measured at generation)
 - **Regime: RISK_ON** (score 0.208, 1d in regime; vol-pct 0.239, breadth-off 0.176, Markov P(high-vol) 0.012)
 - [INVERTED] **safe_haven_gold** — corr20 -0.38, corr60 -0.41, last shift 2026-06-08. Channel: risk-off safe-haven bid: vol up -> gold bid
-- [VALID] **gold_silver_comove** — corr20 0.85, corr60 0.85, last shift 2026-05-15. Channel: monetary metals co-move; ratio extremes are rotations
+- [VALID] **gold_silver_comove** — corr20 0.85, corr60 0.84, last shift 2026-05-15. Channel: monetary metals co-move; ratio extremes are rotations
 - [VALID] **metal_copper_channel** — corr20 0.28, corr60 0.34, last shift 2026-05-14. Channel: global copper leads Indian metal equities
 - [WEAK] **inr_oil_channel** — corr20 0.21, corr60 -0.12, last shift 2026-06-04. Channel: oil up -> import bill -> INR weakens (usd_inr up)
 - [INSUFFICIENT_DATA] **goi_ust_comove** — corr20 None, corr60 None. Channel: global duration transmits to GoI yields
@@ -23,21 +23,21 @@ data as of **2026-08-14** · 98 series · 7 red / 38 amber · 8 events surfaced 
 
 ## Events (ranked)
 
-### [RED 8.83] cross-asset · 14 series ↑
-- russell_2000 [INDICES]: last 3068.24, z20 1.99, zc 0.43, resid-z 1.16 [quiet], 1d 0.50%, |z20|=1.99; 1y-pct=100
-- comex_gold [COMMODITIES]: last 4429.50, z20 1.96, zc 1.07, resid-z -0.69 [quiet], 1d 1.51%, |z20|=1.96; co-occur[gold_silver] same-direction (channel VALID)
+### [RED 8.81] cross-asset · 14 series ↑
+- russell_2000 [INDICES]: last 3068.24, z20 1.99, zc 0.43, resid-z 1.17 [quiet], 1d 0.50%, |z20|=1.99; 1y-pct=100
+- comex_gold [COMMODITIES]: last 4432.00, z20 1.98, zc 1.11, resid-z -0.69 [quiet], 1d 1.57%, |z20|=1.98; co-occur[gold_silver] same-direction (channel VALID)
 - dyn_vt [EQUITIES]: last 162.24, z20 1.56, zc -0.11, resid-z -0.85 [quiet], 1d -0.09%, 1y-pct=99
 - dyn_nvda [EQUITIES]: last 225.16, z20 1.55, zc -0.03, resid-z -0.34 [quiet], 1d -0.06%, 1y-pct=98
-- comex_silver [COMMODITIES]: last 64.81, z20 1.55, zc -0.04, resid-z -1.33 [quiet], 1d -0.10%, |z20|=1.55; co-occur[gold_silver] same-direction (channel VALID)
+- comex_silver [COMMODITIES]: last 64.82, z20 1.55, zc -0.03, resid-z -1.37 [quiet], 1d -0.07%, |z20|=1.55; co-occur[gold_silver] same-direction (channel VALID)
 - vix [INDICES]: last 14.25, z20 -1.54, zc -0.34, resid-z n/a [quiet], 1d -2.60%, |z20|=1.54; 1y-pct=2
 - nasdaq_100 [INDICES]: last 30050.44, z20 1.53, zc -0.09, resid-z 0.20 [quiet], 1d -0.11%, |z20|=1.53; 1y-pct=95
 - sp500 [INDICES]: last 7786.01, z20 1.42, zc -0.21, resid-z 0.78 [quiet], 1d -0.17%, 1y-pct=99
-- dax [INDICES]: last 26431.94, z20 1.35, zc 0.70, resid-z 0.59 [quiet], 1d 0.50%, 1y-pct=100
-- stoxx_50 [INDICES]: last 6540.53, z20 1.29, zc -0.10, resid-z -0.10 [quiet], 1d -0.08%, 1y-pct=99
-- comex_copper [COMMODITIES]: last 6.61, z20 0.94, zc 0.10, resid-z 0.05 [quiet], 1d 0.22%, 1y-pct=97
-- dow_jones [INDICES]: last 53733.51, z20 0.88, zc -0.27, resid-z -0.18 [quiet], 1d -0.20%, 1y-pct=96
-- cac_40 [INDICES]: last 8640.11, z20 0.76, zc -0.17, resid-z -0.27 [quiet], 1d -0.12%, 1y-pct=96
-- gold_silver_ratio [DERIVED]: last 68.35, z20 -0.66, zc n/a, resid-z n/a [quiet], 1d 1.61%, GSR<75 (extreme low)
+- dax [INDICES]: last 26431.94, z20 1.35, zc 0.70, resid-z 0.60 [quiet], 1d 0.50%, 1y-pct=100
+- stoxx_50 [INDICES]: last 6540.53, z20 1.29, zc -0.10, resid-z -0.08 [quiet], 1d -0.08%, 1y-pct=99
+- comex_copper [COMMODITIES]: last 6.61, z20 0.93, zc 0.10, resid-z 0.05 [quiet], 1d 0.21%, 1y-pct=97
+- dow_jones [INDICES]: last 53733.51, z20 0.88, zc -0.27, resid-z -0.15 [quiet], 1d -0.20%, 1y-pct=96
+- cac_40 [INDICES]: last 8640.11, z20 0.76, zc -0.17, resid-z -0.24 [quiet], 1d -0.12%, 1y-pct=96
+- gold_silver_ratio [DERIVED]: last 68.37, z20 -0.64, zc n/a, resid-z n/a [quiet], 1d 1.64%, GSR<75 (extreme low)
 - **Mechanism**: The current move is driven by a surge in risk-on sentiment, as evidenced by the RISK_ON regime and the VALID vix_equity_inverse channel. The recent news of Nvidia's $500 billion plan to support AI startups has fueled the AI frenzy, leading to a rise in equity markets. Meanwhile, the weaker dollar and easing Fed bets have boosted gold demand, causing gold prices to jump.
 - **Gap**: No gap: the big raw move in russell_2000 and other indices is largely priced, with small resid_z values indicating that factor exposures explain most of the move
 - **India take**: The Indian instrument nifty_midcap_100 has reacted to the global risk-on sentiment, while nifty_metal and nifty_50 remain quiet. The metal_copper_channel is VALID, suggesting that global copper prices may lead Indian metal equities.
@@ -60,8 +60,20 @@ data as of **2026-08-14** · 98 series · 7 red / 38 amber · 8 events surfaced 
 - Source: Corn Jumps as USDA Cuts Yield More Than Expected Amid Heat Waves — Mint Markets, 2026-08-12. https://www.livemint.com/market/corn-jumps-as-usda-cuts-yield-more-than-expected-amid-heat-waves-11786572052753.html
 - Historical analogues: 2026-05-22 (d=0.0), 2024-10-11 (d=0.33), 2026-04-01 (d=0.35)
 
+### [AMBER 5.08] brent ↑
+- brent [COMMODITIES]: last 88.59, z20 0.08, zc 0.62, resid-z 0.30 [quiet], 1d 1.75%, 1-session move +1.75% ≥ 1.5%
+- **Mechanism**: The recent rise in Brent oil prices is largely priced in, given the small resid_z value of 0.3, indicating that the move is mostly explained by factor exposures. The rise in oil prices is driven by geopolitical tensions, particularly the US-Iran talks and the threat of increased economic pressure on Iran. The metal_copper_channel and gold_silver_comove channels are valid, but they do not directly contribute to the current oil price move.
+- **Gap**: No gap: The small resid_z value indicates that the move is mostly explained by factor exposures, and the historical analogues do not suggest a significant price deviation.
+- **India take**: The Nifty Midcap 100 has already reacted to the rise in oil prices, given its negative correlation with Brent. Further moves in Indian metal equities may be influenced by the global copper prices through the metal_copper_channel.
+- Watch next: nifty_midcap_100 (down) — already moved; Reacted to the rise in oil prices due to its negative correlation with Brent
+- **India receivers**: nifty_midcap_100 (rho -0.404, z 1.06)
+- Source: Oil prices rally, US data dents chances of Fed rate hike — Mint Markets, 2026-08-14. https://www.livemint.com/market/oil-prices-rally-us-data-dents-chances-of-fed-rate-hike-11786742025245.html
+- Source: Oil Rises as US Warns of More Economic Pressure to Isolate Iran — Mint Markets, 2026-08-14. https://www.livemint.com/market/oil-rises-as-us-warns-of-more-economic-pressure-to-isolate-iran-11786737452456.html
+- Source: US Oil Drillers Add Even More Rigs As Oil Prices Stay Higher — OilPrice, 2026-08-14. https://oilprice.com/Energy/Crude-Oil/US-Oil-Drillers-Add-Even-More-Rigs-As-Oil-Prices-Stay-Higher.html
+- Historical analogues: 2026-05-22 (d=0.0), 2024-11-01 (d=0.0), 2024-10-18 (d=0.02)
+
 ### [RED 5.07] dyn_lenskart_ns ↑
-- dyn_lenskart_ns [EQUITIES]: last 612.00, z20 3.07, zc 1.87, resid-z 1.47 [moved], 1d 2.53%, |z20|=3.07; 1y-pct=99
+- dyn_lenskart_ns [EQUITIES]: last 612.00, z20 3.07, zc 1.87, resid-z 1.46 [moved], 1d 2.53%, |z20|=3.07; 1y-pct=99
 - **Mechanism**: The recent surge in Lenskart Solutions' stock price can be attributed to the company's strong Q1 results, which showed a near four-fold jump in profit, and the buzz around its potential MSCI inclusion. This positive news has led to increased investor interest, driving up the stock price. The VALID metal_copper_channel and vix_equity_inverse channels indicate a risk-on environment, which supports the stock's upward movement.
 - **Gap**: No gap: the stock's price move is largely priced in, given the significant increase in profit and positive market sentiment
 - **India take**: The Indian instrument that expresses this move is Lenskart Solutions, which has already reacted positively to the news, and other retail-focused stocks may follow suit. The Nifty Retail index may also be affected, potentially leading to a broader market impact.
@@ -70,18 +82,6 @@ data as of **2026-08-14** · 98 series · 7 red / 38 amber · 8 events surfaced 
 - Source: Lenskart shares soar after strong Q1 results and MSCI inclusion buzz — BusinessLine Mkts, 2026-08-13. https://www.thehindubusinessline.com/markets/lenskart-shares-zoom-nearly-7-to-fresh-52-week-high-after-strong-q1-results-and-msci-inclusion-buzz/article71339607.ece
 - Source: Lenskart shares hit record high after Q1 profit jumps nearly four-fold; Motilal Oswal lifts target price — Mint Markets, 2026-08-13. https://www.livemint.com/market/stock-market-news/lenskart-shares-hit-record-high-after-q1-profit-jumps-nearly-four-fold-motilal-oswal-lifts-target-price-11786610679031.html
 - Historical analogues: 2026-07-10 (d=0.0), 2026-05-29 (d=0.13), 2025-12-24 (d=0.24)
-
-### [AMBER 5.05] brent ↑
-- brent [COMMODITIES]: last 88.45, z20 0.05, zc 0.56, resid-z 0.25 [quiet], 1d 1.58%, 1-session move +1.58% ≥ 1.5%
-- **Mechanism**: The rise in Brent oil prices is driven by geopolitical tensions, specifically the US threat to impose economic pressure on Iran, which has led to a risk premium being priced into the market. This is evident from the news excerpts, which highlight the potential for further conflict in the Strait of Hormuz. The metal_copper_channel, which is a valid channel, may also be contributing to the rise in oil prices, as global copper leads Indian metal equities.
-- **Gap**: No gap: the move in Brent is largely priced, with a resid_z of 0.25, indicating that the majority of the move can be explained by factor exposures
-- **India take**: The Nifty Midcap 100, which has a correlation of -0.404 with Brent, has already reacted to the move in oil prices. Indian metal equities may also be affected through the metal_copper_channel.
-- Watch next: wti (up) — not yet - watch; high correlation with Brent
-- **India receivers**: nifty_midcap_100 (rho -0.404, z 1.06)
-- Source: Oil Rises as US Warns of More Economic Pressure to Isolate Iran — Mint Markets, 2026-08-14. https://www.livemint.com/market/oil-rises-as-us-warns-of-more-economic-pressure-to-isolate-iran-11786737452456.html
-- Source: US Oil Drillers Add Even More Rigs As Oil Prices Stay Higher — OilPrice, 2026-08-14. https://oilprice.com/Energy/Crude-Oil/US-Oil-Drillers-Add-Even-More-Rigs-As-Oil-Prices-Stay-Higher.html
-- Source: Hormuz Attacks Push Oil Toward $100 Despite US Crude Build — OilPrice, 2026-08-14. https://oilprice.com/Energy/Crude-Oil/Hormuz-Attacks-Push-Oil-Toward-100-Despite-US-Crude-Build.html
-- Historical analogues: 2026-05-22 (d=0.0), 2024-11-01 (d=0.0), 2024-10-18 (d=0.02)
 
 ### [RED 4.88] dyn_301077_sz ↑
 - dyn_301077_sz [EQUITIES]: last 24.01, z20 2.88, zc -0.29, resid-z 5.46 [unexplained], 1d -2.44%, |z20|=2.88
@@ -125,7 +125,7 @@ data as of **2026-08-14** · 98 series · 7 red / 38 amber · 8 events surfaced 
 - Historical analogues: 2026-05-22 (d=0.0), 2024-11-01 (d=0.01), 2025-04-23 (d=0.03)
 
 ## Watchlist (below surfacing floor)
-nikkei_225 ↑ (3.73), dyn_tatatech_ns ↑ (3.56), cross-asset · 2 series ↑ (3.45), dyn_atherenerg_ns ↑ (3.33), dyn_lth ↑ (3.3), usd_brl ↑ (3.14), fx · 2 series ↑ (2.97), dyn_coin ↓ (2.95), dyn_indusindbk_bo ↑ (2.7), indices · 2 series ↑ (2.6), dyn_hdb ↓ (2.47), dyn_fincables_ns ↑ (2.31)
+nikkei_225 ↑ (3.73), dyn_tatatech_ns ↑ (3.56), cross-asset · 2 series ↑ (3.45), dyn_atherenerg_ns ↑ (3.33), dyn_lth ↑ (3.3), fx · 2 series ↑ (3.13), usd_brl ↑ (3.03), dyn_coin ↓ (2.95), dyn_indusindbk_bo ↑ (2.7), indices · 2 series ↑ (2.6), usd_cny ↓ (2.51), dyn_hdb ↓ (2.47)
 
 ## India macro
 - nifty_50: 24366.0000 (1d -0.12%, z20 0.16, flag none)
@@ -138,40 +138,40 @@ nikkei_225 ↑ (3.73), dyn_tatatech_ns ↑ (3.56), cross-asset · 2 series ↑ (
 - Next India prints: India WPI T-0d · NSDL FPI flows T-0d · RBI Weekly Statistical Supplement T-0d · Kharif sowing data T-0d
 
 ## News-tracked universe (why each is watched)
-- COALINDIA.NS (COAL INDIA LTD) score 105.2 — "WeWork Global sells 2.5% stake in WeWork India Management for Rs 244 crore"
-- INOXINDIA.NS (INOX INDIA LIMITED) score 104.2 — "WeWork Global sells 2.5% stake in WeWork India Management for Rs 244 crore"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 103.9 — "WeWork Global sells 2.5% stake in WeWork India Management for Rs 244 crore"
-- INDIANB.NS (INDIAN BANK) score 68.2 — "Sebi proposes easier digital KYC for Indians living abroad"
-- OHI (Omega Healthcare Investors, In) score 57.1 — "Dow Jones| Nasdaq | US Stock Market Today | Live: S&P 500 ends lower as investors weigh ec"
-- COIN (Coinbase Global, Inc.) score 53.0 — "WeWork Global sells 2.5% stake in WeWork India Management for Rs 244 crore"
-- TECHM.NS (TECH MAHINDRA LIMITED) score 52.8 — "Technocraft Ventures ends debut day with 47% gains; LEAP India settles 9% below listing pr"
-- BAC (Bank of America Corporation) score 52.0 — "Global Market | Bank of Japan could raise rates in September, eye faster hikes: Reports"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 51.6 — "Technocraft Ventures ends debut day with 47% gains; LEAP India settles 9% below listing pr"
-- TECH (Bio-Techne Corp) score 51.1 — "Technocraft Ventures ends debut day with 47% gains; LEAP India settles 9% below listing pr"
-- HDB (HDFC Bank Limited) score 45.2 — "Global Market | Bank of Japan could raise rates in September, eye faster hikes: Reports"
-- CHKP (Check Point Software Technolog) score 43.5 — "Behari Lal Engineering IPO Day 3: Issue booked 93.21x so far. Check GMP, subscriptions, ke"
-- IDBI.NS (IDBI BANK LIMITED) score 41.1 — "Global Market | Bank of Japan could raise rates in September, eye faster hikes: Reports"
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 41.1 — "Global Market | Bank of Japan could raise rates in September, eye faster hikes: Reports"
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 40.9 — "Global Market | Bank of Japan could raise rates in September, eye faster hikes: Reports"
-- LTH (Life Time Group Holdings, Inc.) score 37.4 — "Still trying to time the stock market? This chart shows why it’s tougher than you think."
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 31.1 — "Under Chandrasekaran, as Tata stocks changed, so did their investors"
-- BOND (PIMCO Active Bond Exchange-Tra) score 29.0 — "Sebi broadens scope of online bond platforms, permits IFSCA-regulated products and tax-sav"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 28.1 — "Adani Energy Solution shares end 2% higher after acquiring Vizag Power Transmission"
-- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 27.4 — "Under Chandrasekaran, as Tata stocks changed, so did their investors"
-- 301077.SZ (CHINASTARS) score 25.1 — "Unitree IPO: China’s humanoid robot starset for potentially explosive Shanghai debut"
-- JIOFIN.BO (Jio Financial Services Limited) score 21.0 — "I have $10 million and pay two advisers for financial help, but still have questions"
-- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 18.1 — "India's Coal Demand Set to Hit 1.6 Billion Tons by 2030"
-- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 15.4 — "I have $10 million and pay two advisers for financial help, but still have questions"
-- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 15.3 — "Muthoot Fincorp files draft papers for ₹3,000 crore IPO"
-- JUSTDIAL.BO (JUST DIAL LTD.) score 13.3 — "DEEPSEEK ANNOUNCES ADJUSTMENT TO API RPICING - STATEMENT"
-- MS (Morgan Stanley) score 12.1 — "Tata Motors PV shares fall 5% after weak Q1 results. What are Morgan Stanley, Nomura, othe"
-- BHARATFORG.BO (BHARAT FORGE LTD.) score 10.3 — "Bharat Dynamics Q1 results: Profit sees sixfold increase, revenue surges 131% YoY"
-- META (Meta) score 8.9 — "Pulse of the Street: Tata jitters, metal rout weigh on Indian equities"
-- NVDA (NVIDIA Corporation) score 8.7 — "Nvidia’s $500 billion plan envelops Wall Street in its AI frenzy"
-- PCJEWELLER.NS (PC JEWELLER LTD) score 8.3 — "Brokerages initiate coverage on Vedanta Aluminium, Kalyan Jewellers, 3 other stocks with u"
+- COALINDIA.NS (COAL INDIA LTD) score 104.1 — "WeWork Global sells 2.5% stake in WeWork India Management for Rs 244 crore"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 103.2 — "WeWork Global sells 2.5% stake in WeWork India Management for Rs 244 crore"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 102.8 — "WeWork Global sells 2.5% stake in WeWork India Management for Rs 244 crore"
+- INDIANB.NS (INDIAN BANK) score 67.5 — "Sebi proposes easier digital KYC for Indians living abroad"
+- OHI (Omega Healthcare Investors, In) score 56.5 — "Dow Jones| Nasdaq | US Stock Market Today | Live: S&P 500 ends lower as investors weigh ec"
+- COIN (Coinbase Global, Inc.) score 52.4 — "WeWork Global sells 2.5% stake in WeWork India Management for Rs 244 crore"
+- TECHM.NS (TECH MAHINDRA LIMITED) score 52.3 — "Technocraft Ventures ends debut day with 47% gains; LEAP India settles 9% below listing pr"
+- BAC (Bank of America Corporation) score 51.5 — "Global Market | Bank of Japan could raise rates in September, eye faster hikes: Reports"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 51.1 — "Technocraft Ventures ends debut day with 47% gains; LEAP India settles 9% below listing pr"
+- TECH (Bio-Techne Corp) score 50.5 — "Technocraft Ventures ends debut day with 47% gains; LEAP India settles 9% below listing pr"
+- HDB (HDFC Bank Limited) score 44.8 — "Global Market | Bank of Japan could raise rates in September, eye faster hikes: Reports"
+- CHKP (Check Point Software Technolog) score 43.1 — "Behari Lal Engineering IPO Day 3: Issue booked 93.21x so far. Check GMP, subscriptions, ke"
+- IDBI.NS (IDBI BANK LIMITED) score 40.6 — "Global Market | Bank of Japan could raise rates in September, eye faster hikes: Reports"
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 40.6 — "Global Market | Bank of Japan could raise rates in September, eye faster hikes: Reports"
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 40.4 — "Global Market | Bank of Japan could raise rates in September, eye faster hikes: Reports"
+- LTH (Life Time Group Holdings, Inc.) score 37.0 — "Still trying to time the stock market? This chart shows why it’s tougher than you think."
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 30.8 — "Under Chandrasekaran, as Tata stocks changed, so did their investors"
+- BOND (PIMCO Active Bond Exchange-Tra) score 28.7 — "Sebi broadens scope of online bond platforms, permits IFSCA-regulated products and tax-sav"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 27.8 — "Adani Energy Solution shares end 2% higher after acquiring Vizag Power Transmission"
+- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 27.1 — "Under Chandrasekaran, as Tata stocks changed, so did their investors"
+- 301077.SZ (CHINASTARS) score 24.8 — "Unitree IPO: China’s humanoid robot starset for potentially explosive Shanghai debut"
+- JIOFIN.BO (Jio Financial Services Limited) score 20.8 — "I have $10 million and pay two advisers for financial help, but still have questions"
+- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 17.9 — "India's Coal Demand Set to Hit 1.6 Billion Tons by 2030"
+- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 15.2 — "I have $10 million and pay two advisers for financial help, but still have questions"
+- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 15.2 — "Muthoot Fincorp files draft papers for ₹3,000 crore IPO"
+- JUSTDIAL.BO (JUST DIAL LTD.) score 13.2 — "DEEPSEEK ANNOUNCES ADJUSTMENT TO API RPICING - STATEMENT"
+- MS (Morgan Stanley) score 12.0 — "Tata Motors PV shares fall 5% after weak Q1 results. What are Morgan Stanley, Nomura, othe"
+- BHARATFORG.BO (BHARAT FORGE LTD.) score 10.2 — "Bharat Dynamics Q1 results: Profit sees sixfold increase, revenue surges 131% YoY"
+- META (Meta) score 8.8 — "Pulse of the Street: Tata jitters, metal rout weigh on Indian equities"
+- NVDA (NVIDIA Corporation) score 8.6 — "Nvidia’s $500 billion plan envelops Wall Street in its AI frenzy"
+- PCJEWELLER.NS (PC JEWELLER LTD) score 8.2 — "Brokerages initiate coverage on Vedanta Aluminium, Kalyan Jewellers, 3 other stocks with u"
 - ADANIENT.BO (ADANI ENTERPRISES LTD.) score 7.3 — "Adani Energy Solution shares end 2% higher after acquiring Vizag Power Transmission"
-- RDDT (Reddit, Inc.) score 5.6 — "Reddit shares surge 14% on S&P 500 inclusion, replacing AvalonBay"
-- AAPL (Apple Inc.) score 5.4 — "Nvidia, Apple, Google fuel record $185 billion gain for Norway’s wealth fund, but CEO say,"
+- RDDT (Reddit, Inc.) score 5.5 — "Reddit shares surge 14% on S&P 500 inclusion, replacing AvalonBay"
+- AAPL (Apple Inc.) score 5.3 — "Nvidia, Apple, Google fuel record $185 billion gain for Norway’s wealth fund, but CEO say,"
 - VT (Vanguard Total World Stock Ind) score 5.2 — "China’s next economic ambition: workshop for the Muslim world"
 - LENSKART.NS (LENSKART SOLUTIONS LTD) score 4.3 — "Lenskart shares soar after strong Q1 results and MSCI inclusion buzz"
 - ICICIGI.BO (ICICI Lombard General Insuranc) score 2.2 — "ICICI Bank Share Price Live Updates: ICICI Bank Stock Details"
