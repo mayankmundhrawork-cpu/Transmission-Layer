@@ -1,11 +1,11 @@
-# Transmission Layer — board brief · 2026-08-18 08:52Z
+# Transmission Layer — board brief · 2026-08-18 10:44Z
 
-data as of **2026-08-18** · 98 series · 5 red / 35 amber · 8 events surfaced (24 suppressed)
+data as of **2026-08-18** · 98 series · 6 red / 34 amber · 8 events surfaced (24 suppressed)
 
 ## Regime & assumption health (measured at generation)
-- **Regime: RISK_ON** (score 0.225, 2d in regime; vol-pct 0.283, breadth-off 0.167, Markov P(high-vol) 0.016)
+- **Regime: RISK_ON** (score 0.208, 2d in regime; vol-pct 0.25, breadth-off 0.167, Markov P(high-vol) 0.016)
 - [INVERTED] **safe_haven_gold** — corr20 -0.33, corr60 -0.4, last shift 2026-06-04. Channel: risk-off safe-haven bid: vol up -> gold bid
-- [VALID] **gold_silver_comove** — corr20 0.84, corr60 0.86, last shift 2026-05-13. Channel: monetary metals co-move; ratio extremes are rotations
+- [VALID] **gold_silver_comove** — corr20 0.84, corr60 0.87, last shift 2026-05-13. Channel: monetary metals co-move; ratio extremes are rotations
 - [VALID] **metal_copper_channel** — corr20 0.27, corr60 0.36, last shift 2026-07-01. Channel: global copper leads Indian metal equities
 - [WEAK] **inr_oil_channel** — corr20 0.21, corr60 -0.11, last shift 2026-06-09. Channel: oil up -> import bill -> INR weakens (usd_inr up)
 - [INSUFFICIENT_DATA] **goi_ust_comove** — corr20 None, corr60 None. Channel: global duration transmits to GoI yields
@@ -15,9 +15,9 @@ data as of **2026-08-18** · 98 series · 5 red / 35 amber · 8 events surfaced 
 - [WEAK] **gsr_stress_gauge** — corr20 0.01, corr60 0.23, last shift 2026-04-21. Channel: gold/silver ratio rises under monetary stress
 
 ## Scan control & verified transmission setups
-- FDR (BH q=0.1): **1 of 89** scanned series survive multiplicity control (effective p ≤ 1.298391285597944e-06)
+- FDR (BH q=0.1): **1 of 89** scanned series survive multiplicity control (effective p ≤ 1.0083597765664365e-06)
 - No live setups: drivers quiet or targets already repriced.
-- Track record · residual_reversion: hit-rate **0.494** (n=1114) — |resid_z|>=2.0 -> fwd 5d return opposes residual
+- Track record · residual_reversion: hit-rate **0.493** (n=1114) — |resid_z|>=2.0 -> fwd 5d return opposes residual
 - Track record · transmission_follow: hit-rate **0.828** (n=2338) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
 - Track record · spread_reversion: hit-rate **0.533** (n=15) — |dev| >= 2sigma vs PIT 252d -> |dev| shrinks >=25% within max(half-life,10) sessions
 
@@ -25,12 +25,12 @@ data as of **2026-08-18** · 98 series · 5 red / 35 amber · 8 events surfaced 
 
 ### [RED 5.71] commodities · 3 series ↑
 - corn [COMMODITIES]: last 492.50, z20 4.39, zc 4.62, resid-z 0.84 [moved], 1d 5.91%, |z20|=4.39; 1y-pct=100
-- wheat [COMMODITIES]: last 693.25, z20 1.69, zc 1.50, resid-z -0.15 [moved], 1d 2.74%, |z20|=1.69; 1y-pct=99
+- wheat [COMMODITIES]: last 693.75, z20 1.72, zc 1.54, resid-z -0.15 [moved], 1d 2.82%, |z20|=1.72; 1y-pct=99
 - soybeans [COMMODITIES]: last 1224.75, z20 1.31, zc 1.95, resid-z 2.09 [unexplained], 1d 1.98%, 1y-pct=98
 - **Mechanism**: commodities · 3 series ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-05-22 (z-distance 0.0).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: dyn_lenskart_ns (rho 0.441 via wheat, z 3.28, reacted)
-- **India receivers**: dyn_lenskart_ns (rho 0.441, z 3.28)
+- **India take**: dyn_lenskart_ns (rho 0.441 via wheat, z 3.18, reacted)
+- **India receivers**: dyn_lenskart_ns (rho 0.441, z 3.18)
 - Historical analogues: 2026-05-22 (d=0.0), 2026-05-06 (d=0.32), 2025-10-03 (d=0.4)
 
 ### [AMBER 5.43] cross-asset · 5 series ↑
@@ -52,30 +52,31 @@ data as of **2026-08-18** · 98 series · 5 red / 35 amber · 8 events surfaced 
 - Source: RUSSIA'S LAVROV SAYS RUSSIA AND DPRK ARE FIGHTING TO ESTABLISH NEW AND RIGHTEOUS WORLD ORDER - KCNA — DeItaone, 2026-08-17. https://t.me/walter_bloomberg/34821
 - Historical analogues: 2026-05-22 (d=0.0), 2025-10-21 (d=0.5), 2025-08-28 (d=0.58)
 
-### [RED 5.28] dyn_lenskart_ns ↑
-- dyn_lenskart_ns [EQUITIES]: last 629.85, z20 3.28, zc 2.59, resid-z 2.36 [unexplained], 1d 3.66%, |z20|=3.28; 1y-pct=99
+### [RED 5.18] dyn_lenskart_ns ↑
+- dyn_lenskart_ns [EQUITIES]: last 628.00, z20 3.18, zc 2.37, resid-z 2.19 [unexplained], 1d 3.36%, |z20|=3.18; 1y-pct=99
 - **Mechanism**: dyn_lenskart_ns ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-07-10 (z-distance 0.0).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
 - **India take**: No exposed Indian receivers above the correlation floor.
+- Source: Lenskart shares gain over 5% to record high after incorporating new step-down subsidiary in China — Mint Markets, 2026-08-18. https://www.livemint.com/market/stock-market-news/lenskart-shares-gain-over-5-to-record-high-after-incorporating-new-step-down-subsidiary-in-china-11787043990119.html
 - Source: Stocks to Watch, Aug 18: Paytm, Airtel, GMR Airports, Netweb Tech, SPR Auto, Lenskart, Manipal Health — BusinessLine Mkts, 2026-08-18. https://www.thehindubusinessline.com/markets/stock-markets/stocks-in-focus-paytm-airtel-gmr-airports-netweb-tech-spr-auto-lenskart-manipal-health-and-more/article71358731.ece
 - Source: Stocks in focus: Paytm, Airtel, GMR Airports, Netweb Tech, SPR Auto, Lenskart, Manipal Health and more — BusinessLine Mkts, 2026-08-18. https://www.thehindubusinessline.com/markets/stock-markets/stocks-in-focus-paytm-airtel-gmr-airports-netweb-tech-spr-auto-lenskart-manipal-health-and-more/article71358731.ece
 - Historical analogues: 2026-07-10 (d=0.0), 2026-05-29 (d=0.13), 2025-12-24 (d=0.24)
 
-### [RED 4.94] midcap_largecap_ratio ↑
-- midcap_largecap_ratio [DERIVED]: last 2.63, z20 1.94, zc n/a, resid-z n/a [quiet], 1d 0.08%, 52-wk extreme (pct=100); |z20|=1.94; 1y-pct=100
+### [RED 4.99] midcap_largecap_ratio ↑
+- midcap_largecap_ratio [DERIVED]: last 2.63, z20 1.99, zc n/a, resid-z n/a [quiet], 1d 0.11%, 52-wk extreme (pct=100); |z20|=1.99; 1y-pct=100
 - **Mechanism**: midcap_largecap_ratio ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2025-12-31 (z-distance 0.0).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: nifty_midcap_100 (rho 0.504 via midcap_largecap_ratio, z 0.65, quiet); dyn_bharatcoal_ns (rho 0.375 via midcap_largecap_ratio, z -1.27, reacted); dyn_fincables_ns (rho 0.361 via midcap_largecap_ratio, z 2.29, reacted)
-- Watch next: nifty_midcap_100 (co-move) — not yet - watch; rho 0.504 vs midcap_largecap_ratio, historically leads by 2d
-- **India receivers**: nifty_midcap_100 (rho 0.504, z 0.65); dyn_bharatcoal_ns (rho 0.375, z -1.27); dyn_fincables_ns (rho 0.361, z 2.29)
+- **India take**: nifty_midcap_100 (rho 0.502 via midcap_largecap_ratio, z 0.54, quiet); dyn_bharatcoal_ns (rho 0.375 via midcap_largecap_ratio, z -1.34, reacted); dyn_fincables_ns (rho 0.361 via midcap_largecap_ratio, z 2.28, reacted)
+- Watch next: nifty_midcap_100 (co-move) — not yet - watch; rho 0.502 vs midcap_largecap_ratio, historically leads by 2d
+- **India receivers**: nifty_midcap_100 (rho 0.502, z 0.54); dyn_bharatcoal_ns (rho 0.375, z -1.34); dyn_fincables_ns (rho 0.361, z 2.28)
 - Historical analogues: 2025-12-31 (d=0.0), 2024-11-06 (d=0.1), 2025-07-03 (d=0.11)
 
 ### [RED 4.65] dyn_stylebaaza_ns ↑
-- dyn_stylebaaza_ns [EQUITIES]: last 402.65, z20 2.65, zc 1.34, resid-z 1.65 [unexplained], 1d 4.99%, |z20|=2.65; 1y-pct=96
+- dyn_stylebaaza_ns [EQUITIES]: last 402.65, z20 2.65, zc 1.34, resid-z 1.71 [unexplained], 1d 4.99%, |z20|=2.65; 1y-pct=96
 - **Mechanism**: dyn_stylebaaza_ns ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-07-10 (z-distance 0.0).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: dyn_pcjeweller_ns (rho 0.397 via dyn_stylebaaza_ns, z 0.15, quiet); dyn_adanient_bo (rho 0.383 via dyn_stylebaaza_ns, z -0.22, quiet); dyn_bharatcoal_ns (rho 0.354 via dyn_stylebaaza_ns, z -1.27, reacted)
-- **India receivers**: dyn_pcjeweller_ns (rho 0.397, z 0.15); dyn_adanient_bo (rho 0.383, z -0.22); dyn_bharatcoal_ns (rho 0.354, z -1.27)
+- **India take**: dyn_pcjeweller_ns (rho 0.393 via dyn_stylebaaza_ns, z 0.05, quiet); dyn_adanient_bo (rho 0.374 via dyn_stylebaaza_ns, z -0.53, quiet); dyn_bharatcoal_ns (rho 0.352 via dyn_stylebaaza_ns, z -1.34, reacted)
+- **India receivers**: dyn_pcjeweller_ns (rho 0.393, z 0.05); dyn_adanient_bo (rho 0.374, z -0.53); dyn_bharatcoal_ns (rho 0.352, z -1.34)
 - Source: US Stock Market: Citadel Securities warns SEC rule change could hurt retail investors, market liquidity — ET Markets, 2026-08-18. https://economictimes.indiatimes.com/markets/us-stocks/news/us-stock-market-citadel-securities-warns-sec-rule-change-could-hurt-retail-investors-market-liquidity/articleshow/133311215.cms
 - Source: US stocks: US market slips as oil prices rise, retail results awaited — ET Markets, 2026-08-17. https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-us-market-slips-as-oil-prices-rise-retail-results-awaited/articleshow/133306298.cms
 - Source: Wall Street indexes slip with Iran, retail results in focus — Mint Markets, 2026-08-17. https://www.livemint.com/market/wall-street-indexes-slip-with-iran-retail-results-in-focus-11786993198786.html
@@ -92,92 +93,92 @@ data as of **2026-08-18** · 98 series · 5 red / 35 amber · 8 events surfaced 
 - Watch next: brent (co-move) — not yet - watch; rho 0.557 vs ust_30y, historically leads by 3d
 - Watch next: wti (co-move) — not yet - watch; rho 0.53 vs ust_30y, historically leads by 3d
 - Watch next: dow_jones (inverse) — not yet - watch; rho -0.532 vs ust_30y
-- Source: Indian lenders’ dollar bond sales hit record near $9 billion — BusinessLine Mkts, 2026-08-18. https://www.thehindubusinessline.com/markets/indian-lenders-dollar-bond-sales-hit-record-near-9-billion/article71358856.ece
-- Source: Global Market: Japan’s 10-year JGB yield hits three-decade high on BOJ rate hike bets — ET Markets, 2026-08-18. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japans-10-year-jgb-yield-hits-three-decade-high-on-boj-rate-hike-bets/articleshow/133311165.cms
-- Source: Global Market: Japan stocks slide as oil spike and rising bond yields weigh on sentiment — ET Markets, 2026-08-18. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japan-stocks-slide-as-oil-spike-and-rising-bond-yields-weigh-on-sentiment/articleshow/133310581.cms
+- Source: Bitcoin climbs towards $64,000 as cooling inflation and falling treasury yields aid recovery — ET Markets, 2026-08-18. https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-climbs-towards-64000-as-cooling-inflation-and-falling-treasury-yields-aid-recovery/articleshow/133318408.cms
+- Source: Global bond yields rise to multi-year highs as inflation and fiscal concerns intensify — ET Markets, 2026-08-18. https://economictimes.indiatimes.com/markets/us-stocks/news/global-bond-yields-rise-to-multi-year-highs-as-inflation-and-fiscal-concerns-intensify/articleshow/133317680.cms
+- Source: Global Market: European shares slip as rising oil prices, bond yields weigh on sentiment — ET Markets, 2026-08-18. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-european-shares-slip-as-rising-oil-prices-bond-yields-weigh-on-sentiment/articleshow/133316942.cms
 - Historical analogues: 2026-05-22 (d=0.0), 2026-03-30 (d=0.12), 2025-04-23 (d=0.18)
 
-### [AMBER 4.32] dyn_voltas_ns ↓
-- dyn_voltas_ns [EQUITIES]: last 1251.30, z20 -2.32, zc -0.62, resid-z -0.39 [quiet], 1d -1.24%, |z20|=2.32; 1y-pct=4
+### [AMBER 4.26] dyn_voltas_ns ↓
+- dyn_voltas_ns [EQUITIES]: last 1252.90, z20 -2.26, zc -0.56, resid-z -0.24 [quiet], 1d -1.11%, |z20|=2.26; 1y-pct=4
 - **Mechanism**: dyn_voltas_ns ↓: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-07-10 (z-distance 0.0).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: dyn_bharatcoal_ns (rho 0.577 via dyn_voltas_ns, z -1.27, reacted); nifty_midcap_100 (rho 0.517 via dyn_voltas_ns, z 0.65, quiet); nifty_50 (rho 0.393 via dyn_voltas_ns, z -0.48, quiet); dyn_havells_ns (rho 0.377 via dyn_voltas_ns, z 1.05, reacted)
-- Watch next: nifty_midcap_100 (co-move) — not yet - watch; rho 0.517 vs dyn_voltas_ns, historically leads by 5d
-- **India receivers**: dyn_bharatcoal_ns (rho 0.577, z -1.27); nifty_midcap_100 (rho 0.517, z 0.65); nifty_50 (rho 0.393, z -0.48); dyn_havells_ns (rho 0.377, z 1.05)
+- **India take**: dyn_bharatcoal_ns (rho 0.578 via dyn_voltas_ns, z -1.34, reacted); nifty_midcap_100 (rho 0.518 via dyn_voltas_ns, z 0.54, quiet); nifty_50 (rho 0.394 via dyn_voltas_ns, z -0.62, quiet); dyn_havells_ns (rho 0.372 via dyn_voltas_ns, z 1.27, reacted)
+- Watch next: nifty_midcap_100 (co-move) — not yet - watch; rho 0.518 vs dyn_voltas_ns, historically leads by 5d
+- **India receivers**: dyn_bharatcoal_ns (rho 0.578, z -1.34); nifty_midcap_100 (rho 0.518, z 0.54); nifty_50 (rho 0.394, z -0.62); dyn_havells_ns (rho 0.372, z 1.27)
 - Source: Voltas reported strong growth in June quarter, but failed to impress — Mint Markets, 2026-08-18. https://www.livemint.com/market/mark-to-market/voltas-strong-growth-fails-to-impress-operating-revenue-acs-home-appliances-other-businesses-engineering-products-11787031152020.html
 - Source: Voltas among 4 F&O stocks with a sharp rise in futures open interest — ET Markets, 2026-08-18. https://economictimes.indiatimes.com/markets/stocks/news/voltas-among-4-fampo-stocks-with-a-sharp-rise-in-futures-open-interest/slideshow/133310686.cms
 - Source: Voltas shares fall 4% as brokerages differ after Q1 results — BusinessLine Mkts, 2026-08-17. https://www.thehindubusinessline.com/markets/voltas-shares-fall-over-6-from-intraday-high-as-brokerages-differ-after-q1-results/article71355298.ece
 - Historical analogues: 2026-07-10 (d=0.0), 2025-07-24 (d=0.0), 2024-11-14 (d=0.01)
 
-### [AMBER 3.75] comex_gold ↑
-- comex_gold [COMMODITIES]: last 4453.80, z20 1.75, zc 0.66, resid-z -0.31 [quiet], 1d 0.81%, |z20|=1.75
+### [AMBER 3.73] comex_gold ↑
+- comex_gold [COMMODITIES]: last 4450.00, z20 1.73, zc 0.59, resid-z -0.31 [quiet], 1d 0.73%, |z20|=1.73
 - **Mechanism**: comex_gold ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-05-22 (z-distance 0.0).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: nifty_metal (rho 0.456 via comex_gold, z 0.64, quiet)
-- Watch next: comex_copper (co-move) — not yet - watch; rho 0.655 vs comex_gold, historically leads by 1d
-- Watch next: dax (co-move) — not yet - watch; rho 0.559 vs comex_gold, historically leads by 4d
+- **India take**: nifty_metal (rho 0.456 via comex_gold, z 0.58, quiet)
+- Watch next: comex_copper (co-move) — not yet - watch; rho 0.657 vs comex_gold, historically leads by 1d
+- Watch next: dax (co-move) — not yet - watch; rho 0.563 vs comex_gold, historically leads by 4d
 - Watch next: btc_usd (co-move) — not yet - watch; rho 0.526 vs comex_gold, historically leads by 5d
 - Watch next: eth_usd (co-move) — not yet - watch; rho 0.51 vs comex_gold, historically leads by 5d
-- Watch next: gold_silver_ratio (inverse) — not yet - watch; rho -0.559 vs comex_gold
-- **India receivers**: nifty_metal (rho 0.456, z 0.64)
+- Watch next: stoxx_50 (co-move) — not yet - watch; rho 0.5 vs comex_gold, historically leads by 4d
+- **India receivers**: nifty_metal (rho 0.456, z 0.58)
 - Source: Gold Rate Today, Aug 18: Gold prices up in Delhi, Mumbai, Kolkata, Bengaluru, Ahmedabad — BusinessLine Mkts, 2026-08-18. https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-mumbai-chennai-ahmedabad-delhi-hyderabad-bengaluru-kolkata-gold-rates-august-18-2026/article71359087.ece
 - Source: Gold slips below Rs 1.55 lakh/10 gm on MCX, but global prices extend gains. What’s next? — ET Markets, 2026-08-18. https://economictimes.indiatimes.com/markets/commodities/news/gold-slips-below-rs-1-55-lakh/10-gm-on-mcx-but-global-prices-extend-gains-whats-next/articleshow/133311524.cms
 - Source: Gold and silver prices drop by up to 1% on the MCX as rising oil prices stoke rate hike fears — Mint Markets, 2026-08-18. https://www.livemint.com/market/commodities/gold-and-silver-prices-drop-by-up-to-1-on-the-mcx-as-rising-oil-prices-stoke-rate-hike-fears-11787025060554.html
 - Historical analogues: 2026-05-22 (d=0.0), 2025-05-15 (d=0.0), 2024-11-18 (d=0.1)
 
 ## Watchlist (below surfacing floor)
-dyn_tech ↑ (3.73), gold_silver_ratio ↓ (3.37), dyn_lth ↑ (3.24), dyn_hdb ↓ (3.19), dyn_bac ↑ (3.09), nifty_fmcg ↓ (3.05), fx · 2 series ↑ (2.99), dyn_icicigi_bo ↓ (2.67), dyn_tatatech_ns ↑ (2.54), dyn_fincables_ns ↑ (2.29), dyn_idbi_ns ↓ (2.26), shanghai_comp ↑ (1.99)
+dyn_tech ↑ (3.73), gold_silver_ratio ↓ (3.42), dyn_lth ↑ (3.24), dyn_hdb ↓ (3.19), nifty_fmcg ↓ (3.17), fx · 2 series ↑ (3.11), dyn_bac ↑ (3.09), dyn_tatatech_ns ↑ (2.84), dyn_idbi_ns ↓ (2.55), dyn_icicigi_bo ↓ (2.46), usd_cny ↓ (2.4), dyn_fincables_ns ↑ (2.28)
 
 ## India macro
-- nifty_50: 24193.0996 (1d -0.39%, z20 -0.48, flag none)
-- nifty_midcap_100: 63613.6016 (1d -0.31%, z20 0.65, flag amber)
-- usd_inr: 95.6620 (1d 0.22%, z20 -0.07, flag none)
+- nifty_50: 24154.9004 (1d -0.55%, z20 -0.62, flag none)
+- nifty_midcap_100: 63535.3984 (1d -0.44%, z20 0.54, flag amber)
+- usd_inr: 95.6700 (1d 0.23%, z20 -0.06, flag none)
 - goi_10y: 6.8900 (1d -1.85%, z20 1.12, flag none)
 - india_cpi_yoy: 2.9518 (1d 14.13%, z20 n/a, flag none)
 - goi_ust_spread: 2.4200 (1d -7.98%, z20 n/a, flag none)
-- midcap_largecap_ratio: 2.6294 (1d 0.08%, z20 1.94, flag red)
+- midcap_largecap_ratio: 2.6303 (1d 0.11%, z20 1.99, flag red)
 - Next India prints: NSDL FPI flows T-0d · RBI Weekly Statistical Supplement T-3d · Kharif sowing data T-3d · IMD weekly rainfall T-6d
 
 ## News-tracked universe (why each is watched)
-- COALINDIA.NS (COAL INDIA LTD) score 87.8 — "Citi sets June 2027 Nifty target at 26,800, remains constructive on India equities"
-- INOXINDIA.NS (INOX INDIA LIMITED) score 87.3 — "Citi sets June 2027 Nifty target at 26,800, remains constructive on India equities"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 87.2 — "Citi sets June 2027 Nifty target at 26,800, remains constructive on India equities"
-- INDIANB.NS (INDIAN BANK) score 62.9 — "IndusInd Bank Share Price Live Updates: IndusInd Bank's Current Price and Market Performan"
-- BAC (Bank of America Corporation) score 46.6 — "IndusInd Bank Share Price Live Updates: IndusInd Bank's Current Price and Market Performan"
-- TECHM.NS (TECH MAHINDRA LIMITED) score 43.9 — "UltraTech Cem Share Price Live Updates: UltraTech Cement's Market Activity"
-- COIN (Coinbase Global, Inc.) score 43.6 — "Global Market: Trump-backed World Liberty partners with platform offering Chinese AI model"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 42.6 — "UltraTech Cem Share Price Live Updates: UltraTech Cement's Market Activity"
-- TECH (Bio-Techne Corp) score 42.3 — "UltraTech Cem Share Price Live Updates: UltraTech Cement's Market Activity"
-- HDB (HDFC Bank Limited) score 40.3 — "IndusInd Bank Share Price Live Updates: IndusInd Bank's Current Price and Market Performan"
-- OHI (Omega Healthcare Investors, In) score 38.1 — "Sebi cautions investors against social media live trading tips and unregistered advisory s"
-- IDBI.NS (IDBI BANK LIMITED) score 37.5 — "IndusInd Bank Share Price Live Updates: IndusInd Bank's Current Price and Market Performan"
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 37.5 — "IndusInd Bank Share Price Live Updates: IndusInd Bank's Current Price and Market Performan"
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 37.4 — "IndusInd Bank Share Price Live Updates: IndusInd Bank's Current Price and Market Performan"
-- CHKP (Check Point Software Technolog) score 35.1 — "Shankesh Jewellers IPO opens for subscription. Should you apply? Check GMP, key details"
-- LTH (Life Time Group Holdings, Inc.) score 28.8 — "Global Market: Emerging Asian currencies rise as softer dollar, rate-hike bets support sen"
-- BOND (PIMCO Active Bond Exchange-Tra) score 27.4 — "Indian bonds wobble on oil strain, RBI swap pullback"
-- 301077.SZ (CHINASTARS) score 23.4 — "China Boosts Fuel Exports as Domestic Stockpiles Swell"
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 19.7 — "Tata Motors PV Share Price Live Updates: Tata Motors PV Market Performance Overview"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 19.4 — "Global Market: Chinese, Hong Kong stocks slip as AI shares retreat; energy stocks gain"
-- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 18.1 — "Tata Motors PV Share Price Live Updates: Tata Motors PV Market Performance Overview"
-- JIOFIN.BO (Jio Financial Services Limited) score 15.3 — "Sebi cautions investors against social media live trading tips and unregistered advisory s"
-- PCJEWELLER.NS (PC JEWELLER LTD) score 14.1 — "Lalithaa Jewellery Mart IPO Day 2 LIVE: GMP, subscription status to review. Apply or not?"
-- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 11.6 — "MCX plans India coal and ore exchanges to boost price discovery"
-- MS (Morgan Stanley) score 10.5 — "Here’s how Amazon’s stock could nearly double by the end of next year, according to Morgan"
-- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 10.2 — "Jio Financial Services Share Price Live Updates: Jio Financial Services dips below its 20-"
-- JUSTDIAL.BO (JUST DIAL LTD.) score 10.0 — "The number of ‘negative-beta’ stocks in the S&P 500 just hit a new record high. What that "
-- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 8.4 — "Bajaj Finance Share Price Live Updates: Bajaj Finance Trading Update"
-- NVDA (NVIDIA Corporation) score 7.3 — "SpaceX’s stock is rising, and that’s a good sign for Nvidia and Google"
-- STYLEBAAZA.NS (BAAZAR STYLE RETAIL LTD) score 6.1 — "US Stock Market: Citadel Securities warns SEC rule change could hurt retail investors, mar"
-- VT (Vanguard Total World Stock Ind) score 6.0 — "Global Market: Trump-backed World Liberty partners with platform offering Chinese AI model"
-- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 5.8 — "Adani flagship eyes India’s Nifty crown after years of turmoil"
-- BHARATFORG.BO (BHARAT FORGE LTD.) score 5.3 — "Cement makers face a forgettable H1FY27 as prices weaken and costs rise"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 87.8 — "Following smart money: Where are India’s top investors betting next?"
+- COALINDIA.NS (COAL INDIA LTD) score 87.2 — "Following smart money: Where are India’s top investors betting next?"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 86.6 — "Following smart money: Where are India’s top investors betting next?"
+- INDIANB.NS (INDIAN BANK) score 63.8 — "ICICI Bank Share Price Live Updates: ICICI Bank Current Market Status"
+- BAC (Bank of America Corporation) score 47.7 — "ICICI Bank Share Price Live Updates: ICICI Bank Current Market Status"
+- COIN (Coinbase Global, Inc.) score 45.9 — "Global Market: European shares slip as rising oil prices, bond yields weigh on sentiment"
+- TECHM.NS (TECH MAHINDRA LIMITED) score 44.1 — "HCL Tech Share Price Live Updates: HCL Tech Experiences a Drop in Price"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 42.8 — "HCL Tech Share Price Live Updates: HCL Tech Experiences a Drop in Price"
+- HDB (HDFC Bank Limited) score 42.6 — "HDFC Life Share Price Live Updates: HDFC Life's shares close at Rs 538.25"
+- TECH (Bio-Techne Corp) score 42.6 — "HCL Tech Share Price Live Updates: HCL Tech Experiences a Drop in Price"
+- OHI (Omega Healthcare Investors, In) score 39.4 — "Multibagger IPOs of 2026: These 3 stocks have fattened investors’ portfolios; do you own a"
+- IDBI.NS (IDBI BANK LIMITED) score 38.8 — "ICICI Bank Share Price Live Updates: ICICI Bank Current Market Status"
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 38.8 — "ICICI Bank Share Price Live Updates: ICICI Bank Current Market Status"
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 38.7 — "ICICI Bank Share Price Live Updates: ICICI Bank Current Market Status"
+- CHKP (Check Point Software Technolog) score 34.5 — "Shankesh Jewellers IPO opens for subscription. Should you apply? Check GMP, key details"
+- LTH (Life Time Group Holdings, Inc.) score 29.3 — "Global Market: European shares slip as rising oil prices, bond yields weigh on sentiment"
+- BOND (PIMCO Active Bond Exchange-Tra) score 28.9 — "Global Market: European shares slip as rising oil prices, bond yields weigh on sentiment"
+- 301077.SZ (CHINASTARS) score 24.0 — "Lenskart shares gain over 5% to record high after incorporating new step-down subsidiary i"
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 21.3 — "Tata Consumer Share Price Live Updates: Tata Consumer's Market Close"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 20.0 — "Top Gainers & Losers on 18 August: PTC Industries, Inox Wind, Mphasis, Tata Elxsi, Suzlon "
+- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 19.7 — "Tata Consumer Share Price Live Updates: Tata Consumer's Market Close"
+- JIOFIN.BO (Jio Financial Services Limited) score 16.0 — "Financial advisers tell us how they handle clients who love to gamble"
+- PCJEWELLER.NS (PC JEWELLER LTD) score 14.8 — "IPO GMPs: Lalitha Jewellery IPO, Horizon Industrial Parks IPO to Shankesh Jewellers IPO —w"
+- JUSTDIAL.BO (JUST DIAL LTD.) score 11.9 — "Chris Pratt’s Pacific Palisades home returns to the market for just under $20 million"
+- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 11.4 — "MCX plans India coal and ore exchanges to boost price discovery"
+- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 11.0 — "Financial advisers tell us how they handle clients who love to gamble"
+- MS (Morgan Stanley) score 10.3 — "Here’s how Amazon’s stock could nearly double by the end of next year, according to Morgan"
+- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 8.2 — "Bajaj Finance Share Price Live Updates: Bajaj Finance Trading Update"
+- NVDA (NVIDIA Corporation) score 7.1 — "SpaceX’s stock is rising, and that’s a good sign for Nvidia and Google"
+- STYLEBAAZA.NS (BAAZAR STYLE RETAIL LTD) score 6.0 — "US Stock Market: Citadel Securities warns SEC rule change could hurt retail investors, mar"
+- VT (Vanguard Total World Stock Ind) score 5.9 — "Global Market: Trump-backed World Liberty partners with platform offering Chinese AI model"
+- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 5.7 — "Adani flagship eyes India’s Nifty crown after years of turmoil"
+- ICICIGI.BO (ICICI Lombard General Insuranc) score 5.5 — "ICICI Bank Share Price Live Updates: ICICI Bank Current Market Status"
+- BHARATFORG.BO (BHARAT FORGE LTD.) score 5.2 — "Cement makers face a forgettable H1FY27 as prices weaken and costs rise"
 - META (Meta) score 4.9 — "Hindustan Copper, Vedanta, other metal stocks slip up to 2% after sharp gains. Should you "
-- ICICIGI.BO (ICICI Lombard General Insuranc) score 4.6 — "ICICI Bank Share Price Live Updates: ICICI Bank Price Movement"
-- VOLTAS.NS (VOLTAS LTD) score 4.4 — "Voltas reported strong growth in June quarter, but failed to impress"
-- AAPL (Apple Inc.) score 4.1 — "Apple’s stock could rise 30% if it strikes an Nvidia deal for AI, this analyst says"
-- LENSKART.NS (LENSKART SOLUTIONS LTD) score 3.9 — "Stocks to Watch, Aug 18: Paytm, Airtel, GMR Airports, Netweb Tech, SPR Auto, Lenskart, Man"
-- FINCABLES.NS (FINOLEX CABLES LTD) score 0.8 — "Finolex Cables ends 6% higher after Q1 results, Jefferies lift target to ₹1,410"
+- LENSKART.NS (LENSKART SOLUTIONS LTD) score 4.8 — "Lenskart shares gain over 5% to record high after incorporating new step-down subsidiary i"
+- VOLTAS.NS (VOLTAS LTD) score 4.3 — "Voltas reported strong growth in June quarter, but failed to impress"
+- AAPL (Apple Inc.) score 4.0 — "Apple’s stock could rise 30% if it strikes an Nvidia deal for AI, this analyst says"
+- FINCABLES.NS (FINOLEX CABLES LTD) score 0.7 — "Finolex Cables ends 6% higher after Q1 results, Jefferies lift target to ₹1,410"
 - CUPID.NS (CUPID LIMITED) score 0.7 — "Cupid shares jump nearly 9% in two days post Q1 earnings"
 
 ---
