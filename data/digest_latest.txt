@@ -1,14 +1,14 @@
 === TRANSMISSION LAYER MORNING DIGEST — 2026-08-24 ===
 
 [0] REGIME & ASSUMPTIONS (measured now, not assumed)
-  Regime: RISK_ON (score 0.298, 2d) — vol-pct 0.222, breadth-off 0.375, P(high-vol) 0.016
+  Regime: RISK_ON (score 0.345, 2d) — vol-pct 0.274, breadth-off 0.417, P(high-vol) 0.016
   [INVERTED] safe_haven_gold: corr20=-0.42 corr60=-0.4, shifted 2026-06-04
   [VALID] gold_silver_comove: corr20=0.76 corr60=0.86, shifted 2026-02-04
-  [WEAK] metal_copper_channel: corr20=0.14 corr60=0.4, shifted 2026-07-08
-  [WEAK] inr_oil_channel: corr20=0.09 corr60=-0.1, shifted 2026-06-09
+  [WEAK] metal_copper_channel: corr20=0.15 corr60=0.4, shifted 2026-07-08
+  [WEAK] inr_oil_channel: corr20=0.08 corr60=-0.11, shifted 2026-06-09
   [INSUFFICIENT_DATA] goi_ust_comove: corr20=None corr60=None
   [VALID] vix_equity_inverse: corr20=-0.7 corr60=-0.83, shifted 2026-05-05
-  [WEAK] dxy_inr_channel: corr20=-0.11 corr60=-0.12, shifted 2026-01-22
+  [WEAK] dxy_inr_channel: corr20=-0.1 corr60=-0.13, shifted 2026-01-22
   [WEAK] real_rates_gold_inverse: corr20=-0.3 corr60=-0.21, shifted 2026-06-30
   [INVERTED] gsr_stress_gauge: corr20=-0.26 corr60=0.2, shifted 2026-04-21
 
@@ -19,33 +19,33 @@
   dow_jones | 53279.3281 | 0.99% | -0.84% | 0.05 | 1.16 | 1.48 | 95 | none | quiet
   russell_2000 | 3017.9050 | 0.85% | -1.65% | 0.38 | 0.70 | 0.59 | 96 | amber | quiet
   vix | 15.1300 | -5.50% | 6.18% | -0.64 | -0.66 | n/a | 12 | none | quiet
-  india_vix | 11.2950 | 0.85% | -0.31% | -1.07 | 0.15 | n/a | 24 | none | quiet
-  ftse_100 | 10809.1797 | 0.57% | 0.55% | -0.21 | 1.15 | 0.70 | 94 | none | quiet
-  dax | 26128.4297 | 0.56% | -1.18% | 0.36 | 0.74 | 0.43 | 96 | amber | quiet
-  cac_40 | 8479.5400 | 0.31% | -1.82% | -0.81 | 0.40 | 0.24 | 90 | none | quiet
-  stoxx_50 | 6459.0400 | 0.58% | -1.23% | 0.19 | 0.73 | 0.37 | 95 | amber | quiet
-  nikkei_225 | 65633.0000 | -0.58% | -5.18% | 0.05 | -0.33 | -0.31 | 82 | none | quiet
-  hang_seng | 25465.2305 | -2.09% | 0.05% | -0.65 | -1.89 | 1.00 | 30 | none | moved
-  shanghai_comp | 3877.3035 | -0.71% | -2.65% | -0.27 | -0.69 | 0.02 | 25 | none | quiet
-  kospi | 6710.5298 | -2.93% | -3.83% | 0.66 | -0.58 | 0.01 | 76 | none | quiet
-  taiwan_weighted | 44993.1602 | -0.51% | -1.88% | 0.52 | -0.42 | 0.06 | 87 | none | quiet
-  asx_200 | 9107.2998 | 0.53% | 0.38% | 0.03 | 0.94 | -0.39 | 94 | none | quiet
+  india_vix | 11.4800 | 2.50% | 1.32% | -0.68 | 0.45 | n/a | 29 | none | quiet
+  ftse_100 | 10817.8398 | 0.01% | 0.91% | -0.15 | 0.02 | 0.80 | 94 | none | quiet
+  dax | 26076.6309 | -0.23% | -0.99% | 0.11 | -0.30 | 0.47 | 94 | none | quiet
+  cac_40 | 8469.5801 | -0.18% | -1.28% | -1.01 | -0.23 | 0.33 | 90 | none | quiet
+  stoxx_50 | 6441.9199 | -0.31% | -1.36% | -0.07 | -0.39 | 0.44 | 94 | none | quiet
+  nikkei_225 | 65537.3281 | -0.73% | -5.32% | 0.00 | -0.42 | -0.31 | 82 | none | quiet
+  hang_seng | 25557.4902 | -1.74% | 0.41% | -0.30 | -1.57 | 1.00 | 35 | none | moved
+  shanghai_comp | 3881.3987 | -0.61% | -2.54% | -0.20 | -0.59 | 0.02 | 27 | none | quiet
+  kospi | 6693.6201 | -3.17% | -4.07% | 0.62 | -0.62 | 0.01 | 76 | none | quiet
+  taiwan_weighted | 44770.0703 | -1.00% | -2.37% | 0.39 | -0.83 | 0.06 | 85 | none | quiet
+  asx_200 | 9102.9004 | 0.49% | 0.33% | -0.01 | 0.85 | -0.39 | 94 | none | quiet
   bovespa | 171014.6250 | 1.84% | 2.44% | -0.30 | 1.75 | 1.72 | 50 | none | unexplained
-  nifty_50 | 24277.9004 | 0.11% | -0.04% | -0.43 | 0.19 | 0.21 | 36 | none | quiet
-  nifty_midcap_100 | 63939.5000 | 0.32% | 0.20% | 1.01 | 0.51 | -0.27 | 99 | amber | quiet
-  nifty_fmcg | 47349.8984 | -0.33% | -1.57% | -2.00 | -0.39 | -0.97 | 4 | amber | quiet
-  nifty_metal | 13309.7998 | 1.07% | 1.59% | 1.45 | 0.97 | 0.64 | 96 | amber | quiet
-  nifty_it | 30727.7500 | 0.64% | -0.26% | -0.49 | 0.43 | -0.25 | 39 | none | quiet
-  dxy | 98.8330 | 0.03% | -0.81% | -1.54 | 0.10 | -0.22 | 45 | amber | quiet
-  eur_usd | 1.1685 | -0.02% | 0.96% | 1.96 | -0.07 | 0.38 | 63 | amber | quiet
-  usd_jpy | 158.8620 | -0.01% | -0.23% | -0.39 | -0.02 | 0.97 | 65 | none | quiet
-  gbp_usd | 1.3647 | 0.02% | 0.74% | 1.95 | 0.06 | 0.77 | 95 | amber | quiet
-  aud_usd | 0.7169 | 0.70% | 1.19% | 2.68 | 1.44 | -0.03 | 92 | red | quiet
-  usd_cny | 6.7224 | -0.00% | -0.30% | -2.21 | -0.01 | -0.76 | 0 | amber | quiet
-  usd_inr | 95.6620 | -0.12% | 0.22% | 0.42 | -0.33 | 0.55 | 87 | none | quiet
-  eur_inr | 111.7588 | -0.02% | 4.50% | 1.93 | -0.03 | 0.09 | 97 | amber | quiet
-  usd_mxn | 16.9230 | -0.13% | -0.56% | -1.61 | -0.35 | -0.06 | 0 | amber | quiet
-  usd_brl | 5.1366 | -1.09% | -1.63% | -0.17 | -1.47 | 0.33 | 27 | none | quiet
+  nifty_50 | 24182.5000 | -0.29% | -0.43% | -0.87 | -0.50 | 0.21 | 32 | none | quiet
+  nifty_midcap_100 | 63761.8984 | 0.04% | -0.08% | 0.66 | 0.07 | -0.27 | 97 | amber | quiet
+  nifty_fmcg | 47251.3516 | -0.53% | -1.77% | -2.13 | -0.64 | -0.97 | 4 | amber | quiet
+  nifty_metal | 13334.0498 | 1.26% | 1.77% | 1.55 | 1.13 | 0.64 | 96 | amber | quiet
+  nifty_it | 30716.9004 | 0.60% | -0.30% | -0.51 | 0.41 | -0.25 | 39 | none | quiet
+  dxy | 98.8920 | 0.09% | -0.75% | -1.45 | 0.27 | -0.22 | 46 | none | quiet
+  eur_usd | 1.1675 | -0.11% | 0.88% | 1.84 | -0.28 | 0.38 | 62 | amber | quiet
+  usd_jpy | 159.1300 | 0.16% | -0.06% | -0.27 | 0.29 | 0.97 | 69 | none | quiet
+  gbp_usd | 1.3643 | -0.00% | 0.71% | 1.91 | -0.01 | 0.77 | 94 | amber | quiet
+  aud_usd | 0.7168 | 0.69% | 1.18% | 2.66 | 1.41 | -0.03 | 92 | red | quiet
+  usd_cny | 6.7226 | 0.00% | -0.30% | -2.20 | 0.01 | -0.76 | 0 | amber | quiet
+  usd_inr | 95.7200 | -0.05% | 0.28% | 0.60 | -0.16 | 0.55 | 89 | none | quiet
+  eur_inr | 111.7244 | -0.05% | 4.47% | 1.90 | -0.09 | 0.09 | 97 | amber | quiet
+  usd_mxn | 16.9251 | -0.12% | -0.55% | -1.60 | -0.31 | -0.06 | 0 | amber | quiet
+  usd_brl | 5.1374 | -1.07% | -1.61% | -0.15 | -1.45 | 0.33 | 28 | none | quiet
   ust_2y | 4.1900 | 0.00% | 0.96% | -0.75 | 0.00 | -0.51 | 89 | none | quiet
   ust_10y | 4.6900 | 0.86% | 1.30% | 0.35 | 0.86 | 0.36 | 96 | amber | quiet
   ust_30y | 5.2300 | 0.77% | 0.38% | 0.40 | 0.90 | 0.53 | 96 | amber | quiet
@@ -56,119 +56,116 @@
   goi_10y | 6.8900 | -1.85% | 2.35% | 1.12 | n/a | n/a | 86 | none | quiet
   bund_10y | 2.9700 | -2.51% | 5.82% | 1.49 | n/a | n/a | 86 | none | quiet
   india_cpi_yoy | 2.9518 | 14.13% | -33.03% | n/a | n/a | n/a | n/a | none | quiet
-  wti | 85.7100 | -1.55% | 1.43% | 1.02 | -0.69 | -0.12 | 71 | amber | quiet
-  brent | 93.1800 | -1.28% | 2.54% | 1.31 | -0.63 | 0.33 | 74 | none | quiet
-  natgas | 2.7710 | -0.07% | 3.01% | 0.70 | -0.02 | 0.39 | 15 | none | quiet
-  comex_gold | 4693.0000 | 1.49% | 6.23% | 2.31 | 0.84 | 0.88 | 77 | red | quiet
-  comex_silver | 68.8650 | -0.87% | 4.15% | 1.69 | -0.33 | -0.90 | 54 | red | quiet
-  comex_copper | 6.5540 | -0.39% | -0.76% | 0.24 | -0.18 | 1.01 | 94 | none | quiet
-  wheat | 709.2500 | 4.07% | 5.11% | 3.21 | 2.46 | -0.26 | 100 | red | moved
-  corn | 519.2500 | 7.34% | 11.67% | 4.79 | 5.77 | 0.49 | 100 | red | moved
-  soybeans | 1232.5000 | 0.61% | 2.62% | 2.04 | 0.60 | 0.25 | 98 | amber | quiet
-  btc_usd | 76859.1875 | -1.88% | 19.15% | 3.04 | -0.41 | 3.11 | 51 | red | unexplained
-  eth_usd | 2437.3601 | -3.10% | 27.46% | 2.70 | -0.62 | 2.06 | 60 | red | unexplained
-  midcap_largecap_ratio | 2.6337 | 0.21% | 0.24% | 1.42 | n/a | n/a | 100 | amber | quiet
-  brent_wti_spread | 7.4700 | 1.91% | 17.27% | 2.19 | n/a | n/a | 91 | amber | quiet
-  gold_silver_ratio | 68.1478 | 2.38% | 2.00% | -0.16 | n/a | n/a | 57 | amber | quiet
+  wti | 85.0900 | -2.26% | 0.70% | 0.84 | -1.00 | -0.12 | 71 | amber | quiet
+  brent | 92.6900 | -1.80% | 2.00% | 1.19 | -0.88 | 0.33 | 73 | amber | quiet
+  natgas | 2.7820 | 0.32% | 3.42% | 0.92 | 0.10 | 0.39 | 16 | none | quiet
+  comex_gold | 4704.5000 | 1.74% | 6.49% | 2.38 | 0.98 | 0.88 | 78 | red | quiet
+  comex_silver | 69.1150 | -0.51% | 4.53% | 1.75 | -0.20 | -0.90 | 54 | red | quiet
+  comex_copper | 6.5770 | -0.04% | -0.41% | 0.44 | -0.02 | 1.01 | 95 | none | quiet
+  wheat | 708.7500 | 4.00% | 5.04% | 3.18 | 2.41 | -0.26 | 100 | red | moved
+  corn | 518.7500 | 7.24% | 11.56% | 4.76 | 5.68 | 0.49 | 100 | red | moved
+  soybeans | 1231.7500 | 0.55% | 2.56% | 2.01 | 0.54 | 0.25 | 98 | amber | quiet
+  btc_usd | 77634.1719 | -0.89% | 20.35% | 3.25 | -0.20 | 3.11 | 54 | red | unexplained
+  eth_usd | 2464.1399 | -2.03% | 28.86% | 2.86 | -0.41 | 2.06 | 60 | red | unexplained
+  midcap_largecap_ratio | 2.6367 | 0.33% | 0.35% | 1.55 | n/a | n/a | 100 | red | quiet
+  brent_wti_spread | 7.6000 | 3.68% | 19.31% | 2.34 | n/a | n/a | 92 | amber | quiet
+  gold_silver_ratio | 68.0677 | 2.26% | 1.88% | -0.22 | n/a | n/a | 57 | amber | quiet
   goi_ust_spread | 2.4200 | -7.98% | 5.58% | n/a | n/a | n/a | n/a | none | quiet
   ust_2s10s | 0.5000 | 8.70% | 4.17% | 0.98 | n/a | n/a | 30 | none | quiet
-  dyn_301077_sz | 20.5600 | -2.33% | -10.76% | -0.08 | -0.70 | 0.26 | 6 | none | quiet
-  dyn_adanient_bo | 3012.8501 | 0.60% | 0.14% | 0.03 | 0.38 | -0.12 | 87 | none | quiet
-  dyn_atherenerg_ns | 1471.1000 | 0.62% | -0.95% | 0.53 | 0.19 | 0.27 | 97 | amber | quiet
+  dyn_301077_sz | 20.5200 | -2.52% | -10.94% | -0.11 | -0.76 | 0.26 | 6 | none | quiet
+  dyn_adanient_bo | 2979.9500 | -0.50% | -0.95% | -1.20 | -0.32 | -0.12 | 82 | none | quiet
+  dyn_atherenerg_ns | 1463.7000 | 0.12% | -1.45% | 0.47 | 0.04 | 0.27 | 96 | amber | quiet
   dyn_bac | 61.6950 | -0.27% | -4.33% | -1.32 | -0.17 | -1.58 | 92 | none | unexplained
-  dyn_bharatcoal_ns | 35.2200 | 1.18% | 5.67% | 2.37 | 0.58 | 1.61 | 49 | amber | unexplained
-  dyn_bharatforg_bo | 2055.5000 | -0.32% | -1.52% | n/a | n/a | n/a | n/a | none | quiet
+  dyn_bharatcoal_ns | 34.8800 | 0.20% | 4.65% | 1.73 | 0.10 | 1.61 | 47 | none | unexplained
+  dyn_bharatforg_bo | 2045.0000 | -0.82% | -2.02% | n/a | n/a | n/a | n/a | none | quiet
   dyn_bond | 90.5050 | -0.13% | -0.13% | -0.78 | -0.41 | -1.29 | 3 | amber | quiet
-  dyn_cartrade_ns | 3096.0000 | 0.75% | 10.69% | 3.10 | 0.21 | 1.98 | 96 | red | unexplained
+  dyn_cartrade_ns | 3100.3000 | 0.89% | 10.85% | 3.15 | 0.25 | 1.98 | 97 | red | unexplained
   dyn_chkp | 130.5200 | 0.15% | -0.91% | 0.16 | 0.06 | -0.70 | 18 | none | quiet
-  dyn_coalindia_ns | 406.8500 | 0.41% | -0.39% | -0.80 | 0.35 | 0.55 | 37 | none | quiet
+  dyn_coalindia_ns | 406.9000 | 0.42% | -0.38% | -0.79 | 0.36 | 0.55 | 37 | none | quiet
   dyn_coin | 186.5750 | 8.25% | 25.67% | 4.00 | 1.58 | 2.63 | 38 | red | unexplained
-  dyn_cupid_ns | 286.9000 | 0.82% | 7.32% | 1.07 | 0.20 | -0.00 | 98 | amber | quiet
-  dyn_fincables_ns | 1282.3500 | 1.73% | -2.91% | 1.11 | 0.45 | -0.74 | 98 | amber | quiet
-  dyn_havells_ns | 1266.0000 | -0.16% | -2.54% | -0.41 | -0.12 | -1.02 | 32 | none | quiet
+  dyn_cupid_ns | 285.7000 | 0.39% | 6.88% | 1.02 | 0.09 | -0.00 | 98 | amber | quiet
+  dyn_fincables_ns | 1279.3000 | 1.49% | -3.15% | 1.09 | 0.39 | -0.74 | 98 | amber | quiet
+  dyn_havells_ns | 1257.8000 | -0.80% | -3.17% | -0.81 | -0.60 | -1.02 | 30 | none | quiet
   dyn_hdb | 23.5950 | 1.09% | 0.96% | 0.20 | 0.86 | 0.90 | 8 | none | quiet
-  dyn_hdbfs_bo | 691.3500 | -0.68% | 1.02% | 1.01 | -0.45 | 0.55 | 33 | none | quiet
-  dyn_icicigi_bo | 1624.9500 | 0.38% | -0.33% | -0.80 | 0.25 | -0.21 | 4 | amber | quiet
-  dyn_idbi_ns | 82.5700 | 0.40% | 0.47% | -0.54 | 0.19 | 0.21 | 29 | none | quiet
-  dyn_indianb_ns | 880.1000 | 0.36% | -0.12% | 0.64 | 0.19 | 0.19 | 77 | none | quiet
-  dyn_indusindbk_bo | 1012.0000 | 0.79% | 0.20% | -0.09 | 0.50 | -0.22 | 92 | none | quiet
-  dyn_inoxindia_ns | 1932.1000 | 0.10% | -0.96% | -0.01 | 0.06 | 0.11 | 90 | none | quiet
+  dyn_hdbfs_bo | 687.6500 | -1.21% | 0.48% | 0.51 | -0.79 | 0.55 | 32 | none | quiet
+  dyn_icicigi_bo | 1617.7000 | -0.07% | -0.77% | -1.17 | -0.04 | -0.21 | 1 | amber | quiet
+  dyn_idbi_ns | 83.4800 | 1.51% | 1.58% | 0.17 | 0.70 | 0.21 | 31 | none | quiet
+  dyn_indianb_ns | 873.2500 | -0.42% | -0.90% | 0.36 | -0.22 | 0.19 | 69 | none | quiet
+  dyn_indusindbk_bo | 1011.6000 | 0.75% | 0.16% | -0.14 | 0.48 | -0.22 | 92 | none | quiet
+  dyn_inoxindia_ns | 1946.2000 | 0.83% | -0.24% | 0.50 | 0.54 | 0.11 | 92 | none | quiet
   dyn_jef | 52.3400 | 1.08% | -5.08% | -1.71 | 0.47 | -0.93 | 28 | none | quiet
-  dyn_jiofin_bo | 243.8000 | 0.04% | -2.40% | -0.95 | 0.02 | -0.48 | 34 | none | quiet
-  dyn_justdial_bo | 673.4500 | 0.04% | -0.98% | -0.89 | 0.02 | -0.62 | 44 | none | quiet
-  dyn_karurvysya_ns | 335.7000 | 0.06% | 0.51% | -0.33 | 0.03 | -0.06 | 92 | none | quiet
-  dyn_lenskart_ns | 659.2500 | -0.33% | 8.50% | 2.14 | -0.20 | 0.24 | 99 | amber | quiet
+  dyn_jiofin_bo | 243.3500 | -0.14% | -2.58% | -1.00 | -0.08 | -0.48 | 33 | none | quiet
+  dyn_justdial_bo | 669.6000 | -0.53% | -1.54% | -1.04 | -0.24 | -0.62 | 43 | none | quiet
+  dyn_karurvysya_ns | 336.3500 | 0.25% | 0.70% | -0.18 | 0.14 | -0.06 | 94 | none | quiet
+  dyn_lenskart_ns | 659.7000 | -0.26% | 8.57% | 2.16 | -0.16 | 0.24 | 99 | amber | quiet
   dyn_lth | 45.1000 | 0.85% | -0.35% | 0.74 | 0.39 | 0.18 | 97 | amber | quiet
   dyn_meta | 549.9100 | 0.75% | -6.77% | -1.44 | 0.30 | 0.44 | 3 | amber | quiet
   dyn_mrna | 145.0400 | 8.79% | 129.06% | 4.40 | 0.66 | 4.54 | 100 | red | unexplained
   dyn_ms | 214.2050 | 3.26% | -1.45% | 0.03 | 1.75 | -1.32 | 85 | none | moved
-  dyn_muthootfin_ns | 3165.0000 | 4.73% | 9.57% | 3.15 | 2.15 | 0.88 | 35 | red | priced
+  dyn_muthootfin_ns | 3185.8000 | 5.42% | 10.29% | 3.43 | 2.46 | 0.88 | 39 | red | priced
   dyn_ohi | 46.6000 | -0.32% | 0.15% | -0.89 | -0.24 | -0.48 | 67 | none | quiet
-  dyn_pcjeweller_ns | 10.5400 | 3.13% | 7.66% | 3.27 | 0.91 | 2.23 | 69 | red | unexplained
-  dyn_stylebaaza_ns | 407.0000 | -2.55% | 6.13% | 1.32 | -0.65 | -1.55 | 96 | amber | unexplained
-  dyn_tataelxsi_ns | 3735.0000 | 0.73% | -0.66% | 0.37 | 0.39 | 0.88 | 11 | none | quiet
-  dyn_tatatech_ns | 820.5000 | -0.03% | -2.51% | 0.29 | -0.01 | -0.20 | 96 | amber | quiet
+  dyn_pcjeweller_ns | 10.5500 | 3.23% | 7.76% | 3.30 | 0.93 | 2.23 | 69 | red | unexplained
+  dyn_stylebaaza_ns | 412.5000 | -1.23% | 7.56% | 1.41 | -0.31 | -1.55 | 96 | amber | unexplained
+  dyn_tataelxsi_ns | 3703.3999 | -0.12% | -1.51% | -0.10 | -0.07 | 0.88 | 10 | none | quiet
+  dyn_tatatech_ns | 814.1000 | -0.81% | -3.27% | 0.17 | -0.31 | -0.20 | 96 | amber | quiet
   dyn_tech | 72.3400 | 0.08% | -0.08% | 1.02 | 0.04 | -0.05 | 98 | amber | quiet
-  dyn_techm_ns | 1590.9000 | 0.44% | -1.19% | -1.38 | 0.28 | -0.22 | 79 | none | quiet
-  dyn_voltas_ns | 1229.0000 | -0.49% | -3.00% | -1.71 | -0.26 | 0.75 | 2 | amber | quiet
+  dyn_techm_ns | 1591.2000 | 0.45% | -1.17% | -1.37 | 0.29 | -0.22 | 80 | none | quiet
+  dyn_voltas_ns | 1232.3000 | -0.22% | -2.74% | -1.61 | -0.12 | 0.75 | 2 | amber | quiet
   dyn_vt | 160.7900 | 0.54% | -0.90% | 0.63 | 0.70 | 2.00 | 97 | amber | unexplained
 
 [2] FLAGS FIRED
-  [RED] gold_silver (co-occurrence, CROSS) score=6.31 — same-direction: comex_gold, comex_silver
-  [RED] corn (series, COMMODITIES) score=4.79 — |z20|=4.79; 1y-pct=100
-  [AMBER] midcap_largecap_ratio (series, DERIVED) score=4.42 — 52-wk extreme (pct=100); 1y-pct=100
+  [RED] gold_silver (co-occurrence, CROSS) score=6.38 — same-direction: comex_gold, comex_silver
+  [RED] corn (series, COMMODITIES) score=4.76 — |z20|=4.76; 1y-pct=100
+  [RED] midcap_largecap_ratio (series, DERIVED) score=4.55 — 52-wk extreme (pct=100); |z20|=1.55; 1y-pct=100
   [RED] dyn_mrna (series, EQUITIES) score=4.40 — |z20|=4.40; 1y-pct=100
-  [AMBER] wti (series, COMMODITIES) score=4.02 — 1-session move -1.55% ≥ 1.5%
+  [AMBER] brent (series, COMMODITIES) score=4.19 — 1-session move -1.80% ≥ 1.5%
   [RED] dyn_coin (series, EQUITIES) score=4.00 — |z20|=4.00
-  [RED] dyn_pcjeweller_ns (series, EQUITIES) score=3.27 — |z20|=3.27
-  [RED] wheat (series, COMMODITIES) score=3.21 — |z20|=3.21; 1y-pct=100
-  [AMBER] gold_silver_ratio (series, DERIVED) score=3.16 — GSR<75 (extreme low)
-  [RED] dyn_muthootfin_ns (series, EQUITIES) score=3.15 — |z20|=3.15
-  [RED] dyn_cartrade_ns (series, EQUITIES) score=3.10 — |z20|=3.10; 1y-pct=96
-  [RED] btc_usd (series, CRYPTO) score=3.04 — |z20|=3.04
+  [AMBER] wti (series, COMMODITIES) score=3.84 — 1-session move -2.26% ≥ 1.5%
+  [RED] dyn_muthootfin_ns (series, EQUITIES) score=3.43 — |z20|=3.43
+  [RED] dyn_pcjeweller_ns (series, EQUITIES) score=3.30 — |z20|=3.30
+  [RED] btc_usd (series, CRYPTO) score=3.25 — |z20|=3.25
+  [AMBER] gold_silver_ratio (series, DERIVED) score=3.22 — GSR<75 (extreme low)
+  [RED] wheat (series, COMMODITIES) score=3.18 — |z20|=3.18; 1y-pct=100
+  [RED] dyn_cartrade_ns (series, EQUITIES) score=3.15 — |z20|=3.15; 1y-pct=97
   [RED] tips_10y_real (series, RATES) score=2.88 — |z20|=2.88
-  [RED] eth_usd (series, CRYPTO) score=2.70 — |z20|=2.70
-  [RED] aud_usd (series, FX) score=2.68 — |z20|=2.68
-  [AMBER] dyn_bharatcoal_ns (series, EQUITIES) score=2.37 — |z20|=2.37
-  [RED] comex_gold (series, COMMODITIES) score=2.31 — |z20|=2.31; co-occur[gold_silver] same-direction (channel VALID)
-  [AMBER] usd_cny (series, FX) score=2.21 — |z20|=2.21; 1y-pct=0
-  [AMBER] brent_wti_spread (series, DERIVED) score=2.19 — |z20|=2.19
-  [AMBER] dyn_lenskart_ns (series, EQUITIES) score=2.14 — |z20|=2.14; 1y-pct=99
-  [AMBER] soybeans (series, COMMODITIES) score=2.04 — |z20|=2.04; 1y-pct=98
-  [AMBER] nifty_fmcg (series, INDICES) score=2.00 — |z20|=2.00; 1y-pct=4
-  [AMBER] eur_usd (series, FX) score=1.96 — |z20|=1.96
-  [AMBER] gbp_usd (series, FX) score=1.95 — |z20|=1.95; 1y-pct=95
+  [RED] eth_usd (series, CRYPTO) score=2.86 — |z20|=2.86
+  [RED] aud_usd (series, FX) score=2.66 — |z20|=2.66
+  [RED] comex_gold (series, COMMODITIES) score=2.38 — |z20|=2.38; co-occur[gold_silver] same-direction (channel VALID)
+  [AMBER] brent_wti_spread (series, DERIVED) score=2.34 — |z20|=2.34
+  [AMBER] usd_cny (series, FX) score=2.20 — |z20|=2.20; 1y-pct=0
+  [AMBER] dyn_lenskart_ns (series, EQUITIES) score=2.16 — |z20|=2.16; 1y-pct=99
+  [AMBER] nifty_fmcg (series, INDICES) score=2.13 — |z20|=2.13; 1y-pct=4
+  [AMBER] soybeans (series, COMMODITIES) score=2.01 — |z20|=2.01; 1y-pct=98
   [AMBER] ig_oas (series, RATES) score=1.95 — |z20|=1.95
-  [AMBER] eur_inr (series, FX) score=1.93 — |z20|=1.93; 1y-pct=97
-  [AMBER] dyn_voltas_ns (series, EQUITIES) score=1.71 — 1y-pct=2
-  [RED] comex_silver (series, COMMODITIES) score=1.69 — |z20|=1.69; co-occur[gold_silver] same-direction (channel VALID)
-  [AMBER] usd_mxn (series, FX) score=1.61 — |z20|=1.61; 1y-pct=0
-  [AMBER] dxy (series, FX) score=1.54 — |z20|=1.54
-  [AMBER] nifty_metal (series, INDICES) score=1.45 — 1y-pct=96
+  [AMBER] gbp_usd (series, FX) score=1.91 — |z20|=1.91
+  [AMBER] eur_inr (series, FX) score=1.90 — |z20|=1.90; 1y-pct=97
+  [AMBER] eur_usd (series, FX) score=1.84 — |z20|=1.84
+  [RED] comex_silver (series, COMMODITIES) score=1.75 — |z20|=1.75; co-occur[gold_silver] same-direction (channel VALID)
+  [AMBER] dyn_voltas_ns (series, EQUITIES) score=1.61 — 1y-pct=2
+  [AMBER] usd_mxn (series, FX) score=1.60 — |z20|=1.60; 1y-pct=0
+  [AMBER] nifty_metal (series, INDICES) score=1.55 — |z20|=1.55; 1y-pct=96
   [AMBER] dyn_meta (series, EQUITIES) score=1.44 — 1y-pct=3
-  [AMBER] dyn_stylebaaza_ns (series, EQUITIES) score=1.32 — 1y-pct=96
-  [AMBER] dyn_fincables_ns (series, EQUITIES) score=1.11 — 1y-pct=98
-  [AMBER] dyn_cupid_ns (series, EQUITIES) score=1.07 — 1y-pct=98
+  [AMBER] dyn_stylebaaza_ns (series, EQUITIES) score=1.41 — 1y-pct=96
+  [AMBER] dyn_icicigi_bo (series, EQUITIES) score=1.17 — 1y-pct=1
+  [AMBER] dyn_fincables_ns (series, EQUITIES) score=1.09 — 1y-pct=98
   [AMBER] dyn_tech (series, EQUITIES) score=1.02 — 1y-pct=98
-  [AMBER] nifty_midcap_100 (series, INDICES) score=1.01 — 1y-pct=99
-  [AMBER] dyn_icicigi_bo (series, EQUITIES) score=0.80 — 1y-pct=4
+  [AMBER] dyn_cupid_ns (series, EQUITIES) score=1.02 — 1y-pct=98
   [AMBER] dyn_bond (series, EQUITIES) score=0.78 — 1y-pct=3
   [AMBER] dyn_lth (series, EQUITIES) score=0.74 — 1y-pct=97
+  [AMBER] nifty_midcap_100 (series, INDICES) score=0.66 — 1y-pct=97
   [AMBER] dyn_vt (series, EQUITIES) score=0.63 — 1y-pct=97
-  [AMBER] dyn_atherenerg_ns (series, EQUITIES) score=0.53 — 1y-pct=97
+  [AMBER] dyn_atherenerg_ns (series, EQUITIES) score=0.47 — 1y-pct=96
   [AMBER] ust_30y (series, RATES) score=0.40 — 1y-pct=96
   [AMBER] russell_2000 (series, INDICES) score=0.38 — 1y-pct=96
-  [AMBER] dax (series, INDICES) score=0.36 — 1y-pct=96
   [AMBER] ust_10y (series, RATES) score=0.35 — 1y-pct=96
-  [AMBER] dyn_tatatech_ns (series, EQUITIES) score=0.29 — 1y-pct=96
-  [AMBER] stoxx_50 (series, INDICES) score=0.19 — 1y-pct=95
+  [AMBER] dyn_tatatech_ns (series, EQUITIES) score=0.17 — 1y-pct=96
 
 [2b] SCAN CONTROL & VERIFIED SETUPS
   FDR (Benjamini-Hochberg q=0.1): 2 of 89 scanned series significant (effective p<=0.0018708734390282533)
-  SETUP dyn_ms -> nikkei_225: leads 1d (ccf 0.414, beta 0.3416, p 0.0); driver zc 1.75 -> expected 1.112% | type hit-rate 0.82 (n=2366)
-  SETUP dyn_ms -> taiwan_weighted: leads 1d (ccf 0.388, beta 0.318, p 0.0); driver zc 1.75 -> expected 1.035% | type hit-rate 0.82 (n=2366)
-  SETUP bovespa -> usd_mxn: leads 1d (ccf -0.37, beta -0.2162, p 0.0); driver zc 1.75 -> expected -0.398% | type hit-rate 0.82 (n=2366)
-  Track record: residual_reversion 0.493 (n=1101) · transmission_follow 0.82 (n=2366) · spread_reversion 0.667 (n=15)
+  SETUP dyn_ms -> nikkei_225: leads 1d (ccf 0.413, beta 0.3414, p 0.0); driver zc 1.75 -> expected 1.112% | type hit-rate 0.816 (n=2478)
+  SETUP dyn_ms -> taiwan_weighted: leads 1d (ccf 0.386, beta 0.317, p 0.0); driver zc 1.75 -> expected 1.032% | type hit-rate 0.816 (n=2478)
+  SETUP bovespa -> usd_mxn: leads 1d (ccf -0.37, beta -0.2162, p 0.0); driver zc 1.75 -> expected -0.398% | type hit-rate 0.816 (n=2478)
+  Track record: residual_reversion 0.493 (n=1101) · transmission_follow 0.816 (n=2478) · spread_reversion 0.667 (n=15)
 
 [3] RELEASE PROXIMITY
   T-0d  NSDL FPI flows — 5-session outflow >$500M sustained
@@ -181,8 +178,8 @@
   USA:
     - Federal Reserve Board announces approval of application by National Westminster Bank Plc  — Federal Reserve
     - Federal Reserve Board issues enforcement action with SouthPoint Bancshares, Inc. and announces termination of enforcement action with Deutsche Bank AG, DB USA Corporation, and Deutsche Bank AG New York Branch  — Federal Reserve
+    - Singapore inflation hits highest in nearly two years, but undershoots expectations  — CNBC Economy
     - Bessent's bond gambit aimed at calming markets is instead stirring inflation worries  — CNBC Economy
-    - Bessent says there's a 'very good chance' U.S. budget deficit under Trump has peaked  — CNBC Economy
     - Stock futures flat as U.S. and Canada appear headed for trade war  — MarketWatch Top
     - My son does not work, yet pays $500 for Affordable Care Act health insurance. Is that fair?  — MarketWatch Top
     - ‘The market is obviously on fire’: Should I take $1,000 from my brokerage account to pay off my car loan?  — MarketWatch Top
@@ -190,22 +187,22 @@
     - We’re in our 50s and have $1.5 million in traditional 401(k)s. Is it too early to start Roth conversions?  — MarketWatch Top
     - ‘The estrangement isn’t about politics’: My daughter hasn’t spoken to me for 4 years. Do I leave her a monthly annuity?  — MarketWatch Top
   India:
-    - ETMarkets Smart Talk | Have money in FDs? Why retail investors should consider 7-7.25% bond yields: Amit Somani  — ET Markets
-    - Stocks to buy: 5 real estate stocks which Nomura remains bullish on  — ET Markets
-    - Augmont Enterprises IPO Day 2: GMP jumps to 48%, issue subscribed 2.74x — Should you subscribe?  — ET Markets
-    - Bonus issues & stock splits: 6 stocks to turn ex-record date this week. Do you own any?  — ET Markets
-    - Gaja Alternative Asset Management allotment expected today; GMP at 11% — Here’s how to check status online  — ET Markets
-    - Rs 21,000 crore IPO rush in August highest in one year. Will September break all records?  — ET Markets
-    - Lalithaa Jewellery IPO listing: Shares list at 32% premium over the issue price. Details here  — Mint Markets
-    - Horizon Industrial Parks IPO listing: Shares debut flat in a range-bound market  — Mint Markets
-    - Hy-Tech Engineers IPO Day 1: Issue opens today. GMP hints 47% listing gain. Apply or not?  — Mint Markets
-    - Sensex, Nifty, Nikkei, KOSPI to Dow Jones: Global equity heatmap before the opening bell of the Indian stock market  — Mint Markets
-    - Gold prices rise, silver drops on profit booking as focus shifts to US inflation data, US Fed Chair Kevin Warsh's speech  — Mint Markets
-    - Rupee opens 6 paise higher at 95.64 against US dollar  — Mint Markets
+    - Avaada said to plan public filing for $800 million IPO  — ET Markets
+    - Madhur Knit Crafts, ABH Healthcare SME IPOs Day 1: Early subscription, GMP, and key details  — ET Markets
+    - Sugar stocks Balrampur Chini, Dhampur Sugar, Uttam Sugar Mills rally up to 11%. Here are 2 triggers  — ET Markets
+    - 5 key themes set to drive global markets this week  — ET Markets
+    - Global Market: Alibaba rout drags China, Hong Kong markets lower amid AI spending concerns  — ET Markets
+    - Fascinate Textiles shares list at 20% discount to issue price of Rs 151 on NSE SME platform  — ET Markets
+    - Small-cap IT stock under  ₹50 jumps 5% after implementation of SpaceX International agreement plan  — Mint Markets
+    - Aurobindo Pharma US subsidiary Lannett Company LLC faces 4 observations from the USFDA  — Mint Markets
+    - Rain Industries share price: Petrochemical stock jumps 4% amid soaring crude oil prices on US-Iran war  — Mint Markets
+    - Stocks to buy for short term: Meesho, Axis Bank among 3 shares Anand Rathi's Jigar Patel suggests for the next 1-2 weeks  — Mint Markets
+    - Balrampur Chini Mills share price up over 10% in 5 days - What's sweetening up stock investors | Explained  — Mint Markets
+    - Alibaba shares plunge 11% after $10.2 billion share placement to fund AI expansion  — Mint Markets
     [manual] RBI press: https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx
   EU:
+    - Piero Cipollone: Interview with ilsussidiario.net  — ECB press
     - ECB Consumer Expectations Survey results – July 2026  — ECB press
-    - Christine Lagarde: Panel remarks about the European economy during a discussion on the global economic outlook at the World Economic Forum  — ECB press
   China:
     - Remembering Zhu Rongji and understanding his legacy  — SCMP Economy
     - Why Chinese media says US historians are giving ‘ammunition’ to separatists  — SCMP Economy
@@ -213,11 +210,12 @@
     [manual] PBoC: http://www.pbc.gov.cn/en/3688006/index.html
     [manual] Caixin Global: https://www.caixinglobal.com/
   Commodities:
+    - Exxon Eyes Shell’s $8 Billion U.S. Chemicals Business  — OilPrice
+    - Hormuz Tanker Traffic Slumps as U.S. and Iran Trade Threats  — OilPrice
     - Oil Prices Slide 2% as Markets Brace for Bessent’s ‘Economic D-Day’  — OilPrice
     - Diesel Crisis Threatens to Outlast the Middle East War  — OilPrice
     - Pemex and Petrobras Bet Big on High-Risk High-Reward Drilling Off Mexico  — OilPrice
     - Super El Niño Threatens Food, Water and Trade Worldwide  — OilPrice
-    - Private Equity Is Circling Utilities as AI Reshapes the Grid  — OilPrice
     - Longer wells boost Permian crude oil and natural gas production  — EIA Today in Energy
     - Waterborne shipments from the U.S. Gulf Coast increased in April and May  — EIA Today in Energy
 
