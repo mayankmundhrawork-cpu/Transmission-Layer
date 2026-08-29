@@ -1,4 +1,4 @@
-# Transmission Layer — board brief · 2026-08-29 01:45Z
+# Transmission Layer — board brief · 2026-08-29 03:14Z
 
 data as of **2026-08-29** · 98 series · 8 red / 37 amber · 8 events surfaced (32 suppressed)
 
@@ -16,9 +16,9 @@ data as of **2026-08-29** · 98 series · 8 red / 37 amber · 8 events surfaced 
 
 ## Scan control & verified transmission setups
 - FDR (BH q=0.1): **2 of 90** scanned series survive multiplicity control (effective p ≤ 0.0005204583648548144)
-- **SETUP** dxy → aud_usd: leads 1d (ccf -0.57, β -0.8502, p 0.0); driver zc 1.56 → expected -0.443%. Type hit-rate 0.815 (n=2213).
+- **SETUP** dxy → aud_usd: leads 1d (ccf -0.57, β -0.8502, p 0.0); driver zc 1.56 → expected -0.443%. Type hit-rate 0.822 (n=2047).
 - Track record · residual_reversion: hit-rate **0.496** (n=1117) — |resid_z|>=2.0 -> fwd 5d return opposes residual
-- Track record · transmission_follow: hit-rate **0.815** (n=2213) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
+- Track record · transmission_follow: hit-rate **0.822** (n=2047) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
 - Track record · spread_reversion: hit-rate **0.6** (n=15) — |dev| >= 2sigma vs PIT 252d -> |dev| shrinks >=25% within max(half-life,10) sessions
 
 ## Events (ranked)
@@ -46,8 +46,8 @@ data as of **2026-08-29** · 98 series · 8 red / 37 amber · 8 events surfaced 
 - Watch next: ust_10y (co-move) — not yet - watch; rho 0.618 vs brent, historically leads by 5d
 - Watch next: dyn_ms (co-move) — not yet - watch; rho 0.586 vs dow_jones, historically leads by 5d
 - Source: US-Venezuela oil deal: Trump announces agreement over 65 billion barrels of reserves — BusinessLine Mkts, 2026-08-29. https://www.thehindubusinessline.com/news/world/us-venezuela-oil-deal-trump-announces-agreement-over-65-billion-barrels-of-reserves/article71403319.ece
-- Source: Venezuela Helped Build OPEC. Now It May Help Break It Apart — OilPrice, 2026-08-28. https://oilprice.com/Latest-Energy-News/World-News/Venezuela-Helped-Build-OPEC-Now-It-May-Help-Break-It-Apart.html
-- Source: U.S. Oil Rig Count Falls by 5 as Gas Rigs Rise — OilPrice, 2026-08-28. https://oilprice.com/Energy/Energy-General/US-Oil-Rig-Count-Falls-by-5-as-Gas-Rigs-Rise.html
+- Source: TRUMP: US ENTERS AGREEMENT WITH VENEZUELA ON BIGGEST OIL DEAL IN WORLD HISTORY US SECURES MAJORITY CONTROL OF MORE THAN 65 BILLION BARRELS OF VENEZUELA OIL RESERVES DEAL SAID TO INCREASE OIL SUPPLY AND LOWER GASOLINE PRICES — DeItaone, 2026-08-28. https://t.me/walter_bloomberg/35187
+- Source: IRAN SOLD ABOUT 90 MILLION BARRELS OF OIL DURING THE IMPLEMENTATION OF INTERIM DEAL- PEZESHKIAN — DeItaone, 2026-08-28. https://t.me/walter_bloomberg/35186
 - Historical analogues: 2026-05-22 (d=0.0), 2024-10-17 (d=0.39), 2024-11-08 (d=0.53)
 
 ### [RED 5.47] dyn_icicigi_bo ↓
@@ -83,9 +83,9 @@ data as of **2026-08-29** · 98 series · 8 red / 37 amber · 8 events surfaced 
 - Watch next: dow_jones (inverse) — not yet - watch; rho -0.637 vs vix
 - Watch next: comex_copper (co-move) — not yet - watch; rho 0.564 vs dyn_vt
 - Watch next: dyn_nvda (inverse) — not yet - watch; rho -0.55 vs vix
+- Source: TRUMP: US ENTERS AGREEMENT WITH VENEZUELA ON BIGGEST OIL DEAL IN WORLD HISTORY US SECURES MAJORITY CONTROL OF MORE THAN 65 BILLION BARRELS OF VENEZUELA OIL RESERVES DEAL SAID TO INCREASE OIL SUPPLY AND LOWER GASOLINE PRICES — DeItaone, 2026-08-28. https://t.me/walter_bloomberg/35187
 - Source: Nvidia’s revenue forecast is so huge that Wall Street wonders if SpaceX is the reason — MarketWatch Top, 2026-08-28. https://www.marketwatch.com/story/nvidias-revenue-forecast-is-so-huge-that-wall-street-wonders-if-spacex-is-the-reason-1ee7a8a9?mod=mw_rss_topstories
 - Source: Wall Street Piles On Rate-Hike Bets as Warsh Renews Hawkish Tone — Mint Markets, 2026-08-28. https://www.livemint.com/market/wall-street-piles-on-rate-hike-bets-as-warsh-renews-hawkish-tone-11787949474200.html
-- Source: CBOE VOLATILITY INDEX HITS TWO WEEK-LOW, LAST DOWN 0.28 POINTS AT 14.23 — DeItaone, 2026-08-28. https://t.me/walter_bloomberg/35173
 - Historical analogues: 2025-08-27 (d=0.14), 2025-10-23 (d=0.17), 2025-10-31 (d=0.17)
 
 ### [RED 4.77] dyn_adanient_bo ↑
@@ -130,41 +130,41 @@ natgas ↑ (4.0), gold_silver_ratio ↓ (3.67), usd_jpy ↑ (3.64), dyn_havells_
 - Next India prints: NSDL FPI flows T-2d · IMD weekly rainfall T-2d · RBI Weekly Statistical Supplement T-6d · Kharif sowing data T-6d
 
 ## News-tracked universe (why each is watched)
-- COALINDIA.NS (COAL INDIA LTD) score 81.5 — "Indian Bank Stocks Show Widest Exchange Price Gap in Decades"
-- INOXINDIA.NS (INOX INDIA LIMITED) score 80.7 — "Indian Bank Stocks Show Widest Exchange Price Gap in Decades"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 79.4 — "Indian Bank Stocks Show Widest Exchange Price Gap in Decades"
-- INDIANB.NS (INDIAN BANK) score 78.0 — "US TREASURY IMPOSES LIMITS ON EGYPTIAN BANK FOR DOING BUSINESS WITH IRAN- FT US TREASURY D"
-- BAC (Bank of America Corporation) score 67.2 — "US TREASURY IMPOSES LIMITS ON EGYPTIAN BANK FOR DOING BUSINESS WITH IRAN- FT US TREASURY D"
-- HDB (HDFC Bank Limited) score 60.7 — "US TREASURY IMPOSES LIMITS ON EGYPTIAN BANK FOR DOING BUSINESS WITH IRAN- FT US TREASURY D"
-- IDBI.NS (IDBI BANK LIMITED) score 57.6 — "US TREASURY IMPOSES LIMITS ON EGYPTIAN BANK FOR DOING BUSINESS WITH IRAN- FT US TREASURY D"
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 57.6 — "US TREASURY IMPOSES LIMITS ON EGYPTIAN BANK FOR DOING BUSINESS WITH IRAN- FT US TREASURY D"
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 57.6 — "US TREASURY IMPOSES LIMITS ON EGYPTIAN BANK FOR DOING BUSINESS WITH IRAN- FT US TREASURY D"
-- OHI (Omega Healthcare Investors, In) score 49.2 — "Tempsens Instruments doubles IPO investors’ money as stock lists at 111% premium. Should y"
-- TECHM.NS (TECH MAHINDRA LIMITED) score 49.0 — "IT stocks surge: Why Nifty IT is up today - Reason behind TCS, Infosys, Wipro, Tech Mahind"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 47.7 — "IT stocks surge: Why Nifty IT is up today - Reason behind TCS, Infosys, Wipro, Tech Mahind"
-- TECH (Bio-Techne Corp) score 47.7 — "IT stocks surge: Why Nifty IT is up today - Reason behind TCS, Infosys, Wipro, Tech Mahind"
-- COIN (Coinbase Global, Inc.) score 47.0 — "Global Market: China stocks steady as property shares offset Biotech, chip losses"
-- BOND (PIMCO Active Bond Exchange-Tra) score 45.8 — "Kevin Warsh gets what every Fed chair hopes for: a bond market that trusts his word"
-- NVDA (NVIDIA Corporation) score 35.6 — "Explained | How Nvidia's solid earnings sparked a rally in Taiwan Index and AI stocks"
-- CHKP (Check Point Software Technolog) score 32.6 — "Gold prices down 1% following Fed's Kevin Warsh hints at rate hike, trading at  ₹1,56,780/"
-- LTH (Life Time Group Holdings, Inc.) score 32.3 — "YEN WEAKENS TO 160 PER DOLLAR FOR FIRST TIME SINCE JULY 31"
-- 301077.SZ (CHINASTARS) score 25.1 — "Global Market: China stocks steady as property shares offset Biotech, chip losses"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 20.0 — "Russia’s Energy Crisis Puts Kazakhstan in a Tough Spot"
-- STYLEBAAZA.NS (BAAZAR STYLE RETAIL LTD) score 19.9 — "Retail investors bet big on these 12 smallcap stocks that rallied up to 150%; 3 turned mul"
-- JIOFIN.BO (Jio Financial Services Limited) score 18.7 — "US TREASURY IMPOSES LIMITS ON EGYPTIAN BANK FOR DOING BUSINESS WITH IRAN- FT US TREASURY D"
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 14.8 — "Noel Tata, Shapoorji discuss share swap for Tata Sons stake sale"
-- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 14.7 — "Noel Tata, Shapoorji discuss share swap for Tata Sons stake sale"
-- MS (Morgan Stanley) score 14.0 — "Lenskart Rs 1,857-crore block deal: Goldman Sachs, Morgan Stanley, ICICI Prudential, SBI M"
-- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 13.6 — "Welspun Corp, Piramal Finance, Divis Labs among 12 BSE 500 stocks that jumped to their rec"
-- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 12.5 — "US TREASURY IMPOSES LIMITS ON EGYPTIAN BANK FOR DOING BUSINESS WITH IRAN- FT US TREASURY D"
-- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 11.4 — "Sebi approves 7 IPOs including Jio Platforms, Paras Healthcare and Bharat PET"
-- META (Meta) score 10.4 — "Hindustan Copper: Strong metal cycle aids earnings growth, but valuation is not cheap"
-- ICICIGI.BO (ICICI Lombard General Insuranc) score 9.8 — "ICICI Bank shares slide 1.32% amid $1 billion bond issuance and employee stock allotment"
-- PCJEWELLER.NS (PC JEWELLER LTD) score 9.1 — "Deepa Jewellers IPO: ₹460-cr issue to open on September 1, price band fixed at ₹168-177"
-- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 9.1 — "Motilal Oswal initiates coverage on Adani Enterprises with Buy, sees 25% upside. Here’s wh"
-- JUSTDIAL.BO (JUST DIAL LTD.) score 7.3 — "Upper circuit as losing streak ends - Just Dial share price surges 10% | Can it rise furth"
+- COALINDIA.NS (COAL INDIA LTD) score 81.3 — "Indian bank stocks see sharp NSE-BSE closing price gaps under new auction system"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 80.6 — "Indian bank stocks see sharp NSE-BSE closing price gaps under new auction system"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 79.2 — "Indian bank stocks see sharp NSE-BSE closing price gaps under new auction system"
+- INDIANB.NS (INDIAN BANK) score 77.9 — "Indian bank stocks see sharp NSE-BSE closing price gaps under new auction system"
+- BAC (Bank of America Corporation) score 68.3 — "US DEFENDS YEN SUPPORT TO PROTECT BORROWING COSTS Treasury Secretary Scott Bessent defende"
+- HDB (HDFC Bank Limited) score 60.8 — "Indian bank stocks see sharp NSE-BSE closing price gaps under new auction system"
+- IDBI.NS (IDBI BANK LIMITED) score 57.8 — "Indian bank stocks see sharp NSE-BSE closing price gaps under new auction system"
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 57.8 — "Indian bank stocks see sharp NSE-BSE closing price gaps under new auction system"
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 57.8 — "Indian bank stocks see sharp NSE-BSE closing price gaps under new auction system"
+- OHI (Omega Healthcare Investors, In) score 48.5 — "Tempsens Instruments doubles IPO investors’ money as stock lists at 111% premium. Should y"
+- TECHM.NS (TECH MAHINDRA LIMITED) score 48.3 — "IT stocks surge: Why Nifty IT is up today - Reason behind TCS, Infosys, Wipro, Tech Mahind"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 47.0 — "IT stocks surge: Why Nifty IT is up today - Reason behind TCS, Infosys, Wipro, Tech Mahind"
+- TECH (Bio-Techne Corp) score 47.0 — "IT stocks surge: Why Nifty IT is up today - Reason behind TCS, Infosys, Wipro, Tech Mahind"
+- COIN (Coinbase Global, Inc.) score 46.3 — "Global Market: China stocks steady as property shares offset Biotech, chip losses"
+- BOND (PIMCO Active Bond Exchange-Tra) score 45.1 — "Kevin Warsh gets what every Fed chair hopes for: a bond market that trusts his word"
+- NVDA (NVIDIA Corporation) score 35.1 — "Explained | How Nvidia's solid earnings sparked a rally in Taiwan Index and AI stocks"
+- CHKP (Check Point Software Technolog) score 32.1 — "Gold prices down 1% following Fed's Kevin Warsh hints at rate hike, trading at  ₹1,56,780/"
+- LTH (Life Time Group Holdings, Inc.) score 31.8 — "YEN WEAKENS TO 160 PER DOLLAR FOR FIRST TIME SINCE JULY 31"
+- 301077.SZ (CHINASTARS) score 24.8 — "Global Market: China stocks steady as property shares offset Biotech, chip losses"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 20.7 — "HEGSETH EYES SECOND MASS MILITARY SUMMIT Defense Secretary Pete Hegseth is considering cal"
+- STYLEBAAZA.NS (BAAZAR STYLE RETAIL LTD) score 19.6 — "Retail investors bet big on these 12 smallcap stocks that rallied up to 150%; 3 turned mul"
+- JIOFIN.BO (Jio Financial Services Limited) score 18.5 — "US TREASURY IMPOSES LIMITS ON EGYPTIAN BANK FOR DOING BUSINESS WITH IRAN- FT US TREASURY D"
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 14.6 — "Noel Tata, Shapoorji discuss share swap for Tata Sons stake sale"
+- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 14.5 — "Noel Tata, Shapoorji discuss share swap for Tata Sons stake sale"
+- MS (Morgan Stanley) score 13.8 — "Lenskart Rs 1,857-crore block deal: Goldman Sachs, Morgan Stanley, ICICI Prudential, SBI M"
+- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 13.4 — "Welspun Corp, Piramal Finance, Divis Labs among 12 BSE 500 stocks that jumped to their rec"
+- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 12.4 — "US TREASURY IMPOSES LIMITS ON EGYPTIAN BANK FOR DOING BUSINESS WITH IRAN- FT US TREASURY D"
+- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 11.3 — "Sebi approves 7 IPOs including Jio Platforms, Paras Healthcare and Bharat PET"
+- META (Meta) score 10.2 — "Hindustan Copper: Strong metal cycle aids earnings growth, but valuation is not cheap"
+- ICICIGI.BO (ICICI Lombard General Insuranc) score 9.6 — "ICICI Bank shares slide 1.32% amid $1 billion bond issuance and employee stock allotment"
+- PCJEWELLER.NS (PC JEWELLER LTD) score 9.0 — "Deepa Jewellers IPO: ₹460-cr issue to open on September 1, price band fixed at ₹168-177"
+- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 8.9 — "Motilal Oswal initiates coverage on Adani Enterprises with Buy, sees 25% upside. Here’s wh"
+- JUSTDIAL.BO (JUST DIAL LTD.) score 7.2 — "Upper circuit as losing streak ends - Just Dial share price surges 10% | Can it rise furth"
+- VT (Vanguard Total World Stock Ind) score 6.7 — "TRUMP: US ENTERS AGREEMENT WITH VENEZUELA ON BIGGEST OIL DEAL IN WORLD HISTORY US SECURES "
 - LENSKART.NS (LENSKART SOLUTIONS LTD) score 6.4 — "Lenskart Rs 1,857-crore block deal: Goldman Sachs, Morgan Stanley, ICICI Prudential, SBI M"
-- VT (Vanguard Total World Stock Ind) score 5.7 — "Park Medi World targets 5,740-bed network by FY28 under expansion roadmap"
 - DKS (Dick's Sporting Goods Inc) score 2.9 — "Dick’s Sporting Goods slumps after earnings miss: What’s next?"
 - MRNA (Moderna, Inc.) score 2.2 — "Can Wolfe’s upgrade push Moderna stock higher?"
 - VOLTAS.NS (VOLTAS LTD) score 0.4 — "Voltas reported strong growth in June quarter, but failed to impress"

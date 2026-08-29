@@ -41,7 +41,7 @@
   usd_jpy | 160.0380 | 0.49% | 0.73% | 1.64 | 1.05 | 1.04 | 83 | amber | quiet
   gbp_usd | 1.3537 | -0.44% | -0.78% | 0.06 | -1.05 | -0.86 | 82 | none | quiet
   aud_usd | 0.7164 | -0.24% | 0.63% | 1.55 | -0.51 | -0.47 | 90 | amber | quiet
-  usd_cny | 6.7255 | 0.04% | 0.04% | -1.22 | 0.36 | 0.68 | 2 | amber | quiet
+  usd_cny | 6.7208 | -0.03% | -0.00% | -1.47 | -0.21 | 0.20 | 0 | amber | quiet
   usd_inr | 95.3600 | -0.07% | -0.43% | -0.01 | -0.12 | 0.06 | 79 | none | quiet
   eur_inr | 110.4880 | -0.58% | -1.16% | 0.17 | -1.02 | -0.66 | 86 | none | quiet
   usd_mxn | 17.0280 | 0.50% | 0.49% | -0.47 | 1.48 | 1.20 | 3 | amber | quiet
@@ -65,8 +65,8 @@
   wheat | 783.5000 | 5.49% | 14.97% | 3.92 | 2.55 | 2.62 | 100 | red | unexplained
   corn | 536.2500 | 5.10% | 10.85% | 2.93 | 3.99 | 2.89 | 100 | red | unexplained
   soybeans | 1287.7500 | 2.49% | 5.12% | 2.82 | 2.44 | 2.17 | 100 | red | unexplained
-  btc_usd | 77827.4766 | 0.10% | -1.44% | 1.29 | 0.03 | -0.52 | 55 | none | quiet
-  eth_usd | 2444.5400 | 0.37% | -1.50% | 1.24 | 0.09 | -0.12 | 61 | none | quiet
+  btc_usd | 77685.0938 | -0.09% | -1.62% | 1.27 | -0.03 | -0.52 | 54 | none | quiet
+  eth_usd | 2439.4099 | 0.16% | -1.71% | 1.22 | 0.04 | -0.12 | 60 | none | quiet
   midcap_largecap_ratio | 2.6502 | -0.29% | 0.84% | 1.40 | n/a | n/a | 99 | amber | quiet
   brent_wti_spread | 4.8500 | -21.39% | -33.83% | -0.83 | n/a | n/a | 67 | none | quiet
   gold_silver_ratio | 67.1352 | 1.12% | 0.85% | -0.67 | n/a | n/a | 54 | amber | quiet
@@ -141,9 +141,9 @@
   [AMBER] vix (series, INDICES) score=1.55 — |z20|=1.55; 1y-pct=3
   [AMBER] aud_usd (series, FX) score=1.55 — |z20|=1.55
   [AMBER] russell_2000 (series, INDICES) score=1.54 — |z20|=1.54
+  [AMBER] usd_cny (series, FX) score=1.47 — 1y-pct=0
   [AMBER] dyn_mrna (series, EQUITIES) score=1.30 — 1y-pct=98
   [AMBER] dyn_karurvysya_ns (series, EQUITIES) score=1.25 — 1y-pct=98
-  [AMBER] usd_cny (series, FX) score=1.22 — 1y-pct=2
   [AMBER] nifty_midcap_100 (series, INDICES) score=1.15 — 1y-pct=98
   [AMBER] dyn_stylebaaza_ns (series, EQUITIES) score=1.01 — 1y-pct=96
   [AMBER] dyn_hdb (series, EQUITIES) score=0.95 — 1y-pct=1
@@ -162,8 +162,8 @@
 
 [2b] SCAN CONTROL & VERIFIED SETUPS
   FDR (Benjamini-Hochberg q=0.1): 2 of 90 scanned series significant (effective p<=0.0005204583648548144)
-  SETUP dxy -> aud_usd: leads 1d (ccf -0.57, beta -0.8502, p 0.0); driver zc 1.56 -> expected -0.443% | type hit-rate 0.815 (n=2213)
-  Track record: residual_reversion 0.496 (n=1117) · transmission_follow 0.815 (n=2213) · spread_reversion 0.6 (n=15)
+  SETUP dxy -> aud_usd: leads 1d (ccf -0.57, beta -0.8502, p 0.0); driver zc 1.56 -> expected -0.443% | type hit-rate 0.822 (n=2047)
+  Track record: residual_reversion 0.496 (n=1117) · transmission_follow 0.822 (n=2047) · spread_reversion 0.6 (n=15)
 
 [3] RELEASE PROXIMITY
   T-2d  NSDL FPI flows — 5-session outflow >$500M sustained
@@ -197,7 +197,7 @@
     - Hero MotoCorp buys Rs 1,758 crore Ather Energy stake in block deal  — ET Markets
     - Jackson Hole: Will Kevin Warsh's inflation warning put Nifty under pressure on Monday?  — ET Markets
     - Blackstone to sell up to 25% stake worth Rs 11,988 crore in Knowledge Realty Trust  — ET Markets
-    - Indian Bank Stocks Show Widest Exchange Price Gap in Decades  — Mint Markets
+    - Indian bank stocks show widest exchange price gap in decades  — Mint Markets
     - Three small cap stocks to watch for the long term  — Mint Markets
     - Wall Street Piles On Rate-Hike Bets as Warsh Renews Hawkish Tone  — Mint Markets
     - Ivory Coast to maintain reduced cocoa farmgate price for 2026/27, sources say  — Mint Markets
@@ -212,7 +212,6 @@
     - Could the China-Nepal disaster spur a safety rethink for a flagship rail project?  — SCMP Economy
     - Chinese rescuers reach checkpoint destroyed by deadly flash floods along Nepal border  — SCMP Economy
     - China-Nepal floods: debris lake the size of 1,000 Olympic pools in breach danger  — SCMP Economy
-    - Xi’s crusade against corruption has gone well beyond economic crime  — SCMP Economy
     [manual] NBS China: https://www.stats.gov.cn/english/
     [manual] PBoC: http://www.pbc.gov.cn/en/3688006/index.html
     [manual] Caixin Global: https://www.caixinglobal.com/
