@@ -1,4 +1,4 @@
-# Transmission Layer — board brief · 2026-09-04 22:21Z
+# Transmission Layer — board brief · 2026-09-04 23:08Z
 
 data as of **2026-09-04** · 98 series · 7 red / 37 amber · 8 events surfaced (30 suppressed)
 
@@ -18,7 +18,7 @@ data as of **2026-09-04** · 98 series · 7 red / 37 amber · 8 events surfaced 
 - FDR (BH q=0.1): **3 of 90** scanned series survive multiplicity control (effective p ≤ 0.0018085103996448026)
 - No live setups: drivers quiet or targets already repriced.
 - Track record · residual_reversion: hit-rate **0.502** (n=1127) — |resid_z|>=2.0 -> fwd 5d return opposes residual
-- Track record · transmission_follow: hit-rate **0.828** (n=1985) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
+- Track record · transmission_follow: hit-rate **0.829** (n=2011) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
 - Track record · spread_reversion: hit-rate **0.625** (n=16) — |dev| >= 2sigma vs PIT 252d -> |dev| shrinks >=25% within max(half-life,10) sessions
 
 ## Events (ranked)
@@ -139,45 +139,45 @@ nifty_50 ↓ (3.78), usd_inr ↓ (3.64), natgas ↑ (3.59), gold_silver_ratio �
 - Next India prints: NSDL FPI flows T-0d · RBI Weekly Statistical Supplement T-0d · Kharif sowing data T-0d · IMD weekly rainfall T-3d
 
 ## News-tracked universe (why each is watched)
-- INOXINDIA.NS (INOX INDIA LIMITED) score 83.1 — "Skewed fertiliser use continues in India as farmers buy more urea"
-- COALINDIA.NS (COAL INDIA LTD) score 81.8 — "Skewed fertiliser use continues in India as farmers buy more urea"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 80.5 — "Skewed fertiliser use continues in India as farmers buy more urea"
-- INDIANB.NS (INDIAN BANK) score 77.5 — "MORGAN STANLEY: FED TO HOLD DESPITE WARSH’S HAWKISH TONE Morgan Stanley expects the Fed to"
-- BAC (Bank of America Corporation) score 66.6 — "TRUMP CALLS FOR LOWER RATES AFTER JOBS BEAT President Trump hailed the addition of 162,000"
-- HDB (HDFC Bank Limited) score 59.3 — "MORGAN STANLEY: FED TO HOLD DESPITE WARSH’S HAWKISH TONE Morgan Stanley expects the Fed to"
-- COIN (Coinbase Global, Inc.) score 57.8 — "Global Market: European shares edge lower as investors await US jobs data"
-- IDBI.NS (IDBI BANK LIMITED) score 56.8 — "MORGAN STANLEY: FED TO HOLD DESPITE WARSH’S HAWKISH TONE Morgan Stanley expects the Fed to"
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 56.8 — "MORGAN STANLEY: FED TO HOLD DESPITE WARSH’S HAWKISH TONE Morgan Stanley expects the Fed to"
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 56.8 — "MORGAN STANLEY: FED TO HOLD DESPITE WARSH’S HAWKISH TONE Morgan Stanley expects the Fed to"
-- BOND (PIMCO Active Bond Exchange-Tra) score 55.6 — "Pulse of the Street: US bond yields, interest rate jitters drag Indian equities lower this"
-- CHKP (Check Point Software Technolog) score 43.4 — "PTC India, Coal India to REC: Top 10 dividend stocks | One beats PPF interest rate — check"
-- OHI (Omega Healthcare Investors, In) score 40.8 — "Micron is doubling down on AI memory chips. That could pay off big time for investors."
-- TECHM.NS (TECH MAHINDRA LIMITED) score 38.2 — "Can Big Tech’s $1-trillion AI bet pay off? Jefferies explains why it remains bullish"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 38.0 — "Can Big Tech’s $1-trillion AI bet pay off? Jefferies explains why it remains bullish"
-- TECH (Bio-Techne Corp) score 38.0 — "Can Big Tech’s $1-trillion AI bet pay off? Jefferies explains why it remains bullish"
-- LTH (Life Time Group Holdings, Inc.) score 33.4 — "Micron is doubling down on AI memory chips. That could pay off big time for investors."
-- 301077.SZ (CHINASTARS) score 26.1 — "How The U.S. Fell Behind China On Nuclear Power"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 23.7 — "Bloom Energy was just named to the S&P 500. These other stocks are joining the index as we"
-- PCJEWELLER.NS (PC JEWELLER LTD) score 17.0 — "Priority Jewels IPO listing today: Will the jewellery maker deliver gains? Here's what GMP"
-- NVDA (NVIDIA Corporation) score 15.8 — "NVDA - NVIDIA: NEEDHAM STAYS BULLISH AFTER $12.9B HUGGING FACE DEAL Needham reiterated its"
-- JIOFIN.BO (Jio Financial Services Limited) score 15.5 — "US JOBS BLOW PAST EXPECTATIONS 🔸 August Nonfarm Payrolls: +162K vs +55K expected — a major"
-- STYLEBAAZA.NS (BAAZAR STYLE RETAIL LTD) score 13.6 — "Retail investors raise stakes in 10 stocks for two straight quarters; shares rally up to 8"
-- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 10.5 — "SEBI goes after Hindenburg, others in Adani case"
-- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 10.3 — "PTC India, Coal India to REC: Top 10 dividend stocks | One beats PPF interest rate — check"
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 10.1 — "Market wrap:  RIL,Tata Steel, Bharti Airtel, HCL Tech top gainers and losers on Nifty and "
+- INOXINDIA.NS (INOX INDIA LIMITED) score 82.5 — "Skewed fertiliser use continues in India as farmers buy more urea"
+- COALINDIA.NS (COAL INDIA LTD) score 81.2 — "Skewed fertiliser use continues in India as farmers buy more urea"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 79.9 — "Skewed fertiliser use continues in India as farmers buy more urea"
+- INDIANB.NS (INDIAN BANK) score 77.0 — "MORGAN STANLEY: FED TO HOLD DESPITE WARSH’S HAWKISH TONE Morgan Stanley expects the Fed to"
+- BAC (Bank of America Corporation) score 66.1 — "TRUMP CALLS FOR LOWER RATES AFTER JOBS BEAT President Trump hailed the addition of 162,000"
+- HDB (HDFC Bank Limited) score 58.9 — "MORGAN STANLEY: FED TO HOLD DESPITE WARSH’S HAWKISH TONE Morgan Stanley expects the Fed to"
+- COIN (Coinbase Global, Inc.) score 57.3 — "Global Market: European shares edge lower as investors await US jobs data"
+- IDBI.NS (IDBI BANK LIMITED) score 56.4 — "MORGAN STANLEY: FED TO HOLD DESPITE WARSH’S HAWKISH TONE Morgan Stanley expects the Fed to"
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 56.4 — "MORGAN STANLEY: FED TO HOLD DESPITE WARSH’S HAWKISH TONE Morgan Stanley expects the Fed to"
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 56.4 — "MORGAN STANLEY: FED TO HOLD DESPITE WARSH’S HAWKISH TONE Morgan Stanley expects the Fed to"
+- BOND (PIMCO Active Bond Exchange-Tra) score 55.2 — "Pulse of the Street: US bond yields, interest rate jitters drag Indian equities lower this"
+- CHKP (Check Point Software Technolog) score 43.1 — "PTC India, Coal India to REC: Top 10 dividend stocks | One beats PPF interest rate — check"
+- OHI (Omega Healthcare Investors, In) score 40.5 — "Micron is doubling down on AI memory chips. That could pay off big time for investors."
+- TECHM.NS (TECH MAHINDRA LIMITED) score 37.9 — "Can Big Tech’s $1-trillion AI bet pay off? Jefferies explains why it remains bullish"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 37.7 — "Can Big Tech’s $1-trillion AI bet pay off? Jefferies explains why it remains bullish"
+- TECH (Bio-Techne Corp) score 37.7 — "Can Big Tech’s $1-trillion AI bet pay off? Jefferies explains why it remains bullish"
+- LTH (Life Time Group Holdings, Inc.) score 33.1 — "Micron is doubling down on AI memory chips. That could pay off big time for investors."
+- 301077.SZ (CHINASTARS) score 25.9 — "How The U.S. Fell Behind China On Nuclear Power"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 23.5 — "Bloom Energy was just named to the S&P 500. These other stocks are joining the index as we"
+- PCJEWELLER.NS (PC JEWELLER LTD) score 16.9 — "Priority Jewels IPO listing today: Will the jewellery maker deliver gains? Here's what GMP"
+- NVDA (NVIDIA Corporation) score 15.7 — "NVDA - NVIDIA: NEEDHAM STAYS BULLISH AFTER $12.9B HUGGING FACE DEAL Needham reiterated its"
+- JIOFIN.BO (Jio Financial Services Limited) score 15.4 — "US JOBS BLOW PAST EXPECTATIONS 🔸 August Nonfarm Payrolls: +162K vs +55K expected — a major"
+- STYLEBAAZA.NS (BAAZAR STYLE RETAIL LTD) score 13.5 — "Retail investors raise stakes in 10 stocks for two straight quarters; shares rally up to 8"
+- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 10.4 — "SEBI goes after Hindenburg, others in Adani case"
+- BHARATCOAL.NS (BHARAT COKING COAL LTD) score 10.2 — "PTC India, Coal India to REC: Top 10 dividend stocks | One beats PPF interest rate — check"
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 10.0 — "Market wrap:  RIL,Tata Steel, Bharti Airtel, HCL Tech top gainers and losers on Nifty and "
 - TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 10.0 — "Market wrap:  RIL,Tata Steel, Bharti Airtel, HCL Tech top gainers and losers on Nifty and "
-- JUSTDIAL.BO (JUST DIAL LTD.) score 9.1 — "Bloom Energy was just named to the S&P 500. These other stocks are joining the index as we"
+- JUSTDIAL.BO (JUST DIAL LTD.) score 9.0 — "Bloom Energy was just named to the S&P 500. These other stocks are joining the index as we"
 - MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 8.5 — "Bajaj Finance Share Price Live Updates: Bajaj Finance Price Decline Report"
 - VT (Vanguard Total World Stock Ind) score 8.2 — "TRUMP CALLS FOR LOWER RATES AFTER JOBS BEAT President Trump hailed the addition of 162,000"
-- MS (Morgan Stanley) score 8.0 — "MORGAN STANLEY: FED TO HOLD DESPITE WARSH’S HAWKISH TONE Morgan Stanley expects the Fed to"
-- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 7.2 — "JM Financial initiates coverage on OnEMI Technology with Buy call, sees 28% upside"
+- MS (Morgan Stanley) score 7.9 — "MORGAN STANLEY: FED TO HOLD DESPITE WARSH’S HAWKISH TONE Morgan Stanley expects the Fed to"
+- HDBFS.BO (HDB FINANCIAL SERVICES LIMITED) score 7.1 — "JM Financial initiates coverage on OnEMI Technology with Buy call, sees 28% upside"
 - META (Meta) score 5.7 — "Gold vs Silver: Which precious metal offers a better bet for investors after the recent co"
 - ICICIGI.BO (ICICI Lombard General Insuranc) score 5.4 — "Eternal, ICICI Bank, 5 other largecap stocks with upside potential of up to 40%. Do you ow"
-- DELL (Dell Technologies Inc.) score 3.7 — "Dell’s AI Boom: $95 billion backlog reshapes growth outlook"
+- DELL (Dell Technologies Inc.) score 3.6 — "Dell’s AI Boom: $95 billion backlog reshapes growth outlook"
 - LENSKART.NS (LENSKART SOLUTIONS LTD) score 2.0 — "Lenskart shares to rally 40%? Nomura initiates coverage with Buy, says its growth journey "
 - HEROMOTOCO.NS (HERO MOTOCORP LIMITED) score 1.7 — "August sales: Hero MotoCorp’s weak show no reason to ring alarm bells on auto sector slowd"
 - DKS (Dick's Sporting Goods Inc) score 0.6 — "Dick’s Sporting Goods slumps after earnings miss: What’s next?"
-- MRNA (Moderna, Inc.) score 0.5 — "Can Wolfe’s upgrade push Moderna stock higher?"
+- MRNA (Moderna, Inc.) score 0.4 — "Can Wolfe’s upgrade push Moderna stock higher?"
 - VOLTAS.NS (VOLTAS LTD) score 0.1 — "Voltas reported strong growth in June quarter, but failed to impress"
 
 ---
