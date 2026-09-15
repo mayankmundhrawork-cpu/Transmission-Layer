@@ -4,6 +4,16 @@
   "resolved_at": "2026-07-06T17:30:36.871288+00:00",
   "via": "no-acceptable-match"
  },
+ "acme solar": {
+  "cls": "equity",
+  "exchange": "NSI",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-09-15T14:57:58.572478+00:00",
+  "shortname": "ACME SOLAR HOLDINGS LTD",
+  "symbol": "ACMESOLAR.NS",
+  "via": "search"
+ },
  "adani": {
   "cls": "equity",
   "exchange": "BSE",
@@ -992,6 +1002,16 @@
   "resolved_at": "2026-09-08T19:25:01.034642+00:00",
   "shortname": "Five Below, Inc.",
   "symbol": "FIVE",
+  "via": "search"
+ },
+ "foreign": {
+  "cls": "etf",
+  "exchange": "BTS",
+  "ok": true,
+  "quoteType": "ETF",
+  "resolved_at": "2026-09-15T14:57:58.925241+00:00",
+  "shortname": "Overlay Shares Foreign Equity E",
+  "symbol": "OVF",
   "via": "search"
  },
  "fpis": {
@@ -2239,6 +2259,16 @@
   "resolved_at": "2026-07-15T16:53:56.598234+00:00",
   "via": "no-acceptable-match"
  },
+ "pnc infratech": {
+  "cls": "equity",
+  "exchange": "NSI",
+  "ok": true,
+  "quoteType": "EQUITY",
+  "resolved_at": "2026-09-15T14:57:58.640187+00:00",
+  "shortname": "PNC INFRATECH LTD.",
+  "symbol": "PNCINFRA.NS",
+  "via": "search"
+ },
  "poojaa precision engg sme": {
   "ok": false,
   "resolved_at": "2026-07-27T13:45:18.338892+00:00",
@@ -2628,6 +2658,16 @@
   "ok": false,
   "resolved_at": "2026-07-16T11:15:17.202009+00:00",
   "via": "no-acceptable-match"
+ },
+ "south africa": {
+  "cls": "etf",
+  "exchange": "PCX",
+  "ok": true,
+  "quoteType": "ETF",
+  "resolved_at": "2026-09-15T14:57:58.740476+00:00",
+  "shortname": "iShares MSCI South Africa Index",
+  "symbol": "EZA",
+  "via": "search"
  },
  "south korean": {
   "ok": false,
@@ -3072,6 +3112,11 @@
  "us federal reserve": {
   "ok": false,
   "resolved_at": "2026-07-30T06:45:54.193476+00:00",
+  "via": "no-acceptable-match"
+ },
+ "valmiki leela capital": {
+  "ok": false,
+  "resolved_at": "2026-09-15T14:57:58.833691+00:00",
   "via": "no-acceptable-match"
  },
  "varanium cloud": {
