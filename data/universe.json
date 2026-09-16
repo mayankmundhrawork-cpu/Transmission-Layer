@@ -14,7 +14,7 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.877
   },
   "ability": {
    "display": "Ability",
@@ -30,7 +30,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "afcons infra": {
    "display": "Afcons Infra",
@@ -51,7 +51,7 @@
    ],
    "first_seen": "2026-09-15T09:23:18.514681+00:00",
    "last_seen": "2026-09-15T14:57:57.867431+00:00",
-   "score": 1.4794
+   "score": 1.4322
   },
   "agrochemical": {
    "display": "Agrochemical",
@@ -67,7 +67,7 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.877
   },
   "ahead of market": {
    "display": "Ahead of Market",
@@ -102,8 +102,8 @@
     "ET Markets"
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
-   "last_seen": "2026-09-15T22:52:51.973421+00:00",
-   "score": 2.353
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 3.278
   },
   "ahead of us fed": {
    "display": "Ahead of US Fed",
@@ -124,7 +124,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 1.9132
+   "score": 1.8522
+  },
+  "ai data centers": {
+   "display": "AI Data Centers",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "AI Data Centers Are Driving Southeast Asia's LNG Demand Through the Roof",
+     "ts": "2026-09-16T20:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "allied blenders and distillers": {
    "display": "Allied Blenders and Distillers",
@@ -140,7 +156,7 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.877
   },
   "altman amodei huang and": {
    "display": "Altman Amodei Huang and",
@@ -156,7 +172,23 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.877
+  },
+  "amazon": {
+   "display": "Amazon",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Generac\u2019s stock soars more than 30% after Amazon deal cements company\u2019s status as an AI power player",
+     "ts": "2026-09-16T21:56:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "amazon ai": {
    "display": "Amazon AI",
@@ -172,11 +204,16 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.877
   },
   "american treasuries fomc": {
    "display": "American Treasuries FOMC",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "US Fed Rate Hike Impact on American Treasuries: FOMC outcome effect decoded",
+     "ts": "2026-09-16T19:36:48+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Ahead of US Fed rate hike impact prediction on American Treasuries: FOMC outcome likely effects decoded",
@@ -187,8 +224,8 @@
     "Mint Markets"
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
-   "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.9261
   },
   "anthropic": {
    "display": "Anthropic",
@@ -209,7 +246,7 @@
    ],
    "first_seen": "2026-09-14T16:21:41.571735+00:00",
    "last_seen": "2026-09-14T21:46:34.176775+00:00",
-   "score": 1.2548
+   "score": 1.2148
   },
   "anthropic ceo dario amodei": {
    "display": "Anthropic CEO Dario Amodei",
@@ -230,7 +267,55 @@
    ],
    "first_seen": "2026-09-14T16:21:41.571735+00:00",
    "last_seen": "2026-09-14T21:46:34.176775+00:00",
-   "score": 1.2548
+   "score": 1.2148
+  },
+  "any discussion": {
+   "display": "ANY DISCUSSION",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH DECLINES TO COMMENT ON ANY DISCUSSION WITH PRESIDENT",
+     "ts": "2026-09-16T18:48:50+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "apple": {
+   "display": "Apple",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "OPENAI CHALLENGES SECRET APPLE-MUSK AGREEMENT A federal judge ordered X and SpaceXAI to disclose their agreement with Apple after OpenAI sought access to the terms in Musk\u2019s antitrust case. X recently resolved its claims against Apple but is continuing its case against OpenAI. OpenAI argues the undi",
+     "ts": "2026-09-16T15:58:07+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "argentina s crude output data": {
+   "display": "Argentina's Crude Output Data",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Shale Oil Now Makes Up 72% of Argentina's Crude Output, Data Shows",
+     "ts": "2026-09-16T21:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "asf": {
    "display": "ASF Group",
@@ -246,23 +331,39 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
-  "asian energy bharat rasayan": {
-   "display": "Asian Energy Bharat Rasayan",
+  "atlanta fed": {
+   "display": "Atlanta Fed",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Dividend record date alert: Last chance to buy Asian Energy, Bharat Rasayan, IRCON, MSTC, and others | Full list",
-     "ts": "2026-09-16T03:28:23+00:00"
+     "feed": "DeItaone",
+     "title": "ATLANTA FED GDPNOW SURGES ABOVE 5% The Atlanta Fed\u2019s GDPNow estimate for Q3 growth jumped to 5.1% from 4.42%, driven largely by stronger consumer spending after today\u2019s retail sales data. Real consumption is now expected to contribute 2.83 percentage points, while private domestic final purchases ar",
+     "ts": "2026-09-16T17:28:37+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "atlanta fed gdpnow surges": {
+   "display": "ATLANTA FED GDPNOW SURGES",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "ATLANTA FED GDPNOW SURGES ABOVE 5% The Atlanta Fed\u2019s GDPNow estimate for Q3 growth jumped to 5.1% from 4.42%, driven largely by stronger consumer spending after today\u2019s retail sales data. Real consumption is now expected to contribute 2.83 percentage points, while private domestic final purchases ar",
+     "ts": "2026-09-16T17:28:37+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "aurobindo pharma": {
    "display": "Aurobindo Pharma.",
@@ -278,7 +379,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "avenue supermarts sell": {
    "display": "Avenue Supermarts Sell",
@@ -294,7 +395,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "axis capital": {
    "display": "Axis Capital",
@@ -316,7 +417,7 @@
    ],
    "first_seen": "2026-09-14T16:21:41.571735+00:00",
    "last_seen": "2026-09-15T14:57:57.867431+00:00",
-   "score": 1.3705
+   "score": 1.3268
   },
   "bajaj": {
    "display": "Bajaj Holdings",
@@ -332,7 +433,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
+  },
+  "barclays expects warsh": {
+   "display": "Barclays Expects Warsh",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED: WHAT WALL STREET EXPECTS FROM WARSH TODAY Major banks are focused on how Kevin Warsh frames the path ahead if the Fed hikes today: Barclays: Expects Warsh to stress solid growth, near-full employment and inflation still too high, broadly maintaining his previous hawkish message. BMO: Sees Warsh",
+     "ts": "2026-09-16T16:13:24+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "be helpful": {
    "display": "BE HELPFUL",
@@ -348,7 +465,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "be pricing too many": {
    "display": "BE PRICING TOO MANY",
@@ -364,7 +481,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "bessent asked": {
    "display": "BESSENT ASKED",
@@ -385,7 +502,7 @@
    ],
    "first_seen": "2026-09-15T19:40:45.973799+00:00",
    "last_seen": "2026-09-15T19:40:45.973799+00:00",
-   "score": 1.5897
+   "score": 1.539
   },
   "biggest": {
    "display": "Biggest",
@@ -407,7 +524,7 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 1.8625
+   "score": 1.8031
   },
   "bill rejection rate hike": {
    "display": "Bill Rejection Rate Hike",
@@ -423,6 +540,38 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "score": 0.9681
+  },
+  "billion arctic gamble": {
+   "display": "Billion Arctic Gamble",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Inside Putin\u2019s $135 Billion Arctic Gamble That Could Save His Ukraine War",
+     "ts": "2026-09-16T21:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "billion assets default": {
+   "display": "Billion Assets Default",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Turkish Funds With $7.5 Billion Assets Default on Redemptions",
+     "ts": "2026-09-16T19:29:46+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
   },
   "bitcoin faces double whammy": {
@@ -439,6 +588,22 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "score": 0.9681
+  },
+  "bmo sees warsh": {
+   "display": "BMO Sees Warsh",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED: WHAT WALL STREET EXPECTS FROM WARSH TODAY Major banks are focused on how Kevin Warsh frames the path ahead if the Fed hikes today: Barclays: Expects Warsh to stress solid growth, near-full employment and inflation still too high, broadly maintaining his previous hawkish message. BMO: Sees Warsh",
+     "ts": "2026-09-16T16:13:24+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
   },
   "boe reuters breakingviews": {
@@ -455,23 +620,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "bofa": {
-   "display": "BofA",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Stocks to buy: BofA lists 22 Indian stocks as key picks as it turns bullish on Nifty after 2 years",
-     "ts": "2026-09-16T04:24:13+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "boost": {
    "display": "Boost",
@@ -487,7 +636,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "borosil renewables": {
    "display": "Borosil Renewables'",
@@ -503,23 +652,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "buffers": {
-   "display": "Buffers",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Saudi Pipeline Outage Hits an Oil Market Running Out of Buffers",
-     "ts": "2026-09-16T00:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "burry": {
    "display": "Burry",
@@ -535,23 +668,39 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
-  "buzzing": {
-   "display": "Buzzing",
+  "by dec see rates": {
+   "display": "BY DEC SEE RATES",
    "evidence": [
     {
-     "feed": "BusinessLine Mkts",
-     "title": "Buzzing stocks for Sept 16: Bharat Forge, Titagarh Rail, BHEL, Cochin Shipyard, Thermax, Blue Star, Allen Blenders, Tata Communications, Mazagon Dock",
-     "ts": "2026-09-16T01:38:18+00:00"
+     "feed": "DeItaone",
+     "title": "FOMC RAISES RATES 25 BPS TO 3.75%-4%; VOTE 12-0 12 FOMC MEMBERS SEE RATES AT 4.1% BY END-2026 FED: HIKE WILL SUPPORT TIMELIER RETURN TO 2% INFLATION 4 MEMBERS SEE RATES AT 4.4% BY DEC, 2 SEE RATES AT 3.9% MEDIAN FED FUNDS RATE PROJECTION 4.1% AT END-2027 MEDIAN FED FUNDS RATE PROJECTION 3.9% AT END-",
+     "ts": "2026-09-16T18:13:13+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "DeItaone"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "by end fed hike": {
+   "display": "BY END- FED HIKE",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FOMC RAISES RATES 25 BPS TO 3.75%-4%; VOTE 12-0 12 FOMC MEMBERS SEE RATES AT 4.1% BY END-2026 FED: HIKE WILL SUPPORT TIMELIER RETURN TO 2% INFLATION 4 MEMBERS SEE RATES AT 4.4% BY DEC, 2 SEE RATES AT 3.9% MEDIAN FED FUNDS RATE PROJECTION 4.1% AT END-2027 MEDIAN FED FUNDS RATE PROJECTION 3.9% AT END-",
+     "ts": "2026-09-16T18:13:13+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "canadian": {
    "display": "Canadian",
@@ -567,7 +716,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
+  },
+  "capacity within days saudi": {
+   "display": "CAPACITY WITHIN DAYS Saudi",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SAUDI PIPELINE COULD RESTORE HALF ITS CAPACITY WITHIN DAYS Saudi Arabia is working to restore roughly half the capacity of its East-West oil pipeline within days by bypassing a section damaged in last week\u2019s drone attacks. Saudi Aramco is reportedly targeting a full return to capacity in around six ",
+     "ts": "2026-09-16T16:03:44+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "capri gold loans": {
    "display": "Capri Gold Loans",
@@ -583,7 +748,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "cfo s": {
    "display": "CFO's",
@@ -599,55 +764,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "check gmp": {
-   "display": "Check GMP",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Jindal Supreme IPO Day 1: GMP signals 29% listing gains on opening day | Check GMP, review - apply or not?",
-     "ts": "2026-09-16T03:25:03+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "chipotle": {
-   "display": "Chipotle",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Chipotle stock slides 6%: What\u2019s behind the selloff?",
-     "ts": "2026-09-16T06:45:19+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "citi morgan stanley": {
-   "display": "Citi Morgan Stanley",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Yes Bank shares jump 4% as Citi, Morgan Stanley see lender as key beneficiary of new UPI charges. Earnings boost ahead?",
-     "ts": "2026-09-16T05:14:58+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "clarity act": {
    "display": "CLARITY Act",
@@ -663,23 +780,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "cms info systems": {
-   "display": "CMS Info Systems",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Paytm wins, but ATM also wins! Why CMS Info Systems shares jumped 7% on UPI MDR",
-     "ts": "2026-09-16T05:28:55+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "cochin shipyard": {
    "display": "Cochin Shipyard",
@@ -706,7 +807,7 @@
    ],
    "first_seen": "2026-09-11T08:53:24.789739+00:00",
    "last_seen": "2026-09-15T09:23:18.514681+00:00",
-   "score": 1.3038
+   "score": 1.2622
   },
   "coimbatore nagpur visakhapatnam surat": {
    "display": "Coimbatore Nagpur Visakhapatnam Surat",
@@ -742,23 +843,23 @@
    ],
    "first_seen": "2026-08-31T19:07:09.133619+00:00",
    "last_seen": "2026-09-11T08:53:24.789739+00:00",
-   "score": 0.9082
+   "score": 0.8792
   },
-  "concord enviro ems": {
-   "display": "Concord Enviro EMS",
+  "comment": {
+   "display": "COMMENT",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Water distribution stocks in trouble? Concord Enviro, EMS to VA Tech under pressure- reason behind sell-off, outlook",
-     "ts": "2026-09-16T08:46:29+00:00"
+     "feed": "DeItaone",
+     "title": "WARSH DECLINES TO COMMENT ON ANY DISCUSSION WITH PRESIDENT",
+     "ts": "2026-09-16T18:48:50+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "consumers": {
    "display": "Consumers",
@@ -774,7 +875,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "continental strikes venezuela oil": {
    "display": "Continental Strikes Venezuela Oil",
@@ -790,23 +891,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "curb fuel exports": {
-   "display": "Curb Fuel Exports",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "China Could Curb Fuel Exports as Diesel and Gasoline Stocks Sink",
-     "ts": "2026-09-16T05:45:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "dabur india": {
    "display": "Dabur India",
@@ -822,7 +907,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "dalal street nifty": {
    "display": "Dalal Street Nifty",
@@ -838,23 +923,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "decision day guide fed": {
-   "display": "Decision Day Guide Fed",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Decision Day Guide: Fed seen hiking interest rates in defiance of Trump",
-     "ts": "2026-09-16T03:41:56+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "delhi mumbai kolkata chennai": {
    "display": "Delhi Mumbai Kolkata Chennai",
@@ -890,23 +959,7 @@
    ],
    "first_seen": "2026-08-31T19:07:09.133619+00:00",
    "last_seen": "2026-09-11T08:53:24.789739+00:00",
-   "score": 0.9082
-  },
-  "details": {
-   "display": "Details",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Vodafone Idea share price extends losses after TRAI order | Details here",
-     "ts": "2026-09-16T04:48:06+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.8792
   },
   "did kevin warsh": {
    "display": "Did Kevin Warsh",
@@ -922,23 +975,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "diesel and gasoline stocks": {
-   "display": "Diesel and Gasoline Stocks",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "China Could Curb Fuel Exports as Diesel and Gasoline Stocks Sink",
-     "ts": "2026-09-16T05:45:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "dividend": {
    "display": "Dividend",
@@ -974,59 +1011,16 @@
    ],
    "first_seen": "2026-09-09T14:31:44.954766+00:00",
    "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 3.4721
-  },
-  "divis price movement": {
-   "display": "Divis Labs Price Movement",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Divis Labs Share Price Live Updates: Divis Labs Price Movement",
-     "ts": "2026-09-16T03:31:45+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "divis share price": {
-   "display": "Divis Labs Share Price",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Divis Labs Share Price Live Updates: Divis Labs Price Movement",
-     "ts": "2026-09-16T03:31:45+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "domestic": {
-   "display": "Domestic",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Domestic pharma market sustains growth momentum, but margins remain key",
-     "ts": "2026-09-16T07:26:12+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 3.3614
   },
   "dot plot": {
    "display": "Dot Plot",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED DOT PLOT DELIVERS HAWKISH HIGHER-FOR-LONGER SIGNAL The Fed\u2019s new Dot Plot shows 12 of 18 officials expect another 25bp hike by year-end, taking rates to 4.125%, while four see rates reaching 4.375%. The hawkish signal extends well beyond 2026: 14 officials see rates ending 2027 above today\u2019s lev",
+     "ts": "2026-09-16T18:23:12+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "FED DOT PLOT COULD SIGNAL ANOTHER 2026 HIKE The Fed\u2019s updated Dot Plot is expected to show rates ending 2026 near 4.1%, implying another hike after today\u2019s anticipated 25bp increase. The bigger question is 2027: projections may still signal eventual rate cuts even after near-term tightening. Market ",
@@ -1037,7 +1031,23 @@
     "DeItaone"
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
-   "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.9681
+  },
+  "doubleline ceo gundlach i": {
+   "display": "DOUBLELINE CEO GUNDLACH I",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "DOUBLELINE CEO GUNDLACH: I SEE VIRTUALLY NO CHANCE THAT THIS IS THE PEAK OF THE FED FUNDS RATE- CNBC",
+     "ts": "2026-09-16T19:18:30+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
   },
   "dow jones futures us": {
@@ -1054,7 +1064,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "dow jones nasdaq s&p": {
    "display": "Dow Jones Nasdaq S&P",
@@ -1090,7 +1100,7 @@
    ],
    "first_seen": "2026-08-24T13:10:39.757224+00:00",
    "last_seen": "2026-09-15T22:52:51.973421+00:00",
-   "score": 6.9323
+   "score": 6.7113
   },
   "down ytd": {
    "display": "Down YTD",
@@ -1106,7 +1116,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "dr reddy": {
    "display": "Dr Reddy",
@@ -1122,29 +1132,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
-  "east west": {
-   "display": "East-West",
+  "driving southeast asia s lng": {
+   "display": "Driving Southeast Asia's LNG",
    "evidence": [
     {
-     "feed": "DeItaone",
-     "title": "OIL JUMPS AS SAUDI CANCELS EUROPEAN CARGOES Oil prices surged after Saudi Arabia reportedly cancelled September crude cargoes to some European refiners following damage to its East-West pipeline. Additional supply pressure comes from Libyan oil-field outages and maintenance in Kazakhstan. Brent jump",
-     "ts": "2026-09-15T13:53:14+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Shutting down East-West pipeline making crude oil more expensive for Indian refiners",
-     "ts": "2026-09-15T14:52:22+00:00"
+     "feed": "OilPrice",
+     "title": "AI Data Centers Are Driving Southeast Asia's LNG Demand Through the Roof",
+     "ts": "2026-09-16T20:00:00+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts",
-    "DeItaone"
+    "OilPrice"
    ],
-   "first_seen": "2026-09-15T14:57:57.867431+00:00",
-   "last_seen": "2026-09-15T19:40:45.973799+00:00",
-   "score": 1.5543
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "ed yardeni": {
    "display": "Ed Yardeni",
@@ -1160,7 +1164,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "edward thorp i": {
    "display": "Edward Thorp I",
@@ -1176,7 +1180,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "empower india": {
    "display": "Empower India",
@@ -1192,7 +1196,39 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
+  },
+  "end": {
+   "display": "END-",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FOMC RAISES RATES 25 BPS TO 3.75%-4%; VOTE 12-0 12 FOMC MEMBERS SEE RATES AT 4.1% BY END-2026 FED: HIKE WILL SUPPORT TIMELIER RETURN TO 2% INFLATION 4 MEMBERS SEE RATES AT 4.4% BY DEC, 2 SEE RATES AT 3.9% MEDIAN FED FUNDS RATE PROJECTION 4.1% AT END-2027 MEDIAN FED FUNDS RATE PROJECTION 3.9% AT END-",
+     "ts": "2026-09-16T18:13:13+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "end median fed funds": {
+   "display": "END- MEDIAN FED FUNDS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FOMC RAISES RATES 25 BPS TO 3.75%-4%; VOTE 12-0 12 FOMC MEMBERS SEE RATES AT 4.1% BY END-2026 FED: HIKE WILL SUPPORT TIMELIER RETURN TO 2% INFLATION 4 MEMBERS SEE RATES AT 4.4% BY DEC, 2 SEE RATES AT 3.9% MEDIAN FED FUNDS RATE PROJECTION 4.1% AT END-2027 MEDIAN FED FUNDS RATE PROJECTION 3.9% AT END-",
+     "ts": "2026-09-16T18:13:13+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "energy markets": {
    "display": "Energy Markets",
@@ -1208,7 +1244,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "energy shock puts bank": {
    "display": "Energy Shock Puts Bank",
@@ -1224,7 +1260,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "england": {
    "display": "England",
@@ -1240,7 +1276,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "equinor targets million tons": {
    "display": "Equinor Targets Million Tons",
@@ -1256,23 +1292,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "esds software ipo": {
-   "display": "ESDS Software IPO",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "ESDS Software: IPO doubled investors money, now company launches Swaraj Sethu - All about Unified DevSecOps Platform",
-     "ts": "2026-09-16T08:00:34+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "eu wide target": {
    "display": "EU-Wide Target",
@@ -1288,7 +1308,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "event": {
    "display": "EVENT",
@@ -1304,6 +1324,22 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "score": 0.9681
+  },
+  "expect": {
+   "display": "Expect",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Fed rate hike fails to calm troubled markets as Dow falls 600 points. Expect more sharp swings in stocks and bonds.",
+     "ts": "2026-09-16T21:40:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
   },
   "expert": {
@@ -1340,7 +1376,7 @@
    ],
    "first_seen": "2026-09-07T09:17:28.437002+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 3.013
+   "score": 2.917
   },
   "export constraints curb kazakhstan": {
    "display": "Export Constraints Curb Kazakhstan",
@@ -1356,7 +1392,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "fed dot plot": {
    "display": "FED DOT PLOT",
@@ -1372,11 +1408,48 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "score": 0.9681
+  },
+  "fed dot plot delivers": {
+   "display": "FED DOT PLOT DELIVERS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED DOT PLOT DELIVERS HAWKISH HIGHER-FOR-LONGER SIGNAL The Fed\u2019s new Dot Plot shows 12 of 18 officials expect another 25bp hike by year-end, taking rates to 4.125%, while four see rates reaching 4.375%. The hawkish signal extends well beyond 2026: 14 officials see rates ending 2027 above today\u2019s lev",
+     "ts": "2026-09-16T18:23:12+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "fed funds rate cnbc": {
+   "display": "FED FUNDS RATE- CNBC",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "DOUBLELINE CEO GUNDLACH: I SEE VIRTUALLY NO CHANCE THAT THIS IS THE PEAK OF THE FED FUNDS RATE- CNBC",
+     "ts": "2026-09-16T19:18:30+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
   },
   "fed meeting": {
    "display": "FED Meeting",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Fed Meeting Live | Dow Jones Live| US Stock Market Highlights: Dow ends 650 pts lower after Fed rate hike, more rate tightening seen",
+     "ts": "2026-09-16T12:18:05+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Fed Meeting Live | Dow Jones Live| US Stock Market Live: US stocks trade mixed after Fed rate hike",
@@ -1392,8 +1465,104 @@
     "ET Markets"
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
-   "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.9566
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 2.8942
+  },
+  "fed raises inflation outlook": {
+   "display": "FED RAISES INFLATION OUTLOOK",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED RAISES INFLATION OUTLOOK AS LABOR MARKET STAYS STRONG The Fed\u2019s latest projections show a more persistent inflation outlook, with 2026 core PCE raised to 3.4% from 3.3%, despite methodology changes expected to mechanically lower the measure. Meanwhile, unemployment forecasts were revised down to",
+     "ts": "2026-09-16T18:33:22+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "fed raises rates bps": {
+   "display": "FED RAISES RATES BPS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED RAISES RATES 25 BPS TO 3.75%-4.00% TARGET RANGE",
+     "ts": "2026-09-16T18:08:04+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "fed rate hike": {
+   "display": "FED RATE HIKE",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED: RATE HIKE WILL SUPPORT `TIMELIER' RETURN TO 2% INFLATION",
+     "ts": "2026-09-16T18:08:07+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "fed tilts hawkish": {
+   "display": "Fed Tilts Hawkish",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Gold Swings Lower as Fed Tilts Hawkish After Raising Rates",
+     "ts": "2026-09-16T20:27:53+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "fed turned": {
+   "display": "FED TURNED",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH EXPLAINS WHY THE FED TURNED TO A RATE HIKE Fed Chair Kevin Warsh says three major developments changed the Fed\u2019s outlook since July: a stronger economy and labor market, inflation failing to improve sufficiently, and a changed assessment of geopolitical risks. Warsh said recent inflation data ",
+     "ts": "2026-09-16T18:53:12+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "fed unanimously raises benchmark": {
+   "display": "FED UNANIMOUSLY RAISES BENCHMARK",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED UNANIMOUSLY RAISES BENCHMARK RATE 25 BPS TO 3.75%-4% RANGE",
+     "ts": "2026-09-16T18:08:06+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "federal reserve board and": {
    "display": "Federal Reserve Board and",
@@ -1409,7 +1578,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "federal reserve s": {
    "display": "Federal Reserve's",
@@ -1425,7 +1594,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "fiis": {
    "display": "FIIs",
@@ -1461,7 +1630,7 @@
    ],
    "first_seen": "2026-09-07T15:48:56.323650+00:00",
    "last_seen": "2026-09-15T14:57:57.867431+00:00",
-   "score": 1.8802
+   "score": 1.8203
   },
   "flow through bab el mandeb": {
    "display": "FLOW THROUGH BAB EL-MANDEB",
@@ -1477,7 +1646,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "fmcg psu": {
    "display": "FMCG PSU",
@@ -1493,7 +1662,55 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
+  },
+  "fomc median forecast shows": {
+   "display": "FOMC MEDIAN FORECAST SHOWS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FOMC MEDIAN FORECAST SHOWS ONE ADDITIONAL 25 BPS HIKE IN 2026",
+     "ts": "2026-09-16T18:08:05+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "fomc raises rates bps": {
+   "display": "FOMC RAISES RATES BPS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FOMC RAISES RATES 25 BPS TO 3.75%-4%; VOTE 12-0 12 FOMC MEMBERS SEE RATES AT 4.1% BY END-2026 FED: HIKE WILL SUPPORT TIMELIER RETURN TO 2% INFLATION 4 MEMBERS SEE RATES AT 4.4% BY DEC, 2 SEE RATES AT 3.9% MEDIAN FED FUNDS RATE PROJECTION 4.1% AT END-2027 MEDIAN FED FUNDS RATE PROJECTION 3.9% AT END-",
+     "ts": "2026-09-16T18:13:13+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "foreign": {
+   "display": "Foreign",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Foreign holdings of US Treasuries in July down for 2nd straight month, data shows",
+     "ts": "2026-09-16T22:06:06+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "former": {
    "display": "Former",
@@ -1509,7 +1726,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "fortis healthcare": {
    "display": "Fortis Healthcare",
@@ -1525,7 +1742,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
+  },
+  "forward guidance business": {
+   "display": "FORWARD GUIDANCE BUSINESS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH: NOT IN THE FORWARD GUIDANCE BUSINESS",
+     "ts": "2026-09-16T18:48:48+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "fox news": {
    "display": "Fox News.",
@@ -1541,7 +1774,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "fpis": {
    "display": "FPIs",
@@ -1563,7 +1796,7 @@
    ],
    "first_seen": "2026-09-14T09:48:33.902007+00:00",
    "last_seen": "2026-09-14T16:21:41.571735+00:00",
-   "score": 1.1847
+   "score": 1.1469
   },
   "fuel demand softens": {
    "display": "Fuel Demand Softens",
@@ -1579,23 +1812,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "full": {
-   "display": "Full",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Dividend record date alert: Last chance to buy Asian Energy, Bharat Rasayan, IRCON, MSTC, and others | Full list",
-     "ts": "2026-09-16T03:28:23+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "gas storage level": {
    "display": "Gas Storage Level",
@@ -1611,23 +1828,39 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
-  "ge vernova cg power": {
-   "display": "GE Vernova CG Power",
+  "gdpnow": {
+   "display": "GDPNow",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "GE Vernova, CG Power, other power capex stocks tumble up to 16% in 2 days amid global AI caution. What's ahead?",
-     "ts": "2026-09-16T07:40:52+00:00"
+     "feed": "DeItaone",
+     "title": "ATLANTA FED GDPNOW SURGES ABOVE 5% The Atlanta Fed\u2019s GDPNow estimate for Q3 growth jumped to 5.1% from 4.42%, driven largely by stronger consumer spending after today\u2019s retail sales data. Real consumption is now expected to contribute 2.83 percentage points, while private domestic final purchases ar",
+     "ts": "2026-09-16T17:28:37+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "generac": {
+   "display": "Generac",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Generac\u2019s stock soars more than 30% after Amazon deal cements company\u2019s status as an AI power player",
+     "ts": "2026-09-16T21:56:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "genpact": {
    "display": "Genpact",
@@ -1643,7 +1876,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "germany weighs market incentives": {
    "display": "Germany Weighs Market Incentives",
@@ -1659,7 +1892,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "glass wall systems": {
    "display": "Glass Wall Systems",
@@ -1680,7 +1913,7 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 1.8625
+   "score": 1.8031
   },
   "global market": {
    "display": "Global Market",
@@ -1701,7 +1934,7 @@
    ],
    "first_seen": "2026-09-14T09:48:33.902007+00:00",
    "last_seen": "2026-09-14T09:48:33.902007+00:00",
-   "score": 1.1472
+   "score": 1.1106
   },
   "global market bank of": {
    "display": "Global Market Bank of",
@@ -1722,7 +1955,7 @@
    ],
    "first_seen": "2026-09-15T14:57:57.867431+00:00",
    "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 1.6653
+   "score": 1.6122
   },
   "global market china": {
    "display": "Global Market China",
@@ -1758,23 +1991,7 @@
    ],
    "first_seen": "2026-08-28T16:35:29.336859+00:00",
    "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 2.8046
-  },
-  "global market china hong": {
-   "display": "Global Market China Hong",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Global Market: China, Hong Kong shares rise as tech stocks gain ahead of Fed decision",
-     "ts": "2026-09-16T06:28:32+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 2.7152
   },
   "global market european": {
    "display": "Global Market European",
@@ -1810,23 +2027,7 @@
    ],
    "first_seen": "2026-07-08T11:23:05.666954+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 2.7672
-  },
-  "global market hong kong": {
-   "display": "Global Market Hong Kong",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Global Market: Hong Kong unveils first five-year plan, targets bigger push into technology",
-     "ts": "2026-09-16T07:22:04+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 2.679
   },
   "global market japan": {
    "display": "Global Market Japan",
@@ -1862,39 +2063,7 @@
    ],
    "first_seen": "2026-09-01T09:22:37.213013+00:00",
    "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 4.3086
-  },
-  "global market klaas knot": {
-   "display": "Global Market Klaas Knot",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Global Market: Klaas Knot tops list of potential Lagarde successors at ECB",
-     "ts": "2026-09-16T05:28:38+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "global market kospi": {
-   "display": "Global Market KOSPI",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Global Market: KOSPI climbs as chip stocks lead gains before Fed outcome",
-     "ts": "2026-09-16T04:20:48+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 4.1712
   },
   "global markets": {
    "display": "Global Markets",
@@ -1910,7 +2079,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "global oil shortage": {
    "display": "Global Oil Shortage",
@@ -1926,23 +2095,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "gmp": {
-   "display": "GMP.",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Hero Motors IPO opens with 23% GMP. Should you bid for the Rs 1,000 cr offer?",
-     "ts": "2026-09-16T04:01:44+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "gold rate": {
    "display": "Gold Rate",
@@ -1978,7 +2131,23 @@
    ],
    "first_seen": "2026-08-26T08:59:04.759635+00:00",
    "last_seen": "2026-09-15T14:57:57.867431+00:00",
-   "score": 2.7563
+   "score": 2.6684
+  },
+  "gold swings lower": {
+   "display": "Gold Swings Lower",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Gold Swings Lower as Fed Tilts Hawkish After Raising Rates",
+     "ts": "2026-09-16T20:27:53+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "google": {
    "display": "Google",
@@ -1994,23 +2163,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "gorilla": {
-   "display": "Gorilla",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Gorilla investing and 34% return: How Mihir Vora made Trust Smallcap Fund top performer",
-     "ts": "2026-09-16T03:44:20+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "government": {
    "display": "Government",
@@ -2026,23 +2179,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "groww": {
-   "display": "Groww",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Groww shares slump 4% after major block deal; what\u2019s next for the stock?",
-     "ts": "2026-09-16T04:42:04+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "grt jewellers": {
    "display": "GRT Jewellers",
@@ -2058,7 +2195,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "gulf tensions weigh": {
    "display": "Gulf Tensions Weigh",
@@ -2074,7 +2211,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "gurugram": {
    "display": "Gurugram",
@@ -2090,23 +2227,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "happy forgings": {
-   "display": "Happy Forgings'",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Happy Forgings' order book muscle drives investor confidence",
-     "ts": "2026-09-16T08:10:58+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "happy forgings buy": {
    "display": "Happy Forgings Buy",
@@ -2122,7 +2243,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
+  },
+  "has been": {
+   "display": "HAS BEEN",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH: INFLATION IS TOO HIGH AND HAS BEEN FOR TOO LONG",
+     "ts": "2026-09-16T18:38:23+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "hassett": {
    "display": "Hassett",
@@ -2148,7 +2285,7 @@
    ],
    "first_seen": "2026-09-11T19:08:41.467269+00:00",
    "last_seen": "2026-09-11T19:08:41.467269+00:00",
-   "score": 0.9413
+   "score": 0.9113
   },
   "hdfc bank hcl tech": {
    "display": "HDFC Bank HCL Tech",
@@ -2169,39 +2306,7 @@
    ],
    "first_seen": "2026-09-14T16:21:41.571735+00:00",
    "last_seen": "2026-09-14T21:46:34.176775+00:00",
-   "score": 1.2548
-  },
-  "hdfc securities": {
-   "display": "HDFC Securities",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Younger investors drive new-age IPO participation as institutional demand powers subscriptions: HDFC Securities",
-     "ts": "2026-09-16T07:32:28+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "healthcare": {
-   "display": "Healthcare",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Recently listed Molbio Diagnostics share price falls 9%: Healthcare stock loses 18.5% in 2 days after blockbuster rally",
-     "ts": "2026-09-16T04:16:55+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 1.2148
   },
   "heloc": {
    "display": "HELOC",
@@ -2217,7 +2322,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "hero motors ipo day": {
    "display": "Hero Motors IPO Day",
@@ -2239,23 +2344,7 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 1.8625
-  },
-  "hero motors ipo gmp": {
-   "display": "Hero Motors IPO GMP",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Hero Motors IPO GMP jumps 23% on Day 1; check key dates, review, subscription. Should you apply or skip?",
-     "ts": "2026-09-16T03:03:31+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 1.8031
   },
   "hike": {
    "display": "Hike",
@@ -2277,7 +2366,7 @@
    ],
    "first_seen": "2026-09-11T19:08:41.467269+00:00",
    "last_seen": "2026-09-14T16:21:41.571735+00:00",
-   "score": 0.9247
+   "score": 0.8952
   },
   "hit europe": {
    "display": "Hit Europe",
@@ -2293,23 +2382,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "hormuz shipping traffic remains": {
-   "display": "Hormuz Shipping Traffic Remains",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Hormuz Shipping Traffic Remains Stuck in Single Digits",
-     "ts": "2026-09-16T07:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "house democrats seek bipartisan": {
    "display": "HOUSE DEMOCRATS SEEK BIPARTISAN",
@@ -2325,6 +2398,38 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "score": 0.9681
+  },
+  "hugging": {
+   "display": "Hugging",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "OPENAI ROGUE AGENTS PROBED HUGGING FACE BEFORE MAJOR HACK Researchers say rogue OpenAI agents hijacked two Hugging Face accounts and probed its network for vulnerabilities in May, nearly two months before the major July cyber incident. No evidence shows the May activity successfully breached Hugging",
+     "ts": "2026-09-16T16:18:32+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "hugging face": {
+   "display": "Hugging Face",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "OPENAI ROGUE AGENTS PROBED HUGGING FACE BEFORE MAJOR HACK Researchers say rogue OpenAI agents hijacked two Hugging Face accounts and probed its network for vulnerabilities in May, nearly two months before the major July cyber incident. No evidence shows the May activity successfully breached Hugging",
+     "ts": "2026-09-16T16:18:32+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
   },
   "icici securities": {
@@ -2356,23 +2461,7 @@
    ],
    "first_seen": "2026-09-09T14:31:44.954766+00:00",
    "last_seen": "2026-09-15T09:23:18.514681+00:00",
-   "score": 1.336
-  },
-  "india pesticides": {
-   "display": "India Pesticides",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "India Pesticides stock on fire! Agrochemical stock zooms 11% - what\u2019s fuelling the rally?",
-     "ts": "2026-09-16T05:01:26+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 1.2934
   },
   "indian it": {
    "display": "Indian IT",
@@ -2394,39 +2483,23 @@
    ],
    "first_seen": "2026-09-14T21:46:34.176775+00:00",
    "last_seen": "2026-09-15T09:23:18.514681+00:00",
-   "score": 1.3635
+   "score": 1.32
   },
-  "indonesia s": {
-   "display": "Indonesia's",
+  "inflation members see rates": {
+   "display": "INFLATION MEMBERS SEE RATES",
    "evidence": [
     {
-     "feed": "CNBC Economy",
-     "title": "Indonesia's new finance minister faces an uphill battle on fiscal credibility",
-     "ts": "2026-09-16T01:53:52+00:00"
+     "feed": "DeItaone",
+     "title": "FOMC RAISES RATES 25 BPS TO 3.75%-4%; VOTE 12-0 12 FOMC MEMBERS SEE RATES AT 4.1% BY END-2026 FED: HIKE WILL SUPPORT TIMELIER RETURN TO 2% INFLATION 4 MEMBERS SEE RATES AT 4.4% BY DEC, 2 SEE RATES AT 3.9% MEDIAN FED FUNDS RATE PROJECTION 4.1% AT END-2027 MEDIAN FED FUNDS RATE PROJECTION 3.9% AT END-",
+     "ts": "2026-09-16T18:13:13+00:00"
     }
    ],
    "feeds": [
-    "CNBC Economy"
+    "DeItaone"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "inevitable": {
-   "display": "Inevitable",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Inevitable inching closer: US Fed may raise rates after 3 years. What it means for Indian stock market",
-     "ts": "2026-09-16T08:16:57+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "infosys mazagon dock": {
    "display": "Infosys Mazagon Dock",
@@ -2442,6 +2515,22 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "score": 0.9681
+  },
+  "inside putin": {
+   "display": "Inside Putin",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Inside Putin\u2019s $135 Billion Arctic Gamble That Could Save His Ukraine War",
+     "ts": "2026-09-16T21:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
   },
   "inside ron baron s": {
@@ -2458,39 +2547,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "ipo buzz": {
-   "display": "IPO-buzz",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Tata Group stocks fall up to 7% after Tuesday\u2019s IPO-buzz rally. Which stocks led the losses?",
-     "ts": "2026-09-16T07:29:24+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "ipo gmp": {
-   "display": "IPO GMP",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "IPO GMP Today Live Updates | Hero Motors IPO sails through on Day 1; retail portion subscribed 1.7 times",
-     "ts": "2026-09-16T04:13:35+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "iranian": {
    "display": "Iranian",
@@ -2506,7 +2563,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "iranian attack hits u s contracted": {
    "display": "IRANIAN ATTACK HITS U.S.-CONTRACTED",
@@ -2522,7 +2579,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "j b hunt": {
    "display": "J.B. Hunt",
@@ -2538,7 +2595,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "japanese refiners rush": {
    "display": "Japanese Refiners Rush",
@@ -2554,23 +2611,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "jefferies nuvama": {
-   "display": "Jefferies Nuvama",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Solar Industries shares plunge 17% in 2 days. Why Jefferies, Nuvama still see up to 46% upside",
-     "ts": "2026-09-16T05:40:51+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "jindal supreme ipo": {
    "display": "Jindal Supreme IPO",
@@ -2592,7 +2633,7 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 1.8625
+   "score": 1.8031
   },
   "jm financial": {
    "display": "JM Financial",
@@ -2608,23 +2649,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "jsw steel gains ground": {
-   "display": "JSW Steel Gains Ground",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "JSW Steel Share Price Live Updates: JSW Steel  Gains Ground in Today's Trading",
-     "ts": "2026-09-16T04:34:17+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "jsw steel share price": {
    "display": "JSW Steel Share Price",
@@ -2645,7 +2670,7 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 1.8625
+   "score": 1.8031
   },
   "kanohar electricals": {
    "display": "Kanohar Electricals",
@@ -2666,7 +2691,7 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 1.8625
+   "score": 1.8031
   },
   "kevin hassett": {
    "display": "Kevin Hassett",
@@ -2687,28 +2712,7 @@
    ],
    "first_seen": "2026-09-11T19:08:41.467269+00:00",
    "last_seen": "2026-09-14T16:21:41.571735+00:00",
-   "score": 0.9247
-  },
-  "kevin warsh": {
-   "display": "Kevin Warsh",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "LIVE: US Fed Reserve FOMC Meeting Rate Decision Outcome Today: Time, schedule, LIVE streaming, Kevin Warsh announcement",
-     "ts": "2026-09-16T04:34:31+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Trump says he \u2018100% respects\u2019 Kevin Warsh\u2019s Fed independence as rate decision nears",
-     "ts": "2026-09-16T05:32:12+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 1.8118
+   "score": 0.8952
   },
   "kotak institutional equities": {
    "display": "Kotak Institutional Equities",
@@ -2724,7 +2728,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
+  },
+  "labor market stays strong": {
+   "display": "LABOR MARKET STAYS STRONG",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED RAISES INFLATION OUTLOOK AS LABOR MARKET STAYS STRONG The Fed\u2019s latest projections show a more persistent inflation outlook, with 2026 core PCE raised to 3.4% from 3.3%, despite methodology changes expected to mechanically lower the measure. Meanwhile, unemployment forecasts were revised down to",
+     "ts": "2026-09-16T18:33:22+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "lavrov": {
    "display": "Lavrov",
@@ -2740,7 +2760,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "lavrov warns europe against": {
    "display": "LAVROV WARNS EUROPE AGAINST",
@@ -2756,23 +2776,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "lcc projects ipo": {
-   "display": "LCC Projects IPO",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "LCC Projects IPO listing tomorrow: GMP at  \u20b944; Share price prediction ahead of NSE, BSE debut",
-     "ts": "2026-09-16T08:35:53+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "leaked eu draft": {
    "display": "Leaked EU Draft",
@@ -2788,6 +2792,22 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "score": 0.9681
+  },
+  "lic goldman sachs": {
+   "display": "LIC Goldman Sachs",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "NSE IPO all set to open; co raises Rs 6,746 crore from anchor investors including LIC, Goldman Sachs",
+     "ts": "2026-09-16T15:04:43+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
   },
   "lic morgan stanley goldman": {
@@ -2804,7 +2824,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "lic norges bank adia": {
    "display": "LIC Norges Bank ADIA",
@@ -2820,23 +2840,55 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
-  "manika plastech ipo day": {
-   "display": "Manika Plastech IPO Day",
+  "lumentum and coherent": {
+   "display": "Lumentum and Coherent",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Manika Plastech IPO Day 3: GMP at 7%, subscription reaches 8.3 times. Key details",
-     "ts": "2026-09-16T03:47:59+00:00"
+     "feed": "MarketWatch Top",
+     "title": "Why optical stocks Lumentum and Coherent were the day\u2019s biggest S&P 500 gainers",
+     "ts": "2026-09-16T20:52:00+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "MarketWatch Top"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "major": {
+   "display": "Major",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED: WHAT WALL STREET EXPECTS FROM WARSH TODAY Major banks are focused on how Kevin Warsh frames the path ahead if the Fed hikes today: Barclays: Expects Warsh to stress solid growth, near-full employment and inflation still too high, broadly maintaining his previous hawkish message. BMO: Sees Warsh",
+     "ts": "2026-09-16T16:13:24+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "major hack researchers": {
+   "display": "MAJOR HACK Researchers",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "OPENAI ROGUE AGENTS PROBED HUGGING FACE BEFORE MAJOR HACK Researchers say rogue OpenAI agents hijacked two Hugging Face accounts and probed its network for vulnerabilities in May, nearly two months before the major July cyber incident. No evidence shows the May activity successfully breached Hugging",
+     "ts": "2026-09-16T16:18:32+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "market trading guide pvr": {
    "display": "Market Trading Guide PVR",
@@ -2852,7 +2904,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "maruti suzuki": {
    "display": "Maruti Suzuki",
@@ -2868,7 +2920,39 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
+  },
+  "meanwhile": {
+   "display": "Meanwhile",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED RAISES INFLATION OUTLOOK AS LABOR MARKET STAYS STRONG The Fed\u2019s latest projections show a more persistent inflation outlook, with 2026 core PCE raised to 3.4% from 3.3%, despite methodology changes expected to mechanically lower the measure. Meanwhile, unemployment forecasts were revised down to",
+     "ts": "2026-09-16T18:33:22+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "median fed funds rate": {
+   "display": "MEDIAN FED FUNDS RATE",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FOMC RAISES RATES 25 BPS TO 3.75%-4%; VOTE 12-0 12 FOMC MEMBERS SEE RATES AT 4.1% BY END-2026 FED: HIKE WILL SUPPORT TIMELIER RETURN TO 2% INFLATION 4 MEMBERS SEE RATES AT 4.4% BY DEC, 2 SEE RATES AT 3.9% MEDIAN FED FUNDS RATE PROJECTION 4.1% AT END-2027 MEDIAN FED FUNDS RATE PROJECTION 3.9% AT END-",
+     "ts": "2026-09-16T18:13:13+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "memory chip production": {
    "display": "MEMORY CHIP PRODUCTION",
@@ -2884,7 +2968,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "michael burry": {
    "display": "Michael Burry",
@@ -2900,7 +2984,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "michael burry joins": {
    "display": "MICHAEL BURRY JOINS",
@@ -2916,7 +3000,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "micron": {
    "display": "Micron",
@@ -2932,23 +3016,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "mihir vora": {
-   "display": "Mihir Vora",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Gorilla investing and 34% return: How Mihir Vora made Trust Smallcap Fund top performer",
-     "ts": "2026-09-16T03:44:20+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "minerva investment management": {
    "display": "Minerva Investment Management",
@@ -2964,7 +3032,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "mirae asset aif": {
    "display": "Mirae Asset AIF",
@@ -2980,23 +3048,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "molbio diagnostics": {
-   "display": "Molbio Diagnostics",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Recently listed Molbio Diagnostics share price falls 9%: Healthcare stock loses 18.5% in 2 days after blockbuster rally",
-     "ts": "2026-09-16T04:16:55+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "mukul agrawal portfolio": {
    "display": "Mukul Agrawal-portfolio",
@@ -3012,7 +3064,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "multibagger": {
    "display": "Multibagger",
@@ -3048,23 +3100,7 @@
    ],
    "first_seen": "2026-09-04T08:49:12.372762+00:00",
    "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 2.3454
-  },
-  "mv electrosystems": {
-   "display": "MV Electrosystems",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Newly listed MV Electrosystems shares soar 10%: Stock jumps from  \u20b9425 IPO price to  \u20b9848 \u2014 what\u2019s driving the rally?",
-     "ts": "2026-09-16T07:14:38+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 2.2706
   },
   "nbcc bhel bharat forge": {
    "display": "NBCC BHEL Bharat Forge",
@@ -3085,7 +3121,7 @@
    ],
    "first_seen": "2026-09-15T14:57:57.867431+00:00",
    "last_seen": "2026-09-15T19:40:45.973799+00:00",
-   "score": 1.5543
+   "score": 1.5048
   },
   "nbfc": {
    "display": "NBFC",
@@ -3101,39 +3137,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "network people services": {
-   "display": "Network People Services",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Multibagger small cap stock Network People Services share price surges 18% today: Here\u2019s what is driving the rally",
-     "ts": "2026-09-16T05:39:40+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "newly": {
-   "display": "Newly",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Newly listed MV Electrosystems shares soar 10%: Stock jumps from  \u20b9425 IPO price to  \u20b9848 \u2014 what\u2019s driving the rally?",
-     "ts": "2026-09-16T07:14:38+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "nhai": {
    "display": "NHAI",
@@ -3154,7 +3158,7 @@
    ],
    "first_seen": "2026-09-15T14:57:57.867431+00:00",
    "last_seen": "2026-09-15T14:57:57.867431+00:00",
-   "score": 1.5191
+   "score": 1.4707
   },
   "nifty midcap": {
    "display": "Nifty Midcap",
@@ -3170,23 +3174,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "nithin kamath": {
-   "display": "Nithin Kamath",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Nithin Kamath says new UPI charges on investing, broking don\u2019t make sense: 'I don't see how we can absorb this indefinitely'",
-     "ts": "2026-09-16T06:53:46+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "nomura rating": {
    "display": "Nomura Rating",
@@ -3202,23 +3190,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "npci": {
-   "display": "NPCI",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Paytm stock hits 52-week high after NPCI introduces UPI MDR",
-     "ts": "2026-09-16T05:58:04+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "nse ipo anchor": {
    "display": "NSE IPO Anchor",
@@ -3234,7 +3206,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "nse ipo every rs": {
    "display": "NSE IPO Every Rs",
@@ -3250,7 +3222,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "nse ipo gmp": {
    "display": "NSE IPO GMP",
@@ -3266,7 +3238,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "nvidia intel": {
    "display": "Nvidia Intel",
@@ -3287,7 +3259,7 @@
    ],
    "first_seen": "2026-09-14T16:21:41.571735+00:00",
    "last_seen": "2026-09-14T16:21:41.571735+00:00",
-   "score": 1.2219
+   "score": 1.1829
   },
   "offset": {
    "display": "Offset",
@@ -3303,39 +3275,23 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "score": 0.9681
+  },
+  "oil above pushes u s": {
+   "display": "Oil Above Pushes U.S.",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Oil Above $100 Pushes U.S. Fuel Prices to New Records",
+     "ts": "2026-09-16T22:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
-  },
-  "oil import bill soars": {
-   "display": "Oil Import Bill Soars",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Japan\u2019s Oil Import Bill Soars 59% as Trade Deficit Deepens",
-     "ts": "2026-09-16T08:15:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "oil market running out": {
-   "display": "Oil Market Running Out",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Saudi Pipeline Outage Hits an Oil Market Running Out of Buffers",
-     "ts": "2026-09-16T00:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
   },
   "oman": {
    "display": "Oman",
@@ -3366,7 +3322,7 @@
    ],
    "first_seen": "2026-09-11T14:23:41.632201+00:00",
    "last_seen": "2026-09-14T16:21:41.571735+00:00",
-   "score": 1.5384
+   "score": 1.4894
   },
   "oman crude": {
    "display": "Oman Crude",
@@ -3382,23 +3338,76 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
-  "ongc": {
-   "display": "ONGC",
+  "openai": {
+   "display": "OpenAI",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "ONGC among 3 stocks closing above VWAP",
-     "ts": "2026-09-16T04:04:05+00:00"
+     "feed": "DeItaone",
+     "title": "OPENAI CHALLENGES SECRET APPLE-MUSK AGREEMENT A federal judge ordered X and SpaceXAI to disclose their agreement with Apple after OpenAI sought access to the terms in Musk\u2019s antitrust case. X recently resolved its claims against Apple but is continuing its case against OpenAI. OpenAI argues the undi",
+     "ts": "2026-09-16T15:58:07+00:00"
+    },
+    {
+     "feed": "DeItaone",
+     "title": "OPENAI ROGUE AGENTS PROBED HUGGING FACE BEFORE MAJOR HACK Researchers say rogue OpenAI agents hijacked two Hugging Face accounts and probed its network for vulnerabilities in May, nearly two months before the major July cyber incident. No evidence shows the May activity successfully breached Hugging",
+     "ts": "2026-09-16T16:18:32+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 2.0
+  },
+  "openai challenges secret apple musk": {
+   "display": "OPENAI CHALLENGES SECRET APPLE-MUSK",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "OPENAI CHALLENGES SECRET APPLE-MUSK AGREEMENT A federal judge ordered X and SpaceXAI to disclose their agreement with Apple after OpenAI sought access to the terms in Musk\u2019s antitrust case. X recently resolved its claims against Apple but is continuing its case against OpenAI. OpenAI argues the undi",
+     "ts": "2026-09-16T15:58:07+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "openai openai": {
+   "display": "OpenAI. OpenAI",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "OPENAI CHALLENGES SECRET APPLE-MUSK AGREEMENT A federal judge ordered X and SpaceXAI to disclose their agreement with Apple after OpenAI sought access to the terms in Musk\u2019s antitrust case. X recently resolved its claims against Apple but is continuing its case against OpenAI. OpenAI argues the undi",
+     "ts": "2026-09-16T15:58:07+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "openai rogue agents probed": {
+   "display": "OPENAI ROGUE AGENTS PROBED",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "OPENAI ROGUE AGENTS PROBED HUGGING FACE BEFORE MAJOR HACK Researchers say rogue OpenAI agents hijacked two Hugging Face accounts and probed its network for vulnerabilities in May, nearly two months before the major July cyber incident. No evidence shows the May activity successfully breached Hugging",
+     "ts": "2026-09-16T16:18:32+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "oracle": {
    "display": "Oracle",
@@ -3420,7 +3429,7 @@
    ],
    "first_seen": "2026-09-15T19:40:45.973799+00:00",
    "last_seen": "2026-09-15T23:34:12.994069+00:00",
-   "score": 1.6199
+   "score": 1.5683
   },
   "patanjali foods": {
    "display": "Patanjali Foods",
@@ -3436,39 +3445,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "paytm mobikwik pine": {
-   "display": "Paytm MobiKwik Pine Labs",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Paytm, MobiKwik, Pine Labs shares rally up to 6% after govt announces UPI fees above Rs 2,000. Why brokerages are bullish",
-     "ts": "2026-09-16T03:55:35+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "pboc governor pan gongsheng": {
-   "display": "PBOC Governor Pan Gongsheng",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Global Market | China\u2019s slower loan growth is becoming the new normal: PBOC Governor Pan Gongsheng",
-     "ts": "2026-09-16T08:43:04+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "pdvsa": {
    "display": "PDVSA",
@@ -3484,6 +3461,22 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "score": 0.9681
+  },
+  "peak": {
+   "display": "PEAK",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "DOUBLELINE CEO GUNDLACH: I SEE VIRTUALLY NO CHANCE THAT THIS IS THE PEAK OF THE FED FUNDS RATE- CNBC",
+     "ts": "2026-09-16T19:18:30+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
   },
   "penny": {
@@ -3520,7 +3513,7 @@
    ],
    "first_seen": "2026-08-12T09:22:31.943059+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 3.3341
+   "score": 3.2278
   },
   "persian gulf": {
    "display": "PERSIAN GULF",
@@ -3536,23 +3529,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "pine": {
-   "display": "Pine Labs",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "UPI MDR bonanza: Why Paytm may win bigger, but Pine Labs could gain faster",
-     "ts": "2026-09-16T05:35:48+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "pipeline goes offline": {
    "display": "Pipeline Goes Offline",
@@ -3568,7 +3545,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "pl capital": {
    "display": "PL Capital",
@@ -3584,39 +3561,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "pnc infratech": {
-   "display": "PNC Infratech",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "PNC Infratech shares slump 17% to fresh 52-week low |  What\u2019s the reason?",
-     "ts": "2026-09-16T07:14:10+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "positive": {
-   "display": "Positive",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Positive bias seen for Indian stocks at open, but analysts advise caution",
-     "ts": "2026-09-16T01:56:06+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "prasol chemicals": {
    "display": "Prasol Chemicals",
@@ -3637,7 +3582,39 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 1.8625
+   "score": 1.8031
+  },
+  "prejudge any future decisions": {
+   "display": "PREJUDGE ANY FUTURE DECISIONS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH: NOT GOING TO PREJUDGE ANY FUTURE DECISIONS",
+     "ts": "2026-09-16T18:48:49+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "president": {
+   "display": "PRESIDENT",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH DECLINES TO COMMENT ON ANY DISCUSSION WITH PRESIDENT",
+     "ts": "2026-09-16T18:48:50+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "pressure": {
    "display": "Pressure",
@@ -3653,6 +3630,22 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "score": 0.9681
+  },
+  "price stability": {
+   "display": "PRICE STABILITY",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH: TOO MANY INF. CATEGORIES ARE STILL RISING MORE THAN 3% *WARSH: PREDOMINANT FOCUS OF FED IS ON PRICE STABILITY",
+     "ts": "2026-09-16T18:43:13+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
   },
   "qatar exports stay blocked": {
@@ -3669,23 +3662,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "qualcomm": {
-   "display": "Qualcomm",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Amazon AI chip deal gives Qualcomm stock a boost",
-     "ts": "2026-09-16T05:34:37+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "quote": {
    "display": "Quote",
@@ -3721,7 +3698,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 3.5727
+   "score": 3.4588
   },
   "radhakishan damani": {
    "display": "Radhakishan Damani",
@@ -3737,7 +3714,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "raise rates": {
    "display": "Raise Rates",
@@ -3753,6 +3730,54 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "score": 0.9681
+  },
+  "raising rates": {
+   "display": "Raising Rates",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Gold Swings Lower as Fed Tilts Hawkish After Raising Rates",
+     "ts": "2026-09-16T20:27:53+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "range": {
+   "display": "RANGE",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED UNANIMOUSLY RAISES BENCHMARK RATE 25 BPS TO 3.75%-4% RANGE",
+     "ts": "2026-09-16T18:08:06+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "rate hike fed chair": {
+   "display": "RATE HIKE Fed Chair",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH EXPLAINS WHY THE FED TURNED TO A RATE HIKE Fed Chair Kevin Warsh says three major developments changed the Fed\u2019s outlook since July: a stronger economy and labor market, inflation failing to improve sufficiently, and a changed assessment of geopolitical risks. Warsh said recent inflation data ",
+     "ts": "2026-09-16T18:53:12+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
   },
   "rates near u s": {
@@ -3769,7 +3794,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "rational equity asset management": {
    "display": "Rational Equity Asset Management",
@@ -3785,55 +3810,55 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
-  "raymond": {
-   "display": "Raymond",
+  "real": {
+   "display": "Real",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "ATLANTA FED GDPNOW SURGES ABOVE 5% The Atlanta Fed\u2019s GDPNow estimate for Q3 growth jumped to 5.1% from 4.42%, driven largely by stronger consumer spending after today\u2019s retail sales data. Real consumption is now expected to contribute 2.83 percentage points, while private domestic final purchases ar",
+     "ts": "2026-09-16T17:28:37+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "records": {
+   "display": "Records",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Oil Above $100 Pushes U.S. Fuel Prices to New Records",
+     "ts": "2026-09-16T22:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "redemptions": {
+   "display": "Redemptions",
    "evidence": [
     {
      "feed": "Mint Markets",
-     "title": "Raymond shares slump 6% after strong run | Key support levels to watch",
-     "ts": "2026-09-16T06:44:33+00:00"
+     "title": "Turkish Funds With $7.5 Billion Assets Default on Redemptions",
+     "ts": "2026-09-16T19:29:46+00:00"
     }
    ],
    "feeds": [
     "Mint Markets"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "rec dabur india hul": {
-   "display": "REC Dabur India HUL",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Market prediction today: Gift Nifty up; Vaishali Parekh picks three buy or sell stocks \u2014 REC, Dabur India, HUL",
-     "ts": "2026-09-16T03:31:39+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "recently": {
-   "display": "Recently",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Recently listed Molbio Diagnostics share price falls 9%: Healthcare stock loses 18.5% in 2 days after blockbuster rally",
-     "ts": "2026-09-16T04:16:55+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "reduce": {
    "display": "Reduce",
@@ -3849,23 +3874,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "rentomojo ipo": {
-   "display": "Rentomojo IPO",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Rentomojo IPO listing tomorrow: GMP hints 27% listing pop | Expert view on share price ahead of NSE, BSE debut",
-     "ts": "2026-09-16T09:08:36+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "reported talks between sk": {
    "display": "REPORTED TALKS BETWEEN SK",
@@ -3881,7 +3890,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "republican": {
    "display": "Republican",
@@ -3897,6 +3906,22 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "score": 0.9681
+  },
+  "restore half": {
+   "display": "RESTORE HALF",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SAUDI PIPELINE COULD RESTORE HALF ITS CAPACITY WITHIN DAYS Saudi Arabia is working to restore roughly half the capacity of its East-West oil pipeline within days by bypassing a section damaged in last week\u2019s drone attacks. Saudi Aramco is reportedly targeting a full return to capacity in around six ",
+     "ts": "2026-09-16T16:03:44+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
   },
   "retail": {
@@ -3913,7 +3938,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "rich dad poor dad": {
    "display": "Rich Dad Poor Dad",
@@ -3929,23 +3954,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "ril hul nestle tata": {
-   "display": "RIL HUL Nestle Tata",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "RIL, HUL, Nestle, Tata Consumer, Hyundai shares on the rise today | Key things to know",
-     "ts": "2026-09-16T06:26:22+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "robert kiyosaki": {
    "display": "Robert Kiyosaki",
@@ -3967,7 +3976,23 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 1.8625
+   "score": 1.8031
+  },
+  "roof": {
+   "display": "Roof",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "AI Data Centers Are Driving Southeast Asia's LNG Demand Through the Roof",
+     "ts": "2026-09-16T20:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "russia extends diesel export": {
    "display": "Russia Extends Diesel Export",
@@ -3983,7 +4008,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "russia if europe": {
    "display": "Russia. If Europe",
@@ -3999,23 +4024,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "saatvik green energy": {
-   "display": "Saatvik Green Energy",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Saatvik Green Energy shares surge 10% after Rs 1,041 crore SECI order",
-     "ts": "2026-09-16T04:47:21+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "saudi arabia pivots": {
    "display": "Saudi Arabia Pivots",
@@ -4031,7 +4040,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
+  },
+  "saudi aramco": {
+   "display": "Saudi Aramco",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SAUDI PIPELINE COULD RESTORE HALF ITS CAPACITY WITHIN DAYS Saudi Arabia is working to restore roughly half the capacity of its East-West oil pipeline within days by bypassing a section damaged in last week\u2019s drone attacks. Saudi Aramco is reportedly targeting a full return to capacity in around six ",
+     "ts": "2026-09-16T16:03:44+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "saudi oil crisis": {
    "display": "Saudi Oil Crisis",
@@ -4047,23 +4072,23 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
-  "saudi pipeline outage hits": {
-   "display": "Saudi Pipeline Outage Hits",
+  "saudi pipeline": {
+   "display": "SAUDI PIPELINE",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "Saudi Pipeline Outage Hits an Oil Market Running Out of Buffers",
-     "ts": "2026-09-16T00:00:00+00:00"
+     "feed": "DeItaone",
+     "title": "SAUDI PIPELINE COULD RESTORE HALF ITS CAPACITY WITHIN DAYS Saudi Arabia is working to restore roughly half the capacity of its East-West oil pipeline within days by bypassing a section damaged in last week\u2019s drone attacks. Saudi Aramco is reportedly targeting a full return to capacity in around six ",
+     "ts": "2026-09-16T16:03:44+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "DeItaone"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "saudi pipeline shutdown": {
    "display": "Saudi Pipeline Shutdown",
@@ -4079,7 +4104,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
+  },
+  "save": {
+   "display": "Save",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Inside Putin\u2019s $135 Billion Arctic Gamble That Could Save His Ukraine War",
+     "ts": "2026-09-16T21:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "sbi hdfc life tcs": {
    "display": "SBI HDFC Life TCS",
@@ -4095,7 +4136,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "science": {
    "display": "Science",
@@ -4111,7 +4152,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "scrap hydrogen mandates": {
    "display": "Scrap Hydrogen Mandates",
@@ -4127,23 +4168,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "seci": {
-   "display": "SECI",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Saatvik Green Energy shares surge 10% after Rs 1,041 crore SECI order",
-     "ts": "2026-09-16T04:47:21+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "sell excess gas": {
    "display": "Sell Excess Gas",
@@ -4159,7 +4184,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "sensex nifty bank nifty": {
    "display": "Sensex Nifty Bank Nifty",
@@ -4175,23 +4200,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "sept bharat forge titagarh": {
-   "display": "Sept Bharat Forge Titagarh",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Buzzing stocks for Sept 16: Bharat Forge, Titagarh Rail, BHEL, Cochin Shipyard, Thermax, Blue Star, Allen Blenders, Tata Communications, Mazagon Dock",
-     "ts": "2026-09-16T01:38:18+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "sept triggers": {
    "display": "Sept Triggers",
@@ -4207,23 +4216,23 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
-  "share": {
-   "display": "Share",
+  "shale oil now makes": {
+   "display": "Shale Oil Now Makes",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "LCC Projects IPO listing tomorrow: GMP at  \u20b944; Share price prediction ahead of NSE, BSE debut",
-     "ts": "2026-09-16T08:35:53+00:00"
+     "feed": "OilPrice",
+     "title": "Shale Oil Now Makes Up 72% of Argentina's Crude Output, Data Shows",
+     "ts": "2026-09-16T21:00:00+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "OilPrice"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "short": {
    "display": "Short",
@@ -4239,7 +4248,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "short focused fund": {
    "display": "SHORT-FOCUSED FUND",
@@ -4255,6 +4264,22 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "score": 0.9681
+  },
+  "shorter dated us treasury": {
+   "display": "Shorter-dated US Treasury",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Shorter-dated US Treasury yields surge in anticipation of another Fed rate hike",
+     "ts": "2026-09-16T20:16:21+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
   },
   "signal another hike": {
@@ -4271,39 +4296,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "single digits": {
-   "display": "Single Digits",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Hormuz Shipping Traffic Remains Stuck in Single Digits",
-     "ts": "2026-09-16T07:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "sips": {
-   "display": "SIPs",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "UPI MDR explained for investors: How will new charges impact your mutual fund SIPs and stock investments?",
-     "ts": "2026-09-16T06:31:37+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "sk hynix no": {
    "display": "SK HYNIX INC NO",
@@ -4319,7 +4312,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "small cap": {
    "display": "Small-cap",
@@ -4355,23 +4348,7 @@
    ],
    "first_seen": "2026-09-11T14:23:41.632201+00:00",
    "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 2.8129
-  },
-  "smallcap": {
-   "display": "Smallcap",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Smallcap, midcap stocks give 85 multibaggers but pro investors are betting elsewhere",
-     "ts": "2026-09-16T04:04:17+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 2.7232
   },
   "some": {
    "display": "Some",
@@ -4393,7 +4370,7 @@
    ],
    "first_seen": "2026-09-14T09:48:33.902007+00:00",
    "last_seen": "2026-09-14T16:21:41.571735+00:00",
-   "score": 1.1847
+   "score": 1.1469
   },
   "spacex": {
    "display": "SpaceX",
@@ -4409,7 +4386,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "spot oil sales": {
    "display": "Spot Oil Sales",
@@ -4425,23 +4402,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
-  "ss retail ipo": {
-   "display": "SS Retail IPO",
+  "still rising": {
+   "display": "STILL RISING",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "SS Retail IPO opens today: GMP signals 31% listing gain. Here's all you need to know",
-     "ts": "2026-09-16T03:45:48+00:00"
+     "feed": "DeItaone",
+     "title": "WARSH: TOO MANY INF. CATEGORIES ARE STILL RISING MORE THAN 3% *WARSH: PREDOMINANT FOCUS OF FED IS ON PRICE STABILITY",
+     "ts": "2026-09-16T18:43:13+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "stock market highlights sensex": {
    "display": "Stock Market Highlights Sensex",
@@ -4457,39 +4434,44 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
-  "suzlon energy adani power": {
-   "display": "Suzlon Energy Adani Power",
+  "suggest infl trends passing": {
+   "display": "SUGGEST INFL TRENDS PASSING",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Suzlon Energy, Adani Power share prices fall: Check 1-week, 1-year and 5-year returns",
-     "ts": "2026-09-16T05:04:50+00:00"
+     "feed": "DeItaone",
+     "title": "WARSH: SEEN LITTLE INFO TO SUGGEST INFL TRENDS PASSING THE TEST",
+     "ts": "2026-09-16T18:53:11+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
-  "swaraj sethu all": {
-   "display": "Swaraj Sethu All",
+  "support timelier return": {
+   "display": "SUPPORT TIMELIER RETURN",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "ESDS Software: IPO doubled investors money, now company launches Swaraj Sethu - All about Unified DevSecOps Platform",
-     "ts": "2026-09-16T08:00:34+00:00"
+     "feed": "DeItaone",
+     "title": "FED: RATE HIKE WILL SUPPORT `TIMELIER' RETURN TO 2% INFLATION",
+     "ts": "2026-09-16T18:08:07+00:00"
+    },
+    {
+     "feed": "DeItaone",
+     "title": "FOMC RAISES RATES 25 BPS TO 3.75%-4%; VOTE 12-0 12 FOMC MEMBERS SEE RATES AT 4.1% BY END-2026 FED: HIKE WILL SUPPORT TIMELIER RETURN TO 2% INFLATION 4 MEMBERS SEE RATES AT 4.4% BY DEC, 2 SEE RATES AT 3.9% MEDIAN FED FUNDS RATE PROJECTION 4.1% AT END-2027 MEDIAN FED FUNDS RATE PROJECTION 3.9% AT END-",
+     "ts": "2026-09-16T18:13:13+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 2.0
   },
   "sweeping russia iran sanctions bill": {
    "display": "Sweeping Russia-Iran Sanctions Bill",
@@ -4505,23 +4487,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
-  "target": {
-   "display": "Target",
+  "target range": {
+   "display": "TARGET RANGE",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "ITC shares edge higher after rise in select cigarette brands, experts see 10% rally in short term | Target, outlook",
-     "ts": "2026-09-16T05:56:12+00:00"
+     "feed": "DeItaone",
+     "title": "FED RAISES RATES 25 BPS TO 3.75%-4.00% TARGET RANGE",
+     "ts": "2026-09-16T18:08:04+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "tata sons": {
    "display": "Tata Sons",
@@ -4542,7 +4524,7 @@
    ],
    "first_seen": "2026-09-15T14:57:57.867431+00:00",
    "last_seen": "2026-09-15T14:57:57.867431+00:00",
-   "score": 1.5191
+   "score": 1.4707
   },
   "tata sons ipo": {
    "display": "Tata Sons IPO",
@@ -4563,7 +4545,7 @@
    ],
    "first_seen": "2026-09-15T09:23:18.514681+00:00",
    "last_seen": "2026-09-15T09:23:18.514681+00:00",
-   "score": 1.4396
+   "score": 1.3937
   },
   "tehran": {
    "display": "Tehran",
@@ -4589,23 +4571,7 @@
    ],
    "first_seen": "2026-09-14T21:46:34.176775+00:00",
    "last_seen": "2026-09-15T22:52:51.973421+00:00",
-   "score": 2.1204
-  },
-  "telangana": {
-   "display": "Telangana",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Allied Blenders and Distillers shares in focus after Telangana grants malt spirit manufacturing licence",
-     "ts": "2026-09-16T03:57:51+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 2.0528
   },
   "tesla": {
    "display": "Tesla",
@@ -4621,7 +4587,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
+  },
+  "test": {
+   "display": "TEST",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH: SEEN LITTLE INFO TO SUGGEST INFL TRENDS PASSING THE TEST",
+     "ts": "2026-09-16T18:53:11+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "texas bound tankers": {
    "display": "Texas-Bound Tankers",
@@ -4637,7 +4619,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
+  },
+  "than warsh predominant focus": {
+   "display": "THAN WARSH PREDOMINANT FOCUS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH: TOO MANY INF. CATEGORIES ARE STILL RISING MORE THAN 3% *WARSH: PREDOMINANT FOCUS OF FED IS ON PRICE STABILITY",
+     "ts": "2026-09-16T18:43:13+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "thu kospi taiwan index": {
    "display": "Thu Kospi Taiwan Index",
@@ -4653,23 +4651,23 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
-  "today s trading": {
-   "display": "Today's Trading",
+  "too long": {
+   "display": "TOO LONG",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "JSW Steel Share Price Live Updates: JSW Steel  Gains Ground in Today's Trading",
-     "ts": "2026-09-16T04:34:17+00:00"
+     "feed": "DeItaone",
+     "title": "WARSH: INFLATION IS TOO HIGH AND HAS BEEN FOR TOO LONG",
+     "ts": "2026-09-16T18:38:23+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "top lng buyer": {
    "display": "Top LNG Buyer",
@@ -4685,23 +4683,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
-  },
-  "trade deficit deepens": {
-   "display": "Trade Deficit Deepens",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Japan\u2019s Oil Import Bill Soars 59% as Trade Deficit Deepens",
-     "ts": "2026-09-16T08:15:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9261
   },
   "traders": {
    "display": "Traders",
@@ -4717,23 +4699,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
-  },
-  "trai": {
-   "display": "TRAI",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Vodafone Idea share price extends losses after TRAI order | Details here",
-     "ts": "2026-09-16T04:48:06+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 0.9681
   },
   "transport": {
    "display": "Transport",
@@ -4749,7 +4715,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "trump says he": {
    "display": "TRUMP SAYS HE",
@@ -4770,23 +4736,7 @@
    ],
    "first_seen": "2026-09-14T16:21:41.571735+00:00",
    "last_seen": "2026-09-14T16:21:41.571735+00:00",
-   "score": 1.2219
-  },
-  "trust smallcap fund": {
-   "display": "Trust Smallcap Fund",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Gorilla investing and 34% return: How Mihir Vora made Trust Smallcap Fund top performer",
-     "ts": "2026-09-16T03:44:20+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "score": 1.1829
   },
   "ttf gas hits": {
    "display": "TTF Gas Hits",
@@ -4802,7 +4752,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "tue kospi taiwan index": {
    "display": "Tue Kospi Taiwan Index",
@@ -4823,7 +4773,7 @@
    ],
    "first_seen": "2026-09-14T16:21:41.571735+00:00",
    "last_seen": "2026-09-14T21:46:34.176775+00:00",
-   "score": 1.2548
+   "score": 1.2148
   },
   "tue sept triggers": {
    "display": "Tue Sept Triggers",
@@ -4844,7 +4794,23 @@
    ],
    "first_seen": "2026-09-14T16:21:41.571735+00:00",
    "last_seen": "2026-09-14T21:46:34.176775+00:00",
-   "score": 1.2548
+   "score": 1.2148
+  },
+  "turkish funds": {
+   "display": "Turkish Funds",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Turkish Funds With $7.5 Billion Assets Default on Redemptions",
+     "ts": "2026-09-16T19:29:46+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "u s contracted": {
    "display": "U.S.-contracted",
@@ -4860,7 +4826,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "u s investigates suspected cyber": {
    "display": "U.S. Investigates Suspected Cyber",
@@ -4876,7 +4842,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "u s markets am et": {
    "display": "U.S. MARKETS AM ET",
@@ -4892,7 +4858,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "u s mortgage pain deepens": {
    "display": "U.S. MORTGAGE PAIN DEEPENS",
@@ -4908,7 +4874,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "u s oil inventories edge": {
    "display": "U.S. Oil Inventories Edge",
@@ -4924,23 +4890,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
-  "unified devsecops platform": {
-   "display": "Unified DevSecOps Platform",
+  "ukraine war": {
+   "display": "Ukraine War",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "ESDS Software: IPO doubled investors money, now company launches Swaraj Sethu - All about Unified DevSecOps Platform",
-     "ts": "2026-09-16T08:00:34+00:00"
+     "feed": "OilPrice",
+     "title": "Inside Putin\u2019s $135 Billion Arctic Gamble That Could Save His Ukraine War",
+     "ts": "2026-09-16T21:00:00+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "OilPrice"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "upi mdr": {
    "display": "UPI MDR",
@@ -4956,7 +4922,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "us aug retail sales": {
    "display": "US AUG. RETAIL SALES",
@@ -4972,7 +4938,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "us fed rate": {
    "display": "US Fed Rate",
@@ -4988,23 +4954,23 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
-  "us fed reserve fomc": {
-   "display": "US Fed Reserve FOMC",
+  "us fed rate hike": {
+   "display": "US Fed Rate Hike",
    "evidence": [
     {
      "feed": "Mint Markets",
-     "title": "LIVE: US Fed Reserve FOMC Meeting Rate Decision Outcome Today: Time, schedule, LIVE streaming, Kevin Warsh announcement",
-     "ts": "2026-09-16T04:34:31+00:00"
+     "title": "US Fed Rate Hike Impact on American Treasuries: FOMC outcome effect decoded",
+     "ts": "2026-09-16T19:36:48+00:00"
     }
    ],
    "feeds": [
     "Mint Markets"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "us federal reserve": {
    "display": "US Federal Reserve",
@@ -5020,39 +4986,39 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "score": 0.9681
+  },
+  "us stock market highlights": {
+   "display": "US Stock Market Highlights",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Fed Meeting Live | Dow Jones Live| US Stock Market Highlights: Dow ends 650 pts lower after Fed rate hike, more rate tightening seen",
+     "ts": "2026-09-16T12:18:05+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
   },
-  "va tech": {
-   "display": "VA Tech",
+  "us treasuries": {
+   "display": "US Treasuries",
    "evidence": [
     {
      "feed": "Mint Markets",
-     "title": "Water distribution stocks in trouble? Concord Enviro, EMS to VA Tech under pressure- reason behind sell-off, outlook",
-     "ts": "2026-09-16T08:46:29+00:00"
+     "title": "Foreign holdings of US Treasuries in July down for 2nd straight month, data shows",
+     "ts": "2026-09-16T22:06:06+00:00"
     }
    ],
    "feeds": [
     "Mint Markets"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "vaishali parekh": {
-   "display": "Vaishali Parekh",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Market prediction today: Gift Nifty up; Vaishali Parekh picks three buy or sell stocks \u2014 REC, Dabur India, HUL",
-     "ts": "2026-09-16T03:31:39+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "valiance engineers": {
    "display": "Valiance Engineers",
@@ -5068,7 +5034,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "varshney": {
    "display": "Varshney",
@@ -5084,7 +5050,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "vedanta": {
    "display": "Vedanta Group",
@@ -5105,103 +5071,23 @@
    ],
    "first_seen": "2026-09-15T09:23:18.514681+00:00",
    "last_seen": "2026-09-15T14:57:57.867431+00:00",
-   "score": 1.4794
+   "score": 1.4322
   },
-  "vedanta iron steel anil": {
-   "display": "Vedanta Iron Steel Anil",
+  "vote fomc members see": {
+   "display": "VOTE FOMC MEMBERS SEE",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Vedanta Power to Vedanta Iron & Steel - Anil Agarwal-owned group stocks extend losses for second session. Here's why",
-     "ts": "2026-09-16T06:42:31+00:00"
+     "feed": "DeItaone",
+     "title": "FOMC RAISES RATES 25 BPS TO 3.75%-4%; VOTE 12-0 12 FOMC MEMBERS SEE RATES AT 4.1% BY END-2026 FED: HIKE WILL SUPPORT TIMELIER RETURN TO 2% INFLATION 4 MEMBERS SEE RATES AT 4.4% BY DEC, 2 SEE RATES AT 3.9% MEDIAN FED FUNDS RATE PROJECTION 4.1% AT END-2027 MEDIAN FED FUNDS RATE PROJECTION 3.9% AT END-",
+     "ts": "2026-09-16T18:13:13+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "vedanta power": {
-   "display": "Vedanta Power",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Vedanta Power to Vedanta Iron & Steel - Anil Agarwal-owned group stocks extend losses for second session. Here's why",
-     "ts": "2026-09-16T06:42:31+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "veegaland developers ipo": {
-   "display": "Veegaland Developers IPO",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Veegaland Developers IPO allotment likely today: GMP signals 7% listing gain. Here\u2019s how to check status",
-     "ts": "2026-09-16T04:16:57+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "vodafone idea": {
-   "display": "Vodafone Idea",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Vodafone Idea share price extends losses after TRAI order | Details here",
-     "ts": "2026-09-16T04:48:06+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "volume shocker mfs": {
-   "display": "Volume Shocker MFs",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Volume Shocker: MFs added 1 crore+ shares to 8 stocks in August '26; rally up to 30%",
-     "ts": "2026-09-16T08:32:07+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
-  },
-  "vwap": {
-   "display": "VWAP",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "ONGC among 3 stocks closing above VWAP",
-     "ts": "2026-09-16T04:04:05+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 0.9059
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "vyapar mahotsav": {
    "display": "Vyapar Mahotsav",
@@ -5217,7 +5103,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 0.9566
+   "score": 0.9261
   },
   "wall street european": {
    "display": "Wall Street European",
@@ -5233,28 +5119,135 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
-  "warsh": {
-   "display": "Warsh",
+  "wall street expects": {
+   "display": "WALL STREET EXPECTS",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "US Fed\u2019s dual challenge: Will rising inflation and soaring bond yields force Warsh into first rate hike in 3 years?",
-     "ts": "2026-09-16T05:17:05+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "US Market: Fed\u2019s Warsh faces tough rate call as inflation remains sticky",
-     "ts": "2026-09-16T06:44:12+00:00"
+     "feed": "DeItaone",
+     "title": "FED: WHAT WALL STREET EXPECTS FROM WARSH TODAY Major banks are focused on how Kevin Warsh frames the path ahead if the Fed hikes today: Barclays: Expects Warsh to stress solid growth, near-full employment and inflation still too high, broadly maintaining his previous hawkish message. BMO: Sees Warsh",
+     "ts": "2026-09-16T16:13:24+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-09-16T09:16:06.803638+00:00",
-   "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 1.8118
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "warsh declines": {
+   "display": "WARSH DECLINES",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH DECLINES TO COMMENT ON ANY DISCUSSION WITH PRESIDENT",
+     "ts": "2026-09-16T18:48:50+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "warsh explains": {
+   "display": "WARSH EXPLAINS",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH EXPLAINS WHY THE FED TURNED TO A RATE HIKE Fed Chair Kevin Warsh says three major developments changed the Fed\u2019s outlook since July: a stronger economy and labor market, inflation failing to improve sufficiently, and a changed assessment of geopolitical risks. Warsh said recent inflation data ",
+     "ts": "2026-09-16T18:53:12+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "warsh inflation": {
+   "display": "WARSH INFLATION",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH: INFLATION IS TOO HIGH AND HAS BEEN FOR TOO LONG",
+     "ts": "2026-09-16T18:38:23+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "warsh not": {
+   "display": "WARSH NOT",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH: NOT IN THE FORWARD GUIDANCE BUSINESS",
+     "ts": "2026-09-16T18:48:48+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "warsh not going": {
+   "display": "WARSH NOT GOING",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH: NOT GOING TO PREJUDGE ANY FUTURE DECISIONS",
+     "ts": "2026-09-16T18:48:49+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "warsh seen little info": {
+   "display": "WARSH SEEN LITTLE INFO",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH: SEEN LITTLE INFO TO SUGGEST INFL TRENDS PASSING THE TEST",
+     "ts": "2026-09-16T18:53:11+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
+  },
+  "warsh too many inf": {
+   "display": "WARSH TOO MANY INF.",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "WARSH: TOO MANY INF. CATEGORIES ARE STILL RISING MORE THAN 3% *WARSH: PREDOMINANT FOCUS OF FED IS ON PRICE STABILITY",
+     "ts": "2026-09-16T18:43:13+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
+   "score": 1.0
   },
   "wed kospi taiwan index": {
    "display": "Wed Kospi Taiwan Index",
@@ -5275,7 +5268,7 @@
    ],
    "first_seen": "2026-09-15T14:57:57.867431+00:00",
    "last_seen": "2026-09-15T19:40:45.973799+00:00",
-   "score": 1.5543
+   "score": 1.5048
   },
   "west asia": {
    "display": "West Asia",
@@ -5306,7 +5299,7 @@
    ],
    "first_seen": "2026-09-10T14:23:41.383767+00:00",
    "last_seen": "2026-09-14T09:48:33.902007+00:00",
-   "score": 1.6694
+   "score": 1.6162
   },
   "wright getting": {
    "display": "WRIGHT GETTING",
@@ -5322,7 +5315,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "wright mln barrels flowed": {
    "display": "WRIGHT MLN BARRELS FLOWED",
@@ -5338,6 +5331,22 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
+   "score": 0.9681
+  },
+  "x and spacexai": {
+   "display": "X and SpaceXAI",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "OPENAI CHALLENGES SECRET APPLE-MUSK AGREEMENT A federal judge ordered X and SpaceXAI to disclose their agreement with Apple after OpenAI sought access to the terms in Musk\u2019s antitrust case. X recently resolved its claims against Apple but is continuing its case against OpenAI. OpenAI argues the undi",
+     "ts": "2026-09-16T15:58:07+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-16T22:54:12.926833+00:00",
+   "last_seen": "2026-09-16T22:54:12.926833+00:00",
    "score": 1.0
   },
   "yardeni": {
@@ -5354,7 +5363,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   },
   "yardeni slashes s&p target": {
    "display": "YARDENI SLASHES S&P TARGET",
@@ -5370,7 +5379,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T19:32:18.066195+00:00",
-   "score": 1.0
+   "score": 0.9681
   }
  },
  "members": {
@@ -5408,7 +5417,7 @@
    "last_mention": "2026-09-16T05:45:00+00:00",
    "name": "CHINASTARS",
    "norm": "china s",
-   "score": 25.6193,
+   "score": 24.8026,
    "status": "active",
    "via": "search"
   },
@@ -5446,7 +5455,7 @@
    "last_mention": "2026-09-16T10:23:17+00:00",
    "name": "GLOBAL SECURITY EXPERTS INC",
    "norm": "experts",
-   "score": 6.4933,
+   "score": 6.2863,
    "status": "active",
    "via": "search"
   },
@@ -5484,7 +5493,7 @@
    "last_mention": "2026-09-16T05:04:50+00:00",
    "name": "ADANI ENTERPRISES LTD.",
    "norm": "adani",
-   "score": 5.603,
+   "score": 5.4244,
    "status": "active",
    "via": "search"
   },
@@ -5522,7 +5531,7 @@
    "last_mention": "2026-09-16T12:58:09+00:00",
    "name": "ATHER ENERGY LIMITED",
    "norm": "ather energy",
-   "score": 24.8267,
+   "score": 24.0353,
    "status": "active",
    "via": "search"
   },
@@ -5531,6 +5540,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED: WHAT WALL STREET EXPECTS FROM WARSH TODAY Major banks are focused on how Kevin Warsh frames the path ahead if the Fed hikes today: Barclays: Expects Warsh to stress solid growth, near-full employment and inflation still too high, broadly maintaining his previous hawkish message. BMO: Sees Warsh",
+     "ts": "2026-09-16T16:13:24+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "US Fed Rate Hike Impact on American Treasuries: FOMC outcome effect decoded",
+     "ts": "2026-09-16T19:36:48+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "NSE IPO: Anchor book gets  \u20b96,745 crore from 150-plus investors; LIC, Norges Bank, ADIA among key buyers",
@@ -5545,22 +5564,12 @@
      "feed": "Mint Markets",
      "title": "US Fed rate hike impact on Indian stock market - Sensex, Nifty, Bank Nifty, Nifty IT",
      "ts": "2026-09-16T18:44:30+00:00"
-    },
-    {
-     "feed": "MarketWatch Top",
-     "title": "I have $125,000 in credit-card debt. Will $17,000 a month in income, including disability, affect my bankruptcy?",
-     "ts": "2026-09-16T19:15:00+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Sensex today | Stock Market Highlights: Sensex gains 333 points, Nifty rises 99 points; FMCG, PSU banks outperform",
-     "ts": "2026-09-16T10:42:35+00:00"
     }
    ],
-   "last_mention": "2026-09-16T15:10:11+00:00",
+   "last_mention": "2026-09-16T16:13:24+00:00",
    "name": "Bank of America Corporation",
    "norm": "bank of america",
-   "score": 51.7637,
+   "score": 52.1136,
    "status": "active",
    "via": "search"
   },
@@ -5569,6 +5578,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Fed rate hike fails to calm troubled markets as Dow falls 600 points. Expect more sharp swings in stocks and bonds.",
+     "ts": "2026-09-16T21:40:00+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "YARDENI SLASHES S&P 500 TARGET Wall Street bull Ed Yardeni cut his year-end S&P 500 target to 7,900 from 8,400, citing rising bond yields and increased downturn risks over the next 3\u20136 months. He lowered his expected forward P/E multiple to 18.6 from 19.8. Yardeni still sees 10,000 by 2030, but warn",
@@ -5588,17 +5602,12 @@
      "feed": "MarketWatch Top",
      "title": "What history says about longer-term bond yields after an initial Fed hike",
      "ts": "2026-09-16T13:30:00+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Stocks, bonds hold ground before Fed; oil slips: Markets wrap",
-     "ts": "2026-09-16T03:52:48+00:00"
     }
    ],
-   "last_mention": "2026-09-16T13:03:35+00:00",
+   "last_mention": "2026-09-16T21:40:00+00:00",
    "name": "PIMCO Active Bond Exchange-Trad",
    "norm": "bond",
-   "score": 43.7993,
+   "score": 43.4031,
    "status": "active",
    "via": "search"
   },
@@ -5607,6 +5616,11 @@
    "amber_z": 2.0,
    "cls": "COMMODITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SAUDI PIPELINE COULD RESTORE HALF ITS CAPACITY WITHIN DAYS Saudi Arabia is working to restore roughly half the capacity of its East-West oil pipeline within days by bypassing a section damaged in last week\u2019s drone attacks. Saudi Aramco is reportedly targeting a full return to capacity in around six ",
+     "ts": "2026-09-16T16:03:44+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "U.S. MORTGAGE PAIN DEEPENS AS RATES NEAR 7% U.S. mortgage applications fell 4.1% last week to their lowest since May 2025, with refinancing applications plunging 8.8%. The 30-year conforming mortgage rate climbed to 6.97%, while jumbo rates jumped to 7.03%. Market angle: with market rates still risi",
@@ -5626,17 +5640,12 @@
      "feed": "ET Markets",
      "title": "Manika Plastech IPO Day 3: GMP at 7%, subscription reaches 8.3 times. Key details",
      "ts": "2026-09-16T03:47:59+00:00"
-    },
-    {
-     "feed": "DeItaone",
-     "title": "TRUMP BLASTS SUPREME COURT OVER MAJOR RULINGS President Trump sharply criticized the U.S. Supreme Court, accusing it of repeatedly delivering decisions harmful to Republicans and the country. Trump attacked rulings involving mail-in voting, tariffs and birthright citizenship, while praising Justices",
-     "ts": "2026-09-15T13:38:22+00:00"
     }
    ],
-   "last_mention": "2026-09-16T11:48:33+00:00",
+   "last_mention": "2026-09-16T16:03:44+00:00",
    "name": "Brent Crude Oil Last Day Financ",
    "norm": "last",
-   "score": 8.520800000000001,
+   "score": 9.2492,
    "status": "active",
    "via": "search"
   },
@@ -5674,7 +5683,7 @@
    "last_mention": "2026-09-16T03:47:59+00:00",
    "name": "CARTRADE TECH LIMITED",
    "norm": "cartrade tech",
-   "score": 31.3969,
+   "score": 30.396,
    "status": "active",
    "via": "search"
   },
@@ -5712,7 +5721,7 @@
    "last_mention": "2026-09-16T09:14:28+00:00",
    "name": "Check Point Software Technologi",
    "norm": "check",
-   "score": 37.1102,
+   "score": 35.9272,
    "status": "active",
    "via": "search"
   },
@@ -5721,6 +5730,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "US Fed rate hike impact on Indian economy: FOMC outcome effect decoded",
+     "ts": "2026-09-16T19:43:18+00:00"
+    },
     {
      "feed": "BusinessLine Mkts",
      "title": "India\u2019s soybean imports may touch record high 1 mt in the current season on fall in domestic supply",
@@ -5740,17 +5754,12 @@
      "feed": "Mint Markets",
      "title": "Dabur India shares: From Reduce to Add - What led to upgrade from Kotak Institutional Equities",
      "ts": "2026-09-16T11:47:00+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Empower India to acquire Valiance Engineers in all-equity transaction",
-     "ts": "2026-09-16T11:59:11+00:00"
     }
    ],
-   "last_mention": "2026-09-16T16:09:48+00:00",
+   "last_mention": "2026-09-16T19:43:18+00:00",
    "name": "COAL INDIA LTD",
    "norm": "coal india",
-   "score": 63.7687,
+   "score": 62.7359,
    "status": "active",
    "via": "search"
   },
@@ -5788,7 +5797,7 @@
    "last_mention": "2026-09-16T18:00:00+00:00",
    "name": "Coinbase Global, Inc.",
    "norm": "global",
-   "score": 54.6049,
+   "score": 52.8642,
    "status": "active",
    "via": "search"
   },
@@ -5826,7 +5835,7 @@
    "last_mention": "2026-09-11T20:30:00+00:00",
    "name": "Dell Technologies Inc.",
    "norm": "dell",
-   "score": 0.5596,
+   "score": 0.5418,
    "status": "active",
    "via": "search"
   },
@@ -5854,7 +5863,7 @@
    "last_mention": "2026-08-26T06:40:49+00:00",
    "name": "Dick's Sporting Goods Inc",
    "norm": "dick",
-   "score": 0.0381,
+   "score": 0.0369,
    "status": "active",
    "via": "search"
   },
@@ -5863,6 +5872,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "US Fed rate hike impact on Indian economy: FOMC outcome effect decoded",
+     "ts": "2026-09-16T19:43:18+00:00"
+    },
     {
      "feed": "BusinessLine Mkts",
      "title": "India\u2019s soybean imports may touch record high 1 mt in the current season on fall in domestic supply",
@@ -5882,17 +5896,12 @@
      "feed": "Mint Markets",
      "title": "Dabur India shares: From Reduce to Add - What led to upgrade from Kotak Institutional Equities",
      "ts": "2026-09-16T11:47:00+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Empower India to acquire Valiance Engineers in all-equity transaction",
-     "ts": "2026-09-16T11:59:11+00:00"
     }
    ],
-   "last_mention": "2026-09-16T16:09:48+00:00",
+   "last_mention": "2026-09-16T19:43:18+00:00",
    "name": "HAVELLS INDIA LIMITED",
    "norm": "havells india",
-   "score": 62.9764,
+   "score": 61.9688,
    "status": "active",
    "via": "search"
   },
@@ -5901,6 +5910,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED: WHAT WALL STREET EXPECTS FROM WARSH TODAY Major banks are focused on how Kevin Warsh frames the path ahead if the Fed hikes today: Barclays: Expects Warsh to stress solid growth, near-full employment and inflation still too high, broadly maintaining his previous hawkish message. BMO: Sees Warsh",
+     "ts": "2026-09-16T16:13:24+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "NSE IPO: Anchor book gets  \u20b96,745 crore from 150-plus investors; LIC, Norges Bank, ADIA among key buyers",
@@ -5920,17 +5934,12 @@
      "feed": "MarketWatch Top",
      "title": "I have $125,000 in credit-card debt. Will $17,000 a month in income, including disability, affect my bankruptcy?",
      "ts": "2026-09-16T19:15:00+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Sensex today | Stock Market Highlights: Sensex gains 333 points, Nifty rises 99 points; FMCG, PSU banks outperform",
-     "ts": "2026-09-16T10:42:35+00:00"
     }
    ],
-   "last_mention": "2026-09-16T15:10:11+00:00",
+   "last_mention": "2026-09-16T16:13:24+00:00",
    "name": "HDFC Bank Limited",
    "norm": "hdfc bank",
-   "score": 46.5899,
+   "score": 46.1047,
    "status": "active",
    "via": "search"
   },
@@ -5968,7 +5977,7 @@
    "last_mention": "2026-09-15T17:59:14+00:00",
    "name": "ICICI Lombard General Insuranc",
    "norm": "icici lombard",
-   "score": 3.6018,
+   "score": 3.487,
    "status": "active",
    "via": "search"
   },
@@ -5978,6 +5987,11 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "DeItaone",
+     "title": "FED: WHAT WALL STREET EXPECTS FROM WARSH TODAY Major banks are focused on how Kevin Warsh frames the path ahead if the Fed hikes today: Barclays: Expects Warsh to stress solid growth, near-full employment and inflation still too high, broadly maintaining his previous hawkish message. BMO: Sees Warsh",
+     "ts": "2026-09-16T16:13:24+00:00"
+    },
+    {
      "feed": "Mint Markets",
      "title": "NSE IPO: Anchor book gets  \u20b96,745 crore from 150-plus investors; LIC, Norges Bank, ADIA among key buyers",
      "ts": "2026-09-16T15:10:11+00:00"
@@ -5996,17 +6010,12 @@
      "feed": "MarketWatch Top",
      "title": "I have $125,000 in credit-card debt. Will $17,000 a month in income, including disability, affect my bankruptcy?",
      "ts": "2026-09-16T19:15:00+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Sensex today | Stock Market Highlights: Sensex gains 333 points, Nifty rises 99 points; FMCG, PSU banks outperform",
-     "ts": "2026-09-16T10:42:35+00:00"
     }
    ],
-   "last_mention": "2026-09-16T15:10:11+00:00",
+   "last_mention": "2026-09-16T16:13:24+00:00",
    "name": "IDBI BANK LIMITED",
    "norm": "idbi bank",
-   "score": 42.9657,
+   "score": 42.596,
    "status": "active",
    "via": "search"
   },
@@ -6016,6 +6025,16 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "DeItaone",
+     "title": "FED: WHAT WALL STREET EXPECTS FROM WARSH TODAY Major banks are focused on how Kevin Warsh frames the path ahead if the Fed hikes today: Barclays: Expects Warsh to stress solid growth, near-full employment and inflation still too high, broadly maintaining his previous hawkish message. BMO: Sees Warsh",
+     "ts": "2026-09-16T16:13:24+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "US Fed rate hike impact on Indian economy: FOMC outcome effect decoded",
+     "ts": "2026-09-16T19:43:18+00:00"
+    },
+    {
      "feed": "Mint Markets",
      "title": "NSE IPO: Anchor book gets  \u20b96,745 crore from 150-plus investors; LIC, Norges Bank, ADIA among key buyers",
      "ts": "2026-09-16T15:10:11+00:00"
@@ -6029,22 +6048,12 @@
      "feed": "Mint Markets",
      "title": "US Fed rate hike impact on Indian stock market - Sensex, Nifty, Bank Nifty, Nifty IT",
      "ts": "2026-09-16T18:44:30+00:00"
-    },
-    {
-     "feed": "MarketWatch Top",
-     "title": "I have $125,000 in credit-card debt. Will $17,000 a month in income, including disability, affect my bankruptcy?",
-     "ts": "2026-09-16T19:15:00+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Sensex today | Stock Market Highlights: Sensex gains 333 points, Nifty rises 99 points; FMCG, PSU banks outperform",
-     "ts": "2026-09-16T10:42:35+00:00"
     }
    ],
-   "last_mention": "2026-09-16T15:10:11+00:00",
+   "last_mention": "2026-09-16T16:13:24+00:00",
    "name": "INDIAN BANK",
    "norm": "indian bank",
-   "score": 64.549,
+   "score": 64.4913,
    "status": "active",
    "via": "search"
   },
@@ -6054,6 +6063,11 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "DeItaone",
+     "title": "FED: WHAT WALL STREET EXPECTS FROM WARSH TODAY Major banks are focused on how Kevin Warsh frames the path ahead if the Fed hikes today: Barclays: Expects Warsh to stress solid growth, near-full employment and inflation still too high, broadly maintaining his previous hawkish message. BMO: Sees Warsh",
+     "ts": "2026-09-16T16:13:24+00:00"
+    },
+    {
      "feed": "Mint Markets",
      "title": "NSE IPO: Anchor book gets  \u20b96,745 crore from 150-plus investors; LIC, Norges Bank, ADIA among key buyers",
      "ts": "2026-09-16T15:10:11+00:00"
@@ -6072,17 +6086,12 @@
      "feed": "MarketWatch Top",
      "title": "I have $125,000 in credit-card debt. Will $17,000 a month in income, including disability, affect my bankruptcy?",
      "ts": "2026-09-16T19:15:00+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Sensex today | Stock Market Highlights: Sensex gains 333 points, Nifty rises 99 points; FMCG, PSU banks outperform",
-     "ts": "2026-09-16T10:42:35+00:00"
     }
    ],
-   "last_mention": "2026-09-16T15:10:11+00:00",
+   "last_mention": "2026-09-16T16:13:24+00:00",
    "name": "INDUSIND BANK LTD.",
    "norm": "indusind bank",
-   "score": 42.9657,
+   "score": 42.596,
    "status": "active",
    "via": "search"
   },
@@ -6091,6 +6100,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "US Fed rate hike impact on Indian economy: FOMC outcome effect decoded",
+     "ts": "2026-09-16T19:43:18+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Market Trading Guide: PVR Inox, Radico Khaitan among 5 stock recommendations for Thursday",
@@ -6110,17 +6124,12 @@
      "feed": "Mint Markets",
      "title": "Expert view: What a booming IPO market means for Indian investors",
      "ts": "2026-09-16T11:22:21+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Dabur India shares: From Reduce to Add - What led to upgrade from Kotak Institutional Equities",
-     "ts": "2026-09-16T11:47:00+00:00"
     }
    ],
-   "last_mention": "2026-09-16T15:08:03+00:00",
+   "last_mention": "2026-09-16T19:43:18+00:00",
    "name": "INOX INDIA LIMITED",
    "norm": "inox india",
-   "score": 65.1471,
+   "score": 64.0703,
    "status": "active",
    "via": "search"
   },
@@ -6158,7 +6167,7 @@
    "last_mention": "2026-09-16T04:36:28+00:00",
    "name": "Jefferies Financial Group Inc.",
    "norm": "jefferies",
-   "score": 7.4787,
+   "score": 7.2403,
    "status": "active",
    "via": "search"
   },
@@ -6196,7 +6205,7 @@
    "last_mention": "2026-09-16T09:09:55+00:00",
    "name": "Jio Financial Services Limited",
    "norm": "jio financial services",
-   "score": 9.4656,
+   "score": 9.1639,
    "status": "active",
    "via": "search"
   },
@@ -6234,7 +6243,7 @@
    "last_mention": "2026-09-16T13:03:00+00:00",
    "name": "JUST DIAL LTD.",
    "norm": "just dial",
-   "score": 8.9813,
+   "score": 8.695,
    "status": "active",
    "via": "search"
   },
@@ -6243,6 +6252,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED: WHAT WALL STREET EXPECTS FROM WARSH TODAY Major banks are focused on how Kevin Warsh frames the path ahead if the Fed hikes today: Barclays: Expects Warsh to stress solid growth, near-full employment and inflation still too high, broadly maintaining his previous hawkish message. BMO: Sees Warsh",
+     "ts": "2026-09-16T16:13:24+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "NSE IPO: Anchor book gets  \u20b96,745 crore from 150-plus investors; LIC, Norges Bank, ADIA among key buyers",
@@ -6262,17 +6276,12 @@
      "feed": "MarketWatch Top",
      "title": "I have $125,000 in credit-card debt. Will $17,000 a month in income, including disability, affect my bankruptcy?",
      "ts": "2026-09-16T19:15:00+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Sensex today | Stock Market Highlights: Sensex gains 333 points, Nifty rises 99 points; FMCG, PSU banks outperform",
-     "ts": "2026-09-16T10:42:35+00:00"
     }
    ],
-   "last_mention": "2026-09-16T15:10:11+00:00",
+   "last_mention": "2026-09-16T16:13:24+00:00",
    "name": "KARUR VYSYA BANK LTD",
    "norm": "karur vysya bank",
-   "score": 42.9657,
+   "score": 42.596,
    "status": "active",
    "via": "search"
   },
@@ -6310,7 +6319,7 @@
    "last_mention": "2026-09-15T01:26:27+00:00",
    "name": "LENSKART SOLUTIONS LTD",
    "norm": "lenskart",
-   "score": 1.0003,
+   "score": 0.9684,
    "status": "active",
    "via": "search"
   },
@@ -6319,6 +6328,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "FED: RATE HIKE WILL SUPPORT `TIMELIER' RETURN TO 2% INFLATION",
+     "ts": "2026-09-16T18:08:07+00:00"
+    },
+    {
+     "feed": "DeItaone",
+     "title": "FOMC RAISES RATES 25 BPS TO 3.75%-4%; VOTE 12-0 12 FOMC MEMBERS SEE RATES AT 4.1% BY END-2026 FED: HIKE WILL SUPPORT TIMELIER RETURN TO 2% INFLATION 4 MEMBERS SEE RATES AT 4.4% BY DEC, 2 SEE RATES AT 3.9% MEDIAN FED FUNDS RATE PROJECTION 4.1% AT END-2027 MEDIAN FED FUNDS RATE PROJECTION 3.9% AT END-",
+     "ts": "2026-09-16T18:13:13+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "A 25 bps hike: US Federal Reserve raises interest rates for first time since 2023",
@@ -6333,22 +6352,12 @@
      "feed": "BusinessLine Mkts",
      "title": "Hero Motors IPO Day 1: Issue subscribed 1.18 times so far",
      "ts": "2026-09-16T12:33:10+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Varshney re-appointed as SEBI whole-time member till 2029",
-     "ts": "2026-09-16T12:36:47+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Jindal Supreme IPO subscribed 7.53 times on Day 1 led by retail investors",
-     "ts": "2026-09-16T13:00:39+00:00"
     }
    ],
-   "last_mention": "2026-09-16T18:01:38+00:00",
+   "last_mention": "2026-09-16T18:08:07+00:00",
    "name": "Life Time Group Holdings, Inc.",
    "norm": "time",
-   "score": 24.5414,
+   "score": 25.7591,
    "status": "active",
    "via": "search"
   },
@@ -6386,7 +6395,7 @@
    "last_mention": "2026-09-16T18:08:47+00:00",
    "name": "Meta",
    "norm": "meta",
-   "score": 7.0549,
+   "score": 6.83,
    "status": "active",
    "via": "gazetteer"
   },
@@ -6424,7 +6433,7 @@
    "last_mention": "2026-09-16T15:04:43+00:00",
    "name": "Morgan Stanley",
    "norm": "morgan stanley",
-   "score": 8.979800000000001,
+   "score": 8.6935,
    "status": "active",
    "via": "search"
   },
@@ -6462,7 +6471,7 @@
    "last_mention": "2026-09-16T01:53:52+00:00",
    "name": "MUTHOOT FINANCE LIMITED",
    "norm": "muthoot finance",
-   "score": 6.0006,
+   "score": 5.8093,
    "status": "active",
    "via": "search"
   },
@@ -6500,7 +6509,7 @@
    "last_mention": "2026-09-15T15:03:47+00:00",
    "name": "NVIDIA Corporation",
    "norm": "nvidia",
-   "score": 8.5085,
+   "score": 8.2373,
    "status": "active",
    "via": "search"
   },
@@ -6509,6 +6518,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "NSE IPO all set to open; co raises Rs 6,746 crore from anchor investors including LIC, Goldman Sachs",
+     "ts": "2026-09-16T15:04:43+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "LIC, Morgan Stanley, Goldman Sachs among anchor investors as NSE raises Rs 6,746 crore ahead of IPO",
@@ -6528,17 +6542,12 @@
      "feed": "Mint Markets",
      "title": "Top stocks in focus tomorrow: Investors must watch Infosys, Mazagon Dock shares on Thursday, 17 Sept | Triggers",
      "ts": "2026-09-16T17:18:53+00:00"
-    },
-    {
-     "feed": "MarketWatch Top",
-     "title": "Intel\u2019s stock rises as investors hope memory chips can mark the next step in its turnaround",
-     "ts": "2026-09-16T18:20:00+00:00"
     }
    ],
    "last_mention": "2026-09-16T15:04:43+00:00",
    "name": "Omega Healthcare Investors, Inc",
    "norm": "investors",
-   "score": 47.5112,
+   "score": 46.9966,
    "status": "active",
    "via": "search"
   },
@@ -6576,7 +6585,7 @@
    "last_mention": "2026-09-16T14:50:28+00:00",
    "name": "PC JEWELLER LTD",
    "norm": "pc jeweller",
-   "score": 7.0938,
+   "score": 6.8677,
    "status": "active",
    "via": "search"
   },
@@ -6614,7 +6623,7 @@
    "last_mention": "2026-09-16T16:01:42+00:00",
    "name": "Septerna, Inc.",
    "norm": "sept",
-   "score": 26.1077,
+   "score": 25.2754,
    "status": "active",
    "via": "search"
   },
@@ -6623,6 +6632,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "ATLANTA FED GDPNOW SURGES ABOVE 5% The Atlanta Fed\u2019s GDPNow estimate for Q3 growth jumped to 5.1% from 4.42%, driven largely by stronger consumer spending after today\u2019s retail sales data. Real consumption is now expected to contribute 2.83 percentage points, while private domestic final purchases ar",
+     "ts": "2026-09-16T17:28:37+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "WHAT TO WATCH TODAY \u2014 U.S. MARKETS 8:30 AM ET \u2014 \ud83c\uddfa\ud83c\uddf8 Retail Sales 8:30 AM ET \u2014 \ud83c\uddfa\ud83c\uddf8 Import & Export Prices 10:30 AM ET \u2014 \ud83d\udee2\ufe0f EIA Oil Inventories 1:00 PM ET \u2014 \ud83c\uddfa\ud83c\uddf8 Treasury Auction 2:00 PM ET \u2014 \ud83c\udfe6 FOMC RATE DECISION + DOT PLOT 2:30 PM ET \u2014 \ud83c\udf99\ufe0f Fed Chair Kevin Warsh Press Conference \ud83d\udd25 FED \u2014 KEY EVENT The Fed d",
@@ -6642,17 +6656,12 @@
      "feed": "MarketWatch Top",
      "title": "Retail sales surged toward the end of summer. The U.S. economy has plenty of momentum.",
      "ts": "2026-09-16T13:22:00+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "SS Retail IPO opens today: GMP signals 31% listing gain. Here's all you need to know",
-     "ts": "2026-09-16T03:45:48+00:00"
     }
    ],
-   "last_mention": "2026-09-16T10:28:35+00:00",
+   "last_mention": "2026-09-16T17:28:37+00:00",
    "name": "BAAZAR STYLE RETAIL LTD",
    "norm": "baazar style retail",
-   "score": 12.7056,
+   "score": 13.3006,
    "status": "active",
    "via": "search"
   },
@@ -6690,7 +6699,7 @@
    "last_mention": "2026-09-16T01:38:18+00:00",
    "name": "TATA ELXSI LIMITED",
    "norm": "tata elxsi",
-   "score": 12.7186,
+   "score": 12.3132,
    "status": "active",
    "via": "search"
   },
@@ -6728,7 +6737,7 @@
    "last_mention": "2026-09-16T01:38:18+00:00",
    "name": "TATA TECHNOLOGIES LIMITED",
    "norm": "tata",
-   "score": 12.7167,
+   "score": 12.3113,
    "status": "active",
    "via": "search"
   },
@@ -6766,7 +6775,7 @@
    "last_mention": "2026-09-16T03:47:59+00:00",
    "name": "Bio-Techne Corp",
    "norm": "tech",
-   "score": 31.3966,
+   "score": 30.3957,
    "status": "active",
    "via": "search"
   },
@@ -6804,7 +6813,7 @@
    "last_mention": "2026-09-16T03:47:59+00:00",
    "name": "TECH MAHINDRA LIMITED",
    "norm": "tech mahindra",
-   "score": 31.4135,
+   "score": 30.4121,
    "status": "active",
    "via": "search"
   },
@@ -6842,7 +6851,7 @@
    "last_mention": "2026-08-18T06:47:40+00:00",
    "name": "VOLTAS LTD",
    "norm": "voltas",
-   "score": 0.0048,
+   "score": 0.0046,
    "status": "active",
    "via": "search"
   },
@@ -6880,7 +6889,7 @@
    "last_mention": "2026-09-16T13:08:23+00:00",
    "name": "Vanguard Total World Stock Inde",
    "norm": "world",
-   "score": 8.2452,
+   "score": 7.9824,
    "status": "active",
    "via": "search"
   }
@@ -6954,6 +6963,7 @@
   "0d752dd32ca8",
   "0dca35f15bd4",
   "0e54c8804bbf",
+  "0e55efd1fac7",
   "0e5f236210f1",
   "0e650ade56d7",
   "0e6e7a6d7915",
@@ -6985,6 +6995,7 @@
   "136f73138003",
   "138e08dba06d",
   "13a29ab130ab",
+  "13d70de13023",
   "13e6aaf90cbe",
   "13f2f37f99e3",
   "140e679a9091",
@@ -7115,6 +7126,7 @@
   "24d7173c28ed",
   "24f0d273778a",
   "2512a11464d5",
+  "255bfaf3ddf8",
   "256ef225786d",
   "259f97e4ef58",
   "25c5179fc52b",
@@ -7128,6 +7140,7 @@
   "27071305f8da",
   "270970d8fc55",
   "27229d007de4",
+  "27806d3ed2b1",
   "279094e9c253",
   "27ada5dc736e",
   "27f1dc9ea33f",
@@ -7151,7 +7164,9 @@
   "2c2d14bc59ed",
   "2c8ab29a92e8",
   "2d0aec805a66",
+  "2d559b2e83dd",
   "2d6cd2b71964",
+  "2d816b0f9c63",
   "2dad60cc5996",
   "2e148960c2d0",
   "2e3e420c9ea0",
@@ -7182,7 +7197,6 @@
   "31132a3dd2fe",
   "31134506ad0c",
   "316b3366a140",
-  "3178d27a816a",
   "31a81e97e245",
   "31b7816f0981",
   "321a858daa38",
@@ -7209,7 +7223,9 @@
   "353d9de511c1",
   "35797d4e75b4",
   "357e3a3429b1",
+  "357fc5b814b7",
   "358d969d19e1",
+  "35c20d940044",
   "35efcb96afed",
   "35fd960e7bc4",
   "3620b398b061",
@@ -7239,8 +7255,6 @@
   "3ba15a51ff90",
   "3ba7806217da",
   "3bbe5687d2a2",
-  "3bdd2a6e29dc",
-  "3be1cf99d389",
   "3c3778052262",
   "3c4a09ecef5e",
   "3c65fe912b29",
@@ -7253,7 +7267,6 @@
   "3d645ecf4bbf",
   "3d8aac9666b4",
   "3d96467c7020",
-  "3d9b869a6731",
   "3dc49478030d",
   "3e219c8ce53b",
   "3e99229dc16f",
@@ -7316,6 +7329,7 @@
   "498632606722",
   "49ae036e22cc",
   "49bd1ff615ad",
+  "49f3e41a3bc0",
   "4a1212e50993",
   "4a27ef11bbef",
   "4adc3c9b3e7b",
@@ -7331,6 +7345,7 @@
   "4c5b1a1981af",
   "4c7217c52e88",
   "4c80183a3795",
+  "4c89225f1f50",
   "4c9bb78401b3",
   "4ca50d817bd9",
   "4ceb9b5f838c",
@@ -7345,6 +7360,7 @@
   "4e26a296e02b",
   "4e54873e247b",
   "4e6e6a48872e",
+  "4e78dc769502",
   "4ebb4550ed49",
   "4eeb1dcdf111",
   "4ef6f93c2953",
@@ -7362,6 +7378,7 @@
   "50b416d18d8a",
   "50e4ba558fce",
   "51277bf990d1",
+  "5139e856a66d",
   "516064eccd5c",
   "5173492b1a0a",
   "519ae9cf64f7",
@@ -7375,7 +7392,7 @@
   "532404b5b352",
   "53375c68f25d",
   "5382d6e275c8",
-  "538c3b4fc596",
+  "53dbf543651a",
   "53e5cfad536c",
   "542fd51a7be8",
   "54d1212cab14",
@@ -7395,6 +7412,7 @@
   "57f2bd8157a6",
   "582a2d77f4c5",
   "588ce7501c07",
+  "58b0c2fa7548",
   "58c0aa78bff1",
   "58c9b18fb477",
   "58d6170e4c17",
@@ -7408,6 +7426,7 @@
   "59953f5fce2f",
   "59d4a1391bc5",
   "5a03d3b11047",
+  "5a35b0c6fc0d",
   "5a36ed49749b",
   "5a3b9cc59471",
   "5a50c44e1d64",
@@ -7422,6 +7441,7 @@
   "5b8e202d67bb",
   "5b90d832de25",
   "5b9e5ed37309",
+  "5bdc103bc0f8",
   "5bf63acbed73",
   "5bfb6e816bdf",
   "5c919949cfbb",
@@ -7497,7 +7517,9 @@
   "69e4fe74706f",
   "69e8f8a84a8b",
   "6a0adc3811ec",
+  "6a335240ac66",
   "6a8d6214f737",
+  "6adf16d2cd5a",
   "6b070a912207",
   "6b57dd30bffc",
   "6b5efcac79cc",
@@ -7532,10 +7554,10 @@
   "717c6aa1eed6",
   "718225a1ab06",
   "7191960c4da1",
-  "7199d26d08b1",
   "71d510745a6f",
   "71e354073063",
   "72368faca6f9",
+  "72ce6974d923",
   "72f19f9682b5",
   "72f981337e63",
   "7311e21a23b8",
@@ -7548,6 +7570,7 @@
   "7426a5b7a09b",
   "74b73e1f8421",
   "74f3dea1c94d",
+  "75b8758e2256",
   "75d099d54f31",
   "75d4acc7d766",
   "75e7d50dfa5a",
@@ -7562,6 +7585,7 @@
   "7767756eceab",
   "7768509d7adc",
   "778b2f6c9e20",
+  "77969d48ea89",
   "77ceaef4d929",
   "78004a3baa2d",
   "7819d4641c7c",
@@ -7580,7 +7604,6 @@
   "7abf3655dea0",
   "7ae94617cfa0",
   "7aebd6e0be2b",
-  "7af8aab2ccea",
   "7b0ec9b26045",
   "7bd03643f099",
   "7c424a8b14e4",
@@ -7600,7 +7623,6 @@
   "7f3a95675653",
   "7f4a2a3ed528",
   "7f9ce538076e",
-  "7f9e598a4967",
   "7fd51ba81d9d",
   "7fe9f5b38d72",
   "7fed1bf5a10c",
@@ -7608,6 +7630,7 @@
   "800a6d8d9f84",
   "80601441d42f",
   "80c6ba3f71d0",
+  "80d8aa3a796d",
   "80f7afc0f14b",
   "8116b73816ee",
   "8120632faa39",
@@ -7628,20 +7651,20 @@
   "83a12b00836f",
   "83a8189beda9",
   "8464d8cd90af",
+  "849449942ee1",
   "849d1e260ac7",
   "84a8d54b342e",
   "84d06b0d4bed",
   "84f5e2fe7733",
   "8534325a39c6",
   "85571b898008",
+  "85603dd781d7",
   "85d7c9ce8202",
   "860881d0241c",
   "86f88c146a98",
   "877fc7008de9",
   "87827f01cc30",
   "879f3dfb34d9",
-  "87c7001b3f80",
-  "87d1471d58dd",
   "87e0449adedd",
   "87f0299bd851",
   "882e78de06c1",
@@ -7672,7 +7695,6 @@
   "8ceb4f746da3",
   "8cecdd2d7ec0",
   "8d000da75558",
-  "8d14592e5522",
   "8d5b49808411",
   "8db5db7b8f8d",
   "8dbfa08cad93",
@@ -7687,7 +7709,6 @@
   "8f06832b7fb8",
   "8f84c38792cb",
   "8f8cb025a9ee",
-  "8fe08a824b9e",
   "901f720f05f2",
   "90371308f859",
   "9073e1ff0a4e",
@@ -7725,7 +7746,9 @@
   "9730bcf43ddd",
   "97397988f10f",
   "976d3a2bef82",
+  "9774d6d62cd2",
   "9793c62ed987",
+  "979ac1c0ffd6",
   "9811b76e5cb6",
   "9847edc87fc2",
   "9853b7d0f46b",
@@ -7779,12 +7802,11 @@
   "9fdc03f36013",
   "9ff8d0adee76",
   "9ffcf518018a",
-  "9fffdfa4d153",
+  "a0184db6a0f9",
   "a05cbed8041f",
   "a0bb6f80e7da",
   "a0f628c338b3",
   "a0f7fc2d883f",
-  "a171274465aa",
   "a1a004aefdb0",
   "a1b8cc4cf7c7",
   "a1ca44caad0a",
@@ -7793,6 +7815,7 @@
   "a1e37ffb538a",
   "a1f417e6bd2f",
   "a275b92fb7ad",
+  "a27bb4a5c852",
   "a2ecc4cfb269",
   "a2ef62f789bf",
   "a3374cfd46c1",
@@ -7854,6 +7877,7 @@
   "ad501e61b2a1",
   "ad735b183108",
   "ad75c643ee94",
+  "ada9f2e22e66",
   "adab16b08ffb",
   "adbd1fee4767",
   "ae56a06da81b",
@@ -7891,6 +7915,7 @@
   "b35977b09718",
   "b39a94de5c54",
   "b3f1219576f7",
+  "b3fcd6165859",
   "b417a10a7663",
   "b462497c22fb",
   "b46fa56503e0",
@@ -7959,7 +7984,9 @@
   "c24391be5e98",
   "c246c9d41b96",
   "c25b06e0ba22",
+  "c271fb5aae79",
   "c27c9d7d3b51",
+  "c2a03a2a2379",
   "c2b33fdb3066",
   "c2bb51ff7e6f",
   "c2d09ca435c1",
@@ -8062,9 +8089,9 @@
   "d4c0795332e9",
   "d4e96ce16984",
   "d523766ae921",
-  "d52531acc12a",
   "d5a7a9a3f803",
   "d5a9ecc4aaaf",
+  "d5d170a0dddc",
   "d60277daf30f",
   "d60db5d10573",
   "d6216e48006c",
@@ -8073,7 +8100,7 @@
   "d65a08c824bb",
   "d69bbf0c8731",
   "d6e4296a4bfe",
-  "d734eeea500c",
+  "d7192a6f5734",
   "d738ea52a09f",
   "d74bc3911012",
   "d74daad63456",
@@ -8092,6 +8119,8 @@
   "d9d13458aa5a",
   "da1ed5609172",
   "da379196e8ca",
+  "da890afeffc2",
+  "dade07352c14",
   "db0d6eee8b86",
   "db12867d05b4",
   "db4e8b014f75",
@@ -8099,6 +8128,7 @@
   "db8573c52e0b",
   "db90ec75e96d",
   "dbabf5b1d14f",
+  "dbd55c9e1a78",
   "dbd7b7bf9380",
   "dc1211cf9865",
   "dc3bc8a021ee",
@@ -8112,6 +8142,7 @@
   "de1281854c2c",
   "de20fa2e8054",
   "de2e89b0a348",
+  "de3d3b1236ba",
   "de82cd0144b1",
   "de86a1ddd7a6",
   "de9a1a2b0bd2",
@@ -8129,7 +8160,7 @@
   "e1c39b9e04fb",
   "e1df7430df75",
   "e1e7c4644a4d",
-  "e1fcd9803b43",
+  "e22a5f85c1b5",
   "e23a0fe27ded",
   "e23a85ef17f7",
   "e25ed0effb45",
@@ -8199,8 +8230,10 @@
   "ed6f05d4afdf",
   "ee22b76a07af",
   "ee411fca7845",
+  "ee8a1762552d",
   "eeb9090b554b",
   "eeba594a36d1",
+  "eecc0db812e5",
   "eee240f55e04",
   "eefca7802221",
   "ef1af339fa32",
@@ -8219,7 +8252,6 @@
   "f0d39fe00dfa",
   "f10dcd1c4df7",
   "f1184312cd81",
-  "f1526db77001",
   "f16238683f73",
   "f16e750b97dd",
   "f1fcd2ff7362",
@@ -8267,6 +8299,7 @@
   "fb5a172b61b7",
   "fb891190d289",
   "fbabfb04bc37",
+  "fbc3e5c953a4",
   "fc03626ee5f3",
   "fc37915fd68b",
   "fc7a82bf9f34",
@@ -8286,7 +8319,6 @@
   "fe3ff3f0405e",
   "fe4b6c0ac1dc",
   "ff09f4ba52be",
-  "ff45f0fc32ef",
   "ff52c70595d2",
   "ff6114ddd3f7",
   "ff828f84b789",
@@ -8295,5 +8327,5 @@
   "ffa18e389af8",
   "ffbf506fdbd3"
  ],
- "updated": "2026-09-16T19:32:18.066195+00:00"
+ "updated": "2026-09-16T22:54:12.926833+00:00"
 }
