@@ -1,4 +1,4 @@
-# Transmission Layer — board brief · 2026-09-18 22:34Z
+# Transmission Layer — board brief · 2026-09-18 23:25Z
 
 data as of **2026-09-18** · 97 series · 10 red / 35 amber · 8 events surfaced (28 suppressed)
 
@@ -15,10 +15,10 @@ data as of **2026-09-18** · 97 series · 10 red / 35 amber · 8 events surfaced
 - [WEAK] **gsr_stress_gauge** — corr20 0.41, corr60 0.15, last shift 2026-07-24. Channel: gold/silver ratio rises under monetary stress
 
 ## Scan control & verified transmission setups
-- FDR (BH q=0.1): **8 of 89** scanned series survive multiplicity control (effective p ≤ 0.008792976696242683)
-- **SETUP** btc_usd → asx_200: leads 1d (ccf 0.305, β 0.0869, p 0.0); driver zc 2.9 → expected 0.546%. Type hit-rate 0.819 (n=2078).
+- FDR (BH q=0.1): **6 of 89** scanned series survive multiplicity control (effective p ≤ 0.005605629265529988)
+- **SETUP** btc_usd → asx_200: leads 1d (ccf 0.305, β 0.0869, p 0.0); driver zc 2.8 → expected 0.528%. Type hit-rate 0.819 (n=2078).
 - **SETUP** ftse_100 → asx_200: leads 1d (ccf 0.273, β 0.278, p 0.02151); driver zc -1.81 → expected -0.416%. Type hit-rate 0.819 (n=2078).
-- **SETUP** btc_usd → usd_mxn: leads 1d (ccf -0.263, β -0.058, p 1e-05); driver zc 2.9 → expected -0.365%. Type hit-rate 0.819 (n=2078).
+- **SETUP** btc_usd → usd_mxn: leads 1d (ccf -0.263, β -0.058, p 1e-05); driver zc 2.8 → expected -0.352%. Type hit-rate 0.819 (n=2078).
 - **SETUP** stoxx_50 → asx_200: leads 1d (ccf 0.262, β 0.1962, p 0.00745); driver zc -1.66 → expected -0.287%. Type hit-rate 0.819 (n=2078).
 - **SETUP** dax → asx_200: leads 1d (ccf 0.259, β 0.1869, p 0.00502); driver zc -1.96 → expected -0.304%. Type hit-rate 0.819 (n=2078).
 - Track record · residual_reversion: hit-rate **0.5** (n=1103) — |resid_z|>=2.0 -> fwd 5d return opposes residual
@@ -52,19 +52,19 @@ data as of **2026-09-18** · 97 series · 10 red / 35 amber · 8 events surfaced
 - Source: US stocks today: US stocks slip as higher Treasury yields weigh on sentiment — ET Markets, 2026-09-18. https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-today-us-stocks-end-mixed-as-oil-takes-a-pause/articleshow/134343677.cms
 - Historical analogues: 2026-05-22 (d=0.0), 2026-05-07 (d=0.4), 2025-10-06 (d=0.68)
 
-### [RED 7.25] crypto · 2 series ↑
-- eth_usd [CRYPTO]: last 2629.13, z20 4.42, zc 1.91, resid-z 2.07 [unexplained], 1d 7.44%, |z20|=4.42
-- btc_usd [CRYPTO]: last 81202.79, z20 2.23, zc 2.90, resid-z 2.70 [unexplained], 1d 6.28%, |z20|=2.23
-- **Mechanism**: crypto · 2 series ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2025-05-08 (z-distance 0.05).
+### [RED 6.88] crypto · 2 series ↑
+- eth_usd [CRYPTO]: last 2615.18, z20 4.05, zc 1.76, resid-z 1.89 [unexplained], 1d 6.87%, |z20|=4.05
+- btc_usd [CRYPTO]: last 81041.01, z20 2.11, zc 2.80, resid-z 2.60 [unexplained], 1d 6.07%, |z20|=2.11
+- **Mechanism**: crypto · 2 series ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2025-05-09 (z-distance 0.19).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: dyn_cartrade_ns (rho 0.481 via btc_usd, z -0.73, quiet); nifty_midcap_100 (rho 0.353 via btc_usd, z -0.82, quiet)
-- Watch next: comex_silver (co-move) — not yet - watch; rho 0.607 vs btc_usd
-- Watch next: comex_gold (co-move) — not yet - watch; rho 0.593 vs eth_usd
-- **India receivers**: dyn_cartrade_ns (rho 0.481, z -0.73); nifty_midcap_100 (rho 0.353, z -0.82)
+- **India take**: dyn_cartrade_ns (rho 0.482 via btc_usd, z -0.73, quiet); nifty_midcap_100 (rho 0.35 via btc_usd, z -0.82, quiet)
+- Watch next: comex_silver (co-move) — not yet - watch; rho 0.608 vs btc_usd
+- Watch next: comex_gold (co-move) — not yet - watch; rho 0.596 vs eth_usd
+- **India receivers**: dyn_cartrade_ns (rho 0.482, z -0.73); nifty_midcap_100 (rho 0.35, z -0.82)
 - Source: Bitcoin vs Ethereum vs Solana: Which crypto asset is best positioned for the next bull run? — ET Markets, 2026-09-18. https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-vs-ethereum-vs-solana-which-crypto-asset-is-best-positioned-for-the-next-bull-run/articleshow/134336948.cms
 - Source: Bitcoin holds near $77K despite hawkish Fed, CLARITY Act setback and weak ETF demand. Here is what experts say — ET Markets, 2026-09-18. https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-holds-near-77k-despite-hawkish-fed-clarity-act-setback-and-weak-etf-demand-here-is-what-experts-say/articleshow/134330927.cms
 - Source: BITCOIN COULD GET MORE SUPPORT THAN GOLD JPMorgan says Bitcoin could benefit more than gold if ETF hedging demand eases. Short interest in IBIT remains near yearly highs, while its put-to-call ratio is also higher than GLD’s — signaling heavier Bitcoin hedging. If those hedges unwind, JPMorgan sees  — DeItaone, 2026-09-17. https://t.me/walter_bloomberg/35890
-- Historical analogues: 2025-05-08 (d=0.05), 2025-08-12 (d=0.49), 2024-11-07 (d=0.67)
+- Historical analogues: 2025-05-09 (d=0.19), 2025-08-12 (d=0.31), 2024-11-07 (d=0.44)
 
 ### [AMBER 5.51] cross-asset · 3 series ↓
 - dyn_ms [EQUITIES]: last 202.52, z20 -2.19, zc -0.27, resid-z -0.45 [quiet], 1d -0.49%, |z20|=2.19
@@ -108,9 +108,9 @@ data as of **2026-09-18** · 97 series · 10 red / 35 amber · 8 events surfaced
 - **Mechanism**: dyn_4417_t ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-07-10 (z-distance 0.0).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
 - **India take**: No exposed Indian receivers above the correlation floor.
+- Source: TRUMP MOVES TO BAN MAJOR MEDIA OUTLETS President Trump says CNN, MS NOW and Politico will be banned from the White House, accusing them of publishing “fake news” and warning other outlets could follow. The scope remains unclear, while First Amendment experts say a broad ban could face constitutional — DeItaone, 2026-09-18. https://t.me/walter_bloomberg/35900
 - Source: Tata Sons listing: Tata Chemicals vs Tata Steel vs Tata Power — Which Tata Group stocks may benefit most? Experts decode — Mint Markets, 2026-09-18. https://www.livemint.com/market/stock-market-news/tata-sons-listing-tata-chemicals-vs-tata-steel-vs-tata-power-which-tata-group-stocks-may-benefit-most-experts-decode-11789722802716.html
 - Source: Bitcoin holds near $77K despite hawkish Fed, CLARITY Act setback and weak ETF demand. Here is what experts say — ET Markets, 2026-09-18. https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-holds-near-77k-despite-hawkish-fed-clarity-act-setback-and-weak-etf-demand-here-is-what-experts-say/articleshow/134330927.cms
-- Source: Nifty prediction, target 2026: Bulls to help investors for 27,000 in 2026? What experts said — Mint Markets, 2026-09-18. https://www.livemint.com/market/stock-market-news/stock-market-prediction-bulls-may-fancy-nifty-50-hitting-27-000-in-cy2026-heres-how-11789712187213.html
 - Historical analogues: 2026-07-10 (d=0.0), 2026-06-26 (d=0.02), 2025-09-09 (d=0.26)
 
 ### [RED 4.58] dyn_bac ↓
@@ -118,6 +118,7 @@ data as of **2026-09-18** · 97 series · 10 red / 35 amber · 8 events surfaced
 - **Mechanism**: dyn_bac ↓: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-05-22 (z-distance 0.0).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
 - **India take**: No exposed Indian receivers above the correlation floor.
+- Source: TRUMP: I AM PLEASED TO ANNOUNCE THAT UNITED STATES OF AMERICA HAS ENTERED INTO AN AGREEMENT WITH KINGDOM OF DENMARK, AND GREENLAND, — DeItaone, 2026-09-18. https://t.me/walter_bloomberg/35901
 - Source: How Bessent, America's bond salesman, cornered Japan on big spending — ET Markets, 2026-09-18. https://economictimes.indiatimes.com/markets/us-stocks/news/how-bessent-americas-bond-salesman-cornered-japan-on-big-spending/articleshow/134326610.cms
 - Source: America Is Paying a Lot for Fuel, Not Running Out of Gasoline — OilPrice, 2026-09-17. https://oilprice.com/Latest-Energy-News/World-News/America-Is-Paying-a-Lot-for-Fuel-Not-Running-Out-of-Gasoline.html
 - Historical analogues: 2026-05-22 (d=0.0), 2024-11-01 (d=0.01), 2025-04-23 (d=0.03)
@@ -136,40 +137,40 @@ midcap_largecap_ratio ↑ (4.41), dyn_tataelxsi_ns ↓ (4.28), dyn_lenskart_ns �
 - Next India prints: NSDL FPI flows T-0d · RBI Weekly Statistical Supplement T-0d · Kharif sowing data T-0d · IMD weekly rainfall T-3d
 
 ## News-tracked universe (why each is watched)
-- INOXINDIA.NS (INOX INDIA LIMITED) score 74.0 — "Indian cotton arrivals improve, while buyers turn cautious in easing market"
-- COALINDIA.NS (COAL INDIA LTD) score 73.9 — "Indian cotton arrivals improve, while buyers turn cautious in easing market"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 71.8 — "Indian cotton arrivals improve, while buyers turn cautious in easing market"
-- INDIANB.NS (INDIAN BANK) score 63.4 — "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon"
-- COIN (Coinbase Global, Inc.) score 55.5 — "Global Shipping Costs Explode as Hormuz Disruptions Hit Key Trade Routes"
-- BAC (Bank of America Corporation) score 55.1 — "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon"
-- OHI (Omega Healthcare Investors, In) score 54.5 — "US stocks today: US stocks slip as Treasury yields rise, investors weigh Fed outlook"
-- HDB (HDFC Bank Limited) score 49.4 — "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon"
-- IDBI.NS (IDBI BANK LIMITED) score 44.5 — "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon"
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 44.5 — "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon"
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 44.5 — "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon"
-- BOND (PIMCO Active Bond Exchange-Tra) score 43.1 — "Global Markets: French bond spread at highest since 2012 as default insurance spikes"
-- CHKP (Check Point Software Technolog) score 37.8 — "IPO GMP comparison:  NSE vs Hero Motors vs SS Retail vs Jindal Supreme - Check which has w"
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 30.4 — "Tata feud wipes  ₹52,154 crore off listed companies’ market value"
-- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 30.4 — "Tata feud wipes  ₹52,154 crore off listed companies’ market value"
-- TECHM.NS (TECH MAHINDRA LIMITED) score 30.3 — "Amazon, Palantir and 12 more top tech stock picks from UBS analysts"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 30.3 — "Amazon, Palantir and 12 more top tech stock picks from UBS analysts"
-- TECH (Bio-Techne Corp) score 30.3 — "Amazon, Palantir and 12 more top tech stock picks from UBS analysts"
-- LTH (Life Time Group Holdings, Inc.) score 28.7 — "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today |Highlights: US stocks slip as higher "
-- SEPN (Septerna, Inc.) score 27.6 — "Elevate Campuses IPO price band set at Rs 343–362; Rs 2,100 crore issue opens September 23"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 22.1 — "U.S. COULD RELEASE MORE OIL FROM SPR Energy Secretary Chris Wright says another round of c"
-- 301077.SZ (CHINASTARS) score 22.0 — "Global Market: China stocks rally 1% as Trump-Xi meeting raises trade hopes"
-- STYLEBAAZA.NS (BAAZAR STYLE RETAIL LTD) score 15.2 — "IPO GMP comparison:  NSE vs Hero Motors vs SS Retail vs Jindal Supreme - Check which has w"
-- BZ=F (Brent Crude Oil Last Day Finan) score 12.0 — "Japan's Refiners Have Enough Crude to Last Through November, Industry Body Says"
-- MS (Morgan Stanley) score 10.6 — "JP MORGAN EXPECTS ECB TO DELIVER ANOTHER 25 BP INTEREST RATE HIKE IN MARCH 2027 AFTER A DE"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 73.4 — "Indian cotton arrivals improve, while buyers turn cautious in easing market"
+- COALINDIA.NS (COAL INDIA LTD) score 73.3 — "Indian cotton arrivals improve, while buyers turn cautious in easing market"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 71.2 — "Indian cotton arrivals improve, while buyers turn cautious in easing market"
+- INDIANB.NS (INDIAN BANK) score 62.9 — "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon"
+- BAC (Bank of America Corporation) score 56.6 — "U.S. AND DENMARK CLOSE IN ON GREENLAND DEAL The U.S. and Denmark are nearing a potential a"
+- COIN (Coinbase Global, Inc.) score 55.1 — "Global Shipping Costs Explode as Hormuz Disruptions Hit Key Trade Routes"
+- OHI (Omega Healthcare Investors, In) score 55.1 — "Why investors shouldn’t be spooked by fears of an October stock-market crash"
+- HDB (HDFC Bank Limited) score 48.9 — "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon"
+- IDBI.NS (IDBI BANK LIMITED) score 44.2 — "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon"
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 44.2 — "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon"
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 44.2 — "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon"
+- BOND (PIMCO Active Bond Exchange-Tra) score 42.8 — "Global Markets: French bond spread at highest since 2012 as default insurance spikes"
+- CHKP (Check Point Software Technolog) score 37.5 — "IPO GMP comparison:  NSE vs Hero Motors vs SS Retail vs Jindal Supreme - Check which has w"
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 30.2 — "Tata feud wipes  ₹52,154 crore off listed companies’ market value"
+- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 30.2 — "Tata feud wipes  ₹52,154 crore off listed companies’ market value"
+- TECHM.NS (TECH MAHINDRA LIMITED) score 30.1 — "Amazon, Palantir and 12 more top tech stock picks from UBS analysts"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 30.1 — "Amazon, Palantir and 12 more top tech stock picks from UBS analysts"
+- TECH (Bio-Techne Corp) score 30.1 — "Amazon, Palantir and 12 more top tech stock picks from UBS analysts"
+- LTH (Life Time Group Holdings, Inc.) score 28.4 — "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today |Highlights: US stocks slip as higher "
+- SEPN (Septerna, Inc.) score 27.4 — "Elevate Campuses IPO price band set at Rs 343–362; Rs 2,100 crore issue opens September 23"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 21.9 — "U.S. COULD RELEASE MORE OIL FROM SPR Energy Secretary Chris Wright says another round of c"
+- 301077.SZ (CHINASTARS) score 21.8 — "Global Market: China stocks rally 1% as Trump-Xi meeting raises trade hopes"
+- STYLEBAAZA.NS (BAAZAR STYLE RETAIL LTD) score 15.1 — "IPO GMP comparison:  NSE vs Hero Motors vs SS Retail vs Jindal Supreme - Check which has w"
+- BZ=F (Brent Crude Oil Last Day Finan) score 11.9 — "Japan's Refiners Have Enough Crude to Last Through November, Industry Body Says"
+- 4417.T (GLOBAL SECURITY EXPERTS INC) score 11.3 — "TRUMP MOVES TO BAN MAJOR MEDIA OUTLETS President Trump says CNN, MS NOW and Politico will "
+- MS (Morgan Stanley) score 10.5 — "JP MORGAN EXPECTS ECB TO DELIVER ANOTHER 25 BP INTEREST RATE HIKE IN MARCH 2027 AFTER A DE"
 - JIOFIN.BO (Jio Financial Services Limited) score 10.5 — "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, f"
-- 4417.T (GLOBAL SECURITY EXPERTS INC) score 10.4 — "Nifty prediction, target 2026: Bulls to help investors for 27,000 in 2026? What experts sa"
-- JUSTDIAL.BO (JUST DIAL LTD.) score 8.5 — "Up over 65% from IPO price in just 3 days! What is driving Glass Wall Systems share price?"
+- JUSTDIAL.BO (JUST DIAL LTD.) score 8.4 — "Up over 65% from IPO price in just 3 days! What is driving Glass Wall Systems share price?"
 - VT (Vanguard Total World Stock Ind) score 8.3 — "The Race to Build a World Beyond Hormuz"
-- JEF (Jefferies Financial Group Inc.) score 7.3 — "Adani stocks soar up to 12% after Jefferies sees up to 53% upside in Adani Energy and othe"
-- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 7.1 — "Adani Energy vs CESC vs Tata Power vs NTPC vs Power Grid: Which stock has more upside? Tar"
-- NVDA (NVIDIA Corporation) score 6.8 — "ALTMAN AND HUANG SET TO JOIN XI AT WHITE HOUSE DINNER OpenAI CEO Sam Altman and Nvidia CEO"
-- PCJEWELLER.NS (PC JEWELLER LTD) score 6.5 — "Gold jewellery sector seeks MDR exemption on high-value UPI transactions"
-- META (Meta) score 6.1 — "Metal stocks to buy: Tata Steel, JSW Steel among Motilal Oswal’s top picks, up to 17% upsi"
+- JEF (Jefferies Financial Group Inc.) score 7.2 — "Adani stocks soar up to 12% after Jefferies sees up to 53% upside in Adani Energy and othe"
+- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 7.0 — "Adani Energy vs CESC vs Tata Power vs NTPC vs Power Grid: Which stock has more upside? Tar"
+- NVDA (NVIDIA Corporation) score 6.7 — "ALTMAN AND HUANG SET TO JOIN XI AT WHITE HOUSE DINNER OpenAI CEO Sam Altman and Nvidia CEO"
+- PCJEWELLER.NS (PC JEWELLER LTD) score 6.4 — "Gold jewellery sector seeks MDR exemption on high-value UPI transactions"
+- META (Meta) score 6.0 — "Metal stocks to buy: Tata Steel, JSW Steel among Motilal Oswal’s top picks, up to 17% upsi"
 - MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 4.5 — "PNB Housing Finance among 4 F&O stocks with a sharp rise in futures open interest"
 - ICICIGI.BO (ICICI Lombard General Insuranc) score 3.6 — "HDFC Bank is winning the mutual fund vote over ICICI Bank. Can the shift last?"
 - LENSKART.NS (LENSKART SOLUTIONS LTD) score 2.5 — "Lenskart block deal: Rs 2,047 crore stake sale likely; Platinum Jasmine may offload 1.7% h"

@@ -65,8 +65,8 @@
   wheat | 713.5000 | -1.86% | 0.92% | -0.37 | -0.89 | -1.16 | 94 | none | quiet
   corn | 527.2500 | -0.61% | 3.33% | 1.11 | -0.48 | -0.81 | 98 | amber | quiet
   soybeans | 1303.0000 | -1.27% | 1.78% | 0.67 | -1.22 | -1.35 | 97 | amber | quiet
-  btc_usd | 81202.7891 | 6.28% | 5.22% | 2.23 | 2.90 | 2.70 | 67 | amber | unexplained
-  eth_usd | 2629.1299 | 7.44% | 4.55% | 4.42 | 1.91 | 2.07 | 68 | red | unexplained
+  btc_usd | 81041.0078 | 6.07% | 5.01% | 2.11 | 2.80 | 2.60 | 67 | amber | unexplained
+  eth_usd | 2615.1799 | 6.87% | 3.99% | 4.05 | 1.76 | 1.89 | 68 | red | unexplained
   midcap_largecap_ratio | 2.6638 | 0.90% | 0.29% | 1.41 | n/a | n/a | 99 | amber | quiet
   brent_wti_spread | 3.3000 | 13.40% | -27.63% | -1.41 | n/a | n/a | 12 | none | quiet
   gold_silver_ratio | 66.1211 | -1.61% | -3.19% | -1.88 | n/a | n/a | 50 | red | quiet
@@ -116,8 +116,8 @@
   [RED] sofr (series, RATES) score=12.75 — |z20|=12.75
   [RED] gold_silver_ratio (series, DERIVED) score=4.88 — GSR<75 (extreme low); |z20|=1.88
   [RED] tips_10y_real (series, RATES) score=4.56 — 1d move -7.0bps ≥ 5bps; |z20|=1.56; 1y-pct=99
-  [RED] eth_usd (series, CRYPTO) score=4.42 — |z20|=4.42
   [AMBER] midcap_largecap_ratio (series, DERIVED) score=4.41 — 52-wk extreme (pct=99); 1y-pct=99
+  [RED] eth_usd (series, CRYPTO) score=4.05 — |z20|=4.05
   [AMBER] wti (series, COMMODITIES) score=3.40 — 1-session move -6.32% ≥ 1.5%
   [AMBER] brent (series, COMMODITIES) score=3.20 — 1-session move -5.77% ≥ 1.5%
   [RED] dyn_tatatech_ns (series, EQUITIES) score=2.91 — |z20|=2.91
@@ -130,9 +130,9 @@
   [AMBER] gbp_usd (series, FX) score=2.34 — |z20|=2.34
   [AMBER] ust_2s10s (series, DERIVED) score=2.32 — |z20|=2.32; 1y-pct=1
   [AMBER] dyn_tataelxsi_ns (series, EQUITIES) score=2.28 — |z20|=2.28; 1y-pct=0
-  [AMBER] btc_usd (series, CRYPTO) score=2.23 — |z20|=2.23
   [AMBER] dyn_ms (series, EQUITIES) score=2.19 — |z20|=2.19
   [AMBER] dxy (series, FX) score=2.13 — |z20|=2.13
+  [AMBER] btc_usd (series, CRYPTO) score=2.11 — |z20|=2.11
   [AMBER] dyn_lenskart_ns (series, EQUITIES) score=2.07 — |z20|=2.07; 1y-pct=100
   [AMBER] dyn_voltas_ns (series, EQUITIES) score=1.93 — 1y-pct=0
   [AMBER] stoxx_50 (series, INDICES) score=1.91 — |z20|=1.91
@@ -160,10 +160,10 @@
   [AMBER] ust_30y (series, RATES) score=0.45 — 1y-pct=97
 
 [2b] SCAN CONTROL & VERIFIED SETUPS
-  FDR (Benjamini-Hochberg q=0.1): 8 of 89 scanned series significant (effective p<=0.008792976696242683)
-  SETUP btc_usd -> asx_200: leads 1d (ccf 0.305, beta 0.0869, p 0.0); driver zc 2.9 -> expected 0.546% | type hit-rate 0.819 (n=2078)
+  FDR (Benjamini-Hochberg q=0.1): 6 of 89 scanned series significant (effective p<=0.005605629265529988)
+  SETUP btc_usd -> asx_200: leads 1d (ccf 0.305, beta 0.0869, p 0.0); driver zc 2.8 -> expected 0.528% | type hit-rate 0.819 (n=2078)
   SETUP ftse_100 -> asx_200: leads 1d (ccf 0.273, beta 0.278, p 0.02151); driver zc -1.81 -> expected -0.416% | type hit-rate 0.819 (n=2078)
-  SETUP btc_usd -> usd_mxn: leads 1d (ccf -0.263, beta -0.058, p 1e-05); driver zc 2.9 -> expected -0.365% | type hit-rate 0.819 (n=2078)
+  SETUP btc_usd -> usd_mxn: leads 1d (ccf -0.263, beta -0.058, p 1e-05); driver zc 2.8 -> expected -0.352% | type hit-rate 0.819 (n=2078)
   SETUP stoxx_50 -> asx_200: leads 1d (ccf 0.262, beta 0.1962, p 0.00745); driver zc -1.66 -> expected -0.287% | type hit-rate 0.819 (n=2078)
   SETUP dax -> asx_200: leads 1d (ccf 0.259, beta 0.1869, p 0.00502); driver zc -1.96 -> expected -0.304% | type hit-rate 0.819 (n=2078)
   Track record: residual_reversion 0.5 (n=1103) · transmission_follow 0.819 (n=2078) · spread_reversion 0.625 (n=16)
@@ -183,12 +183,12 @@
     - Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank  — Federal Reserve
     - Why Japan’s markets flipped the usual script after central bank rate hike  — CNBC Economy
     - Bank of England defies Fed’s rate-hike lead, leaving rates unchanged  — CNBC Economy
+    - ‘I’m burned out’: I’m constantly helping my cousin who is running out of money. Is it too much to expect his sister to help?  — MarketWatch Top
+    - ‘My total balance should be $20 million’: I invested $1.1 million in a crypto platform. Have I lost it all?  — MarketWatch Top
+    - Why investors shouldn’t be spooked by fears of an October stock-market crash  — MarketWatch Top
     - It’s almost impossible to sell a condo unit these days: ‘I feel trapped’  — MarketWatch Top
     - Amazon, Palantir and 12 more top tech stock picks from UBS analysts  — MarketWatch Top
     - Stocks are failing the ‘breadth’ test, but options traders still see reason to buy  — MarketWatch Top
-    - Most of what you know about data centers is wrong  — MarketWatch Top
-    - My rental property is paid off, but I need cash. Is this a bad time to take out a $50,000 HELOC?  — MarketWatch Top
-    - I have $125,000 in credit-card debt. Will $17,000 a month in income, including disability, affect my bankruptcy?  — MarketWatch Top
   India:
     - US stocks today: US stocks slip as higher Treasury yields weigh on sentiment  — ET Markets
     - Investor sentiment plunges to 16-month low, AAII survey shows  — ET Markets
