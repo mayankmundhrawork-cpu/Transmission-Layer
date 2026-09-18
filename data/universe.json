@@ -14,7 +14,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "adani ports adani ports": {
    "display": "Adani Ports Adani Ports",
@@ -30,7 +30,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "adia backed": {
    "display": "ADIA-backed",
@@ -46,7 +46,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "advent": {
    "display": "Advent",
@@ -62,7 +62,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "afcons infra": {
    "display": "Afcons Infra",
@@ -83,7 +83,23 @@
    ],
    "first_seen": "2026-09-15T09:23:18.514681+00:00",
    "last_seen": "2026-09-15T14:57:57.867431+00:00",
-   "score": 0.9783
+   "score": 0.9364
+  },
+  "african oil and gas": {
+   "display": "African Oil and Gas",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "TotalEnergies and BlackRock Sign $1.8B Deal for African Oil and Gas Assets",
+     "ts": "2026-09-18T16:30:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "ahead of market": {
    "display": "Ahead of Market",
@@ -119,7 +135,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 3.0997
+   "score": 2.9669
   },
   "ahead of us fed": {
    "display": "Ahead of US Fed",
@@ -140,23 +156,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 1.2654
-  },
-  "ai fears": {
-   "display": "AI Fears",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "IEA Chief: Electrification Still Energy's Top Bet Despite AI Fears",
-     "ts": "2026-09-17T17:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-17T19:42:44.116791+00:00",
-   "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 0.8347
+   "score": 1.2112
   },
   "altman and huang set": {
    "display": "ALTMAN AND HUANG SET",
@@ -172,7 +172,7 @@
    ],
    "first_seen": "2026-09-17T22:50:22.266922+00:00",
    "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 0.8235
   },
   "alzheimer": {
    "display": "Alzheimer",
@@ -188,6 +188,22 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
+   "score": 0.9572
+  },
+  "american express travel related": {
+   "display": "American Express Travel Related",
+   "evidence": [
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+     "ts": "2026-09-18T15:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "Federal Reserve"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
    "score": 1.0
   },
   "american treasuries fomc": {
@@ -209,71 +225,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T22:54:12.926833+00:00",
-   "score": 1.3158
+   "score": 1.2594
   },
-  "americans": {
-   "display": "Americans",
-   "evidence": [
-    {
-     "feed": "MarketWatch Top",
-     "title": "More Americans are about to get scammed by the coming peptide rush",
-     "ts": "2026-09-17T15:20:00+00:00"
-    }
-   ],
-   "feeds": [
-    "MarketWatch Top"
-   ],
-   "first_seen": "2026-09-17T19:42:44.116791+00:00",
-   "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 0.8347
-  },
-  "antarctica": {
-   "display": "Antarctica",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Cooking Oil-Powered Plane to Fly Tourists to Antarctica",
-     "ts": "2026-09-17T18:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-17T19:42:44.116791+00:00",
-   "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 0.8347
-  },
-  "anz bofa rbc and": {
-   "display": "ANZ BofA RBC and",
+  "anthropic builds biology lab": {
+   "display": "ANTHROPIC BUILDS BIOLOGY LAB",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "GOLDMAN SACHS NOW EXPECTS ANOTHER FED HIKE IN OCTOBER Goldman Sachs has shifted its Fed call, now expecting another 25bp hike in October after Wednesday\u2019s meeting proved more hawkish than anticipated. GS joins ANZ, BofA, RBC and TD Securities in expecting a follow-up hike. The bank highlighted the 1",
-     "ts": "2026-09-17T09:48:06+00:00"
+     "title": "ANTHROPIC BUILDS BIOLOGY LAB TO PUSH AI INTO DRUG DEVELOPMENT Anthropic has quietly established a Bay Area wet lab, moving its life-sciences ambitions beyond computer simulations and into physical biological experiments. The company wants Claude to direct laboratory robots with limited human interve",
+     "ts": "2026-09-18T10:13:30+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-09-17T19:42:44.116791+00:00",
-   "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 0.8347
-  },
-  "armenia days": {
-   "display": "Armenia Days",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Russia Cuts Off Gas to Armenia Days After Diversification Announcement",
-     "ts": "2026-09-17T16:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-17T19:42:44.116791+00:00",
-   "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 0.8347
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "axios": {
    "display": "Axios",
@@ -289,7 +257,7 @@
    ],
    "first_seen": "2026-09-17T22:50:22.266922+00:00",
    "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 0.8235
   },
   "axis capital": {
    "display": "Axis Capital",
@@ -311,7 +279,7 @@
    ],
    "first_seen": "2026-09-14T16:21:41.571735+00:00",
    "last_seen": "2026-09-15T14:57:57.867431+00:00",
-   "score": 0.9065
+   "score": 0.8677
   },
   "backup plan": {
    "display": "Backup Plan",
@@ -327,7 +295,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "bajaj life cio": {
    "display": "Bajaj Life CIO.",
@@ -343,7 +311,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "bank of maharashtra": {
    "display": "Bank of Maharashtra",
@@ -359,7 +327,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "bank of maharashtra s": {
    "display": "Bank of Maharashtra's",
@@ -375,7 +343,39 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
+  },
+  "bay area": {
+   "display": "Bay Area",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "ANTHROPIC BUILDS BIOLOGY LAB TO PUSH AI INTO DRUG DEVELOPMENT Anthropic has quietly established a Bay Area wet lab, moving its life-sciences ambitions beyond computer simulations and into physical biological experiments. The company wants Claude to direct laboratory robots with limited human interve",
+     "ts": "2026-09-18T10:13:30+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
+  },
+  "bay street hospitality vcc": {
+   "display": "Bay Street Hospitality VCC",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Bay Street Hospitality VCC to invest around \u20b9100 crore in Bharathi Meraki",
+     "ts": "2026-09-18T13:39:31+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "beijing taipei": {
    "display": "Beijing Taipei",
@@ -391,11 +391,16 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "berkshire": {
    "display": "Berkshire",
    "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "As Warren Buffett\u2019s reign ends, fans should sell Berkshire \u2014 and buy these stocks instead",
+     "ts": "2026-09-18T17:41:00+00:00"
+    },
     {
      "feed": "MarketWatch Top",
      "title": "Warren Buffett moves further out of the spotlight at Berkshire, as his son is named chairman",
@@ -406,7 +411,23 @@
     "MarketWatch Top"
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
-   "last_seen": "2026-09-18T14:28:34.354284+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.9572
+  },
+  "berkshire hathaway": {
+   "display": "Berkshire Hathaway",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Howard Buffett to take charge as Berkshire Hathaway chairman: Who is he?",
+     "ts": "2026-09-18T17:21:55+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
    "score": 1.0
   },
   "bessent america s": {
@@ -423,7 +444,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "bessent asked": {
    "display": "BESSENT ASKED",
@@ -444,7 +465,7 @@
    ],
    "first_seen": "2026-09-15T19:40:45.973799+00:00",
    "last_seen": "2026-09-15T19:40:45.973799+00:00",
-   "score": 1.0514
+   "score": 1.0064
   },
   "beyond tata sons": {
    "display": "Beyond Tata Sons",
@@ -460,7 +481,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "bharat forge qip defence": {
    "display": "Bharat Forge QIP Defence",
@@ -476,7 +497,23 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
+  },
+  "bharathi meraki": {
+   "display": "Bharathi Meraki",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Bay Street Hospitality VCC to invest around \u20b9100 crore in Bharathi Meraki",
+     "ts": "2026-09-18T13:39:31+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "bhumika realty": {
    "display": "Bhumika Realty",
@@ -492,7 +529,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "biggest": {
    "display": "Biggest",
@@ -514,7 +551,23 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 1.2318
+   "score": 1.179
+  },
+  "billion arctic oil bet": {
+   "display": "Billion Arctic Oil Bet",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Russia\u2019s $118 Billion Arctic Oil Bet Pushes Ahead Despite Sanctions",
+     "ts": "2026-09-18T16:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "bodal chemicals": {
    "display": "Bodal Chemicals",
@@ -530,7 +583,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "bombay burmah": {
    "display": "Bombay Burmah",
@@ -546,7 +599,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "boris vuj": {
    "display": "Boris Vuj",
@@ -562,39 +615,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
-  },
-  "bp rate hike": {
-   "display": "BP RATE HIKE",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "STANDARD CHARTERED EXPECTS US FED TO DELIVER A 25 BP RATE HIKE IN DECEMBER 2026 VS PRIOR FORECAST OF NO POLICY CHANGE THIS YEAR",
-     "ts": "2026-09-17T13:03:19+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T19:42:44.116791+00:00",
-   "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 0.8347
-  },
-  "brokerages": {
-   "display": "Brokerages",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Brokerages seek MDR for capital market transactions to be limited to 2 basis points",
-     "ts": "2026-09-17T16:20:49+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-09-17T19:42:44.116791+00:00",
-   "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 0.8347
+   "score": 0.9079
   },
   "build": {
    "display": "Build",
@@ -610,7 +631,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "bulls": {
    "display": "Bulls",
@@ -631,23 +652,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.9485000000000001
-  },
-  "but still down": {
-   "display": "But Still Down",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Russian Fuel Exports Rebound in August But Still Down 50% From Last Year",
-     "ts": "2026-09-17T19:15:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-17T19:42:44.116791+00:00",
-   "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 0.8347
+   "score": 1.865
   },
   "ceo cfo and md": {
    "display": "CEO CFO and MD",
@@ -663,7 +668,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "cesc": {
    "display": "CESC",
@@ -679,7 +684,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "chandrasekaran": {
    "display": "Chandrasekaran",
@@ -701,7 +706,7 @@
    ],
    "first_seen": "2026-09-17T14:57:09.482379+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 1.7458
+   "score": 1.671
   },
   "china pushes coal miners": {
    "display": "China Pushes Coal Miners",
@@ -717,55 +722,23 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
-  "china u s prepare": {
-   "display": "CHINA U.S. PREPARE",
+  "claude": {
+   "display": "Claude",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "CHINA, U.S. PREPARE FOR XI-TRUMP SUMMIT Chinese Foreign Minister Wang Yi held talks with Marco Rubio ahead of the Xi-Trump summit scheduled for September 24, calling for stronger communication, cooperation and management of differences. The two also discussed the Middle East, after reports Beijing p",
-     "ts": "2026-09-17T14:48:32+00:00"
+     "title": "ANTHROPIC BUILDS BIOLOGY LAB TO PUSH AI INTO DRUG DEVELOPMENT Anthropic has quietly established a Bay Area wet lab, moving its life-sciences ambitions beyond computer simulations and into physical biological experiments. The company wants Claude to direct laboratory robots with limited human interve",
+     "ts": "2026-09-18T10:13:30+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-09-17T19:42:44.116791+00:00",
-   "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 0.8347
-  },
-  "chinese president xi jinping": {
-   "display": "Chinese President Xi Jinping.",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "ALTMAN AND HUANG SET TO JOIN XI AT WHITE HOUSE DINNER OpenAI CEO Sam Altman and Nvidia CEO Jensen Huang are planning to attend a White House state dinner next week with Chinese President Xi Jinping. The gathering puts two of the biggest names in AI at the table as U.S.-China technology and AI relati",
-     "ts": "2026-09-17T18:08:31+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
-  },
-  "chip": {
-   "display": "Chip",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Chip stocks surge: Intel jumps 10%; Marvell, AMD and Nvidia extend gains | Key triggers explained",
-     "ts": "2026-09-17T16:56:02+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-17T19:42:44.116791+00:00",
-   "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 0.8347
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "clean energy boom halts": {
    "display": "Clean Energy Boom Halts",
@@ -781,7 +754,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "coal india current market": {
    "display": "Coal India Current Market",
@@ -797,7 +770,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "coal india share price": {
    "display": "Coal India Share Price",
@@ -813,7 +786,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "coimbatore nagpur visakhapatnam surat": {
    "display": "Coimbatore Nagpur Visakhapatnam Surat",
@@ -834,39 +807,7 @@
    ],
    "first_seen": "2026-09-17T09:24:33.591649+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 1.7042
-  },
-  "commerzbank": {
-   "display": "Commerzbank.",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "WALL STREET RETHINKS \u201cONE-AND-DONE\u201d FED HIKE The Fed\u2019s hawkish September meeting is pushing several banks to add another hike or reduce expected rate cuts, including Goldman Sachs, Morgan Stanley, NatWest, Rabobank, Swedbank and Commerzbank. The median analyst forecast still sees one additional 25bp",
-     "ts": "2026-09-17T15:48:42+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
-  },
-  "cooking oil powered plane": {
-   "display": "Cooking Oil-Powered Plane",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Cooking Oil-Powered Plane to Fly Tourists to Antarctica",
-     "ts": "2026-09-17T18:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-17T19:42:44.116791+00:00",
-   "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 0.8347
+   "score": 1.6312
   },
   "copra": {
    "display": "Copra",
@@ -882,7 +823,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "coreweave": {
    "display": "CoreWeave",
@@ -903,55 +844,7 @@
    ],
    "first_seen": "2026-09-17T14:57:09.482379+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 1.7458
-  },
-  "critical minerals talent": {
-   "display": "Critical Minerals Talent",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Inside the DOE's $16 Million Bet on Critical Minerals Talent",
-     "ts": "2026-09-17T21:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
-  },
-  "deccan gold mines": {
-   "display": "Deccan Gold Mines",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Deccan Gold Mines eyes critical minerals; gold output target set at 700\u2013750 kg",
-     "ts": "2026-09-17T15:05:42+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-09-17T19:42:44.116791+00:00",
-   "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 0.8347
-  },
-  "decision": {
-   "display": "DECISION",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "TRUMP WEIGHS \u201cBIG DECISION\u201d ON IRAN President Trump says he faces a \u201cbig decision\u201d over the next phase of the Iran conflict, including whether to pursue further military action against Tehran. Trump told Axios he plans to use an upcoming UN meeting with Saudi Arabia, UAE, Qatar, Bahrain, Kuwait and ",
-     "ts": "2026-09-17T17:18:24+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 1.671
   },
   "dee development engineers": {
    "display": "DEE Development Engineers",
@@ -967,7 +860,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "deepen": {
    "display": "Deepen",
@@ -983,7 +876,7 @@
    ],
    "first_seen": "2026-09-17T23:35:35.897978+00:00",
    "last_seen": "2026-09-17T23:35:35.897978+00:00",
-   "score": 0.8665
+   "score": 0.8294
   },
   "delhi mumbai kolkata chennai": {
    "display": "Delhi Mumbai Kolkata Chennai",
@@ -1004,23 +897,39 @@
    ],
    "first_seen": "2026-09-17T09:24:33.591649+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 1.7042
+   "score": 1.6312
   },
-  "deliver": {
-   "display": "DELIVER",
+  "deliver another bp interest": {
+   "display": "DELIVER ANOTHER BP INTEREST",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "STANDARD CHARTERED EXPECTS US FED TO DELIVER A 25 BP RATE HIKE IN DECEMBER 2026 VS PRIOR FORECAST OF NO POLICY CHANGE THIS YEAR",
-     "ts": "2026-09-17T13:03:19+00:00"
+     "title": "JP MORGAN EXPECTS ECB TO DELIVER ANOTHER 25 BP INTEREST RATE HIKE IN MARCH 2027 AFTER A DECEMBER HIKE VS PRIOR FORECAST OF RATES ON HOLD IN 2027",
+     "ts": "2026-09-18T09:58:08+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-09-17T19:42:44.116791+00:00",
-   "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 0.8347
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
+  },
+  "denmark": {
+   "display": "Denmark",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "INEOS Opens EU's First Full-Scale Carbon Storage Site in Denmark",
+     "ts": "2026-09-18T15:30:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "details": {
    "display": "Details",
@@ -1036,7 +945,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "dhrp": {
    "display": "DHRP",
@@ -1052,7 +961,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "diesel crunch deepens": {
    "display": "Diesel Crunch Deepens",
@@ -1073,23 +982,7 @@
    ],
    "first_seen": "2026-09-17T14:57:09.482379+00:00",
    "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 1.632
-  },
-  "diversification announcement": {
-   "display": "Diversification Announcement",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Russia Cuts Off Gas to Armenia Days After Diversification Announcement",
-     "ts": "2026-09-17T16:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-17T19:42:44.116791+00:00",
-   "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 0.8347
+   "score": 1.5621
   },
   "dividend": {
    "display": "Dividend",
@@ -1125,7 +1018,7 @@
    ],
    "first_seen": "2026-09-09T14:31:44.954766+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 4.9493
+   "score": 4.7373
   },
   "divis current price": {
    "display": "Divis Labs Current Price",
@@ -1141,7 +1034,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "divis share price": {
    "display": "Divis Labs Share Price",
@@ -1157,23 +1050,23 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
-  "doe s million bet": {
-   "display": "DOE's Million Bet",
+  "domestic demand surges": {
+   "display": "Domestic Demand Surges",
    "evidence": [
     {
      "feed": "OilPrice",
-     "title": "Inside the DOE's $16 Million Bet on Critical Minerals Talent",
-     "ts": "2026-09-17T21:00:00+00:00"
+     "title": "Kazakhstan Turns to Russian Gas as Domestic Demand Surges",
+     "ts": "2026-09-18T18:00:00+00:00"
     }
    ],
    "feeds": [
     "OilPrice"
    ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "dot plot": {
    "display": "Dot Plot",
@@ -1194,27 +1087,16 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-16T22:54:12.926833+00:00",
-   "score": 1.3446
-  },
-  "doubleline": {
-   "display": "DoubleLine",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "DoubleLine\u2019s\u00a0Gundlach\u00a0Warns of Fiscal Crisis in Next Recession",
-     "ts": "2026-09-17T22:01:59+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 1.287
   },
   "dow jones nasdaq s&p": {
    "display": "Dow Jones Nasdaq S&P",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today |Live Updates: US stocks slip as higher Treasury yields weigh on sentiment",
+     "ts": "2026-09-18T12:13:40+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today |Live Updates: S&P 500, Nasdaq open higher as oil prices fall",
@@ -1234,19 +1116,14 @@
      "feed": "ET Markets",
      "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today |Live Updates: US power infra stock Generac surges 27% after Amazon deal",
      "ts": "2026-09-17T12:15:25+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today |Highlights: US stocks end lower as oil, yields crank up pressure ahead of Fed rate move",
-     "ts": "2026-09-15T12:12:18+00:00"
     }
    ],
    "feeds": [
     "ET Markets"
    ],
    "first_seen": "2026-08-24T13:10:39.757224+00:00",
-   "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 8.0775
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 8.7315
   },
   "down": {
    "display": "Down",
@@ -1262,6 +1139,38 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
+   "score": 0.9572
+  },
+  "drug development anthropic": {
+   "display": "DRUG DEVELOPMENT Anthropic",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "ANTHROPIC BUILDS BIOLOGY LAB TO PUSH AI INTO DRUG DEVELOPMENT Anthropic has quietly established a Bay Area wet lab, moving its life-sciences ambitions beyond computer simulations and into physical biological experiments. The company wants Claude to direct laboratory robots with limited human interve",
+     "ts": "2026-09-18T10:13:30+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
+  },
+  "east west": {
+   "display": "East-West",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "SAUDI ARAMCO CUTS EUROPEAN OIL ALLOCATIONS Saudi Aramco has reportedly told European customers they will receive no crude allocations next month, extending supply disruptions caused by the attack on the East-West pipeline. The halt has already triggered replacement buying, while Saudi Arabia is work",
+     "ts": "2026-09-18T11:33:39+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
    "score": 1.0
   },
   "ecb consumer expectations survey": {
@@ -1278,7 +1187,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "eicher motors share price": {
    "display": "Eicher Motors Share Price",
@@ -1294,7 +1203,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "eicher motors trading insights": {
    "display": "Eicher Motors Trading Insights",
@@ -1310,7 +1219,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "elevate campuses": {
    "display": "Elevate Campuses",
@@ -1331,7 +1240,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.9485000000000001
+   "score": 1.865
   },
   "elevate campuses ipo": {
    "display": "Elevate Campuses IPO",
@@ -1347,7 +1256,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "elevated": {
    "display": "Elevated",
@@ -1363,6 +1272,22 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
+   "score": 0.9572
+  },
+  "entero healthcare": {
+   "display": "Entero Healthcare",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "HDFC Mutual Fund buys 13.9 lakh Entero Healthcare shares from Prasid Uno Family Trust in Rs 236 crore block deal",
+     "ts": "2026-09-18T15:15:11+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
    "score": 1.0
   },
   "et alpha wealth summit": {
@@ -1379,7 +1304,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "etmarkets management talk nuclear": {
    "display": "ETMarkets Management Talk Nuclear",
@@ -1395,7 +1320,23 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
+  },
+  "eufaula": {
+   "display": "Eufaula",
+   "evidence": [
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+     "ts": "2026-09-18T15:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "Federal Reserve"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "europe india inx ga": {
    "display": "Europe India INX GA",
@@ -1411,7 +1352,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "even jpmorgan": {
    "display": "Even JPMorgan",
@@ -1427,7 +1368,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "expert": {
    "display": "Expert",
@@ -1463,7 +1404,7 @@
    ],
    "first_seen": "2026-09-07T09:17:28.437002+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 2.9928999999999997
+   "score": 2.8647
   },
   "faridabad": {
    "display": "Faridabad",
@@ -1479,7 +1420,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "fayuvi fda": {
    "display": "Fayuvi FDA",
@@ -1495,23 +1436,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
-  },
-  "fed boe": {
-   "display": "Fed BoE",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "World stocks rebound, Treasury yields retreat after Fed, BoE decisions",
-     "ts": "2026-09-17T19:12:38+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-17T19:42:44.116791+00:00",
-   "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 0.8347
+   "score": 0.9079
   },
   "fed clarity act": {
    "display": "Fed CLARITY Act",
@@ -1527,7 +1452,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "fed meeting": {
    "display": "FED Meeting",
@@ -1553,7 +1478,28 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-16T22:54:12.926833+00:00",
-   "score": 1.9773
+   "score": 1.8926
+  },
+  "federal reserve board": {
+   "display": "Federal Reserve Board",
+   "evidence": [
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+     "ts": "2026-09-18T15:00:00+00:00"
+    },
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+     "ts": "2026-09-18T15:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "Federal Reserve"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 2.0
   },
   "fiis": {
    "display": "FIIs",
@@ -1589,7 +1535,7 @@
    ],
    "first_seen": "2026-09-07T15:48:56.323650+00:00",
    "last_seen": "2026-09-15T14:57:57.867431+00:00",
-   "score": 1.2435
+   "score": 1.1902
   },
   "final": {
    "display": "Final",
@@ -1605,7 +1551,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "fred c kelly vanity": {
    "display": "Fred C. Kelly Vanity",
@@ -1621,7 +1567,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "fri kospi taiwan index": {
    "display": "Fri Kospi Taiwan Index",
@@ -1642,7 +1588,7 @@
    ],
    "first_seen": "2026-09-17T14:57:09.482379+00:00",
    "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 1.632
+   "score": 1.5621
   },
   "fssai": {
    "display": "FSSAI",
@@ -1664,7 +1610,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.9485000000000001
+   "score": 1.865
   },
   "fuel exports surge": {
    "display": "Fuel Exports Surge",
@@ -1680,7 +1626,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "gasoline": {
    "display": "Gasoline",
@@ -1701,7 +1647,7 @@
    ],
    "first_seen": "2026-09-17T14:57:09.482379+00:00",
    "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 1.632
+   "score": 1.5621
   },
   "gift city": {
    "display": "GIFT City",
@@ -1717,7 +1663,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "glass wall systems": {
    "display": "Glass Wall Systems",
@@ -1733,7 +1679,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "global diesel shortage deepens": {
    "display": "Global Diesel Shortage Deepens",
@@ -1749,7 +1695,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "global fuel crunch": {
    "display": "Global Fuel Crunch",
@@ -1765,7 +1711,7 @@
    ],
    "first_seen": "2026-09-17T23:35:35.897978+00:00",
    "last_seen": "2026-09-17T23:35:35.897978+00:00",
-   "score": 0.8665
+   "score": 0.8294
   },
   "global market bank of": {
    "display": "Global Market Bank of",
@@ -1791,7 +1737,7 @@
    ],
    "first_seen": "2026-09-15T14:57:57.867431+00:00",
    "last_seen": "2026-09-17T09:24:33.591649+00:00",
-   "score": 1.8574
+   "score": 1.7778
   },
   "global market china": {
    "display": "Global Market China",
@@ -1827,7 +1773,7 @@
    ],
    "first_seen": "2026-08-28T16:35:29.336859+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 3.5593
+   "score": 3.4069
   },
   "global market european": {
    "display": "Global Market European",
@@ -1863,7 +1809,7 @@
    ],
    "first_seen": "2026-07-08T11:23:05.666954+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 3.6276
+   "score": 3.4722
   },
   "global market eurozone": {
    "display": "Global Market Eurozone",
@@ -1879,7 +1825,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "global market foreign": {
    "display": "Global Market Foreign",
@@ -1895,7 +1841,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "global market j p morgan": {
    "display": "Global Market J.P. Morgan",
@@ -1911,7 +1857,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "global market japan": {
    "display": "Global Market Japan",
@@ -1947,7 +1893,7 @@
    ],
    "first_seen": "2026-09-01T09:22:37.213013+00:00",
    "last_seen": "2026-09-16T09:16:06.803638+00:00",
-   "score": 2.8497
+   "score": 2.7276
   },
   "global market nikkei": {
    "display": "Global Market Nikkei",
@@ -1968,7 +1914,7 @@
    ],
    "first_seen": "2026-09-17T09:24:33.591649+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 1.7042
+   "score": 1.6312
   },
   "global market south korean": {
    "display": "Global Market South Korean",
@@ -1984,7 +1930,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "global market yuan": {
    "display": "Global Market Yuan",
@@ -2000,7 +1946,23 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
+  },
+  "global markets french": {
+   "display": "Global Markets French",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Global Markets: French bond spread at highest since 2012 as default insurance spikes",
+     "ts": "2026-09-18T15:53:10+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "gold rate": {
    "display": "Gold Rate",
@@ -2036,7 +1998,7 @@
    ],
    "first_seen": "2026-08-26T08:59:04.759635+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 5.2318
+   "score": 5.0077
   },
   "goldman sachs": {
    "display": "Goldman Sachs",
@@ -2058,23 +2020,7 @@
    ],
    "first_seen": "2026-09-17T14:57:09.482379+00:00",
    "last_seen": "2026-09-17T19:42:44.116791+00:00",
-   "score": 1.632
-  },
-  "goldman sachs morgan stanley": {
-   "display": "Goldman Sachs Morgan Stanley",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "WALL STREET RETHINKS \u201cONE-AND-DONE\u201d FED HIKE The Fed\u2019s hawkish September meeting is pushing several banks to add another hike or reduce expected rate cuts, including Goldman Sachs, Morgan Stanley, NatWest, Rabobank, Swedbank and Commerzbank. The median analyst forecast still sees one additional 25bp",
-     "ts": "2026-09-17T15:48:42+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 1.5621
   },
   "grauer weil": {
    "display": "Grauer Weil",
@@ -2090,23 +2036,39 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
-  "gundlach warns of fiscal": {
-   "display": "Gundlach Warns of Fiscal",
+  "gulf exports surge": {
+   "display": "Gulf Exports Surge",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "DoubleLine\u2019s\u00a0Gundlach\u00a0Warns of Fiscal Crisis in Next Recession",
-     "ts": "2026-09-17T22:01:59+00:00"
+     "feed": "OilPrice",
+     "title": "Saudi Arabia Cuts Europe Off From October Crude as Gulf Exports Surge",
+     "ts": "2026-09-18T17:30:00+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "OilPrice"
    ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
+  },
+  "hdfc mutual fund": {
+   "display": "HDFC Mutual Fund",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "HDFC Mutual Fund buys 13.9 lakh Entero Healthcare shares from Prasid Uno Family Trust in Rs 236 crore block deal",
+     "ts": "2026-09-18T15:15:11+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "hdfc securities": {
    "display": "HDFC Securities",
@@ -2122,7 +2084,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "hero motors": {
    "display": "Hero Motors",
@@ -2138,7 +2100,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "hero motors ipo gmp": {
    "display": "Hero Motors IPO GMP",
@@ -2154,7 +2116,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "hero motors ss retail": {
    "display": "Hero Motors SS Retail",
@@ -2170,7 +2132,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "hi tech flow solutions": {
    "display": "Hi-Tech Flow Solutions",
@@ -2186,23 +2148,23 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
-  "highlights tech": {
-   "display": "Highlights Tech",
+  "hike": {
+   "display": "HIKE",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today |Highlights: Tech leads Wall St to higher close as oil eases, Treasury yields dip",
-     "ts": "2026-09-17T12:15:25+00:00"
+     "feed": "DeItaone",
+     "title": "JP MORGAN EXPECTS ECB TO DELIVER ANOTHER 25 BP INTEREST RATE HIKE IN MARCH 2027 AFTER A DECEMBER HIKE VS PRIOR FORECAST OF RATES ON HOLD IN 2027",
+     "ts": "2026-09-18T09:58:08+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "hindustan copper": {
    "display": "Hindustan Copper",
@@ -2218,7 +2180,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "hormuz tanker traffic slumps": {
    "display": "Hormuz Tanker Traffic Slumps",
@@ -2234,7 +2196,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "hormuz while east west pipeline": {
    "display": "Hormuz While East-West Pipeline",
@@ -2250,6 +2212,22 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
+   "score": 0.9572
+  },
+  "howard buffett": {
+   "display": "Howard Buffett",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Howard Buffett to take charge as Berkshire Hathaway chairman: Who is he?",
+     "ts": "2026-09-18T17:21:55+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
    "score": 1.0
   },
   "hul s trading insights": {
@@ -2266,7 +2244,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "hul share price": {
    "display": "HUL Share Price",
@@ -2282,23 +2260,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
-  },
-  "ibit": {
-   "display": "IBIT",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "BITCOIN COULD GET MORE SUPPORT THAN GOLD JPMorgan says Bitcoin could benefit more than gold if ETF hedging demand eases. Short interest in IBIT remains near yearly highs, while its put-to-call ratio is also higher than GLD\u2019s \u2014 signaling heavier Bitcoin hedging. If those hedges unwind, JPMorgan sees ",
-     "ts": "2026-09-17T18:03:28+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 0.9079
   },
   "icici securities": {
    "display": "ICICI Securities",
@@ -2329,7 +2291,7 @@
    ],
    "first_seen": "2026-09-09T14:31:44.954766+00:00",
    "last_seen": "2026-09-15T09:23:18.514681+00:00",
-   "score": 0.8838
+   "score": 0.8459
   },
   "idfc first bank pvr": {
    "display": "IDFC First Bank PVR",
@@ -2345,7 +2307,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "india s": {
    "display": "India's",
@@ -2361,7 +2323,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "indian it": {
    "display": "Indian IT",
@@ -2383,7 +2345,7 @@
    ],
    "first_seen": "2026-09-14T21:46:34.176775+00:00",
    "last_seen": "2026-09-15T09:23:18.514681+00:00",
-   "score": 0.9019
+   "score": 0.8633
   },
   "indigo": {
    "display": "IndiGo",
@@ -2399,7 +2361,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "industry body says": {
    "display": "Industry Body Says",
@@ -2415,23 +2377,39 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
-  "inside": {
-   "display": "Inside",
+  "ineos opens eu s first": {
+   "display": "INEOS Opens EU's First",
    "evidence": [
     {
      "feed": "OilPrice",
-     "title": "Inside the DOE's $16 Million Bet on Critical Minerals Talent",
-     "ts": "2026-09-17T21:00:00+00:00"
+     "title": "INEOS Opens EU's First Full-Scale Carbon Storage Site in Denmark",
+     "ts": "2026-09-18T15:30:00+00:00"
     }
    ],
    "feeds": [
     "OilPrice"
    ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
+  },
+  "investors pull billion": {
+   "display": "Investors Pull Billion",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Investors Pull $1.8 Billion From Muni Market as Return Slump Extends",
+     "ts": "2026-09-18T18:38:31+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "ipo bound table space hillhouse": {
    "display": "IPO-bound Table Space Hillhouse",
@@ -2447,7 +2425,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "ipo gmp": {
    "display": "IPO GMP",
@@ -2463,7 +2441,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "ipo gmp check": {
    "display": "IPO GMP Check",
@@ -2479,7 +2457,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "ipo linked": {
    "display": "IPO-linked",
@@ -2495,39 +2473,23 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
-  "iran downed": {
-   "display": "IRAN DOWNED",
+  "ipo tracker": {
+   "display": "IPO Tracker",
    "evidence": [
     {
-     "feed": "DeItaone",
-     "title": "IRAN DOWNED AT LEAST 2 UNMANNED AMERICAN AIRCRAFT IN RECENT DAYS, U.S. OFFICIALS SAY- CBS NEWS",
-     "ts": "2026-09-17T17:18:23+00:00"
+     "feed": "Mint Markets",
+     "title": "IPO Tracker: 19 stocks debut this week, raise  \u20b97,550 crore despite market volatility",
+     "ts": "2026-09-18T17:38:10+00:00"
     }
    ],
    "feeds": [
-    "DeItaone"
+    "Mint Markets"
    ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
-  },
-  "iran president trump": {
-   "display": "IRAN President Trump",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "TRUMP WEIGHS \u201cBIG DECISION\u201d ON IRAN President Trump says he faces a \u201cbig decision\u201d over the next phase of the Iran conflict, including whether to pursue further military action against Tehran. Trump told Axios he plans to use an upcoming UN meeting with Saudi Arabia, UAE, Qatar, Bahrain, Kuwait and ",
-     "ts": "2026-09-17T17:18:24+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "it tata": {
    "display": "IT Tata",
@@ -2553,7 +2515,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 2.8969
+   "score": 2.7728
   },
   "japan s refiners have enough": {
    "display": "Japan's Refiners Have Enough",
@@ -2569,7 +2531,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "jefferies chris wood": {
    "display": "Jefferies Chris Wood",
@@ -2585,7 +2547,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "jindal": {
    "display": "Jindal",
@@ -2601,7 +2563,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "jindal supreme check": {
    "display": "Jindal Supreme Check",
@@ -2617,7 +2579,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "jindal supreme india ss": {
    "display": "Jindal Supreme India SS",
@@ -2633,7 +2595,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "jindal supreme ipo": {
    "display": "Jindal Supreme IPO",
@@ -2655,7 +2617,7 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 1.2318
+   "score": 1.179
   },
   "jioblackrock": {
    "display": "JioBlackRock",
@@ -2671,7 +2633,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "jk cement": {
    "display": "JK Cement",
@@ -2687,7 +2649,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "jll greti": {
    "display": "JLL GRETI",
@@ -2703,7 +2665,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "jm financial": {
    "display": "JM Financial",
@@ -2724,39 +2686,23 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-17T09:24:33.591649+00:00",
-   "score": 1.3886
+   "score": 1.3291
   },
-  "join xi": {
-   "display": "JOIN XI",
+  "jp morgan expects ecb": {
+   "display": "JP MORGAN EXPECTS ECB",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "ALTMAN AND HUANG SET TO JOIN XI AT WHITE HOUSE DINNER OpenAI CEO Sam Altman and Nvidia CEO Jensen Huang are planning to attend a White House state dinner next week with Chinese President Xi Jinping. The gathering puts two of the biggest names in AI at the table as U.S.-China technology and AI relati",
-     "ts": "2026-09-17T18:08:31+00:00"
+     "title": "JP MORGAN EXPECTS ECB TO DELIVER ANOTHER 25 BP INTEREST RATE HIKE IN MARCH 2027 AFTER A DECEMBER HIKE VS PRIOR FORECAST OF RATES ON HOLD IN 2027",
+     "ts": "2026-09-18T09:58:08+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
-  },
-  "jpmorgan": {
-   "display": "JPMorgan",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "BITCOIN COULD GET MORE SUPPORT THAN GOLD JPMorgan says Bitcoin could benefit more than gold if ETF hedging demand eases. Short interest in IBIT remains near yearly highs, while its put-to-call ratio is also higher than GLD\u2019s \u2014 signaling heavier Bitcoin hedging. If those hedges unwind, JPMorgan sees ",
-     "ts": "2026-09-17T18:03:28+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "jsw steel share price": {
    "display": "JSW Steel Share Price",
@@ -2777,7 +2723,7 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 1.2318
+   "score": 1.179
   },
   "karamtara engineering": {
    "display": "Karamtara Engineering",
@@ -2793,7 +2739,23 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
+  },
+  "kazakhstan turns": {
+   "display": "Kazakhstan Turns",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Kazakhstan Turns to Russian Gas as Domestic Demand Surges",
+     "ts": "2026-09-18T18:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "kore digital": {
    "display": "Kore Digital",
@@ -2809,7 +2771,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "last through": {
    "display": "Last Through",
@@ -2825,7 +2787,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "lenskart solutions": {
    "display": "Lenskart Solutions",
@@ -2841,7 +2803,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "lifestyle": {
    "display": "Lifestyle",
@@ -2857,7 +2819,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "lift supply": {
    "display": "Lift Supply",
@@ -2873,7 +2835,23 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
+  },
+  "lng tankers push through": {
+   "display": "LNG Tankers Push Through",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "LNG Tankers Push Through Hormuz Again as Qatar, UAE Fight Supply Crunch",
+     "ts": "2026-09-18T14:30:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "lodha developers": {
    "display": "Lodha Developers",
@@ -2889,7 +2867,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "lords mark": {
    "display": "Lords Mark Industries",
@@ -2905,7 +2883,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "maharashtra scooters dixon concor": {
    "display": "Maharashtra Scooters Dixon Concor",
@@ -2921,7 +2899,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "maharatna psu": {
    "display": "Maharatna PSU",
@@ -2937,7 +2915,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "maharatna sail": {
    "display": "Maharatna SAIL",
@@ -2953,7 +2931,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "manipal health": {
    "display": "Manipal Health",
@@ -2969,7 +2947,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "market performance": {
    "display": "Market Performance",
@@ -2985,7 +2963,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "mega ipo": {
    "display": "Mega IPO",
@@ -3006,7 +2984,7 @@
    ],
    "first_seen": "2026-09-17T09:24:33.591649+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 1.7042
+   "score": 1.6312
   },
   "metal": {
    "display": "Metal",
@@ -3022,7 +3000,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "michael burry": {
    "display": "Michael Burry",
@@ -3044,7 +3022,7 @@
    ],
    "first_seen": "2026-09-16T19:32:18.066195+00:00",
    "last_seen": "2026-09-17T09:24:33.591649+00:00",
-   "score": 1.4174
+   "score": 1.3567
   },
   "multibagger": {
    "display": "Multibagger",
@@ -3080,7 +3058,23 @@
    ],
    "first_seen": "2026-09-04T08:49:12.372762+00:00",
    "last_seen": "2026-09-17T14:57:09.482379+00:00",
-   "score": 2.3487
+   "score": 2.2481
+  },
+  "muni market": {
+   "display": "Muni Market",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Investors Pull $1.8 Billion From Muni Market as Return Slump Extends",
+     "ts": "2026-09-18T18:38:31+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "navin fluorine": {
    "display": "Navin Fluorine",
@@ -3096,7 +3090,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "navratna nmdc yield psu": {
    "display": "Navratna NMDC Yield PSU",
@@ -3112,7 +3106,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "nbcc bhel bharat forge": {
    "display": "NBCC BHEL Bharat Forge",
@@ -3133,7 +3127,7 @@
    ],
    "first_seen": "2026-09-15T14:57:57.867431+00:00",
    "last_seen": "2026-09-15T19:40:45.973799+00:00",
-   "score": 1.0281
+   "score": 0.9841
   },
   "nestle india": {
    "display": "Nestle India",
@@ -3155,7 +3149,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.9485000000000001
+   "score": 1.865
   },
   "newly": {
    "display": "Newly",
@@ -3171,23 +3165,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
-  },
-  "next recession": {
-   "display": "Next Recession",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "DoubleLine\u2019s\u00a0Gundlach\u00a0Warns of Fiscal Crisis in Next Recession",
-     "ts": "2026-09-17T22:01:59+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 0.9079
   },
   "nhai": {
    "display": "NHAI",
@@ -3208,7 +3186,7 @@
    ],
    "first_seen": "2026-09-15T14:57:57.867431+00:00",
    "last_seen": "2026-09-15T14:57:57.867431+00:00",
-   "score": 1.0048
+   "score": 0.9618
   },
   "nifty pe": {
    "display": "Nifty PE",
@@ -3224,6 +3202,22 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
+   "score": 0.9572
+  },
+  "northstar bank": {
+   "display": "Northstar Bank",
+   "evidence": [
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+     "ts": "2026-09-18T15:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "Federal Reserve"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
    "score": 1.0
   },
   "nse ipo day": {
@@ -3245,7 +3239,7 @@
    ],
    "first_seen": "2026-09-17T09:24:33.591649+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 1.7042
+   "score": 1.6312
   },
   "nse ipo day highlights": {
    "display": "NSE IPO Day Highlights",
@@ -3271,7 +3265,7 @@
    ],
    "first_seen": "2026-09-17T14:57:09.482379+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 2.7458
+   "score": 2.6282
   },
   "nse ipo day issue": {
    "display": "NSE IPO Day Issue",
@@ -3293,7 +3287,7 @@
    ],
    "first_seen": "2026-09-17T09:24:33.591649+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 1.7042
+   "score": 1.6312
   },
   "nse ipo gmp": {
    "display": "NSE IPO GMP",
@@ -3324,7 +3318,7 @@
    ],
    "first_seen": "2026-09-16T14:55:39.533811+00:00",
    "last_seen": "2026-09-17T14:57:09.482379+00:00",
-   "score": 2.942
+   "score": 2.816
   },
   "ntpc": {
    "display": "NTPC",
@@ -3340,23 +3334,23 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
-  "nvidia ceo jensen huang": {
-   "display": "Nvidia CEO Jensen Huang",
+  "nucor": {
+   "display": "Nucor",
    "evidence": [
     {
-     "feed": "DeItaone",
-     "title": "ALTMAN AND HUANG SET TO JOIN XI AT WHITE HOUSE DINNER OpenAI CEO Sam Altman and Nvidia CEO Jensen Huang are planning to attend a White House state dinner next week with Chinese President Xi Jinping. The gathering puts two of the biggest names in AI at the table as U.S.-China technology and AI relati",
-     "ts": "2026-09-17T18:08:31+00:00"
+     "feed": "Mint Markets",
+     "title": "Wall Street falls amid volatile oil prices and higher Treasury yields, Nucor slips 4.1%, Xenon tanks 27%",
+     "ts": "2026-09-18T14:15:02+00:00"
     }
    ],
    "feeds": [
-    "DeItaone"
+    "Mint Markets"
    ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "oil prices head": {
    "display": "Oil Prices Head",
@@ -3372,7 +3366,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "oil prices slide": {
    "display": "Oil Prices Slide",
@@ -3393,23 +3387,7 @@
    ],
    "first_seen": "2026-09-17T09:24:33.591649+00:00",
    "last_seen": "2026-09-17T14:57:09.482379+00:00",
-   "score": 1.5532
-  },
-  "oil retreat shores up": {
-   "display": "Oil Retreat Shores Up",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Treasuries Gain as Oil Retreat Shores Up Confidence in Warsh Fed",
-     "ts": "2026-09-17T19:49:19+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 1.4867
   },
   "oil routes": {
    "display": "Oil Routes",
@@ -3425,7 +3403,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "oracle": {
    "display": "Oracle",
@@ -3447,7 +3425,7 @@
    ],
    "first_seen": "2026-09-15T19:40:45.973799+00:00",
    "last_seen": "2026-09-15T23:34:12.994069+00:00",
-   "score": 1.0714
+   "score": 1.0255
   },
   "park medi world": {
    "display": "Park Medi World",
@@ -3463,7 +3441,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "penny": {
    "display": "Penny",
@@ -3499,7 +3477,7 @@
    ],
    "first_seen": "2026-08-12T09:22:31.943059+00:00",
    "last_seen": "2026-09-17T09:24:33.591649+00:00",
-   "score": 2.9611
+   "score": 2.8343
   },
   "philippines kmc solutions": {
    "display": "Philippines' KMC Solutions",
@@ -3515,7 +3493,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "pl capital": {
    "display": "PL Capital",
@@ -3531,6 +3509,22 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
+   "score": 0.9572
+  },
+  "platinum jasmine": {
+   "display": "Platinum Jasmine",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Lenskart block deal: Rs 2,047 crore stake sale likely; Platinum Jasmine may offload 1.7% holding",
+     "ts": "2026-09-18T14:53:33+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
    "score": 1.0
   },
   "pnb housing finance": {
@@ -3547,7 +3541,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "ponzi": {
    "display": "Ponzi",
@@ -3563,7 +3557,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "power grid": {
    "display": "Power Grid",
@@ -3584,7 +3578,23 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 2.0
+   "score": 1.9143
+  },
+  "prasid uno family trust": {
+   "display": "Prasid Uno Family Trust",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "HDFC Mutual Fund buys 13.9 lakh Entero Healthcare shares from Prasid Uno Family Trust in Rs 236 crore block deal",
+     "ts": "2026-09-18T15:15:11+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "prasol chemicals": {
    "display": "Prasol Chemicals",
@@ -3605,7 +3615,7 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 1.2318
+   "score": 1.179
   },
   "preference": {
    "display": "Preference",
@@ -3621,7 +3631,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "premier energies buy": {
    "display": "Premier Energies Buy",
@@ -3637,7 +3647,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "prices climb": {
    "display": "Prices Climb",
@@ -3653,7 +3663,71 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
+  },
+  "prior forecast of rates": {
+   "display": "PRIOR FORECAST OF RATES",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "JP MORGAN EXPECTS ECB TO DELIVER ANOTHER 25 BP INTEREST RATE HIKE IN MARCH 2027 AFTER A DECEMBER HIKE VS PRIOR FORECAST OF RATES ON HOLD IN 2027",
+     "ts": "2026-09-18T09:58:08+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
+  },
+  "pulse": {
+   "display": "Pulse",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Pulse of the Street: Crude retreats, but markets extend losing streak",
+     "ts": "2026-09-18T14:55:45+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
+  },
+  "push ai": {
+   "display": "PUSH AI",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "ANTHROPIC BUILDS BIOLOGY LAB TO PUSH AI INTO DRUG DEVELOPMENT Anthropic has quietly established a Bay Area wet lab, moving its life-sciences ambitions beyond computer simulations and into physical biological experiments. The company wants Claude to direct laboratory robots with limited human interve",
+     "ts": "2026-09-18T10:13:30+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
+  },
+  "qatar uae fight supply": {
+   "display": "Qatar UAE Fight Supply",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "LNG Tankers Push Through Hormuz Again as Qatar, UAE Fight Supply Crunch",
+     "ts": "2026-09-18T14:30:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "quote": {
    "display": "Quote",
@@ -3689,7 +3763,7 @@
    ],
    "first_seen": "2026-07-06T17:30:32.387167+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 4.160299999999999
+   "score": 3.9821
   },
   "race": {
    "display": "Race",
@@ -3705,7 +3779,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "rare": {
    "display": "RARE",
@@ -3721,23 +3795,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
-  },
-  "recent days u s officials": {
-   "display": "RECENT DAYS U.S. OFFICIALS",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "IRAN DOWNED AT LEAST 2 UNMANNED AMERICAN AIRCRAFT IN RECENT DAYS, U.S. OFFICIALS SAY- CBS NEWS",
-     "ts": "2026-09-17T17:18:23+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 0.9079
   },
   "rediff com ipo": {
    "display": "Rediff.com IPO",
@@ -3753,6 +3811,38 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
+   "score": 0.9572
+  },
+  "regions bank": {
+   "display": "Regions Bank",
+   "evidence": [
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+     "ts": "2026-09-18T15:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "Federal Reserve"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
+  },
+  "release": {
+   "display": "RELEASE",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "U.S. COULD RELEASE MORE OIL FROM SPR Energy Secretary Chris Wright says another round of crude loans from the Strategic Petroleum Reserve is a \u201cvery real possibility\u201d as higher oil prices and steep futures backwardation boost demand for barrels. The DOE has already loaned more than 130 million barre",
+     "ts": "2026-09-18T09:13:09+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
    "score": 1.0
   },
   "religare broking s ajit mishra": {
@@ -3769,7 +3859,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "rentomojo": {
    "display": "Rentomojo",
@@ -3785,7 +3875,23 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
+  },
+  "return slump extends": {
+   "display": "Return Slump Extends",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Investors Pull $1.8 Billion From Muni Market as Return Slump Extends",
+     "ts": "2026-09-18T18:38:31+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "rir power electronics": {
    "display": "RIR Power Electronics",
@@ -3801,7 +3907,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "rising": {
    "display": "Rising",
@@ -3817,7 +3923,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "robert kiyosaki": {
    "display": "Robert Kiyosaki",
@@ -3839,7 +3945,7 @@
    ],
    "first_seen": "2026-09-16T09:16:06.803638+00:00",
    "last_seen": "2026-09-16T14:55:39.533811+00:00",
-   "score": 1.2318
+   "score": 1.179
   },
   "rvnl": {
    "display": "RVNL",
@@ -3855,7 +3961,23 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
+  },
+  "sanctions": {
+   "display": "Sanctions",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Russia\u2019s $118 Billion Arctic Oil Bet Pushes Ahead Despite Sanctions",
+     "ts": "2026-09-18T16:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "saudi and israeli arms": {
    "display": "Saudi and Israeli Arms",
@@ -3871,6 +3993,22 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
+   "score": 0.9572
+  },
+  "saudi arabia cuts europe": {
+   "display": "Saudi Arabia Cuts Europe",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Saudi Arabia Cuts Europe Off From October Crude as Gulf Exports Surge",
+     "ts": "2026-09-18T17:30:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
    "score": 1.0
   },
   "saudi arabia scrambles": {
@@ -3887,23 +4025,39 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
+   "score": 0.9572
+  },
+  "saudi aramco": {
+   "display": "Saudi Aramco",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "No crude next month, Saudi Aramco informs European oil buyers",
+     "ts": "2026-09-18T16:23:25+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
    "score": 1.0
   },
-  "saudi arabia uae qatar": {
-   "display": "Saudi Arabia UAE Qatar",
+  "saudi aramco cuts european": {
+   "display": "SAUDI ARAMCO CUTS EUROPEAN",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "TRUMP WEIGHS \u201cBIG DECISION\u201d ON IRAN President Trump says he faces a \u201cbig decision\u201d over the next phase of the Iran conflict, including whether to pursue further military action against Tehran. Trump told Axios he plans to use an upcoming UN meeting with Saudi Arabia, UAE, Qatar, Bahrain, Kuwait and ",
-     "ts": "2026-09-17T17:18:24+00:00"
+     "title": "SAUDI ARAMCO CUTS EUROPEAN OIL ALLOCATIONS Saudi Aramco has reportedly told European customers they will receive no crude allocations next month, extending supply disruptions caused by the attack on the East-West pipeline. The halt has already triggered replacement buying, while Saudi Arabia is work",
+     "ts": "2026-09-18T11:33:39+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "saudi export fears ease": {
    "display": "Saudi Export Fears Ease",
@@ -3919,23 +4073,23 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
-  "saudi oil crisis deepens": {
-   "display": "Saudi Oil Crisis Deepens",
+  "saudi export pivot sends": {
+   "display": "Saudi Export Pivot Sends",
    "evidence": [
     {
      "feed": "OilPrice",
-     "title": "U.S. and Houthis Open Talks as Saudi Oil Crisis Deepens",
-     "ts": "2026-09-17T20:00:00+00:00"
+     "title": "Saudi Export Pivot Sends Brent Below $105",
+     "ts": "2026-09-18T16:15:00+00:00"
     }
    ],
    "feeds": [
     "OilPrice"
    ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "saudi oil exports rebound": {
    "display": "Saudi Oil Exports Rebound",
@@ -3951,7 +4105,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "saudi oil workaround eases": {
    "display": "Saudi Oil Workaround Eases",
@@ -3967,7 +4121,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "saudi pipeline outage": {
    "display": "Saudi Pipeline Outage",
@@ -3983,7 +4137,7 @@
    ],
    "first_seen": "2026-09-17T23:35:35.897978+00:00",
    "last_seen": "2026-09-17T23:35:35.897978+00:00",
-   "score": 0.8665
+   "score": 0.8294
   },
   "sbi life s current price": {
    "display": "SBI Life's Current Price",
@@ -3999,7 +4153,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "sbi life share price": {
    "display": "SBI Life Share Price",
@@ -4015,7 +4169,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "sbi pnb": {
    "display": "SBI PNB",
@@ -4031,7 +4185,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "semicon india": {
    "display": "SEMICON India",
@@ -4053,7 +4207,7 @@
    ],
    "first_seen": "2026-09-17T09:24:33.591649+00:00",
    "last_seen": "2026-09-17T14:57:09.482379+00:00",
-   "score": 1.5532
+   "score": 1.4867
   },
   "shikha bansal": {
    "display": "Shikha Bansal",
@@ -4069,23 +4223,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
-  },
-  "short": {
-   "display": "Short",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "BITCOIN COULD GET MORE SUPPORT THAN GOLD JPMorgan says Bitcoin could benefit more than gold if ETF hedging demand eases. Short interest in IBIT remains near yearly highs, while its put-to-call ratio is also higher than GLD\u2019s \u2014 signaling heavier Bitcoin hedging. If those hedges unwind, JPMorgan sees ",
-     "ts": "2026-09-17T18:03:28+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 0.9079
   },
   "sifs": {
    "display": "SIFs",
@@ -4101,7 +4239,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "signature hospital gurugram": {
    "display": "Signature Hospital Gurugram",
@@ -4117,7 +4255,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "skyways air services": {
    "display": "Skyways Air Services",
@@ -4133,7 +4271,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "small cap": {
    "display": "Small-cap",
@@ -4169,7 +4307,7 @@
    ],
    "first_seen": "2026-09-11T14:23:41.632201+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 4.4925999999999995
+   "score": 4.3002
   },
   "sme ipos": {
    "display": "SME IPOs",
@@ -4185,7 +4323,23 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
+  },
+  "snb bancshares and bank": {
+   "display": "SNB Bancshares and Bank",
+   "evidence": [
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+     "ts": "2026-09-18T15:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "Federal Reserve"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "solana": {
    "display": "Solana",
@@ -4201,6 +4355,22 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
+   "score": 0.9572
+  },
+  "spr energy secretary chris": {
+   "display": "SPR Energy Secretary Chris",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "U.S. COULD RELEASE MORE OIL FROM SPR Energy Secretary Chris Wright says another round of crude loans from the Strategic Petroleum Reserve is a \u201cvery real possibility\u201d as higher oil prices and steep futures backwardation boost demand for barrels. The DOE has already loaned more than 130 million barre",
+     "ts": "2026-09-18T09:13:09+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
    "score": 1.0
   },
   "ss retail": {
@@ -4217,7 +4387,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "standard chartered s englander": {
    "display": "Standard Chartered's Englander",
@@ -4233,7 +4403,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "stock market highlights sensex": {
    "display": "Stock Market Highlights Sensex",
@@ -4249,6 +4419,38 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
+   "score": 0.9572
+  },
+  "strategic petroleum reserve": {
+   "display": "Strategic Petroleum Reserve",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "U.S. COULD RELEASE MORE OIL FROM SPR Energy Secretary Chris Wright says another round of crude loans from the Strategic Petroleum Reserve is a \u201cvery real possibility\u201d as higher oil prices and steep futures backwardation boost demand for barrels. The DOE has already loaned more than 130 million barre",
+     "ts": "2026-09-18T09:13:09+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
+  },
+  "strong prices": {
+   "display": "Strong Prices",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "U.S. Oil, Gas Rig Count Creeps Up With Strong Prices",
+     "ts": "2026-09-18T17:18:56+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
    "score": 1.0
   },
   "sumeet bagadia tata investment": {
@@ -4265,23 +4467,7 @@
    ],
    "first_seen": "2026-09-17T23:35:35.897978+00:00",
    "last_seen": "2026-09-17T23:35:35.897978+00:00",
-   "score": 0.8665
-  },
-  "support than gold jpmorgan": {
-   "display": "SUPPORT THAN GOLD JPMorgan",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "BITCOIN COULD GET MORE SUPPORT THAN GOLD JPMorgan says Bitcoin could benefit more than gold if ETF hedging demand eases. Short interest in IBIT remains near yearly highs, while its put-to-call ratio is also higher than GLD\u2019s \u2014 signaling heavier Bitcoin hedging. If those hedges unwind, JPMorgan sees ",
-     "ts": "2026-09-17T18:03:28+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 0.8294
   },
   "support timelier return": {
    "display": "SUPPORT TIMELIER RETURN",
@@ -4302,23 +4488,7 @@
    ],
    "first_seen": "2026-09-16T22:54:12.926833+00:00",
    "last_seen": "2026-09-16T22:54:12.926833+00:00",
-   "score": 1.3664
-  },
-  "taco": {
-   "display": "TACO",
-   "evidence": [
-    {
-     "feed": "MarketWatch Top",
-     "title": "Wall Street is betting Trump backs down on Iran \u2014 but what if the \u2018TACO\u2019 trade fails this time?",
-     "ts": "2026-09-17T21:09:00+00:00"
-    }
-   ],
-   "feeds": [
-    "MarketWatch Top"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 1.3079
   },
   "taiwanese": {
    "display": "Taiwanese",
@@ -4334,7 +4504,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "target": {
    "display": "Target",
@@ -4356,7 +4526,7 @@
    ],
    "first_seen": "2026-09-17T22:50:22.266922+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.8603
+   "score": 1.7806
   },
   "tata capital tata": {
    "display": "Tata Capital Tata Group",
@@ -4372,7 +4542,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "tata chemicals": {
    "display": "Tata Chemicals",
@@ -4388,7 +4558,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "tata chemicals tata motors": {
    "display": "Tata Chemicals Tata Motors",
@@ -4404,7 +4574,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "tata consumer s trading insights": {
    "display": "Tata Consumer's Trading Insights",
@@ -4420,7 +4590,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "tata consumer share price": {
    "display": "Tata Consumer Share Price",
@@ -4436,7 +4606,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "tata motors pv tata": {
    "display": "Tata Motors PV Tata",
@@ -4452,7 +4622,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "tata motors tata steel": {
    "display": "Tata Motors Tata Steel",
@@ -4468,7 +4638,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "tata power": {
    "display": "Tata Power",
@@ -4489,7 +4659,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 2.0
+   "score": 1.9143
   },
   "tata sons": {
    "display": "Tata Sons",
@@ -4510,7 +4680,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.9485000000000001
+   "score": 1.865
   },
   "tata sons ipo": {
    "display": "Tata Sons IPO",
@@ -4526,7 +4696,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "tata sons listing": {
    "display": "Tata Sons Listing",
@@ -4547,7 +4717,7 @@
    ],
    "first_seen": "2026-09-17T09:24:33.591649+00:00",
    "last_seen": "2026-09-17T09:24:33.591649+00:00",
-   "score": 1.5119
+   "score": 1.4471
   },
   "tata sons listing n": {
    "display": "Tata Sons Listing N",
@@ -4563,7 +4733,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "tata steel": {
    "display": "Tata Steel",
@@ -4579,7 +4749,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "tata steel jsw steel": {
    "display": "Tata Steel JSW Steel",
@@ -4595,7 +4765,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "tata trusts": {
    "display": "Tata Trusts",
@@ -4611,7 +4781,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "tcs hcl tech tata": {
    "display": "TCS HCL Tech Tata",
@@ -4627,7 +4797,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "tcs tata chemicals": {
    "display": "TCS Tata Chemicals",
@@ -4648,7 +4818,7 @@
    ],
    "first_seen": "2026-09-17T14:57:09.482379+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 1.7458
+   "score": 1.671
   },
   "tcs tata chemicals tata": {
    "display": "TCS Tata Chemicals Tata",
@@ -4664,7 +4834,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "tech mahindra it": {
    "display": "Tech Mahindra IT",
@@ -4680,7 +4850,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "tehran": {
    "display": "Tehran",
@@ -4706,39 +4876,7 @@
    ],
    "first_seen": "2026-09-14T21:46:34.176775+00:00",
    "last_seen": "2026-09-15T22:52:51.973421+00:00",
-   "score": 1.4024
-  },
-  "tehran trump": {
-   "display": "Tehran. Trump",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "TRUMP WEIGHS \u201cBIG DECISION\u201d ON IRAN President Trump says he faces a \u201cbig decision\u201d over the next phase of the Iran conflict, including whether to pursue further military action against Tehran. Trump told Axios he plans to use an upcoming UN meeting with Saudi Arabia, UAE, Qatar, Bahrain, Kuwait and ",
-     "ts": "2026-09-17T17:18:24+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
-  },
-  "tesla": {
-   "display": "Tesla",
-   "evidence": [
-    {
-     "feed": "MarketWatch Top",
-     "title": "Tesla\u2019s upcoming product frenzy could leave investors disappointed",
-     "ts": "2026-09-17T20:23:00+00:00"
-    }
-   ],
-   "feeds": [
-    "MarketWatch Top"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 1.3423
   },
   "than billion": {
    "display": "Than Billion",
@@ -4754,7 +4892,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "they": {
    "display": "They",
@@ -4770,7 +4908,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "tnau": {
    "display": "TNAU",
@@ -4786,6 +4924,22 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
+   "score": 0.9572
+  },
+  "totalenergies and blackrock sign": {
+   "display": "TotalEnergies and BlackRock Sign",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "TotalEnergies and BlackRock Sign $1.8B Deal for African Oil and Gas Assets",
+     "ts": "2026-09-18T16:30:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
    "score": 1.0
   },
   "travis kelce": {
@@ -4802,23 +4956,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
-  },
-  "treasuries gain": {
-   "display": "Treasuries Gain",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Treasuries Gain as Oil Retreat Shores Up Confidence in Warsh Fed",
-     "ts": "2026-09-17T19:49:19+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 0.9572
   },
   "trump advances": {
    "display": "Trump Advances",
@@ -4834,71 +4972,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
-  },
-  "trump weighs": {
-   "display": "TRUMP WEIGHS",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "TRUMP WEIGHS \u201cBIG DECISION\u201d ON IRAN President Trump says he faces a \u201cbig decision\u201d over the next phase of the Iran conflict, including whether to pursue further military action against Tehran. Trump told Axios he plans to use an upcoming UN meeting with Saudi Arabia, UAE, Qatar, Bahrain, Kuwait and ",
-     "ts": "2026-09-17T17:18:24+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
-  },
-  "turkey bets billion": {
-   "display": "Turkey Bets Billion",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Turkey Bets $108 Billion on Wind and Solar While Expanding Oil and Gas",
-     "ts": "2026-09-17T22:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
-  },
-  "u s and houthis open": {
-   "display": "U.S. and Houthis Open",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "U.S. and Houthis Open Talks as Saudi Oil Crisis Deepens",
-     "ts": "2026-09-17T20:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
-  },
-  "u s china": {
-   "display": "U.S.-China",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "ALTMAN AND HUANG SET TO JOIN XI AT WHITE HOUSE DINNER OpenAI CEO Sam Altman and Nvidia CEO Jensen Huang are planning to attend a White House state dinner next week with Chinese President Xi Jinping. The gathering puts two of the biggest names in AI at the table as U.S.-China technology and AI relati",
-     "ts": "2026-09-17T18:08:31+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 0.9572
   },
   "u s iran war": {
    "display": "U.S.-Iran War",
@@ -4914,7 +4988,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "u s markets pm et": {
    "display": "U.S. MARKETS PM ET",
@@ -4930,7 +5004,23 @@
    ],
    "first_seen": "2026-09-17T23:35:35.897978+00:00",
    "last_seen": "2026-09-17T23:35:35.897978+00:00",
-   "score": 0.8665
+   "score": 0.8294
+  },
+  "u s oil gas rig": {
+   "display": "U.S. Oil Gas Rig",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "U.S. Oil, Gas Rig Count Creeps Up With Strong Prices",
+     "ts": "2026-09-18T17:18:56+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "ucits": {
    "display": "UCITS",
@@ -4946,23 +5036,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
-  },
-  "unmanned american aircraft": {
-   "display": "UNMANNED AMERICAN AIRCRAFT",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "IRAN DOWNED AT LEAST 2 UNMANNED AMERICAN AIRCRAFT IN RECENT DAYS, U.S. OFFICIALS SAY- CBS NEWS",
-     "ts": "2026-09-17T17:18:23+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 0.9572
   },
   "us fed rate hike": {
    "display": "US Fed Rate Hike",
@@ -4984,7 +5058,23 @@
    ],
    "first_seen": "2026-09-16T22:54:12.926833+00:00",
    "last_seen": "2026-09-17T09:24:33.591649+00:00",
-   "score": 1.4392
+   "score": 1.3776
+  },
+  "us federal reserve s michelle": {
+   "display": "US Federal Reserve's Michelle",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon",
+     "ts": "2026-09-18T14:22:11+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
+   "score": 1.0
   },
   "us market nike": {
    "display": "US Market Nike",
@@ -5000,7 +5090,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "us market orion": {
    "display": "US Market Orion",
@@ -5016,23 +5106,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
-  },
-  "us treasuries": {
-   "display": "US Treasuries",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "US Treasuries rally as oil cools and confidence in Fed\u2019s Warsh grows",
-     "ts": "2026-09-17T18:52:53+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 0.9079
   },
   "vedanta": {
    "display": "Vedanta Group",
@@ -5053,7 +5127,7 @@
    ],
    "first_seen": "2026-09-15T09:23:18.514681+00:00",
    "last_seen": "2026-09-15T14:57:57.867431+00:00",
-   "score": 0.9783
+   "score": 0.9364
   },
   "veegaland developers": {
    "display": "Veegaland Developers",
@@ -5074,7 +5148,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.9485000000000001
+   "score": 1.865
   },
   "vwap": {
    "display": "VWAP",
@@ -5090,39 +5164,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
-  },
-  "wall st": {
-   "display": "Wall St",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today |Highlights: Tech leads Wall St to higher close as oil eases, Treasury yields dip",
-     "ts": "2026-09-17T12:15:25+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
-  },
-  "wall street rethinks one and done": {
-   "display": "WALL STREET RETHINKS ONE-AND-DONE",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "WALL STREET RETHINKS \u201cONE-AND-DONE\u201d FED HIKE The Fed\u2019s hawkish September meeting is pushing several banks to add another hike or reduce expected rate cuts, including Goldman Sachs, Morgan Stanley, NatWest, Rabobank, Swedbank and Commerzbank. The median analyst forecast still sees one additional 25bp",
-     "ts": "2026-09-17T15:48:42+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 0.9079
   },
   "warsh": {
    "display": "Warsh",
@@ -5144,23 +5186,7 @@
    ],
    "first_seen": "2026-09-17T22:50:22.266922+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 1.8087
-  },
-  "warsh fed": {
-   "display": "Warsh Fed",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Treasuries Gain as Oil Retreat Shores Up Confidence in Warsh Fed",
-     "ts": "2026-09-17T19:49:19+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 1.7312
   },
   "wealthy s": {
    "display": "Wealthy's",
@@ -5176,7 +5202,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "wed kospi taiwan index": {
    "display": "Wed Kospi Taiwan Index",
@@ -5197,7 +5223,7 @@
    ],
    "first_seen": "2026-09-15T14:57:57.867431+00:00",
    "last_seen": "2026-09-15T19:40:45.973799+00:00",
-   "score": 1.0281
+   "score": 0.9841
   },
   "weekly loss": {
    "display": "Weekly Loss",
@@ -5213,7 +5239,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "west asia": {
    "display": "West Asia",
@@ -5249,7 +5275,7 @@
    ],
    "first_seen": "2026-09-10T14:23:41.383767+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 2.0528
+   "score": 1.9649
   },
   "wework buy": {
    "display": "WeWork Buy",
@@ -5265,23 +5291,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
-  },
-  "white house dinner openai": {
-   "display": "WHITE HOUSE DINNER OpenAI",
-   "evidence": [
-    {
-     "feed": "DeItaone",
-     "title": "ALTMAN AND HUANG SET TO JOIN XI AT WHITE HOUSE DINNER OpenAI CEO Sam Altman and Nvidia CEO Jensen Huang are planning to attend a White House state dinner next week with Chinese President Xi Jinping. The gathering puts two of the biggest names in AI at the table as U.S.-China technology and AI relati",
-     "ts": "2026-09-17T18:08:31+00:00"
-    }
-   ],
-   "feeds": [
-    "DeItaone"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 0.9572
   },
   "white marubozu": {
    "display": "White Marubozu",
@@ -5297,23 +5307,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
-  },
-  "wind and solar while": {
-   "display": "Wind and Solar While",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Turkey Bets $108 Billion on Wind and Solar While Expanding Oil and Gas",
-     "ts": "2026-09-17T22:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-09-17T22:50:22.266922+00:00",
-   "last_seen": "2026-09-17T22:50:22.266922+00:00",
-   "score": 0.8603
+   "score": 0.9079
   },
   "world beyond hormuz": {
    "display": "World Beyond Hormuz",
@@ -5329,7 +5323,7 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
-   "score": 1.0
+   "score": 0.9572
   },
   "wti retreats": {
    "display": "WTI Retreats",
@@ -5345,6 +5339,22 @@
    ],
    "first_seen": "2026-09-18T14:28:34.354284+00:00",
    "last_seen": "2026-09-18T14:28:34.354284+00:00",
+   "score": 0.9572
+  },
+  "xenon": {
+   "display": "Xenon",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Wall Street falls amid volatile oil prices and higher Treasury yields, Nucor slips 4.1%, Xenon tanks 27%",
+     "ts": "2026-09-18T14:15:02+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-09-18T19:01:23.252462+00:00",
+   "last_seen": "2026-09-18T19:01:23.252462+00:00",
    "score": 1.0
   },
   "yatharth hospital": {
@@ -5361,7 +5371,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "yatharth hospitals": {
    "display": "Yatharth Hospitals",
@@ -5377,7 +5387,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "yemen really means": {
    "display": "Yemen Really Means",
@@ -5393,7 +5403,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   },
   "zerodha": {
    "display": "Zerodha",
@@ -5409,7 +5419,7 @@
    ],
    "first_seen": "2026-09-18T08:58:50.937983+00:00",
    "last_seen": "2026-09-18T08:58:50.937983+00:00",
-   "score": 0.9485
+   "score": 0.9079
   }
  },
  "members": {
@@ -5447,7 +5457,7 @@
    "last_mention": "2026-09-18T06:23:54+00:00",
    "name": "CHINASTARS",
    "norm": "china s",
-   "score": 23.7947,
+   "score": 22.7756,
    "status": "active",
    "via": "search"
   },
@@ -5485,7 +5495,7 @@
    "last_mention": "2026-09-18T07:35:22+00:00",
    "name": "GLOBAL SECURITY EXPERTS INC",
    "norm": "experts",
-   "score": 11.267,
+   "score": 10.7844,
    "status": "active",
    "via": "search"
   },
@@ -5523,7 +5533,7 @@
    "last_mention": "2026-09-18T10:04:08+00:00",
    "name": "ADANI ENTERPRISES LTD.",
    "norm": "adani",
-   "score": 7.6543,
+   "score": 7.3265,
    "status": "active",
    "via": "search"
   },
@@ -5532,6 +5542,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "U.S. COULD RELEASE MORE OIL FROM SPR Energy Secretary Chris Wright says another round of crude loans from the Strategic Petroleum Reserve is a \u201cvery real possibility\u201d as higher oil prices and steep futures backwardation boost demand for barrels. The DOE has already loaned more than 130 million barre",
+     "ts": "2026-09-18T09:13:09+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Adani Energy vs CESC vs Tata Power vs NTPC vs Power Grid: Which stock has more upside? Target price by PL Capital",
@@ -5551,17 +5566,12 @@
      "feed": "ET Markets",
      "title": "Adani Energy Solutions among 4 stocks closing above VWAP",
      "ts": "2026-09-18T03:57:43+00:00"
-    },
-    {
-     "feed": "DeItaone",
-     "title": "ALTMAN AND HUANG SET TO JOIN XI AT WHITE HOUSE DINNER OpenAI CEO Sam Altman and Nvidia CEO Jensen Huang are planning to attend a White House state dinner next week with Chinese President Xi Jinping. The gathering puts two of the biggest names in AI at the table as U.S.-China technology and AI relati",
-     "ts": "2026-09-17T18:08:31+00:00"
     }
    ],
-   "last_mention": "2026-09-18T10:04:08+00:00",
+   "last_mention": "2026-09-18T09:13:09+00:00",
    "name": "ATHER ENERGY LIMITED",
    "norm": "ather energy",
-   "score": 22.8616,
+   "score": 22.8825,
    "status": "active",
    "via": "search"
   },
@@ -5571,6 +5581,21 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "ET Markets",
+     "title": "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon",
+     "ts": "2026-09-18T14:22:11+00:00"
+    },
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+     "ts": "2026-09-18T15:00:00+00:00"
+    },
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+     "ts": "2026-09-18T15:00:00+00:00"
+    },
+    {
      "feed": "Mint Markets",
      "title": "Bank of Japan increases interest rates to a 31-year high of 1.25%",
      "ts": "2026-09-18T03:22:16+00:00"
@@ -5579,27 +5604,12 @@
      "feed": "Mint Markets",
      "title": "SBI, PNB to Bank of Maharashtra: Why are PSU bank stocks rising today?",
      "ts": "2026-09-18T04:24:42+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "How Bessent, America's bond salesman, cornered Japan on big spending",
-     "ts": "2026-09-18T05:20:20+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Bank of Maharashtra's first-ever overseas bond issuance of $500 mn gets 3 times subscription",
-     "ts": "2026-09-18T06:55:25+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "HDFC Bank shares gain over 1%: Here\u2019s why",
-     "ts": "2026-09-18T07:34:12+00:00"
     }
    ],
-   "last_mention": "2026-09-18T03:22:16+00:00",
+   "last_mention": "2026-09-18T14:22:11+00:00",
    "name": "Bank of America Corporation",
    "norm": "bank of america",
-   "score": 56.3672,
+   "score": 56.953,
    "status": "active",
    "via": "search"
   },
@@ -5608,6 +5618,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Global Markets: French bond spread at highest since 2012 as default insurance spikes",
+     "ts": "2026-09-18T15:53:10+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Global Market: Foreign investors sell Asian bonds in August as global debt rout weighs",
@@ -5627,17 +5642,12 @@
      "feed": "Mint Markets",
      "title": "Maharatna PSU stock Power Grid to raise  \u20b95,000 crore through bonds: Check issue size, tenure and details",
      "ts": "2026-09-18T11:33:11+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Fed hike, RBI moves hand India bonds a fifth weekly loss",
-     "ts": "2026-09-18T12:23:29+00:00"
     }
    ],
-   "last_mention": "2026-09-18T10:19:21+00:00",
+   "last_mention": "2026-09-18T15:53:10+00:00",
    "name": "PIMCO Active Bond Exchange-Trad",
    "norm": "bond",
-   "score": 45.5717,
+   "score": 44.6199,
    "status": "active",
    "via": "search"
   },
@@ -5675,7 +5685,7 @@
    "last_mention": "2026-09-18T13:00:00+00:00",
    "name": "Brent Crude Oil Last Day Financ",
    "norm": "last",
-   "score": 12.9233,
+   "score": 12.3698,
    "status": "active",
    "via": "search"
   },
@@ -5713,7 +5723,7 @@
    "last_mention": "2026-09-18T12:38:31+00:00",
    "name": "CARTRADE TECH LIMITED",
    "norm": "cartrade tech",
-   "score": 30.6286,
+   "score": 29.3168,
    "status": "active",
    "via": "search"
   },
@@ -5751,7 +5761,7 @@
    "last_mention": "2026-09-18T11:20:15+00:00",
    "name": "Check Point Software Technologi",
    "norm": "check",
-   "score": 40.8959,
+   "score": 39.1444,
    "status": "active",
    "via": "search"
   },
@@ -5760,6 +5770,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Indian cotton arrivals improve, while buyers turn cautious in easing market",
+     "ts": "2026-09-18T14:46:51+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "Nifty posts sixth straight weekly loss: Why is Indian stock market under pressure? Explained",
+     "ts": "2026-09-18T16:52:07+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Nestle India shares slip nearly 3% after FSSAI initiates legal action over infant nutrition products",
@@ -5774,22 +5794,12 @@
      "feed": "BusinessLine Mkts",
      "title": "India asks bulk users to source imported sugar if they want to keep more than 15 days stocks",
      "ts": "2026-09-18T11:56:31+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Fed hike, RBI moves hand India bonds a fifth weekly loss",
-     "ts": "2026-09-18T12:23:29+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "From GIFT City to Europe: India INX GA to launch tax-efficient UCITS for Indian investors",
-     "ts": "2026-09-18T13:00:58+00:00"
     }
    ],
-   "last_mention": "2026-09-18T08:52:17+00:00",
+   "last_mention": "2026-09-18T14:46:51+00:00",
    "name": "COAL INDIA LTD",
    "norm": "coal india",
-   "score": 77.7783,
+   "score": 76.4471,
    "status": "active",
    "via": "search"
   },
@@ -5798,6 +5808,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Global Markets: French bond spread at highest since 2012 as default insurance spikes",
+     "ts": "2026-09-18T15:53:10+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Global Market: European shares edge lower as telecom stocks weigh",
@@ -5817,17 +5832,12 @@
      "feed": "ET Markets",
      "title": "Global Market: South Korean shares jump nearly 2% as chip stocks rally",
      "ts": "2026-09-18T04:34:49+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Global Market: J.P. Morgan sees BoE rates rising amid renewed inflation risks",
-     "ts": "2026-09-18T04:40:22+00:00"
     }
    ],
-   "last_mention": "2026-09-18T08:58:44+00:00",
+   "last_mention": "2026-09-18T15:53:10+00:00",
    "name": "Coinbase Global, Inc.",
    "norm": "global",
-   "score": 57.9074,
+   "score": 56.4273,
    "status": "active",
    "via": "search"
   },
@@ -5865,7 +5875,7 @@
    "last_mention": "2026-09-11T20:30:00+00:00",
    "name": "Dell Technologies Inc.",
    "norm": "dell",
-   "score": 0.3702,
+   "score": 0.3543,
    "status": "active",
    "via": "search"
   },
@@ -5893,7 +5903,7 @@
    "last_mention": "2026-08-26T06:40:49+00:00",
    "name": "Dick's Sporting Goods Inc",
    "norm": "dick",
-   "score": 0.0252,
+   "score": 0.0241,
    "status": "active",
    "via": "search"
   },
@@ -5902,6 +5912,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Indian cotton arrivals improve, while buyers turn cautious in easing market",
+     "ts": "2026-09-18T14:46:51+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "Nifty posts sixth straight weekly loss: Why is Indian stock market under pressure? Explained",
+     "ts": "2026-09-18T16:52:07+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Nestle India shares slip nearly 3% after FSSAI initiates legal action over infant nutrition products",
@@ -5916,22 +5936,12 @@
      "feed": "BusinessLine Mkts",
      "title": "India asks bulk users to source imported sugar if they want to keep more than 15 days stocks",
      "ts": "2026-09-18T11:56:31+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Fed hike, RBI moves hand India bonds a fifth weekly loss",
-     "ts": "2026-09-18T12:23:29+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "From GIFT City to Europe: India INX GA to launch tax-efficient UCITS for Indian investors",
-     "ts": "2026-09-18T13:00:58+00:00"
     }
    ],
-   "last_mention": "2026-09-18T08:52:17+00:00",
+   "last_mention": "2026-09-18T14:46:51+00:00",
    "name": "HAVELLS INDIA LIMITED",
    "norm": "havells india",
-   "score": 75.5084,
+   "score": 74.2744,
    "status": "active",
    "via": "search"
   },
@@ -5941,35 +5951,35 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "ET Markets",
+     "title": "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon",
+     "ts": "2026-09-18T14:22:11+00:00"
+    },
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+     "ts": "2026-09-18T15:00:00+00:00"
+    },
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+     "ts": "2026-09-18T15:00:00+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "HDFC Mutual Fund buys 13.9 lakh Entero Healthcare shares from Prasid Uno Family Trust in Rs 236 crore block deal",
+     "ts": "2026-09-18T15:15:11+00:00"
+    },
+    {
      "feed": "Mint Markets",
      "title": "This newly listed stock more than doubled investors' money in less than 2 months; HDFC Securities sees further upside",
      "ts": "2026-09-18T10:45:15+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Bank of Japan increases interest rates to a 31-year high of 1.25%",
-     "ts": "2026-09-18T03:22:16+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "SBI, PNB to Bank of Maharashtra: Why are PSU bank stocks rising today?",
-     "ts": "2026-09-18T04:24:42+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Bank of Maharashtra's first-ever overseas bond issuance of $500 mn gets 3 times subscription",
-     "ts": "2026-09-18T06:55:25+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "HDFC Bank shares gain over 1%: Here\u2019s why",
-     "ts": "2026-09-18T07:34:12+00:00"
     }
    ],
-   "last_mention": "2026-09-18T10:45:15+00:00",
+   "last_mention": "2026-09-18T14:22:11+00:00",
    "name": "HDFC Bank Limited",
    "norm": "hdfc bank",
-   "score": 49.1627,
+   "score": 51.0571,
    "status": "active",
    "via": "search"
   },
@@ -6007,7 +6017,7 @@
    "last_mention": "2026-09-17T04:14:37+00:00",
    "name": "ICICI Lombard General Insuranc",
    "norm": "icici lombard",
-   "score": 3.8942,
+   "score": 3.7274,
    "status": "active",
    "via": "search"
   },
@@ -6017,6 +6027,21 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "ET Markets",
+     "title": "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon",
+     "ts": "2026-09-18T14:22:11+00:00"
+    },
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+     "ts": "2026-09-18T15:00:00+00:00"
+    },
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+     "ts": "2026-09-18T15:00:00+00:00"
+    },
+    {
      "feed": "Mint Markets",
      "title": "Bank of Japan increases interest rates to a 31-year high of 1.25%",
      "ts": "2026-09-18T03:22:16+00:00"
@@ -6025,27 +6050,12 @@
      "feed": "Mint Markets",
      "title": "SBI, PNB to Bank of Maharashtra: Why are PSU bank stocks rising today?",
      "ts": "2026-09-18T04:24:42+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Bank of Maharashtra's first-ever overseas bond issuance of $500 mn gets 3 times subscription",
-     "ts": "2026-09-18T06:55:25+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "HDFC Bank shares gain over 1%: Here\u2019s why",
-     "ts": "2026-09-18T07:34:12+00:00"
-    },
-    {
-     "feed": "CNBC Economy",
-     "title": "Why Japan\u2019s markets flipped the usual script after central bank rate hike",
-     "ts": "2026-09-18T07:40:29+00:00"
     }
    ],
-   "last_mention": "2026-09-18T03:22:16+00:00",
+   "last_mention": "2026-09-18T14:22:11+00:00",
    "name": "IDBI BANK LIMITED",
    "norm": "idbi bank",
-   "score": 45.0097,
+   "score": 46.082,
    "status": "active",
    "via": "search"
   },
@@ -6055,35 +6065,35 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "ET Markets",
+     "title": "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon",
+     "ts": "2026-09-18T14:22:11+00:00"
+    },
+    {
      "feed": "BusinessLine Mkts",
-     "title": "From GIFT City to Europe: India INX GA to launch tax-efficient UCITS for Indian investors",
-     "ts": "2026-09-18T13:00:58+00:00"
+     "title": "Indian cotton arrivals improve, while buyers turn cautious in easing market",
+     "ts": "2026-09-18T14:46:51+00:00"
+    },
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+     "ts": "2026-09-18T15:00:00+00:00"
+    },
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+     "ts": "2026-09-18T15:00:00+00:00"
     },
     {
      "feed": "Mint Markets",
-     "title": "Bank of Japan increases interest rates to a 31-year high of 1.25%",
-     "ts": "2026-09-18T03:22:16+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "SBI, PNB to Bank of Maharashtra: Why are PSU bank stocks rising today?",
-     "ts": "2026-09-18T04:24:42+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Bank of Maharashtra's first-ever overseas bond issuance of $500 mn gets 3 times subscription",
-     "ts": "2026-09-18T06:55:25+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "HDFC Bank shares gain over 1%: Here\u2019s why",
-     "ts": "2026-09-18T07:34:12+00:00"
+     "title": "Nifty posts sixth straight weekly loss: Why is Indian stock market under pressure? Explained",
+     "ts": "2026-09-18T16:52:07+00:00"
     }
    ],
-   "last_mention": "2026-09-18T13:00:58+00:00",
+   "last_mention": "2026-09-18T14:22:11+00:00",
    "name": "INDIAN BANK",
    "norm": "indian bank",
-   "score": 63.2776,
+   "score": 65.5675,
    "status": "active",
    "via": "search"
   },
@@ -6093,6 +6103,21 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "ET Markets",
+     "title": "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon",
+     "ts": "2026-09-18T14:22:11+00:00"
+    },
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+     "ts": "2026-09-18T15:00:00+00:00"
+    },
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+     "ts": "2026-09-18T15:00:00+00:00"
+    },
+    {
      "feed": "Mint Markets",
      "title": "Bank of Japan increases interest rates to a 31-year high of 1.25%",
      "ts": "2026-09-18T03:22:16+00:00"
@@ -6101,27 +6126,12 @@
      "feed": "Mint Markets",
      "title": "SBI, PNB to Bank of Maharashtra: Why are PSU bank stocks rising today?",
      "ts": "2026-09-18T04:24:42+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Bank of Maharashtra's first-ever overseas bond issuance of $500 mn gets 3 times subscription",
-     "ts": "2026-09-18T06:55:25+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "HDFC Bank shares gain over 1%: Here\u2019s why",
-     "ts": "2026-09-18T07:34:12+00:00"
-    },
-    {
-     "feed": "CNBC Economy",
-     "title": "Why Japan\u2019s markets flipped the usual script after central bank rate hike",
-     "ts": "2026-09-18T07:40:29+00:00"
     }
    ],
-   "last_mention": "2026-09-18T03:22:16+00:00",
+   "last_mention": "2026-09-18T14:22:11+00:00",
    "name": "INDUSIND BANK LTD.",
    "norm": "indusind bank",
-   "score": 45.0097,
+   "score": 46.082,
    "status": "active",
    "via": "search"
   },
@@ -6130,6 +6140,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Indian cotton arrivals improve, while buyers turn cautious in easing market",
+     "ts": "2026-09-18T14:46:51+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "Nifty posts sixth straight weekly loss: Why is Indian stock market under pressure? Explained",
+     "ts": "2026-09-18T16:52:07+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Nestle India shares slip nearly 3% after FSSAI initiates legal action over infant nutrition products",
@@ -6144,22 +6164,12 @@
      "feed": "BusinessLine Mkts",
      "title": "India asks bulk users to source imported sugar if they want to keep more than 15 days stocks",
      "ts": "2026-09-18T11:56:31+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Fed hike, RBI moves hand India bonds a fifth weekly loss",
-     "ts": "2026-09-18T12:23:29+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "From GIFT City to Europe: India INX GA to launch tax-efficient UCITS for Indian investors",
-     "ts": "2026-09-18T13:00:58+00:00"
     }
    ],
-   "last_mention": "2026-09-18T08:52:17+00:00",
+   "last_mention": "2026-09-18T14:46:51+00:00",
    "name": "INOX INDIA LIMITED",
    "norm": "inox india",
-   "score": 77.8927,
+   "score": 76.5566,
    "status": "active",
    "via": "search"
   },
@@ -6197,7 +6207,7 @@
    "last_mention": "2026-09-18T10:29:30+00:00",
    "name": "Jefferies Financial Group Inc.",
    "norm": "jefferies",
-   "score": 7.8435,
+   "score": 7.5076,
    "status": "active",
    "via": "search"
   },
@@ -6206,6 +6216,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+     "ts": "2026-09-18T15:00:00+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Skyways Air Services share price surges 15% after Q1 results, dividend announcements | All details here",
@@ -6225,17 +6240,12 @@
      "feed": "ET Markets",
      "title": "GMR Airports shares gain 2% after JM Financial retains Buy rating; sees up to 24% upside",
      "ts": "2026-09-17T05:58:41+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Happy Forgings share price target: 'Industrials, PVs to drive next leg of growth' - Buy from Motilal Oswal Fin Services",
-     "ts": "2026-09-17T07:09:20+00:00"
     }
    ],
-   "last_mention": "2026-09-18T05:00:27+00:00",
+   "last_mention": "2026-09-18T15:00:00+00:00",
    "name": "Jio Financial Services Limited",
    "norm": "jio financial services",
-   "score": 10.3532,
+   "score": 10.9098,
    "status": "active",
    "via": "search"
   },
@@ -6273,7 +6283,7 @@
    "last_mention": "2026-09-18T05:43:33+00:00",
    "name": "JUST DIAL LTD.",
    "norm": "just dial",
-   "score": 9.1721,
+   "score": 8.7793,
    "status": "active",
    "via": "search"
   },
@@ -6283,6 +6293,21 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "ET Markets",
+     "title": "US Federal Reserve's Michelle Bowman says changes to bank stress test coming soon",
+     "ts": "2026-09-18T14:22:11+00:00"
+    },
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+     "ts": "2026-09-18T15:00:00+00:00"
+    },
+    {
+     "feed": "Federal Reserve",
+     "title": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+     "ts": "2026-09-18T15:00:00+00:00"
+    },
+    {
      "feed": "Mint Markets",
      "title": "Bank of Japan increases interest rates to a 31-year high of 1.25%",
      "ts": "2026-09-18T03:22:16+00:00"
@@ -6291,27 +6316,12 @@
      "feed": "Mint Markets",
      "title": "SBI, PNB to Bank of Maharashtra: Why are PSU bank stocks rising today?",
      "ts": "2026-09-18T04:24:42+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Bank of Maharashtra's first-ever overseas bond issuance of $500 mn gets 3 times subscription",
-     "ts": "2026-09-18T06:55:25+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "HDFC Bank shares gain over 1%: Here\u2019s why",
-     "ts": "2026-09-18T07:34:12+00:00"
-    },
-    {
-     "feed": "CNBC Economy",
-     "title": "Why Japan\u2019s markets flipped the usual script after central bank rate hike",
-     "ts": "2026-09-18T07:40:29+00:00"
     }
    ],
-   "last_mention": "2026-09-18T03:22:16+00:00",
+   "last_mention": "2026-09-18T14:22:11+00:00",
    "name": "KARUR VYSYA BANK LTD",
    "norm": "karur vysya bank",
-   "score": 45.0097,
+   "score": 46.082,
    "status": "active",
    "via": "search"
   },
@@ -6320,6 +6330,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Lenskart block deal: Rs 2,047 crore stake sale likely; Platinum Jasmine may offload 1.7% holding",
+     "ts": "2026-09-18T14:53:33+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Lenskart Solutions block deal: ADIA-backed investor likely to offload 1.7% stake: Report",
@@ -6339,17 +6354,12 @@
      "feed": "ET Markets",
      "title": "Lenskart shares to rally 40%? Nomura initiates coverage with Buy, says its growth journey has just started",
      "ts": "2026-08-31T03:58:05+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "MSCI Rejig: Adani Energy, Lenskart, Groww to see inflows; Reliance weight trimmed",
-     "ts": "2026-08-31T04:34:08+00:00"
     }
    ],
-   "last_mention": "2026-09-18T13:45:02+00:00",
+   "last_mention": "2026-09-18T14:53:33+00:00",
    "name": "LENSKART SOLUTIONS LTD",
    "norm": "lenskart",
-   "score": 1.6616,
+   "score": 2.5904,
    "status": "active",
    "via": "search"
   },
@@ -6358,6 +6368,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Dow Jones| Nasdaq | S&P 500 | US Stock Market Today |Live Updates: US stocks slip as higher Treasury yields weigh on sentiment",
+     "ts": "2026-09-18T12:13:40+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Quote of the day by Fred C. Kelly: \"Vanity makes men sell good stocks and keep poor ones in times of distress. They don\u2019t mind disposing of gilt-edged stocks which show a profit \u2014 the very ones which might finally make up the losses on others\"",
@@ -6377,17 +6392,12 @@
      "feed": "MarketWatch Top",
      "title": "My brother-in-law expects my husband and me to pay for his food every time we go out. How can I tell my husband I don\u2019t want to do this anymore?",
      "ts": "2026-09-17T19:07:00+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Jindal Supreme IPO Day 2: Issue subscribed over 31 times, GMP at 27% \u2014 Should you subscribe?",
-     "ts": "2026-09-17T07:25:23+00:00"
     }
    ],
-   "last_mention": "2026-09-18T10:20:35+00:00",
+   "last_mention": "2026-09-18T12:13:40+00:00",
    "name": "Life Time Group Holdings, Inc.",
    "norm": "time",
-   "score": 26.6993,
+   "score": 26.5558,
    "status": "active",
    "via": "search"
   },
@@ -6425,7 +6435,7 @@
    "last_mention": "2026-09-18T05:46:05+00:00",
    "name": "Meta",
    "norm": "meta",
-   "score": 6.5632,
+   "score": 6.2821,
    "status": "active",
    "via": "gazetteer"
   },
@@ -6434,6 +6444,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "JP MORGAN EXPECTS ECB TO DELIVER ANOTHER 25 BP INTEREST RATE HIKE IN MARCH 2027 AFTER A DECEMBER HIKE VS PRIOR FORECAST OF RATES ON HOLD IN 2027",
+     "ts": "2026-09-18T09:58:08+00:00"
+    },
     {
      "feed": "ET Markets",
      "title": "Global Market: J.P. Morgan sees BoE rates rising amid renewed inflation risks",
@@ -6453,17 +6468,12 @@
      "feed": "DeItaone",
      "title": "BITCOIN COULD GET MORE SUPPORT THAN GOLD JPMorgan says Bitcoin could benefit more than gold if ETF hedging demand eases. Short interest in IBIT remains near yearly highs, while its put-to-call ratio is also higher than GLD\u2019s \u2014 signaling heavier Bitcoin hedging. If those hedges unwind, JPMorgan sees ",
      "ts": "2026-09-17T18:03:28+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "JP Morgan Analysts Unsure How to Model Oil as Iran War Drags On",
-     "ts": "2026-09-17T18:39:54+00:00"
     }
    ],
-   "last_mention": "2026-09-18T04:40:22+00:00",
+   "last_mention": "2026-09-18T09:58:08+00:00",
    "name": "Morgan Stanley",
    "norm": "morgan stanley",
-   "score": 10.3916,
+   "score": 10.9465,
    "status": "active",
    "via": "search"
   },
@@ -6501,7 +6511,7 @@
    "last_mention": "2026-09-18T04:38:08+00:00",
    "name": "MUTHOOT FINANCE LIMITED",
    "norm": "muthoot finance",
-   "score": 4.9173,
+   "score": 4.7067,
    "status": "active",
    "via": "search"
   },
@@ -6539,7 +6549,7 @@
    "last_mention": "2026-09-17T18:08:31+00:00",
    "name": "NVIDIA Corporation",
    "norm": "nvidia",
-   "score": 7.3229,
+   "score": 7.0093,
    "status": "active",
    "via": "search"
   },
@@ -6549,35 +6559,35 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "ET Markets",
+     "title": "US stocks today: US stocks slip as Treasury yields rise, investors weigh Fed outlook",
+     "ts": "2026-09-18T13:41:28+00:00"
+    },
+    {
      "feed": "Mint Markets",
-     "title": "Nifty prediction, target 2026: Bulls to help investors for 27,000 in 2026? What experts said",
-     "ts": "2026-09-18T07:35:22+00:00"
+     "title": "Netflix sell-off deepens as stock drops another 7% to hit two-month low. What is spooking investors?",
+     "ts": "2026-09-18T15:23:39+00:00"
     },
     {
      "feed": "ET Markets",
-     "title": "Global Market: Foreign investors sell Asian bonds in August as global debt rout weighs",
-     "ts": "2026-09-18T10:19:21+00:00"
+     "title": "US Treasury yields rise as investors weigh outlook for rate hikes",
+     "ts": "2026-09-18T15:50:58+00:00"
     },
     {
-     "feed": "Mint Markets",
-     "title": "This newly listed stock more than doubled investors' money in less than 2 months; HDFC Securities sees further upside",
-     "ts": "2026-09-18T10:45:15+00:00"
+     "feed": "MarketWatch Top",
+     "title": "Why investors\u2019 best move in reaction to Fed\u2019s rate hike is doing nothing at all",
+     "ts": "2026-09-18T16:39:00+00:00"
     },
     {
-     "feed": "Mint Markets",
-     "title": "Gold price extends gains despite US Fed rate hike: Should investors chase the rally? Key outlook explained",
-     "ts": "2026-09-18T10:51:10+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "From GIFT City to Europe: India INX GA to launch tax-efficient UCITS for Indian investors",
-     "ts": "2026-09-18T13:00:58+00:00"
+     "feed": "MarketWatch Top",
+     "title": "Two signs investors don\u2019t have to fear an AI slowdown",
+     "ts": "2026-09-18T17:02:00+00:00"
     }
    ],
-   "last_mention": "2026-09-18T07:35:22+00:00",
+   "last_mention": "2026-09-18T13:41:28+00:00",
    "name": "Omega Healthcare Investors, Inc",
    "norm": "investors",
-   "score": 52.6631,
+   "score": 56.4076,
    "status": "active",
    "via": "search"
   },
@@ -6615,7 +6625,7 @@
    "last_mention": "2026-09-17T10:17:13+00:00",
    "name": "PC JEWELLER LTD",
    "norm": "pc jeweller",
-   "score": 7.0012,
+   "score": 6.7013,
    "status": "active",
    "via": "search"
   },
@@ -6653,7 +6663,7 @@
    "last_mention": "2026-09-18T03:55:57+00:00",
    "name": "Septerna, Inc.",
    "norm": "sept",
-   "score": 29.8422,
+   "score": 28.5641,
    "status": "active",
    "via": "search"
   },
@@ -6691,7 +6701,7 @@
    "last_mention": "2026-09-18T11:20:15+00:00",
    "name": "BAAZAR STYLE RETAIL LTD",
    "norm": "baazar style retail",
-   "score": 16.413800000000002,
+   "score": 15.7108,
    "status": "active",
    "via": "search"
   },
@@ -6702,6 +6712,11 @@
    "evidence": [
     {
      "feed": "Mint Markets",
+     "title": "Tata feud wipes  \u20b952,154 crore off listed companies\u2019 market value",
+     "ts": "2026-09-18T15:00:15+00:00"
+    },
+    {
+     "feed": "Mint Markets",
      "title": "Adani Energy vs CESC vs Tata Power vs NTPC vs Power Grid: Which stock has more upside? Target price by PL Capital",
      "ts": "2026-09-18T10:04:08+00:00"
     },
@@ -6719,17 +6734,12 @@
      "feed": "BusinessLine Mkts",
      "title": "Sensex, Nifty extend losses to 6th week, crude moderation offers little relief, IT & Tata group stocks weigh",
      "ts": "2026-09-18T10:52:57+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "TCS, Tata Chemicals, Tata Steel to Tata Motors PV \u2014 Tata Group stock lost 46,600 crores in a single day",
-     "ts": "2026-09-18T11:48:01+00:00"
     }
    ],
-   "last_mention": "2026-09-18T10:04:08+00:00",
+   "last_mention": "2026-09-18T15:00:15+00:00",
    "name": "TATA ELXSI LIMITED",
    "norm": "tata elxsi",
-   "score": 31.8427,
+   "score": 31.4789,
    "status": "active",
    "via": "search"
   },
@@ -6740,6 +6750,11 @@
    "evidence": [
     {
      "feed": "Mint Markets",
+     "title": "Tata feud wipes  \u20b952,154 crore off listed companies\u2019 market value",
+     "ts": "2026-09-18T15:00:15+00:00"
+    },
+    {
+     "feed": "Mint Markets",
      "title": "Adani Energy vs CESC vs Tata Power vs NTPC vs Power Grid: Which stock has more upside? Target price by PL Capital",
      "ts": "2026-09-18T10:04:08+00:00"
     },
@@ -6757,17 +6772,12 @@
      "feed": "BusinessLine Mkts",
      "title": "Sensex, Nifty extend losses to 6th week, crude moderation offers little relief, IT & Tata group stocks weigh",
      "ts": "2026-09-18T10:52:57+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "TCS, Tata Chemicals, Tata Steel to Tata Motors PV \u2014 Tata Group stock lost 46,600 crores in a single day",
-     "ts": "2026-09-18T11:48:01+00:00"
     }
    ],
-   "last_mention": "2026-09-18T10:04:08+00:00",
+   "last_mention": "2026-09-18T15:00:15+00:00",
    "name": "TATA TECHNOLOGIES LIMITED",
    "norm": "tata",
-   "score": 31.8413,
+   "score": 31.4776,
    "status": "active",
    "via": "search"
   },
@@ -6805,7 +6815,7 @@
    "last_mention": "2026-09-18T12:38:31+00:00",
    "name": "Bio-Techne Corp",
    "norm": "tech",
-   "score": 30.6284,
+   "score": 29.3166,
    "status": "active",
    "via": "search"
   },
@@ -6843,7 +6853,7 @@
    "last_mention": "2026-09-18T12:38:31+00:00",
    "name": "TECH MAHINDRA LIMITED",
    "norm": "tech mahindra",
-   "score": 30.6396,
+   "score": 29.3273,
    "status": "active",
    "via": "search"
   },
@@ -6881,7 +6891,7 @@
    "last_mention": "2026-09-17T12:26:31+00:00",
    "name": "VOLTAS LTD",
    "norm": "voltas",
-   "score": 0.8006,
+   "score": 0.7663,
    "status": "active",
    "via": "search"
   },
@@ -6919,7 +6929,7 @@
    "last_mention": "2026-09-18T12:30:00+00:00",
    "name": "Vanguard Total World Stock Inde",
    "norm": "world",
-   "score": 8.9926,
+   "score": 8.6075,
    "status": "active",
    "via": "search"
   }
@@ -6928,7 +6938,6 @@
   "0045735706ee",
   "011ad1028814",
   "012ee6e30ac4",
-  "013c7df17090",
   "01a82723d698",
   "01d1abd8a370",
   "024c9a37f80b",
@@ -6936,6 +6945,7 @@
   "026bd3c1daf1",
   "02b4fa0bfde6",
   "0311b207d2ef",
+  "031c3922da1e",
   "03744adc20e2",
   "03bbde7fdf4a",
   "03cef7fc5b75",
@@ -6953,6 +6963,7 @@
   "05833d6a3f04",
   "058b8b3ecd71",
   "0590cbfd99e2",
+  "05d613ba2da7",
   "05e3be67e917",
   "0634d9b510fa",
   "06604e084322",
@@ -6963,11 +6974,11 @@
   "0745a996e5c9",
   "07dbae6bdf18",
   "081898a8213d",
+  "0939a3c38fee",
   "093e8bb3a1f2",
   "093eb9a55975",
   "094b91714f3a",
   "0981f36ec2e7",
-  "098740eb556c",
   "09b9cf606e5b",
   "09ef9846d48b",
   "0a142dd33bce",
@@ -6978,7 +6989,6 @@
   "0afc992a75eb",
   "0aff3d46a074",
   "0bc10ed7b5ed",
-  "0bfc0ec83284",
   "0c41a07d8ab1",
   "0c55b6545c4a",
   "0c63d7d8a827",
@@ -7012,7 +7022,6 @@
   "109397cba679",
   "10fa2e1672d4",
   "11139bd57fff",
-  "119ac43bb69d",
   "11a29e33a224",
   "11a8bbc3cfa9",
   "11af45f8dfef",
@@ -7037,13 +7046,11 @@
   "15e0fb5d1ee0",
   "164822825d98",
   "16a84f7c9316",
-  "16efc1343743",
   "170396612e30",
   "17429eb55254",
   "1783a1a3490c",
   "179977832da3",
   "1799dcb21c04",
-  "17ceda2a796c",
   "1881a5a80aa2",
   "18b0566d0d2a",
   "18b68a766ac8",
@@ -7079,12 +7086,12 @@
   "1cf146739eef",
   "1d4ca7a4198b",
   "1d5b55ea91e7",
-  "1d89593c01c9",
   "1db24b7d42b6",
   "1de22b822ceb",
   "1e0e62c5e1f8",
   "1e2dfc882c95",
   "1e76f5250385",
+  "1ea57f60f585",
   "1eb04db318bb",
   "1f09905c098b",
   "1f292ca57922",
@@ -7129,6 +7136,7 @@
   "2340b7615089",
   "2366bc8b1f65",
   "23697e3237da",
+  "238d8c551817",
   "23aec15f8ed2",
   "23b49c6ab3e4",
   "244310f66d09",
@@ -7161,7 +7169,6 @@
   "270970d8fc55",
   "27684a54ecbb",
   "27806d3ed2b1",
-  "27ada5dc736e",
   "27dd25e29d7f",
   "27f1dc9ea33f",
   "2803d3b9ce44",
@@ -7178,6 +7185,7 @@
   "29d3ddfb8fe0",
   "2a20cba23dc4",
   "2a60efdf474a",
+  "2a6af1f1cf90",
   "2a6d6c535dfe",
   "2aa4100a3c8c",
   "2aa90bfd1319",
@@ -7192,6 +7200,7 @@
   "2c4fb61d16c0",
   "2c71e38a7360",
   "2c8ab29a92e8",
+  "2caf17c409d0",
   "2d0aec805a66",
   "2d51e2531386",
   "2d559b2e83dd",
@@ -7203,7 +7212,6 @@
   "2e7e86c3fb5a",
   "2e864870a9c8",
   "2ee916ff6fee",
-  "2efab55b831f",
   "2f0616436bf0",
   "2f1e3aae25f6",
   "2f4a5455d8ae",
@@ -7225,7 +7233,6 @@
   "314d3857ccd7",
   "316b3366a140",
   "31a619e105a2",
-  "31a81e97e245",
   "31b7816f0981",
   "321a858daa38",
   "325269f7bf3b",
@@ -7265,7 +7272,6 @@
   "374660bb3cf7",
   "3843acb06445",
   "386f8b9ca3dd",
-  "38807544dd47",
   "38b7df45afda",
   "38bd56f05b6a",
   "3934e7974a45",
@@ -7295,11 +7301,13 @@
   "3d02d742820b",
   "3d2bb280a43b",
   "3d4ea9d14a78",
+  "3d5a8946eb3a",
   "3d60576c4f2f",
   "3d645ecf4bbf",
   "3d8aac9666b4",
   "3da3eeade109",
   "3dc49478030d",
+  "3e1e3bbaf0b6",
   "3e219c8ce53b",
   "3e99229dc16f",
   "3edb40c82b73",
@@ -7321,7 +7329,6 @@
   "41afe6d832d5",
   "41e67e0b7994",
   "41e7a71a2e7e",
-  "41f3ba382df9",
   "420589b1e04c",
   "4211738f788d",
   "424d0b73c92d",
@@ -7334,6 +7341,7 @@
   "443add4012bd",
   "443cfe136665",
   "448faaeb10ad",
+  "44ae2eb5ab6b",
   "45a50f70f7c2",
   "45b76440f873",
   "45f24b763ae0",
@@ -7378,6 +7386,7 @@
   "4c89225f1f50",
   "4c9634e67fdc",
   "4c9bb78401b3",
+  "4d001aa75e0b",
   "4d057f2a36fd",
   "4d08c7444c8e",
   "4d14bc5eca8b",
@@ -7400,6 +7409,7 @@
   "505e37de53f6",
   "50912523d829",
   "50e4ba558fce",
+  "51267177452f",
   "51277bf990d1",
   "5139e856a66d",
   "517f292d879a",
@@ -7407,18 +7417,21 @@
   "51ce69e0ebd4",
   "5277523c4576",
   "532404b5b352",
-  "53375c68f25d",
+  "533d52fbac68",
   "5382d6e275c8",
+  "539079864a6a",
   "53da3257c6b6",
   "53dbf543651a",
   "53e5cfad536c",
   "549b5bc85413",
+  "54a5e185db35",
   "54ba7a054b8d",
   "54d25443aabc",
   "550a390a29cd",
   "5517fdfed6b8",
   "55593d737363",
   "55aa124f06cc",
+  "5608202dc993",
   "5622c7cc2d90",
   "569aad61e2c8",
   "56bfb42bcb04",
@@ -7444,12 +7457,13 @@
   "5b282af7dd47",
   "5b5c044242dc",
   "5b7baec4468a",
+  "5b891535251f",
   "5b8e202d67bb",
   "5b90d832de25",
-  "5b9e5ed37309",
   "5bdc103bc0f8",
   "5bf63acbed73",
   "5bfb6e816bdf",
+  "5c0b8530a966",
   "5c919949cfbb",
   "5e7b162aa3f0",
   "5f67396027b0",
@@ -7476,6 +7490,7 @@
   "62f6156da830",
   "63078f0fbbca",
   "6355c666e384",
+  "6357c66b9e44",
   "636ffcbbb937",
   "63c627594f57",
   "63ce0021ab50",
@@ -7540,19 +7555,18 @@
   "6e9974b7c4e7",
   "6ed22caad150",
   "6ee8d2d70206",
-  "6f24a88c1cce",
   "6f2b5ce66ec9",
   "6f3070baeb66",
   "6f817a7a8a97",
   "701150201ab8",
   "704efd71a61c",
   "70557c563ad5",
-  "709e02a4925f",
   "70ce1ccb92a8",
   "70ce99098194",
   "70e4baef430a",
   "711be658df5f",
   "7127e7e9e04d",
+  "7153e61f9495",
   "717c6aa1eed6",
   "718225a1ab06",
   "71d510745a6f",
@@ -7562,12 +7576,12 @@
   "73378ca0c345",
   "7342c7155395",
   "735ed430df1a",
-  "73676e6d2007",
   "7392eb9a070e",
   "73c73d68439e",
   "74171c30dbe6",
   "7426a5b7a09b",
   "744666569c79",
+  "74736d6da006",
   "74b0f810cdb5",
   "74b73e1f8421",
   "74f3dea1c94d",
@@ -7580,12 +7594,12 @@
   "762a1210e797",
   "768581479b6f",
   "76d3188b975f",
-  "77248333b55c",
   "7768509d7adc",
   "778b2f6c9e20",
   "77969d48ea89",
   "77a9b7696ffc",
   "77ceaef4d929",
+  "77e86a985764",
   "7819d4641c7c",
   "78a699a65473",
   "78b3642fa9e7",
@@ -7594,10 +7608,8 @@
   "795595f03175",
   "795ea7fb6e28",
   "796b70897460",
-  "79e93598214a",
   "7a5cb4f32570",
   "7a821b16869b",
-  "7a86973e07ee",
   "7a935a38ebef",
   "7aa22327202c",
   "7aaf810825a5",
@@ -7625,10 +7637,12 @@
   "7f4a2a3ed528",
   "7f876c0327f6",
   "7f9ce538076e",
+  "7f9f98450fd0",
   "7fbeea26bc57",
   "7fe9f5b38d72",
   "7fed1bf5a10c",
   "7ffba0071bb5",
+  "8000d59f6d3c",
   "800a6d8d9f84",
   "80601441d42f",
   "80d8aa3a796d",
@@ -7645,7 +7659,6 @@
   "83444480933b",
   "837eb27fee46",
   "838366a5d5de",
-  "8399e3afd76d",
   "83a8189beda9",
   "83b28a103e90",
   "83bb65d27393",
@@ -7660,6 +7673,7 @@
   "85603dd781d7",
   "85b38c5bca66",
   "861c8d0c2b39",
+  "86323532a155",
   "86d179a00ed6",
   "8748737f1ca7",
   "877fc7008de9",
@@ -7672,6 +7686,7 @@
   "881ca138a4e3",
   "882d0000275c",
   "8853aa543ce3",
+  "88693d8641c3",
   "888be9618182",
   "88b20de67860",
   "88e0e47ec010",
@@ -7698,10 +7713,8 @@
   "8ceb4f746da3",
   "8d8ce69b0c4a",
   "8db5db7b8f8d",
-  "8dbfa08cad93",
   "8deb00ece6b9",
   "8e0631343e96",
-  "8eab11ef1fde",
   "8eba868d508f",
   "8ede647b404f",
   "8f8cb025a9ee",
@@ -7776,9 +7789,11 @@
   "9bb80ec9f757",
   "9bb902881057",
   "9c24dd8fba40",
+  "9c42d830e697",
   "9c4c8e3569c4",
   "9c709abd2f85",
   "9c86badf6e5d",
+  "9cbf208022de",
   "9cd5158d83dd",
   "9ce5cda2cd34",
   "9d2c17768529",
@@ -7786,9 +7801,9 @@
   "9d79b4c4244b",
   "9dcd46efdb95",
   "9dd52fc14f53",
-  "9e07d9173abf",
   "9e3ba88b9556",
   "9e663a84480b",
+  "9ec7f97890aa",
   "9f0c1e64e483",
   "9f0d6536e7e7",
   "9f1555c22b4b",
@@ -7823,6 +7838,7 @@
   "a4fd3ec5397e",
   "a50e90e0dda7",
   "a53378bd84d1",
+  "a573a34bedfd",
   "a58b604136ea",
   "a59b8c4b7420",
   "a5a9c6c1ea32",
@@ -7864,6 +7880,7 @@
   "abcdaa95a4f5",
   "abd59823309c",
   "abf3589b3113",
+  "ac731225a799",
   "acfd3ad76017",
   "ad0766c11966",
   "ad2a51b5d3b9",
@@ -7907,6 +7924,7 @@
   "b631e7235f4c",
   "b637264fe1b2",
   "b6a77232cac7",
+  "b6ab26812ca9",
   "b6ff20a69dfe",
   "b7370e002937",
   "b73d32d70952",
@@ -7950,7 +7968,6 @@
   "bf0d051147c4",
   "bf751a6b4302",
   "c051f36a5df6",
-  "c0728945e6bf",
   "c08ae8e6079b",
   "c08c6eee3419",
   "c08d324e31c0",
@@ -8051,15 +8068,13 @@
   "d26244cc4108",
   "d2847d094bff",
   "d2e3a19edf0b",
+  "d35ac0691a5a",
   "d37847f1e797",
-  "d3829580ce1b",
   "d3c7350e4fc5",
   "d3c98019c8d5",
   "d3cad517dd8f",
-  "d3ced34ba31a",
   "d3d54ad0655b",
   "d45b7a24357d",
-  "d473c4cad7a2",
   "d48ad843174e",
   "d4c0795332e9",
   "d4e96ce16984",
@@ -8069,7 +8084,6 @@
   "d5d170a0dddc",
   "d60277daf30f",
   "d6216e48006c",
-  "d6227315d150",
   "d6256dc503d5",
   "d63e0fba821a",
   "d65a08c824bb",
@@ -8109,9 +8123,7 @@
   "dc860da365ea",
   "dcf7f421d0eb",
   "dd60d74f87c4",
-  "dd767413bbc8",
   "dd86fa1fe1bf",
-  "de1281854c2c",
   "de20fa2e8054",
   "de2e89b0a348",
   "de3d3b1236ba",
@@ -8131,6 +8143,7 @@
   "e127e898ed6e",
   "e1df7430df75",
   "e203b1e67dd0",
+  "e215301d27ee",
   "e22a5f85c1b5",
   "e23a0fe27ded",
   "e23a85ef17f7",
@@ -8156,7 +8169,6 @@
   "e6621771827d",
   "e662a37dc008",
   "e675d79dee69",
-  "e68d15ca0de8",
   "e69a288a05cf",
   "e6c29d358ed8",
   "e6c2a44b379e",
@@ -8179,12 +8191,11 @@
   "e92cd61f5846",
   "e94603eac16d",
   "e94f90374dc8",
-  "e99fd7391e8c",
   "ea3bedac26d3",
   "eacc3b8907a6",
-  "eafb0eb40e71",
   "eb30000533f0",
   "eb389d73e3cb",
+  "eb476a350a0d",
   "eb680db43d86",
   "ebbe04c57bf5",
   "ebf6b3819110",
@@ -8212,14 +8223,15 @@
   "ef934133f17c",
   "efae1cb62845",
   "efc254d04963",
+  "efdc82ecc88c",
   "effff3dc122f",
   "f0100dcf96d3",
-  "f010a26ce170",
   "f04f980ee365",
   "f060b05fc046",
   "f0950b522e1c",
   "f10dcd1c4df7",
   "f1184312cd81",
+  "f1225dde290d",
   "f1e455e5bbac",
   "f29d05b1a477",
   "f2a9083264eb",
@@ -8228,8 +8240,10 @@
   "f37f83550e0d",
   "f3a86c2f4a9f",
   "f3aaf6f152c5",
+  "f3c8c3ee166c",
   "f429342f6677",
   "f4739f8005e0",
+  "f4742a2b2fc5",
   "f4b9235fe463",
   "f4bcb43f4a7b",
   "f4e30c4e6500",
@@ -8245,6 +8259,7 @@
   "f84144fd4825",
   "f852e0dbeef4",
   "f89ad5fc5451",
+  "f8c0be648274",
   "f8fa67d10a5b",
   "f94fa42e0400",
   "f9daa91d9a8f",
@@ -8257,6 +8272,7 @@
   "fb88ce594a4d",
   "fb891190d289",
   "fbc3e5c953a4",
+  "fc29fbccf718",
   "fc3bfcfa2f60",
   "fc7a82bf9f34",
   "fcb8cba3666d",
@@ -8285,5 +8301,5 @@
   "ffdde7f17bc1",
   "ffecb2d4d76d"
  ],
- "updated": "2026-09-18T14:28:34.354284+00:00"
+ "updated": "2026-09-18T19:01:23.252462+00:00"
 }
