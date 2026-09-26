@@ -1,31 +1,31 @@
-# Transmission Layer — board brief · 2026-09-25 23:18Z
+# Transmission Layer — board brief · 2026-09-26 00:02Z
 
-data as of **2026-09-25** · 97 series · 10 red / 31 amber · 8 events surfaced (24 suppressed)
+data as of **2026-09-26** · 97 series · 10 red / 30 amber · 8 events surfaced (23 suppressed)
 
 ## Regime & assumption health (measured at generation)
-- **Regime: NEUTRAL** (score 0.547, 1d in regime; vol-pct 0.38, breadth-off 0.714, Markov P(high-vol) 0.014)
-- [INVERTED] **safe_haven_gold** — corr20 -0.54, corr60 -0.41, last shift 2026-06-04. Channel: risk-off safe-haven bid: vol up -> gold bid
-- [VALID] **gold_silver_comove** — corr20 0.84, corr60 0.85, last shift 2026-02-04. Channel: monetary metals co-move; ratio extremes are rotations
-- [WEAK] **metal_copper_channel** — corr20 -0.02, corr60 0.24, last shift 2026-07-08. Channel: global copper leads Indian metal equities
-- [WEAK] **inr_oil_channel** — corr20 0.02, corr60 0.12, last shift 2026-08-12. Channel: oil up -> import bill -> INR weakens (usd_inr up)
+- **Regime: NEUTRAL** (score 0.547, 1d in regime; vol-pct 0.38, breadth-off 0.714, Markov P(high-vol) 0.013)
+- [INVERTED] **safe_haven_gold** — corr20 -0.54, corr60 -0.41, last shift 2026-06-05. Channel: risk-off safe-haven bid: vol up -> gold bid
+- [VALID] **gold_silver_comove** — corr20 0.84, corr60 0.85, last shift 2026-02-05. Channel: monetary metals co-move; ratio extremes are rotations
+- [WEAK] **metal_copper_channel** — corr20 -0.02, corr60 0.24, last shift 2026-07-09. Channel: global copper leads Indian metal equities
+- [WEAK] **inr_oil_channel** — corr20 0.02, corr60 0.12, last shift 2026-08-13. Channel: oil up -> import bill -> INR weakens (usd_inr up)
 - [INSUFFICIENT_DATA] **goi_ust_comove** — corr20 None, corr60 None. Channel: global duration transmits to GoI yields
-- [VALID] **vix_equity_inverse** — corr20 -0.78, corr60 -0.78, last shift 2026-05-05. Channel: vol spike -> equity drawdown
-- [WEAK] **dxy_inr_channel** — corr20 0.13, corr60 -0.09, last shift 2026-01-22. Channel: broad dollar strength -> EM FX weakness incl INR
-- [WEAK] **real_rates_gold_inverse** — corr20 -0.26, corr60 -0.11, last shift 2026-08-05. Channel: real yields up -> non-yielding gold down
-- [WEAK] **gsr_stress_gauge** — corr20 0.43, corr60 0.22, last shift 2026-07-24. Channel: gold/silver ratio rises under monetary stress
+- [VALID] **vix_equity_inverse** — corr20 -0.78, corr60 -0.78, last shift 2026-05-06. Channel: vol spike -> equity drawdown
+- [WEAK] **dxy_inr_channel** — corr20 0.13, corr60 -0.09, last shift 2026-01-23. Channel: broad dollar strength -> EM FX weakness incl INR
+- [WEAK] **real_rates_gold_inverse** — corr20 -0.26, corr60 -0.11, last shift 2026-08-06. Channel: real yields up -> non-yielding gold down
+- [WEAK] **gsr_stress_gauge** — corr20 0.43, corr60 0.22, last shift 2026-07-28. Channel: gold/silver ratio rises under monetary stress
 
 ## Scan control & verified transmission setups
 - FDR (BH q=0.1): **0 of 89** scanned series survive multiplicity control (effective p ≤ None)
 - No live setups: drivers quiet or targets already repriced.
-- Track record · residual_reversion: hit-rate **0.495** (n=1115) — |resid_z|>=2.0 -> fwd 5d return opposes residual
-- Track record · transmission_follow: hit-rate **0.828** (n=2367) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
+- Track record · residual_reversion: hit-rate **0.496** (n=1116) — |resid_z|>=2.0 -> fwd 5d return opposes residual
+- Track record · transmission_follow: hit-rate **0.829** (n=2303) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
 - Track record · spread_reversion: hit-rate **0.6** (n=15) — |dev| >= 2sigma vs PIT 252d -> |dev| shrinks >=25% within max(half-life,10) sessions
 
 ## Events (ranked)
 
 ### [RED 9.65] cross-asset · 5 series ↑
-- ust_30y [RATES]: last 5.47, z20 3.04, zc 1.57, resid-z 1.52 [unexplained], 1d 1.30%, |z20|=3.04; 1y-pct=100
-- tips_10y_real [RATES]: last 2.85, z20 2.72, zc 1.52, resid-z 1.81 [unexplained], 1d 3.26%, 1d move +9.0bps ≥ 5bps; |z20|=2.72; 1y-pct=100
+- ust_30y [RATES]: last 5.47, z20 3.04, zc 1.58, resid-z 1.52 [unexplained], 1d 1.30%, |z20|=3.04; 1y-pct=100
+- tips_10y_real [RATES]: last 2.85, z20 2.72, zc 1.51, resid-z 1.81 [unexplained], 1d 3.26%, 1d move +9.0bps ≥ 5bps; |z20|=2.72; 1y-pct=100
 - ust_10y [RATES]: last 5.18, z20 2.46, zc 1.29, resid-z 1.20 [quiet], 1d 1.37%, |z20|=2.46; 1y-pct=100
 - dyn_bond [EQUITIES]: last 87.70, z20 -1.94, zc 0.36, resid-z -1.69 [unexplained], 1d 0.15%, 1y-pct=0
 - ust_2y [RATES]: last 4.87, z20 1.78, zc 0.30, resid-z -0.10 [quiet], 1d 0.41%, |z20|=1.78; 1y-pct=100
@@ -69,7 +69,7 @@ data as of **2026-09-25** · 97 series · 10 red / 31 amber · 8 events surfaced
 - Historical analogues: 2026-05-22 (d=0.0), 2024-10-31 (d=0.05), 2025-04-29 (d=0.06)
 
 ### [RED 5.34] fx · 4 series ↓
-- usd_mxn [FX]: last 17.68, z20 3.68, zc 1.19, resid-z 1.39 [quiet], 1d 0.77%, |z20|=3.68
+- usd_mxn [FX]: last 17.68, z20 3.68, zc 1.17, resid-z 1.39 [quiet], 1d 0.77%, |z20|=3.68
 - aud_usd [FX]: last 0.70, z20 -2.67, zc -0.14, resid-z 0.03 [quiet], 1d -0.12%, |z20|=2.67
 - gbp_usd [FX]: last 1.32, z20 -2.51, zc 0.09, resid-z 0.16 [quiet], 1d 0.04%, |z20|=2.51
 - eur_usd [FX]: last 1.14, z20 -2.19, zc 0.27, resid-z 0.65 [quiet], 1d 0.09%, |z20|=2.19; 1y-pct=4
@@ -140,41 +140,41 @@ dyn_tech ↑ (4.03), gold_silver_ratio ↓ (3.89), hang_seng ↓ (3.8), dyn_meta
 - india_cpi_yoy: 2.9518 (1d 14.13%, z20 n/a, flag none)
 - goi_ust_spread: 2.3000 (1d -4.96%, z20 n/a, flag none)
 - midcap_largecap_ratio: 2.6318 (1d -0.48%, z20 -1.37, flag none)
-- Next India prints: NSDL FPI flows T-0d · RBI Weekly Statistical Supplement T-0d · Kharif sowing data T-0d · IMD weekly rainfall T-3d
+- Next India prints: NSDL FPI flows T-2d · IMD weekly rainfall T-2d · RBI Weekly Statistical Supplement T-6d · Kharif sowing data T-6d
 
 ## News-tracked universe (why each is watched)
-- COALINDIA.NS (COAL INDIA LTD) score 87.7 — "Liqvd Digital India IPO subscribed 5.08 times on final day"
-- INOXINDIA.NS (INOX INDIA LIMITED) score 86.6 — "Liqvd Digital India IPO subscribed 5.08 times on final day"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 86.2 — "Liqvd Digital India IPO subscribed 5.08 times on final day"
-- INDIANB.NS (INDIAN BANK) score 60.2 — "SK HYNIX'S SOLIDIGM EYES 2027 IPO THAT COULD VALUE IT AT $150 BILLION, SOURCES SAY SOLIDIG"
-- OHI (Omega Healthcare Investors, In) score 55.3 — "Wall Street ends higher as investors buy AI stocks; Microsoft rallies"
-- COIN (Coinbase Global, Inc.) score 52.3 — "Global Market: VLCC rates hit record as Saudi crude flows jump"
-- HDB (HDFC Bank Limited) score 48.0 — "SK HYNIX'S SOLIDIGM EYES 2027 IPO THAT COULD VALUE IT AT $150 BILLION, SOURCES SAY SOLIDIG"
-- BAC (Bank of America Corporation) score 46.0 — "SK HYNIX'S SOLIDIGM EYES 2027 IPO THAT COULD VALUE IT AT $150 BILLION, SOURCES SAY SOLIDIG"
-- CHKP (Check Point Software Technolog) score 42.6 — "Upcoming dividend stocks: SAIL, IGL, NMDC among 3 PSU stocks with record dates ahead- Chec"
-- TECHM.NS (TECH MAHINDRA LIMITED) score 41.3 — "ArMee Infotech IPO Day 3: Issue sees 2.44x subscription; GMP at 5%"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 41.3 — "ArMee Infotech IPO Day 3: Issue sees 2.44x subscription; GMP at 5%"
-- TECH (Bio-Techne Corp) score 41.3 — "ArMee Infotech IPO Day 3: Issue sees 2.44x subscription; GMP at 5%"
-- 301077.SZ (CHINASTARS) score 40.9 — "Xi ends 3-day Trump visit with promise to meet again in November in China – as it happened"
-- IDBI.NS (IDBI BANK LIMITED) score 40.2 — "SK HYNIX'S SOLIDIGM EYES 2027 IPO THAT COULD VALUE IT AT $150 BILLION, SOURCES SAY SOLIDIG"
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 40.2 — "SK HYNIX'S SOLIDIGM EYES 2027 IPO THAT COULD VALUE IT AT $150 BILLION, SOURCES SAY SOLIDIG"
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 40.2 — "SK HYNIX'S SOLIDIGM EYES 2027 IPO THAT COULD VALUE IT AT $150 BILLION, SOURCES SAY SOLIDIG"
-- BOND (PIMCO Active Bond Exchange-Tra) score 35.2 — "U.S. 30-YEAR BOND YIELD TOPS 5.5% FOR FIRST TIME SINCE 2004"
-- SEPN (Septerna, Inc.) score 33.2 — "TRUMP ADMINISTRATION TO MEET SEPTEMBER 30 DEADLINE TO COMMIT TO SPENDING $400 MILLION IN U"
-- LTH (Life Time Group Holdings, Inc.) score 30.3 — "U.S. CONSUMER SENTIMENT SLIDES AS INFLATION FEARS RISE University of Michigan consumer sen"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 21.8 — "5 Energy Stocks Positioned for a Prolonged Iran War"
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 17.2 — "Stocks to watch today, September 25: Tata Group, Lemon Tree Hotels, PB Fintech, JSW Cement"
-- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 17.2 — "Stocks to watch today, September 25: Tata Group, Lemon Tree Hotels, PB Fintech, JSW Cement"
-- JIOFIN.BO (Jio Financial Services Limited) score 16.6 — "Financial stocks lead correction as insurance overhaul plan sparks fears"
-- BZ=F (Brent Crude Oil Last Day Finan) score 16.2 — "YIELD ON 10-YEAR TREASURY NOTE LAST UP 4.45 BASIS POINTS AT 5.207%"
-- POLICYBZR.NS (PB FINTECH LIMITED) score 13.1 — "Stocks to watch today, September 25: Tata Group, Lemon Tree Hotels, PB Fintech, JSW Cement"
-- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 12.5 — "Adani Ports SEZ Share Price Highlights: Adani Ports SEZ Stock Price History"
-- META (Meta) score 12.3 — "Gold price outlook: MCX gold slips for the week as US Fed rate hike bets rise; what’s next"
+- COALINDIA.NS (COAL INDIA LTD) score 87.1 — "Liqvd Digital India IPO subscribed 5.08 times on final day"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 86.0 — "Liqvd Digital India IPO subscribed 5.08 times on final day"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 85.6 — "Liqvd Digital India IPO subscribed 5.08 times on final day"
+- INDIANB.NS (INDIAN BANK) score 59.8 — "SK HYNIX'S SOLIDIGM EYES 2027 IPO THAT COULD VALUE IT AT $150 BILLION, SOURCES SAY SOLIDIG"
+- OHI (Omega Healthcare Investors, In) score 54.9 — "Wall Street ends higher as investors buy AI stocks; Microsoft rallies"
+- COIN (Coinbase Global, Inc.) score 51.9 — "Global Market: VLCC rates hit record as Saudi crude flows jump"
+- HDB (HDFC Bank Limited) score 47.7 — "SK HYNIX'S SOLIDIGM EYES 2027 IPO THAT COULD VALUE IT AT $150 BILLION, SOURCES SAY SOLIDIG"
+- BAC (Bank of America Corporation) score 45.7 — "SK HYNIX'S SOLIDIGM EYES 2027 IPO THAT COULD VALUE IT AT $150 BILLION, SOURCES SAY SOLIDIG"
+- CHKP (Check Point Software Technolog) score 42.3 — "Upcoming dividend stocks: SAIL, IGL, NMDC among 3 PSU stocks with record dates ahead- Chec"
+- TECHM.NS (TECH MAHINDRA LIMITED) score 41.0 — "ArMee Infotech IPO Day 3: Issue sees 2.44x subscription; GMP at 5%"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 41.0 — "ArMee Infotech IPO Day 3: Issue sees 2.44x subscription; GMP at 5%"
+- TECH (Bio-Techne Corp) score 41.0 — "ArMee Infotech IPO Day 3: Issue sees 2.44x subscription; GMP at 5%"
+- 301077.SZ (CHINASTARS) score 40.7 — "Xi ends 3-day Trump visit with promise to meet again in November in China – as it happened"
+- IDBI.NS (IDBI BANK LIMITED) score 39.9 — "SK HYNIX'S SOLIDIGM EYES 2027 IPO THAT COULD VALUE IT AT $150 BILLION, SOURCES SAY SOLIDIG"
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 39.9 — "SK HYNIX'S SOLIDIGM EYES 2027 IPO THAT COULD VALUE IT AT $150 BILLION, SOURCES SAY SOLIDIG"
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 39.9 — "SK HYNIX'S SOLIDIGM EYES 2027 IPO THAT COULD VALUE IT AT $150 BILLION, SOURCES SAY SOLIDIG"
+- BOND (PIMCO Active Bond Exchange-Tra) score 34.9 — "U.S. 30-YEAR BOND YIELD TOPS 5.5% FOR FIRST TIME SINCE 2004"
+- SEPN (Septerna, Inc.) score 33.9 — "OPENAI HAD IDENTIFIED ABOUT TWO DOZEN ROGUE AI INCIDENTS BY MID-SEPTEMBER, REUTERS SOURCE "
+- LTH (Life Time Group Holdings, Inc.) score 30.1 — "U.S. CONSUMER SENTIMENT SLIDES AS INFLATION FEARS RISE University of Michigan consumer sen"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 21.7 — "5 Energy Stocks Positioned for a Prolonged Iran War"
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 17.1 — "Stocks to watch today, September 25: Tata Group, Lemon Tree Hotels, PB Fintech, JSW Cement"
+- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 17.1 — "Stocks to watch today, September 25: Tata Group, Lemon Tree Hotels, PB Fintech, JSW Cement"
+- JIOFIN.BO (Jio Financial Services Limited) score 16.5 — "Financial stocks lead correction as insurance overhaul plan sparks fears"
+- BZ=F (Brent Crude Oil Last Day Finan) score 16.0 — "YIELD ON 10-YEAR TREASURY NOTE LAST UP 4.45 BASIS POINTS AT 5.207%"
+- POLICYBZR.NS (PB FINTECH LIMITED) score 13.0 — "Stocks to watch today, September 25: Tata Group, Lemon Tree Hotels, PB Fintech, JSW Cement"
+- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 12.4 — "Adani Ports SEZ Share Price Highlights: Adani Ports SEZ Stock Price History"
+- META (Meta) score 12.2 — "Gold price outlook: MCX gold slips for the week as US Fed rate hike bets rise; what’s next"
 - MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 10.8 — "JAPANESE, US FINANCE CHIEFS DISCUSS YEN DEPRECIATION: KYODO"
-- JUSTDIAL.BO (JUST DIAL LTD.) score 9.0 — "Just One Commodity Vessel Left the Strait of Hormuz on Wednesday"
-- MS (Morgan Stanley) score 8.6 — "‘We were wrong.’ Why Morgan Stanley changed its tune on the U.S. dollar — and what it expe"
+- JUSTDIAL.BO (JUST DIAL LTD.) score 8.9 — "Just One Commodity Vessel Left the Strait of Hormuz on Wednesday"
+- MS (Morgan Stanley) score 8.5 — "‘We were wrong.’ Why Morgan Stanley changed its tune on the U.S. dollar — and what it expe"
 - ICICIGI.BO (ICICI Lombard General Insuranc) score 7.5 — "ICICI Lombard General Insurance among 3 stocks showing White Marubozu Pattern"
-- 4417.T (GLOBAL SECURITY EXPERTS INC) score 7.3 — "World heads into food crises 'blind' as U.S. aid cuts squeeze UN food agency, experts warn"
+- 4417.T (GLOBAL SECURITY EXPERTS INC) score 7.2 — "World heads into food crises 'blind' as U.S. aid cuts squeeze UN food agency, experts warn"
 - VT (Vanguard Total World Stock Ind) score 7.2 — "Beyond high-profile wars, a worldwide battle for critical minerals"
 - STYLEBAAZA.NS (BAAZAR STYLE RETAIL LTD) score 7.1 — "Retail investors raise stakes in 10 smallcaps; 3 turn multibaggers in 3 months"
 - GS (Goldman Sachs Group, Inc. (The) score 4.5 — "Goldman Sachs buys stake in Firstcry brand parent owner Brainbees Solutions | Check price,"
