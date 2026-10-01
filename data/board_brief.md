@@ -1,46 +1,42 @@
-# Transmission Layer — board brief · 2026-10-01 00:39Z
+# Transmission Layer — board brief · 2026-10-01 10:55Z
 
-data as of **2026-10-01** · 97 series · 8 red / 38 amber · 8 events surfaced (25 suppressed)
+data as of **2026-10-01** · 97 series · 15 red / 40 amber · 8 events surfaced (32 suppressed)
 
 ## Regime & assumption health (measured at generation)
-- **Regime: RISK_ON** (score 0.333, 1d in regime; vol-pct None, breadth-off 0.333, Markov P(high-vol) 0.013)
-- [INVERTED] **safe_haven_gold** — corr20 -0.51, corr60 -0.41, last shift 2026-06-03. Channel: risk-off safe-haven bid: vol up -> gold bid
-- [VALID] **gold_silver_comove** — corr20 0.8, corr60 0.85, last shift 2026-02-03. Channel: monetary metals co-move; ratio extremes are rotations
-- [WEAK] **metal_copper_channel** — corr20 -0.02, corr60 0.1, last shift 2026-07-07. Channel: global copper leads Indian metal equities
-- [WEAK] **inr_oil_channel** — corr20 0.02, corr60 0.11, last shift 2026-08-18. Channel: oil up -> import bill -> INR weakens (usd_inr up)
+- **Regime: RISK_OFF** (score 0.697, 6d in regime; vol-pct 0.694, breadth-off 0.7, Markov P(high-vol) 0.013)
+- [INVERTED] **safe_haven_gold** — corr20 -0.49, corr60 -0.43, last shift 2026-06-03. Channel: risk-off safe-haven bid: vol up -> gold bid
+- [VALID] **gold_silver_comove** — corr20 0.79, corr60 0.85, last shift 2026-02-03. Channel: monetary metals co-move; ratio extremes are rotations
+- [WEAK] **metal_copper_channel** — corr20 0.02, corr60 0.15, last shift 2026-07-07. Channel: global copper leads Indian metal equities
+- [WEAK] **inr_oil_channel** — corr20 -0.01, corr60 0.1, last shift 2026-08-18. Channel: oil up -> import bill -> INR weakens (usd_inr up)
 - [INSUFFICIENT_DATA] **goi_ust_comove** — corr20 None, corr60 None. Channel: global duration transmits to GoI yields
 - [VALID] **vix_equity_inverse** — corr20 -0.77, corr60 -0.77, last shift 2026-05-04. Channel: vol spike -> equity drawdown
 - [WEAK] **dxy_inr_channel** — corr20 0.09, corr60 -0.1, last shift 2026-01-21. Channel: broad dollar strength -> EM FX weakness incl INR
 - [WEAK] **real_rates_gold_inverse** — corr20 -0.3, corr60 -0.15, last shift 2026-08-11. Channel: real yields up -> non-yielding gold down
-- [WEAK] **gsr_stress_gauge** — corr20 0.43, corr60 0.21, last shift 2026-07-23. Channel: gold/silver ratio rises under monetary stress
+- [WEAK] **gsr_stress_gauge** — corr20 0.45, corr60 0.21, last shift 2026-07-23. Channel: gold/silver ratio rises under monetary stress
 
 ## Scan control & verified transmission setups
 - FDR (BH q=0.1): **0 of 89** scanned series survive multiplicity control (effective p ≤ None)
-- **SETUP** bovespa → usd_brl: leads 1d (ccf -0.587, β -0.4306, p 0.0); driver zc 1.59 → expected -0.685%. Type hit-rate 0.826 (n=2374).
-- **SETUP** bovespa → aud_usd: leads 1d (ccf 0.384, β 0.2222, p 0.0); driver zc 1.59 → expected 0.354%. Type hit-rate 0.826 (n=2374).
-- **SETUP** bovespa → usd_mxn: leads 1d (ccf -0.372, β -0.2068, p 0.0); driver zc 1.59 → expected -0.329%. Type hit-rate 0.826 (n=2374).
-- **SETUP** bovespa → asx_200: leads 1d (ccf 0.307, β 0.2267, p 0.0); driver zc 1.59 → expected 0.361%. Type hit-rate 0.826 (n=2374).
-- Track record · residual_reversion: hit-rate **0.503** (n=1121) — |resid_z|>=2.0 -> fwd 5d return opposes residual
-- Track record · transmission_follow: hit-rate **0.826** (n=2374) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
+- **SETUP** bovespa → aud_usd: leads 1d (ccf 0.384, β 0.2225, p 0.0); driver zc 1.59 → expected 0.354%. Type hit-rate 0.823 (n=2375).
+- **SETUP** bovespa → usd_mxn: leads 1d (ccf -0.368, β -0.2051, p 0.0); driver zc 1.59 → expected -0.326%. Type hit-rate 0.823 (n=2375).
+- Track record · residual_reversion: hit-rate **0.503** (n=1126) — |resid_z|>=2.0 -> fwd 5d return opposes residual
+- Track record · transmission_follow: hit-rate **0.823** (n=2375) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
 - Track record · spread_reversion: hit-rate **0.6** (n=15) — |dev| >= 2sigma vs PIT 252d -> |dev| shrinks >=25% within max(half-life,10) sessions
 
 ## Events (ranked)
 
-### [RED 7.87] cross-asset · 3 series ↓
-- comex_silver [COMMODITIES]: last 60.51, z20 -2.01, zc 0.00, resid-z -0.09 [quiet], 1d 0.00%, |z20|=2.01; co-occur[gold_silver] same-direction (channel VALID)
-- comex_gold [COMMODITIES]: last 4175.90, z20 -1.92, zc -0.02, resid-z 0.43 [quiet], 1d -0.01%, |z20|=1.92; co-occur[gold_silver] same-direction (channel VALID)
-- gold_silver_ratio [DERIVED]: last 69.02, z20 1.55, zc n/a, resid-z n/a [quiet], 1d -0.01%, GSR<75 (extreme low); |z20|=1.55
+### [RED 7.36] cross-asset · 3 series ↓
+- comex_gold [COMMODITIES]: last 4201.50, z20 -1.69, zc 0.39, resid-z 0.43 [quiet], 1d 0.35%, |z20|=1.69; co-occur[gold_silver] same-direction (channel VALID)
+- comex_silver [COMMODITIES]: last 61.21, z20 -1.62, zc 0.99, resid-z 0.99 [quiet], 1d 1.85%, |z20|=1.62; co-occur[gold_silver] same-direction (channel VALID)
+- gold_silver_ratio [DERIVED]: last 68.64, z20 1.05, zc n/a, resid-z n/a [quiet], 1d -1.47%, GSR<75 (extreme low)
 - **Mechanism**: cross-asset · 3 series ↓: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-05-22 (z-distance 0.0).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: midcap_largecap_ratio (rho -0.377 via gold_silver_ratio, z -1.45, reacted)
-- Watch next: comex_copper (co-move) — not yet - watch; rho 0.587 vs comex_silver, historically leads by 1d
-- Watch next: dyn_coin (co-move) — not yet - watch; rho 0.503 vs comex_silver, historically leads by 5d
-- Watch next: eth_usd (co-move) — not yet - watch; rho 0.575 vs comex_gold
-- Watch next: btc_usd (co-move) — not yet - watch; rho 0.536 vs comex_silver
-- **India receivers**: midcap_largecap_ratio (rho -0.377, z -1.45)
-- Source: Gold is supposed to be a safe haven when inflation surges. So why isn’t it working that way now? — MarketWatch Top, 2026-09-30. https://www.marketwatch.com/story/gold-is-supposed-to-be-a-safe-haven-when-inflation-surges-so-why-isnt-it-working-that-way-now-45cbb07b?mod=mw_rss_topstories
-- Source: Today’s Gold Rate in India September 30: Gold prices up in Coimbatore, Nagpur, Visakhapatnam, Surat and other cities — BusinessLine Mkts, 2026-09-30. https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-coimbatore-nagpur-visakhapatnam-surat-jaipur-lucknow-chandigarh-gold-rates-other-cities-september-30-2026/article71527482.ece
-- Source: Today’s Gold Rate in India September 30: Gold prices up in Delhi, Mumbai, Kolkata, Chennai, Bengaluru — BusinessLine Mkts, 2026-09-30. https://www.thehindubusinessline.com/markets/gold/gold-price-today-in-delhi-mumbai-kolkata-chennai-bengaluru-hyderabad-pune-gold-rates-metro-cities-september-30-2026/article71527481.ece
+- **India take**: No exposed Indian receivers above the correlation floor.
+- Watch next: comex_copper (co-move) — not yet - watch; rho 0.59 vs comex_silver, historically leads by 1d
+- Watch next: dyn_coin (co-move) — not yet - watch; rho 0.501 vs comex_silver, historically leads by 5d
+- Watch next: btc_usd (co-move) — not yet - watch; rho 0.572 vs comex_gold
+- Source: Gold futures rise to ₹1.50 lakh/10 gm on firm spot demand — BusinessLine Mkts, 2026-10-01. https://www.thehindubusinessline.com/markets/gold/gold-futures-rise-to-150-lakh10-gm-on-firm-spot-demand/article71532369.ece
+- Source: Today’s Gold Rate in India October 1: Gold prices down in Delhi, Mumbai, Kolkata, Chennai, Bengaluru — BusinessLine Mkts, 2026-10-01. https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-delhi-mumbai-kolkata-chennai-bengaluru-hyderabad-pune-gold-rates-metro-cities-october-1-2026/article71531990.ece
+- Source: Today’s Gold Rate in India October 1: Gold prices down in Coimbatore, Nagpur, Visakhapatnam, Surat, Jaipur — BusinessLine Mkts, 2026-10-01. https://www.thehindubusinessline.com/gold-rate-today/gold-price-today-in-coimbatore-nagpur-visakhapatnam-surat-jaipur-lucknow-chandigarh-gold-rates-other-cities-october-1-2026/article71531991.ece
 - Historical analogues: 2026-05-22 (d=0.0), 2026-05-15 (d=0.21), 2025-07-30 (d=0.29)
 
 ### [RED 6.89] cross-asset · 5 series ↑
@@ -52,136 +48,146 @@ data as of **2026-10-01** · 97 series · 8 red / 38 amber · 8 events surfaced 
 - **Mechanism**: cross-asset · 5 series ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-05-22 (z-distance 0.0).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
 - **India take**: No exposed Indian receivers above the correlation floor.
+- Watch next: brent (co-move) — not yet - watch; rho 0.648 vs ust_30y, historically leads by 3d
+- Watch next: wti (co-move) — not yet - watch; rho 0.506 vs ust_30y, historically leads by 3d
 - Watch next: sp500 (co-move) — not yet - watch; rho 0.543 vs dyn_bond
-- Source: U.S. 10-YEAR SUFFERS WORST QUARTER SINCE 1994 The 10-year Treasury yield ended Q3 at 5.29%, surging 87 basis points — its largest quarterly increase in more than three decades. The move has been driven largely by real yields approaching 3%, as markets dramatically repriced the Fed outlook. Long-dura — DeItaone, 2026-09-30. https://t.me/walter_bloomberg/36424
-- Source: U.S. bond yields post biggest jump in a generation as global rout rattles investors — MarketWatch Top, 2026-09-30. https://www.marketwatch.com/story/u-s-bond-yields-head-for-biggest-jump-in-a-generation-as-global-rout-rattles-investors-7dede2f2?mod=mw_rss_topstories
-- Source: Paramount’s mega debt sale reveals how higher bond yields are squeezing corporate America — MarketWatch Top, 2026-09-30. https://www.marketwatch.com/story/paramounts-mega-debt-sale-reveals-how-higher-bond-yields-are-squeezing-corporate-america-e9694ec3?mod=mw_rss_topstories
+- Source: Rupee drops to two-month low as global bond rout deepens, oil jumps — ET Markets, 2026-10-01. https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-drops-to-two-month-low-as-global-bond-rout-deepens-oil-jumps/articleshow/134615636.cms
+- Source: Rupee drops to two-month low of 96.31/$ as global bond rout deepens, oil jumps — BusinessLine Mkts, 2026-10-01. https://www.thehindubusinessline.com/markets/forex/rupee-drops-to-two-month-low-of-9631-as-global-bond-rout-deepens-oil-jumps/article71532379.ece
+- Source: France’s bond market is stumbling. Should Americans care? — MarketWatch Top, 2026-10-01. https://www.marketwatch.com/story/frances-bond-market-is-stumbling-should-americans-care-202ea2af?mod=mw_rss_topstories
 - Historical analogues: 2026-05-22 (d=0.0), 2026-05-07 (d=0.32), 2026-03-30 (d=0.54)
 
-### [AMBER 6.03] cross-asset · 4 series ↓
-- nifty_midcap_100 [INDICES]: last 59321.50, z20 -2.37, zc 0.00, resid-z 0.73 [quiet], 1d 0.00%, |z20|=2.37
-- dyn_policybzr_ns [EQUITIES]: last 1063.90, z20 -2.31, zc -0.14, resid-z -0.07 [quiet], 1d -1.58%, |z20|=2.31; 1y-pct=0
-- nifty_50 [INDICES]: last 22620.45, z20 -2.23, zc -0.64, resid-z -0.92 [quiet], 1d -0.42%, |z20|=2.23; 1y-pct=1
-- india_vix [INDICES]: last 13.46, z20 1.67, zc 0.06, resid-z n/a [quiet], 1d 0.39%, |z20|=1.67
+### [RED 6.73] indices · 2 series ↑
+- nikkei_225 [INDICES]: last 68986.97, z20 3.89, zc 2.33, resid-z 1.12 [moved], 1d 3.35%, |z20|=3.89
+- taiwan_weighted [INDICES]: last 48281.21, z20 1.69, zc 0.67, resid-z 0.42 [quiet], 1d 0.71%, |z20|=1.69; 1y-pct=100
+- **Mechanism**: indices · 2 series ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2025-12-30 (z-distance 0.7).
+- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
+- **India take**: nifty_it (rho -0.423 via taiwan_weighted, z -0.79, quiet); dyn_techm_ns (rho -0.415 via taiwan_weighted, z -0.73, quiet)
+- Watch next: kospi (co-move) — not yet - watch; rho 0.815 vs nikkei_225
+- **India receivers**: nifty_it (rho -0.423, z -0.79); dyn_techm_ns (rho -0.415, z -0.73)
+- Source: Global Market: Japan’s Nikkei hits six-week high as chip stocks rally on AI optimism — ET Markets, 2026-10-01. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japans-nikkei-hits-six-week-high-as-chip-stocks-rally-on-ai-optimism/articleshow/134609469.cms
+- Source: Global Market: Japan’s Nikkei rises as AI stocks track US chip gains — ET Markets, 2026-09-30. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japans-nikkei-rises-as-ai-stocks-track-us-chip-gains/articleshow/134581624.cms
+- Historical analogues: 2025-12-30 (d=0.7), 2025-07-11 (d=0.77), 2026-06-09 (d=1.0)
+
+### [AMBER 6.39] usd_inr ↑
+- usd_inr [FX]: last 96.32, z20 1.39, zc 0.51, resid-z 0.78 [quiet], 1d 0.28%, 20d range extreme; 1y-pct=96
+- **Mechanism**: usd_inr ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-07-10 (z-distance 0.0).
+- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
+- **India take**: dyn_idbi_ns (rho -0.354 via usd_inr, z 0.81, quiet)
+- **India receivers**: dyn_idbi_ns (rho -0.354, z 0.81)
+- Source: Rupee drops to two-month low as global bond rout deepens, oil jumps — ET Markets, 2026-10-01. https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-drops-to-two-month-low-as-global-bond-rout-deepens-oil-jumps/articleshow/134615636.cms
+- Source: Rupee drops to two-month low of 96.31/$ as global bond rout deepens, oil jumps — BusinessLine Mkts, 2026-10-01. https://www.thehindubusinessline.com/markets/forex/rupee-drops-to-two-month-low-of-9631-as-global-bond-rout-deepens-oil-jumps/article71532379.ece
+- Source: US 10-year yield at 24-year high rattles Nifty, rupee and bond markets. Why is India hit hard? — ET Markets, 2026-10-01. https://economictimes.indiatimes.com/markets/bonds/us-10-year-yield-at-24-year-high-rattles-nifty-rupee-and-bond-markets-why-is-india-hit-hard/articleshow/134614052.cms
+- Historical analogues: 2026-07-10 (d=0.0), 2024-11-06 (d=0.01), 2025-09-16 (d=0.01)
+
+### [RED 6.3] fx · 4 series ↓
+- usd_mxn [FX]: last 18.19, z20 2.64, zc 1.04, resid-z 1.39 [quiet], 1d 0.81%, |z20|=2.64
+- aud_usd [FX]: last 0.69, z20 -2.30, zc -1.09, resid-z -1.53 [unexplained], 1d -0.56%, |z20|=2.30
+- eur_usd [FX]: last 1.13, z20 -2.08, zc -1.11, resid-z -0.94 [quiet], 1d -0.35%, |z20|=2.08; 1y-pct=0
+- gbp_usd [FX]: last 1.32, z20 -1.55, zc -0.21, resid-z -0.16 [quiet], 1d -0.08%, |z20|=1.55
+- **Mechanism**: fx · 4 series ↓: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-07-10 (z-distance 0.0).
+- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
+- **India take**: dyn_policybzr_ns (rho -0.514 via usd_mxn, z -2.24, reacted); dyn_icicigi_bo (rho -0.51 via gbp_usd, z 1.68, reacted); dyn_muthootfin_ns (rho 0.477 via aud_usd, z -2.12, reacted); nifty_metal (rho 0.422 via aud_usd, z -2.95, reacted); nifty_midcap_100 (rho -0.406 via usd_mxn, z -2.52, reacted)
+- **India receivers**: dyn_policybzr_ns (rho -0.514, z -2.24); dyn_icicigi_bo (rho -0.51, z 1.68); dyn_muthootfin_ns (rho 0.477, z -2.12); nifty_metal (rho 0.422, z -2.95)
+- Source: FOREX-Euro slides to 17-month low, hit by rates and inflation cocktail — ET Markets, 2026-10-01. https://economictimes.indiatimes.com/markets/forex/forex-news/forex-euro-slides-to-17-month-low-hit-by-rates-and-inflation-cocktail/articleshow/134613639.cms
+- Source: Global Market: Euro under pressure from energy shock and political risks — ET Markets, 2026-09-30. https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/global-market-euro-under-pressure-from-energy-shock-and-political-risks/articleshow/134587000.cms
+- Source: EURO HITS 16-MONTH LOW AGAINST US DOLLAR, LAST DOWN 0.26% AT $1.13415 — DeItaone, 2026-09-29. https://t.me/walter_bloomberg/36336
+- Historical analogues: 2026-07-10 (d=0.0), 2025-08-15 (d=0.23), 2025-03-31 (d=0.52)
+
+### [RED 6.19] cross-asset · 4 series ↓
+- nifty_50 [INDICES]: last 22421.95, z20 -2.53, zc -1.36, resid-z -0.60 [quiet], 1d -0.88%, |z20|=2.53; 1y-pct=0
+- nifty_midcap_100 [INDICES]: last 58731.25, z20 -2.52, zc -1.06, resid-z -0.64 [quiet], 1d -1.00%, |z20|=2.52
+- india_vix [INDICES]: last 14.44, z20 2.46, zc 1.19, resid-z n/a [quiet], 1d 7.01%, |z20|=2.46
+- dyn_policybzr_ns [EQUITIES]: last 980.00, z20 -2.24, zc -1.16, resid-z -0.99 [quiet], 1d -7.89%, |z20|=2.24; 1y-pct=0
 - **Mechanism**: cross-asset · 4 series ↓: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2025-07-21 (z-distance 0.49).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: midcap_largecap_ratio (rho 0.61 via nifty_midcap_100, z -1.45, reacted); dyn_jiofin_bo (rho 0.57 via nifty_50, z -2.59, reacted); nifty_fmcg (rho 0.564 via nifty_50, z -2.49, reacted); nifty_metal (rho 0.494 via nifty_midcap_100, z -1.65, reacted); dyn_indusindbk_bo (rho 0.47 via nifty_midcap_100, z -1.9, reacted)
-- **India receivers**: midcap_largecap_ratio (rho 0.61, z -1.45); dyn_jiofin_bo (rho 0.57, z -2.59); nifty_fmcg (rho 0.564, z -2.49); nifty_metal (rho 0.494, z -1.65)
-- Source: Nifty 50 prediction today: Oversold zone raises counter-trend rally hopes | Support, resistance — Mint Markets, 2026-09-30. https://www.livemint.com/market/stock-market-news/nifty-50-prediction-today-oversold-zone-raises-counter-trend-rally-hopes-support-resistance-11790790026650.html
-- Source: 10 Nifty 50 stocks, including Infosys and TCS, posted double-digit losses in September as market sell-off deepens — Mint Markets, 2026-09-30. https://www.livemint.com/market/stock-market-news/10-nifty-50-stocks-including-infosys-and-tcs-posted-double-digit-losses-in-september-as-market-sell-off-deepens-11790786786742.html
-- Source: September rout makes history: Nifty posts worst monthly fall in 8 years, worst series drop since 2001 — BusinessLine Mkts, 2026-09-30. https://www.thehindubusinessline.com/markets/september-rout-makes-history-nifty-posts-worst-monthly-fall-in-8-years-worst-series-drop-since-2001/article71528719.ece
+- **India take**: midcap_largecap_ratio (rho 0.603 via nifty_midcap_100, z -1.57, reacted); nifty_fmcg (rho 0.589 via nifty_50, z -3.71, reacted); dyn_jiofin_bo (rho 0.588 via nifty_50, z -2.93, reacted); nifty_metal (rho 0.525 via nifty_midcap_100, z -2.95, reacted); dyn_indusindbk_bo (rho 0.485 via nifty_midcap_100, z -2.15, reacted)
+- **India receivers**: midcap_largecap_ratio (rho 0.603, z -1.57); nifty_fmcg (rho 0.589, z -3.71); dyn_jiofin_bo (rho 0.588, z -2.93); nifty_metal (rho 0.525, z -2.95)
+- Source: Sensex today | Stock Market Live: Sensex falls 650 points, Nifty slips 1%, dragged by auto stocks — BusinessLine Mkts, 2026-10-01. https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-live-updates-1-october-2026/article71528461.ece
+- Source: Nifty FMCG falls 6% in six months. Can festive demand trigger a recovery? | Marico, HUL, Tata Consumer among top picks — Mint Markets, 2026-10-01. https://www.livemint.com/market/stock-market-news/nifty-fmcg-falls-6-in-six-months-can-festive-demand-trigger-a-recovery-marico-hul-tata-consumer-among-top-picks-11790847453775.html
+- Source: RBI rate hike expected in October? What it means for Sensex, Nifty | Experts decode — Mint Markets, 2026-10-01. https://www.livemint.com/market/stock-market-news/rbi-rate-hike-expected-in-october-what-it-mean-for-sensex-nifty-experts-decode-11790847271851.html
 - Historical analogues: 2025-07-21 (d=0.49), 2025-07-14 (d=0.72), 2025-12-30 (d=0.96)
+
+### [AMBER 5.76] brent ↓
+- brent [COMMODITIES]: last 99.88, z20 -0.76, zc -1.42, resid-z -0.12 [quiet], 1d -3.53%, 1-session move -3.53% ≥ 1.5%
+- **Mechanism**: brent ↓: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-05-22 (z-distance 0.0).
+- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
+- **India take**: No exposed Indian receivers above the correlation floor.
+- Watch next: wti (co-move) — not yet - watch; rho 0.908 vs brent, historically leads by 5d
+- Watch next: sp500 (inverse) — not yet - watch; rho -0.622 vs brent
+- Source: Rupee drops to two-month low as global bond rout deepens, oil jumps — ET Markets, 2026-10-01. https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-drops-to-two-month-low-as-global-bond-rout-deepens-oil-jumps/articleshow/134615636.cms
+- Source: Rupee drops to two-month low of 96.31/$ as global bond rout deepens, oil jumps — BusinessLine Mkts, 2026-10-01. https://www.thehindubusinessline.com/markets/forex/rupee-drops-to-two-month-low-of-9631-as-global-bond-rout-deepens-oil-jumps/article71532379.ece
+- Source: Russia steps up sunflower oil exports to China as war disrupts India trade — BusinessLine Mkts, 2026-10-01. https://www.thehindubusinessline.com/markets/commodities/russia-steps-up-sunflower-oil-exports-to-china-as-war-disrupts-india-trade/article71531478.ece
+- Historical analogues: 2026-05-22 (d=0.0), 2024-11-01 (d=0.0), 2025-08-14 (d=0.02)
 
 ### [AMBER 5.58] cross-asset · 3 series ↓
 - dyn_ms [EQUITIES]: last 188.11, z20 -2.26, zc -1.42, resid-z 0.14 [quiet], 1d -2.41%, |z20|=2.26
-- dow_jones [INDICES]: last 50924.10, z20 -1.87, zc -1.07, resid-z -2.40 [unexplained], 1d -0.83%, |z20|=1.87
-- russell_2000 [INDICES]: last 2797.20, z20 -1.86, zc -0.34, resid-z -0.33 [quiet], 1d -0.38%, |z20|=1.86
+- dow_jones [INDICES]: last 50924.10, z20 -1.87, zc -1.07, resid-z -1.56 [unexplained], 1d -0.83%, |z20|=1.87
+- russell_2000 [INDICES]: last 2797.20, z20 -1.86, zc -0.34, resid-z -0.04 [quiet], 1d -0.38%, |z20|=1.86
 - **Mechanism**: cross-asset · 3 series ↓: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-05-22 (z-distance 0.0).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
 - **India take**: No exposed Indian receivers above the correlation floor.
+- Watch next: brent (inverse) — not yet - watch; rho -0.663 vs dow_jones, historically leads by 3d
 - Watch next: dyn_dell (co-move) — not yet - watch; rho 0.636 vs dyn_ms, historically leads by 2d
-- Watch next: vix (inverse) — not yet - watch; rho -0.582 vs dyn_ms, historically leads by 4d
+- Watch next: wti (inverse) — not yet - watch; rho -0.613 vs dow_jones, historically leads by 2d
+- Watch next: vix (inverse) — not yet - watch; rho -0.588 vs dyn_ms, historically leads by 4d
 - Watch next: sp500 (co-move) — not yet - watch; rho 0.724 vs dyn_ms
-- Watch next: dyn_nvda (co-move) — not yet - watch; rho 0.513 vs dyn_ms
-- Watch next: stoxx_50 (co-move) — not yet - watch; rho 0.51 vs dyn_ms
 - Source: Dow Jones| Nasdaq | US Stock Market Today | Live: US market edges higher as inflation, consumer spending data boost stocks — ET Markets, 2026-09-30. https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/dow-jones-stock-market-live-updates-nasdaq-sp-500-iran-war-hormuz-deal-brent-crude-oil-fed-warsh-treasury-bond-meta-openai-boeing-northrop-grumman-ai-chip-stock-price-news-30th-september-2026/liveblog/134594254.cms
 - Source: Dow Jones| Nasdaq | US Stock Market Today | Live: Dow, S&P 500 dip while Nasdaq rises on modest inflation increase — ET Markets, 2026-09-30. https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/dow-jones-stock-market-live-updates-nasdaq-sp-500-iran-war-hormuz-deal-brent-crude-oil-fed-warsh-treasury-bond-meta-openai-boeing-northrop-grumman-ai-chip-stock-price-news-30th-september-2026/liveblog/134594254.cms
 - Source: JP Morgan, Goldman Diverge on Hormuz Oil Flow Estimates — OilPrice, 2026-09-30. https://oilprice.com/Latest-Energy-News/World-News/JP-Morgan-Goldman-Diverge-on-Hormuz-Oil-Flow-Estimates.html
 - Historical analogues: 2026-05-22 (d=0.0), 2025-10-27 (d=0.32), 2026-05-14 (d=0.54)
 
-### [AMBER 5.05] indices · 2 series ↑
-- nikkei_225 [INDICES]: last 67340.35, z20 2.21, zc 0.48, resid-z 1.55 [unexplained], 1d 0.71%, |z20|=2.21
-- taiwan_weighted [INDICES]: last 48163.78, z20 1.70, zc 1.02, resid-z 1.20 [quiet], 1d 1.12%, |z20|=1.70; 1y-pct=100
-- **Mechanism**: indices · 2 series ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2025-12-30 (z-distance 0.7).
-- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: nifty_it (rho -0.446 via taiwan_weighted, z -1.48, reacted); dyn_techm_ns (rho -0.415 via taiwan_weighted, z -1.13, reacted)
-- Watch next: kospi (co-move) — not yet - watch; rho 0.827 vs nikkei_225
-- **India receivers**: nifty_it (rho -0.446, z -1.48); dyn_techm_ns (rho -0.415, z -1.13)
-- Source: Global Market: Japan’s Nikkei rises as AI stocks track US chip gains — ET Markets, 2026-09-30. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japans-nikkei-rises-as-ai-stocks-track-us-chip-gains/articleshow/134581624.cms
-- Source: Global Market: Nikkei falls as oil surge, global bond selloff rattle markets — ET Markets, 2026-09-29. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-nikkei-falls-as-oil-surge-global-bond-selloff-rattle-markets/articleshow/134555654.cms
-- Historical analogues: 2025-12-30 (d=0.7), 2025-07-11 (d=0.77), 2026-06-09 (d=1.0)
-
-### [RED 4.68] rates · 2 series ↑
-- hy_oas [RATES]: last 3.08, z20 3.84, zc 0.78, resid-z 1.37 [quiet], 1d 1.99%, |z20|=3.84
-- ig_oas [RATES]: last 0.84, z20 2.48, zc 0.70, resid-z 1.00 [quiet], 1d 1.20%, |z20|=2.48
-- **Mechanism**: rates · 2 series ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-07-10 (z-distance 0.0).
-- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: dyn_policybzr_ns (rho -0.425 via ig_oas, z -2.31, reacted); nifty_midcap_100 (rho -0.414 via ig_oas, z -2.37, reacted)
-- **India receivers**: dyn_policybzr_ns (rho -0.425, z -2.31); nifty_midcap_100 (rho -0.414, z -2.37)
-- Historical analogues: 2026-07-10 (d=0.0), 2025-09-01 (d=0.48), 2024-11-04 (d=0.56)
-
-### [RED 4.59] dyn_jiofin_bo ↓
-- dyn_jiofin_bo [EQUITIES]: last 216.60, z20 -2.59, zc -0.46, resid-z 0.27 [quiet], 1d -0.60%, |z20|=2.59; 1y-pct=0
-- **Mechanism**: dyn_jiofin_bo ↓: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-07-10 (z-distance 0.0).
-- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: nifty_50 (rho 0.57 via dyn_jiofin_bo, z -2.23, reacted); nifty_midcap_100 (rho 0.423 via dyn_jiofin_bo, z -2.37, reacted)
-- **India receivers**: nifty_50 (rho 0.57, z -2.23); nifty_midcap_100 (rho 0.423, z -2.37)
-- Source: Geojit Financial Services reshuffles top deck; Jones George to take over as MD — ET Markets, 2026-09-30. https://economictimes.indiatimes.com/markets/stocks/news/geojit-financial-services-reshuffles-top-deck-jones-george-to-take-over-as-md/articleshow/134596797.cms
-- Source: Geojit Financial Services appoints Jones George as MD, founder C J George moves to Executive Chairman role — BusinessLine Mkts, 2026-09-30. https://www.thehindubusinessline.com/markets/geojit-financial-services-appoints-jones-george-as-md-founder-c-j-george-moves-to-executive-chairman-role/article71527951.ece
-- Source: 26% dip in YTD! Jio Financial Services shares hit 52-week low — will trend reverse? Target price, support, resistance — Mint Markets, 2026-09-29. https://www.livemint.com/market/stock-market-news/26-dip-in-ytd-jio-financial-services-shares-hit-52-week-low-will-trend-reverse-target-price-support-resistance-11790658322060.html
-- Historical analogues: 2026-07-10 (d=0.0), 2025-08-14 (d=0.01), 2025-08-06 (d=0.03)
-
-### [AMBER 4.16] dyn_icicigi_bo ↑
-- dyn_icicigi_bo [EQUITIES]: last 1583.00, z20 2.16, zc 3.00, resid-z 2.68 [unexplained], 1d 4.54%, |z20|=2.16
-- **Mechanism**: dyn_icicigi_bo ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-07-10 (z-distance 0.0).
-- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: No exposed Indian receivers above the correlation floor.
-- Source: Broker’s Call: ICICI Lombard GIC (Add) — BusinessLine Mkts, 2026-09-30. https://www.thehindubusinessline.com/markets/brokers-call-icici-lombard-general-insurance-add/article71527876.ece
-- Source: HDFC Bank names ICICI veteran banker V.N. Srivatsan as Chief Compliance Officer — ET Markets, 2026-09-30. https://economictimes.indiatimes.com/markets/stocks/news/hdfc-bank-names-v-n-srivatsan-as-chief-compliance-officer/articleshow/134605603.cms
-- Historical analogues: 2026-07-10 (d=0.0), 2026-06-24 (d=0.0), 2025-05-30 (d=0.03)
-
 ## Watchlist (below surfacing floor)
-eur_usd ↓ (3.74), shanghai_comp ↓ (3.69), indices · 3 series ↓ (3.67), fx · 2 series ↑ (3.21), dyn_4417_t ↑ (3.19), nasdaq_100 ↑ (3.16), dyn_hdb ↓ (3.11), commodities · 2 series ↓ (3.0), dyn_nvda ↑ (3.0), dyn_voltas_ns ↓ (2.94), dyn_tech ↑ (2.82), dyn_havells_ns ↓ (2.69)
+indices · 4 series ↓ (4.99), dyn_jiofin_bo ↓ (4.93), dxy ↑ (4.87), rates · 2 series ↑ (4.68), dyn_stylebaaza_ns ↓ (4.11), nifty_fmcg ↓ (3.71), nasdaq_100 ↑ (3.16), dyn_hdb ↓ (3.11), dyn_4417_t ↑ (3.1), dyn_nvda ↑ (3.0), nifty_metal ↓ (2.95), dyn_voltas_ns ↓ (2.95)
 
 ## India macro
-- nifty_50: 22620.4492 (1d -0.42%, z20 -2.23, flag amber)
-- nifty_midcap_100: 59321.5000 (1d 0.00%, z20 -2.37, flag amber)
-- usd_inr: 96.0507 (1d 0.07%, z20 1.05, flag none)
+- nifty_50: 22421.9492 (1d -0.88%, z20 -2.53, flag red)
+- nifty_midcap_100: 58731.2500 (1d -1.00%, z20 -2.52, flag red)
+- usd_inr: 96.3150 (1d 0.28%, z20 1.39, flag amber)
 - goi_10y: 6.7800 (1d -1.60%, z20 0.56, flag none)
 - india_cpi_yoy: 2.9518 (1d 14.13%, z20 n/a, flag none)
 - goi_ust_spread: 2.3000 (1d -4.96%, z20 n/a, flag none)
-- midcap_largecap_ratio: 2.6225 (1d 0.42%, z20 -1.45, flag none)
+- midcap_largecap_ratio: 2.6194 (1d -0.12%, z20 -1.57, flag amber)
 - Next India prints: NSDL FPI flows T-0d · RBI Weekly Statistical Supplement T-1d · Kharif sowing data T-1d · IMD weekly rainfall T-4d
 
 ## News-tracked universe (why each is watched)
-- INOXINDIA.NS (INOX INDIA LIMITED) score 92.6 — "India’s external financial health improves marginally in Q1 FY27 amid global headwinds"
-- COALINDIA.NS (COAL INDIA LTD) score 91.0 — "India’s external financial health improves marginally in Q1 FY27 amid global headwinds"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 89.0 — "India’s external financial health improves marginally in Q1 FY27 amid global headwinds"
-- INDIANB.NS (INDIAN BANK) score 62.8 — "HDFC Bank names ICICI veteran banker V.N. Srivatsan as Chief Compliance Officer"
-- TECHM.NS (TECH MAHINDRA LIMITED) score 50.1 — "S&P 500 BREADTH FLASHES RARE WARNING The equal-weight S&P 500 is heading for a seventh str"
-- COIN (Coinbase Global, Inc.) score 50.1 — "India’s external financial health improves marginally in Q1 FY27 amid global headwinds"
-- BOND (PIMCO Active Bond Exchange-Tra) score 47.8 — "FEDERATED HERMES: DON’T RUSH INTO BONDS YET Treasury yields are at some of their highest l"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 47.7 — "S&P 500 BREADTH FLASHES RARE WARNING The equal-weight S&P 500 is heading for a seventh str"
-- TECH (Bio-Techne Corp) score 47.7 — "S&P 500 BREADTH FLASHES RARE WARNING The equal-weight S&P 500 is heading for a seventh str"
-- OHI (Omega Healthcare Investors, In) score 44.8 — "Top stocks in focus today: Investors must watch Jio Financial, Infosys, NCC shares on Thu,"
-- BAC (Bank of America Corporation) score 41.4 — "HDFC Bank names ICICI veteran banker V.N. Srivatsan as Chief Compliance Officer"
-- HDB (HDFC Bank Limited) score 40.7 — "HDFC Bank names ICICI veteran banker V.N. Srivatsan as Chief Compliance Officer"
-- CHKP (Check Point Software Technolog) score 38.2 — "Up 410% in 5 yrs, why MOFSL sees another 52% upside in Time Technoplast- check target pric"
-- IDBI.NS (IDBI BANK LIMITED) score 37.7 — "HDFC Bank names ICICI veteran banker V.N. Srivatsan as Chief Compliance Officer"
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 37.7 — "HDFC Bank names ICICI veteran banker V.N. Srivatsan as Chief Compliance Officer"
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 37.7 — "HDFC Bank names ICICI veteran banker V.N. Srivatsan as Chief Compliance Officer"
-- LTH (Life Time Group Holdings, Inc.) score 35.8 — "CCC Debt Turns Distressed for First Time Since 2023 Bank Crisis"
-- SEPN (Septerna, Inc.) score 35.7 — "A brutal September for bonds points to an even darker October"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 35.5 — "WHITE HOUSE SAYS S. KOREA TO INVEST IN US ENERGY"
-- 301077.SZ (CHINASTARS) score 23.8 — "China’s Thermal Coal Prices Surge to Three-Year High"
-- TGT (Target Corporation) score 22.1 — "FED’S COOK: INFLATION HAS BEEN TOO HIGH FOR TOO LONG Fed Governor Lisa Cook says she remai"
-- BZ=F (Brent Crude Oil Last Day Finan) score 18.5 — "Usual October cheer could be missing after rout last month"
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 15.0 — "Tata Group stock! BofA turns bullish on Trent, initiates coverage with Buy, pegs 17% upsid"
-- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 15.0 — "Tata Group stock! BofA turns bullish on Trent, initiates coverage with Buy, pegs 17% upsid"
-- JIOFIN.BO (Jio Financial Services Limited) score 14.2 — "India’s external financial health improves marginally in Q1 FY27 amid global headwinds"
-- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 14.1 — "Power Mech Projects shares rise 4% after company secures Rs 549 crore order from Adani Gro"
-- 4417.T (GLOBAL SECURITY EXPERTS INC) score 12.8 — "RIL, Infosys, TCS, HUL, HDFC Bank at multi-year lows | Time to look beyond? Experts sugges"
-- GS (Goldman Sachs Group, Inc. (The) score 10.1 — "GOLDMAN PUSHES NEXT FED HIKE TO DECEMBER Goldman Sachs now says an October Fed hike is unl"
-- JUSTDIAL.BO (JUST DIAL LTD.) score 9.6 — "Google shows it’s not out of the AI race just yet"
-- POLICYBZR.NS (PB FINTECH LIMITED) score 9.4 — "PB Fintech, Wipro among  8 stocks that hit 52-week low and slipped up to 45% in a month"
-- VT (Vanguard Total World Stock Ind) score 9.3 — "Mexican Peso Becomes World’s Worst as Carry Traders Flee"
-- ICICIGI.BO (ICICI Lombard General Insuranc) score 6.9 — "HDFC Bank names ICICI veteran banker V.N. Srivatsan as Chief Compliance Officer"
-- NVDA (NVIDIA Corporation) score 6.9 — "NVIDIA'S HUANG: WE'RE GOING TO ADVANCE THIS RESPONSIBLY AND SAFELY"
-- META (Meta) score 6.9 — "Nifty Metal slips 5% in September post 29% 1 yr rally, October comeback ahead? Hindustan Z"
-- JEF (Jefferies Financial Group Inc.) score 6.6 — "Molbio Diagnostics shares rally 9% as Jefferies initiates 'high conviction top pick' call "
-- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 5.8 — "Jio Finance, Allianz Europe invest ₹320 cr each in JV Jio Allianz General Insurance"
-- STYLEBAAZA.NS (BAAZAR STYLE RETAIL LTD) score 5.2 — "US SEC proposes wider retail investor access to private assets amid risk concerns"
-- MS (Morgan Stanley) score 5.1 — "Morgan Stanley raises Lenskart target price to Rs 718; bull case implies 41% upside. Here’"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 97.9 — "AI pressure, client caution cloud Indian IT earnings in September quarter"
+- COALINDIA.NS (COAL INDIA LTD) score 94.4 — "AI pressure, client caution cloud Indian IT earnings in September quarter"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 92.6 — "AI pressure, client caution cloud Indian IT earnings in September quarter"
+- INDIANB.NS (INDIAN BANK) score 66.8 — "Top stocks to buy for short term: Kotak Securities' expert suggests TCS, Axis Bank, Lodha "
+- BOND (PIMCO Active Bond Exchange-Tra) score 57.3 — "Markets open lower as FII selling, high bond yields weigh on sentiment"
+- COIN (Coinbase Global, Inc.) score 54.4 — "Global Market: Japanese bond yields rise as investors weigh inflation, rate-hike risks"
+- TECHM.NS (TECH MAHINDRA LIMITED) score 51.4 — "Double delight Tech Mahindra shareholders: Bonus issue and dividend amount this Diwali sea"
+- OHI (Omega Healthcare Investors, In) score 49.5 — "IPO investors strike gold with 7 multibagger stocks in 3 months. Did you miss the bus?"
+- BAC (Bank of America Corporation) score 47.5 — "Cars have become unaffordable for many Americans. Here’s what the numbers show."
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 47.2 — "Double delight Tech Mahindra shareholders: Bonus issue and dividend amount this Diwali sea"
+- TECH (Bio-Techne Corp) score 47.2 — "Double delight Tech Mahindra shareholders: Bonus issue and dividend amount this Diwali sea"
+- HDB (HDFC Bank Limited) score 46.8 — "Top stocks to buy for short term: Kotak Securities' expert suggests TCS, Axis Bank, Lodha "
+- CHKP (Check Point Software Technolog) score 42.6 — "Double delight Tech Mahindra shareholders: Bonus issue and dividend amount this Diwali sea"
+- IDBI.NS (IDBI BANK LIMITED) score 42.1 — "Top stocks to buy for short term: Kotak Securities' expert suggests TCS, Axis Bank, Lodha "
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 42.1 — "Top stocks to buy for short term: Kotak Securities' expert suggests TCS, Axis Bank, Lodha "
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 42.1 — "Top stocks to buy for short term: Kotak Securities' expert suggests TCS, Axis Bank, Lodha "
+- SEPN (Septerna, Inc.) score 37.3 — "AI pressure, client caution cloud Indian IT earnings in September quarter"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 36.2 — "40% return in 6 months! Adani Energy Solutions share price up 5%, outshines Adani Group st"
+- LTH (Life Time Group Holdings, Inc.) score 33.4 — "Markets open lower as FII selling, high bond yields weigh on sentiment"
+- TGT (Target Corporation) score 26.0 — "Top stocks to buy for short term: Kotak Securities' expert suggests TCS, Axis Bank, Lodha "
+- 301077.SZ (CHINASTARS) score 24.6 — "Shows, tours and film as China marks 90 years since the end of the Long March"
+- 4417.T (GLOBAL SECURITY EXPERTS INC) score 18.6 — "Kotak Mahindra Bank shares climb 4% after naming new MD, CEO - Can the stock rally further"
+- BZ=F (Brent Crude Oil Last Day Finan) score 16.7 — "Usual October cheer could be missing after rout last month"
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 16.6 — "Power stocks fall despite  ₹1.86 lakh crore PM-DHARA scheme: Tata Power, Adani Power, NTPC"
+- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 16.6 — "Power stocks fall despite  ₹1.86 lakh crore PM-DHARA scheme: Tata Power, Adani Power, NTPC"
+- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 14.8 — "Power stocks fall despite  ₹1.86 lakh crore PM-DHARA scheme: Tata Power, Adani Power, NTPC"
+- JIOFIN.BO (Jio Financial Services Limited) score 13.9 — "Macquarie stock recommendations: ICICI Bank, SBI, PayTM to LIC — top 11 financial shares t"
+- GS (Goldman Sachs Group, Inc. (The) score 10.2 — "Goldman Sachs pushes Fed rate hike forecast to December"
+- POLICYBZR.NS (PB FINTECH LIMITED) score 9.6 — "PB Fintech shares crash 50% from peak, fall below 2021 IPO price. More downside coming?"
+- META (Meta) score 9.2 — "Gold price future roadmap: What led to 6% yellow metal fall in Sept 2026? Will Diwali help"
+- JUSTDIAL.BO (JUST DIAL LTD.) score 8.7 — "Google shows it’s not out of the AI race just yet"
+- VT (Vanguard Total World Stock Ind) score 8.4 — "Mexican Peso Becomes World’s Worst as Carry Traders Flee"
+- ICICIGI.BO (ICICI Lombard General Insuranc) score 8.3 — "Macquarie stock recommendations: ICICI Bank, SBI, PayTM to LIC — top 11 financial shares t"
+- JEF (Jefferies Financial Group Inc.) score 7.0 — "Jefferies is bearish TCS, Wipro, 6 other IT stocks ahead of Q2 results. How many do you ow"
+- NVDA (NVIDIA Corporation) score 6.2 — "NVIDIA'S HUANG: WE'RE GOING TO ADVANCE THIS RESPONSIBLY AND SAFELY"
+- STYLEBAAZA.NS (BAAZAR STYLE RETAIL LTD) score 5.7 — "Retail investors are aggressively piling into this bold contrarian bet through one ETF."
+- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 5.3 — "Jio Finance, Allianz Europe invest ₹320 cr each in JV Jio Allianz General Insurance"
+- MS (Morgan Stanley) score 4.6 — "Morgan Stanley raises Lenskart target price to Rs 718; bull case implies 41% upside. Here’"
 - VOLTAS.NS (VOLTAS LTD) score 0.4 — "Voltas’s market share is growing. Will margins follow?"
 - DELL (Dell Technologies Inc.) score 0.2 — "Global Market: BoE's Lombardelli says rates may need to rise if energy prices stay high"
 
