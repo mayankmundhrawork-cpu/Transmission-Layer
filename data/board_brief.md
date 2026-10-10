@@ -1,4 +1,4 @@
-# Transmission Layer — board brief · 2026-10-10 00:02Z
+# Transmission Layer — board brief · 2026-10-10 01:04Z
 
 data as of **2026-10-10** · 97 series · 4 red / 38 amber · 8 events surfaced (27 suppressed)
 
@@ -18,13 +18,13 @@ data as of **2026-10-10** · 97 series · 4 red / 38 amber · 8 events surfaced 
 - FDR (BH q=0.1): **2 of 89** scanned series survive multiplicity control (effective p ≤ 2.044269036804991e-05)
 - No live setups: drivers quiet or targets already repriced.
 - Track record · residual_reversion: hit-rate **0.495** (n=1143) — |resid_z|>=2.0 -> fwd 5d return opposes residual
-- Track record · transmission_follow: hit-rate **0.826** (n=2223) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
+- Track record · transmission_follow: hit-rate **0.826** (n=2110) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
 - Track record · spread_reversion: hit-rate **0.5** (n=16) — |dev| >= 2sigma vs PIT 252d -> |dev| shrinks >=25% within max(half-life,10) sessions
 
 ## Events (ranked)
 
 ### [RED 7.31] usd_inr ↑
-- usd_inr [FX]: last 96.78, z20 2.31, zc 0.04, resid-z -0.10 [quiet], 1d 0.02%, 20d range extreme; |z20|=2.31; 1y-pct=99
+- usd_inr [FX]: last 96.78, z20 2.31, zc 0.05, resid-z -0.10 [quiet], 1d 0.02%, 20d range extreme; |z20|=2.31; 1y-pct=99
 - **Mechanism**: usd_inr ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-07-10 (z-distance 0.0).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
 - **India take**: dyn_idbi_ns (rho -0.411 via usd_inr, z -0.57, quiet); dyn_karurvysya_ns (rho -0.361 via usd_inr, z 2.87, reacted)
@@ -55,7 +55,7 @@ data as of **2026-10-10** · 97 series · 4 red / 38 amber · 8 events surfaced 
 ### [AMBER 4.94] cross-asset · 3 series ↑
 - sp500 [INDICES]: last 7811.09, z20 1.62, zc 0.83, resid-z -1.45 [quiet], 1d 0.59%, |z20|=1.62; 1y-pct=99
 - nasdaq_100 [INDICES]: last 30881.86, z20 0.91, zc 0.47, resid-z -0.78 [quiet], 1d 0.51%, 1y-pct=98
-- dyn_nvda [EQUITIES]: last 229.34, z20 0.39, zc -0.23, resid-z -1.26 [quiet], 1d -0.49%, 1y-pct=96
+- dyn_nvda [EQUITIES]: last 229.32, z20 0.39, zc -0.24, resid-z -1.26 [quiet], 1d -0.50%, 1y-pct=96
 - **Mechanism**: cross-asset · 3 series ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-05-22 (z-distance 0.0).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
 - **India take**: No exposed Indian receivers above the correlation floor.
@@ -71,7 +71,7 @@ data as of **2026-10-10** · 97 series · 4 red / 38 amber · 8 events surfaced 
 
 ### [AMBER 4.62] cross-asset · 4 series ↑
 - ust_30y [RATES]: last 5.60, z20 0.95, zc -1.60, resid-z -2.34 [unexplained], 1d -1.23%, 1y-pct=97
-- dyn_bond [EQUITIES]: last 86.93, z20 -0.86, zc 0.02, resid-z 0.58 [quiet], 1d 0.01%, 1y-pct=2
+- dyn_bond [EQUITIES]: last 86.93, z20 -0.86, zc 0.03, resid-z 0.58 [quiet], 1d 0.01%, 1y-pct=2
 - tips_10y_real [RATES]: last 2.87, z20 0.73, zc -0.90, resid-z -1.52 [unexplained], 1d -1.71%, 1y-pct=96
 - ust_10y [RATES]: last 5.22, z20 0.72, zc -1.11, resid-z -1.95 [unexplained], 1d -1.14%, 1y-pct=96
 - **Mechanism**: cross-asset · 4 series ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-05-22 (z-distance 0.0).
@@ -133,43 +133,43 @@ shanghai_comp ↓ (3.87), gold_silver_ratio ↑ (3.81), dyn_muthootfin_ns ↓ (3
 - Next India prints: India CPI T-2d · NSDL FPI flows T-2d · IMD weekly rainfall T-2d · India WPI T-4d
 
 ## News-tracked universe (why each is watched)
-- INOXINDIA.NS (INOX INDIA LIMITED) score 85.1 — "De Beers to open 100 Forevermark stores in India by 2030"
-- COALINDIA.NS (COAL INDIA LTD) score 84.2 — "De Beers to open 100 Forevermark stores in India by 2030"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 82.8 — "De Beers to open 100 Forevermark stores in India by 2030"
-- INDIANB.NS (INDIAN BANK) score 81.5 — "Gold, silver boom puts US bank trading revenues on track for record $5 billion"
-- BAC (Bank of America Corporation) score 72.6 — "Gold, silver boom puts US bank trading revenues on track for record $5 billion"
-- HDB (HDFC Bank Limited) score 65.4 — "Gold, silver boom puts US bank trading revenues on track for record $5 billion"
-- IDBI.NS (IDBI BANK LIMITED) score 63.0 — "Gold, silver boom puts US bank trading revenues on track for record $5 billion"
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 63.0 — "Gold, silver boom puts US bank trading revenues on track for record $5 billion"
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 63.0 — "Gold, silver boom puts US bank trading revenues on track for record $5 billion"
-- COIN (Coinbase Global, Inc.) score 59.2 — "Trump taps Russia to boost global diesel supplies ahead of midterms. It may be ‘too little"
-- OHI (Omega Healthcare Investors, In) score 45.5 — "Share price down 29% in 2026, retail investors’ favourite wind energy stock under pressure"
-- TECHM.NS (TECH MAHINDRA LIMITED) score 43.4 — "Anthem Biosciences block deal: Portsmouth Technologies sells 30 lakh shares worth Rs 250 c"
-- BOND (PIMCO Active Bond Exchange-Tra) score 41.7 — "Reissued bonds account for nearly 66% of state borrowings in H1 FY27: Report"
-- TGT (Target Corporation) score 38.4 — "NVDA - UBS REAFFIRMS NVIDIA BUY RATING WITH $300 PRICE TARGET UBS reiterated its Buy ratin"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 38.2 — "Anthem Biosciences block deal: Portsmouth Technologies sells 30 lakh shares worth Rs 250 c"
-- TECH (Bio-Techne Corp) score 38.2 — "Anthem Biosciences block deal: Portsmouth Technologies sells 30 lakh shares worth Rs 250 c"
-- CHKP (Check Point Software Technolog) score 35.3 — "‘I feel like a loser’: I check my ETFs every day. They’re up one minute, down the next. Sh"
-- LTH (Life Time Group Holdings, Inc.) score 31.4 — "U.S. CONSUMER SENTIMENT FALLS AS INFLATION EXPECTATIONS RISE University of Michigan consum"
-- 4417.T (GLOBAL SECURITY EXPERTS INC) score 27.0 — "Experts say it's time to look at mid-caps, suggest looking at mid-cap funds through the SI"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 26.4 — "DONALD TRUMP PRESSURES MEXICO FOR ENERGY DEALS IN CRUNCH TRADE TALKS - FT"
-- SEPN (Septerna, Inc.) score 26.2 — "NVDA - UBS REAFFIRMS NVIDIA BUY RATING WITH $300 PRICE TARGET UBS reiterated its Buy ratin"
-- 301077.SZ (CHINASTARS) score 19.0 — "EU AND CHINA REACH RARE EARTHS DEAL AS TRADE PRESSURE MOUNTS EU Trade Commissioner Maroš Š"
-- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 16.5 — "Adani Power shares: GQG Partners-managed entities cut stake to 5.72% from 5.74%"
-- JIOFIN.BO (Jio Financial Services Limited) score 15.9 — "Anand Rathi Wealth Q2 results 2026: Dividend declared; check amount, record date, net prof"
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 13.0 — "ET Alpha Wealth Summit 2.0 | SIFs, passive funds and GIFT City: How India's wealth portfol"
-- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 13.0 — "ET Alpha Wealth Summit 2.0 | SIFs, passive funds and GIFT City: How India's wealth portfol"
-- JUSTDIAL.BO (JUST DIAL LTD.) score 12.5 — "Madhusudan Kela-backed MV Electrosystems shares more than double from IPO price in just 2 "
-- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 11.7 — "Micro, trading MSMEs need targeted support: Equitas Small Finance Bank MD"
-- BZ=F (Brent Crude Oil Last Day Finan) score 11.2 — "₹5 dividend vs  ₹34 last year: Why Vedanta's dividend payout story has fundamentally chang"
-- JEF (Jefferies Financial Group Inc.) score 11.0 — "Kalyan Jewellers shares shine: 55% up in 3 months, Jefferies India sees further 46% upside"
-- BAJFINANCE.NS (BAJAJ FINANCE LIMITED) score 9.1 — "Micro, trading MSMEs need targeted support: Equitas Small Finance Bank MD"
-- NVDA (NVIDIA Corporation) score 8.8 — "NVDA - UBS REAFFIRMS NVIDIA BUY RATING WITH $300 PRICE TARGET UBS reiterated its Buy ratin"
-- META (Meta) score 8.2 — "Monetary tightening likely to keep industrial metal prices on leash"
-- RS (Reliance, Inc.) score 7.3 — "Reliance Jio IPO price band alert: Mukesh Ambani's telecom giant likely to set band at  ₹1"
-- VT (Vanguard Total World Stock Ind) score 7.2 — "World’s Top Crude Trader Isn’t Ruling Out $200 Oil Just Yet"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 84.2 — "De Beers to open 100 Forevermark stores in India by 2030"
+- COALINDIA.NS (COAL INDIA LTD) score 83.4 — "De Beers to open 100 Forevermark stores in India by 2030"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 81.9 — "De Beers to open 100 Forevermark stores in India by 2030"
+- INDIANB.NS (INDIAN BANK) score 80.7 — "Gold, silver boom puts US bank trading revenues on track for record $5 billion"
+- BAC (Bank of America Corporation) score 72.9 — "Trump on Truth Social: 'Diesel Prices for Americans and, Indeed, the World, Will Be COMING"
+- HDB (HDFC Bank Limited) score 64.7 — "Gold, silver boom puts US bank trading revenues on track for record $5 billion"
+- IDBI.NS (IDBI BANK LIMITED) score 62.4 — "Gold, silver boom puts US bank trading revenues on track for record $5 billion"
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 62.4 — "Gold, silver boom puts US bank trading revenues on track for record $5 billion"
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 62.4 — "Gold, silver boom puts US bank trading revenues on track for record $5 billion"
+- COIN (Coinbase Global, Inc.) score 59.6 — "TRUMP ANNOUNCES DEAL WITH PUTIN FOR RUSSIAN DIESEL SUPPLIES President Trump says he held a"
+- OHI (Omega Healthcare Investors, In) score 45.0 — "Share price down 29% in 2026, retail investors’ favourite wind energy stock under pressure"
+- TECHM.NS (TECH MAHINDRA LIMITED) score 42.9 — "Anthem Biosciences block deal: Portsmouth Technologies sells 30 lakh shares worth Rs 250 c"
+- BOND (PIMCO Active Bond Exchange-Tra) score 41.3 — "Reissued bonds account for nearly 66% of state borrowings in H1 FY27: Report"
+- TGT (Target Corporation) score 38.0 — "NVDA - UBS REAFFIRMS NVIDIA BUY RATING WITH $300 PRICE TARGET UBS reiterated its Buy ratin"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 37.8 — "Anthem Biosciences block deal: Portsmouth Technologies sells 30 lakh shares worth Rs 250 c"
+- TECH (Bio-Techne Corp) score 37.8 — "Anthem Biosciences block deal: Portsmouth Technologies sells 30 lakh shares worth Rs 250 c"
+- CHKP (Check Point Software Technolog) score 35.0 — "‘I feel like a loser’: I check my ETFs every day. They’re up one minute, down the next. Sh"
+- LTH (Life Time Group Holdings, Inc.) score 31.1 — "U.S. CONSUMER SENTIMENT FALLS AS INFLATION EXPECTATIONS RISE University of Michigan consum"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 27.2 — "PUTIN'S ENVOY DMITRIEV ON X: RUSSIA-US COOPERATION ON DIESEL AND ENERGY WILL BENEFIT THE W"
+- 4417.T (GLOBAL SECURITY EXPERTS INC) score 26.7 — "Experts say it's time to look at mid-caps, suggest looking at mid-cap funds through the SI"
+- SEPN (Septerna, Inc.) score 25.9 — "NVDA - UBS REAFFIRMS NVIDIA BUY RATING WITH $300 PRICE TARGET UBS reiterated its Buy ratin"
+- 301077.SZ (CHINASTARS) score 18.8 — "EU AND CHINA REACH RARE EARTHS DEAL AS TRADE PRESSURE MOUNTS EU Trade Commissioner Maroš Š"
+- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 16.4 — "Adani Power shares: GQG Partners-managed entities cut stake to 5.72% from 5.74%"
+- JIOFIN.BO (Jio Financial Services Limited) score 15.7 — "Anand Rathi Wealth Q2 results 2026: Dividend declared; check amount, record date, net prof"
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 12.9 — "ET Alpha Wealth Summit 2.0 | SIFs, passive funds and GIFT City: How India's wealth portfol"
+- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 12.9 — "ET Alpha Wealth Summit 2.0 | SIFs, passive funds and GIFT City: How India's wealth portfol"
+- JUSTDIAL.BO (JUST DIAL LTD.) score 12.4 — "Madhusudan Kela-backed MV Electrosystems shares more than double from IPO price in just 2 "
+- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 11.6 — "Micro, trading MSMEs need targeted support: Equitas Small Finance Bank MD"
+- BZ=F (Brent Crude Oil Last Day Finan) score 11.1 — "₹5 dividend vs  ₹34 last year: Why Vedanta's dividend payout story has fundamentally chang"
+- JEF (Jefferies Financial Group Inc.) score 10.9 — "Kalyan Jewellers shares shine: 55% up in 3 months, Jefferies India sees further 46% upside"
+- VT (Vanguard Total World Stock Ind) score 9.1 — "Trump on Truth Social: 'Diesel Prices for Americans and, Indeed, the World, Will Be COMING"
+- BAJFINANCE.NS (BAJAJ FINANCE LIMITED) score 9.0 — "Micro, trading MSMEs need targeted support: Equitas Small Finance Bank MD"
+- NVDA (NVIDIA Corporation) score 8.7 — "NVDA - UBS REAFFIRMS NVIDIA BUY RATING WITH $300 PRICE TARGET UBS reiterated its Buy ratin"
+- META (Meta) score 8.1 — "Monetary tightening likely to keep industrial metal prices on leash"
+- RS (Reliance, Inc.) score 7.2 — "Reliance Jio IPO price band alert: Mukesh Ambani's telecom giant likely to set band at  ₹1"
 - STYLEBAAZA.NS (BAAZAR STYLE RETAIL LTD) score 5.3 — "Share price down 29% in 2026, retail investors’ favourite wind energy stock under pressure"
-- GS (Goldman Sachs Group, Inc. (The) score 4.7 — "TCS shares jump 4% after Q2 results. What are Goldman Sachs, Nomura, others saying?"
+- GS (Goldman Sachs Group, Inc. (The) score 4.6 — "TCS shares jump 4% after Q2 results. What are Goldman Sachs, Nomura, others saying?"
 - POLICYBZR.NS (PB FINTECH LIMITED) score 4.0 — "Nomura becomes latest brokerage to cut PB Fintech share price target by 31%, lists 2 scena"
 - DELL (Dell Technologies Inc.) score 0.7 — "Piero Cipollone: Interview with Corriere della Sera"
 - VOLTAS.NS (VOLTAS LTD) score 0.1 — "Voltas’s market share is growing. Will margins follow?"
