@@ -1,6 +1,6 @@
-# Transmission Layer — board brief · 2026-10-16 22:49Z
+# Transmission Layer — board brief · 2026-10-16 23:44Z
 
-data as of **2026-10-16** · 97 series · 17 red / 28 amber · 8 events surfaced (31 suppressed)
+data as of **2026-10-16** · 97 series · 17 red / 28 amber · 8 events surfaced (30 suppressed)
 
 ## Regime & assumption health (measured at generation)
 - **Regime: RISK_OFF** (score 0.816, 10d in regime; vol-pct 0.808, breadth-off 0.824, Markov P(high-vol) 0.049)
@@ -58,9 +58,9 @@ data as of **2026-10-16** · 97 series · 17 red / 28 amber · 8 events surfaced
 - **India take**: dyn_justdial_bo (rho 0.559 via nifty_it, z 3.24, reacted); nifty_50 (rho 0.512 via dyn_tataelxsi_ns, z 0.82, quiet); nifty_fmcg (rho 0.468 via dyn_tataelxsi_ns, z -0.66, quiet); midcap_largecap_ratio (rho -0.439 via dyn_techm_ns, z -3.57, reacted); dyn_tatatech_ns (rho 0.392 via nifty_it, z 0.68, quiet)
 - Watch next: nifty_50 (co-move) — not yet - watch; rho 0.512 vs dyn_tataelxsi_ns
 - **India receivers**: dyn_justdial_bo (rho 0.559, z 3.24); nifty_50 (rho 0.512, z 0.82); nifty_fmcg (rho 0.468, z -0.66); midcap_largecap_ratio (rho -0.439, z -3.57)
+- Source: Tech Mahindra shares jump 8% after Q2 results, Jefferies upgrades stock — BusinessLine Mkts, 2026-10-16. https://www.thehindubusinessline.com/markets/tech-mahindra-shares-jump-76-after-q2-results-jefferies-upgrades-stock/article71591220.ece
 - Source: Kotak Mahindra Bank among 5 stocks that hit 52-week highs & rallied up to 15% in a month — ET Markets, 2026-10-16. https://economictimes.indiatimes.com/markets/stocks/news/kotak-mahindra-bank-among-5-stocks-that-hit-52-week-highs-amp-rallied-up-to-15-in-a-month/slideshow/134995212.cms
 - Source: Worst over for IT stocks? Experts analyse Q2 results of TCS, HCL, Tech Mahindra and others, suggest top picks — Mint Markets, 2026-10-16. https://www.livemint.com/market/stock-market-news/worst-over-for-it-stocks-experts-analyse-q2-results-of-tcs-hcl-tech-mahindra-and-others-suggest-top-picks-11792149864702.html
-- Source: Market wrap: Tech Mahindra, TCS, InterGlobe, BSE top gainers and losers on Nifty and Sensex on Friday — ET Markets, 2026-10-16. https://economictimes.indiatimes.com/markets/stocks/news/market-wrap-tech-mahindra-tcs-interglobe-bse-top-gainers-and-losers-on-nifty-and-sensex-on-friday/articleshow/134992216.cms
 - Historical analogues: 2025-08-13 (d=0.78), 2025-01-23 (d=0.84), 2025-12-30 (d=0.85)
 
 ### [RED 8.59] commodities · 2 series ↑
@@ -72,9 +72,9 @@ data as of **2026-10-16** · 97 series · 17 red / 28 amber · 8 events surfaced
 - Watch next: ust_10y (co-move) — not yet - watch; rho 0.608 vs brent, historically leads by 5d
 - Watch next: dyn_bond (inverse) — not yet - watch; rho -0.573 vs brent
 - Watch next: ust_30y (co-move) — not yet - watch; rho 0.56 vs brent
+- Source: Brent crude hits $110 a barrel for first time since May as supply concerns mount — BusinessLine Mkts, 2026-10-16. https://www.thehindubusinessline.com/markets/commodities/brent-crude-hits-110-a-barrel-for-first-time-since-may-as-supply-concerns-mount/article71594804.ece
 - Source: US stocks: US market ends down sharply; worries about AI trade and high oil prices weigh — ET Markets, 2026-10-16. https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-us-market-ends-down-sharply-worries-about-ai-trade-and-high-oil-prices-weigh/articleshow/135003266.cms
 - Source: Norway's Untapped Oil and Gas Frontier Is Drawing Renewed Interest — OilPrice, 2026-10-16. https://oilprice.com/Energy/Crude-Oil/Norways-Untapped-Oil-and-Gas-Frontier-Is-Drawing-Renewed-Interest.html
-- Source: U.S. Oil Drillers Back Off Even As Prices Soar — OilPrice, 2026-10-16. https://oilprice.com/Energy/Energy-General/US-Oil-Drillers-Back-Off-Even-As-Prices-Soar.html
 - Historical analogues: 2026-05-22 (d=0.0), 2025-04-29 (d=0.06), 2025-08-14 (d=0.06)
 
 ### [RED 7.46] usd_inr ↓
@@ -83,9 +83,9 @@ data as of **2026-10-16** · 97 series · 17 red / 28 amber · 8 events surfaced
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
 - **India take**: dyn_idbi_ns (rho -0.371 via usd_inr, z -0.09, quiet); dyn_karurvysya_ns (rho -0.366 via usd_inr, z 2.99, reacted)
 - **India receivers**: dyn_idbi_ns (rho -0.371, z -0.09); dyn_karurvysya_ns (rho -0.366, z 2.99)
+- Source: Rupee rises for sixth straight session to 94.92 against US dollar — BusinessLine Mkts, 2026-10-16. https://www.thehindubusinessline.com/markets/forex/rupee-rises-for-sixth-straight-session-to-9492-against-us-dollar/article71592072.ece
+- Source: Gold, Silver prices rebound as dollar weakens, Bond yields fall; rupee aps gains — BusinessLine Mkts, 2026-10-16. https://www.thehindubusinessline.com/markets/gold/gold-silver-rebound-on-softer-dollar-and-falling-yields-domestic-gains-capped-by-rupee-strength/article71591618.ece
 - Source: Sitharaman pitches rupee mechanism to bridge global forex crunch, trade disruptions — BusinessLine Mkts, 2026-10-16. https://www.thehindubusinessline.com/economy/sitharaman-pitches-rupee-mechanism-to-bridge-global-forex-crunch-trade-disruptions/article71592229.ece
-- Source: Rupee rises 1.9% in a week, closes below 95 per dollar — ET Markets, 2026-10-16. https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-rises-1-9-in-a-week-closes-below-95-per-dollar/articleshow/134996292.cms
-- Source: Rupee posts best week in seven months, fundamentals key for lasting turnaround — ET Markets, 2026-10-16. https://economictimes.indiatimes.com/markets/forex/rupee-posts-best-week-in-seven-months-fundamentals-key-for-lasting-turnaround/articleshow/134991672.cms
 - Historical analogues: 2026-07-10 (d=0.0), 2025-09-16 (d=0.01), 2026-05-29 (d=0.02)
 
 ### [RED 5.86] dyn_dell ↓
@@ -96,6 +96,18 @@ data as of **2026-10-16** · 97 series · 17 red / 28 amber · 8 events surfaced
 - Source: MICHAEL DELL REVEALS HOW HIS COMPANY COULD SURVIVE AN AI BUST Dell Technologies ($DELL ) is positioning itself to withstand a potential AI downturn through just-in-time manufacturing and a negative cash conversion cycle. Unlike heavily indebted AI infrastructure providers, Dell largely builds server — DeItaone, 2026-10-16. https://t.me/walter_bloomberg/37241
 - Source: Michael Dell Says in Interview That Just-in-Time Manufacturing Provides a Cushion if AI Boom Collapses Dell Says He Expects Memory Crunch to Get Worse — DeItaone, 2026-10-16. https://t.me/walter_bloomberg/37240
 - Historical analogues: 2026-05-22 (d=0.0), 2025-10-08 (d=0.18), 2025-10-01 (d=0.3)
+
+### [AMBER 5.16] indices · 2 series ↑
+- ftse_100 [INDICES]: last 10879.73, z20 2.33, zc 0.44, resid-z 0.36 [quiet], 1d 0.36%, |z20|=2.33; 1y-pct=97
+- dax [INDICES]: last 25623.78, z20 1.85, zc 1.13, resid-z 2.65 [unexplained], 1d 0.95%, |z20|=1.85
+- **Mechanism**: indices · 2 series ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-07-10 (z-distance 0.0).
+- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
+- **India take**: nifty_50 (rho 0.461 via ftse_100, z 0.82, quiet); dyn_indusindbk_bo (rho 0.42 via ftse_100, z -0.82, quiet); nifty_fmcg (rho 0.41 via ftse_100, z -0.66, quiet); dyn_tataelxsi_ns (rho 0.406 via ftse_100, z 3.62, reacted)
+- Watch next: stoxx_50 (co-move) — not yet - watch; rho 0.681 vs ftse_100, historically leads by 5d
+- Watch next: cac_40 (co-move) — not yet - watch; rho 0.798 vs ftse_100
+- **India receivers**: nifty_50 (rho 0.461, z 0.82); dyn_indusindbk_bo (rho 0.42, z -0.82); nifty_fmcg (rho 0.41, z -0.66); dyn_tataelxsi_ns (rho 0.406, z 3.62)
+- Source: HDFC Mutual Fund lists FTSE India Equity ETF on NSE — BusinessLine Mkts, 2026-10-16. https://www.thehindubusinessline.com/markets/hdfc-mutual-fund-lists-ftse-india-equity-etf-on-nse/article71592248.ece
+- Historical analogues: 2026-07-10 (d=0.0), 2025-12-03 (d=0.1), 2025-04-16 (d=0.32)
 
 ### [RED 5.16] gold_silver_ratio ↑
 - gold_silver_ratio [DERIVED]: last 73.28, z20 2.16, zc n/a, resid-z n/a [quiet], 1d -0.13%, GSR<75 (extreme low); |z20|=2.16
@@ -115,18 +127,8 @@ data as of **2026-10-16** · 97 series · 17 red / 28 amber · 8 events surfaced
 - Source: Gold vs silver vs platinum: Which metal saw biggest rally since last Dussehra? Experts explain outlook — Mint Markets, 2026-10-16. https://www.livemint.com/market/commodities/gold-vs-silver-vs-platinum-which-metal-saw-biggest-rally-since-last-dussehra-experts-explain-outlook-11792142307625.html
 - Historical analogues: 2026-07-10 (d=0.0), 2026-06-26 (d=0.02), 2025-09-09 (d=0.26)
 
-### [RED 4.99] dyn_karurvysya_ns ↑
-- dyn_karurvysya_ns [EQUITIES]: last 355.65, z20 2.99, zc 1.49, resid-z 1.53 [unexplained], 1d 2.89%, |z20|=2.99; 1y-pct=100
-- **Mechanism**: dyn_karurvysya_ns ↑: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-07-10 (z-distance 0.0).
-- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: dyn_indianb_ns (rho 0.453 via dyn_karurvysya_ns, z 1.77, reacted); dyn_muthootfin_ns (rho 0.389 via dyn_karurvysya_ns, z -1.25, reacted); nifty_50 (rho 0.378 via dyn_karurvysya_ns, z 0.82, quiet); usd_inr (rho -0.366 via dyn_karurvysya_ns, z -2.46, reacted)
-- **India receivers**: dyn_indianb_ns (rho 0.453, z 1.77); dyn_muthootfin_ns (rho 0.389, z -1.25); nifty_50 (rho 0.378, z 0.82); usd_inr (rho -0.366, z -2.46)
-- Source: Karur Vysya Bank shares jump 6% to hit a 52-week high after Q2 results - Should you buy? Rationale, target price — Mint Markets, 2026-10-16. https://www.livemint.com/market/stock-market-news/karur-vysya-bank-shares-jump-6-to-hit-a-52-week-high-after-q2-results-should-you-buy-rationale-target-price-11792125152481.html
-- Source: Karur Vysya Bank shares rally 6% after Q2 profit jumps 37% YoY — ET Markets, 2026-10-16. https://economictimes.indiatimes.com/markets/stocks/news/karur-vysya-bank-shares-rally-6-after-q2-profit-jumps-37-yoy/articleshow/134982900.cms
-- Historical analogues: 2026-07-10 (d=0.0), 2025-07-02 (d=0.07), 2025-01-31 (d=0.09)
-
 ## Watchlist (below surfacing floor)
-dyn_wit ↑ (4.66), dyn_nvda ↓ (4.63), crypto · 2 series ↓ (4.52), dyn_hdb ↑ (4.45), shanghai_comp ↓ (4.3), dyn_bac ↓ (4.08), dyn_rs ↑ (3.96), usd_cny ↓ (3.85), midcap_largecap_ratio ↓ (3.57), tips_10y_real ↓ (3.39), commodities · 3 series ↓ (3.39), dyn_muthootfin_ns ↓ (3.25)
+dyn_karurvysya_ns ↑ (4.99), dyn_wit ↑ (4.66), dyn_nvda ↓ (4.63), crypto · 2 series ↓ (4.56), dyn_hdb ↑ (4.45), shanghai_comp ↓ (4.3), dyn_bac ↓ (4.08), dyn_rs ↑ (3.96), usd_cny ↓ (3.85), midcap_largecap_ratio ↓ (3.57), tips_10y_real ↓ (3.39), commodities · 3 series ↓ (3.39)
 
 ## India macro
 - nifty_50: 23146.1504 (1d 0.65%, z20 0.82, flag none)
@@ -139,43 +141,43 @@ dyn_wit ↑ (4.66), dyn_nvda ↓ (4.63), crypto · 2 series ↓ (4.52), dyn_hdb 
 - Next India prints: NSDL FPI flows T-0d · RBI Weekly Statistical Supplement T-0d · Kharif sowing data T-0d · IMD weekly rainfall T-3d
 
 ## News-tracked universe (why each is watched)
-- COALINDIA.NS (COAL INDIA LTD) score 109.9 — "US Fed rate hike: US inflation heats up — experts decode impact on Indian stock market, go"
-- INDIANB.NS (INDIAN BANK) score 109.6 — "US Fed rate hike: US inflation heats up — experts decode impact on Indian stock market, go"
-- INOXINDIA.NS (INOX INDIA LIMITED) score 104.9 — "US Fed rate hike: US inflation heats up — experts decode impact on Indian stock market, go"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 104.0 — "US Fed rate hike: US inflation heats up — experts decode impact on Indian stock market, go"
-- BAC (Bank of America Corporation) score 99.3 — "BOJ'S UEDA SIGNALS FURTHER RATE HIKES AS INFLATION NEARS 2% Bank of Japan Governor Kazuo U"
-- HDB (HDFC Bank Limited) score 93.2 — "BOJ'S UEDA SIGNALS FURTHER RATE HIKES AS INFLATION NEARS 2% Bank of Japan Governor Kazuo U"
-- IDBI.NS (IDBI BANK LIMITED) score 88.7 — "BOJ'S UEDA SIGNALS FURTHER RATE HIKES AS INFLATION NEARS 2% Bank of Japan Governor Kazuo U"
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 88.7 — "BOJ'S UEDA SIGNALS FURTHER RATE HIKES AS INFLATION NEARS 2% Bank of Japan Governor Kazuo U"
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 88.7 — "BOJ'S UEDA SIGNALS FURTHER RATE HIKES AS INFLATION NEARS 2% Bank of Japan Governor Kazuo U"
-- TECHM.NS (TECH MAHINDRA LIMITED) score 85.1 — "MICHAEL DELL REVEALS HOW HIS COMPANY COULD SURVIVE AN AI BUST Dell Technologies ($DELL ) i"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 82.3 — "MICHAEL DELL REVEALS HOW HIS COMPANY COULD SURVIVE AN AI BUST Dell Technologies ($DELL ) i"
-- TECH (Bio-Techne Corp) score 82.3 — "MICHAEL DELL REVEALS HOW HIS COMPANY COULD SURVIVE AN AI BUST Dell Technologies ($DELL ) i"
-- COIN (Coinbase Global, Inc.) score 69.5 — "Global Energy Import Dependence Set to Peak by 2034, Rystad Says"
-- OHI (Omega Healthcare Investors, In) score 63.3 — "The bond market shrugged off two inflation shocks. Why stock investors should pay attentio"
-- CHKP (Check Point Software Technolog) score 45.9 — "Cult.fit IPO alert: Fitness major receives SEBI nod for proposed IPO - Check OFS, fresh is"
-- TGT (Target Corporation) score 45.7 — "BOJ'S UEDA SIGNALS FURTHER RATE HIKES AS INFLATION NEARS 2% Bank of Japan Governor Kazuo U"
-- BOND (PIMCO Active Bond Exchange-Tra) score 41.6 — "The bond market shrugged off two inflation shocks. Why stock investors should pay attentio"
-- RS (Reliance, Inc.) score 31.1 — "Reliance-backed Jio Platforms IPO:  ₹1 lakh crore gains for Meta, Google in  ₹30,213 cr is"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 28.7 — "Global Energy Import Dependence Set to Peak by 2034, Rystad Says"
-- 4417.T (GLOBAL SECURITY EXPERTS INC) score 28.0 — "US Fed rate hike: US inflation heats up — experts decode impact on Indian stock market, go"
-- LTH (Life Time Group Holdings, Inc.) score 27.6 — "Michael Dell Says in Interview That Just-in-Time Manufacturing Provides a Cushion if AI Bo"
-- SEPN (Septerna, Inc.) score 25.5 — "US CRUDE FUTURES RISE OVER $3 TO SESSION HIGH OF $101.02, MOST SINCE SEPT 21"
-- 301077.SZ (CHINASTARS) score 24.0 — "TRUMP: WILL GET A DEAL ON NUCLEAR ARMS WITH RUSSIA AND CHINA"
-- JIOFIN.BO (Jio Financial Services Limited) score 23.4 — "China's central bank to boost support for global investors in financial markets"
-- BZ=F (Brent Crude Oil Last Day Finan) score 19.4 — "CBOE VOLATILITY INDEX JUMPS TO OVER FOUR-MONTH HIGH, LAST UP 4.97 POINTS AT 21.41"
-- BAJFINANCE.NS (BAJAJ FINANCE LIMITED) score 18.9 — "Top 3 stocks to buy: Bajaj Finance, Dr Reddy's Lab, Grasim Industries by Sumeet Bagadia | "
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 17.4 — "Tata Consumer Share Price Live Updates: Tata Consumer Stock Details"
-- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 17.4 — "Tata Consumer Share Price Live Updates: Tata Consumer Stock Details"
-- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 16.4 — "Top 3 stocks to buy: Bajaj Finance, Dr Reddy's Lab, Grasim Industries by Sumeet Bagadia | "
-- JUSTDIAL.BO (JUST DIAL LTD.) score 12.4 — "Michael Dell Says in Interview That Just-in-Time Manufacturing Provides a Cushion if AI Bo"
-- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 10.6 — "Nifty falls below 22,300 at noon as Adani Stocks, ITC, Metals slide"
-- NVDA (NVIDIA Corporation) score 9.6 — "GERMANY PLANS MAJOR AI PARTNERSHIP WITH NVIDIA — HANDELSBLATT German Chancellor Friedrich "
+- COALINDIA.NS (COAL INDIA LTD) score 112.0 — "Broker’s call: Indian Bank (Buy)"
+- INDIANB.NS (INDIAN BANK) score 109.7 — "Broker’s call: Indian Bank (Buy)"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 106.9 — "Broker’s call: Indian Bank (Buy)"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 106.1 — "Broker’s call: Indian Bank (Buy)"
+- BAC (Bank of America Corporation) score 99.4 — "Broker’s call: Indian Bank (Buy)"
+- HDB (HDFC Bank Limited) score 94.3 — "Broker’s call: Indian Bank (Buy)"
+- IDBI.NS (IDBI BANK LIMITED) score 88.9 — "Broker’s call: Indian Bank (Buy)"
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 88.9 — "Broker’s call: Indian Bank (Buy)"
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 88.9 — "Broker’s call: Indian Bank (Buy)"
+- TECHM.NS (TECH MAHINDRA LIMITED) score 86.3 — "NISM, CAMS partner to integrate AI-powered regulatory intelligence platform into RegTech L"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 83.6 — "NISM, CAMS partner to integrate AI-powered regulatory intelligence platform into RegTech L"
+- TECH (Bio-Techne Corp) score 83.6 — "NISM, CAMS partner to integrate AI-powered regulatory intelligence platform into RegTech L"
+- COIN (Coinbase Global, Inc.) score 68.8 — "Global Energy Import Dependence Set to Peak by 2034, Rystad Says"
+- OHI (Omega Healthcare Investors, In) score 62.7 — "The bond market shrugged off two inflation shocks. Why stock investors should pay attentio"
+- CHKP (Check Point Software Technolog) score 45.5 — "Cult.fit IPO alert: Fitness major receives SEBI nod for proposed IPO - Check OFS, fresh is"
+- TGT (Target Corporation) score 45.3 — "BOJ'S UEDA SIGNALS FURTHER RATE HIKES AS INFLATION NEARS 2% Bank of Japan Governor Kazuo U"
+- BOND (PIMCO Active Bond Exchange-Tra) score 42.2 — "Gold, Silver prices rebound as dollar weakens, Bond yields fall; rupee aps gains"
+- RS (Reliance, Inc.) score 30.8 — "Reliance-backed Jio Platforms IPO:  ₹1 lakh crore gains for Meta, Google in  ₹30,213 cr is"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 28.5 — "Global Energy Import Dependence Set to Peak by 2034, Rystad Says"
+- LTH (Life Time Group Holdings, Inc.) score 28.4 — "Brent crude hits $110 a barrel for first time since May as supply concerns mount"
+- 4417.T (GLOBAL SECURITY EXPERTS INC) score 27.8 — "US Fed rate hike: US inflation heats up — experts decode impact on Indian stock market, go"
+- SEPN (Septerna, Inc.) score 25.2 — "US CRUDE FUTURES RISE OVER $3 TO SESSION HIGH OF $101.02, MOST SINCE SEPT 21"
+- 301077.SZ (CHINASTARS) score 23.8 — "TRUMP: WILL GET A DEAL ON NUCLEAR ARMS WITH RUSSIA AND CHINA"
+- JIOFIN.BO (Jio Financial Services Limited) score 23.2 — "China's central bank to boost support for global investors in financial markets"
+- BZ=F (Brent Crude Oil Last Day Finan) score 19.2 — "CBOE VOLATILITY INDEX JUMPS TO OVER FOUR-MONTH HIGH, LAST UP 4.97 POINTS AT 21.41"
+- BAJFINANCE.NS (BAJAJ FINANCE LIMITED) score 18.7 — "Top 3 stocks to buy: Bajaj Finance, Dr Reddy's Lab, Grasim Industries by Sumeet Bagadia | "
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 17.3 — "Tata Consumer Share Price Live Updates: Tata Consumer Stock Details"
+- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 17.3 — "Tata Consumer Share Price Live Updates: Tata Consumer Stock Details"
+- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 16.2 — "Top 3 stocks to buy: Bajaj Finance, Dr Reddy's Lab, Grasim Industries by Sumeet Bagadia | "
+- JUSTDIAL.BO (JUST DIAL LTD.) score 12.3 — "Michael Dell Says in Interview That Just-in-Time Manufacturing Provides a Cushion if AI Bo"
+- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 10.5 — "Nifty falls below 22,300 at noon as Adani Stocks, ITC, Metals slide"
+- NVDA (NVIDIA Corporation) score 9.5 — "GERMANY PLANS MAJOR AI PARTNERSHIP WITH NVIDIA — HANDELSBLATT German Chancellor Friedrich "
 - META (Meta) score 8.7 — "Reliance-backed Jio Platforms IPO:  ₹1 lakh crore gains for Meta, Google in  ₹30,213 cr is"
 - VT (Vanguard Total World Stock Ind) score 8.0 — "U.S. Wants World Bank to Drop Ban on Upstream Oil and Gas Funding"
-- GS (Goldman Sachs Group, Inc. (The) score 8.0 — "Wipro shares rise over 2% as Q2 revenue grows 9% YoY. What are Nomura, Goldman Sachs analy"
-- JEF (Jefferies Financial Group Inc.) score 6.5 — "Jefferies technical analyst finds an encouraging development in Thursday rebound, setting "
-- WIT (Wipro Limited) score 5.9 — "Wipro shares rise 5%, up 15% so far in October - Should you buy this IT stock after Q2 res"
+- GS (Goldman Sachs Group, Inc. (The) score 7.9 — "Wipro shares rise over 2% as Q2 revenue grows 9% YoY. What are Nomura, Goldman Sachs analy"
+- JEF (Jefferies Financial Group Inc.) score 7.5 — "Tech Mahindra shares jump 8% after Q2 results, Jefferies upgrades stock"
+- WIT (Wipro Limited) score 5.8 — "Wipro shares rise 5%, up 15% so far in October - Should you buy this IT stock after Q2 res"
 - DELL (Dell Technologies Inc.) score 2.1 — "Michael Dell Says in Interview That Just-in-Time Manufacturing Provides a Cushion if AI Bo"
 - POLICYBZR.NS (PB FINTECH LIMITED) score 1.8 — "From crypto to fintech, consumer and AI: Ashish Singhal explains CoinSwitch Ventures’ Blac"
 - VOLTAS.NS (VOLTAS LTD) score 0.0 — "Voltas’s market share is growing. Will margins follow?"
