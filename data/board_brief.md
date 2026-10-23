@@ -1,6 +1,6 @@
-# Transmission Layer — board brief · 2026-10-23 23:07Z
+# Transmission Layer — board brief · 2026-10-23 23:55Z
 
-data as of **2026-10-23** · 97 series · 24 red / 43 amber · 8 events surfaced (39 suppressed)
+data as of **2026-10-23** · 97 series · 24 red / 42 amber · 8 events surfaced (40 suppressed)
 
 ## Regime & assumption health (measured at generation)
 - **Regime: RISK_OFF** (score 0.833, 15d in regime; vol-pct 0.791, breadth-off 0.875, Markov P(high-vol) 0.031)
@@ -16,13 +16,13 @@ data as of **2026-10-23** · 97 series · 24 red / 43 amber · 8 events surfaced
 
 ## Scan control & verified transmission setups
 - FDR (BH q=0.1): **8 of 89** scanned series survive multiplicity control (effective p ≤ 0.003389620038554586)
-- **SETUP** dow_jones → asx_200: leads 1d (ccf 0.591, β 0.4889, p 0.0); driver zc -1.62 → expected -0.609%. Type hit-rate 0.818 (n=1877).
-- **SETUP** dow_jones → nikkei_225: leads 1d (ccf 0.46, β 0.7756, p 0.0); driver zc -1.62 → expected -0.966%. Type hit-rate 0.818 (n=1877).
-- **SETUP** dow_jones → usd_brl: leads 1d (ccf -0.409, β -0.3417, p 0.0); driver zc -1.62 → expected 0.426%. Type hit-rate 0.818 (n=1877).
-- **SETUP** dow_jones → aud_usd: leads 1d (ccf 0.396, β 0.2549, p 2e-05); driver zc -1.62 → expected -0.318%. Type hit-rate 0.818 (n=1877).
-- **SETUP** dow_jones → usd_mxn: leads 1d (ccf -0.379, β -0.2343, p 0.0); driver zc -1.62 → expected 0.292%. Type hit-rate 0.818 (n=1877).
+- **SETUP** dow_jones → asx_200: leads 1d (ccf 0.591, β 0.4889, p 0.0); driver zc -1.62 → expected -0.609%. Type hit-rate 0.818 (n=1873).
+- **SETUP** dow_jones → nikkei_225: leads 1d (ccf 0.46, β 0.7756, p 0.0); driver zc -1.62 → expected -0.966%. Type hit-rate 0.818 (n=1873).
+- **SETUP** dow_jones → usd_brl: leads 1d (ccf -0.409, β -0.3417, p 0.0); driver zc -1.62 → expected 0.426%. Type hit-rate 0.818 (n=1873).
+- **SETUP** dow_jones → aud_usd: leads 1d (ccf 0.396, β 0.2549, p 2e-05); driver zc -1.62 → expected -0.318%. Type hit-rate 0.818 (n=1873).
+- **SETUP** dow_jones → usd_mxn: leads 1d (ccf -0.379, β -0.2343, p 0.0); driver zc -1.62 → expected 0.292%. Type hit-rate 0.818 (n=1873).
 - Track record · residual_reversion: hit-rate **0.5** (n=1121) — |resid_z|>=2.0 -> fwd 5d return opposes residual
-- Track record · transmission_follow: hit-rate **0.818** (n=1877) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
+- Track record · transmission_follow: hit-rate **0.818** (n=1873) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
 - Track record · spread_reversion: hit-rate **0.625** (n=16) — |dev| >= 2sigma vs PIT 252d -> |dev| shrinks >=25% within max(half-life,10) sessions
 
 ## Events (ranked)
@@ -71,7 +71,7 @@ data as of **2026-10-23** · 97 series · 24 red / 43 amber · 8 events surfaced
 - Historical analogues: 2026-05-22 (d=0.0), 2025-04-29 (d=0.06), 2025-08-14 (d=0.06)
 
 ### [RED 7.44] cross-asset · 7 series ↓
-- dyn_swiggy_ns [EQUITIES]: last 176.00, z20 -3.10, zc -7.14, resid-z -6.69 [unexplained], 1d -16.75%, |z20|=3.10; 1y-pct=0
+- dyn_swiggy_ns [EQUITIES]: last 176.00, z20 -3.10, zc -7.31, resid-z -6.69 [unexplained], 1d -16.75%, |z20|=3.10; 1y-pct=0
 - nifty_midcap_100 [INDICES]: last 55799.90, z20 -2.99, zc -2.14, resid-z -3.16 [unexplained], 1d -2.21%, |z20|=2.99
 - india_vix [INDICES]: last 16.81, z20 2.26, zc 1.13, resid-z n/a [quiet], 1d 6.68%, |z20|=2.26
 - dyn_jiofin_bo [EQUITIES]: last 205.00, z20 -2.17, zc -1.93, resid-z -1.51 [unexplained], 1d -2.84%, |z20|=2.17; 1y-pct=0
@@ -116,19 +116,6 @@ data as of **2026-10-23** · 97 series · 24 red / 43 amber · 8 events surfaced
 - Source: S&P 500 AND NASDAQ HIT A FIVE-WEEK LOW; LAST DOWN 0.4% AND 0.2%, RESPECTIVELY — DeItaone, 2026-10-23. https://t.me/walter_bloomberg/37464
 - Historical analogues: 2025-10-23 (d=0.16), 2026-05-20 (d=0.17), 2025-05-06 (d=0.18)
 
-### [AMBER 5.43] cross-asset · 3 series ↓
-- dyn_coin [EQUITIES]: last 164.40, z20 -2.11, zc -0.60, resid-z -0.79 [quiet], 1d -2.77%, |z20|=2.11
-- btc_usd [CRYPTO]: last 80678.47, z20 -1.82, zc -0.35, resid-z -0.44 [quiet], 1d -0.78%, |z20|=1.82
-- eth_usd [CRYPTO]: last 2362.37, z20 -1.51, zc -0.26, resid-z -0.23 [quiet], 1d -1.00%, |z20|=1.51
-- **Mechanism**: cross-asset · 3 series ↓: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2025-10-22 (z-distance 0.35).
-- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
-- **India take**: dyn_muthootfin_ns (rho 0.394 via btc_usd, z -2.72, reacted)
-- **India receivers**: dyn_muthootfin_ns (rho 0.394, z -2.72)
-- Source: U.S. ECONOMY BOOMS, BUT INFLATION WARNING FLASHES RED October's flash S&P Global PMI signals strong economic growth alongside accelerating inflation. 🔸 Composite PMI: 57.6 vs. 58.4 prior 🔸 Services PMI: 57.9 vs. 58.8 🔸 Manufacturing PMI: 56.0 — 53-month high 🔸 GDP growth: Consistent with roughly 5%  — DeItaone, 2026-10-23. https://t.me/walter_bloomberg/37466
-- Source: U.S. S&P GLOBAL OCTOBER FLASH COMPOSITE PMI AT 57.6 (VS 58.4 IN SEPTEMBER) U.S. S&P GLOBAL OCTOBER FLASH SERVICES PMI AT 57.9 (FORECAST 58.0) U.S. S&P GLOBAL OCTOBER FLASH MANUFACTURING PMI AT 56.0 (FORECAST 55.5) — DeItaone, 2026-10-23. https://t.me/walter_bloomberg/37465
-- Source: Global Market: Eurozone bond markets stabilise after volatile week — ET Markets, 2026-10-23. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-eurozone-bond-markets-stabilise-after-volatile-week/articleshow/135142036.cms
-- Historical analogues: 2025-10-22 (d=0.35), 2025-03-31 (d=0.51), 2025-10-30 (d=0.52)
-
 ### [AMBER 5.38] indices · 3 series ↓
 - taiwan_weighted [INDICES]: last 46041.43, z20 -2.06, zc -1.26, resid-z 0.02 [quiet], 1d -1.81%, |z20|=2.06
 - nikkei_225 [INDICES]: last 62726.83, z20 -1.89, zc -0.15, resid-z 0.34 [quiet], 1d -0.29%, |z20|=1.89
@@ -141,8 +128,18 @@ data as of **2026-10-23** · 97 series · 24 red / 43 amber · 8 events surfaced
 - Source: Stock market outlook today, 23 Oct: Sensex, Nifty prediction - DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues — Mint Markets, 2026-10-23. https://www.livemint.com/market/stock-market-news/stock-market-outlook-today-23-oct-sensex-nifty-prediction-djia-s-p-nasdaq-gift-nifty-kospi-nikkei-taiwan-11792716174246.html
 - Source: Global Market: Japan’s Nikkei falls as chip stocks retreat on AI spending concerns — ET Markets, 2026-10-22. https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japans-nikkei-falls-as-chip-stocks-retreat-on-ai-spending-concerns/articleshow/135106795.cms
 
+### [RED 5.35] dyn_meta ↓
+- dyn_meta [EQUITIES]: last 642.30, z20 -3.35, zc -0.37, resid-z -1.99 [unexplained], 1d -1.01%, |z20|=3.35
+- **Mechanism**: dyn_meta ↓: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-05-22 (z-distance 0.0).
+- **Gap**: Unassessed (LLM off) — laggard list above is the live math.
+- **India take**: No exposed Indian receivers above the correlation floor.
+- Source: Meta share price: Stock slumps 7.5% despite upbeat Q3 results; why is Facebook parent falling? — Mint Markets, 2026-10-22. https://www.livemint.com/market/stock-market-news/meta-share-price-stock-slumps-7-5-despite-upbeat-q3-results-why-is-facebook-parent-falling-11792689825393.html
+- Source: Zuckerberg’s California tax move is a win for Meta — and for him — MarketWatch Top, 2026-10-22. https://www.marketwatch.com/story/zuckerbergs-california-tax-move-is-a-win-for-meta-and-for-him-aa049c94?mod=mw_rss_topstories
+- Source: META - META PLATFORM'S 5-YEAR CREDIT DEFAULT SWAPS HITS ALL-TIME HIGH, LAST AT 114.5 BPS - MARKIT DATA — DeItaone, 2026-10-22. https://t.me/walter_bloomberg/37429
+- Historical analogues: 2026-05-22 (d=0.0), 2025-08-21 (d=0.05), 2025-10-09 (d=0.12)
+
 ## Watchlist (below surfacing floor)
-dyn_meta ↓ (5.35), natgas ↓ (5.25), usd_jpy ↓ (5.18), dyn_tatatech_ns ↓ (5.02), dyn_lth ↑ (4.85), dyn_coalindia_ns ↓ (4.62), cross-asset · 2 series ↑ (4.57), dyn_bajfinance_ns ↓ (4.14), dyn_atherenerg_ns ↓ (4.08), dyn_adanient_bo ↓ (4.07), hy_oas ↑ (4.04), usd_cny ↓ (3.82)
+natgas ↓ (5.25), usd_jpy ↓ (5.18), dyn_tatatech_ns ↓ (5.02), cross-asset · 2 series ↓ (4.94), dyn_lth ↑ (4.85), dyn_coalindia_ns ↓ (4.62), cross-asset · 2 series ↑ (4.57), dyn_bajfinance_ns ↓ (4.14), dyn_atherenerg_ns ↓ (4.08), dyn_adanient_bo ↓ (4.07), hy_oas ↑ (4.04), usd_cny ↓ (3.82)
 
 ## India macro
 - nifty_50: 22600.0000 (1d -0.39%, z20 -0.54, flag amber)
@@ -155,45 +152,45 @@ dyn_meta ↓ (5.35), natgas ↓ (5.25), usd_jpy ↓ (5.18), dyn_tatatech_ns ↓ 
 - Next India prints: NSDL FPI flows T-0d · RBI Weekly Statistical Supplement T-0d · Kharif sowing data T-0d · IMD weekly rainfall T-3d
 
 ## News-tracked universe (why each is watched)
-- COALINDIA.NS (COAL INDIA LTD) score 97.0 — "EAAA India Alternatives mops up Rs 360 crore from anchor investors; IPO opens on Oct 26"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 95.7 — "EAAA India Alternatives mops up Rs 360 crore from anchor investors; IPO opens on Oct 26"
-- INOXINDIA.NS (INOX INDIA LIMITED) score 95.0 — "EAAA India Alternatives mops up Rs 360 crore from anchor investors; IPO opens on Oct 26"
-- INDIANB.NS (INDIAN BANK) score 80.3 — "PREDICTION MARKETS ARE DISRUPTING THE SPORTS BETTING INDUSTRY Wall Street initially undere"
-- BAC (Bank of America Corporation) score 72.8 — "PREDICTION MARKETS ARE DISRUPTING THE SPORTS BETTING INDUSTRY Wall Street initially undere"
-- HDB (HDFC Bank Limited) score 64.2 — "PREDICTION MARKETS ARE DISRUPTING THE SPORTS BETTING INDUSTRY Wall Street initially undere"
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 62.7 — "PREDICTION MARKETS ARE DISRUPTING THE SPORTS BETTING INDUSTRY Wall Street initially undere"
-- IDBI.NS (IDBI BANK LIMITED) score 61.9 — "PREDICTION MARKETS ARE DISRUPTING THE SPORTS BETTING INDUSTRY Wall Street initially undere"
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 61.9 — "PREDICTION MARKETS ARE DISRUPTING THE SPORTS BETTING INDUSTRY Wall Street initially undere"
-- OHI (Omega Healthcare Investors, In) score 60.2 — "Investors piled a record sum into a leveraged semiconductor ETF last week. Things didn’t w"
-- COIN (Coinbase Global, Inc.) score 57.8 — "U.S. S&P GLOBAL OCTOBER FLASH COMPOSITE PMI AT 57.6 (VS 58.4 IN SEPTEMBER) U.S. S&P GLOBAL"
-- TECHM.NS (TECH MAHINDRA LIMITED) score 51.2 — "Q2 Results Today Highlights: JSW Steel posts ₹5,359 cr profit; Adani Power jumps 134%, Inf"
-- TGT (Target Corporation) score 44.9 — "Top telecom shares to buy: Bharti Airtel, Vodafone Idea, Indus Towers by Ambit Capital wit"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 44.6 — "AI Tech Fears Push Global Credit Spreads to 17-Month High"
-- TECH (Bio-Techne Corp) score 44.6 — "AI Tech Fears Push Global Credit Spreads to 17-Month High"
-- CHKP (Check Point Software Technolog) score 43.3 — "Supreme Petrochem Q2 results, dividend 2026: Check amount, record date, yield, history, st"
-- LTH (Life Time Group Holdings, Inc.) score 33.7 — "RUSSIAN DEFMIN SAYS CEASEFIRE IN RUSSIAN-CONTROLLED OLESHKY TO BEGIN ON OCT. 27 - IFX RUSS"
-- BOND (PIMCO Active Bond Exchange-Tra) score 33.6 — "Global Market: French bond selloff raises debt concerns across Europe amid social unrest"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 32.9 — "Why Trump and Carney Haven’t Touched Energy in Their Tariff War"
-- RS (Reliance, Inc.) score 28.4 — "IPO Subscription status comparison: Reliance Jio IPO vs Hyundai IPO vs NSE IPO - Who won t"
-- 301077.SZ (CHINASTARS) score 27.5 — "What will China’s fifth plenum mean for the root-and-branch corruption drive?"
-- 4417.T (GLOBAL SECURITY EXPERTS INC) score 23.8 — "Chennai Petroleum vs MRPL: Which PSU refinery stock wins on Q2 profit, revenue, dividends?"
-- BAJFINANCE.NS (BAJAJ FINANCE LIMITED) score 20.8 — "Jana Small Finance Bank Q2 profit jumps 127%, raises FY27 growth outlook"
-- JIOFIN.BO (Jio Financial Services Limited) score 20.4 — "U.S. S&P GLOBAL OCTOBER FLASH COMPOSITE PMI AT 57.6 (VS 58.4 IN SEPTEMBER) U.S. S&P GLOBAL"
-- BZ=F (Brent Crude Oil Last Day Finan) score 18.6 — "Investors piled a record sum into a leveraged semiconductor ETF last week. Things didn’t w"
-- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 18.5 — "Q2 Results Today Highlights: JSW Steel posts ₹5,359 cr profit; Adani Power jumps 134%, Inf"
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 18.3 — "RBI governor reiterates listing requirement for top NBFCs as focus intensifies on Tata Son"
-- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 18.3 — "RBI governor reiterates listing requirement for top NBFCs as focus intensifies on Tata Son"
-- META (Meta) score 17.9 — "GOLD TESTS $4,000 AS INFLATION FEARS TRIGGER SELLING Gold futures fell 1.10% to $3,980.80/"
-- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 17.6 — "Jana Small Finance Bank Q2 profit jumps 127%, raises FY27 growth outlook"
-- SEPN (Septerna, Inc.) score 17.0 — "CANADIAN RETAIL SALES SURGE, SIGNALING STRONGER CONSUMER DEMAND Canada's retail sales post"
-- JUSTDIAL.BO (JUST DIAL LTD.) score 15.4 — "Some Republicans are opposing Trump on tariffs. Maine’s Susan Collins just got him to back"
-- JEF (Jefferies Financial Group Inc.) score 10.8 — "Swiggy vs Eternal shares compared: Which is better stock to buy post Q2 results? Jefferies"
+- COALINDIA.NS (COAL INDIA LTD) score 96.2 — "EAAA India Alternatives mops up Rs 360 crore from anchor investors; IPO opens on Oct 26"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 94.9 — "EAAA India Alternatives mops up Rs 360 crore from anchor investors; IPO opens on Oct 26"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 94.3 — "EAAA India Alternatives mops up Rs 360 crore from anchor investors; IPO opens on Oct 26"
+- INDIANB.NS (INDIAN BANK) score 79.7 — "PREDICTION MARKETS ARE DISRUPTING THE SPORTS BETTING INDUSTRY Wall Street initially undere"
+- BAC (Bank of America Corporation) score 72.3 — "PREDICTION MARKETS ARE DISRUPTING THE SPORTS BETTING INDUSTRY Wall Street initially undere"
+- HDB (HDFC Bank Limited) score 63.7 — "PREDICTION MARKETS ARE DISRUPTING THE SPORTS BETTING INDUSTRY Wall Street initially undere"
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 62.3 — "PREDICTION MARKETS ARE DISRUPTING THE SPORTS BETTING INDUSTRY Wall Street initially undere"
+- IDBI.NS (IDBI BANK LIMITED) score 61.4 — "PREDICTION MARKETS ARE DISRUPTING THE SPORTS BETTING INDUSTRY Wall Street initially undere"
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 61.4 — "PREDICTION MARKETS ARE DISRUPTING THE SPORTS BETTING INDUSTRY Wall Street initially undere"
+- OHI (Omega Healthcare Investors, In) score 59.7 — "Investors piled a record sum into a leveraged semiconductor ETF last week. Things didn’t w"
+- COIN (Coinbase Global, Inc.) score 57.3 — "U.S. S&P GLOBAL OCTOBER FLASH COMPOSITE PMI AT 57.6 (VS 58.4 IN SEPTEMBER) U.S. S&P GLOBAL"
+- TECHM.NS (TECH MAHINDRA LIMITED) score 50.8 — "Q2 Results Today Highlights: JSW Steel posts ₹5,359 cr profit; Adani Power jumps 134%, Inf"
+- TGT (Target Corporation) score 44.6 — "Top telecom shares to buy: Bharti Airtel, Vodafone Idea, Indus Towers by Ambit Capital wit"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 44.3 — "AI Tech Fears Push Global Credit Spreads to 17-Month High"
+- TECH (Bio-Techne Corp) score 44.3 — "AI Tech Fears Push Global Credit Spreads to 17-Month High"
+- CHKP (Check Point Software Technolog) score 43.0 — "Supreme Petrochem Q2 results, dividend 2026: Check amount, record date, yield, history, st"
+- LTH (Life Time Group Holdings, Inc.) score 33.4 — "RUSSIAN DEFMIN SAYS CEASEFIRE IN RUSSIAN-CONTROLLED OLESHKY TO BEGIN ON OCT. 27 - IFX RUSS"
+- BOND (PIMCO Active Bond Exchange-Tra) score 33.3 — "Global Market: French bond selloff raises debt concerns across Europe amid social unrest"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 32.6 — "Why Trump and Carney Haven’t Touched Energy in Their Tariff War"
+- RS (Reliance, Inc.) score 28.2 — "IPO Subscription status comparison: Reliance Jio IPO vs Hyundai IPO vs NSE IPO - Who won t"
+- 301077.SZ (CHINASTARS) score 27.3 — "What will China’s fifth plenum mean for the root-and-branch corruption drive?"
+- 4417.T (GLOBAL SECURITY EXPERTS INC) score 23.6 — "Chennai Petroleum vs MRPL: Which PSU refinery stock wins on Q2 profit, revenue, dividends?"
+- BAJFINANCE.NS (BAJAJ FINANCE LIMITED) score 20.7 — "Jana Small Finance Bank Q2 profit jumps 127%, raises FY27 growth outlook"
+- JIOFIN.BO (Jio Financial Services Limited) score 20.3 — "U.S. S&P GLOBAL OCTOBER FLASH COMPOSITE PMI AT 57.6 (VS 58.4 IN SEPTEMBER) U.S. S&P GLOBAL"
+- BZ=F (Brent Crude Oil Last Day Finan) score 18.4 — "Investors piled a record sum into a leveraged semiconductor ETF last week. Things didn’t w"
+- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 18.3 — "Q2 Results Today Highlights: JSW Steel posts ₹5,359 cr profit; Adani Power jumps 134%, Inf"
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 18.1 — "RBI governor reiterates listing requirement for top NBFCs as focus intensifies on Tata Son"
+- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 18.1 — "RBI governor reiterates listing requirement for top NBFCs as focus intensifies on Tata Son"
+- META (Meta) score 17.7 — "GOLD TESTS $4,000 AS INFLATION FEARS TRIGGER SELLING Gold futures fell 1.10% to $3,980.80/"
+- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 17.5 — "Jana Small Finance Bank Q2 profit jumps 127%, raises FY27 growth outlook"
+- SEPN (Septerna, Inc.) score 16.9 — "CANADIAN RETAIL SALES SURGE, SIGNALING STRONGER CONSUMER DEMAND Canada's retail sales post"
+- JUSTDIAL.BO (JUST DIAL LTD.) score 15.3 — "Some Republicans are opposing Trump on tariffs. Maine’s Susan Collins just got him to back"
+- JEF (Jefferies Financial Group Inc.) score 10.7 — "Swiggy vs Eternal shares compared: Which is better stock to buy post Q2 results? Jefferies"
 - GS (Goldman Sachs Group, Inc. (The) score 8.6 — "Ola Electric shares dip 5% after Goldman Sachs downgrades stock to Sell. Here’s why"
-- NVDA (NVIDIA Corporation) score 6.4 — "Can Nvidia’s stock become a safe haven as Wall Street rethinks the AI trade?"
+- NVDA (NVIDIA Corporation) score 6.3 — "Can Nvidia’s stock become a safe haven as Wall Street rethinks the AI trade?"
 - SWIGGY.NS (SWIGGY LIMITED) score 5.9 — "Swiggy vs Eternal shares compared: Which is better stock to buy post Q2 results? Jefferies"
 - VT (Vanguard Total World Stock Ind) score 5.7 — "Reliance Jio IPO Global Record: Another feather in cap! History created - 1st IPO worldwid"
-- WIT (Wipro Limited) score 5.5 — "Top stocks to buy: IT stocks soar! TCS, Infosys, HCL Tech, Wipro - Nifty IT up over 3% tod"
-- POLICYBZR.NS (PB FINTECH LIMITED) score 0.4 — "From crypto to fintech, consumer and AI: Ashish Singhal explains CoinSwitch Ventures’ Blac"
+- WIT (Wipro Limited) score 5.4 — "Top stocks to buy: IT stocks soar! TCS, Infosys, HCL Tech, Wipro - Nifty IT up over 3% tod"
+- POLICYBZR.NS (PB FINTECH LIMITED) score 0.3 — "From crypto to fintech, consumer and AI: Ashish Singhal explains CoinSwitch Ventures’ Blac"
 - VOLTAS.NS (VOLTAS LTD) score 0.0 — "Voltas’s market share is growing. Will margins follow?"
 
 ---

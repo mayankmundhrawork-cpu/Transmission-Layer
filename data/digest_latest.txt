@@ -65,8 +65,8 @@
   wheat | 625.0000 | 0.04% | -5.37% | -2.25 | 0.02 | -0.02 | 65 | amber | quiet
   corn | 456.0000 | -0.98% | -3.85% | -1.72 | -0.71 | -0.69 | 68 | amber | quiet
   soybeans | 1269.5000 | 1.32% | 0.65% | -0.53 | 1.31 | 0.97 | 87 | none | quiet
-  btc_usd | 80678.4688 | -0.78% | -1.01% | -1.82 | -0.35 | -0.44 | 66 | amber | quiet
-  eth_usd | 2362.3701 | -1.00% | -2.37% | -1.51 | -0.26 | -0.23 | 59 | amber | quiet
+  btc_usd | 81078.7109 | -0.29% | -0.52% | -1.53 | -0.13 | -0.22 | 67 | amber | quiet
+  eth_usd | 2384.3701 | -0.08% | -1.46% | -1.33 | -0.02 | 0.06 | 60 | none | quiet
   midcap_largecap_ratio | 2.4690 | -1.83% | -4.07% | -3.53 | n/a | n/a | 50 | red | quiet
   brent_wti_spread | 8.2200 | -40.00% | -2.72% | -1.32 | n/a | n/a | 85 | none | quiet
   gold_silver_ratio | 74.3143 | 0.23% | 1.30% | 1.81 | n/a | n/a | 90 | red | quiet
@@ -102,7 +102,7 @@
   dyn_policybzr_ns | 1015.0000 | -2.21% | -5.97% | -0.66 | -0.66 | -0.11 | 2 | amber | quiet
   dyn_rs | 415.6200 | -0.55% | 1.08% | 1.25 | -0.34 | -1.25 | 98 | amber | quiet
   dyn_sepn | 40.3900 | -1.20% | 11.11% | 1.66 | -0.30 | -0.69 | 94 | none | quiet
-  dyn_swiggy_ns | 176.0000 | -16.75% | -23.14% | -3.10 | -7.14 | -6.69 | 0 | red | unexplained
+  dyn_swiggy_ns | 176.0000 | -16.75% | -23.14% | -3.10 | -7.31 | -6.69 | 0 | red | unexplained
   dyn_tataelxsi_ns | 3700.0000 | -3.82% | 0.00% | 1.19 | -1.60 | -1.97 | 25 | none | unexplained
   dyn_tatatech_ns | 657.3500 | -4.64% | -11.32% | -3.02 | -2.30 | -1.79 | 39 | red | unexplained
   dyn_tech | 72.5700 | -0.07% | 0.00% | 0.82 | -0.77 | -0.23 | 97 | amber | quiet
@@ -160,15 +160,14 @@
   [AMBER] nifty_metal (series, INDICES) score=1.97 — |z20|=1.97
   [AMBER] nikkei_225 (series, INDICES) score=1.89 — |z20|=1.89
   [AMBER] brent (series, COMMODITIES) score=1.88 — |z20|=1.88; 1y-pct=96
-  [AMBER] btc_usd (series, CRYPTO) score=1.82 — |z20|=1.82
   [AMBER] usd_mxn (series, FX) score=1.77 — |z20|=1.77; 1y-pct=99
   [AMBER] dyn_techm_ns (series, EQUITIES) score=1.74 — 1y-pct=98
   [AMBER] nifty_it (series, INDICES) score=1.74 — |z20|=1.74
   [AMBER] corn (series, COMMODITIES) score=1.72 — |z20|=1.72
   [AMBER] dyn_4417_t (series, EQUITIES) score=1.66 — 1y-pct=99
   [AMBER] sofr (series, RATES) score=1.61 — |z20|=1.61
+  [AMBER] btc_usd (series, CRYPTO) score=1.53 — |z20|=1.53
   [AMBER] kospi (series, INDICES) score=1.51 — |z20|=1.51
-  [AMBER] eth_usd (series, CRYPTO) score=1.51 — |z20|=1.51
   [AMBER] shanghai_comp (series, INDICES) score=1.50 — |z20|=1.50; 1y-pct=0
   [AMBER] usd_brl (series, FX) score=1.33 — 1y-pct=3
   [AMBER] dyn_hdb (series, EQUITIES) score=1.27 — 1y-pct=1
@@ -184,12 +183,12 @@
 
 [2b] SCAN CONTROL & VERIFIED SETUPS
   FDR (Benjamini-Hochberg q=0.1): 8 of 89 scanned series significant (effective p<=0.003389620038554586)
-  SETUP dow_jones -> asx_200: leads 1d (ccf 0.591, beta 0.4889, p 0.0); driver zc -1.62 -> expected -0.609% | type hit-rate 0.818 (n=1877)
-  SETUP dow_jones -> nikkei_225: leads 1d (ccf 0.46, beta 0.7756, p 0.0); driver zc -1.62 -> expected -0.966% | type hit-rate 0.818 (n=1877)
-  SETUP dow_jones -> usd_brl: leads 1d (ccf -0.409, beta -0.3417, p 0.0); driver zc -1.62 -> expected 0.426% | type hit-rate 0.818 (n=1877)
-  SETUP dow_jones -> aud_usd: leads 1d (ccf 0.396, beta 0.2549, p 2e-05); driver zc -1.62 -> expected -0.318% | type hit-rate 0.818 (n=1877)
-  SETUP dow_jones -> usd_mxn: leads 1d (ccf -0.379, beta -0.2343, p 0.0); driver zc -1.62 -> expected 0.292% | type hit-rate 0.818 (n=1877)
-  Track record: residual_reversion 0.5 (n=1121) · transmission_follow 0.818 (n=1877) · spread_reversion 0.625 (n=16)
+  SETUP dow_jones -> asx_200: leads 1d (ccf 0.591, beta 0.4889, p 0.0); driver zc -1.62 -> expected -0.609% | type hit-rate 0.818 (n=1873)
+  SETUP dow_jones -> nikkei_225: leads 1d (ccf 0.46, beta 0.7756, p 0.0); driver zc -1.62 -> expected -0.966% | type hit-rate 0.818 (n=1873)
+  SETUP dow_jones -> usd_brl: leads 1d (ccf -0.409, beta -0.3417, p 0.0); driver zc -1.62 -> expected 0.426% | type hit-rate 0.818 (n=1873)
+  SETUP dow_jones -> aud_usd: leads 1d (ccf 0.396, beta 0.2549, p 2e-05); driver zc -1.62 -> expected -0.318% | type hit-rate 0.818 (n=1873)
+  SETUP dow_jones -> usd_mxn: leads 1d (ccf -0.379, beta -0.2343, p 0.0); driver zc -1.62 -> expected 0.292% | type hit-rate 0.818 (n=1873)
+  Track record: residual_reversion 0.5 (n=1121) · transmission_follow 0.818 (n=1873) · spread_reversion 0.625 (n=16)
 
 [3] RELEASE PROXIMITY
   T-0d  NSDL FPI flows — 5-session outflow >$500M sustained
