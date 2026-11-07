@@ -1,4 +1,4 @@
-# Transmission Layer — board brief · 2026-11-07 00:06Z
+# Transmission Layer — board brief · 2026-11-07 01:01Z
 
 data as of **2026-11-07** · 97 series · 19 red / 34 amber · 8 events surfaced (26 suppressed)
 
@@ -16,12 +16,10 @@ data as of **2026-11-07** · 97 series · 19 red / 34 amber · 8 events surfaced
 
 ## Scan control & verified transmission setups
 - FDR (BH q=0.1): **22 of 89** scanned series survive multiplicity control (effective p ≤ 0.021448220043351673)
-- **SETUP** dxy → usd_jpy: leads 1d (ccf 0.635, β 0.8871, p 0.0); driver zc 2.42 → expected 0.637%. Type hit-rate 0.818 (n=2119).
-- **SETUP** ust_2y → usd_jpy: leads 1d (ccf 0.468, β 0.2022, p 0.0); driver zc -2.07 → expected -0.53%. Type hit-rate 0.818 (n=2119).
-- **SETUP** dxy → usd_mxn: leads 1d (ccf 0.438, β 0.6349, p 0.0); driver zc 2.42 → expected 0.456%. Type hit-rate 0.818 (n=2119).
-- **SETUP** aud_usd → usd_cny: leads 1d (ccf -0.259, β -0.0776, p 0.0); driver zc -3.42 → expected 0.151%. Type hit-rate 0.818 (n=2119).
+- **SETUP** dxy → usd_jpy: leads 1d (ccf 0.635, β 0.8871, p 0.0); driver zc 2.42 → expected 0.637%. Type hit-rate 0.818 (n=2093).
+- **SETUP** dxy → usd_mxn: leads 1d (ccf 0.438, β 0.6349, p 0.0); driver zc 2.42 → expected 0.456%. Type hit-rate 0.818 (n=2093).
 - Track record · residual_reversion: hit-rate **0.51** (n=1130) — |resid_z|>=2.0 -> fwd 5d return opposes residual
-- Track record · transmission_follow: hit-rate **0.818** (n=2119) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
+- Track record · transmission_follow: hit-rate **0.818** (n=2093) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
 - Track record · spread_reversion: hit-rate **0.5** (n=16) — |dev| >= 2sigma vs PIT 252d -> |dev| shrinks >=25% within max(half-life,10) sessions
 
 ## Events (ranked)
@@ -53,7 +51,7 @@ data as of **2026-11-07** · 97 series · 19 red / 34 amber · 8 events surfaced
 - dyn_coin [EQUITIES]: last 134.71, z20 -2.06, zc -0.32, resid-z 0.44 [quiet], 1d -1.54%, |z20|=2.06; 1y-pct=0
 - hy_oas [RATES]: last 3.48, z20 2.00, zc 1.63, resid-z -3.82 [unexplained], 1d 4.82%, |z20|=2.00; 1y-pct=100
 - dow_jones [INDICES]: last 51271.58, z20 -1.91, zc -0.27, resid-z -0.50 [quiet], 1d -0.49%, |z20|=1.91
-- btc_usd [CRYPTO]: last 75795.24, z20 -1.68, zc 0.09, resid-z -0.07 [quiet], 1d 0.25%, |z20|=1.68
+- btc_usd [CRYPTO]: last 75790.34, z20 -1.68, zc 0.09, resid-z -0.07 [quiet], 1d 0.24%, |z20|=1.68
 - ig_oas [RATES]: last 0.93, z20 1.47, zc 0.82, resid-z -2.86 [unexplained], 1d 2.20%, 1y-pct=97
 - **Mechanism**: cross-asset · 10 series ↓: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2025-10-21 (z-distance 0.85).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
@@ -143,7 +141,7 @@ data as of **2026-11-07** · 97 series · 19 red / 34 amber · 8 events surfaced
 - Historical analogues: 2026-05-22 (d=0.0), 2025-04-29 (d=0.06), 2025-08-14 (d=0.06)
 
 ## Watchlist (below surfacing floor)
-dyn_tech ↑ (4.45), comex_copper ↓ (4.39), aud_usd ↓ (4.14), dyn_lth ↑ (3.85), equities · 2 series ↑ (3.77), cross-asset · 2 series ↑ (3.42), dyn_4417_t ↑ (3.28), dyn_techm_ns ↑ (2.91), eur_inr ↓ (2.7), asx_200 ↑ (2.55), dyn_schd ↑ (2.4), dyn_rs ↓ (2.31)
+dyn_tech ↑ (4.45), comex_copper ↓ (4.39), dyn_lth ↑ (3.85), equities · 2 series ↑ (3.77), aud_usd ↓ (3.67), cross-asset · 2 series ↑ (3.42), dyn_4417_t ↑ (3.28), dyn_techm_ns ↑ (2.91), eur_inr ↓ (2.7), asx_200 ↑ (2.55), dyn_schd ↑ (2.4), dyn_rs ↓ (2.31)
 
 ## India macro
 - nifty_50: 25030.3496 (1d 2.01%, z20 3.71, flag red)
@@ -156,45 +154,45 @@ dyn_tech ↑ (4.45), comex_copper ↓ (4.39), aud_usd ↓ (4.14), dyn_lth ↑ (3
 - Next India prints: AMFI SIP / MF flows T-2d · NSDL FPI flows T-2d · IMD weekly rainfall T-2d · India CPI T-5d
 
 ## News-tracked universe (why each is watched)
-- COALINDIA.NS (COAL INDIA LTD) score 98.5 — "Nestle India Share Price Highlights: Nestle India Stock Price History"
-- INOXINDIA.NS (INOX INDIA LIMITED) score 97.9 — "Nestle India Share Price Highlights: Nestle India Stock Price History"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 97.2 — "Nestle India Share Price Highlights: Nestle India Stock Price History"
-- INDIANB.NS (INDIAN BANK) score 63.7 — "Kotak Bank Share Price Highlights: Kotak Bank Stock Price History"
-- TECHM.NS (TECH MAHINDRA LIMITED) score 56.6 — "Tech Mahindra Share Price Highlights: Tech Mahindra Stock Price History"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 54.9 — "Tech Mahindra Share Price Highlights: Tech Mahindra Stock Price History"
-- TECH (Bio-Techne Corp) score 54.9 — "Tech Mahindra Share Price Highlights: Tech Mahindra Stock Price History"
-- OHI (Omega Healthcare Investors, In) score 48.2 — "US OPTIONS TRADING HITS ALL-TIME RECORD AMID MARKET ROUT US options volume surged to a rec"
-- BAC (Bank of America Corporation) score 47.5 — "America’s Nuclear Revival Is Running Into a Fuel Supply Wall"
-- HDB (HDFC Bank Limited) score 45.1 — "Kotak Bank Share Price Highlights: Kotak Bank Stock Price History"
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 41.5 — "Kotak Bank Share Price Highlights: Kotak Bank Stock Price History"
-- IDBI.NS (IDBI BANK LIMITED) score 41.4 — "Kotak Bank Share Price Highlights: Kotak Bank Stock Price History"
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 41.4 — "Kotak Bank Share Price Highlights: Kotak Bank Stock Price History"
-- TGT (Target Corporation) score 34.9 — "S&P 500 FUTURES FACE FURTHER DOWNSIDE AS BEARISH SIGNALS INTENSIFY S&P 500 E-mini futures "
-- COIN (Coinbase Global, Inc.) score 29.0 — "Nifty reclaims 25,000, Sensex crosses 81,000 as India shrugs off global tech rout"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 28.4 — "FRENCH ENERGY MINISTRY: 3.6 MILLION BARRELS OF DIESEL HAS BEEN SOLD OUT OF THE FRENCH STRA"
-- 301077.SZ (CHINASTARS) score 27.8 — "CHINA FAILS TO INCREASE RARE EARTH SUPPLY ACCORDING TO US OFFICIALS *US OFFICIALS SAY CHIN"
-- CHKP (Check Point Software Technolog) score 27.5 — "Gold, Silver Price Live updates: Check latest gold and silver prices on Dhanteras. Check 2"
-- BOND (PIMCO Active Bond Exchange-Tra) score 27.1 — "Data centers run on debt. That was a problem for bonds this year — and it’s only going to "
-- LTH (Life Time Group Holdings, Inc.) score 23.1 — "US CONSUMER SENTIMENT BEATS EXPECTATIONS AS INFLATION FEARS EASE University of Michigan co"
-- BAJFINANCE.NS (BAJAJ FINANCE LIMITED) score 20.9 — "Bajaj Finance Share Price Highlights: Bajaj Finance Stock Price History"
-- JIOFIN.BO (Jio Financial Services Limited) score 18.1 — "STARLINK AND ONEWEB SATELLITE COMMUNICATIONS SERVICES POSE RISKS OF DESTABILISING THE SOCI"
-- 4417.T (GLOBAL SECURITY EXPERTS INC) score 17.2 — "Hunting for next defence stock winners? Raymond, PTC, Axiscades, Rossell - Experts decode "
-- RS (Reliance, Inc.) score 15.2 — "US Midterm Election results impact on oil and IT shares: Reliance, Indian Oil, TCS, Infosy"
-- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 14.5 — "Bajaj Finance Share Price Highlights: Bajaj Finance Stock Price History"
-- SCHD (Schwab US Dividend Equity ETF) score 13.4 — "56% returns in 6 months! TAAL Tech dividend record date ahead- Check eligibility, dividend"
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 13.0 — "Tata Motors PV Share Price Highlights: Tata Motors PV Stock Price History"
-- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 13.0 — "Tata Motors PV Share Price Highlights: Tata Motors PV Stock Price History"
-- BZ=F (Brent Crude Oil Last Day Finan) score 12.3 — "Pulse of the Street: Dalal Street shines before Diwali. Can the rally last?"
-- META (Meta) score 11.7 — "Manaksia Coated Metals raised ₹150 crore through QIP"
-- DEMZ (Democratic Large Cap Core ETF) score 11.5 — "MORGAN STANLEY WARNS 12GW OF US DATA-CENTER CAPACITY AT RISK Morgan Stanley estimates that"
-- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 10.1 — "Adani Ports SEZ Share Price Highlights: Adani Ports SEZ Stock Price History"
+- COALINDIA.NS (COAL INDIA LTD) score 97.6 — "Nestle India Share Price Highlights: Nestle India Stock Price History"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 97.0 — "Nestle India Share Price Highlights: Nestle India Stock Price History"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 96.4 — "Nestle India Share Price Highlights: Nestle India Stock Price History"
+- INDIANB.NS (INDIAN BANK) score 63.2 — "Kotak Bank Share Price Highlights: Kotak Bank Stock Price History"
+- TECHM.NS (TECH MAHINDRA LIMITED) score 56.1 — "Tech Mahindra Share Price Highlights: Tech Mahindra Stock Price History"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 54.4 — "Tech Mahindra Share Price Highlights: Tech Mahindra Stock Price History"
+- TECH (Bio-Techne Corp) score 54.4 — "Tech Mahindra Share Price Highlights: Tech Mahindra Stock Price History"
+- OHI (Omega Healthcare Investors, In) score 47.8 — "US OPTIONS TRADING HITS ALL-TIME RECORD AMID MARKET ROUT US options volume surged to a rec"
+- BAC (Bank of America Corporation) score 47.1 — "America’s Nuclear Revival Is Running Into a Fuel Supply Wall"
+- HDB (HDFC Bank Limited) score 44.7 — "Kotak Bank Share Price Highlights: Kotak Bank Stock Price History"
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 41.1 — "Kotak Bank Share Price Highlights: Kotak Bank Stock Price History"
+- IDBI.NS (IDBI BANK LIMITED) score 41.1 — "Kotak Bank Share Price Highlights: Kotak Bank Stock Price History"
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 41.1 — "Kotak Bank Share Price Highlights: Kotak Bank Stock Price History"
+- TGT (Target Corporation) score 34.6 — "S&P 500 FUTURES FACE FURTHER DOWNSIDE AS BEARISH SIGNALS INTENSIFY S&P 500 E-mini futures "
+- COIN (Coinbase Global, Inc.) score 28.7 — "Nifty reclaims 25,000, Sensex crosses 81,000 as India shrugs off global tech rout"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 28.1 — "FRENCH ENERGY MINISTRY: 3.6 MILLION BARRELS OF DIESEL HAS BEEN SOLD OUT OF THE FRENCH STRA"
+- 301077.SZ (CHINASTARS) score 27.6 — "CHINA FAILS TO INCREASE RARE EARTH SUPPLY ACCORDING TO US OFFICIALS *US OFFICIALS SAY CHIN"
+- CHKP (Check Point Software Technolog) score 27.2 — "Gold, Silver Price Live updates: Check latest gold and silver prices on Dhanteras. Check 2"
+- BOND (PIMCO Active Bond Exchange-Tra) score 26.9 — "Data centers run on debt. That was a problem for bonds this year — and it’s only going to "
+- LTH (Life Time Group Holdings, Inc.) score 22.9 — "US CONSUMER SENTIMENT BEATS EXPECTATIONS AS INFLATION FEARS EASE University of Michigan co"
+- BAJFINANCE.NS (BAJAJ FINANCE LIMITED) score 20.7 — "Bajaj Finance Share Price Highlights: Bajaj Finance Stock Price History"
+- JIOFIN.BO (Jio Financial Services Limited) score 17.9 — "STARLINK AND ONEWEB SATELLITE COMMUNICATIONS SERVICES POSE RISKS OF DESTABILISING THE SOCI"
+- 4417.T (GLOBAL SECURITY EXPERTS INC) score 17.1 — "Hunting for next defence stock winners? Raymond, PTC, Axiscades, Rossell - Experts decode "
+- RS (Reliance, Inc.) score 15.1 — "US Midterm Election results impact on oil and IT shares: Reliance, Indian Oil, TCS, Infosy"
+- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 14.4 — "Bajaj Finance Share Price Highlights: Bajaj Finance Stock Price History"
+- SCHD (Schwab US Dividend Equity ETF) score 13.3 — "56% returns in 6 months! TAAL Tech dividend record date ahead- Check eligibility, dividend"
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 12.9 — "Tata Motors PV Share Price Highlights: Tata Motors PV Stock Price History"
+- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 12.9 — "Tata Motors PV Share Price Highlights: Tata Motors PV Stock Price History"
+- BZ=F (Brent Crude Oil Last Day Finan) score 12.2 — "Pulse of the Street: Dalal Street shines before Diwali. Can the rally last?"
+- META (Meta) score 11.6 — "Manaksia Coated Metals raised ₹150 crore through QIP"
+- DEMZ (Democratic Large Cap Core ETF) score 11.4 — "MORGAN STANLEY WARNS 12GW OF US DATA-CENTER CAPACITY AT RISK Morgan Stanley estimates that"
+- ADANIENT.BO (ADANI ENTERPRISES LTD.) score 10.0 — "Adani Ports SEZ Share Price Highlights: Adani Ports SEZ Stock Price History"
 - SEPN (Septerna, Inc.) score 8.3 — "DEMOCRATS SWEEP CONGRESS. FED HIKE BETS RETREAT. Following the midterm results, December F"
 - JUSTDIAL.BO (JUST DIAL LTD.) score 5.8 — "US OPTIONS TRADING HITS ALL-TIME RECORD AMID MARKET ROUT US options volume surged to a rec"
-- VT (Vanguard Total World Stock Ind) score 5.4 — "Gold prices may be nearing bottom as World Gold Council sees recovery signals"
-- JEF (Jefferies Financial Group Inc.) score 4.9 — "Emcure Pharma shares hit 10% upper circuit after FY27 guidance hike; Jefferies raises targ"
+- VT (Vanguard Total World Stock Ind) score 5.3 — "Gold prices may be nearing bottom as World Gold Council sees recovery signals"
+- JEF (Jefferies Financial Group Inc.) score 4.8 — "Emcure Pharma shares hit 10% upper circuit after FY27 guidance hike; Jefferies raises targ"
 - GS (Goldman Sachs Group, Inc. (The) score 3.8 — "The AI trade has been ‘sold to death’ but Goldman strategist highlights silver lining from"
-- INFY (Infosys Limited) score 3.8 — "Infosys Share Price Live Updates: Infosys Price Update and Trends"
-- POLICYBZR.NS (PB FINTECH LIMITED) score 0.9 — "Broker’s call: PB Fintech (Buy)"
+- INFY (Infosys Limited) score 3.7 — "Infosys Share Price Live Updates: Infosys Price Update and Trends"
+- POLICYBZR.NS (PB FINTECH LIMITED) score 0.8 — "Broker’s call: PB Fintech (Buy)"
 - SWIGGY.NS (SWIGGY LIMITED) score 0.4 — "Swiggy shares jump 5% a day after Q2 results sparked a 17% crash. Why brokerages remain bu"
 
 ---

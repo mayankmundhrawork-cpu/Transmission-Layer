@@ -40,7 +40,7 @@
   eur_usd | 1.1143 | -0.82% | -0.35% | -1.91 | -2.72 | -2.54 | 0 | amber | unexplained
   usd_jpy | 158.4250 | 0.04% | 0.39% | 0.95 | 0.10 | -0.25 | 54 | none | quiet
   gbp_usd | 1.3356 | -0.90% | -0.17% | 0.28 | -2.68 | -2.93 | 31 | none | unexplained
-  aud_usd | 0.6868 | -1.94% | -2.26% | -4.14 | -3.42 | -4.99 | 19 | red | unexplained
+  aud_usd | 0.6868 | -0.91% | -2.29% | -3.67 | -1.09 | -2.69 | 19 | red | unexplained
   usd_cny | 6.6648 | -0.12% | 0.06% | -1.01 | -0.72 | -1.06 | 1 | amber | quiet
   usd_inr | 93.8950 | -0.66% | -1.32% | -1.93 | -1.41 | -1.42 | 41 | red | quiet
   eur_inr | 104.6632 | -1.41% | -1.62% | -2.70 | -2.30 | -1.54 | 7 | red | unexplained
@@ -65,8 +65,8 @@
   wheat | 590.5000 | -1.46% | -2.15% | -1.42 | -1.01 | -0.89 | 41 | none | quiet
   corn | 442.2500 | 0.51% | -1.23% | -1.31 | 0.39 | 0.28 | 43 | none | quiet
   soybeans | 1194.5000 | 1.14% | -2.27% | -1.53 | 1.14 | 0.85 | 66 | amber | quiet
-  btc_usd | 75795.2422 | 0.25% | -1.15% | -1.68 | 0.09 | -0.07 | 50 | amber | quiet
-  eth_usd | 2236.1699 | 0.50% | -0.57% | -1.33 | 0.12 | 0.35 | 48 | none | quiet
+  btc_usd | 75790.3438 | 0.24% | -1.16% | -1.68 | 0.09 | -0.07 | 50 | amber | quiet
+  eth_usd | 2236.8301 | 0.52% | -0.54% | -1.32 | 0.13 | 0.35 | 48 | none | quiet
   midcap_largecap_ratio | 2.4218 | -1.97% | -2.57% | -1.99 | n/a | n/a | 44 | amber | quiet
   brent_wti_spread | 7.4200 | -4.50% | -45.12% | -1.16 | n/a | n/a | 80 | none | quiet
   gold_silver_ratio | 78.5048 | -0.32% | -1.14% | 1.27 | n/a | n/a | 93 | none | quiet
@@ -114,9 +114,9 @@
 
 [2] FLAGS FIRED
   [RED] usd_inr (series, FX) score=4.93 — 20d range extreme; |z20|=1.93; co-occur[inr_oil] suppressed: channel WEAK
-  [RED] aud_usd (series, FX) score=4.14 — |z20|=4.14
   [RED] dyn_bajfinance_ns (series, EQUITIES) score=3.83 — |z20|=3.83
   [RED] nifty_50 (series, INDICES) score=3.71 — |z20|=3.71
+  [RED] aud_usd (series, FX) score=3.67 — |z20|=3.67
   [RED] taiwan_weighted (series, INDICES) score=3.13 — |z20|=3.13
   [RED] ust_2y (series, RATES) score=3.00 — |z20|=3.00
   [RED] nikkei_225 (series, INDICES) score=2.95 — |z20|=2.95
@@ -169,11 +169,9 @@
 
 [2b] SCAN CONTROL & VERIFIED SETUPS
   FDR (Benjamini-Hochberg q=0.1): 22 of 89 scanned series significant (effective p<=0.021448220043351673)
-  SETUP dxy -> usd_jpy: leads 1d (ccf 0.635, beta 0.8871, p 0.0); driver zc 2.42 -> expected 0.637% | type hit-rate 0.818 (n=2119)
-  SETUP ust_2y -> usd_jpy: leads 1d (ccf 0.468, beta 0.2022, p 0.0); driver zc -2.07 -> expected -0.53% | type hit-rate 0.818 (n=2119)
-  SETUP dxy -> usd_mxn: leads 1d (ccf 0.438, beta 0.6349, p 0.0); driver zc 2.42 -> expected 0.456% | type hit-rate 0.818 (n=2119)
-  SETUP aud_usd -> usd_cny: leads 1d (ccf -0.259, beta -0.0776, p 0.0); driver zc -3.42 -> expected 0.151% | type hit-rate 0.818 (n=2119)
-  Track record: residual_reversion 0.51 (n=1130) · transmission_follow 0.818 (n=2119) · spread_reversion 0.5 (n=16)
+  SETUP dxy -> usd_jpy: leads 1d (ccf 0.635, beta 0.8871, p 0.0); driver zc 2.42 -> expected 0.637% | type hit-rate 0.818 (n=2093)
+  SETUP dxy -> usd_mxn: leads 1d (ccf 0.438, beta 0.6349, p 0.0); driver zc 2.42 -> expected 0.456% | type hit-rate 0.818 (n=2093)
+  Track record: residual_reversion 0.51 (n=1130) · transmission_follow 0.818 (n=2093) · spread_reversion 0.5 (n=16)
 
 [3] RELEASE PROXIMITY
   T-2d  AMFI SIP / MF flows — stoppage ratio >95%; category flow skew
