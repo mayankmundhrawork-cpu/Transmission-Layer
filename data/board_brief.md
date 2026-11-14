@@ -1,4 +1,4 @@
-# Transmission Layer — board brief · 2026-11-14 00:53Z
+# Transmission Layer — board brief · 2026-11-14 01:32Z
 
 data as of **2026-11-14** · 97 series · 13 red / 24 amber · 8 events surfaced (20 suppressed)
 
@@ -16,11 +16,11 @@ data as of **2026-11-14** · 97 series · 13 red / 24 amber · 8 events surfaced
 
 ## Scan control & verified transmission setups
 - FDR (BH q=0.1): **0 of 89** scanned series survive multiplicity control (effective p ≤ None)
-- **SETUP** ust_2y → usd_jpy: leads 1d (ccf 0.476, β 0.2044, p 0.0); driver zc 2.85 → expected 0.762%. Type hit-rate 0.82 (n=2126).
-- **SETUP** ust_10y → usd_jpy: leads 1d (ccf 0.449, β 0.2339, p 0.0); driver zc 1.9 → expected 0.479%. Type hit-rate 0.82 (n=2126).
-- **SETUP** aud_usd → usd_cny: leads 1d (ccf -0.268, β -0.0799, p 0.0); driver zc -1.73 → expected 0.08%. Type hit-rate 0.82 (n=2126).
+- **SETUP** ust_2y → usd_jpy: leads 1d (ccf 0.476, β 0.2044, p 0.0); driver zc 2.85 → expected 0.762%. Type hit-rate 0.816 (n=2172).
+- **SETUP** ust_10y → usd_jpy: leads 1d (ccf 0.449, β 0.2339, p 0.0); driver zc 1.9 → expected 0.479%. Type hit-rate 0.816 (n=2172).
+- **SETUP** aud_usd → usd_cny: leads 1d (ccf -0.268, β -0.0799, p 0.0); driver zc -1.73 → expected 0.08%. Type hit-rate 0.816 (n=2172).
 - Track record · residual_reversion: hit-rate **0.509** (n=1158) — |resid_z|>=2.0 -> fwd 5d return opposes residual
-- Track record · transmission_follow: hit-rate **0.82** (n=2126) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
+- Track record · transmission_follow: hit-rate **0.816** (n=2172) — first-half-significant lead pairs; driver |zc|>=1.5 on 2nd half -> target next-k cum ret matches beta-implied sign
 - Track record · spread_reversion: hit-rate **0.533** (n=15) — |dev| >= 2sigma vs PIT 252d -> |dev| shrinks >=25% within max(half-life,10) sessions
 
 ## Events (ranked)
@@ -66,9 +66,9 @@ data as of **2026-11-14** · 97 series · 13 red / 24 amber · 8 events surfaced
 - Watch next: ust_10y (co-move) — not yet - watch; rho 0.932 vs tips_10y_real, historically leads by 1d
 - Historical analogues: 2026-05-22 (d=0.0), 2026-05-07 (d=0.25), 2026-05-14 (d=0.45)
 
-### [RED 5.82] cross-asset · 3 series ↓
-- btc_usd [CRYPTO]: last 68259.32, z20 -2.51, zc -0.40, resid-z -0.73 [quiet], 1d -1.07%, |z20|=2.51
-- eth_usd [CRYPTO]: last 1929.48, z20 -2.28, zc -0.26, resid-z -0.47 [quiet], 1d -1.01%, |z20|=2.28
+### [RED 5.83] cross-asset · 3 series ↓
+- btc_usd [CRYPTO]: last 68243.30, z20 -2.51, zc -0.41, resid-z -0.73 [quiet], 1d -1.09%, |z20|=2.51
+- eth_usd [CRYPTO]: last 1928.39, z20 -2.29, zc -0.28, resid-z -0.47 [quiet], 1d -1.07%, |z20|=2.29
 - dyn_coin [EQUITIES]: last 127.62, z20 -1.64, zc -0.50, resid-z 0.21 [quiet], 1d -2.33%, 1y-pct=0
 - **Mechanism**: cross-asset · 3 series ↓: correlated cluster flagged by the engine. Mechanism narrative unassessed (LLM off). Nearest historical analogue: 2026-05-22 (z-distance 0.48).
 - **Gap**: Unassessed (LLM off) — laggard list above is the live math.
@@ -81,7 +81,7 @@ data as of **2026-11-14** · 97 series · 13 red / 24 amber · 8 events surfaced
 - Source: Global oil supplies are suddenly flowing. Why a crude glut won’t mean cheaper diesel. — MarketWatch Top, 2026-11-13. https://www.marketwatch.com/story/global-oil-supplies-are-suddenly-flowing-why-a-crude-glut-wont-mean-cheaper-diesel-a5fa80c8?mod=mw_rss_topstories
 - Source: Bitcoin is now below $69,000 and could fall even further if investors cash out to buy into the Anthropic IPO — MarketWatch Top, 2026-11-13. https://www.marketwatch.com/story/bitcoin-could-fall-even-further-if-investors-cash-out-to-buy-into-the-anthropic-ipo-5a14f46a?mod=mw_rss_topstories
 - Source: CRYPTO STOCKS SLIDE AS BITCOIN HITS THREE-MONTH LOW 🔸 Hut 8 ($HUT): −6.0% 🔸 Riot Platforms ($RIOT): −3.9% 🔸 MARA Holdings ($MARA): −3.9% 🔸 Robinhood ($HOOD): −3.2% 🔸 Strategy ($MSTR): −2.1% 🔸 Coinbase ($COIN): −0.5% Bitcoin's weakness is spreading across crypto equities, with mining stocks taking th — DeItaone, 2026-11-13. https://t.me/walter_bloomberg/38522
-- Historical analogues: 2026-05-22 (d=0.48), 2025-04-10 (d=0.71), 2025-10-16 (d=0.74)
+- Historical analogues: 2026-05-22 (d=0.48), 2025-04-10 (d=0.71), 2025-10-16 (d=0.75)
 
 ### [AMBER 5.47] cross-asset · 3 series ↑
 - dyn_bajfinance_ns [EQUITIES]: last 1117.00, z20 2.15, zc 0.08, resid-z 0.65 [quiet], 1d 0.18%, |z20|=2.15; 1y-pct=98
@@ -134,43 +134,43 @@ dyn_nvda ↓ (4.16), indices · 4 series ↑ (4.14), dyn_schd ↑ (3.38), dyn_te
 - Next India prints: India WPI T-2d · NSDL FPI flows T-2d · India trade / CAD data T-2d · IMD weekly rainfall T-2d
 
 ## News-tracked universe (why each is watched)
-- COALINDIA.NS (COAL INDIA LTD) score 84.4 — "Nvidia’s woes attract Indian investors, trading surges on overseas investing platforms"
-- INOXINDIA.NS (INOX INDIA LIMITED) score 82.0 — "Nvidia’s woes attract Indian investors, trading surges on overseas investing platforms"
-- HAVELLS.NS (HAVELLS INDIA LIMITED) score 81.9 — "Nvidia’s woes attract Indian investors, trading surges on overseas investing platforms"
-- NVDA (NVIDIA Corporation) score 79.9 — "LUTNICK AGREES TO TESTIFY BEFORE SENATE OVER NVIDIA Commerce Secretary Howard Lutnick has "
-- INDIANB.NS (INDIAN BANK) score 60.0 — "LUTNICK AGREES TO TESTIFY BEFORE SENATE OVER NVIDIA Commerce Secretary Howard Lutnick has "
-- BAC (Bank of America Corporation) score 54.4 — "LUTNICK AGREES TO TESTIFY BEFORE SENATE OVER NVIDIA Commerce Secretary Howard Lutnick has "
-- HDB (HDFC Bank Limited) score 46.3 — "LUTNICK AGREES TO TESTIFY BEFORE SENATE OVER NVIDIA Commerce Secretary Howard Lutnick has "
-- INDUSINDBK.BO (INDUSIND BANK LTD.) score 41.9 — "LUTNICK AGREES TO TESTIFY BEFORE SENATE OVER NVIDIA Commerce Secretary Howard Lutnick has "
-- IDBI.NS (IDBI BANK LIMITED) score 41.9 — "LUTNICK AGREES TO TESTIFY BEFORE SENATE OVER NVIDIA Commerce Secretary Howard Lutnick has "
-- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 41.9 — "LUTNICK AGREES TO TESTIFY BEFORE SENATE OVER NVIDIA Commerce Secretary Howard Lutnick has "
-- TECHM.NS (TECH MAHINDRA LIMITED) score 41.0 — "NVIDIA CEO RACE: IAN BUCK PULLS AHEAD Following Jensen Huang's departure, Nvidia executive"
-- CARTRADE.NS (CARTRADE TECH LIMITED) score 39.2 — "NVIDIA CEO RACE: IAN BUCK PULLS AHEAD Following Jensen Huang's departure, Nvidia executive"
-- TECH (Bio-Techne Corp) score 39.2 — "NVIDIA CEO RACE: IAN BUCK PULLS AHEAD Following Jensen Huang's departure, Nvidia executive"
-- TGT (Target Corporation) score 39.0 — "ideaForge Technology shares: Drone stock gains 53% in a year, but should you buy now? Chec"
-- CHKP (Check Point Software Technolog) score 34.9 — "ideaForge Technology shares: Drone stock gains 53% in a year, but should you buy now? Chec"
-- OHI (Omega Healthcare Investors, In) score 32.3 — "Nvidia’s woes attract Indian investors, trading surges on overseas investing platforms"
-- 301077.SZ (CHINASTARS) score 30.0 — "ANTHROPIC IPO IS SAID TO EXCLUDE CHINA, HK-BASED INVESTORS"
-- COIN (Coinbase Global, Inc.) score 24.5 — "BOFA GLOBAL RESEARCH ADDS 25 BP FED RATE HIKE IN JANUARY 2027 TO ITS FORECAST; NOW EXPECTS"
-- LTH (Life Time Group Holdings, Inc.) score 23.2 — "12.5 MILLION AMERICAN GAMERS PLAN TO TAKE TIME OFF FOR GTA 6 An estimated 12.5 million US "
-- BOND (PIMCO Active Bond Exchange-Tra) score 21.7 — "India 10-year bond yield reverses half of last week's drop on elevated inflation"
-- BAJFINANCE.NS (BAJAJ FINANCE LIMITED) score 20.9 — "Bajaj Finance Share Price Highlights: Bajaj Finance Stock Price History"
-- ATHERENERG.NS (ATHER ENERGY LIMITED) score 20.5 — "FED'S GOOLSBEE SAYS ON CNBC INFLATION HAS SPREAD INTO CATEGORIES WHERE PRICES ARE NOT BEIN"
-- TATAELXSI.NS (TATA ELXSI LIMITED) score 18.0 — "Tata Motors PV Share Price Highlights: Tata Motors PV Stock Price History"
-- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 18.0 — "Tata Motors PV Share Price Highlights: Tata Motors PV Stock Price History"
-- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 16.5 — "Bajaj Finance Share Price Highlights: Bajaj Finance Stock Price History"
-- SCHD (Schwab US Dividend Equity ETF) score 15.4 — "Cochin Shipyard dividend 2026: Last day to buy today | Check record date, payout amount, h"
-- BZ=F (Brent Crude Oil Last Day Finan) score 15.1 — "NVIDIA SHARES EXTEND LOSSES, LAST DOWN 4.1%"
-- JIOFIN.BO (Jio Financial Services Limited) score 14.4 — "AI risks are the biggest threat to the financial system, Fed survey finds"
-- 4417.T (GLOBAL SECURITY EXPERTS INC) score 13.9 — "Anthropic IPO oversubscribed nearly six times; can AI firm become new NVIDIA amid stock cr"
+- COALINDIA.NS (COAL INDIA LTD) score 83.8 — "Nvidia’s woes attract Indian investors, trading surges on overseas investing platforms"
+- INOXINDIA.NS (INOX INDIA LIMITED) score 81.5 — "Nvidia’s woes attract Indian investors, trading surges on overseas investing platforms"
+- HAVELLS.NS (HAVELLS INDIA LIMITED) score 81.4 — "Nvidia’s woes attract Indian investors, trading surges on overseas investing platforms"
+- NVDA (NVIDIA Corporation) score 79.4 — "LUTNICK AGREES TO TESTIFY BEFORE SENATE OVER NVIDIA Commerce Secretary Howard Lutnick has "
+- INDIANB.NS (INDIAN BANK) score 59.6 — "LUTNICK AGREES TO TESTIFY BEFORE SENATE OVER NVIDIA Commerce Secretary Howard Lutnick has "
+- BAC (Bank of America Corporation) score 54.1 — "LUTNICK AGREES TO TESTIFY BEFORE SENATE OVER NVIDIA Commerce Secretary Howard Lutnick has "
+- HDB (HDFC Bank Limited) score 46.1 — "LUTNICK AGREES TO TESTIFY BEFORE SENATE OVER NVIDIA Commerce Secretary Howard Lutnick has "
+- INDUSINDBK.BO (INDUSIND BANK LTD.) score 41.7 — "LUTNICK AGREES TO TESTIFY BEFORE SENATE OVER NVIDIA Commerce Secretary Howard Lutnick has "
+- IDBI.NS (IDBI BANK LIMITED) score 41.7 — "LUTNICK AGREES TO TESTIFY BEFORE SENATE OVER NVIDIA Commerce Secretary Howard Lutnick has "
+- KARURVYSYA.NS (KARUR VYSYA BANK LTD) score 41.7 — "LUTNICK AGREES TO TESTIFY BEFORE SENATE OVER NVIDIA Commerce Secretary Howard Lutnick has "
+- TECHM.NS (TECH MAHINDRA LIMITED) score 40.8 — "NVIDIA CEO RACE: IAN BUCK PULLS AHEAD Following Jensen Huang's departure, Nvidia executive"
+- CARTRADE.NS (CARTRADE TECH LIMITED) score 39.0 — "NVIDIA CEO RACE: IAN BUCK PULLS AHEAD Following Jensen Huang's departure, Nvidia executive"
+- TECH (Bio-Techne Corp) score 39.0 — "NVIDIA CEO RACE: IAN BUCK PULLS AHEAD Following Jensen Huang's departure, Nvidia executive"
+- TGT (Target Corporation) score 38.8 — "ideaForge Technology shares: Drone stock gains 53% in a year, but should you buy now? Chec"
+- CHKP (Check Point Software Technolog) score 34.7 — "ideaForge Technology shares: Drone stock gains 53% in a year, but should you buy now? Chec"
+- OHI (Omega Healthcare Investors, In) score 32.1 — "Nvidia’s woes attract Indian investors, trading surges on overseas investing platforms"
+- 301077.SZ (CHINASTARS) score 30.8 — "US OFFICIAL SAYS MUSK TO JOIN TRUMP ON CHINA TRIP"
+- LTH (Life Time Group Holdings, Inc.) score 25.1 — "MULLIN SAYS IT WILL TAKE 'SOME TIME' TO RESOLVE FAA ISSUE *MULLIN ON POTENTIAL LINK TO AI:"
+- COIN (Coinbase Global, Inc.) score 24.3 — "BOFA GLOBAL RESEARCH ADDS 25 BP FED RATE HIKE IN JANUARY 2027 TO ITS FORECAST; NOW EXPECTS"
+- BOND (PIMCO Active Bond Exchange-Tra) score 21.5 — "India 10-year bond yield reverses half of last week's drop on elevated inflation"
+- BAJFINANCE.NS (BAJAJ FINANCE LIMITED) score 20.8 — "Bajaj Finance Share Price Highlights: Bajaj Finance Stock Price History"
+- ATHERENERG.NS (ATHER ENERGY LIMITED) score 20.4 — "FED'S GOOLSBEE SAYS ON CNBC INFLATION HAS SPREAD INTO CATEGORIES WHERE PRICES ARE NOT BEIN"
+- TATAELXSI.NS (TATA ELXSI LIMITED) score 17.9 — "Tata Motors PV Share Price Highlights: Tata Motors PV Stock Price History"
+- TATATECH.NS (TATA TECHNOLOGIES LIMITED) score 17.9 — "Tata Motors PV Share Price Highlights: Tata Motors PV Stock Price History"
+- MUTHOOTFIN.NS (MUTHOOT FINANCE LIMITED) score 16.4 — "Bajaj Finance Share Price Highlights: Bajaj Finance Stock Price History"
+- SCHD (Schwab US Dividend Equity ETF) score 15.3 — "Cochin Shipyard dividend 2026: Last day to buy today | Check record date, payout amount, h"
+- BZ=F (Brent Crude Oil Last Day Finan) score 15.0 — "NVIDIA SHARES EXTEND LOSSES, LAST DOWN 4.1%"
+- JIOFIN.BO (Jio Financial Services Limited) score 14.3 — "AI risks are the biggest threat to the financial system, Fed survey finds"
+- 4417.T (GLOBAL SECURITY EXPERTS INC) score 13.8 — "Anthropic IPO oversubscribed nearly six times; can AI firm become new NVIDIA amid stock cr"
 - JUSTDIAL.BO (JUST DIAL LTD.) score 11.6 — "12.5 MILLION AMERICAN GAMERS PLAN TO TAKE TIME OFF FOR GTA 6 An estimated 12.5 million US "
 - ADANIENT.BO (ADANI ENTERPRISES LTD.) score 9.9 — "Adani Ports SEZ Share Price Highlights: Adani Ports SEZ Stock Price History"
-- CRWV (CoreWeave, Inc.) score 6.7 — "COREWEAVE SHARES FOLLOW NVIDIA LOWER, DOWN 6%"
+- CRWV (CoreWeave, Inc.) score 6.6 — "COREWEAVE SHARES FOLLOW NVIDIA LOWER, DOWN 6%"
 - RS (Reliance, Inc.) score 5.6 — "Reliance Industries shares rebound 15% in November, add  ₹2.38 lakh crore in market value;"
-- META (Meta) score 4.6 — "India ETFs draw ₹35,120 crore in Q3 as large-cap, precious metals lead inflows"
+- META (Meta) score 4.5 — "India ETFs draw ₹35,120 crore in Q3 as large-cap, precious metals lead inflows"
 - DEMZ (Democratic Large Cap Core ETF) score 4.4 — "DEMOCRATIC SENATOR REED SAYS CONGRESS NEEDS ASSESSMENT OF WHETHER NVIDIA IS "TOO BIG TO FA"
 - BLLN (BillionToOne, Inc.) score 4.0 — "Germany Eyes €4 Billion Buyout of RWE and E.ON’s Urenco Stake"
-- JEF (Jefferies Financial Group Inc.) score 3.9 — "FIIs are back! Jefferies lists 11 stocks that can be the biggest beneficiaries"
+- JEF (Jefferies Financial Group Inc.) score 3.8 — "FIIs are back! Jefferies lists 11 stocks that can be the biggest beneficiaries"
 - GS (Goldman Sachs Group, Inc. (The) score 3.8 — "Earnings growth is set to peter out — but not the bull market, says Goldman Sachs. Here’s "
 - MSFT (Microsoft Corporation) score 3.7 — "Microsoft shares fall nearly 3% in pre-market as global outage hits Outlook, Teams and Cop"
 - COCHINSHIP.NS (COCHIN SHIPYARD LIMITED) score 2.8 — "Cochin Shipyard dividend 2026: Last day to buy today | Check record date, payout amount, h"

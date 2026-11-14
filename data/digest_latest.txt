@@ -65,8 +65,8 @@
   wheat | 593.5000 | 1.58% | 0.38% | -0.85 | 1.03 | 0.86 | 43 | none | quiet
   corn | 446.0000 | 0.79% | 1.02% | -0.60 | 0.60 | 0.44 | 49 | none | quiet
   soybeans | 1232.7500 | 0.47% | 3.68% | 0.34 | 0.45 | 0.16 | 81 | none | quiet
-  btc_usd | 68259.3203 | -1.07% | -9.26% | -2.51 | -0.40 | -0.73 | 32 | red | quiet
-  eth_usd | 1929.4800 | -1.01% | -9.48% | -2.28 | -0.26 | -0.47 | 25 | amber | quiet
+  btc_usd | 68243.2969 | -1.09% | -9.28% | -2.51 | -0.41 | -0.73 | 32 | red | quiet
+  eth_usd | 1928.3900 | -1.07% | -9.53% | -2.29 | -0.28 | -0.47 | 25 | amber | quiet
   midcap_largecap_ratio | 2.4611 | 0.36% | -0.38% | -0.75 | n/a | n/a | 46 | none | quiet
   brent_wti_spread | 7.1600 | 1.13% | -4.41% | -0.72 | n/a | n/a | 78 | none | quiet
   gold_silver_ratio | 79.9096 | 2.78% | 1.59% | 1.46 | n/a | n/a | 97 | amber | quiet
@@ -126,7 +126,7 @@
   [RED] usd_jpy (series, FX) score=2.57 — |z20|=2.57
   [RED] btc_usd (series, CRYPTO) score=2.51 — |z20|=2.51
   [AMBER] ftse_100 (series, INDICES) score=2.48 — |z20|=2.48; 1y-pct=99
-  [AMBER] eth_usd (series, CRYPTO) score=2.28 — |z20|=2.28
+  [AMBER] eth_usd (series, CRYPTO) score=2.29 — |z20|=2.29
   [AMBER] dyn_nvda (series, EQUITIES) score=2.16 — |z20|=2.16; 1y-pct=0
   [AMBER] dyn_bajfinance_ns (series, EQUITIES) score=2.15 — |z20|=2.15; 1y-pct=98
   [AMBER] stoxx_50 (series, INDICES) score=2.05 — |z20|=2.05
@@ -154,10 +154,10 @@
 
 [2b] SCAN CONTROL & VERIFIED SETUPS
   FDR (Benjamini-Hochberg q=0.1): 0 of 89 scanned series significant (effective p<=None)
-  SETUP ust_2y -> usd_jpy: leads 1d (ccf 0.476, beta 0.2044, p 0.0); driver zc 2.85 -> expected 0.762% | type hit-rate 0.82 (n=2126)
-  SETUP ust_10y -> usd_jpy: leads 1d (ccf 0.449, beta 0.2339, p 0.0); driver zc 1.9 -> expected 0.479% | type hit-rate 0.82 (n=2126)
-  SETUP aud_usd -> usd_cny: leads 1d (ccf -0.268, beta -0.0799, p 0.0); driver zc -1.73 -> expected 0.08% | type hit-rate 0.82 (n=2126)
-  Track record: residual_reversion 0.509 (n=1158) · transmission_follow 0.82 (n=2126) · spread_reversion 0.533 (n=15)
+  SETUP ust_2y -> usd_jpy: leads 1d (ccf 0.476, beta 0.2044, p 0.0); driver zc 2.85 -> expected 0.762% | type hit-rate 0.816 (n=2172)
+  SETUP ust_10y -> usd_jpy: leads 1d (ccf 0.449, beta 0.2339, p 0.0); driver zc 1.9 -> expected 0.479% | type hit-rate 0.816 (n=2172)
+  SETUP aud_usd -> usd_cny: leads 1d (ccf -0.268, beta -0.0799, p 0.0); driver zc -1.73 -> expected 0.08% | type hit-rate 0.816 (n=2172)
+  Track record: residual_reversion 0.509 (n=1158) · transmission_follow 0.816 (n=2172) · spread_reversion 0.533 (n=15)
 
 [3] RELEASE PROXIMITY
   T-2d  India WPI — any; WPI leads MCX; watch fuel & mfg sub-indices
@@ -179,7 +179,7 @@
     - AI risks are the biggest threat to the financial system, Fed survey finds  — CNBC Economy
     - Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China  — CNBC Economy
     - Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly four years  — CNBC Economy
-    - FAA declares rare nationwide ground stop on flights, with more than 10,000 delayed so far  — MarketWatch Top
+    - FAA declares rare nationwide ground stop on flights, with more than 10,000 delayed or canceled  — MarketWatch Top
     - ‘The thought of living to 100 terrifies me’: Is Social Security a giant Ponzi scheme?  — MarketWatch Top
     - 4 expert tips for signing up for Medicare  — MarketWatch Top
     - Nvidia’s stock is on a losing streak not seen in 14 years. What comes next?  — MarketWatch Top
@@ -192,12 +192,12 @@
     - Chicago Fed's Goolsbee says on CNBC the Fed needs to guard against demand overheating  — ET Markets
     - US Treasury chief says Fed should not hike rates over energy shock tied to Iran war  — ET Markets
     - MAN Industries PAT rises to Rs 82 cr in Q2  — ET Markets
+    - Three fast-growing water infra stocks  — Mint Markets
     - Wall St slides as Nvidia uncertainty drags tech shares lower  — Mint Markets
     - Rate-hike bets keep gold on track for worst week in four months  — Mint Markets
     - Oil prices set for second straight weekly decline on growing signs of supply surplus  — Mint Markets
     - Gold Edges Up, Still On Track for Worst Weekly Slump Since June  — Mint Markets
     - YES Bank files SC review plea over AT-1 bonds: What does it mean for investors after stock's 15% rebound?  — Mint Markets
-    - Airtel Payments Bank IPO in pipeline? Bharti Airtel payments business eyes D-Street debut, says report  — Mint Markets
     [manual] RBI press: https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx
   EU:
     - Isabel Schnabel: Made in Europe  — ECB press
