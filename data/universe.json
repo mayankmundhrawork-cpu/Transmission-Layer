@@ -1,5 +1,73 @@
 {
  "candidates": {
+  "$AAPL": {
+   "display": "AAPL",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "USER REPORTS SHOW PROBLEMS WITH APPLE SUPPORT: DOWNDETECTOR USER REPORTS SHOW PROBLEMS WITH ICLOUD: DOWNDETECTOR USER REPORTS SHOW PROBLEMS WITH APPLE PAY: DOWNDETECTOR $AAPL",
+     "ts": "2026-11-17T17:38:28+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0,
+   "ticker_hint": "AAPL"
+  },
+  "$ANT": {
+   "display": "ANT",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "BTC $ANT - BITCOIN LOSSES MOUNT AS INVESTORS SHIFT ATTENTION TO ANTHROPIC IPO Bitcoin has plunged roughly 50%, trading near $64,500, with approximately half of circulating coins now underwater, according to Glassnode. Capital is leaving crypto markets rapidly. Stablecoin supply contracted by $16.5 b",
+     "ts": "2026-11-17T19:23:06+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0,
+   "ticker_hint": "ANT"
+  },
+  "$ARM": {
+   "display": "ARM",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA $HSII $ARM - NVIDIA HIRES HEIDRICK & STRUGGLES TO FIND NEW CEO Nvidia has hired executive search firm Heidrick & Struggles to lead its CEO search following Jensen Huang's resignation, according to The Wall Street Journal. The search, led by Jeff Sanders, will consider internal and external cand",
+     "ts": "2026-11-17T17:23:23+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0,
+   "ticker_hint": "ARM"
+  },
+  "$HSII": {
+   "display": "HSII",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA $HSII $ARM - NVIDIA HIRES HEIDRICK & STRUGGLES TO FIND NEW CEO Nvidia has hired executive search firm Heidrick & Struggles to lead its CEO search following Jensen Huang's resignation, according to The Wall Street Journal. The search, led by Jeff Sanders, will consider internal and external cand",
+     "ts": "2026-11-17T17:23:23+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0,
+   "ticker_hint": "HSII"
+  },
   "$JPM": {
    "display": "JPM",
    "evidence": [
@@ -14,7 +82,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0,
+   "score": 0.9557,
    "ticker_hint": "JPM"
   },
   "$MSFT": {
@@ -31,7 +99,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0,
+   "score": 0.9557,
    "ticker_hint": "MSFT"
   },
   "$NVDA": {
@@ -68,7 +136,7 @@
    ],
    "first_seen": "2026-11-09T23:25:30.830214+00:00",
    "last_seen": "2026-11-14T00:52:12.448592+00:00",
-   "score": 4.235,
+   "score": 4.0472,
    "ticker_hint": "NVDA"
   },
   "aayush wellness": {
@@ -85,7 +153,7 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.876
   },
   "abakkus": {
    "display": "Abakkus",
@@ -101,7 +169,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "absl hdfc": {
    "display": "ABSL HDFC",
@@ -117,7 +185,23 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.876
+  },
+  "adj gross margin data": {
+   "display": "Adj. Gross Margin Data",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA - Q3: EPS & REVENUE BEAT, Q4 REVENUE GUIDANCE ABOVE ESTIMATES Results \ud83d\udd38 Adj. EPS: $2.68 vs. $2.48 est. (+8.1% beat). \ud83d\udd38 Revenue: $115.8B vs. $109.33B est. (+5.9% beat). \ud83d\udd38 Adj. Gross Margin: 74.9%. \ud83d\udd38 Data Center Revenue: $107.6B vs. $101.87B est. (+5.6% beat). \ud83d\udd38 Net Income: $65.3B. Guidance \ud83d\udd38 Q4 ",
+     "ts": "2026-11-17T21:23:04+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "ahead of apec beijing": {
    "display": "Ahead of Apec Beijing",
@@ -133,7 +217,7 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.876
   },
   "ai bubble tops global": {
    "display": "AI BUBBLE TOPS GLOBAL",
@@ -149,7 +233,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "ai hardware": {
    "display": "AI-hardware",
@@ -165,7 +249,7 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.876
   },
   "ai related": {
    "display": "AI-related",
@@ -181,7 +265,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "ai spending cut fears": {
    "display": "AI SPENDING CUT FEARS",
@@ -197,7 +281,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "alleged plans": {
    "display": "ALLEGED PLANS",
@@ -213,7 +297,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "amazon": {
    "display": "Amazon",
@@ -235,7 +319,39 @@
    ],
    "first_seen": "2026-11-16T23:22:14.767523+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 1.7189
+   "score": 1.6427
+  },
+  "amazon ceo andy jassy": {
+   "display": "AMAZON CEO ANDY JASSY",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "AMAZON CEO ANDY JASSY, ON NVIDIA FALLOUT, SAYS NVIDIA \"HAS BEEN A REALLY IMPORTANT PARTNER FOR A LONG TIME AND WILL BE FOR AS LONG AS I CAN FORESEE IN THE FUTURE\" - SEMAFOR EVENT",
+     "ts": "2026-11-17T17:18:44+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
+  },
+  "amazon google": {
+   "display": "Amazon Google",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Amazon, Google each to own over 14% of Anthropic stock after IPO",
+     "ts": "2026-11-18T01:40:29+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "america s": {
    "display": "America's",
@@ -256,7 +372,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 2.0
+   "score": 1.9113
   },
   "america survey finds bank": {
    "display": "AMERICA SURVEY FINDS Bank",
@@ -272,7 +388,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "anand rathi": {
    "display": "Anand Rathi",
@@ -293,7 +409,28 @@
    ],
    "first_seen": "2026-11-16T23:22:14.767523+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 1.7189
+   "score": 1.6427
+  },
+  "anthropic": {
+   "display": "Anthropic",
+   "evidence": [
+    {
+     "feed": "ET Markets",
+     "title": "Anthropic said to guide IPO price to top of range or above",
+     "ts": "2026-11-18T01:39:29+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "Amazon, Google each to own over 14% of Anthropic stock after IPO",
+     "ts": "2026-11-18T01:40:29+00:00"
+    }
+   ],
+   "feeds": [
+    "ET Markets"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 2.0
   },
   "anthropic ipo": {
    "display": "Anthropic IPO",
@@ -309,7 +446,23 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.876
+  },
+  "anthropic ipo bitcoin": {
+   "display": "ANTHROPIC IPO Bitcoin",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "BTC $ANT - BITCOIN LOSSES MOUNT AS INVESTORS SHIFT ATTENTION TO ANTHROPIC IPO Bitcoin has plunged roughly 50%, trading near $64,500, with approximately half of circulating coins now underwater, according to Glassnode. Capital is leaving crypto markets rapidly. Stablecoin supply contracted by $16.5 b",
+     "ts": "2026-11-17T19:23:06+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "anthropic no changes": {
    "display": "ANTHROPIC NO CHANGES",
@@ -325,7 +478,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "apec": {
    "display": "Apec",
@@ -341,7 +494,7 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.876
   },
   "api shows substantial crude": {
    "display": "API Shows Substantial Crude",
@@ -357,7 +510,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "apollo hospital share price": {
    "display": "Apollo Hospital Share Price",
@@ -378,7 +531,87 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.5257
+   "score": 1.458
+  },
+  "apple confirms outages": {
+   "display": "APPLE CONFIRMS OUTAGES",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "APPLE CONFIRMS OUTAGES FOR SOME SERVICES",
+     "ts": "2026-11-17T18:38:18+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
+  },
+  "apple icloud account sign": {
+   "display": "APPLE ICLOUD ACCOUNT SIGN",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "APPLE: ICLOUD ACCOUNT & SIGN IN ISSUE HAS BEEN RESOLVED",
+     "ts": "2026-11-17T19:23:05+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
+  },
+  "apple pay downdetector aapl": {
+   "display": "APPLE PAY DOWNDETECTOR AAPL",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "USER REPORTS SHOW PROBLEMS WITH APPLE SUPPORT: DOWNDETECTOR USER REPORTS SHOW PROBLEMS WITH ICLOUD: DOWNDETECTOR USER REPORTS SHOW PROBLEMS WITH APPLE PAY: DOWNDETECTOR $AAPL",
+     "ts": "2026-11-17T17:38:28+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
+  },
+  "apple says outage not": {
+   "display": "APPLE SAYS OUTAGE NOT",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "APPLE SAYS OUTAGE NOT CAUSED BY CYBER ATTACKS",
+     "ts": "2026-11-17T19:18:20+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
+  },
+  "apple support downdetector user": {
+   "display": "APPLE SUPPORT DOWNDETECTOR USER",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "USER REPORTS SHOW PROBLEMS WITH APPLE SUPPORT: DOWNDETECTOR USER REPORTS SHOW PROBLEMS WITH ICLOUD: DOWNDETECTOR USER REPORTS SHOW PROBLEMS WITH APPLE PAY: DOWNDETECTOR $AAPL",
+     "ts": "2026-11-17T17:38:28+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "april september itpo chairman": {
    "display": "April-September ITPO Chairman",
@@ -394,7 +627,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "arattai": {
    "display": "Arattai",
@@ -410,7 +643,7 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.876
   },
   "arm ceo rene haas": {
    "display": "Arm CEO Rene Haas",
@@ -436,7 +669,7 @@
    ],
    "first_seen": "2026-11-14T00:52:12.448592+00:00",
    "last_seen": "2026-11-14T00:52:12.448592+00:00",
-   "score": 1.2206
+   "score": 1.1665
   },
   "ashika private equity advisors": {
    "display": "Ashika Private Equity Advisors",
@@ -452,6 +685,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "ashoka buildcon iifl finance": {
+   "display": "Ashoka Buildcon IIFL Finance",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Top stocks to watch today: Ashoka Buildcon, IIFL Finance, Prestige Estates, HCLTech and 5 others in focus",
+     "ts": "2026-11-18T02:43:46+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "asian iea": {
@@ -468,7 +717,7 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.876
   },
   "asian paints share price": {
    "display": "Asian Paints Share Price",
@@ -494,7 +743,7 @@
    ],
    "first_seen": "2026-11-13T12:07:08.974996+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 2.0001
+   "score": 1.9114
   },
   "attack washington": {
    "display": "ATTACK WASHINGTON",
@@ -510,7 +759,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "average": {
    "display": "Average",
@@ -526,7 +775,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "axis bank": {
    "display": "Axis Bank",
@@ -542,7 +791,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "axis bank both": {
    "display": "Axis Bank Both",
@@ -558,7 +807,7 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.876
   },
   "bajaj auto share price": {
    "display": "Bajaj Auto Share Price",
@@ -594,7 +843,7 @@
    ],
    "first_seen": "2026-11-06T12:01:47.487096+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.8116
+   "score": 1.7313
   },
   "bajaj finance share price": {
    "display": "Bajaj Finance Share Price",
@@ -625,7 +874,7 @@
    ],
    "first_seen": "2026-11-06T12:01:47.487096+00:00",
    "last_seen": "2026-11-13T19:36:30.066803+00:00",
-   "score": 0.9654
+   "score": 0.9226
   },
   "bajaj finserv share price": {
    "display": "Bajaj Finserv Share Price",
@@ -661,7 +910,7 @@
    ],
    "first_seen": "2026-11-05T12:13:46.527807+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 2.3009
+   "score": 2.1989
   },
   "bank nifty": {
    "display": "Bank Nifty",
@@ -682,7 +931,7 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.9167
+   "score": 1.8317
   },
   "bank of america survey": {
    "display": "BANK OF AMERICA SURVEY",
@@ -698,7 +947,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "be planning dirty bomb": {
    "display": "BE PLANNING DIRTY BOMB",
@@ -714,7 +963,7 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.876
   },
   "be wonderful deal": {
    "display": "BE WONDERFUL DEAL",
@@ -730,7 +979,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "bengaluru": {
    "display": "Bengaluru",
@@ -746,7 +995,7 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.876
   },
   "berkshire": {
    "display": "Berkshire",
@@ -768,7 +1017,7 @@
    ],
    "first_seen": "2026-11-16T23:22:14.767523+00:00",
    "last_seen": "2026-11-17T04:01:52.520447+00:00",
-   "score": 1.641
+   "score": 1.5682
   },
   "bharti airtel share price": {
    "display": "Bharti Airtel Share Price",
@@ -804,7 +1053,7 @@
    ],
    "first_seen": "2026-11-05T12:13:46.527807+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.1389
+   "score": 1.0884
   },
   "biggest grid operator races": {
    "display": "Biggest Grid Operator Races",
@@ -820,7 +1069,23 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.876
+  },
+  "billion nvidia": {
+   "display": "BILLION Nvidia",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA - NVIDIA STOPS DISCLOSING SINGAPORE SALES AS REVENUE SURGES TO $104 BILLION Nvidia stopped separately reporting Singapore-linked revenue after changing its geographic reporting methodology from customer billing addresses to headquarters locations, according to the Financial Times. Its Singapore",
+     "ts": "2026-11-17T17:13:06+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "billion pension": {
    "display": "Billion Pension",
@@ -836,7 +1101,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "billion venezuela oil deal": {
    "display": "Billion Venezuela Oil Deal",
@@ -852,7 +1117,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "blackrock": {
    "display": "BlackRock",
@@ -873,7 +1138,7 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.9167
+   "score": 1.8317
   },
   "blue star": {
    "display": "Blue Star",
@@ -889,7 +1154,7 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.876
   },
   "bofa": {
    "display": "BofA",
@@ -905,7 +1170,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "bofa s": {
    "display": "BofA's",
@@ -921,7 +1186,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "bofa survey shows bank": {
    "display": "BOFA SURVEY SHOWS Bank",
@@ -937,6 +1202,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "boost of b share": {
+   "display": "BOOST OF B SHARE",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA *NVIDIA BOARD APPROVED AN BOOST OF $150B SHARE BUYBACK",
+     "ts": "2026-11-17T21:23:05+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "bpcl share price highlights": {
@@ -958,7 +1239,7 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.5257
+   "score": 1.458
   },
   "brent stuck near": {
    "display": "Brent Stuck Near",
@@ -974,7 +1255,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "britannia share price highlights": {
    "display": "Britannia Share Price Highlights",
@@ -995,7 +1276,23 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.5257
+   "score": 1.458
+  },
+  "btc ant bitcoin losses": {
+   "display": "BTC ANT BITCOIN LOSSES",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "BTC $ANT - BITCOIN LOSSES MOUNT AS INVESTORS SHIFT ATTENTION TO ANTHROPIC IPO Bitcoin has plunged roughly 50%, trading near $64,500, with approximately half of circulating coins now underwater, according to Glassnode. Capital is leaving crypto markets rapidly. Stablecoin supply contracted by $16.5 b",
+     "ts": "2026-11-17T19:23:06+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "buzzing": {
    "display": "Buzzing",
@@ -1031,7 +1328,7 @@
    ],
    "first_seen": "2026-11-12T02:20:00.402240+00:00",
    "last_seen": "2026-11-17T04:01:52.520447+00:00",
-   "score": 2.4088
+   "score": 2.302
   },
   "call": {
    "display": "Call",
@@ -1047,7 +1344,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "call ge vernova t&d": {
    "display": "Call GE Vernova T&D",
@@ -1063,7 +1360,7 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.876
   },
   "call usha martin buy": {
    "display": "Call Usha Martin Buy",
@@ -1079,7 +1376,7 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.876
   },
   "campaign": {
    "display": "Campaign",
@@ -1095,7 +1392,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "canadian": {
    "display": "Canadian",
@@ -1111,55 +1408,23 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "cemindia projects buy": {
+   "display": "Cemindia Projects BUY",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Sensex today | Stock Market Live Updates: Stock to buy today: Cemindia Projects (\u20b91,353) \u2013 BUY",
+     "ts": "2026-11-18T02:17:22+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
-  },
-  "canara bank": {
-   "display": "Canara Bank",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "PNB vs Canara Bank: Which PSU bank is a better stock to buy Nifty Bank at record high, and why? Experts' views, targets",
-     "ts": "2026-11-17T05:51:49+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "capex": {
-   "display": "CAPEX",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Metal stock jumps 17%, inches close to 52-week high after this CAPEX update; will the rally continue? Target, stop-loss",
-     "ts": "2026-11-17T08:43:48+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "category hurricane isaias": {
-   "display": "Category Hurricane Isaias",
-   "evidence": [
-    {
-     "feed": "EIA Today in Energy",
-     "title": "Category 2 Hurricane Isaias nears landfall, leading to production shut-ins",
-     "ts": "2026-11-17T13:14:29.173225+00:00"
-    }
-   ],
-   "feeds": [
-    "EIA Today in Energy"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
   },
   "central asia surges": {
    "display": "Central Asia Surges",
@@ -1175,6 +1440,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "ceo conf call": {
+   "display": "CEO CONF CALL",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVIDIA BOARD CHAIRMAN HARVEY JONES: CO DOES NOT INTEND TO REINSTATE JENSEN HUANG AS CEO - CONF CALL",
+     "ts": "2026-11-17T22:13:17+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "ceo jensen huang": {
@@ -1202,7 +1483,23 @@
    ],
    "first_seen": "2026-11-12T01:54:05.707862+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.321
+   "score": 1.2624
+  },
+  "ceo nvidia": {
+   "display": "CEO Nvidia",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA $HSII $ARM - NVIDIA HIRES HEIDRICK & STRUGGLES TO FIND NEW CEO Nvidia has hired executive search firm Heidrick & Struggles to lead its CEO search following Jensen Huang's resignation, according to The Wall Street Journal. The search, led by Jeff Sanders, will consider internal and external cand",
+     "ts": "2026-11-17T17:23:23+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "check gold rates": {
    "display": "Check Gold Rates",
@@ -1223,7 +1520,7 @@
    ],
    "first_seen": "2026-11-13T12:07:08.974996+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.0834
+   "score": 1.0354
   },
   "china canada agree": {
    "display": "CHINA CANADA AGREE",
@@ -1239,6 +1536,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "china free": {
+   "display": "China-Free",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "In 45 Days Defense Giants Must Prove Their Magnets Are China-Free",
+     "ts": "2026-11-18T02:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "china s commerce ministry": {
@@ -1255,7 +1568,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "china tests mile electric": {
    "display": "China Tests Mile Electric",
@@ -1271,7 +1584,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "citi warns of s&p": {
    "display": "CITI WARNS OF S&P",
@@ -1287,23 +1600,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "claude": {
-   "display": "Claude",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Anthropic IPO windfall: From Sequoia to Amazon, who wins big as Claude maker eyes $1.33 trillion valuation",
-     "ts": "2026-11-17T11:22:05+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "coal india share price": {
    "display": "Coal India Share Price",
@@ -1339,7 +1636,7 @@
    ],
    "first_seen": "2026-11-05T12:13:46.527807+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.8855
+   "score": 1.8019
   },
   "coimbatore nagpur visakhapatnam surat": {
    "display": "Coimbatore Nagpur Visakhapatnam Surat",
@@ -1375,23 +1672,23 @@
    ],
    "first_seen": "2026-09-17T09:24:33.591649+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 3.6963
+   "score": 3.5324
   },
-  "commercial sustainable jet fuel": {
-   "display": "Commercial Sustainable Jet Fuel",
+  "companies": {
+   "display": "Companies",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "India Gives Green Light to Commercial Sustainable Jet Fuel Production",
-     "ts": "2026-11-17T11:15:00+00:00"
+     "feed": "DeItaone",
+     "title": "JPMORGAN WARNS LEVERAGED-LOAN DEFAULTS COULD MORE THAN DOUBLE IN 2027 JPMorgan forecasts U.S. leveraged-loan defaults will surge to 4.5% in 2027 and 4.75% in 2028, up from 1.96% in October. Companies facing AI disruption, elevated borrowing costs and looming debt maturities are particularly vulnerab",
+     "ts": "2026-11-17T17:38:28+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "cooperation": {
    "display": "COOPERATION",
@@ -1407,6 +1704,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "costco": {
+   "display": "Costco",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Costco is benefiting from \u2018apocalyptic concerns\u2019 as customers stock up on goods, analysts say",
+     "ts": "2026-11-17T22:46:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "critics": {
@@ -1423,6 +1736,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "crushed third quarter earnings estimates": {
+   "display": "Crushed Third-Quarter Earnings Estimates",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "5 Oil and Gas Stocks That Crushed Third-Quarter Earnings Estimates",
+     "ts": "2026-11-18T01:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "crypto treasury stocks fall": {
@@ -1439,6 +1768,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "cuba": {
+   "display": "Cuba",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Cuba\u2019s Energy Crisis Turns Into a Goldmine for U.S. Fuel Exporters",
+     "ts": "2026-11-17T23:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "cut off iran": {
@@ -1455,23 +1800,39 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "cyber attack incident": {
+   "display": "CYBER ATTACK INCIDENT",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "US DNI CLAYTON ON TECH OUTAGES: NOT SEEING THIS AS A CYBER ATTACK INCIDENT",
+     "ts": "2026-11-17T20:53:31+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
-  "data center boom": {
-   "display": "Data Center Boom",
+  "days defense giants must": {
+   "display": "Days Defense Giants Must",
    "evidence": [
     {
      "feed": "OilPrice",
-     "title": "America\u2019s Biggest Grid Operator Races to Keep Up With Data Center Boom",
-     "ts": "2026-11-17T07:30:00+00:00"
+     "title": "In 45 Days Defense Giants Must Prove Their Magnets Are China-Free",
+     "ts": "2026-11-18T02:00:00+00:00"
     }
    ],
    "feeds": [
     "OilPrice"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "delhi mumbai chennai": {
    "display": "Delhi Mumbai Chennai",
@@ -1492,7 +1853,7 @@
    ],
    "first_seen": "2026-11-13T12:07:08.974996+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.0834
+   "score": 1.0354
   },
   "delhi mumbai kolkata chennai": {
    "display": "Delhi Mumbai Kolkata Chennai",
@@ -1528,7 +1889,7 @@
    ],
    "first_seen": "2026-09-17T09:24:33.591649+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 3.6323
+   "score": 3.4712
   },
   "democrats target trump": {
    "display": "Democrats Target Trump",
@@ -1544,7 +1905,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "dis q eps revenue": {
    "display": "DIS Q EPS REVENUE",
@@ -1560,23 +1921,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "disney": {
-   "display": "Disney",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Disney beats earnings forecasts, plans to increase content spending",
-     "ts": "2026-11-17T11:35:48+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "divis share price": {
    "display": "Divis Labs Share Price",
@@ -1612,7 +1957,7 @@
    ],
    "first_seen": "2026-11-05T12:13:46.527807+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 2.0982
+   "score": 2.0052
   },
   "djia s&p nasdaq gift": {
    "display": "DJIA S&P NASDAQ GIFT",
@@ -1648,7 +1993,7 @@
    ],
    "first_seen": "2026-10-30T10:50:32.737755+00:00",
    "last_seen": "2026-11-13T01:59:25.674094+00:00",
-   "score": 0.97
+   "score": 0.927
   },
   "double": {
    "display": "Double",
@@ -1664,23 +2009,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "down": {
-   "display": "Down",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Making a comeback! Down 60% in 1 year, strong rally seen ahead for renewable energy stock Inox Wind; 42% upside likely",
-     "ts": "2026-11-17T11:29:53+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "dr reddys share price": {
    "display": "Dr Reddys Share Price",
@@ -1701,7 +2030,7 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.5257
+   "score": 1.458
   },
   "driven": {
    "display": "Driven",
@@ -1717,6 +2046,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "eastern strait of hormuz": {
+   "display": "EASTERN STRAIT OF HORMUZ",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "IRAN'S NAVY SAYS FOURTH TANKER HITS NAVAL MINE IN EASTERN STRAIT OF HORMUZ - PRESS TV",
+     "ts": "2026-11-17T19:18:21+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "eicher motors": {
@@ -1738,7 +2083,7 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.4471
+   "score": 1.3829
   },
   "eicher motors share price": {
    "display": "Eicher Motors Share Price",
@@ -1764,7 +2109,7 @@
    ],
    "first_seen": "2026-11-12T12:36:22.701137+00:00",
    "last_seen": "2026-11-13T12:07:08.974996+00:00",
-   "score": 0.9594
+   "score": 0.9169
   },
   "eliminate all tariffs": {
    "display": "ELIMINATE ALL TARIFFS",
@@ -1780,23 +2125,39 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
-  "embassy developments": {
-   "display": "Embassy Developments",
+  "emerging market currencies halt three day": {
+   "display": "Emerging-Market Currencies Halt Three-Day",
    "evidence": [
     {
-     "feed": "BusinessLine Mkts",
-     "title": "Embassy Developments launches 59 ultra-luxury homes in Bengaluru",
-     "ts": "2026-11-17T08:37:09+00:00"
+     "feed": "Mint Markets",
+     "title": "Emerging-Market Currencies Halt Three-Day Slump, Stocks Slide",
+     "ts": "2026-11-17T22:51:24+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "Mint Markets"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
+  },
+  "energy crisis turns": {
+   "display": "Energy Crisis Turns",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Cuba\u2019s Energy Crisis Turns Into a Goldmine for U.S. Fuel Exporters",
+     "ts": "2026-11-17T23:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "energy ties deepen": {
    "display": "Energy Ties Deepen",
@@ -1812,23 +2173,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "equity long short fund": {
-   "display": "Equity Long-Short Fund",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Kotak Mutual Fund launches Equity Long-Short Fund under SIF platform",
-     "ts": "2026-11-17T06:40:29+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "european stock optimism hits": {
    "display": "EUROPEAN STOCK OPTIMISM HITS",
@@ -1844,7 +2189,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "euros": {
    "display": "Euros",
@@ -1860,7 +2205,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "ex citadel securities trader nets": {
    "display": "Ex-Citadel Securities Trader Nets",
@@ -1876,7 +2221,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "extend tariff relief": {
    "display": "EXTEND TARIFF RELIEF",
@@ -1892,7 +2237,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "fabricated report": {
    "display": "FABRICATED' REPORT",
@@ -1908,23 +2253,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "fairfax": {
-   "display": "Fairfax",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "After IDBI Bank stake buy, now Fairfax set to sell 13.25% stake in IIFL Finance via  \u20b93,454-crore block deal: Report",
-     "ts": "2026-11-17T13:07:46+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "fed cycle": {
    "display": "Fed Cycle",
@@ -1940,7 +2269,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "fed s musalem economy likely": {
    "display": "FED'S MUSALEM ECONOMY LIKELY",
@@ -1956,39 +2285,23 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "find": {
+   "display": "FIND",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA $HSII $ARM - NVIDIA HIRES HEIDRICK & STRUGGLES TO FIND NEW CEO Nvidia has hired executive search firm Heidrick & Struggles to lead its CEO search following Jensen Huang's resignation, according to The Wall Street Journal. The search, led by Jeff Sanders, will consider internal and external cand",
+     "ts": "2026-11-17T17:23:23+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
-  },
-  "fiis mfs": {
-   "display": "FIIs MFs",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "FIIs, MFs raise stakes in 5 largecap stocks for two straight quarters; shares rally up to 80%",
-     "ts": "2026-11-17T07:24:18+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "firstcry parent brainbees solutions": {
-   "display": "FirstCry-parent Brainbees Solutions",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "FirstCry-parent Brainbees Solutions shares rally 13%: Q2 net loss narrows 75%, revenue jumps - Should you buy?",
-     "ts": "2026-11-17T06:22:23+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
   },
   "fmcg": {
    "display": "FMCG",
@@ -2009,23 +2322,23 @@
    ],
    "first_seen": "2026-11-17T13:14:33.338822+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 1.8335
+   "score": 1.7522
   },
-  "foreign": {
-   "display": "Foreign",
+  "foresee": {
+   "display": "FORESEE",
    "evidence": [
     {
-     "feed": "BusinessLine Mkts",
-     "title": "Foreign outflows from India-focused offshore funds ease but persist in Q3 2026",
-     "ts": "2026-11-17T12:19:24+00:00"
+     "feed": "DeItaone",
+     "title": "AMAZON CEO ANDY JASSY, ON NVIDIA FALLOUT, SAYS NVIDIA \"HAS BEEN A REALLY IMPORTANT PARTNER FOR A LONG TIME AND WILL BE FOR AS LONG AS I CAN FORESEE IN THE FUTURE\" - SEMAFOR EVENT",
+     "ts": "2026-11-17T17:18:44+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "fpis": {
    "display": "FPIs",
@@ -2052,7 +2365,7 @@
    ],
    "first_seen": "2026-11-10T20:47:26.898427+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.1453
+   "score": 1.0945
   },
   "front": {
    "display": "Front",
@@ -2068,7 +2381,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "full": {
    "display": "Full",
@@ -2104,7 +2417,7 @@
    ],
    "first_seen": "2026-11-11T11:49:55.134076+00:00",
    "last_seen": "2026-11-17T04:01:52.520447+00:00",
-   "score": 2.4085
+   "score": 2.3017
   },
   "fund": {
    "display": "Fund",
@@ -2120,6 +2433,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "future semafor event": {
+   "display": "FUTURE SEMAFOR EVENT",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "AMAZON CEO ANDY JASSY, ON NVIDIA FALLOUT, SAYS NVIDIA \"HAS BEEN A REALLY IMPORTANT PARTNER FOR A LONG TIME AND WILL BE FOR AS LONG AS I CAN FORESEE IN THE FUTURE\" - SEMAFOR EVENT",
+     "ts": "2026-11-17T17:18:44+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "g sec": {
@@ -2141,7 +2470,7 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.5257
+   "score": 1.458
   },
   "gaap eps segment operating": {
    "display": "GAAP EPS Segment Operating",
@@ -2157,7 +2486,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "gas manufacturing push": {
    "display": "Gas Manufacturing Push",
@@ -2173,23 +2502,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "gems": {
-   "display": "Gems",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Gems and jewellery exports rise 34% to \u20b927,863 crore in October",
-     "ts": "2026-11-17T09:14:56+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "gen z and of": {
    "display": "Gen Z and of",
@@ -2205,70 +2518,39 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "glassnode capital": {
+   "display": "Glassnode. Capital",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "BTC $ANT - BITCOIN LOSSES MOUNT AS INVESTORS SHIFT ATTENTION TO ANTHROPIC IPO Bitcoin has plunged roughly 50%, trading near $64,500, with approximately half of circulating coins now underwater, according to Glassnode. Capital is leaving crypto markets rapidly. Stablecoin supply contracted by $16.5 b",
+     "ts": "2026-11-17T19:23:06+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
-  "gift city": {
-   "display": "GIFT City",
+  "global market": {
+   "display": "Global Market",
    "evidence": [
     {
-     "feed": "BusinessLine Mkts",
-     "title": "NSE opens European markets to Indian investors via GIFT City platform; adds 8,200-Plus ETFs",
-     "ts": "2026-11-13T07:10:12+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Standard Chartered launches wealth funds from GIFT City",
-     "ts": "2026-11-12T12:47:54+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Standard Chartered launches four global investment funds from GIFT City",
-     "ts": "2026-11-12T13:04:58+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Franklin Templeton launches 1st outbound fund from GIFT City, offers Indian investors access to US equities",
-     "ts": "2026-11-12T07:01:20+00:00"
+     "feed": "ET Markets",
+     "title": "Global Market Today: Asian shares rebound as Nvidia forecast eases AI trade concerns",
+     "ts": "2026-11-18T01:08:58+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "ET Markets"
    ],
-   "first_seen": "2026-11-12T12:36:22.701137+00:00",
-   "last_seen": "2026-11-13T12:07:08.974996+00:00",
-   "score": 1.2719
-  },
-  "global glut fears eclipse": {
-   "display": "Global Glut Fears Eclipse",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Oil Prices Slide as Global Glut Fears Eclipse Hormuz Attacks",
-     "ts": "2026-11-17T06:10:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "global levies": {
-   "display": "Global Levies",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "UK Pushes for Global Levies on Polluting Industries",
-     "ts": "2026-11-17T12:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "gold rate": {
    "display": "Gold Rate",
@@ -2304,7 +2586,23 @@
    ],
    "first_seen": "2026-11-03T11:52:16.924424+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 8.1202
+   "score": 7.7601
+  },
+  "goldmine": {
+   "display": "Goldmine",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Cuba\u2019s Energy Crisis Turns Into a Goldmine for U.S. Fuel Exporters",
+     "ts": "2026-11-17T23:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "grasim inds share price": {
    "display": "Grasim Inds Share Price",
@@ -2330,39 +2628,7 @@
    ],
    "first_seen": "2026-11-12T12:36:22.701137+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.3231
-  },
-  "groww": {
-   "display": "Groww",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Groww share price hits record high after massive  \u20b91,905 crore block deal: Key things to know - Should you buy?",
-     "ts": "2026-11-17T04:47:27+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "gu jun": {
-   "display": "Gu Jun",
-   "evidence": [
-    {
-     "feed": "SCMP Economy",
-     "title": "China charges veteran nuclear expert Gu Jun with taking \u2018huge\u2019 bribes",
-     "ts": "2026-11-17T10:01:58+00:00"
-    }
-   ],
-   "feeds": [
-    "SCMP Economy"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 1.2644
   },
   "gulf trade": {
    "display": "Gulf Trade",
@@ -2378,23 +2644,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "gurugram": {
-   "display": "Gurugram",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "M3M India to invest Rs 1,650 cr to build luxury homes under Jacob & Co brand in Gurugram",
-     "ts": "2026-11-17T12:50:25+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "haven bid ramps up": {
    "display": "Haven Bid Ramps Up",
@@ -2410,7 +2660,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "hcl tech share price": {
    "display": "HCL Tech Share Price",
@@ -2446,7 +2696,7 @@
    ],
    "first_seen": "2026-11-11T11:49:55.134076+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.8401
+   "score": 1.7585
   },
   "hdfc bank share price": {
    "display": "HDFC Bank Share Price",
@@ -2472,7 +2722,7 @@
    ],
    "first_seen": "2026-11-13T12:07:08.974996+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.4702
+   "score": 1.405
   },
   "hdfc life share price": {
    "display": "HDFC Life Share Price",
@@ -2508,7 +2758,23 @@
    ],
    "first_seen": "2026-11-11T11:49:55.134076+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.8401
+   "score": 1.7585
+  },
+  "heidrick struggles": {
+   "display": "Heidrick Struggles",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA $HSII $ARM - NVIDIA HIRES HEIDRICK & STRUGGLES TO FIND NEW CEO Nvidia has hired executive search firm Heidrick & Struggles to lead its CEO search following Jensen Huang's resignation, according to The Wall Street Journal. The search, led by Jeff Sanders, will consider internal and external cand",
+     "ts": "2026-11-17T17:23:23+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "hero motocorp share price": {
    "display": "Hero MotoCorp Share Price",
@@ -2544,23 +2810,7 @@
    ],
    "first_seen": "2026-11-12T12:36:22.701137+00:00",
    "last_seen": "2026-11-17T04:01:52.520447+00:00",
-   "score": 3.0115
-  },
-  "hfcl sterlite": {
-   "display": "HFCL Sterlite Technologies",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "HFCL, Sterlite Technologies hit 5% lower circuits after multibagger rallies; should investors buy the dip?",
-     "ts": "2026-11-17T08:53:33+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 2.878
   },
   "hindalco share price highlights": {
    "display": "Hindalco Share Price Highlights",
@@ -2581,7 +2831,7 @@
    ],
    "first_seen": "2026-11-13T19:36:30.066803+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.1104
+   "score": 1.0612
   },
   "historic run above": {
    "display": "Historic Run Above",
@@ -2597,7 +2847,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "hormuz risks resurface": {
    "display": "Hormuz Risks Resurface",
@@ -2613,7 +2863,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "hormuz tanker attacks offset": {
    "display": "Hormuz Tanker Attacks Offset",
@@ -2629,23 +2879,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "hul share price highlights": {
-   "display": "HUL Share Price Highlights",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "HUL Share Price Highlights: HUL Stock Price History",
-     "ts": "2026-11-17T03:46:03+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "icici bank share price": {
    "display": "ICICI Bank Share Price",
@@ -2681,55 +2915,39 @@
    ],
    "first_seen": "2026-11-11T11:49:55.134076+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.8401
+   "score": 1.7585
   },
-  "icici prudential": {
-   "display": "ICICI Prudential",
+  "icloud downdetector user reports": {
+   "display": "ICLOUD DOWNDETECTOR USER REPORTS",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "ABSL, HDFC to ICICI Prudential: Which AMC stock to buy amid stock market rally? Experts' views, target price, stop-loss",
-     "ts": "2026-11-17T07:03:54+00:00"
+     "feed": "DeItaone",
+     "title": "USER REPORTS SHOW PROBLEMS WITH APPLE SUPPORT: DOWNDETECTOR USER REPORTS SHOW PROBLEMS WITH ICLOUD: DOWNDETECTOR USER REPORTS SHOW PROBLEMS WITH APPLE PAY: DOWNDETECTOR $AAPL",
+     "ts": "2026-11-17T17:38:28+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
-  "icra": {
-   "display": "ICRA",
+  "impasse isna": {
+   "display": "IMPASSE ISNA",
    "evidence": [
     {
-     "feed": "BusinessLine Mkts",
-     "title": "India\u2019s GDP growth seen at 7.5% in Q2 FY27, full-year outlook trimmed to 7.1%: ICRA",
-     "ts": "2026-11-17T09:09:05+00:00"
+     "feed": "DeItaone",
+     "title": "IRAN 'SERIOUSLY PURSUING' DIPLOMATIC END TO IMPASSE: ISNA",
+     "ts": "2026-11-17T19:23:06+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "iifl finance": {
-   "display": "IIFL Finance",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "After IDBI Bank stake buy, now Fairfax set to sell 13.25% stake in IIFL Finance via  \u20b93,454-crore block deal: Report",
-     "ts": "2026-11-17T13:07:46+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "incred": {
    "display": "InCred",
@@ -2750,39 +2968,7 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.5257
-  },
-  "india focused": {
-   "display": "India-focused",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Foreign outflows from India-focused offshore funds ease but persist in Q3 2026",
-     "ts": "2026-11-17T12:19:24+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "india gives green light": {
-   "display": "India Gives Green Light",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "India Gives Green Light to Commercial Sustainable Jet Fuel Production",
-     "ts": "2026-11-17T11:15:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 1.458
   },
   "india s biogas boom": {
    "display": "India's Biogas Boom",
@@ -2798,39 +2984,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "indusind bank mastercard": {
-   "display": "IndusInd Bank Mastercard",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "IndusInd Bank, Mastercard join hands for cross-border payments; stock rises 1.2%",
-     "ts": "2026-11-17T08:50:06+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "indusind bank share price": {
-   "display": "IndusInd Bank Share Price",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "IndusInd Bank Share Price Highlights: IndusInd Bank Stock Price History",
-     "ts": "2026-11-17T02:45:24+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "information": {
    "display": "INFORMATION",
@@ -2861,55 +3015,7 @@
    ],
    "first_seen": "2026-11-10T03:40:11.973390+00:00",
    "last_seen": "2026-11-14T00:52:12.448592+00:00",
-   "score": 1.0948
-  },
-  "infosys better it": {
-   "display": "Infosys Better IT",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "TCS vs Infosys: Better IT stock to buy amid anti-AI trade buzz | Experts' views, target price, stop-loss, rationale",
-     "ts": "2026-11-17T10:57:49+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "infosys share price highlights": {
-   "display": "Infosys Share Price Highlights",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Infosys Share Price Highlights: Infosys Stock Price History",
-     "ts": "2026-11-17T02:48:00+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "inox wind": {
-   "display": "Inox Wind",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Making a comeback! Down 60% in 1 year, strong rally seen ahead for renewable energy stock Inox Wind; 42% upside likely",
-     "ts": "2026-11-17T11:29:53+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 1.0463
   },
   "investors expect hyperscaler capex": {
    "display": "INVESTORS EXPECT HYPERSCALER CAPEX",
@@ -2925,6 +3031,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "investors shift attention": {
+   "display": "INVESTORS SHIFT ATTENTION",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "BTC $ANT - BITCOIN LOSSES MOUNT AS INVESTORS SHIFT ATTENTION TO ANTHROPIC IPO Bitcoin has plunged roughly 50%, trading near $64,500, with approximately half of circulating coins now underwater, according to Glassnode. Capital is leaving crypto markets rapidly. Stablecoin supply contracted by $16.5 b",
+     "ts": "2026-11-17T19:23:06+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "ipo pricing": {
@@ -2941,23 +3063,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "iran and oman hold": {
-   "display": "Iran and Oman Hold",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Iran and Oman Hold Talks on Strait of Hormuz Security as Tanker Attacks Surge",
-     "ts": "2026-11-17T10:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "iran s dirty bomb threat": {
    "display": "IRAN'S DIRTY BOMB THREAT",
@@ -2973,7 +3079,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "iran s irgc warns bahrain": {
    "display": "IRAN'S IRGC WARNS BAHRAIN",
@@ -2989,6 +3095,54 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "iran s navy says fourth": {
+   "display": "IRAN'S NAVY SAYS FOURTH",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "IRAN'S NAVY SAYS FOURTH TANKER HITS NAVAL MINE IN EASTERN STRAIT OF HORMUZ - PRESS TV",
+     "ts": "2026-11-17T19:18:21+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
+  },
+  "iran s qeshm island us": {
+   "display": "IRAN'S QESHM ISLAND US",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "US FIGHTER JETS STRIKE IRGC MISSILE LAUNCH SITE ON IRAN'S QESHM ISLAND: US MILITARY OFFICIAL",
+     "ts": "2026-11-17T19:28:24+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
+  },
+  "iran seriously pursuing diplomatic": {
+   "display": "IRAN SERIOUSLY PURSUING' DIPLOMATIC",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "IRAN 'SERIOUSLY PURSUING' DIPLOMATIC END TO IMPASSE: ISNA",
+     "ts": "2026-11-17T19:23:06+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "iran slams": {
@@ -3005,71 +3159,55 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
-  "iranian": {
-   "display": "Iranian",
+  "issue has been resolved": {
+   "display": "ISSUE HAS BEEN RESOLVED",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "U.S. INTELLIGENCE WARNS IRAN MAY BE PLANNING DIRTY BOMB OR CHEMICAL ATTACK IN WASHINGTON U.S. intelligence has identified alleged Iranian plans to target senior Trump administration officials with a dirty bomb or chemical weapon in Washington, D.C., CNN reports, citing seven unnamed officials. Sourc",
-     "ts": "2026-11-16T23:58:16+00:00"
+     "title": "APPLE: ICLOUD ACCOUNT & SIGN IN ISSUE HAS BEEN RESOLVED",
+     "ts": "2026-11-17T19:23:05+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
-  "jacob": {
-   "display": "Jacob Co",
+  "jay thakkar": {
+   "display": "Jay Thakkar",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "M3M India to invest Rs 1,650 cr to build luxury homes under Jacob & Co brand in Gurugram",
-     "ts": "2026-11-17T12:50:25+00:00"
+     "feed": "Mint Markets",
+     "title": "Reliance, UltraTech, Hyundai Motor shares: Top 3 stocks to buy; check ratings, target price, stop loss by Jay Thakkar",
+     "ts": "2026-11-18T00:34:21+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "Mint Markets"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
-  "jakson green": {
-   "display": "Jakson Green",
+  "jeff sanders": {
+   "display": "Jeff Sanders",
    "evidence": [
     {
-     "feed": "BusinessLine Mkts",
-     "title": "Jakson Green to acquire majority stake in green hydrogen solutions provider",
-     "ts": "2026-11-17T08:33:21+00:00"
+     "feed": "DeItaone",
+     "title": "NVDA $HSII $ARM - NVIDIA HIRES HEIDRICK & STRUGGLES TO FIND NEW CEO Nvidia has hired executive search firm Heidrick & Struggles to lead its CEO search following Jensen Huang's resignation, according to The Wall Street Journal. The search, led by Jeff Sanders, will consider internal and external cand",
+     "ts": "2026-11-17T17:23:23+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "japan proposes": {
-   "display": "Japan Proposes",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Japan Proposes an 'Asian IEA' to Protect Oil Supplies",
-     "ts": "2026-11-17T08:45:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "jefferies": {
    "display": "Jefferies",
@@ -3085,7 +3223,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "jensen huang": {
    "display": "Jensen Huang",
@@ -3111,59 +3249,48 @@
    ],
    "first_seen": "2026-11-16T23:22:14.767523+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 2.4064
+   "score": 2.2997
   },
-  "jio financial services share": {
-   "display": "Jio Financial Services Share",
+  "jensen huang s": {
+   "display": "Jensen Huang's",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Jio Financial Services Share Price Highlights: Jio Financial Services Stock Price History",
-     "ts": "2026-11-17T02:57:04+00:00"
+     "feed": "DeItaone",
+     "title": "NVDA $HSII $ARM - NVIDIA HIRES HEIDRICK & STRUGGLES TO FIND NEW CEO Nvidia has hired executive search firm Heidrick & Struggles to lead its CEO search following Jensen Huang's resignation, according to The Wall Street Journal. The search, led by Jeff Sanders, will consider internal and external cand",
+     "ts": "2026-11-17T17:23:23+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
-  "jio platforms bls polymers": {
-   "display": "Jio Platforms BLS Polymers",
+  "jpmorgan": {
+   "display": "JPMorgan",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Jio Platforms, BLS Polymers, Shiprocket, more: 23 stocks to watch as anchor lock-in expires this week | List",
-     "ts": "2026-11-17T07:25:49+00:00"
+     "feed": "DeItaone",
+     "title": "JPMORGAN WARNS LEVERAGED-LOAN DEFAULTS COULD MORE THAN DOUBLE IN 2027 JPMorgan forecasts U.S. leveraged-loan defaults will surge to 4.5% in 2027 and 4.75% in 2028, up from 1.96% in October. Companies facing AI disruption, elevated borrowing costs and looming debt maturities are particularly vulnerab",
+     "ts": "2026-11-17T17:38:28+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "jk shah classes": {
-   "display": "JK Shah Classes",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Veranda Learning\u2019s commerce vertical JK Shah Classes to list on November 18",
-     "ts": "2026-11-17T07:55:05+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "jpmorgan warns leveraged loan defaults": {
    "display": "JPMorgan Warns Leveraged-Loan Defaults",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "JPMORGAN WARNS LEVERAGED-LOAN DEFAULTS COULD MORE THAN DOUBLE IN 2027 JPMorgan forecasts U.S. leveraged-loan defaults will surge to 4.5% in 2027 and 4.75% in 2028, up from 1.96% in October. Companies facing AI disruption, elevated borrowing costs and looming debt maturities are particularly vulnerab",
+     "ts": "2026-11-17T17:38:28+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "JPMorgan Warns Leveraged-Loan Defaults Set to Double in 2027",
@@ -3171,27 +3298,12 @@
     }
    ],
    "feeds": [
+    "DeItaone",
     "Mint Markets"
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
-   "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "jsw steel ceo": {
-   "display": "JSW Steel CEO",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "JSW Steel CEO flags Chinese exports, trade barriers as key challenges",
-     "ts": "2026-11-17T09:57:31+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.9557
   },
   "jsw steel share price": {
    "display": "JSW Steel Share Price",
@@ -3227,7 +3339,7 @@
    ],
    "first_seen": "2026-11-06T12:01:47.487096+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 2.6903
+   "score": 2.571
   },
   "k raheja": {
    "display": "K Raheja Corp",
@@ -3243,7 +3355,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "kazakhstan unveils million oil": {
    "display": "Kazakhstan Unveils Million Oil",
@@ -3259,39 +3371,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "keep up": {
-   "display": "Keep Up",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "America\u2019s Biggest Grid Operator Races to Keep Up With Data Center Boom",
-     "ts": "2026-11-17T07:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "kotak mutual fund": {
-   "display": "Kotak Mutual Fund",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Kotak Mutual Fund launches Equity Long-Short Fund under SIF platform",
-     "ts": "2026-11-17T06:40:29+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "l&t share price highlights": {
    "display": "L&T Share Price Highlights",
@@ -3312,55 +3392,55 @@
    ],
    "first_seen": "2026-11-13T19:36:30.066803+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.1104
+   "score": 1.0612
   },
-  "list": {
-   "display": "List",
+  "lng scramble sends shockwaves": {
+   "display": "LNG Scramble Sends Shockwaves",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Jio Platforms, BLS Polymers, Shiprocket, more: 23 stocks to watch as anchor lock-in expires this week | List",
-     "ts": "2026-11-17T07:25:49+00:00"
+     "feed": "OilPrice",
+     "title": "Europe\u2019s LNG Scramble Sends Shockwaves Through Asian Gas Markets",
+     "ts": "2026-11-18T00:00:00+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "OilPrice"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
-  "ltimindtree share price highlights": {
-   "display": "LTIMindtree Share Price Highlights",
+  "long": {
+   "display": "LONG",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "LTIMindtree Share Price Highlights: LTIMindtree Stock Price History",
-     "ts": "2026-11-17T03:00:24+00:00"
+     "feed": "DeItaone",
+     "title": "AMAZON CEO ANDY JASSY, ON NVIDIA FALLOUT, SAYS NVIDIA \"HAS BEEN A REALLY IMPORTANT PARTNER FOR A LONG TIME AND WILL BE FOR AS LONG AS I CAN FORESEE IN THE FUTURE\" - SEMAFOR EVENT",
+     "ts": "2026-11-17T17:18:44+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
-  "m m india": {
-   "display": "M M India",
+  "long time": {
+   "display": "LONG TIME",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "M3M India to invest Rs 1,650 cr to build luxury homes under Jacob & Co brand in Gurugram",
-     "ts": "2026-11-17T12:50:25+00:00"
+     "feed": "DeItaone",
+     "title": "AMAZON CEO ANDY JASSY, ON NVIDIA FALLOUT, SAYS NVIDIA \"HAS BEEN A REALLY IMPORTANT PARTNER FOR A LONG TIME AND WILL BE FOR AS LONG AS I CAN FORESEE IN THE FUTURE\" - SEMAFOR EVENT",
+     "ts": "2026-11-17T17:18:44+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "m&m share price highlights": {
    "display": "M&M Share Price Highlights",
@@ -3381,7 +3461,23 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.5257
+   "score": 1.458
+  },
+  "magnets": {
+   "display": "Magnets",
+   "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "In 45 Days Defense Giants Must Prove Their Magnets Are China-Free",
+     "ts": "2026-11-18T02:00:00+00:00"
+    }
+   ],
+   "feeds": [
+    "OilPrice"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "mahanadi coalfields": {
    "display": "Mahanadi Coalfields",
@@ -3402,23 +3498,7 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.5257
-  },
-  "mahanadi coalfields ipo": {
-   "display": "Mahanadi Coalfields IPO",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Mahanadi Coalfields IPO single profit calculator basis latest GMP: What investors may earn on listing?",
-     "ts": "2026-11-17T09:10:00+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 1.458
   },
   "major aviation milestone": {
    "display": "Major Aviation Milestone",
@@ -3434,23 +3514,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "making": {
-   "display": "Making",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Making a comeback! Down 60% in 1 year, strong rally seen ahead for renewable energy stock Inox Wind; 42% upside likely",
-     "ts": "2026-11-17T11:29:53+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "malaysia signs first critical": {
    "display": "Malaysia Signs First Critical",
@@ -3466,27 +3530,16 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "mapmyindia mappls": {
-   "display": "MapmyIndia Mappls",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "MapmyIndia Mappls links up with Zoho\u2019s Arattai for in-chat navigation",
-     "ts": "2026-11-17T08:23:59+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "marketsmith india": {
    "display": "MarketSmith India",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Stock recommendations for 18 November from MarketSmith India",
+     "ts": "2026-11-18T00:31:11+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Stock recommendations for 17 November from MarketSmith India",
@@ -3506,19 +3559,14 @@
      "feed": "Mint Markets",
      "title": "Stock recommendations for 11 November from MarketSmith India",
      "ts": "2026-11-10T00:30:57+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Stock recommendations for 6 November from MarketSmith India",
-     "ts": "2026-11-06T00:30:43+00:00"
     }
    ],
    "feeds": [
     "Mint Markets"
    ],
    "first_seen": "2026-11-03T02:58:23.499753+00:00",
-   "last_seen": "2026-11-17T04:01:52.520447+00:00",
-   "score": 2.1753
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 3.0788
   },
   "maruti suzuki share price": {
    "display": "Maruti Suzuki Share Price",
@@ -3544,7 +3592,7 @@
    ],
    "first_seen": "2026-11-13T12:07:08.974996+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.4702
+   "score": 1.405
   },
   "maryland": {
    "display": "Maryland",
@@ -3560,7 +3608,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "medicare": {
    "display": "Medicare",
@@ -3586,23 +3634,23 @@
    ],
    "first_seen": "2026-11-13T19:36:30.066803+00:00",
    "last_seen": "2026-11-14T00:52:12.448592+00:00",
-   "score": 1.1804
+   "score": 1.1281
   },
-  "metal": {
-   "display": "Metal",
+  "medicare part b": {
+   "display": "Medicare Part B",
    "evidence": [
     {
-     "feed": "Mint Markets",
-     "title": "Metal stock jumps 17%, inches close to 52-week high after this CAPEX update; will the rally continue? Target, stop-loss",
-     "ts": "2026-11-17T08:43:48+00:00"
+     "feed": "MarketWatch Top",
+     "title": "Medicare Part B premiums rise due higher healthcare spending",
+     "ts": "2026-11-18T01:45:00+00:00"
     }
    ],
    "feeds": [
-    "Mint Markets"
+    "MarketWatch Top"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "microsoft": {
    "display": "Microsoft",
@@ -3618,7 +3666,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "microsoft msft jpmorgan chase": {
    "display": "Microsoft MSFT JPMorgan Chase",
@@ -3634,55 +3682,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "millions": {
-   "display": "Millions",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Millions launches US stocks, ETFs investment facility for Indian investors",
-     "ts": "2026-11-17T10:14:05+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "millions app": {
-   "display": "Millions App",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Millions App launches US Stock and ETF access for Indian investors",
-     "ts": "2026-11-17T07:41:23+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "multibagger": {
-   "display": "Multibagger",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "\u20b982 to  \u20b9253: Multibagger stock turns  \u20b91.31 lakh of share allottees into  \u20b94.05 lakh in 40 months; do you own?",
-     "ts": "2026-11-17T11:39:30+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "nestle india share price": {
    "display": "Nestle India Share Price",
@@ -3703,7 +3703,23 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.5257
+   "score": 1.458
+  },
+  "net income b guidance": {
+   "display": "Net Income B. Guidance",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA - Q3: EPS & REVENUE BEAT, Q4 REVENUE GUIDANCE ABOVE ESTIMATES Results \ud83d\udd38 Adj. EPS: $2.68 vs. $2.48 est. (+8.1% beat). \ud83d\udd38 Revenue: $115.8B vs. $109.33B est. (+5.9% beat). \ud83d\udd38 Adj. Gross Margin: 74.9%. \ud83d\udd38 Data Center Revenue: $107.6B vs. $101.87B est. (+5.6% beat). \ud83d\udd38 Net Income: $65.3B. Guidance \ud83d\udd38 Q4 ",
+     "ts": "2026-11-17T21:23:04+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "nike": {
    "display": "Nike",
@@ -3719,43 +3735,32 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "nov armee info iifl": {
+   "display": "Nov ArMee Info IIFL",
+   "evidence": [
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Stocks to watch, Nov 18: ArMee Info, IIFL Finance, RITES, Supreme Petrochem, Glenmark, Mankind Pharma, Ashok Buildcon, Advait Energy, Apollo Micro, Nykaa",
+     "ts": "2026-11-18T02:03:54+00:00"
+    }
+   ],
+   "feeds": [
+    "BusinessLine Mkts"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
-  },
-  "nokia": {
-   "display": "Nokia",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Why are Nokia shares falling? Nvidia stake sale sparks concerns",
-     "ts": "2026-11-17T05:16:30+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "northern central coalfields": {
-   "display": "Northern Central Coalfields",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Coal India begins IPO preparations for Northern, Central Coalfields",
-     "ts": "2026-11-17T05:34:10+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
   },
   "nov sensex nifty": {
    "display": "Nov Sensex Nifty",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Stock market outlook today,18 Nov:Sensex, Nifty prediction-DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
+     "ts": "2026-11-18T01:09:19+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "Stock market outlook today,17 Nov:Sensex, Nifty prediction-DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
@@ -3775,51 +3780,30 @@
      "feed": "Mint Markets",
      "title": "Stock market outlook today, 12 Nov: Sensex, Nifty prediction - DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
      "ts": "2026-11-12T01:15:59+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Stock market outlook today, 11 Nov: Sensex, Nifty prediction - DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
-     "ts": "2026-11-11T01:17:54+00:00"
     }
    ],
    "feeds": [
     "Mint Markets"
    ],
    "first_seen": "2026-11-02T12:17:40.846040+00:00",
-   "last_seen": "2026-11-17T04:01:52.520447+00:00",
-   "score": 2.5185
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 3.4068
   },
-  "nri wealth management": {
-   "display": "NRI Wealth Management",
+  "nsa national security agency": {
+   "display": "NSA NATIONAL SECURITY AGENCY",
    "evidence": [
     {
-     "feed": "BusinessLine Mkts",
-     "title": "Centricity WealthTech launches NRI Wealth Management arm, eyes \u20b9400 crore revenue in four years",
-     "ts": "2026-11-17T07:08:01+00:00"
+     "feed": "DeItaone",
+     "title": "NSA: NATIONAL SECURITY AGENCY EXPERIENCED TEMPORARY DEGRADATION DURING SCHEDULED ROUTINE MAINTENANCE",
+     "ts": "2026-11-17T19:13:19+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "nris": {
-   "display": "NRIs",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Centricity WealthTech launches private clients business for NRIs",
-     "ts": "2026-11-17T12:57:57+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "ntpc share price highlights": {
    "display": "NTPC Share Price Highlights",
@@ -3840,7 +3824,55 @@
    ],
    "first_seen": "2026-11-13T19:36:30.066803+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.1104
+   "score": 1.0612
+  },
+  "nvda hsii arm nvidia": {
+   "display": "NVDA HSII ARM NVIDIA",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA $HSII $ARM - NVIDIA HIRES HEIDRICK & STRUGGLES TO FIND NEW CEO Nvidia has hired executive search firm Heidrick & Struggles to lead its CEO search following Jensen Huang's resignation, according to The Wall Street Journal. The search, led by Jeff Sanders, will consider internal and external cand",
+     "ts": "2026-11-17T17:23:23+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
+  },
+  "nvda muddy waters": {
+   "display": "NVDA MUDDY WATERS-",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA - MUDDY WATERS- IS SHORT NVIDIA",
+     "ts": "2026-11-17T20:08:13+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
+  },
+  "nvda nvidia board approved": {
+   "display": "NVDA NVIDIA BOARD APPROVED",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA *NVIDIA BOARD APPROVED AN BOOST OF $150B SHARE BUYBACK",
+     "ts": "2026-11-17T21:23:05+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "nvda nvidia shares extend": {
    "display": "NVDA NVIDIA SHARES EXTEND",
@@ -3866,7 +3898,87 @@
    ],
    "first_seen": "2026-11-12T02:20:00.402240+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.322
+   "score": 1.2634
+  },
+  "nvda nvidia stopped disclosing": {
+   "display": "NVDA NVIDIA STOPPED DISCLOSING",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA - NVIDIA STOPPED DISCLOSING SINGAPORE SALES AS REVENUES HIT $104BN US chipmaker changed its reporting methods as revenues booked through the city-state surged 70 per cent",
+     "ts": "2026-11-17T17:13:05+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
+  },
+  "nvda nvidia stops disclosing": {
+   "display": "NVDA NVIDIA STOPS DISCLOSING",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA - NVIDIA STOPS DISCLOSING SINGAPORE SALES AS REVENUE SURGES TO $104 BILLION Nvidia stopped separately reporting Singapore-linked revenue after changing its geographic reporting methodology from customer billing addresses to headquarters locations, according to the Financial Times. Its Singapore",
+     "ts": "2026-11-17T17:13:06+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
+  },
+  "nvda q eps revenue": {
+   "display": "NVDA Q EPS REVENUE",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA - Q3: EPS & REVENUE BEAT, Q4 REVENUE GUIDANCE ABOVE ESTIMATES Results \ud83d\udd38 Adj. EPS: $2.68 vs. $2.48 est. (+8.1% beat). \ud83d\udd38 Revenue: $115.8B vs. $109.33B est. (+5.9% beat). \ud83d\udd38 Adj. Gross Margin: 74.9%. \ud83d\udd38 Data Center Revenue: $107.6B vs. $101.87B est. (+5.6% beat). \ud83d\udd38 Net Income: $65.3B. Guidance \ud83d\udd38 Q4 ",
+     "ts": "2026-11-17T21:23:04+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
+  },
+  "nvda sec probes nvidia": {
+   "display": "NVDA SEC PROBES NVIDIA",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA - SEC PROBES NVIDIA FOLLOWING JENSEN HUANG\u2019S DEPARTURE The SEC has launched a civil investigation into whether Nvidia violated investor disclosure laws, according to The Wall Street Journal. The probe adds regulatory pressure amid the chipmaker\u2019s leadership crisis. No wrongdoing has been establ",
+     "ts": "2026-11-17T21:08:11+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
+  },
+  "nvidia board chairman harvey": {
+   "display": "NVIDIA BOARD CHAIRMAN HARVEY",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVIDIA BOARD CHAIRMAN HARVEY JONES: CO DOES NOT INTEND TO REINSTATE JENSEN HUANG AS CEO - CONF CALL",
+     "ts": "2026-11-17T22:13:17+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "nvidia ceo": {
    "display": "Nvidia CEO",
@@ -3893,23 +4005,23 @@
    ],
    "first_seen": "2026-11-12T21:27:42.702528+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.3626
+   "score": 1.3022
   },
-  "nvidia earnings preview": {
-   "display": "Nvidia Earnings Preview",
+  "nvidia fallout says nvidia": {
+   "display": "NVIDIA FALLOUT SAYS NVIDIA",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Nvidia Earnings Preview: 6 key factors investors will watch",
-     "ts": "2026-11-17T04:54:47+00:00"
+     "feed": "DeItaone",
+     "title": "AMAZON CEO ANDY JASSY, ON NVIDIA FALLOUT, SAYS NVIDIA \"HAS BEEN A REALLY IMPORTANT PARTNER FOR A LONG TIME AND WILL BE FOR AS LONG AS I CAN FORESEE IN THE FUTURE\" - SEMAFOR EVENT",
+     "ts": "2026-11-17T17:18:44+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "nvidia nvda": {
    "display": "Nvidia NVDA",
@@ -3945,7 +4057,7 @@
    ],
    "first_seen": "2026-11-09T23:25:30.830214+00:00",
    "last_seen": "2026-11-13T01:59:25.674094+00:00",
-   "score": 1.7337
+   "score": 1.6568
   },
   "nvidia s": {
    "display": "Nvidia's",
@@ -3976,23 +4088,7 @@
    ],
    "first_seen": "2026-11-09T23:25:30.830214+00:00",
    "last_seen": "2026-11-14T00:52:12.448592+00:00",
-   "score": 1.0882
-  },
-  "oil prices slide": {
-   "display": "Oil Prices Slide",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Oil Prices Slide as Global Glut Fears Eclipse Hormuz Attacks",
-     "ts": "2026-11-17T06:10:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 1.0399
   },
   "ongc share price highlights": {
    "display": "ONGC Share Price Highlights",
@@ -4013,7 +4109,7 @@
    ],
    "first_seen": "2026-11-13T19:36:30.066803+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.1104
+   "score": 1.0612
   },
   "openai ceo sam altman": {
    "display": "OPENAI CEO SAM ALTMAN",
@@ -4034,7 +4130,7 @@
    ],
    "first_seen": "2026-11-17T04:01:52.520447+00:00",
    "last_seen": "2026-11-17T04:01:52.520447+00:00",
-   "score": 1.6779
+   "score": 1.6035
   },
   "philip r lane": {
    "display": "Philip R. Lane",
@@ -4050,7 +4146,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "pierre ferragu": {
    "display": "Pierre Ferragu",
@@ -4066,23 +4162,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "polluting": {
-   "display": "Polluting Industries",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "UK Pushes for Global Levies on Polluting Industries",
-     "ts": "2026-11-17T12:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "power grid share price": {
    "display": "Power Grid Share Price",
@@ -4108,7 +4188,7 @@
    ],
    "first_seen": "2026-11-13T12:07:08.974996+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.4702
+   "score": 1.405
   },
   "price target": {
    "display": "PRICE TARGET",
@@ -4124,39 +4204,39 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
-  "promoter": {
-   "display": "Promoter",
+  "raja venkatraman": {
+   "display": "Raja Venkatraman",
    "evidence": [
     {
      "feed": "Mint Markets",
-     "title": "Promoter pledging climbs as more companies cross the 90% mark",
-     "ts": "2026-11-17T07:51:02+00:00"
+     "title": "Raja Venkatraman recommends three stocks for 18 November",
+     "ts": "2026-11-18T00:30:15+00:00"
     }
    ],
    "feeds": [
     "Mint Markets"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
-  "protect oil supplies": {
-   "display": "Protect Oil Supplies",
+  "really important partner": {
+   "display": "REALLY IMPORTANT PARTNER",
    "evidence": [
     {
-     "feed": "OilPrice",
-     "title": "Japan Proposes an 'Asian IEA' to Protect Oil Supplies",
-     "ts": "2026-11-17T08:45:00+00:00"
+     "feed": "DeItaone",
+     "title": "AMAZON CEO ANDY JASSY, ON NVIDIA FALLOUT, SAYS NVIDIA \"HAS BEEN A REALLY IMPORTANT PARTNER FOR A LONG TIME AND WILL BE FOR AS LONG AS I CAN FORESEE IN THE FUTURE\" - SEMAFOR EVENT",
+     "ts": "2026-11-17T17:18:44+00:00"
     }
    ],
    "feeds": [
-    "OilPrice"
+    "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "recent": {
    "display": "Recent",
@@ -4172,7 +4252,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "redbricks offices": {
    "display": "Redbricks Offices",
@@ -4188,23 +4268,23 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
-  "rediff com india": {
-   "display": "Rediff.com India",
+  "reinstate jensen huang": {
+   "display": "REINSTATE JENSEN HUANG",
    "evidence": [
     {
-     "feed": "BusinessLine Mkts",
-     "title": "Rediff.com India files updated draft papers for \u20b9600-cr IPO",
-     "ts": "2026-11-17T09:15:05+00:00"
+     "feed": "DeItaone",
+     "title": "NVIDIA BOARD CHAIRMAN HARVEY JONES: CO DOES NOT INTEND TO REINSTATE JENSEN HUANG AS CEO - CONF CALL",
+     "ts": "2026-11-17T22:13:17+00:00"
     }
    ],
    "feeds": [
-    "BusinessLine Mkts"
+    "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "reliance bets billion": {
    "display": "Reliance Bets Billion",
@@ -4220,6 +4300,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "reliance ultratech hyundai motor": {
+   "display": "Reliance UltraTech Hyundai Motor",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Reliance, UltraTech, Hyundai Motor shares: Top 3 stocks to buy; check ratings, target price, stop loss by Jay Thakkar",
+     "ts": "2026-11-18T00:34:21+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "resource limits fueling": {
@@ -4236,11 +4332,16 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "revenue b": {
    "display": "Revenue B",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA - Q3: EPS & REVENUE BEAT, Q4 REVENUE GUIDANCE ABOVE ESTIMATES Results \ud83d\udd38 Adj. EPS: $2.68 vs. $2.48 est. (+8.1% beat). \ud83d\udd38 Revenue: $115.8B vs. $109.33B est. (+5.9% beat). \ud83d\udd38 Adj. Gross Margin: 74.9%. \ud83d\udd38 Data Center Revenue: $107.6B vs. $101.87B est. (+5.6% beat). \ud83d\udd38 Net Income: $65.3B. Guidance \ud83d\udd38 Q4 ",
+     "ts": "2026-11-17T21:23:04+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "DIS - Q4: EPS & REVENUE BEAT, FY27 DOUBLE-DIGIT EPS GROWTH REAFFIRMED Results \ud83d\udd38 Adj. EPS: $1.77 vs. $1.67 est. (+6% beat). \ud83d\udd38 Revenue: $25.95B vs. $25.18B est. (+3% beat). \ud83d\udd38 GAAP EPS: $1.51. \ud83d\udd38 Segment Operating Income: $4.97B. \ud83d\udd38 FCF: $4.84B. Guidance \ud83d\udd38 FY27 Adj. EPS: Double-digit growth reaffirmed. \ud83d\udd38",
@@ -4251,24 +4352,40 @@
     "DeItaone"
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
-   "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.9557
   },
-  "robust": {
-   "display": "Robust",
+  "revenue surges": {
+   "display": "REVENUE SURGES",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Robust inflows, pullback in shorts lift rupee to seven-month peak",
-     "ts": "2026-11-17T10:43:17+00:00"
+     "feed": "DeItaone",
+     "title": "NVDA - NVIDIA STOPS DISCLOSING SINGAPORE SALES AS REVENUE SURGES TO $104 BILLION Nvidia stopped separately reporting Singapore-linked revenue after changing its geographic reporting methodology from customer billing addresses to headquarters locations, according to the Financial Times. Its Singapore",
+     "ts": "2026-11-17T17:13:06+00:00"
     }
    ],
    "feeds": [
-    "ET Markets"
+    "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
+  },
+  "revenues hit bn us": {
+   "display": "REVENUES HIT BN US",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA - NVIDIA STOPPED DISCLOSING SINGAPORE SALES AS REVENUES HIT $104BN US chipmaker changed its reporting methods as revenues booked through the city-state surged 70 per cent",
+     "ts": "2026-11-17T17:13:05+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "russian crude exports hit": {
    "display": "Russian Crude Exports Hit",
@@ -4284,6 +4401,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "s&p nasdaq gift nifty": {
+   "display": "S&P NASDAQ GIFT Nifty",
+   "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Stock market outlook today,18 Nov:Sensex, Nifty prediction-DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
+     "ts": "2026-11-18T01:09:19+00:00"
+    }
+   ],
+   "feeds": [
+    "Mint Markets"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "safe president donald trump": {
@@ -4300,7 +4433,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "sbi life share price": {
    "display": "SBI Life Share Price",
@@ -4321,7 +4454,7 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.5257
+   "score": 1.458
   },
   "sbi share price highlights": {
    "display": "SBI Share Price Highlights",
@@ -4342,23 +4475,7 @@
    ],
    "first_seen": "2026-11-13T19:36:30.066803+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.1104
-  },
-  "sequoia": {
-   "display": "Sequoia",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Anthropic IPO windfall: From Sequoia to Amazon, who wins big as Claude maker eyes $1.33 trillion valuation",
-     "ts": "2026-11-17T11:22:05+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 1.0612
   },
   "share": {
    "display": "SHARE",
@@ -4374,6 +4491,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "short nvidia": {
+   "display": "SHORT NVIDIA",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA - MUDDY WATERS- IS SHORT NVIDIA",
+     "ts": "2026-11-17T20:08:13+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "short sets up pain": {
@@ -4390,7 +4523,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "sign soon": {
    "display": "SIGN SOON",
@@ -4406,7 +4539,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "signature global led": {
    "display": "Signature Global-led",
@@ -4422,7 +4555,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "silicon valley": {
    "display": "Silicon Valley",
@@ -4443,7 +4576,23 @@
    ],
    "first_seen": "2026-11-16T23:22:14.767523+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.6042
+   "score": 1.5331
+  },
+  "singapore linked": {
+   "display": "Singapore-linked",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA - NVIDIA STOPS DISCLOSING SINGAPORE SALES AS REVENUE SURGES TO $104 BILLION Nvidia stopped separately reporting Singapore-linked revenue after changing its geographic reporting methodology from customer billing addresses to headquarters locations, according to the Financial Times. Its Singapore",
+     "ts": "2026-11-17T17:13:06+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "slashing hedge funds": {
    "display": "Slashing Hedge Funds",
@@ -4459,23 +4608,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "small cap": {
-   "display": "Small-cap",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Up 70% in 6 months! Small-cap stock under  \u20b9100 hits 52-week high logging intraday rally of 4.5%; do you own?",
-     "ts": "2026-11-17T08:36:19+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "social security": {
    "display": "Social Security",
@@ -4511,7 +4644,7 @@
    ],
    "first_seen": "2026-11-04T19:42:29.555202+00:00",
    "last_seen": "2026-11-13T19:36:30.066803+00:00",
-   "score": 1.213
+   "score": 1.1592
   },
   "solving thai cambodia conflict": {
    "display": "SOLVING THAI-CAMBODIA CONFLICT",
@@ -4527,39 +4660,23 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
-  "sourc": {
-   "display": "Sourc",
+  "some services": {
+   "display": "SOME SERVICES",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "U.S. INTELLIGENCE WARNS IRAN MAY BE PLANNING DIRTY BOMB OR CHEMICAL ATTACK IN WASHINGTON U.S. intelligence has identified alleged Iranian plans to target senior Trump administration officials with a dirty bomb or chemical weapon in Washington, D.C., CNN reports, citing seven unnamed officials. Sourc",
-     "ts": "2026-11-16T23:58:16+00:00"
+     "title": "APPLE CONFIRMS OUTAGES FOR SOME SERVICES",
+     "ts": "2026-11-17T18:38:18+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "south korean": {
-   "display": "South Korean",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "South Korean shares close at over 9-month low on Nvidia caution",
-     "ts": "2026-11-17T06:56:18+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "spring": {
    "display": "SPRING",
@@ -4575,7 +4692,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "st louis fed s musalem": {
    "display": "St. Louis Fed's Musalem",
@@ -4591,6 +4708,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "stablecoin": {
+   "display": "Stablecoin",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "BTC $ANT - BITCOIN LOSSES MOUNT AS INVESTORS SHIFT ATTENTION TO ANTHROPIC IPO Bitcoin has plunged roughly 50%, trading near $64,500, with approximately half of circulating coins now underwater, according to Glassnode. Capital is leaving crypto markets rapidly. Stablecoin supply contracted by $16.5 b",
+     "ts": "2026-11-17T19:23:06+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "standard chartered": {
@@ -4617,23 +4750,7 @@
    ],
    "first_seen": "2026-11-12T21:27:42.702528+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.3487
-  },
-  "steel": {
-   "display": "Steel",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Steel prices are rising again: Is it wise to buy metal stocks? Experts pick Tata Steel, JSW and 4 others | Targets, SL",
-     "ts": "2026-11-17T09:18:33+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 1.2889
   },
   "stock market highlights": {
    "display": "Stock Market Highlights",
@@ -4649,7 +4766,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "stock market highlights sensex": {
    "display": "Stock Market Highlights Sensex",
@@ -4685,23 +4802,7 @@
    ],
    "first_seen": "2026-10-07T18:54:23.462286+00:00",
    "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 2.0631
-  },
-  "strait of hormuz security": {
-   "display": "Strait of Hormuz Security",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Iran and Oman Hold Talks on Strait of Hormuz Security as Tanker Attacks Surge",
-     "ts": "2026-11-17T10:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 1.9716
   },
   "street initiates anthropic": {
    "display": "STREET INITIATES ANTHROPIC",
@@ -4717,7 +4818,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "street research": {
    "display": "Street Research",
@@ -4733,7 +4834,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "sun pharma share price": {
    "display": "Sun Pharma Share Price",
@@ -4754,7 +4855,7 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.5257
+   "score": 1.458
   },
   "supply routes": {
    "display": "Supply Routes",
@@ -4770,55 +4871,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "tanker attacks surge": {
-   "display": "Tanker Attacks Surge",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "Iran and Oman Hold Talks on Strait of Hormuz Security as Tanker Attacks Surge",
-     "ts": "2026-11-17T10:00:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "targets sl": {
-   "display": "Targets SL",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Steel prices are rising again: Is it wise to buy metal stocks? Experts pick Tata Steel, JSW and 4 others | Targets, SL",
-     "ts": "2026-11-17T09:18:33+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "tata chemicals": {
-   "display": "Tata Chemicals",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Tata Chemicals share price jumps 9%: Volume surge, Tata Sons listing buzz behind the Tata Group stock rally. Do you own?",
-     "ts": "2026-11-17T04:15:24+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "tata consumer share price": {
    "display": "Tata Consumer Share Price",
@@ -4839,23 +4892,7 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.5257
-  },
-  "tata motors": {
-   "display": "Tata Motors",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Why JLR remains the albatross around Tata Motors\u2019 neck",
-     "ts": "2026-11-17T06:51:07+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 1.458
   },
   "tata motors pv share": {
    "display": "Tata Motors PV Share",
@@ -4881,39 +4918,7 @@
    ],
    "first_seen": "2026-11-13T12:07:08.974996+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.4702
-  },
-  "tata sons": {
-   "display": "Tata Sons",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Tata Chemicals share price jumps 9%: Volume surge, Tata Sons listing buzz behind the Tata Group stock rally. Do you own?",
-     "ts": "2026-11-17T04:15:24+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "tata steel jsw": {
-   "display": "Tata Steel JSW",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Steel prices are rising again: Is it wise to buy metal stocks? Experts pick Tata Steel, JSW and 4 others | Targets, SL",
-     "ts": "2026-11-17T09:18:33+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 1.405
   },
   "tata steel share price": {
    "display": "Tata Steel Share Price",
@@ -4944,7 +4949,7 @@
    ],
    "first_seen": "2026-11-11T11:49:55.134076+00:00",
    "last_seen": "2026-11-17T04:01:52.520447+00:00",
-   "score": 1.6684
+   "score": 1.5944
   },
   "tcs share price highlights": {
    "display": "TCS Share Price Highlights",
@@ -4965,7 +4970,7 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.5257
+   "score": 1.458
   },
   "td bank": {
    "display": "TD Bank",
@@ -4981,7 +4986,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "td nearly of young": {
    "display": "TD NEARLY OF YOUNG",
@@ -4997,7 +5002,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "tech mahindra share price": {
    "display": "Tech Mahindra Share Price",
@@ -5023,7 +5028,23 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-17T04:01:52.520447+00:00",
-   "score": 2.3646
+   "score": 2.2597
+  },
+  "tech outages not seeing": {
+   "display": "TECH OUTAGES NOT SEEING",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "US DNI CLAYTON ON TECH OUTAGES: NOT SEEING THIS AS A CYBER ATTACK INCIDENT",
+     "ts": "2026-11-17T20:53:31+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "technical": {
    "display": "Technical",
@@ -5045,7 +5066,7 @@
    ],
    "first_seen": "2026-11-13T19:36:30.066803+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.1104
+   "score": 1.0612
   },
   "thai pm confident agreement": {
    "display": "THAI PM CONFIDENT AGREEMENT",
@@ -5061,7 +5082,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "thailand": {
    "display": "THAILAND",
@@ -5077,6 +5098,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "than double": {
+   "display": "THAN DOUBLE",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "JPMORGAN WARNS LEVERAGED-LOAN DEFAULTS COULD MORE THAN DOUBLE IN 2027 JPMorgan forecasts U.S. leveraged-loan defaults will surge to 4.5% in 2027 and 4.75% in 2028, up from 1.96% in October. Companies facing AI disruption, elevated borrowing costs and looming debt maturities are particularly vulnerab",
+     "ts": "2026-11-17T17:38:28+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "three": {
@@ -5099,7 +5136,7 @@
    ],
    "first_seen": "2026-11-14T01:31:19.279204+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.1331
+   "score": 1.0829
   },
   "titan share price": {
    "display": "Titan Company Share Price",
@@ -5125,7 +5162,7 @@
    ],
    "first_seen": "2026-11-13T12:07:08.974996+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.4702
+   "score": 1.405
   },
   "tmpv": {
    "display": "TMPV",
@@ -5151,23 +5188,7 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 2.1707
-  },
-  "traders": {
-   "display": "Traders",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Traders pour cash into BlackRock\u2019s India ETF as AI rout deepens",
-     "ts": "2026-11-17T04:06:28+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 2.0744
   },
   "treasuries": {
    "display": "Treasuries",
@@ -5183,6 +5204,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "treasurys": {
+   "display": "Treasurys",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Want to earn 5% on shorter-term Treasurys again? Watch for this shift.",
+     "ts": "2026-11-17T22:08:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "trump downplays major u s": {
@@ -5199,7 +5236,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "trump says i did": {
    "display": "TRUMP SAYS I DID",
@@ -5215,7 +5252,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "trump says us looking": {
    "display": "TRUMP SAYS US LOOKING",
@@ -5231,7 +5268,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "trump thailand": {
    "display": "TRUMP THAILAND",
@@ -5247,7 +5284,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "trump trade deal": {
    "display": "TRUMP TRADE DEAL",
@@ -5263,7 +5300,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "ttf gas bounces back": {
    "display": "TTF Gas Bounces Back",
@@ -5279,23 +5316,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "ttk healthcare": {
-   "display": "TTK Healthcare",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "TTK Healthcare shares soar 20%: Board to consider bonus issue of preference shares on Nov 20 - Key things to know",
-     "ts": "2026-11-17T05:22:51+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "two years": {
    "display": "TWO YEARS",
@@ -5311,23 +5332,23 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
-  "u s intelligence warns iran": {
-   "display": "U.S. INTELLIGENCE WARNS IRAN",
+  "u s fuel exporters": {
+   "display": "U.S. Fuel Exporters",
    "evidence": [
     {
-     "feed": "DeItaone",
-     "title": "U.S. INTELLIGENCE WARNS IRAN MAY BE PLANNING DIRTY BOMB OR CHEMICAL ATTACK IN WASHINGTON U.S. intelligence has identified alleged Iranian plans to target senior Trump administration officials with a dirty bomb or chemical weapon in Washington, D.C., CNN reports, citing seven unnamed officials. Sourc",
-     "ts": "2026-11-16T23:58:16+00:00"
+     "feed": "OilPrice",
+     "title": "Cuba\u2019s Energy Crisis Turns Into a Goldmine for U.S. Fuel Exporters",
+     "ts": "2026-11-17T23:00:00+00:00"
     }
    ],
    "feeds": [
-    "DeItaone"
+    "OilPrice"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "u s opens": {
    "display": "U.S. Opens",
@@ -5343,7 +5364,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "uk carbon capture keeps": {
    "display": "UK Carbon Capture Keeps",
@@ -5359,23 +5380,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
-  },
-  "uk pushes": {
-   "display": "UK Pushes",
-   "evidence": [
-    {
-     "feed": "OilPrice",
-     "title": "UK Pushes for Global Levies on Polluting Industries",
-     "ts": "2026-11-17T12:30:00+00:00"
-    }
-   ],
-   "feeds": [
-    "OilPrice"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "score": 0.9557
   },
   "ultratech cem share price": {
    "display": "UltraTech Cem Share Price",
@@ -5411,7 +5416,7 @@
    ],
    "first_seen": "2026-11-05T12:13:46.527807+00:00",
    "last_seen": "2026-11-17T04:01:52.520447+00:00",
-   "score": 2.2136
+   "score": 2.1154
   },
   "underwater citi": {
    "display": "UNDERWATER Citi",
@@ -5427,7 +5432,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "united airlines": {
    "display": "United Airlines",
@@ -5448,7 +5453,7 @@
    ],
    "first_seen": "2026-11-16T23:22:14.767523+00:00",
    "last_seen": "2026-11-17T04:01:52.520447+00:00",
-   "score": 1.641
+   "score": 1.5682
   },
   "upcoming ipo advanced sys tek": {
    "display": "Upcoming IPO Advanced Sys-Tek",
@@ -5464,7 +5469,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "upl share price highlights": {
    "display": "UPL Share Price Highlights",
@@ -5485,7 +5490,7 @@
    ],
    "first_seen": "2026-11-16T12:39:56.092530+00:00",
    "last_seen": "2026-11-16T23:22:14.767523+00:00",
-   "score": 1.5257
+   "score": 1.458
   },
   "urban s": {
    "display": "Urban Company's",
@@ -5501,7 +5506,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "us attacks fars": {
    "display": "US ATTACKS FARS",
@@ -5517,7 +5522,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "us chip export curb": {
    "display": "US CHIP EXPORT CURB",
@@ -5533,6 +5538,22 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "us dni clayton": {
+   "display": "US DNI CLAYTON",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "US DNI CLAYTON ON TECH OUTAGES: NOT SEEING THIS AS A CYBER ATTACK INCIDENT",
+     "ts": "2026-11-17T20:53:31+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
   "us exports and remove": {
@@ -5549,87 +5570,76 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
+   "score": 0.9557
+  },
+  "us fighter jets strike": {
+   "display": "US FIGHTER JETS STRIKE",
+   "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "US FIGHTER JETS STRIKE IRGC MISSILE LAUNCH SITE ON IRAN'S QESHM ISLAND: US MILITARY OFFICIAL",
+     "ts": "2026-11-17T19:28:24+00:00"
+    }
+   ],
+   "feeds": [
+    "DeItaone"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
    "score": 1.0
   },
-  "veranda learning": {
-   "display": "Veranda Learning",
-   "evidence": [
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Veranda Learning\u2019s commerce vertical JK Shah Classes to list on November 18",
-     "ts": "2026-11-17T07:55:05+00:00"
-    }
-   ],
-   "feeds": [
-    "BusinessLine Mkts"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "volume": {
-   "display": "Volume",
-   "evidence": [
-    {
-     "feed": "Mint Markets",
-     "title": "Tata Chemicals share price jumps 9%: Volume surge, Tata Sons listing buzz behind the Tata Group stock rally. Do you own?",
-     "ts": "2026-11-17T04:15:24+00:00"
-    }
-   ],
-   "feeds": [
-    "Mint Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "vwap": {
-   "display": "VWAP",
-   "evidence": [
-    {
-     "feed": "ET Markets",
-     "title": "Blue Star among 4 stocks closing above VWAP",
-     "ts": "2026-11-17T03:56:28+00:00"
-    }
-   ],
-   "feeds": [
-    "ET Markets"
-   ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
-  },
-  "washington d c cnn": {
-   "display": "Washington D.C. CNN",
+  "user reports show problems": {
+   "display": "USER REPORTS SHOW PROBLEMS",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "U.S. INTELLIGENCE WARNS IRAN MAY BE PLANNING DIRTY BOMB OR CHEMICAL ATTACK IN WASHINGTON U.S. intelligence has identified alleged Iranian plans to target senior Trump administration officials with a dirty bomb or chemical weapon in Washington, D.C., CNN reports, citing seven unnamed officials. Sourc",
-     "ts": "2026-11-16T23:58:16+00:00"
+     "title": "USER REPORTS SHOW PROBLEMS WITH APPLE SUPPORT: DOWNDETECTOR USER REPORTS SHOW PROBLEMS WITH ICLOUD: DOWNDETECTOR USER REPORTS SHOW PROBLEMS WITH APPLE PAY: DOWNDETECTOR $AAPL",
+     "ts": "2026-11-17T17:38:28+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
-  "washington u s": {
-   "display": "WASHINGTON U.S.",
+  "wall street journal": {
+   "display": "Wall Street Journal.",
    "evidence": [
     {
      "feed": "DeItaone",
-     "title": "U.S. INTELLIGENCE WARNS IRAN MAY BE PLANNING DIRTY BOMB OR CHEMICAL ATTACK IN WASHINGTON U.S. intelligence has identified alleged Iranian plans to target senior Trump administration officials with a dirty bomb or chemical weapon in Washington, D.C., CNN reports, citing seven unnamed officials. Sourc",
-     "ts": "2026-11-16T23:58:16+00:00"
+     "title": "NVDA $HSII $ARM - NVIDIA HIRES HEIDRICK & STRUGGLES TO FIND NEW CEO Nvidia has hired executive search firm Heidrick & Struggles to lead its CEO search following Jensen Huang's resignation, according to The Wall Street Journal. The search, led by Jeff Sanders, will consider internal and external cand",
+     "ts": "2026-11-17T17:23:23+00:00"
+    },
+    {
+     "feed": "DeItaone",
+     "title": "NVDA - SEC PROBES NVIDIA FOLLOWING JENSEN HUANG\u2019S DEPARTURE The SEC has launched a civil investigation into whether Nvidia violated investor disclosure laws, according to The Wall Street Journal. The probe adds regulatory pressure amid the chipmaker\u2019s leadership crisis. No wrongdoing has been establ",
+     "ts": "2026-11-17T21:08:11+00:00"
     }
    ],
    "feeds": [
     "DeItaone"
    ],
-   "first_seen": "2026-11-17T13:14:33.338822+00:00",
-   "last_seen": "2026-11-17T13:14:33.338822+00:00",
-   "score": 0.9167
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 2.0
+  },
+  "want": {
+   "display": "Want",
+   "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "Want to earn 5% on shorter-term Treasurys again? Watch for this shift.",
+     "ts": "2026-11-17T22:08:00+00:00"
+    }
+   ],
+   "feeds": [
+    "MarketWatch Top"
+   ],
+   "first_seen": "2026-11-18T02:59:07.842181+00:00",
+   "last_seen": "2026-11-18T02:59:07.842181+00:00",
+   "score": 1.0
   },
   "wholesale": {
    "display": "Wholesale",
@@ -5651,7 +5661,7 @@
    ],
    "first_seen": "2026-11-13T19:36:30.066803+00:00",
    "last_seen": "2026-11-16T12:39:56.092530+00:00",
-   "score": 1.1104
+   "score": 1.0612
   },
   "world s growing conflicts": {
    "display": "World's Growing Conflicts",
@@ -5667,7 +5677,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "yield set": {
    "display": "Yield Set",
@@ -5683,7 +5693,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   },
   "zero": {
    "display": "Zero",
@@ -5699,7 +5709,7 @@
    ],
    "first_seen": "2026-11-17T22:16:26.271182+00:00",
    "last_seen": "2026-11-17T22:16:26.271182+00:00",
-   "score": 1.0
+   "score": 0.9557
   }
  },
  "members": {
@@ -5708,6 +5718,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "In 45 Days Defense Giants Must Prove Their Magnets Are China-Free",
+     "ts": "2026-11-18T02:00:00+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "CHINA, CANADA AGREE TO EXTEND TARIFF RELIEF FOR TWO YEARS",
@@ -5727,17 +5742,12 @@
      "feed": "SCMP Economy",
      "title": "China charges veteran nuclear expert Gu Jun with taking \u2018huge\u2019 bribes",
      "ts": "2026-11-17T10:01:58+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "China\u2019s Buyback Push Struggles to Put a Floor Under Stocks",
-     "ts": "2026-11-17T00:28:58+00:00"
     }
    ],
-   "last_mention": "2026-11-17T11:38:29+00:00",
+   "last_mention": "2026-11-18T02:00:00+00:00",
    "name": "CHINASTARS",
    "norm": "china s",
-   "score": 21.8992,
+   "score": 21.9281,
    "status": "active",
    "via": "search"
   },
@@ -5775,7 +5785,7 @@
    "last_mention": "2026-11-17T05:33:17+00:00",
    "name": "GLOBAL SECURITY EXPERTS INC",
    "norm": "experts",
-   "score": 13.3172,
+   "score": 12.7266,
    "status": "active",
    "via": "search"
   },
@@ -5813,7 +5823,7 @@
    "last_mention": "2026-11-17T01:49:19+00:00",
    "name": "ADANI ENTERPRISES LTD.",
    "norm": "adani",
-   "score": 6.5275,
+   "score": 6.238,
    "status": "active",
    "via": "search"
   },
@@ -5822,6 +5832,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "OilPrice",
+     "title": "Cuba\u2019s Energy Crisis Turns Into a Goldmine for U.S. Fuel Exporters",
+     "ts": "2026-11-17T23:00:00+00:00"
+    },
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Stocks to watch, Nov 18: ArMee Info, IIFL Finance, RITES, Supreme Petrochem, Glenmark, Mankind Pharma, Ashok Buildcon, Advait Energy, Apollo Micro, Nykaa",
+     "ts": "2026-11-18T02:03:54+00:00"
+    },
     {
      "feed": "EIA Today in Energy",
      "title": "How does EIA account for small differences between energy supply and demand data?",
@@ -5836,22 +5856,12 @@
      "feed": "Mint Markets",
      "title": "Making a comeback! Down 60% in 1 year, strong rally seen ahead for renewable energy stock Inox Wind; 42% upside likely",
      "ts": "2026-11-17T11:29:53+00:00"
-    },
-    {
-     "feed": "DeItaone",
-     "title": "RISK OF NUCLEAR ACCIDENT IN UKRAINE INCREASING THIS WINTER, ATOMIC SAFETY REGULATORS REPRESENTING 38 COUNTRIES SAY Nuclear safety regulators representing 38 countries, including the US, EU, UK and Japan, warn that Russian strikes on Ukraine\u2019s energy infrastructure are increasing the risk of a nuclea",
-     "ts": "2026-11-16T12:03:15+00:00"
-    },
-    {
-     "feed": "OilPrice",
-     "title": "European Gas Slumps on Milder Weather and Record U.S. LNG Flows",
-     "ts": "2026-11-16T14:30:00+00:00"
     }
    ],
-   "last_mention": "2026-11-17T14:00:00+00:00",
+   "last_mention": "2026-11-17T23:00:00+00:00",
    "name": "ATHER ENERGY LIMITED",
    "norm": "ather energy",
-   "score": 21.785,
+   "score": 22.8189,
    "status": "active",
    "via": "search"
   },
@@ -5889,7 +5899,7 @@
    "last_mention": "2026-11-17T11:43:32+00:00",
    "name": "Bank of America Corporation",
    "norm": "bank of america",
-   "score": 53.5334,
+   "score": 51.1595,
    "status": "active",
    "via": "search"
   },
@@ -5899,35 +5909,35 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "MarketWatch Top",
+     "title": "\u2018It\u2019s downright dirty\u2019: My brother took over our ailing mother\u2019s life and finances. What can I do?",
+     "ts": "2026-11-17T22:30:00+00:00"
+    },
+    {
      "feed": "Mint Markets",
-     "title": "After IDBI Bank stake buy, now Fairfax set to sell 13.25% stake in IIFL Finance via  \u20b93,454-crore block deal: Report",
-     "ts": "2026-11-17T13:07:46+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Bajaj Finserv Share Price Highlights: Bajaj Finserv Stock Price History",
-     "ts": "2026-11-16T02:57:37+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Bajaj Auto Share Price Highlights: Bajaj Auto Bonus",
-     "ts": "2026-11-16T02:50:06+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Bajaj Finserv Share Price Highlights: Bajaj Finserv Bonus",
-     "ts": "2026-11-16T02:57:37+00:00"
+     "title": "GIFT City eyes global commodity trade; finance, liquidity could pose hurdles",
+     "ts": "2026-11-18T00:30:47+00:00"
     },
     {
      "feed": "BusinessLine Mkts",
-     "title": "Bajaj Life Insurance launches innovation-focused equity fund under ULIP wrapper",
-     "ts": "2026-11-16T10:42:15+00:00"
+     "title": "Stocks to watch, Nov 18: ArMee Info, IIFL Finance, RITES, Supreme Petrochem, Glenmark, Mankind Pharma, Ashok Buildcon, Advait Energy, Apollo Micro, Nykaa",
+     "ts": "2026-11-18T02:03:54+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "Top stocks to watch today: Ashoka Buildcon, IIFL Finance, Prestige Estates, HCLTech and 5 others in focus",
+     "ts": "2026-11-18T02:43:46+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "After IDBI Bank stake buy, now Fairfax set to sell 13.25% stake in IIFL Finance via  \u20b93,454-crore block deal: Report",
+     "ts": "2026-11-17T13:07:46+00:00"
     }
    ],
-   "last_mention": "2026-11-17T13:07:46+00:00",
+   "last_mention": "2026-11-17T22:30:00+00:00",
    "name": "BAJAJ FINANCE LIMITED",
    "norm": "bajaj finance",
-   "score": 12.4007,
+   "score": 15.8508,
    "status": "active",
    "via": "search"
   },
@@ -5936,6 +5946,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA - NVIDIA STOPS DISCLOSING SINGAPORE SALES AS REVENUE SURGES TO $104 BILLION Nvidia stopped separately reporting Singapore-linked revenue after changing its geographic reporting methodology from customer billing addresses to headquarters locations, according to the Financial Times. Its Singapore",
+     "ts": "2026-11-17T17:13:06+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "CITI WARNS 95% OF S&P 500 LONG POSITIONS ARE UNDERWATER Citi warns that $45.9 billion in S&P 500 futures longs face liquidation risks as markets struggle to sustain their recovery. \ud83d\udd38 95% of long positions are underwater. \ud83d\udd38 Average entry: 7,768 vs. current 7,573. \ud83d\udd38 Recent 2.5% rebound: Driven largely",
@@ -5955,17 +5970,12 @@
      "feed": "ET Markets",
      "title": "Nike targets $5 billion more in revenue growth by 2031 in latest turnaround push",
      "ts": "2026-11-17T14:57:08+00:00"
-    },
-    {
-     "feed": "OilPrice",
-     "title": "Reliance Bets $1.6 Billion on India's Biogas Boom",
-     "ts": "2026-11-17T16:30:00+00:00"
     }
    ],
-   "last_mention": "2026-11-17T12:38:13+00:00",
+   "last_mention": "2026-11-17T17:13:06+00:00",
    "name": "BillionToOne, Inc.",
    "norm": "billion",
-   "score": 19.8637,
+   "score": 19.9828,
    "status": "active",
    "via": "search"
   },
@@ -6003,7 +6013,7 @@
    "last_mention": "2026-11-17T14:34:57+00:00",
    "name": "PIMCO Active Bond Exchange-Trad",
    "norm": "bond",
-   "score": 15.4652,
+   "score": 14.7794,
    "status": "active",
    "via": "search"
   },
@@ -6041,7 +6051,7 @@
    "last_mention": "2026-11-16T18:23:28+00:00",
    "name": "Brent Crude Oil Last Day Financ",
    "norm": "last",
-   "score": 9.3641,
+   "score": 8.9488,
    "status": "active",
    "via": "search"
   },
@@ -6052,6 +6062,21 @@
    "evidence": [
     {
      "feed": "DeItaone",
+     "title": "US DNI CLAYTON ON TECH OUTAGES: NOT SEEING THIS AS A CYBER ATTACK INCIDENT",
+     "ts": "2026-11-17T20:53:31+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "Reliance, UltraTech, Hyundai Motor shares: Top 3 stocks to buy; check ratings, target price, stop loss by Jay Thakkar",
+     "ts": "2026-11-18T00:34:21+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "Top stocks to watch today: Ashoka Buildcon, IIFL Finance, Prestige Estates, HCLTech and 5 others in focus",
+     "ts": "2026-11-18T02:43:46+00:00"
+    },
+    {
+     "feed": "DeItaone",
      "title": "BANK OF AMERICA SURVEY SHOWS BIGGEST TECH STOCK SELLING SINCE 2006 Investors slashed technology exposure at the fastest monthly pace since June 2006, according to BofA's fund manager survey. Net tech overweight plunged to 12% from 37%, amid growing concerns over AI spending. \ud83d\udd38 38% believe companies ",
      "ts": "2026-11-17T11:43:32+00:00"
     },
@@ -6059,27 +6084,12 @@
      "feed": "Mint Markets",
      "title": "AI boom euphoria fades: Fund managers slash tech exposure at fastest pace since 2006, BofA survey shows",
      "ts": "2026-11-17T15:00:07+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Nifty holds green as crude slide cushions Wall Street tech shock",
-     "ts": "2026-11-17T04:23:29+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Centricity WealthTech launches NRI Wealth Management arm, eyes \u20b9400 crore revenue in four years",
-     "ts": "2026-11-17T07:08:01+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "NSE or BSE: Why are experts bullish on NSE shares? Here's what technical charts hint at? | Target price, stop-loss",
-     "ts": "2026-11-17T07:29:36+00:00"
     }
    ],
-   "last_mention": "2026-11-17T11:43:32+00:00",
+   "last_mention": "2026-11-17T20:53:31+00:00",
    "name": "CARTRADE TECH LIMITED",
    "norm": "cartrade tech",
-   "score": 41.5339,
+   "score": 42.6921,
    "status": "active",
    "via": "search"
   },
@@ -6088,6 +6098,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Reliance, UltraTech, Hyundai Motor shares: Top 3 stocks to buy; check ratings, target price, stop loss by Jay Thakkar",
+     "ts": "2026-11-18T00:34:21+00:00"
+    },
     {
      "feed": "Mint Markets",
      "title": "HDFC Bank vs Axis Bank: Both shares recover after Q2 sell-off; which banking stock offers higher upside? Check targets",
@@ -6107,17 +6122,12 @@
      "feed": "BusinessLine Mkts",
      "title": "Today\u2019s Gold Rate, November 14: Check Gold Rates in Delhi, Mumbai, Chennai",
      "ts": "2026-11-14T08:41:03+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Crude Check:\u00a0Recovery faces hurdles",
-     "ts": "2026-11-14T16:24:33+00:00"
     }
    ],
-   "last_mention": "2026-11-17T10:14:25+00:00",
+   "last_mention": "2026-11-18T00:34:21+00:00",
    "name": "Check Point Software Technologi",
    "norm": "check",
-   "score": 19.6571,
+   "score": 19.7854,
    "status": "active",
    "via": "search"
   },
@@ -6126,6 +6136,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Stock recommendations for 18 November from MarketSmith India",
+     "ts": "2026-11-18T00:31:11+00:00"
+    },
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Sensex today | Stock Market Live Updates: Stock to buy today: Cemindia Projects (\u20b91,353) \u2013 BUY",
+     "ts": "2026-11-18T02:17:22+00:00"
+    },
     {
      "feed": "BusinessLine Mkts",
      "title": "Bank Nifty breaks into uncharted territory as FII billions back India\u2019s bull run",
@@ -6140,22 +6160,12 @@
      "feed": "OilPrice",
      "title": "Reliance Bets $1.6 Billion on India's Biogas Boom",
      "ts": "2026-11-17T16:30:00+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "India world's best long-term investment destination, FDI rises 20% in April-September: ITPO Chairman",
-     "ts": "2026-11-17T16:44:43+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Traders pour cash into BlackRock\u2019s India ETF as AI rout deepens",
-     "ts": "2026-11-17T04:06:28+00:00"
     }
    ],
-   "last_mention": "2026-11-17T14:48:20+00:00",
+   "last_mention": "2026-11-18T00:31:11+00:00",
    "name": "COAL INDIA LTD",
    "norm": "coal india",
-   "score": 79.8353,
+   "score": 78.295,
    "status": "active",
    "via": "search"
   },
@@ -6188,7 +6198,7 @@
    "last_mention": "2026-11-13T03:15:24+00:00",
    "name": "COCHIN SHIPYARD LIMITED",
    "norm": "cochin shipyard",
-   "score": 1.1266,
+   "score": 1.0766,
    "status": "active",
    "via": "search"
   },
@@ -6197,6 +6207,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "GIFT City eyes global commodity trade; finance, liquidity could pose hurdles",
+     "ts": "2026-11-18T00:30:47+00:00"
+    },
+    {
+     "feed": "ET Markets",
+     "title": "Global Market Today: Asian shares rebound as Nvidia forecast eases AI trade concerns",
+     "ts": "2026-11-18T01:08:58+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "AI BUBBLE TOPS GLOBAL MARKET RISKS, BANK OF AMERICA SURVEY FINDS Bank of America's November fund manager survey shows investors increasingly concerned about risks tied to the AI investment boom. \ud83d\udd38 34% identify an AI bubble as the biggest tail risk to markets. \ud83d\udd38 31% cite an AI-related credit crisis a",
@@ -6211,22 +6231,12 @@
      "feed": "ET Markets",
      "title": "Signature Global-led consortium buys 194 acre land via auction for Rs 194 cr",
      "ts": "2026-11-17T14:38:12+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "India ETFs among global winners in October as AI-hardware sell-off hits Taiwan, Korea",
-     "ts": "2026-11-17T04:23:44+00:00"
-    },
-    {
-     "feed": "OilPrice",
-     "title": "Oil Prices Slide as Global Glut Fears Eclipse Hormuz Attacks",
-     "ts": "2026-11-17T06:10:00+00:00"
     }
    ],
-   "last_mention": "2026-11-17T11:58:37+00:00",
+   "last_mention": "2026-11-18T00:30:47+00:00",
    "name": "Coinbase Global, Inc.",
    "norm": "global",
-   "score": 26.3398,
+   "score": 27.1718,
    "status": "active",
    "via": "search"
   },
@@ -6235,6 +6245,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "MarketWatch Top",
+     "title": "CoreWeave\u2019s stock pops \u2014 even as Nvidia talks up a \u2018disciplined\u2019 approach to financing",
+     "ts": "2026-11-18T01:59:00+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "COREWEAVE SHARES FOLLOW NVIDIA LOWER, DOWN 6%",
@@ -6254,17 +6269,12 @@
      "feed": "ET Markets",
      "title": "US stocks end higher as CoreWeave results ease AI spending worries: Stock Market Highlights",
      "ts": "2026-11-11T13:12:11+00:00"
-    },
-    {
-     "feed": "DeItaone",
-     "title": "COREWEAVE CEO SAYS NVIDIA IS NOT ONE PERSON; WILL CONTINUE TO BE A GREAT PARTNER FOR US - CNBC",
-     "ts": "2026-11-11T14:53:21+00:00"
     }
    ],
-   "last_mention": "2026-11-11T22:48:36+00:00",
+   "last_mention": "2026-11-18T01:59:00+00:00",
    "name": "CoreWeave, Inc.",
    "norm": "coreweave",
-   "score": 2.7175,
+   "score": 3.597,
    "status": "active",
    "via": "search"
   },
@@ -6292,7 +6302,7 @@
    "last_mention": "2026-11-17T11:57:16+00:00",
    "name": "ETERNAL LIMITED",
    "norm": "eternal",
-   "score": 2.4424,
+   "score": 2.3341,
    "status": "active",
    "via": "search"
   },
@@ -6330,7 +6340,7 @@
    "last_mention": "2026-11-16T12:18:24+00:00",
    "name": "Goldman Sachs Group, Inc. (The)",
    "norm": "goldman sachs",
-   "score": 4.6086,
+   "score": 4.4042,
    "status": "active",
    "via": "search"
   },
@@ -6339,6 +6349,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Stock recommendations for 18 November from MarketSmith India",
+     "ts": "2026-11-18T00:31:11+00:00"
+    },
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Sensex today | Stock Market Live Updates: Stock to buy today: Cemindia Projects (\u20b91,353) \u2013 BUY",
+     "ts": "2026-11-18T02:17:22+00:00"
+    },
     {
      "feed": "BusinessLine Mkts",
      "title": "Bank Nifty breaks into uncharted territory as FII billions back India\u2019s bull run",
@@ -6353,22 +6373,12 @@
      "feed": "OilPrice",
      "title": "Reliance Bets $1.6 Billion on India's Biogas Boom",
      "ts": "2026-11-17T16:30:00+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "India world's best long-term investment destination, FDI rises 20% in April-September: ITPO Chairman",
-     "ts": "2026-11-17T16:44:43+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Traders pour cash into BlackRock\u2019s India ETF as AI rout deepens",
-     "ts": "2026-11-17T04:06:28+00:00"
     }
    ],
-   "last_mention": "2026-11-17T14:48:20+00:00",
+   "last_mention": "2026-11-18T00:31:11+00:00",
    "name": "HAVELLS INDIA LIMITED",
    "norm": "havells india",
-   "score": 75.5833,
+   "score": 74.2316,
    "status": "active",
    "via": "search"
   },
@@ -6406,7 +6416,7 @@
    "last_mention": "2026-11-17T11:43:32+00:00",
    "name": "HDFC Bank Limited",
    "norm": "hdfc bank",
-   "score": 47.6192,
+   "score": 45.5075,
    "status": "active",
    "via": "search"
   },
@@ -6444,7 +6454,7 @@
    "last_mention": "2026-11-17T11:43:32+00:00",
    "name": "IDBI BANK LIMITED",
    "norm": "idbi bank",
-   "score": 44.184,
+   "score": 42.2247,
    "status": "active",
    "via": "search"
   },
@@ -6482,7 +6492,7 @@
    "last_mention": "2026-11-17T11:43:32+00:00",
    "name": "INDIAN BANK",
    "norm": "indian bank",
-   "score": 58.4336,
+   "score": 55.8424,
    "status": "active",
    "via": "search"
   },
@@ -6520,7 +6530,7 @@
    "last_mention": "2026-11-17T11:43:32+00:00",
    "name": "INDUSIND BANK LTD.",
    "norm": "indusind bank",
-   "score": 44.1868,
+   "score": 42.2273,
    "status": "active",
    "via": "search"
   },
@@ -6529,6 +6539,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Stock recommendations for 18 November from MarketSmith India",
+     "ts": "2026-11-18T00:31:11+00:00"
+    },
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Sensex today | Stock Market Live Updates: Stock to buy today: Cemindia Projects (\u20b91,353) \u2013 BUY",
+     "ts": "2026-11-18T02:17:22+00:00"
+    },
     {
      "feed": "BusinessLine Mkts",
      "title": "Bank Nifty breaks into uncharted territory as FII billions back India\u2019s bull run",
@@ -6543,22 +6563,12 @@
      "feed": "OilPrice",
      "title": "Reliance Bets $1.6 Billion on India's Biogas Boom",
      "ts": "2026-11-17T16:30:00+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "India world's best long-term investment destination, FDI rises 20% in April-September: ITPO Chairman",
-     "ts": "2026-11-17T16:44:43+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Traders pour cash into BlackRock\u2019s India ETF as AI rout deepens",
-     "ts": "2026-11-17T04:06:28+00:00"
     }
    ],
-   "last_mention": "2026-11-17T14:48:20+00:00",
+   "last_mention": "2026-11-18T00:31:11+00:00",
    "name": "INOX INDIA LIMITED",
    "norm": "inox india",
-   "score": 77.2756,
+   "score": 75.8488,
    "status": "active",
    "via": "search"
   },
@@ -6567,6 +6577,16 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "NVDA - NVIDIA STOPS DISCLOSING SINGAPORE SALES AS REVENUE SURGES TO $104 BILLION Nvidia stopped separately reporting Singapore-linked revenue after changing its geographic reporting methodology from customer billing addresses to headquarters locations, according to the Financial Times. Its Singapore",
+     "ts": "2026-11-17T17:13:06+00:00"
+    },
+    {
+     "feed": "DeItaone",
+     "title": "APPLE CONFIRMS OUTAGES FOR SOME SERVICES",
+     "ts": "2026-11-17T18:38:18+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "TD - NEARLY 80% OF YOUNG CANADIANS FEEL FINANCIALLY INSECURE, TD SURVEY FINDS A TD Bank survey of 1,601 Canadian adults reveals widespread financial anxiety among younger generations. \ud83d\udd38 79% of Gen Z and 76% of Millennials feel financially insecure. \ud83d\udd38 74% believe their generation faces greater financ",
@@ -6581,22 +6601,12 @@
      "feed": "DeItaone",
      "title": "MSFT - MICROSOFT REVEALS MONTHS-OLD BUG BEHIND GLOBAL OUTAGE Microsoft says a software bug undetected since July triggered last week's worldwide disruption affecting Outlook, Teams, Copilot and other services. The failure began on November 11, when routine traffic rerouting overloaded servers and ca",
      "ts": "2026-11-16T19:53:42+00:00"
-    },
-    {
-     "feed": "DeItaone",
-     "title": "NVDA - NVIDIA SHARES FALL AS JENSEN HUANG REPORTEDLY CONSIDERS CEO COMEBACK Nvidia shares are down 2% premarket following reports that supporters of former CEO Jensen Huang are lobbying for his return. According to the Financial Times, Huang has privately discussed the possibility of returning as CE",
-     "ts": "2026-11-16T11:23:18+00:00"
-    },
-    {
-     "feed": "DeItaone",
-     "title": "DEUTSCHE BANK WARNS MARKETS ARE UNDERESTIMATING RATE HIKE RISKS Deutsche Bank warns investors may be underpricing further central bank tightening as inflation remains above target and financial conditions ease. Markets now price in 113 basis points of Fed hikes by September 2027, up from 95 basis po",
-     "ts": "2026-11-16T12:13:24+00:00"
     }
    ],
-   "last_mention": "2026-11-17T13:08:12+00:00",
+   "last_mention": "2026-11-17T17:13:06+00:00",
    "name": "Jio Financial Services Limited",
    "norm": "jio financial services",
-   "score": 12.3738,
+   "score": 13.8251,
    "status": "active",
    "via": "search"
   },
@@ -6634,7 +6644,7 @@
    "last_mention": "2026-11-17T01:00:00+00:00",
    "name": "JUST DIAL LTD.",
    "norm": "just dial",
-   "score": 8.0187,
+   "score": 7.6631,
    "status": "active",
    "via": "search"
   },
@@ -6672,7 +6682,7 @@
    "last_mention": "2026-11-17T11:43:32+00:00",
    "name": "KARUR VYSYA BANK LTD",
    "norm": "karur vysya bank",
-   "score": 44.184,
+   "score": 42.2247,
    "status": "active",
    "via": "search"
   },
@@ -6710,7 +6720,7 @@
    "last_mention": "2026-11-17T07:39:10+00:00",
    "name": "KAYNES TECHNOLOGY IND LTD",
    "norm": "kaynes",
-   "score": 4.0042,
+   "score": 3.8266,
    "status": "active",
    "via": "search"
   },
@@ -6720,6 +6730,21 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "DeItaone",
+     "title": "NVDA - NVIDIA STOPS DISCLOSING SINGAPORE SALES AS REVENUE SURGES TO $104 BILLION Nvidia stopped separately reporting Singapore-linked revenue after changing its geographic reporting methodology from customer billing addresses to headquarters locations, according to the Financial Times. Its Singapore",
+     "ts": "2026-11-17T17:13:06+00:00"
+    },
+    {
+     "feed": "DeItaone",
+     "title": "AMAZON CEO ANDY JASSY, ON NVIDIA FALLOUT, SAYS NVIDIA \"HAS BEEN A REALLY IMPORTANT PARTNER FOR A LONG TIME AND WILL BE FOR AS LONG AS I CAN FORESEE IN THE FUTURE\" - SEMAFOR EVENT",
+     "ts": "2026-11-17T17:18:44+00:00"
+    },
+    {
+     "feed": "MarketWatch Top",
+     "title": "\u2018Nvidia\u2019s turmoil has me spooked\u2019: Has the time come to sell my stocks?",
+     "ts": "2026-11-17T22:15:00+00:00"
+    },
+    {
      "feed": "Mint Markets",
      "title": "Urban Company's  \u20b92,500-crore QIP oversubscribed 6 times, attracts  \u20b915,300 crore in bids: Report",
      "ts": "2026-11-17T14:07:25+00:00"
@@ -6728,27 +6753,12 @@
      "feed": "Mint Markets",
      "title": "FMCG stocks recover from six-month correction; Anand Rathi picks 4 stocks for up to 57% growth opportunity. Time to buy?",
      "ts": "2026-11-17T11:19:47+00:00"
-    },
-    {
-     "feed": "DeItaone",
-     "title": "NO INDICATION AT THIS TIME THAT THERE IS A BUG AFFECTING MULTIPLE BANKS AT THE SAME TIME - CNBC CITING A SOURCE",
-     "ts": "2026-11-16T18:53:25+00:00"
-    },
-    {
-     "feed": "DeItaone",
-     "title": "ALTIMETER CAPITAL CEO GERSTNER: ANTHROPIC IPO IS 10 TO 20 TIMES OVERSUBSCRIBED",
-     "ts": "2026-11-16T19:08:14+00:00"
-    },
-    {
-     "feed": "DeItaone",
-     "title": "NVDA - NVIDIA SHARES FALL AS JENSEN HUANG REPORTEDLY CONSIDERS CEO COMEBACK Nvidia shares are down 2% premarket following reports that supporters of former CEO Jensen Huang are lobbying for his return. According to the Financial Times, Huang has privately discussed the possibility of returning as CE",
-     "ts": "2026-11-16T11:23:18+00:00"
     }
    ],
-   "last_mention": "2026-11-17T14:07:25+00:00",
+   "last_mention": "2026-11-17T17:13:06+00:00",
    "name": "Life Time Group Holdings, Inc.",
    "norm": "time",
-   "score": 18.3634,
+   "score": 20.5491,
    "status": "active",
    "via": "search"
   },
@@ -6786,7 +6796,7 @@
    "last_mention": "2026-11-17T08:43:48+00:00",
    "name": "Meta",
    "norm": "meta",
-   "score": 4.417,
+   "score": 4.2211,
    "status": "active",
    "via": "gazetteer"
   },
@@ -6795,6 +6805,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "JPMORGAN WARNS LEVERAGED-LOAN DEFAULTS COULD MORE THAN DOUBLE IN 2027 JPMorgan forecasts U.S. leveraged-loan defaults will surge to 4.5% in 2027 and 4.75% in 2028, up from 1.96% in October. Companies facing AI disruption, elevated borrowing costs and looming debt maturities are particularly vulnerab",
+     "ts": "2026-11-17T17:38:28+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "TRUMP DOWNPLAYS MAJOR U.S. SYSTEM OUTAGES, SAYS AMERICANS ARE SAFE President Donald Trump dismissed concerns over recent disruptions affecting Microsoft ($MSFT), JPMorgan Chase ($JPM) and U.S. aviation systems. The incidents included a global Microsoft outage, an FAA equipment failure that grounded ",
@@ -6814,17 +6829,12 @@
      "feed": "DeItaone",
      "title": "DUE TO A TECHNICAL ISSUE, SOME TRANSACTIONS ARE TAKING LONGER THAN USUAL TO COMPLETE - JPMORGAN CHASE SPOKESPERSON",
      "ts": "2026-11-16T19:33:25+00:00"
-    },
-    {
-     "feed": "MarketWatch Top",
-     "title": "Stanley Druckenmiller dumped these chip stocks while buying into SpaceX and Palantir",
-     "ts": "2026-11-16T23:28:00+00:00"
     }
    ],
-   "last_mention": "2026-11-17T12:58:28+00:00",
+   "last_mention": "2026-11-17T17:38:28+00:00",
    "name": "Morgan Stanley",
    "norm": "morgan stanley",
-   "score": 8.2918,
+   "score": 8.9241,
    "status": "active",
    "via": "search"
   },
@@ -6834,35 +6844,35 @@
    "cls": "EQUITIES",
    "evidence": [
     {
+     "feed": "MarketWatch Top",
+     "title": "\u2018It\u2019s downright dirty\u2019: My brother took over our ailing mother\u2019s life and finances. What can I do?",
+     "ts": "2026-11-17T22:30:00+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "GIFT City eyes global commodity trade; finance, liquidity could pose hurdles",
+     "ts": "2026-11-18T00:30:47+00:00"
+    },
+    {
+     "feed": "BusinessLine Mkts",
+     "title": "Stocks to watch, Nov 18: ArMee Info, IIFL Finance, RITES, Supreme Petrochem, Glenmark, Mankind Pharma, Ashok Buildcon, Advait Energy, Apollo Micro, Nykaa",
+     "ts": "2026-11-18T02:03:54+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "Top stocks to watch today: Ashoka Buildcon, IIFL Finance, Prestige Estates, HCLTech and 5 others in focus",
+     "ts": "2026-11-18T02:43:46+00:00"
+    },
+    {
      "feed": "Mint Markets",
      "title": "After IDBI Bank stake buy, now Fairfax set to sell 13.25% stake in IIFL Finance via  \u20b93,454-crore block deal: Report",
      "ts": "2026-11-17T13:07:46+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Bajaj Finance Share Price Highlights: Bajaj Finance Stock Price History",
-     "ts": "2026-11-13T03:04:10+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Q2 Results Highlights Nov 12: HAL, Oil India, Manappuram Finance log gains, Ola Electric narrows loss, Vodafone Idea loss widens, Reliance Power, Alkem Lab, BDL profit decline",
-     "ts": "2026-11-12T15:39:38+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Muthoot FinCorp diversifies funding to trim borrowing cost",
-     "ts": "2026-11-12T16:29:27+00:00"
-    },
-    {
-     "feed": "ET Markets",
-     "title": "Bajaj Finance Share Price Live Updates: Bajaj Finance Stock Details",
-     "ts": "2026-11-12T03:00:46+00:00"
     }
    ],
-   "last_mention": "2026-11-17T13:07:46+00:00",
+   "last_mention": "2026-11-17T22:30:00+00:00",
    "name": "MUTHOOT FINANCE LIMITED",
    "norm": "muthoot finance",
-   "score": 7.6247,
+   "score": 11.2866,
    "status": "active",
    "via": "search"
   },
@@ -6872,35 +6882,35 @@
    "cls": "EQUITIES",
    "evidence": [
     {
-     "feed": "ET Markets",
-     "title": "Dow plunges over 850 points as Nvidia turmoil deepens selloff in AI stocks: Stock Market Highlights",
-     "ts": "2026-11-17T13:07:43+00:00"
+     "feed": "DeItaone",
+     "title": "NVDA - NVIDIA STOPPED DISCLOSING SINGAPORE SALES AS REVENUES HIT $104BN US chipmaker changed its reporting methods as revenues booked through the city-state surged 70 per cent",
+     "ts": "2026-11-17T17:13:05+00:00"
     },
     {
-     "feed": "Mint Markets",
-     "title": "Wall Street falters ahead of Nvidia earnings, Anthropic debut",
-     "ts": "2026-11-17T19:30:44+00:00"
+     "feed": "DeItaone",
+     "title": "NVDA - NVIDIA STOPS DISCLOSING SINGAPORE SALES AS REVENUE SURGES TO $104 BILLION Nvidia stopped separately reporting Singapore-linked revenue after changing its geographic reporting methodology from customer billing addresses to headquarters locations, according to the Financial Times. Its Singapore",
+     "ts": "2026-11-17T17:13:06+00:00"
     },
     {
-     "feed": "Mint Markets",
-     "title": "US yields ease as equities drop before Nvidia results",
-     "ts": "2026-11-17T20:53:55+00:00"
+     "feed": "DeItaone",
+     "title": "AMAZON CEO ANDY JASSY, ON NVIDIA FALLOUT, SAYS NVIDIA \"HAS BEEN A REALLY IMPORTANT PARTNER FOR A LONG TIME AND WILL BE FOR AS LONG AS I CAN FORESEE IN THE FUTURE\" - SEMAFOR EVENT",
+     "ts": "2026-11-17T17:18:44+00:00"
     },
     {
-     "feed": "ET Markets",
-     "title": "Nvidia Earnings Preview: 6 key factors investors will watch",
-     "ts": "2026-11-17T04:54:47+00:00"
+     "feed": "DeItaone",
+     "title": "NVDA $HSII $ARM - NVIDIA HIRES HEIDRICK & STRUGGLES TO FIND NEW CEO Nvidia has hired executive search firm Heidrick & Struggles to lead its CEO search following Jensen Huang's resignation, according to The Wall Street Journal. The search, led by Jeff Sanders, will consider internal and external cand",
+     "ts": "2026-11-17T17:23:23+00:00"
     },
     {
-     "feed": "ET Markets",
-     "title": "Why are Nokia shares falling? Nvidia stake sale sparks concerns",
-     "ts": "2026-11-17T05:16:30+00:00"
+     "feed": "DeItaone",
+     "title": "NVDA - MUDDY WATERS- IS SHORT NVIDIA",
+     "ts": "2026-11-17T20:08:13+00:00"
     }
    ],
-   "last_mention": "2026-11-17T13:07:43+00:00",
+   "last_mention": "2026-11-17T17:13:05+00:00",
    "name": "NVIDIA Corporation",
    "norm": "nvidia",
-   "score": 56.4111,
+   "score": 66.9096,
    "status": "active",
    "via": "search"
   },
@@ -6909,6 +6919,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "DeItaone",
+     "title": "BTC $ANT - BITCOIN LOSSES MOUNT AS INVESTORS SHIFT ATTENTION TO ANTHROPIC IPO Bitcoin has plunged roughly 50%, trading near $64,500, with approximately half of circulating coins now underwater, according to Glassnode. Capital is leaving crypto markets rapidly. Stablecoin supply contracted by $16.5 b",
+     "ts": "2026-11-17T19:23:06+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "BANK OF AMERICA SURVEY SHOWS BIGGEST TECH STOCK SELLING SINCE 2006 Investors slashed technology exposure at the fastest monthly pace since June 2006, according to BofA's fund manager survey. Net tech overweight plunged to 12% from 37%, amid growing concerns over AI spending. \ud83d\udd38 38% believe companies ",
@@ -6928,17 +6943,12 @@
      "feed": "DeItaone",
      "title": "AI SPENDING CUT FEARS SURGE AS 52% OF INVESTORS EXPECT HYPERSCALER CAPEX REDUCTION Bank of America's November fund manager survey shows a sharp increase in expectations for an AI spending slowdown. \ud83d\udd38 52% expect a major AI hyperscaler to announce a capital expenditure cut within six months, up from 3",
      "ts": "2026-11-17T12:18:22+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Abakkus, along with other investors funds Redbricks Offices\u2019 round two funding worth \u20b9530 crore",
-     "ts": "2026-11-17T16:08:51+00:00"
     }
    ],
-   "last_mention": "2026-11-17T11:43:32+00:00",
+   "last_mention": "2026-11-17T19:23:06+00:00",
    "name": "Omega Healthcare Investors, Inc",
    "norm": "investors",
-   "score": 31.0916,
+   "score": 30.7128,
    "status": "active",
    "via": "search"
   },
@@ -6947,6 +6957,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Reliance, UltraTech, Hyundai Motor shares: Top 3 stocks to buy; check ratings, target price, stop loss by Jay Thakkar",
+     "ts": "2026-11-18T00:34:21+00:00"
+    },
     {
      "feed": "OilPrice",
      "title": "Reliance Bets $1.6 Billion on India's Biogas Boom",
@@ -6966,17 +6981,12 @@
      "feed": "Mint Markets",
      "title": "AMFI Rejig: Reliance's Jio Platforms, NSE, Lenskart, LG among 7 stocks set for large cap upgrade - Vedanta in mid cap?",
      "ts": "2026-11-10T05:15:52+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "Retail investors shed stocks, but crowd into Reliance, HDFC Bank",
-     "ts": "2026-11-10T07:21:45+00:00"
     }
    ],
-   "last_mention": "2026-11-17T16:30:00+00:00",
+   "last_mention": "2026-11-18T00:34:21+00:00",
    "name": "Reliance, Inc.",
    "norm": "reliance",
-   "score": 3.2799,
+   "score": 4.1345,
    "status": "active",
    "via": "search"
   },
@@ -7014,7 +7024,7 @@
    "last_mention": "2026-11-16T10:00:28+00:00",
    "name": "Schwab US Dividend Equity ETF",
    "norm": "dividend",
-   "score": 6.9933,
+   "score": 6.6832,
    "status": "active",
    "via": "search"
   },
@@ -7052,7 +7062,7 @@
    "last_mention": "2026-11-17T04:15:24+00:00",
    "name": "TATA ELXSI LIMITED",
    "norm": "tata elxsi",
-   "score": 16.0711,
+   "score": 15.3584,
    "status": "active",
    "via": "search"
   },
@@ -7090,7 +7100,7 @@
    "last_mention": "2026-11-17T04:15:24+00:00",
    "name": "TATA TECHNOLOGIES LIMITED",
    "norm": "tata",
-   "score": 16.0711,
+   "score": 15.3584,
    "status": "active",
    "via": "search"
   },
@@ -7101,6 +7111,21 @@
    "evidence": [
     {
      "feed": "DeItaone",
+     "title": "US DNI CLAYTON ON TECH OUTAGES: NOT SEEING THIS AS A CYBER ATTACK INCIDENT",
+     "ts": "2026-11-17T20:53:31+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "Reliance, UltraTech, Hyundai Motor shares: Top 3 stocks to buy; check ratings, target price, stop loss by Jay Thakkar",
+     "ts": "2026-11-18T00:34:21+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "Top stocks to watch today: Ashoka Buildcon, IIFL Finance, Prestige Estates, HCLTech and 5 others in focus",
+     "ts": "2026-11-18T02:43:46+00:00"
+    },
+    {
+     "feed": "DeItaone",
      "title": "BANK OF AMERICA SURVEY SHOWS BIGGEST TECH STOCK SELLING SINCE 2006 Investors slashed technology exposure at the fastest monthly pace since June 2006, according to BofA's fund manager survey. Net tech overweight plunged to 12% from 37%, amid growing concerns over AI spending. \ud83d\udd38 38% believe companies ",
      "ts": "2026-11-17T11:43:32+00:00"
     },
@@ -7108,27 +7133,12 @@
      "feed": "Mint Markets",
      "title": "AI boom euphoria fades: Fund managers slash tech exposure at fastest pace since 2006, BofA survey shows",
      "ts": "2026-11-17T15:00:07+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Nifty holds green as crude slide cushions Wall Street tech shock",
-     "ts": "2026-11-17T04:23:29+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Centricity WealthTech launches NRI Wealth Management arm, eyes \u20b9400 crore revenue in four years",
-     "ts": "2026-11-17T07:08:01+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "NSE or BSE: Why are experts bullish on NSE shares? Here's what technical charts hint at? | Target price, stop-loss",
-     "ts": "2026-11-17T07:29:36+00:00"
     }
    ],
-   "last_mention": "2026-11-17T11:43:32+00:00",
+   "last_mention": "2026-11-17T20:53:31+00:00",
    "name": "Bio-Techne Corp",
    "norm": "tech",
-   "score": 41.5339,
+   "score": 42.6921,
    "status": "active",
    "via": "search"
   },
@@ -7139,6 +7149,21 @@
    "evidence": [
     {
      "feed": "DeItaone",
+     "title": "US DNI CLAYTON ON TECH OUTAGES: NOT SEEING THIS AS A CYBER ATTACK INCIDENT",
+     "ts": "2026-11-17T20:53:31+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "Reliance, UltraTech, Hyundai Motor shares: Top 3 stocks to buy; check ratings, target price, stop loss by Jay Thakkar",
+     "ts": "2026-11-18T00:34:21+00:00"
+    },
+    {
+     "feed": "Mint Markets",
+     "title": "Top stocks to watch today: Ashoka Buildcon, IIFL Finance, Prestige Estates, HCLTech and 5 others in focus",
+     "ts": "2026-11-18T02:43:46+00:00"
+    },
+    {
+     "feed": "DeItaone",
      "title": "BANK OF AMERICA SURVEY SHOWS BIGGEST TECH STOCK SELLING SINCE 2006 Investors slashed technology exposure at the fastest monthly pace since June 2006, according to BofA's fund manager survey. Net tech overweight plunged to 12% from 37%, amid growing concerns over AI spending. \ud83d\udd38 38% believe companies ",
      "ts": "2026-11-17T11:43:32+00:00"
     },
@@ -7146,27 +7171,12 @@
      "feed": "Mint Markets",
      "title": "AI boom euphoria fades: Fund managers slash tech exposure at fastest pace since 2006, BofA survey shows",
      "ts": "2026-11-17T15:00:07+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Nifty holds green as crude slide cushions Wall Street tech shock",
-     "ts": "2026-11-17T04:23:29+00:00"
-    },
-    {
-     "feed": "BusinessLine Mkts",
-     "title": "Centricity WealthTech launches NRI Wealth Management arm, eyes \u20b9400 crore revenue in four years",
-     "ts": "2026-11-17T07:08:01+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "NSE or BSE: Why are experts bullish on NSE shares? Here's what technical charts hint at? | Target price, stop-loss",
-     "ts": "2026-11-17T07:29:36+00:00"
     }
    ],
-   "last_mention": "2026-11-17T11:43:32+00:00",
+   "last_mention": "2026-11-17T20:53:31+00:00",
    "name": "TECH MAHINDRA LIMITED",
    "norm": "tech mahindra",
-   "score": 43.8304,
+   "score": 44.8867,
    "status": "active",
    "via": "search"
   },
@@ -7175,6 +7185,11 @@
    "amber_z": 2.0,
    "cls": "EQUITIES",
    "evidence": [
+    {
+     "feed": "Mint Markets",
+     "title": "Reliance, UltraTech, Hyundai Motor shares: Top 3 stocks to buy; check ratings, target price, stop loss by Jay Thakkar",
+     "ts": "2026-11-18T00:34:21+00:00"
+    },
     {
      "feed": "DeItaone",
      "title": "ANT - NEW STREET INITIATES ANTHROPIC AT BUY WITH $105 PRICE TARGET New Street Research analyst Pierre Ferragu initiated coverage of Anthropic with a Buy rating and $105 price target, calling its upcoming IPO a generational investment opportunity. The firm expects AI adoption to spread twice as fast ",
@@ -7194,17 +7209,12 @@
      "feed": "DeItaone",
      "title": "U.S. INTELLIGENCE WARNS IRAN MAY BE PLANNING DIRTY BOMB OR CHEMICAL ATTACK IN WASHINGTON U.S. intelligence has identified alleged Iranian plans to target senior Trump administration officials with a dirty bomb or chemical weapon in Washington, D.C., CNN reports, citing seven unnamed officials. Sourc",
      "ts": "2026-11-16T23:58:16+00:00"
-    },
-    {
-     "feed": "Mint Markets",
-     "title": "PNB vs Canara Bank: Which PSU bank is a better stock to buy Nifty Bank at record high, and why? Experts' views, targets",
-     "ts": "2026-11-17T05:51:49+00:00"
     }
    ],
-   "last_mention": "2026-11-17T12:43:28+00:00",
+   "last_mention": "2026-11-18T00:34:21+00:00",
    "name": "Target Corporation",
    "norm": "target",
-   "score": 34.6469,
+   "score": 34.1105,
    "status": "active",
    "via": "search"
   }
@@ -7220,8 +7230,8 @@
   "0107d15be6a7",
   "0127ab899491",
   "0139ca5fe0cc",
+  "0190d6ac99ea",
   "01e01dacd235",
-  "01e246cd4060",
   "021ee90414c8",
   "02745c5894c6",
   "0298c10a4285",
@@ -7232,6 +7242,7 @@
   "042ae54b6cc1",
   "042da1bf4116",
   "04307f71efd3",
+  "043bb52bf4a1",
   "04ca62035a10",
   "04d8f42c1136",
   "04e0e366aa53",
@@ -7239,14 +7250,13 @@
   "051d3d0527d4",
   "054d9a32eca9",
   "05547cbbeca3",
-  "0558e9259eb2",
   "0586dd06c6cb",
-  "05aab420278f",
   "05c11597c887",
   "05f220f43f89",
   "05ffad464cdb",
   "06965cb44363",
   "06c07d539a8c",
+  "07205f501606",
   "0732843740af",
   "078c114748f6",
   "0793cbea7992",
@@ -7255,18 +7265,15 @@
   "07fe7146a91f",
   "084d6ccb8b0b",
   "09120502fb82",
+  "0932fd13015e",
   "093446ee27db",
   "0959fe3b9cb2",
   "09713ee87a9b",
   "099f5aa7fc57",
   "09e42831e7ab",
   "09f00084f676",
-  "0a076acedced",
-  "0a132e8ef5ff",
   "0a8f687e8e0e",
-  "0af1b413bbb0",
   "0b6ee2bcbbe2",
-  "0b980264057b",
   "0c470dfbd3e1",
   "0c5abb53a4a2",
   "0cc26fb43a84",
@@ -7275,7 +7282,6 @@
   "0d0307520585",
   "0d6ea2054520",
   "0d94ca721681",
-  "0daf72f1992a",
   "0dd44951ec8c",
   "0e4e212c2897",
   "0e8433f2eb09",
@@ -7350,7 +7356,6 @@
   "1edf87a93d3a",
   "1f49f776ea0b",
   "1f5f671c5f5c",
-  "1fef2d35903a",
   "1ffa9cfd6f12",
   "2016992cf435",
   "20389538134c",
@@ -7380,14 +7385,17 @@
   "23f822ab8ccd",
   "241260d1c218",
   "241a87889523",
+  "246cdae4c8de",
   "253490630191",
   "2543d1619938",
   "2550e62569b6",
   "2588b82fab32",
   "259b7ae78ec4",
   "25acb7d15289",
+  "25c884217142",
   "2626d2d17a94",
   "26d6d87aaee5",
+  "271e84c859af",
   "27543439fd82",
   "278080c314b7",
   "27811a139ccc",
@@ -7402,8 +7410,10 @@
   "2899f9840aef",
   "28a3e12a036d",
   "28bb94636f7e",
+  "28ea494c3db9",
   "291bc36b4887",
   "29526756b7a6",
+  "2a243796c715",
   "2a41583ffc50",
   "2a53fa64947f",
   "2aa76e40feea",
@@ -7434,6 +7444,7 @@
   "2ede38b901c7",
   "2f9cd6e580ab",
   "2fd97ae7ed95",
+  "301431eada77",
   "30781f3fa67e",
   "30b98bf18b05",
   "30c91c071037",
@@ -7467,6 +7478,7 @@
   "355fd3837f50",
   "35ced0e9b265",
   "361a79e047b5",
+  "363eac04eb91",
   "3678744f208e",
   "36e67efa124d",
   "372586993077",
@@ -7484,10 +7496,11 @@
   "38cda42275f8",
   "38d6ad0977ba",
   "38ed9b139505",
+  "394675e9b425",
   "3994b5453d62",
   "39a02461852d",
   "39e98f8b8106",
-  "3ac65e60dada",
+  "3a11caa0068a",
   "3aebc2dcaff8",
   "3b06bd752bc0",
   "3b2cdee040b9",
@@ -7505,6 +7518,7 @@
   "3ecbd892dbff",
   "3ecc9ea5838d",
   "3eec303da2ba",
+  "3f2d7d68c6b0",
   "3f32acfe12ba",
   "3f50c5c8b6f6",
   "3fcada3dd8ab",
@@ -7512,10 +7526,10 @@
   "4068bed48a7c",
   "40a810fb1093",
   "40bc8a1e149b",
+  "4129ed87d6e3",
   "416bb8e5b147",
   "417d5bc9dacd",
   "4250dd9ee257",
-  "42bea2563278",
   "42f3ebcaff4b",
   "433e195bed23",
   "4360eef1979d",
@@ -7550,16 +7564,17 @@
   "492d2d8edc10",
   "4987a7ccda25",
   "49a02c046d61",
+  "4a0a25ec74b5",
   "4a3f1fd6bd18",
   "4a46d02ba389",
   "4aaa3544d519",
   "4ae0a3fc5bb2",
   "4b1e6ece589e",
+  "4b3b3c699e67",
   "4b79ceb0be48",
   "4bcb56cc63d9",
   "4c16c9cc0d17",
   "4c25152eaf71",
-  "4c64e445942a",
   "4c725c2c5dfd",
   "4d02070816b2",
   "4d0f673b0246",
@@ -7589,7 +7604,6 @@
   "50c86cca994a",
   "50f5cacfd58e",
   "50fe7705f18e",
-  "5154cbfe2eab",
   "5171bdff8526",
   "51aa9aaf4d2c",
   "525f4ba0e1b7",
@@ -7619,7 +7633,6 @@
   "57d88419d059",
   "57ebf2704bb3",
   "57ef1eac2093",
-  "57f13e8de908",
   "58196851efd2",
   "58a834ff005a",
   "5921d8ff7ddb",
@@ -7628,7 +7641,6 @@
   "59c635522762",
   "5a0040b5c163",
   "5a2250e4747a",
-  "5a2a7e754f33",
   "5a351c5095c8",
   "5a48412ceaa6",
   "5a7eaf817cbe",
@@ -7648,7 +7660,6 @@
   "5dda75ba66c2",
   "5de249101bd0",
   "5dfd8263adb1",
-  "5e0ef45e037f",
   "5e1bb2531b11",
   "5e8df124dcab",
   "5e944bc305a9",
@@ -7677,6 +7688,7 @@
   "63aaf443044e",
   "63bee8addcda",
   "645afe650872",
+  "649e67a891bd",
   "64da7f9228df",
   "651245ca0cb5",
   "651a9d55e981",
@@ -7685,7 +7697,9 @@
   "656c3c619a88",
   "658f0e5853dc",
   "65926fb9cb2e",
+  "65a122a9c5ef",
   "65fe62301d54",
+  "666b674da6d4",
   "6716b20e9d34",
   "67d216821bf1",
   "681799a3ae6b",
@@ -7739,12 +7753,13 @@
   "73f84d91844c",
   "73fcdb757cb5",
   "74044c483bb4",
+  "743ff46b777e",
   "744bae2eae7b",
   "7464694358a7",
-  "753d086a4687",
   "754aaa335212",
   "754e00974111",
   "7559f7487d98",
+  "758a54ba400c",
   "75c623e80e8b",
   "75e3aa6481a2",
   "760602ae7652",
@@ -7753,8 +7768,8 @@
   "765e106c5b99",
   "76890b5c5174",
   "768a25929d2b",
+  "769e31669122",
   "76bcf3c20922",
-  "76be42574aeb",
   "76cc65526fe6",
   "76f752f87d80",
   "7746a76ce28f",
@@ -7770,7 +7785,6 @@
   "797d43ce964d",
   "79810edd9c59",
   "79991b06f3cb",
-  "79edc54a2284",
   "79f71fa9d894",
   "79fbb9fe4db8",
   "7a29ba794a99",
@@ -7785,7 +7799,7 @@
   "7b7222dbf8c2",
   "7bb003645ac1",
   "7bb636c52fde",
-  "7c6fde9e2a2f",
+  "7c5678417df5",
   "7c7493e5df0d",
   "7c8d627261d1",
   "7c8f9bad56e0",
@@ -7806,7 +7820,6 @@
   "7f5dc24e4bf4",
   "7faa7eb3f924",
   "7fb611ea7870",
-  "801971d321ba",
   "804c0a272e51",
   "80d4f1ae1ebe",
   "80d51c96880c",
@@ -7814,7 +7827,6 @@
   "811790c63637",
   "81c3920fe759",
   "8218187f9d3f",
-  "824dea028b39",
   "82cfd01adffd",
   "82d16112a5ea",
   "83591e97eb2b",
@@ -7845,13 +7857,13 @@
   "8866d1d81215",
   "88882567dfba",
   "888cc86f1831",
+  "8898a11ab5dc",
   "88b9a6a3bab2",
   "88d8af640ea5",
   "88e9e20a26db",
   "8900f332e06d",
   "89674673739f",
   "897a2bcb829d",
-  "898f8df51007",
   "8a1a5743aedd",
   "8ae45614ceab",
   "8af84a38d5aa",
@@ -7876,6 +7888,7 @@
   "8e99ae1f593b",
   "8ee606e14edf",
   "8f04e01d970e",
+  "8f1bfc3da0ac",
   "8ff70cff4542",
   "904d699cb2a8",
   "9057c21a3330",
@@ -7888,6 +7901,7 @@
   "919322495dd5",
   "91db9edb14ed",
   "921632f858a7",
+  "92386b0b42c1",
   "9241201255d1",
   "9242c2209485",
   "924481041fe2",
@@ -7903,12 +7917,13 @@
   "9477c8c14a25",
   "949aac7c9e26",
   "94bfa102cc3b",
+  "952dd994a77a",
   "957e4cd64e14",
-  "95b41be41013",
   "960bab5a268e",
   "961103f15ccc",
   "961fd35b699b",
   "9621592a47cb",
+  "963e1e10c29d",
   "964b89e8f39c",
   "9673e5c4345f",
   "96f4b2c32a82",
@@ -7977,7 +7992,6 @@
   "a7959e8461eb",
   "a7a9e6e06643",
   "a7b1aa5e0abc",
-  "a7ddc3a8580b",
   "a7f2b35b3591",
   "a7f45278fc06",
   "a806e0621287",
@@ -7988,6 +8002,8 @@
   "a89269df7596",
   "a8a8be78a7c1",
   "a8c128c162b6",
+  "a8c9b017f16e",
+  "a8dc46998b1f",
   "a8eda60ed373",
   "a8f6d8975536",
   "a96223c2c466",
@@ -7997,6 +8013,7 @@
   "a9f701b3507a",
   "aa1559016319",
   "aa877fce37a1",
+  "aa8fd91d21c2",
   "aaa75853b4fe",
   "aac354892dc5",
   "aaec298b1f10",
@@ -8016,12 +8033,12 @@
   "ad5886ec870f",
   "ad868862b9b3",
   "ae2bb829bfa1",
+  "aecccc8c7707",
   "af0dc98349f3",
   "af4e59373bcb",
   "b0050a519ee7",
   "b082790483a6",
   "b0bb57cf3d7c",
-  "b0ce1bc9942e",
   "b108e20cc712",
   "b124e408a4cd",
   "b16d65f7c17e",
@@ -8033,7 +8050,6 @@
   "b2c14dd74b4b",
   "b2ca3882a5aa",
   "b321ed426c60",
-  "b3fec03e8346",
   "b42146ed0347",
   "b43f82da4e98",
   "b446efbc2a48",
@@ -8041,7 +8057,7 @@
   "b4974374c3db",
   "b5017477a07c",
   "b5472f89a665",
-  "b56c0e317266",
+  "b56f94813508",
   "b594327925b9",
   "b5ab8dff4a98",
   "b5de163f2848",
@@ -8049,6 +8065,7 @@
   "b5f073f857c2",
   "b616bf9d1fe0",
   "b61e0e3aaa09",
+  "b63d5f053164",
   "b661e3bc079a",
   "b68691f86c5e",
   "b692665428fe",
@@ -8070,6 +8087,7 @@
   "b94da19358a9",
   "b9783bdd504e",
   "b98463213646",
+  "b9a78d736260",
   "b9a910991d9d",
   "b9e14c9e3f96",
   "ba1331a9bdb7",
@@ -8095,7 +8113,6 @@
   "be55b53e98cb",
   "be581c05aeb9",
   "be648835d830",
-  "be809dabe9ca",
   "be9c164b9ada",
   "bea0e33bd7e5",
   "bea33a19f1dc",
@@ -8103,6 +8120,7 @@
   "bed3e7ffc299",
   "befeead39cc1",
   "bf102b9e4274",
+  "bf28da34c998",
   "bf2f99fd9f35",
   "bf3c06f41a5a",
   "bf453cf415ed",
@@ -8111,6 +8129,7 @@
   "c075e8b0bd2c",
   "c0aecd005834",
   "c0e2547be477",
+  "c0e4304e57f3",
   "c0fe3d7e2a5f",
   "c10ae86c67e1",
   "c11895d3f795",
@@ -8141,6 +8160,7 @@
   "c59a152a63e1",
   "c5e7c4a51751",
   "c622cf03ab14",
+  "c6633c32ce26",
   "c68ee463d130",
   "c6d117f38064",
   "c6f94ca806a1",
@@ -8167,6 +8187,7 @@
   "c986fe0c6cbe",
   "c99e391d9cbf",
   "c9cd4692b6e0",
+  "c9d437a151ff",
   "c9fa0ae64ab1",
   "ca510b1600a4",
   "ca68b4297cea",
@@ -8215,6 +8236,7 @@
   "d2637482df35",
   "d2921efdbe80",
   "d2af7cdb728f",
+  "d2da82a9ad22",
   "d3113d6d4c00",
   "d35e874b2335",
   "d372efea3c37",
@@ -8223,7 +8245,6 @@
   "d422a58fbb2c",
   "d429b234e085",
   "d4c41e6bd958",
-  "d4cf66cd7f1b",
   "d50212666345",
   "d5092e2e7803",
   "d516c860e4f8",
@@ -8263,6 +8284,7 @@
   "dab8c897498f",
   "db168e3d45e6",
   "dbc0832ad5c3",
+  "dbdb6750dc97",
   "dbf883fa4904",
   "dbfcf335a53e",
   "dc21cf1da11d",
@@ -8278,7 +8300,6 @@
   "de12f512b74e",
   "de383d201125",
   "de4ec23ce619",
-  "de96b6122a01",
   "deb5c0ac8acd",
   "dec6d3b6a9fd",
   "dee07d87d1d1",
@@ -8299,19 +8320,20 @@
   "e0a136b35f54",
   "e0af0ef5b60a",
   "e0ead53cff93",
-  "e105b692d457",
   "e149265e5c8a",
   "e14f88f48d32",
   "e156494e4a64",
+  "e16028c9e3cd",
   "e1720d1e713a",
   "e1e5b51b386d",
-  "e22c250199d1",
-  "e2683d153f21",
   "e29abbac9a9d",
   "e2ec67da6c2f",
+  "e2f93ae91869",
   "e3161a99aa79",
   "e334b542b926",
+  "e37e477fa96b",
   "e3b2144c6417",
+  "e3d820d40c1b",
   "e4bafdf00a7a",
   "e5389822d90b",
   "e5b43b2e1eed",
@@ -8320,7 +8342,8 @@
   "e5fe701b750b",
   "e612e43891b6",
   "e688f4b4a4f4",
-  "e71bf4277dd2",
+  "e6d04d51adc0",
+  "e7066fec5837",
   "e74393688abe",
   "e7cf76239ba8",
   "e7eeb978b491",
@@ -8359,8 +8382,6 @@
   "f07d2a8d4df4",
   "f081a9f01bb5",
   "f0b49bae0c96",
-  "f100d16ff07a",
-  "f1ee94c738e6",
   "f1f3403aa9ee",
   "f223eddbb667",
   "f247e9bde26d",
@@ -8384,6 +8405,7 @@
   "f4abaffc94eb",
   "f4d5a4c32d78",
   "f4d89c953cef",
+  "f4eea7358321",
   "f5073b6f065e",
   "f51470d07fb7",
   "f52148850f80",
@@ -8393,7 +8415,6 @@
   "f59667e832a1",
   "f62608bd956c",
   "f65d60b862ec",
-  "f69dc6f4ef30",
   "f6f6c37fbd52",
   "f755252021e8",
   "f7678dc5f2aa",
@@ -8440,10 +8461,11 @@
   "ff028833bad1",
   "ff134f06a7c4",
   "ff556fce87da",
+  "ff5b6b9662bd",
   "ff9d01aa83b0",
   "ff9d17db59bb",
   "ffbddc654c07",
   "ffe6ec234ec6"
  ],
- "updated": "2026-11-17T22:16:26.271182+00:00"
+ "updated": "2026-11-18T02:59:07.842181+00:00"
 }
